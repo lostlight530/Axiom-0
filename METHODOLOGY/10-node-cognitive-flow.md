@@ -23,9 +23,9 @@
 - **[CN]**: 将海量原始情报压缩为可理解的核心架构层。
 - **[EN]**: Heuristic abstraction of high-entropy noise into verified architectural signatures.
 
-### T-04: 代码基质 (Substrate)
-- **[CN]**: 筛选最稳固的开源底层支撑。
-- **[EN]**: Cross-repo substrate evaluation for foundational code integrity.
+### T-04: 结构变形 (Morphing)
+- **[CN]**: 监控系统负载，动态调整网络拓扑（固态、液态等）以应对压力。基于液态差分变形引擎。
+- **[EN]**: Dynamic topological reconfiguration (Solid, Liquid, etc.) based on systemic load and entropy metrics. Powered by the Liquid Morphing Engine.
 
 ### T-05: 状态同步 (Synchronization)
 - **[CN]**: 强制更新全局 ADR 决策链与上下文状态。

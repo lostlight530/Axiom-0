@@ -32,9 +32,29 @@
 python CODE/nexus_core.py
 ```
 
+## 仪表板 / Dashboard
+> **[CN]**: Axiom-0 提供了一个 React 仪表板用于监控数据。你可以通过 GitHub Pages 直接预览网页！
+>
+> **[EN]**: Axiom-0 provides a React dashboard to monitor the telemetry data. You can preview it directly via GitHub Pages!
+
+**如何开启在线预览 / How to enable Web Preview:**
+1. Go to your GitHub repository **Settings** -> **Pages**.
+2. Under "Build and deployment", set the **Source** to `Deploy from a branch`.
+3. Select your `main` branch and the `/docs` folder.
+4. Save, and your dashboard will be live!
+
+*(If you want to run it locally / 本地开发):*
+```powershell
+cd FRONTEND
+npm install
+npm run dev
+```
+
 ---
 
 ## 仓库结构 / Repository Structure
+- **[docs/](./docs/)**: 编译好的纯静态页面（用于 GitHub Pages 预览） / Compiled static assets for GitHub Pages.
+- **[FRONTEND/](./FRONTEND/)**: React/Vite 仪表板工程 / React/Vite Dashboard App.
 - **[INDEX.md](./INDEX.md)**: 全局索引 / Global IndexHub.
 - **[SPECIFICATION.md](./SPECIFICATION.md)**: 技术规范 / Engineering Spec.
 - **[METHODOLOGY/](./METHODOLOGY/)**: 核心方法论 / Methodology & Archetypes.
