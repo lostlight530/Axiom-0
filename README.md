@@ -32,6 +32,12 @@
 python CODE/nexus_core.py
 ```
 
+## 仪表板 / Dashboard
+> **[CN]**: Axiom-0 提供了一个 React 仪表板用于监控数据。
+>
+> **[EN]**: Axiom-0 provides a React dashboard to monitor the telemetry data.
+查看 `CODE/dashboard.tsx`。/ See `CODE/dashboard.tsx`.
+
 ---
 
 ## 仓库结构 / Repository Structure

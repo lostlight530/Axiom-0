@@ -10,7 +10,7 @@ Axiom-0: 液态差分变形引擎 / Axiom-0: Liquid Differential Morphing
 from enum import Enum, auto
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Callable, Any
-from datetime import datetime
+from datetime import datetime, timezone
 import asyncio
 import logging
 
@@ -49,7 +49,7 @@ class SystemMetrics:
     active_tasks: int = 0
     queue_depth: int = 0
     entropy_level: float = 0.0
-    timestamp: datetime = field(default_factory=datetime.utcnow)
+    timestamp: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     
     @property
     def load_score(self) -> float:
