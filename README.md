@@ -33,14 +33,21 @@ python CODE/nexus_core.py
 ```
 
 ## 仪表板 / Dashboard
-> **[CN]**: Axiom-0 提供了一个 React 仪表板用于监控数据。
+> **[CN]**: Axiom-0 提供了一个 React 仪表板用于监控数据。前端代码已工程化并位于 `FRONTEND` 目录。
 >
-> **[EN]**: Axiom-0 provides a React dashboard to monitor the telemetry data.
-查看 `CODE/dashboard.tsx`。/ See `CODE/dashboard.tsx`.
+> **[EN]**: Axiom-0 provides a React dashboard to monitor the telemetry data. The frontend application is fully scaffolded in the `FRONTEND` directory.
+
+```powershell
+# 启动仪表板 / Start the Dashboard
+cd FRONTEND
+npm install
+npm run dev
+```
 
 ---
 
 ## 仓库结构 / Repository Structure
+- **[FRONTEND/](./FRONTEND/)**: React/Vite 仪表板工程 / React/Vite Dashboard App.
 - **[INDEX.md](./INDEX.md)**: 全局索引 / Global IndexHub.
 - **[SPECIFICATION.md](./SPECIFICATION.md)**: 技术规范 / Engineering Spec.
 - **[METHODOLOGY/](./METHODOLOGY/)**: 核心方法论 / Methodology & Archetypes.

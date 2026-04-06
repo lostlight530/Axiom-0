@@ -116,17 +116,18 @@ const calculateMedian = (values: number[]): number => {
     : (sorted[mid - 1] + sorted[mid]) / 2;
 };
 
-import { TooltipProps } from "recharts";
-import { NameType, ValueType } from "recharts/types/component/DefaultTooltipContent";
+import type { TooltipProps } from "recharts";
+import type { NameType, ValueType } from "recharts/types/component/DefaultTooltipContent";
 
-const CustomChartTooltip: React.FC<TooltipProps<ValueType, NameType>> = ({ active, payload, label }) => {
+const CustomChartTooltip: React.FC<TooltipProps<ValueType, NameType>> = (props) => {
+  const { active, payload, label } = props as any;
   if (active && payload && payload.length) {
     return (
       <div className="bg-slate-950/90 text-white p-3 rounded-lg shadow-xl border border-slate-700 backdrop-blur-sm z-50">
         <p className="font-semibold text-sm border-b border-slate-700 pb-1.5 mb-1.5">
           {label}
         </p>
-        {payload.map((entry, index) => (
+        {payload.map((entry: any, index: number) => (
           <p key={index} className="text-xs flex items-center gap-2 py-0.5">
             <span
               className="inline-block w-2.5 h-2.5 rounded-sm"
