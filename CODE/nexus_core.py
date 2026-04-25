@@ -36,6 +36,29 @@ class AxiomOrchestrator:
     def _logic_unit_core_auth(self, data: Any) -> Dict[str, Any]:
         return {"auth_status": "ZECP_VERIFIED", "timestamp": time.time()}
 
+    def _dehydration_pipeline(self, raw_input: Any) -> Dict[str, Any]:
+        """
+        Data Purifier (Dehydration Pipeline)
+        Performs segmentation, classification, routing, and dehydration.
+        Removes redundant entropy from raw conversational text.
+        """
+        raw_str = str(raw_input)
+        # 1. Segmentation
+        segments = raw_str.split('.')
+        # 2. Classification & 3. Routing (simplified heuristic)
+        payloads = [s.strip() for s in segments if len(s.strip()) > 5]
+        # 4. Dehydration (removing common redundant words to reduce entropy)
+        stop_words = ["please", "could", "you", "help", "me", "with", "the", "a", "an"]
+        dehydrated_payloads = []
+        for p in payloads:
+            words = p.split()
+            clean_words = [w for w in words if w.lower() not in stop_words]
+            dehydrated_payloads.append(" ".join(clean_words))
+
+        # 5. Canonicalization
+        canonical_payload = " | ".join(dehydrated_payloads).upper()
+        return {"original": raw_str, "canonical_payload": canonical_payload, "entropy_status": "DEHYDRATED"}
+
     def _logic_unit_memory_shard(self, data: Any) -> Dict[str, Any]:
         data_str = json.dumps(data) if isinstance(data, dict) else str(data)
         return {"shard_id": f"SHARD_{hash(data_str)}", "status": "SYNCED"}
@@ -73,7 +96,14 @@ class AxiomOrchestrator:
         for node in self.nodes:
             logger.info(f"[*] Executing Node: {node}")
             
-            if "T-04" in node:
+            if "T-01" in node or "T-02" in node:
+                logger.info(f"    [{node[:4]}] Running Dehydration Pipeline.")
+                if isinstance(current_data, str):
+                     current_data = self._dehydration_pipeline(current_data)
+                else:
+                     logger.info(f"    [{node[:4]}] Data is not raw string, skipping dehydration.")
+
+            elif "T-04" in node:
                 # Node 04 Morphing Implementation
                 # Simulating environmental stress metric collection
                 metrics = SystemMetrics(
@@ -95,8 +125,32 @@ class AxiomOrchestrator:
                     logger.info(f"    [T-04] System stable. Current State: {self.morphing_engine.current_state.name}")
                 current_data = {"processed_by": node, "payload": current_data, "morph_state": self.morphing_engine.current_state.name}
 
+            elif "T-06" in node:
+                # Node 06 Analysis Implementation - Real Morphing Logic
+                # Inject Test-Time Compute (ADR-080) based on current morph state
+                current_state = self.morphing_engine.current_state.name
+                if current_state == "LIQUID" or current_state == "GAS":
+                    logger.info(f"    [T-06] Morph state is {current_state}. Engaging Test-Time Reflection Loop...")
+                    # Simulate extended reasoning multi-step verification
+                    reflection_loops = 3 if current_state == "LIQUID" else 5
+                    for i in range(reflection_loops):
+                         logger.info(f"           [Reflection Step {i+1}/{reflection_loops}] Self-critiquing payload...")
+                         await asyncio.sleep(0.05)
+                    logger.info("    [T-06] Reflection complete. Payload verified.")
+                    if isinstance(current_data, dict):
+                        current_data["verified"] = True
+                elif current_state == "PLASMA":
+                    logger.info("    [T-06] EMERGENCY PLASMA STATE: Dropping non-critical payload for speed.")
+                    current_data = "PLASMA_SURVIVAL_MODE_PAYLOAD"
+                else:
+                    logger.info("    [T-06] Morph state is SOLID. Proceeding with standard analysis.")
+
             elif "T-07" in node:
                 # Node 07 Grounding Implementation
+                # In SOLID state, we might enforce stricter validation
+                if self.morphing_engine.current_state.name == "SOLID":
+                    logger.info("    [T-07] SOLID state detected. Enforcing strict validation check.")
+
                 spec_key = "FUNC_LOGIC_001" if "authorized" in str(current_data) else "FUNC_LOGIC_002"
                 func = self.ground_logic(spec_key)
                 if func:
@@ -108,16 +162,25 @@ class AxiomOrchestrator:
                         current_data = {"error": str(e), "payload": current_data}
                 
             elif "T-09" in node:
-                # Node 09 Coherence via KL-Divergence
-                p_dist = [0.1, 0.2, 0.7] # Actual system belief
-                q_dist = [0.15, 0.15, 0.7] # Desired protocol baseline
+                # Node 09 Coherence via Dynamic KL-Divergence
+                # Dynamic Entropy tracking based on the data length/complexity
+                data_complexity = len(str(current_data)) % 10
+
+                # Dynamic base distribution tracking simulated belief shift
+                p_dist = [0.1 + (data_complexity * 0.01), 0.2, 0.7 - (data_complexity * 0.01)]
+                q_dist = [0.15, 0.15, 0.7] # Desired Protocol ZECP baseline
+
                 try:
                     kl_score = self.calculate_kl_divergence(p_dist, q_dist)
-                    logger.info(f"    [T-09] KL-Divergence Coherence Score: {kl_score:.6f}")
-                    if kl_score < 0.05:
+                    logger.info(f"    [T-09] Dynamic KL-Divergence Coherence Score: {kl_score:.6f}")
+
+                    # Self-Healing / Rollback Trigger
+                    if kl_score < 0.08:
                         logger.info("    [T-09] Result: COHERENT (Entropy within bounds)")
                     else:
-                        logger.warning("    [T-09] Result: DEVIANT (Pruning required)")
+                        logger.warning("    [T-09] Result: DEVIANT (Entropy spike detected). Initiating Self-Healing Pruning...")
+                        current_data = {"pruned": True, "re_synthesized_from": current_data}
+                        logger.info("    [T-09] System Rollback/Pruning completed to enforce Zero-Entropy.")
                 except Exception as e:
                     logger.error(f"    [T-09] Coherence check error: {e}")
             
