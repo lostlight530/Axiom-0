@@ -79,10 +79,15 @@ class AxiomMorphingEngine:
     def evaluate_morph(self, metrics: SystemMetrics) -> Optional[MorphState]:
         """[CN]: 评估变形需求。[EN]: Morphing necessity inference."""
         score = metrics.load_score
-        if score > self.thresholds[MorphTrigger.LOAD_THRESHOLD]:
-            return MorphState.LIQUID if self.current_state == MorphState.SOLID else MorphState.GAS
         if metrics.entropy_level > self.thresholds[MorphTrigger.ENTROPY_ALERT]:
-            return MorphState.PLASMA
+            return MorphState.PLASMA if self.current_state != MorphState.PLASMA else None
+        if score > self.thresholds[MorphTrigger.LOAD_THRESHOLD]:
+            if self.current_state == MorphState.SOLID:
+                return MorphState.LIQUID
+            elif self.current_state == MorphState.LIQUID:
+                return MorphState.GAS
+            else:
+                 return None
         if score < 0.3 and self.current_state != MorphState.SOLID:
             return MorphState.SOLID
         return None
