@@ -37,25 +37,9 @@ interface ProcessedData extends TrafficData {
 
 const rawData: TrafficData[] = [
   {
-    repo: "zero-entropy-lab",
-    period: "03/09-03/21",
-    clones: 760,
-    uniqueCloners: 270,
-    views: 520,
-    uniqueVisitors: 20,
-  },
-  {
-    repo: "zero-entropy-lab",
-    period: "03/21-04/02",
-    clones: 720,
-    uniqueCloners: 300,
-    views: 690,
-    uniqueVisitors: 80,
-  },
-  {
     repo: "welcome-to-github",
     period: "02/12-02/24",
-    clones: 1474,
+    clones: 1470,
     uniqueCloners: null,
     uniqueClonersLabel: "Peak not numerically specified",
     views: 2100,
@@ -63,28 +47,84 @@ const rawData: TrafficData[] = [
   },
   {
     repo: "welcome-to-github",
-    period: "02/23-03/07",
-    clones: 1540,
-    uniqueCloners: 370,
-    views: 2050,
-    uniqueVisitors: 21,
+    period: "03/02-03/15",
+    clones: 2160,
+    uniqueCloners: 460,
+    views: 2270,
+    uniqueVisitors: 30,
   },
   {
     repo: "welcome-to-github",
-    period: "03/09-03/21",
+    period: "03/09-03/22",
     clones: 1500,
     uniqueCloners: 350,
-    views: 1500,
+    views: 1450,
     uniqueVisitors: 60,
+  },
+  {
+    repo: "zero-entropy-lab",
+    period: "03/09-03/22",
+    clones: 770,
+    uniqueCloners: 270,
+    views: 520,
+    uniqueVisitors: 20,
   },
   {
     repo: "welcome-to-github",
     period: "03/21-04/02",
     clones: 910,
-    uniqueCloners: 290,
+    uniqueCloners: 280,
     views: 800,
     uniqueVisitors: 110,
   },
+  {
+    repo: "zero-entropy-lab",
+    period: "03/21-04/02",
+    clones: 720,
+    uniqueCloners: 290,
+    views: 690,
+    uniqueVisitors: 80,
+  },
+  {
+    repo: "welcome-to-github",
+    period: "03/31-04/12",
+    clones: 1310,
+    uniqueCloners: 410,
+    views: 1200,
+    uniqueVisitors: 90,
+  },
+  {
+    repo: "zero-entropy-lab",
+    period: "03/31-04/12",
+    clones: 580,
+    uniqueCloners: 230,
+    views: 870,
+    uniqueVisitors: 100,
+  },
+  {
+    repo: "welcome-to-github",
+    period: "04/13-04/26",
+    clones: 1450,
+    uniqueCloners: 510,
+    views: 690,
+    uniqueVisitors: 20,
+  },
+  {
+    repo: "zero-entropy-lab",
+    period: "04/13-04/26",
+    clones: 840,
+    uniqueCloners: 330,
+    views: 600,
+    uniqueVisitors: 20,
+  },
+  {
+    repo: "Axiom-0",
+    period: "04/13-04/26",
+    clones: 240,
+    uniqueCloners: 120,
+    views: 120,
+    uniqueVisitors: 4,
+  }
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -94,10 +134,11 @@ const data: ProcessedData[] = rawData.map((d) => ({
     d.uniqueCloners !== null && d.uniqueVisitors > 0
       ? Number((d.uniqueCloners / d.uniqueVisitors).toFixed(2))
       : null,
-  periodLabel: `${d.repo === "zero-entropy-lab" ? "[new]" : "[main]"} ${d.period}`,
+  periodLabel: `${d.repo === "Axiom-0" ? "[Axiom-0]" : d.repo === "zero-entropy-lab" ? "[new]" : "[main]"} ${d.period}`,
 }));
 
 const repoLabels: Record<string, string> = {
+  "Axiom-0": "Axiom-0",
   "zero-entropy-lab": "zero-entropy-lab",
   "welcome-to-github": "welcome-to-github",
 };
