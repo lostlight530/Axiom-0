@@ -41,7 +41,9 @@
 ---
 
 ## 4. 设计逻辑与调查研究 / Design Logic & Investigations (Research)
-> **[CN]**: 独立于核心标准的先导性研究、竞品调查与宏观架构思考。 / Exploratory research, competitor investigations, and macro-architectural thinking, separated from core standards.
+> **[CN]**: 独立于核心标准的先导性研究、竞品调查与宏观架构思考。证明对通用 Agent 理论的深刻理解。 / Exploratory research, competitor investigations, and macro-architectural thinking, proving deep domain expertise.
+- **[LLM 固有痛点剖析](./RESEARCH/llm-inherent-limitations-survey.md)**: 概率坍塌、状态缺失与因果逻辑缺陷。 / Inherent limitations of LLMs.
+- **[主流 Agent 框架演进](./RESEARCH/agent-frameworks-evolution.md)**: 从 ReAct 到反思代理的理论演进与工程局限。 / Evolution and limitations of mainstream agent frameworks.
 - **[2026 Q1 架构分歧研报](./RESEARCH/RPT-2026-Q1-AGENT-ARCHITECTURE.md)**: Zero-Entropy 路线与 API 缝合路线的客观对比。 / External view on Zero-Entropy vs API Wrapper paths.
 - **[代理编排](./RESEARCH/agent-orchestration.md)**: 编排模型调研与 Nexus 回溯。 / Orchestration survey.
 - **[复合 AI 系统](./RESEARCH/compound-ai-systems.md)**: 架构理论与实证研究。 / Compound AI research.
