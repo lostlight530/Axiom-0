@@ -247,22 +247,22 @@ export default function RepoTrafficVisualizationDashboard() {
   }, [filtered]);
 
   const comparisonData = useMemo(() => {
-    const latestNewRepo = data.find((d) => d.repo === "zero-entropy-lab" && d.period === "03/21-04/02");
-    const latestMainRepo = data.find((d) => d.repo === "welcome-to-github" && d.period === "03/21-04/02");
+    const period = "04/13-04/26";
+    const axiomRepo = data.find((d) => d.repo === "Axiom-0" && d.period === period);
+    const zeroRepo = data.find((d) => d.repo === "zero-entropy-lab" && d.period === period);
+    const mainRepo = data.find((d) => d.repo === "welcome-to-github" && d.period === period);
 
-    if (!latestNewRepo || !latestMainRepo) return [];
+    if (!axiomRepo || !zeroRepo || !mainRepo) return [];
 
     return [
       {
         label: "Latest window comparison",
-        newRepoClones: latestNewRepo.clones,
-        mainRepoClones: latestMainRepo.clones,
-        newRepoViews: latestNewRepo.views,
-        mainRepoViews: latestMainRepo.views,
-        newRepoUniqueCloners: latestNewRepo.uniqueCloners,
-        mainRepoUniqueCloners: latestMainRepo.uniqueCloners,
-        newRepoUniqueVisitors: latestNewRepo.uniqueVisitors,
-        mainRepoUniqueVisitors: latestMainRepo.uniqueVisitors,
+        axiomClones: axiomRepo.clones,
+        axiomViews: axiomRepo.views,
+        zeroClones: zeroRepo.clones,
+        zeroViews: zeroRepo.views,
+        mainClones: mainRepo.clones,
+        mainViews: mainRepo.views,
       },
     ];
   }, []);
@@ -462,10 +462,12 @@ export default function RepoTrafficVisualizationDashboard() {
                   <YAxis type="category" dataKey="label" tick={false} width={0} axisLine={false} />
                   <Tooltip content={<CustomChartTooltip />} cursor={{ fill: "rgba(79, 70, 229, 0.05)" }} />
                   <Legend iconType="circle" wrapperStyle={{ paddingTop: "10px" }} />
-                  <Bar dataKey="newRepoClones" name="zero-entropy-lab Clones" fill="#4f46e5" radius={[0, 6, 6, 0]} />
-                  <Bar dataKey="newRepoViews" name="zero-entropy-lab Views" fill="#c7d2fe" radius={[0, 6, 6, 0]} />
-                  <Bar dataKey="mainRepoClones" name="welcome-to-github Clones" fill="#10b981" radius={[0, 6, 6, 0]} />
-                  <Bar dataKey="mainRepoViews" name="welcome-to-github Views" fill="#a7f3d0" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="axiomClones" name="Axiom-0 Clones" fill="#0ea5e9" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="axiomViews" name="Axiom-0 Views" fill="#bae6fd" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="zeroClones" name="zero-entropy Clones" fill="#4f46e5" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="zeroViews" name="zero-entropy Views" fill="#c7d2fe" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="mainClones" name="welcome Clones" fill="#10b981" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="mainViews" name="welcome Views" fill="#a7f3d0" radius={[0, 6, 6, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
@@ -480,23 +482,23 @@ export default function RepoTrafficVisualizationDashboard() {
               <div className="space-y-4">
                 <Alert className="rounded-2xl bg-indigo-50 border-indigo-100 text-indigo-950">
                   <AlertTriangle className="h-4 w-4 text-indigo-700" aria-hidden="true" />
-                  <AlertTitle className="font-semibold text-indigo-800">The new repository exhibits unusually strong direct-clone behavior</AlertTitle>
+                  <AlertTitle className="font-semibold text-indigo-800">Anomalous Telemetry Convergence Detected</AlertTitle>
                   <AlertDescription className="text-indigo-800/90 leading-relaxed text-xs">
-                    zero-entropy-lab recorded Clone / View ratios of 1.46 and 1.04 across its first two windows, a rare pattern for a repository with no explicit promotion and limited surface visibility.
+                    A severe decoupling of view-to-clone correlation has been observed across the repository matrix. Recent metrics indicate a highly purified, deterministic traffic flow arriving at secondary nodes completely independent of traditional algorithmic discovery.
                   </AlertDescription>
                 </Alert>
 
                 <div className="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
-                  <p className="font-semibold text-slate-950 text-sm">Unique cloner growth outpaced the older main repository</p>
+                  <p className="font-semibold text-slate-950 text-sm">Spontaneous High-Density Execution Events</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In the latest comparable window, zero-entropy-lab reached 300 Unique Cloners, surpassing welcome-to-github at 290 despite being newer and less visible.
+                    During the 04/13-04/26 window, a previously dormant node (Axiom-0) registered an unprecedented 2.0 Clone-to-View ratio (240 clones / 120 views). This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent.
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
-                  <p className="font-semibold text-slate-950 text-sm">The traffic pattern resembles targeted pulling rather than casual browsing</p>
+                  <p className="font-semibold text-slate-950 text-sm">Verification of the Deterministic Funnel Hypothesis</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    With no explicit promotion and continued automated repository evolution, sustained clone intensity points toward deliberate repository pulls rather than ordinary page-level discovery.
+                    The 21-day chronological latency and 17-day asynchronous content gaps appear to have functioned as an involuntary cognitive filter. The audience bypasses the presentation layer entirely, treating the target repository purely as a raw extraction point.
                   </p>
                 </div>
 
