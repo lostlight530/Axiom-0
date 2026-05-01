@@ -36,95 +36,22 @@ interface ProcessedData extends TrafficData {
 }
 
 const rawData: TrafficData[] = [
-  {
-    repo: "welcome-to-github",
-    period: "02/12-02/24",
-    clones: 1470,
-    uniqueCloners: null,
-    uniqueClonersLabel: "Peak not numerically specified",
-    views: 2100,
-    uniqueVisitors: 6,
-  },
-  {
-    repo: "welcome-to-github",
-    period: "03/02-03/15",
-    clones: 2160,
-    uniqueCloners: 460,
-    views: 2270,
-    uniqueVisitors: 30,
-  },
-  {
-    repo: "welcome-to-github",
-    period: "03/09-03/22",
-    clones: 1500,
-    uniqueCloners: 350,
-    views: 1450,
-    uniqueVisitors: 60,
-  },
-  {
-    repo: "zero-entropy-lab",
-    period: "03/09-03/22",
-    clones: 770,
-    uniqueCloners: 270,
-    views: 520,
-    uniqueVisitors: 20,
-  },
-  {
-    repo: "welcome-to-github",
-    period: "03/21-04/02",
-    clones: 910,
-    uniqueCloners: 280,
-    views: 800,
-    uniqueVisitors: 110,
-  },
-  {
-    repo: "zero-entropy-lab",
-    period: "03/21-04/02",
-    clones: 720,
-    uniqueCloners: 290,
-    views: 690,
-    uniqueVisitors: 80,
-  },
-  {
-    repo: "welcome-to-github",
-    period: "03/31-04/12",
-    clones: 1310,
-    uniqueCloners: 410,
-    views: 1200,
-    uniqueVisitors: 90,
-  },
-  {
-    repo: "zero-entropy-lab",
-    period: "03/31-04/12",
-    clones: 580,
-    uniqueCloners: 230,
-    views: 870,
-    uniqueVisitors: 100,
-  },
-  {
-    repo: "welcome-to-github",
-    period: "04/13-04/26",
-    clones: 1450,
-    uniqueCloners: 510,
-    views: 690,
-    uniqueVisitors: 20,
-  },
-  {
-    repo: "zero-entropy-lab",
-    period: "04/13-04/26",
-    clones: 840,
-    uniqueCloners: 330,
-    views: 600,
-    uniqueVisitors: 20,
-  },
-  {
-    repo: "Axiom-0",
-    period: "04/13-04/26",
-    clones: 240,
-    uniqueCloners: 120,
-    views: 120,
-    uniqueVisitors: 4,
-  }
+  // welcome-to-github
+  { repo: "welcome-to-github", period: "02/24", clones: 1470, uniqueCloners: 530, views: 2100, uniqueVisitors: 30 },
+  { repo: "welcome-to-github", period: "03/07", clones: 1540, uniqueCloners: 370, views: 2050, uniqueVisitors: 20 },
+  { repo: "welcome-to-github", period: "03/21", clones: 1500, uniqueCloners: 350, views: 1500, uniqueVisitors: 60 },
+  { repo: "welcome-to-github", period: "04/02", clones: 910, uniqueCloners: 290, views: 800, uniqueVisitors: 110 },
+  { repo: "welcome-to-github", period: "04/18", clones: 1050, uniqueCloners: 300, views: 960, uniqueVisitors: 70 },
+  { repo: "welcome-to-github", period: "04/29", clones: 1900, uniqueCloners: 610, views: 620, uniqueVisitors: 20 },
+
+  // zero-entropy-lab
+  { repo: "zero-entropy-lab", period: "03/21", clones: 760, uniqueCloners: 270, views: 520, uniqueVisitors: 20 },
+  { repo: "zero-entropy-lab", period: "04/02", clones: 720, uniqueCloners: 300, views: 690, uniqueVisitors: 80 },
+  { repo: "zero-entropy-lab", period: "04/12", clones: 580, uniqueCloners: 230, views: 870, uniqueVisitors: 100 },
+  { repo: "zero-entropy-lab", period: "04/29", clones: 1010, uniqueCloners: 350, views: 540, uniqueVisitors: 20 },
+
+  // Axiom-0
+  { repo: "Axiom-0", period: "04/29", clones: 370, uniqueCloners: 170, views: 100, uniqueVisitors: 10 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -247,7 +174,7 @@ export default function RepoTrafficVisualizationDashboard() {
   }, [filtered]);
 
   const comparisonData = useMemo(() => {
-    const period = "04/13-04/26";
+    const period = "04/29";
     const axiomRepo = data.find((d) => d.repo === "Axiom-0" && d.period === period);
     const zeroRepo = data.find((d) => d.repo === "zero-entropy-lab" && d.period === period);
     const mainRepo = data.find((d) => d.repo === "welcome-to-github" && d.period === period);
@@ -491,7 +418,7 @@ export default function RepoTrafficVisualizationDashboard() {
                 <div className="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
                   <p className="font-semibold text-slate-950 text-sm">Spontaneous High-Density Execution Events</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    During the 04/13-04/26 window, a previously dormant node (Axiom-0) registered an unprecedented 2.0 Clone-to-View ratio (240 clones / 120 views). This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent.
+                    During the 04/29 window, a previously dormant node (Axiom-0) registered an unprecedented high Clone-to-View ratio. This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent.
                   </p>
                 </div>
 
@@ -505,7 +432,7 @@ export default function RepoTrafficVisualizationDashboard() {
                 <div className="rounded-xl border border-slate-200/80 p-4 bg-white space-y-1.5 border-dashed">
                   <p className="text-xs font-medium text-slate-600">Method note</p>
                   <p className="text-[11px] text-slate-500 leading-relaxed">
-                    The 02/12-02/24 Unique Cloners value for welcome-to-github was reported only as a peak rather than an exact number, so it was excluded from numerical aggregation.
+                    我们去重+去除个人访问个位数据，抛弃了10多个零散的数据
                   </p>
                 </div>
               </div>
