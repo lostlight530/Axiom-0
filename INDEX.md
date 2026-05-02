@@ -65,6 +65,10 @@
 
 ## 4. 设计逻辑与调查研究 / Design Logic & Investigations (Research)
 > **[CN]**: 独立于核心标准的先导性研究、竞品调查与宏观架构思考。证明对通用 Agent 理论的深刻理解。 / Exploratory research, competitor investigations, and macro-architectural thinking, proving deep domain expertise.
+- **[CN]**: **[测试期计算扩展与集体强化搜索](./RESEARCH/daily/2026-05-02-test-time-compute-verification.md)**: 外部化物理验证的调研。 / TTC Scaling.
+  - **[EN]**: **[Test-Time Compute Scaling and Collective Search](./RESEARCH/daily/2026-05-02-test-time-compute-verification.md)**: Research on externalized physical verification. / TTC Scaling.
+- **[CN]**: **[复合 AI 系统演进式编排](./RESEARCH/daily/2026-05-02-complex-agent-architectures-update.md)**: 业界最新通信协议与中心化调度架构的零熵脱水。 / Evolving Orchestration.
+  - **[EN]**: **[Evolving Orchestration in Compound AI Systems](./RESEARCH/daily/2026-05-02-complex-agent-architectures-update.md)**: Zero-entropy dehydration of the latest communication protocols and centralized scheduling architectures. / Evolving Orchestration.
 - **[CN]**: **[LLM 固有痛点剖析](./RESEARCH/llm-inherent-limitations-survey.md)**: 概率坍塌、状态缺失与因果逻辑缺陷。 / Inherent limitations of LLMs.
   - **[EN]**: **[Analysis of LLM inherent pain points](./RESEARCH/llm-inherent-limitations-survey.md)**: Probability collapse, missing state and causal logic flaws. / Inherent limitations of LLMs.
 - **[CN]**: **[主流 Agent 框架演进](./RESEARCH/agent-frameworks-evolution.md)**: 从 ReAct 到反思代理的理论演进与工程局限。 / Evolution and limitations of mainstream agent frameworks.
