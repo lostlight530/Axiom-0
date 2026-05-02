@@ -1,7 +1,8 @@
 # ADR-069 Repo Knowledge Stratification
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,14 +10,14 @@
 - **[CN]**: 范围：存储库知识架构
   - **[EN]**: Scope: repository knowledge architecture
 
-## Context
+## 背景 / Context
 
 > **[CN]**: 当前仓库已经具备多层目录
 > **[EN]**: The current warehouse already has multi-level directories
 > **[CN]**: 但新增上下文如果没有清晰分层 容易在 `METHODOLOGY` `RESEARCH` `ADR` `CODE` 之间相互污染
 > **[EN]**: However, if the new context is not clearly layered, it is easy to contaminate each other among `METHODOLOGY` `RESEARCH` `ADR` and `CODE`
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 强制采用五层知识分层
 > **[EN]**: Mandatory adoption of five layers of knowledge stratification

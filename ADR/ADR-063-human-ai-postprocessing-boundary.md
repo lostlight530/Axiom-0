@@ -1,7 +1,8 @@
 # ADR-063 Human AI Postprocessing Boundary
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,7 +10,7 @@
 - **[CN]**: 范围：Axiom-0 工作流治理
   - **[EN]**: Scope: Axiom-0 workflow governance
 
-## Context
+## 背景 / Context
 
 > **[CN]**: 当前工作流并不追求第一步就得到保守的可引用报告
 > **[EN]**: Current workflows do not pursue conservative, citable reports as a first step
@@ -18,7 +19,7 @@
 > **[CN]**: 这意味着生成层与定型层必须明确分开
 > **[EN]**: This means that the generation layer must be clearly separated from the training layer
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 采用双相工作流
 > **[EN]**: Adopt a biphasic workflow

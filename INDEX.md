@@ -23,6 +23,8 @@
   - **[EN]**: **[Absolute physical separation of LLM and Agent](./METHODOLOGY/llm-agent-decoupling-theory.md)**: Explain the underlying separation theory of the model as a "probabilistic spark plug" and the Agent as a "deterministic operating system". / The decoupled theory of LLMs and Agents.
 - **[CN]**: **[10节点认知流](./METHODOLOGY/10-node-cognitive-flow.md)**: 工业级 10-node 流程定义。 / 10-Node Continuum Cycle.
   - **[EN]**: **[10-node cognitive flow](./METHODOLOGY/10-node-cognitive-flow.md)**: Industrial-grade 10-node process definition. / 10-Node Continuum Cycle.
+- **[CN]**: **[测试期验证的外循环](./METHODOLOGY/test-time-verification-loop.md)**: 将计算扩展物理化。 / Deterministic Outer Loop.
+  - **[EN]**: **[Deterministic Outer Loop for Test-Time Verification](./METHODOLOGY/test-time-verification-loop.md)**: Physicalizing compute scaling. / Deterministic Outer Loop.
 - **[CN]**: **[零熵原则](./METHODOLOGY/zero-entropy-principles.md)**: Axiom-0 的核心设计哲学。 / Zero-Entropy Axioms.
   - **[EN]**: **[Zero-Entropy Principles](./METHODOLOGY/zero-entropy-principles.md)**: The core design philosophy of Axiom-0. / Zero-Entropy Axioms.
 
@@ -54,6 +56,8 @@
   - **[EN]**: **[ADR-042: HASH self-healing](./ADR/ADR-042-hardware-aware-self-healing.md)**: Hardware-aware redundancy self-healing. / Self-Healing.
 - **[CN]**: **[ADR-055: 边缘部署](./ADR/ADR-055-edge-deployment.md)**: 异构终端部署模式。 / Edge Tiers.
   - **[EN]**: **[ADR-055: Edge Deployment](./ADR/ADR-055-edge-deployment.md)**: Heterogeneous terminal deployment mode. /Edge Tiers.
+- **[CN]**: **[ADR-080: 测试期反射变形](./ADR/ADR-080-test-time-reflective-morphing.md)**: 集体验证与变形机制。 / Reflective Morphing.
+  - **[EN]**: **[ADR-080: Test-Time Reflective Morphing](./ADR/ADR-080-test-time-reflective-morphing.md)**: Collective verification and morphing mechanism. / Reflective Morphing.
 - **[CN]**: **[ADR-060: DCA 对齐](./ADR/ADR-060-deep-cognitive-alignment.md)**: 深度认知对齐协议。 / Alignment.
   - **[EN]**: **[ADR-060: DCA Alignment](./ADR/ADR-060-deep-cognitive-alignment.md)**: Deep cognitive alignment protocol. /Alignment.
 
@@ -61,6 +65,10 @@
 
 ## 4. 设计逻辑与调查研究 / Design Logic & Investigations (Research)
 > **[CN]**: 独立于核心标准的先导性研究、竞品调查与宏观架构思考。证明对通用 Agent 理论的深刻理解。 / Exploratory research, competitor investigations, and macro-architectural thinking, proving deep domain expertise.
+- **[CN]**: **[测试期计算扩展与集体强化搜索](./RESEARCH/daily/2026-05-02-test-time-compute-verification.md)**: 外部化物理验证的调研。 / TTC Scaling.
+  - **[EN]**: **[Test-Time Compute Scaling and Collective Search](./RESEARCH/daily/2026-05-02-test-time-compute-verification.md)**: Research on externalized physical verification. / TTC Scaling.
+- **[CN]**: **[复合 AI 系统演进式编排](./RESEARCH/daily/2026-05-02-complex-agent-architectures-update.md)**: 业界最新通信协议与中心化调度架构的零熵脱水。 / Evolving Orchestration.
+  - **[EN]**: **[Evolving Orchestration in Compound AI Systems](./RESEARCH/daily/2026-05-02-complex-agent-architectures-update.md)**: Zero-entropy dehydration of the latest communication protocols and centralized scheduling architectures. / Evolving Orchestration.
 - **[CN]**: **[LLM 固有痛点剖析](./RESEARCH/llm-inherent-limitations-survey.md)**: 概率坍塌、状态缺失与因果逻辑缺陷。 / Inherent limitations of LLMs.
   - **[EN]**: **[Analysis of LLM inherent pain points](./RESEARCH/llm-inherent-limitations-survey.md)**: Probability collapse, missing state and causal logic flaws. / Inherent limitations of LLMs.
 - **[CN]**: **[主流 Agent 框架演进](./RESEARCH/agent-frameworks-evolution.md)**: 从 ReAct 到反思代理的理论演进与工程局限。 / Evolution and limitations of mainstream agent frameworks.

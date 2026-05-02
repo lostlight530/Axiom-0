@@ -1,7 +1,8 @@
 # ADR-066 Research to ADR Distillation
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,7 +10,7 @@
 - **[CN]**: 范围：知识库知识提升
   - **[EN]**: Scope: repository knowledge elevation
 
-## Context
+## 背景 / Context
 
 > **[CN]**: 日度研究产物更新频率高
 > **[EN]**: Daily research products are updated frequently
@@ -18,7 +19,7 @@
 > **[CN]**: 需要明确哪些结论可以升级为架构决策
 > **[EN]**: It is necessary to clarify which conclusions can be upgraded to architectural decisions
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 只有满足以下条件的内容才可以进入 ADR
 > **[EN]**: Only content that meets the following conditions can enter ADR
