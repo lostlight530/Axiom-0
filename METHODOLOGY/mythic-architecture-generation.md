@@ -71,3 +71,7 @@ Reality Signal
   - **[EN]**: Myth is a high-pressure intermediate state
 - **[CN]**: 最终定稿前必须经过后处理
   - **[EN]**: Must undergo post-processing before finalization
+
+## Axiom-0 ZECP Integration
+> **[CN]**: 神话生成并非随意幻想，它必须在 ZECP 的 T-10 (Synthesis) 节点被严格脱水，转化为确定性的架构决策。
+> **[EN]**: Mythic generation is not free-form hallucination; it must be rigorously dehydrated at the ZECP T-10 (Synthesis) node into deterministic architectural decisions.

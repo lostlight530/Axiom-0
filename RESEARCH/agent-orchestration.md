@@ -7,6 +7,10 @@
 > 
 > **[EN]**: Agent orchestration is the discipline of coordinating multi-agent systems to achieve collective goals. This survey evaluates existing taxonomies and establishes the Axiom-0 Federated Continuum as the benchmark for industrial-grade compound AI.
 
+
+## 证据等级 / Evidence Status
+**[REAL]** (Industry-wide research consensus & ZECP Empirical validation)
+
 ---
 
 ## 1. 编排分类 / Orchestration Taxonomy

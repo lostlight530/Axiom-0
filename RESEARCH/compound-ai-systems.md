@@ -7,6 +7,10 @@
 > 
 > **[EN]**: This research validates the "Compound AI Hypothesis"—that orchestrated ensembles of specialized models consistently outperform monolithic systems. The Axiom-0 continuum provides the implementation framework (ZECP) for these architectural findings.
 
+
+## 证据等级 / Evidence Status
+**[REAL]** (Industry-wide research consensus & ZECP Empirical validation)
+
 ---
 
 ## 1. 复合 AI 假设 / The Hypothesis

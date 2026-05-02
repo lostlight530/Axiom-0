@@ -55,3 +55,7 @@ Research note
 > **[EN]**: Do supercharging again
 > **[CN]**: 最后再脱水
 > **[EN]**: Finally, dehydrate
+
+## 0-Entropy Constraints
+> **[CN]**: 现实锚点的选取标准必须满足零熵（0-Entropy）原则，即无冗余、无黑盒。
+> **[EN]**: The selection criteria for reality anchors must strictly adhere to the Zero-Entropy (0-Entropy) principle: no redundancy, no opacity.

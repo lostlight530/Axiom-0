@@ -1,7 +1,8 @@
 # ADR-068 Index Synchronization and Navigation Contract
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,14 +10,14 @@
 - **[CN]**: 范围：存储库导航
   - **[EN]**: Scope: repository navigation
 
-## Context
+## 背景 / Context
 
 > **[CN]**: Axiom-0 已经把 `INDEX.md` 放在全局入口位置
 > **[EN]**: Axiom-0 has placed `INDEX.md` in the global entry location
 > **[CN]**: 如果新增文件而不同步索引 仓库很快会失去可导航性
 > **[EN]**: If you add files without synchronizing the index, the warehouse will quickly lose navigability.
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 以下类型的新增内容必须同步更新 `INDEX.md`
 > **[EN]**: The following types of new content must be updated simultaneously in `INDEX.md`

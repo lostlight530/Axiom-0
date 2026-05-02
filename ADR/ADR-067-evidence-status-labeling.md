@@ -1,7 +1,8 @@
 # ADR-067 Evidence Status Labeling
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,7 +10,7 @@
 - **[CN]**: 范围：内容分类
   - **[EN]**: Scope: content classification
 
-## Context
+## 背景 / Context
 
 > **[CN]**: Axiom-0 明确允许神话生成
 > **[EN]**: Axiom-0 explicitly allows myth generation
@@ -18,7 +19,7 @@
 > **[CN]**: 需要一个最低限度的证据状态标签系统
 > **[EN]**: A minimal evidence status labeling system is needed
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 统一采用四类标签
 > **[EN]**: Unified use of four types of labels

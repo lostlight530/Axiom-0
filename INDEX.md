@@ -23,6 +23,8 @@
   - **[EN]**: **[Absolute physical separation of LLM and Agent](./METHODOLOGY/llm-agent-decoupling-theory.md)**: Explain the underlying separation theory of the model as a "probabilistic spark plug" and the Agent as a "deterministic operating system". / The decoupled theory of LLMs and Agents.
 - **[CN]**: **[10节点认知流](./METHODOLOGY/10-node-cognitive-flow.md)**: 工业级 10-node 流程定义。 / 10-Node Continuum Cycle.
   - **[EN]**: **[10-node cognitive flow](./METHODOLOGY/10-node-cognitive-flow.md)**: Industrial-grade 10-node process definition. / 10-Node Continuum Cycle.
+- **[CN]**: **[测试期验证的外循环](./METHODOLOGY/test-time-verification-loop.md)**: 将计算扩展物理化。 / Deterministic Outer Loop.
+  - **[EN]**: **[Deterministic Outer Loop for Test-Time Verification](./METHODOLOGY/test-time-verification-loop.md)**: Physicalizing compute scaling. / Deterministic Outer Loop.
 - **[CN]**: **[零熵原则](./METHODOLOGY/zero-entropy-principles.md)**: Axiom-0 的核心设计哲学。 / Zero-Entropy Axioms.
   - **[EN]**: **[Zero-Entropy Principles](./METHODOLOGY/zero-entropy-principles.md)**: The core design philosophy of Axiom-0. / Zero-Entropy Axioms.
 
@@ -54,6 +56,8 @@
   - **[EN]**: **[ADR-042: HASH self-healing](./ADR/ADR-042-hardware-aware-self-healing.md)**: Hardware-aware redundancy self-healing. / Self-Healing.
 - **[CN]**: **[ADR-055: 边缘部署](./ADR/ADR-055-edge-deployment.md)**: 异构终端部署模式。 / Edge Tiers.
   - **[EN]**: **[ADR-055: Edge Deployment](./ADR/ADR-055-edge-deployment.md)**: Heterogeneous terminal deployment mode. /Edge Tiers.
+- **[CN]**: **[ADR-080: 测试期反射变形](./ADR/ADR-080-test-time-reflective-morphing.md)**: 集体验证与变形机制。 / Reflective Morphing.
+  - **[EN]**: **[ADR-080: Test-Time Reflective Morphing](./ADR/ADR-080-test-time-reflective-morphing.md)**: Collective verification and morphing mechanism. / Reflective Morphing.
 - **[CN]**: **[ADR-060: DCA 对齐](./ADR/ADR-060-deep-cognitive-alignment.md)**: 深度认知对齐协议。 / Alignment.
   - **[EN]**: **[ADR-060: DCA Alignment](./ADR/ADR-060-deep-cognitive-alignment.md)**: Deep cognitive alignment protocol. /Alignment.
 
