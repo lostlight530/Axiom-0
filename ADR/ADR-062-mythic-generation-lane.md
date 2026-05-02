@@ -1,7 +1,8 @@
 # ADR-062 Mythic Generation Lane
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,7 +10,7 @@
 - **[CN]**: 范围：Axiom-0 方法论和上游构思
   - **[EN]**: Scope: Axiom-0 methodology and upstream ideation
 
-## Context
+## 背景 / Context
 
 > **[CN]**: Axiom-0 的上游并不是传统严谨情报系统
 > **[EN]**: The upstream of Axiom-0 is not a traditional rigorous intelligence system
@@ -18,7 +19,7 @@
 > **[CN]**: 当前 Gemini 自动化流程的真实目标 是以现实技术脉络为燃料 生成可命名 可结构化 可继续演化的架构神话
 > **[EN]**: The real goal of the current Gemini automation process is to use real technology context as fuel to generate an architectural myth that can be named, structured, and can continue to evolve.
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 正式承认 `Mythic Generation Lane` 为 Axiom-0 的合法上游通道
 > **[EN]**: Officially recognize `Mythic Generation Lane` as the legal upstream channel of Axiom-0

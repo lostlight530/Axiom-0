@@ -66,3 +66,7 @@
 > **[EN]**: After post-processing is completed
 > **[CN]**: 仓库获得的是稳定资产 而不是聊天沉淀物
 > **[EN]**: The warehouse obtains stable assets rather than chat sediment.
+
+## Infrastructure Mapping
+> **[CN]**: 所有的脱水后产物必须通过无锁单写者队列写入 SQLite，并使用 Merkle Chain 签名以确保 0-Opacity。
+> **[EN]**: All dehydrated artifacts must be written to SQLite via the lock-free single-writer queue and signed using a Merkle Chain to ensure 0-Opacity.

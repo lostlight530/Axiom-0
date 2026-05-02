@@ -1,4 +1,4 @@
-# ADR-080: 测试时计算与反思代理的结合 / ADR-080: Test-Time Compute and Reflective Agent Integration
+# ADR-080: 测试期反射性结构变形 / ADR-080: Test-Time Reflective Morphing
 
 ---
 
@@ -8,40 +8,38 @@
 ---
 
 ## 背景 / Context
-> **[CN]**: 随着 2026 年测试时计算（Test-Time Compute）和反思代理架构的兴起，单次前向传递已无法满足复杂的认知需求。Axiom-0 需要在不破坏零熵原则的前提下，动态调整模型的推理深度，允许其在执行复杂任务时投入额外的计算资源进行自我反思、纠错和工具调用规划。
+> **[CN]**: 随着基于强化学习的深层推理（如 o1, DeepSeek-R1）证明了 Test-Time Compute (TTC) 的价值，Axiom-0 需要将这种“思考时间的拉长”转化为确定性的系统级机制，而不是依赖模型内部的黑盒概率输出。集体树搜索（CoMCTS）提供了极佳的理论支撑。
 >
-> **[EN]**: With the rise of test-time compute scaling and reflective agent architectures in 2026, single-pass forward propagation is insufficient for complex cognitive tasks. Axiom-0 must dynamically scale its inference depth without violating the zero-entropy principles, allowing the allocation of additional compute for self-reflection, error-correction, and strategic tool-use planning during complex tasks.
+> **[EN]**: As RL-based deep reasoning (e.g., o1, DeepSeek-R1) proves the value of Test-Time Compute (TTC), Axiom-0 must translate this "elongated thinking time" into a deterministic, system-level mechanism rather than relying on internal black-box probabilistic outputs. Collective Tree Search (CoMCTS) provides an excellent theoretical foundation.
 
 ---
 
 ## 决策 / Decision
-> **[CN]**: 在 Axiom-0 的编排层中引入“动态反思深度（Dynamic Reflection Depth）”机制，并与系统现有的结构变形（Structural Morphing）引擎解耦与联动。当系统处于较高负载或复杂状态（如液态或气态）时，不仅扩展节点，同时在节点内部延长推理循环，利用自我批评（Self-Critique）和过程奖励模型（Process Reward Models）保证输出的绝对正确性。
+> **[CN]**: 在 ZECP 的 T-04 (Morphing) 和 T-06 (Verification) 节点之间，引入**反射性结构变形 (Reflective Morphing)** 机制。当检测到高难度计算任务时，调度层必须主动剥离出至少 3 个独立的 Validator 线程执行集体验证（类似于 CoMCTS 的并行展开），并在 SQLite 队列中合并达成零熵共识。
 >
-> **[EN]**: Introduce a "Dynamic Reflection Depth" mechanism within Axiom-0's orchestration plane, tightly coupled with the existing Structural Morphing engine. When the system operates under high cognitive load or complexity (e.g., LIQUID or GAS states), it scales not only structurally but also extends the internal inference loops. This enables iterative self-critique and leverages process reward models to guarantee deterministic output accuracy.
+> **[EN]**: Introduce a **Reflective Morphing** mechanism between the T-04 and T-06 nodes of the ZECP. Upon detecting high-complexity computational tasks, the orchestration layer must actively spawn at least 3 isolated Validator threads for collective verification (paralleling CoMCTS expansion). Consensus must be achieved deterministically within the lock-free SQLite queue to maintain Zero-Entropy.
 
 ---
 
-## 架构层级 / Architectural Enhancements
-
-### 1. 测试时推演 (Test-Time Deliberation)
-- **[CN]**: 在 T-06 分析与 T-07 锚定阶段之间，加入基于反思的动态循环。允许 AI 进行多步假设验证，而非一次生成。
-- **[EN]**: Insert a dynamic reflection loop between T-06 Analysis and T-07 Grounding. Allows the AI to perform multi-step hypothesis verification instead of single-pass generation.
-
-### 2. 反思内存与过程监控 (Reflective Memory & Process Monitoring)
-- **[CN]**: 利用上下文工程与外部向量/文件缓存（如专用的反思内存分片），持续追踪系统的内部状态，避免在延长推理中产生熵增（幻觉）。
-- **[EN]**: Utilize context engineering and external vector/file caches (e.g., dedicated reflection memory shards) to persistently track the system's internal state, preventing entropy inflation (hallucinations) during extended reasoning.
+## 架构约束 / Architectural Constraints
+- **[CN]**: **硬核分叉 (Hard Forking)**: 验证树的展开不得依靠提示词工程。系统必须直接在内存空间中通过 `multiprocessing` 派生（fork）独立的验证环境。
+  - **[EN]**: **Hard Forking**: The expansion of the verification tree must not rely on prompt engineering. The system must directly fork independent verification environments in memory space via `multiprocessing`.
+- **[CN]**: **状态记录 (State Auditing)**: 所有被验证推翻的“错误路径”不得直接丢弃，必须以 `[REJECTED]` 标签写入数据库，供下一次周期的 T-08 (Pruning) 分析。
+  - **[EN]**: **State Auditing**: All "error paths" overturned by verification must not be discarded directly. They must be written to the database with a `[REJECTED]` tag for T-08 (Pruning) analysis in the next cycle.
 
 ---
 
 ## 后果 / Consequences
 
 ### 正面影响 (Positive)
-- **显著提升认知能力**: 赋予模型在关键任务上“深思熟虑”的能力，达到接近人类专家的纠错水平。 / Significantly boosts cognitive capabilities, granting models the ability to "think deeper" and achieve expert-level self-correction.
-- **与形态变化的完美协同**: 充分利用了气态和液态下的计算资源突发，使资源利用率最大化。 / Perfect synergy with morphing states, maximizing resource utilization during compute bursts in GAS and LIQUID modes.
+- **[CN]**: 将黑盒中的“顿悟时刻（Aha Moment）”变成了具有密码学签名的确定性工作流。
+  - **[EN]**: Transforms the black-box "Aha Moment" into a cryptographically signed, deterministic workflow.
+- **[CN]**: 充分利用了 ADR-007 的无锁网关能力处理高并发验证。
+  - **[EN]**: Fully leverages the ADR-007 lock-free gateway for high-concurrency validation.
 
 ### 负面影响 (Negative)
-- **延迟增加**: 测试时计算直接导致推理延迟显著增加。 / Test-time compute directly leads to a significant increase in inference latency.
-- **计算成本飙升**: 多步反思和过程奖励评估会大幅推高 API 或硬件的消耗。 / Multi-step reflection and process reward evaluation drastically drive up API or hardware consumption.
+- **[CN]**: 显著增加了瞬时 CPU 和内存的突发占用（Burst Load）。
+  - **[EN]**: Significantly increases transient burst load on CPU and memory.
 
 ---
 *"Build it Brutally, Run it Deterministically"*

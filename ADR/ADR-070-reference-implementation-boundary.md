@@ -1,7 +1,8 @@
 # ADR-070 Reference Implementation Boundary
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,7 +10,7 @@
 - **[CN]**: 适用范围：代码层定位
   - **[EN]**: Scope: code layer positioning
 
-## Context
+## 背景 / Context
 
 > **[CN]**: Axiom-0 当前代码层已经被公开描述为 `Reference Implementation`
 > **[EN]**: The current code layer of Axiom-0 has been publicly described as `Reference Implementation`
@@ -18,7 +19,7 @@
 > **[CN]**: 而不是一次性吞下全部世界观
 > **[EN]**: Instead of swallowing the entire world view at once
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: 保持 `CODE/` 目录的 reference implementation 定位
 > **[EN]**: Keep the reference implementation located in the `CODE/` directory

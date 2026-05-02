@@ -1,7 +1,8 @@
 # ADR-061 Context Ingestion and Canonicalization
 
-- **[CN]**: 状态：已接受
-  - **[EN]**: Status: Accepted
+## 状态 / Status
+**已采纳 (Accepted)**
+
 - **[CN]**: 日期：2026-04-18
   - **[EN]**: Date: 2026-04-18
 - **[CN]**: 决策者：lostlight530 + AI副驾驶
@@ -9,7 +10,7 @@
 - **[CN]**: 范围：Axiom-0 存储库治理
   - **[EN]**: Scope: Axiom-0 repository governance
 
-## Context
+## 背景 / Context
 
 > **[CN]**: Axiom-0 已经具备 `ADR` `AUTOMATION` `METHODOLOGY` `RESEARCH` `CODE` 的分层骨架
 > **[EN]**: Axiom-0 already has the layered skeleton of `ADR` `AUTOMATION` `METHODOLOGY` `RESEARCH` `CODE`
@@ -18,7 +19,7 @@
 > **[CN]**: 如果把原始聊天记录直接塞进仓库 会同时引入高噪声 弱索引与低可维护性
 > **[EN]**: If you put the original chat records directly into the warehouse, it will introduce high noise, weak indexing and low maintainability at the same time.
 
-## Decision
+## 决策 / Decision
 
 > **[CN]**: Axiom-0 不直接吸收原始对话文本
 > **[EN]**: Axiom-0 does not directly absorb the original dialogue text
