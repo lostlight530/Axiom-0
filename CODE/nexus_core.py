@@ -175,12 +175,13 @@ class AxiomOrchestrator:
                     logger.info(f"    [T-09] Dynamic KL-Divergence Coherence Score: {kl_score:.6f}")
 
                     # Self-Healing / Rollback Trigger
-                    if kl_score < 0.08:
+                    if kl_score <= 0.05:
                         logger.info("    [T-09] Result: COHERENT (Entropy within bounds)")
                     else:
                         logger.warning("    [T-09] Result: DEVIANT (Entropy spike detected). Initiating Self-Healing Pruning...")
                         current_data = {"pruned": True, "re_synthesized_from": current_data}
                         logger.info("    [T-09] System Rollback/Pruning completed to enforce Zero-Entropy.")
+                        raise RuntimeError("ZECP Violation: Entropy spike detected (KL > 0.05)")
                 except Exception as e:
                     logger.error(f"    [T-09] Coherence check error: {e}")
             
