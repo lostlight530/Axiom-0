@@ -1,161 +1,141 @@
-# Nexus Cognitive Protocol - Sample 10-Node Automation Schedule
-# This configuration demonstrates the daily cognitive cycle implementation
-# Placeholder values are used to ensure zero-knowledge leakage.
+# Axiom-0 ZECP - 10-Node Cognitive Continuum Schedule
+# This configuration implements the rigorous, zero-entropy 10-Node DAG pipeline.
+# Executed daily to maintain the system's deterministic state.
 
 meta:
-  protocol: "nexus-cognitive-flow"
+  protocol: "axiom-0-zecp"
   timezone: "UTC"
-  entropy_target: "zero"
+  entropy_target: 0.0
 
 schedule:
-  # Node 1: Morning Awakening
-  - id: "node-01"
-    name: "Morning Awakening"
-    trigger:
-      type: "cron"
-      expression: "0 8 * * *"
-    actions:
-      - type: "frontier_scan"
-        sources:
-          - "generic-research-portal"
-          - "example-code-repository"
-          - "standard-tech-feeds"
-        filters:
-          keywords: ["architecture", "systems", "automation"]
-          max_age: "24h"
-      - type: "pattern_extraction"
-        output: "daily_insights"
-    output_format: "minimal"
-    language_constraint: "no_chinese_period"
-
-  # Node 2: Deep Research
-  - id: "node-02"
-    name: "Deep Research"
-    trigger:
-      type: "interval"
-      after: "node-01"
-      delay: "30m"
-    actions:
-      - type: "knowledge_expansion"
-        depth: 3
-        breadth: 5
-      - type: "cross_reference"
-        sources: ["internal_archive", "public_documentation"]
-      - type: "insight_synthesis"
-    dependencies: ["node-01"]
-
-  # Node 3: Protocol Design
-  - id: "node-03"
-    name: "Protocol Design"
-    trigger:
-      type: "interval"
-      after: "node-02"
-      delay: "1h"
-    actions:
-      - type: "adr_draft"
-        template: "standard-adr"
-      - type: "specification_update"
-        target: "SPECIFICATION.md"
-    dependencies: ["node-02"]
-
-  # Node 4: Implementation Phase
-  - id: "node-04"
-    name: "Code Implementation"
-    trigger:
-      type: "interval"
-      after: "node-03"
-      delay: "30m"
-    actions:
-      - type: "code_generation"
-        language: "agnostic"
-      - type: "consistency_check"
-    dependencies: ["node-03"]
-
-  # Node 5: Verification Loop
-  - id: "node-05"
-    name: "Automated Verification"
-    trigger:
-      type: "interval"
-      after: "node-04"
-      delay: "15m"
-    actions:
-      - type: "static_analysis"
-      - type: "unit_test_sim"
-    dependencies: ["node-04"]
-
-  # Node 6: State Synchronization
-  - id: "node-06"
-    name: "State Convergence"
-    trigger:
-      type: "interval"
-      after: "node-05"
-      delay: "45m"
-    actions:
-      - type: "graph_sync"
-      - type: "integrity_check"
-    dependencies: ["node-05"]
-
-  # Node 7: Logic Mapping
-  - id: "node-07"
-    name: "Logic Mapping"
-    trigger:
-      type: "interval"
-      after: "node-06"
-      delay: "30m"
-    actions:
-      - type: "theoretical_mapping"
-    dependencies: ["node-06"]
-
-  # Node 8: Conflict Detection
-  - id: "node-08"
-    name: "Adversarial Testing"
-    trigger:
-      type: "interval"
-      after: "node-07"
-      delay: "1h"
-    actions:
-      - type: "edge_case_simulation"
-    dependencies: ["node-07"]
-
-  # Node 9: Deep Cognitive Alignment
-  - id: "node-09"
-    name: "Cognitive Alignment"
-    trigger:
-      type: "cron"
-      expression: "0 23 * * *"
-    actions:
-      - type: "alignment_check"
-        protocol: "ADR-060"
-        verification_depth: "full"
-      - type: "entropy_pruning"
-    dependencies: ["node-01", "node-02", "node-03", "node-04", "node-05", "node-06", "node-07", "node-08"]
-
-  # Node 10: Global Convergence
-  - id: "node-10"
-    name: "Final Synthesis"
+  # T-01: Information Dehydration - Ingestion
+  - id: "T-01"
+    name: "Ingestion"
     trigger:
       type: "cron"
       expression: "0 0 * * *"
     actions:
-      - type: "daily_export"
-        format: "summary"
-    dependencies: ["node-09"]
+      - type: "bare_metal_fetch"
+        protocols: ["http", "git-delta"]
+        targets:
+          - "frontier_research_journals"
+          - "axiom_repo_diff"
+      - type: "dehydration_pipeline"
+        output_format: "binary_ast_or_json_schema"
+    dependencies: []
+
+  # T-02: Information Dehydration - Provisioning
+  - id: "T-02"
+    name: "Provisioning"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "mcp_tool_mount"
+        queue_type: "lock_free_ring"
+      - type: "sandbox_environment_init"
+    dependencies: ["T-01"]
+
+  # T-03: Cognitive Reduction - Abstraction
+  - id: "T-03"
+    name: "Abstraction"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "fts5_vectorization"
+      - type: "tf_idf_keyword_graphing"
+    dependencies: ["T-02"]
+
+  # T-04: Cognitive Reduction - Morphing
+  - id: "T-04"
+    name: "Morphing"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "system_load_evaluation"
+      - type: "liquid_differential_shift"
+        target_states: ["SOLID", "LIQUID", "GAS", "PLASMA"]
+    dependencies: ["T-03"]
+
+  # T-05: Deterministic Deduction - Orchestration
+  - id: "T-05"
+    name: "Orchestration"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "hardcoded_state_machine_dispatch"
+      - type: "global_graph_sync"
+    dependencies: ["T-04"]
+
+  # T-06: Deterministic Deduction - Analysis & Test-Time Compute
+  - id: "T-06"
+    name: "Analysis"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "test_time_compute_execution"
+        constraint: "sandbox_isolated"
+      - type: "formal_verification_check"
+    dependencies: ["T-05"]
+
+  # T-07: Physical Boundary Convergence - Grounding
+  - id: "T-07"
+    name: "Grounding"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "ast_to_native_python_compile"
+      - type: "sql_statement_generation"
+      - type: "aot_blast_testing"
+    dependencies: ["T-06"]
+
+  # T-08: Physical Boundary Convergence - Execution & Pruning
+  - id: "T-08"
+    name: "Execution"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "execute_grounded_logic"
+        on_fail: "physical_prune_and_rollback"
+      - type: "dead_code_elimination"
+    dependencies: ["T-07"]
+
+  # T-09: Zero-Entropy Alignment - Coherence
+  - id: "T-09"
+    name: "Coherence"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "kl_divergence_coherence_check"
+        threshold: 0.05
+        on_exceed: "trigger_ADR_004_healing"
+    dependencies: ["T-08"]
+
+  # T-10: Zero-Entropy Alignment - Synthesis
+  - id: "T-10"
+    name: "Synthesis"
+    trigger:
+      type: "cascade"
+    actions:
+      - type: "cryptographic_ledger_sign"
+      - type: "daily_whitepaper_export"
+        format: "zero_entropy_markdown"
+    dependencies: ["T-09"]
 
 global:
   telemetry:
-    enabled: false
+    enabled: true
+    mode: "zero_copy_memory_mapped"
   
   error_handling:
-    retry_count: 5
-    fallback: "safe_halt"
+    retry_count: 0  # Axiom-0 explicitly forbids blind LLM retries
+    fallback: "hard_system_halt_and_prune"
   
   resource_limits:
-    timeout: "60m"
+    timeout: "120m"
 
 notifications:
   on_failure:
-    - type: "log_only"
-      path: "/var/tmp/nexus_errors.log"
+    - type: "system_halt_log"
+      path: "/var/log/axiom-0/zecp_fatal.log"
   on_completion:
-    - type: "placeholder_notification"
-
+    - type: "ledger_commit_receipt"

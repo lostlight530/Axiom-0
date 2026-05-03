@@ -8,56 +8,55 @@
 ---
 
 ## 1. 协议定义 / Protocol Definition
-> **[CN]**: ZECP 是 Axiom-0 引擎的“底层蓝图”。它规定了 AI 系统的每一步动作都必须可预测、可审计、且绝对没有多余的逻辑（零熵）。
+> **[CN]**: ZECP（Zero-Entropy Cognitive Protocol）是 Axiom-0 引擎的绝对物理法则。它彻底废除了以大模型为核心的高熵自由路由，规定复合 AI 系统的每一步动作都必须在硬编码的管线中可预测、可审计、且 100% 确定。
 > 
-> **[EN]**: The Zero-Entropy Cognitive Protocol (ZECP) defines the deterministic operational layer for Axiom-0 systems. It enforces strict computational predictability, cryptographic auditability, and zero logic-redundancy across all cognitive nodes.
+> **[EN]**: The Zero-Entropy Cognitive Protocol (ZECP) is the absolute physical law of the Axiom-0 engine. It thoroughly abolishes high-entropy free routing centered on LLMs, mandating that every action of the compound AI system must be predictable, auditable, and 100% deterministic within a hardcoded pipeline.
 
 ---
 
-## 2. 核心架构 / Core Architecture
+## 2. 核心架构约束 / Core Architectural Constraints
 
-### 2.1 连续体执行引擎 (Continuum Engine)
-- **[CN]**: 一个 24 小时自动循环执行的 10 节点流水线。
-- **[EN]**: A recursive 10-node automation loop managing the entire intelligence lifecycle from ingestion to synthesis.
+### 2.1 大模型与智能体的物理隔离 (Physical Decoupling of LLM and Agent)
+> **[CN]**: 系统视大模型（LLM）为“高危的概率外包组件”。LLM 绝对禁止直接修改系统状态或控制执行流。所有的智能体（Agent）内核必须由原生 Python、SQLite 和无锁队列构建。
+> **[EN]**: The system treats Large Language Models (LLMs) as "high-risk probabilistic outsourced components". LLMs are absolutely forbidden from directly modifying system state or controlling execution flow. All Agent kernels must be built with native Python, SQLite, and lock-free queues.
 
-### 2.2 零熵边界 (Zero-Entropy Bounds)
-- **[CN]**: 系统不对外产生噪音，代码体积与知识密度之间的比值必须最优。
-- **[EN]**: Systemic boundary conditions enforcing optimal information density and minimum code-substrate footprint.
+### 2.2 10节点有向无环图 (10-Node Directed Acyclic Graph)
+> **[CN]**: 彻底抛弃 ReAct 等内循环。所有计算从数据摄取（T-01）到结果综合（T-10）呈现严格的单向传递。中间任何一步的验证失败都必须触发物理异常和强制截断，绝不允许概率模型的“盲目重试”。
+> **[EN]**: Thoroughly abandon inner loops like ReAct. All compute exhibits strict unidirectional transmission from ingestion (T-01) to synthesis (T-10). Any verification failure at intermediate steps must trigger physical exceptions and forced truncation; "blind retries" by probabilistic models are never allowed.
 
 ---
 
 ## 3. 技术指标 / Engineering Metrics
 
-### 3.1 性能指标 (Performance)
+### 3.1 性能与确定性指标 (Performance & Determinism)
 | 指标 (Metric) | 目标 (Target) | 测量方法 (Method) |
 | :--- | :--- | :--- |
-| **拓扑切换 (Topology Switch)** | ≤ 15ms | Internal benchmark |
-| **原子切换 (Atomic Switch)** | ≤ 50ms | Latency profiling |
-| **KL 对齐偏差 (KL Divergence)** | ≤ 0.2 | Cross-agent logic audit |
-| **熵减效率 (Entropy Reduction)** | ≥ 30% daily | Pruning log analysis |
+| **液态变形延迟 (Liquid Morphing Latency)** | ≤ 15ms | Internal benchmark (ADR-010) |
+| **工具调用脱水 (MCP Dehydration Rate)** | 100% | Regex/AST Validation |
+| **测试期计算剪枝率 (Test-Time Prune Rate)** | > 85% | Sandbox Exception Logging |
+| **零熵收敛效率 (Zero-Entropy Convergence)** | $< 0.05$ KL | Core Continuum Output |
 
-### 3.2 安全指标 (Security)
-- **[CN]**: 全程 mTLS 加密及 HMAC-SHA256 签名，确保记忆不可篡改。
-- **[EN]**: Mandatory mTLS for telemetry and HMAC-SHA256 framing for immutable audit trails (ADR-001).
-
----
-
-## 4. 关键算法 / Key Algorithms
-
-### 4.1 认知相干性对齐 (Cognitive Coherence)
-> **[CN]**: 使用 KL 散度测量不同 AI 代理间的逻辑分歧。
-> **[EN]**: $D_{KL}(P\|Q) = \sum P(i) \log(P(i)/Q(i))$
-> Axiom-0 enforces a coherence score threshold of > 0.9 for all synthetic artifacts.
-
-### 4.2 零熵逻辑映射 (Zero-Entropy Logic Mapping)
-- **[CN]**: 逻辑锚定过程确保从论文公式到代码实现的 1:1 强映射。
-- **[EN]**: Deterministic mapping ensuring 100% mathematical fidelity between theoretical paper-heuristics and production Python logic.
+### 3.2 审计与安全 (Auditability & Security)
+- **[CN]**: 状态转移的哈希锁定。每一次 T 节点的数据变异，必须生成不可篡改的密码学哈希链。
+- **[EN]**: Hash-locking of state transitions. Every data mutation across T-nodes must generate an immutable cryptographic hash chain.
 
 ---
 
-## 5. 执行约束 / Operational Constraints
-- **Absolute Pager-friendly logs**: 每个日志必须包含唯一的故障标识。
-- **Minimal Redundancy**: 严禁在协议层使用任何第三方黑盒依赖。
+## 4. 关键验证算法 / Key Verification Algorithms
+
+### 4.1 动态 KL 散度相干性 (Dynamic KL-Divergence Coherence)
+> **[CN]**: 在 T-09 节点，系统计算当前执行流状态 $P(i)$ 与 ZECP 理想基线 $Q(i)$ 之间的 Kullback-Leibler 散度。如果 $D_{KL}(P\|Q) > 0.05$，系统立刻判定为“产生幻觉或熵增”，强制熔断并抛弃整个执行树。
+> **[EN]**: At node T-09, the system computes the Kullback-Leibler divergence between the current execution flow state $P(i)$ and the ZECP ideal baseline $Q(i)$. If $D_{KL}(P\|Q) > 0.05$, the system immediately determines a "hallucination or entropy spike", forcefully trips the breaker, and discards the entire execution tree.
+
+### 4.2 强类型沙盒锚定 (Strong-Type Sandbox Grounding)
+- **[CN]**: T-07 节点的输出必须被编译为 Python 原生逻辑或 SQL 语句，并在隔离容器中进行运行前（AOT）验证。
+- **[EN]**: Outputs from node T-07 must be compiled into native Python logic or SQL statements and subjected to ahead-of-time (AOT) verification within isolated containers.
+
+---
+
+## 5. 执行约束法则 / Operational Constraints Laws
+- **Zero Black-Box**: 禁止任何隐藏的内部思维链（Hidden CoT）逃避审计。 / No hidden CoT can evade auditing.
+- **Zero Redundancy**: 删除所有封装 API。代码仅通过基础原生库运作。 / Delete all wrapper APIs. Code operates solely via foundational native libraries.
 
 ---
 *"Build it Brutally, Run it Deterministically"*
