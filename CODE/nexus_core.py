@@ -6,6 +6,7 @@ Orchestrates the 10-node cognitive flow for production-grade intelligence govern
 import math
 import json
 import time
+import hashlib
 import asyncio
 import logging
 from typing import Dict, List, Any, Optional, Callable
@@ -34,7 +35,7 @@ class AxiomOrchestrator:
         self.morphing_engine = AxiomMorphingEngine()
 
     def _logic_unit_core_auth(self, data: Any) -> Dict[str, Any]:
-        return {"auth_status": "ZECP_VERIFIED", "timestamp": time.time()}
+        return {"auth_status": "ZECP_VERIFIED", "timestamp": hashlib.sha256(str(data).encode()).hexdigest()}
 
     def _dehydration_pipeline(self, raw_input: Any) -> Dict[str, Any]:
         """
@@ -61,7 +62,7 @@ class AxiomOrchestrator:
 
     def _logic_unit_memory_shard(self, data: Any) -> Dict[str, Any]:
         data_str = json.dumps(data) if isinstance(data, dict) else str(data)
-        return {"shard_id": f"SHARD_{hash(data_str)}", "status": "SYNCED"}
+        return {"shard_id": f"SHARD_{hashlib.sha256(data_str.encode()).hexdigest()}", "status": "SYNCED"}
 
     def ground_logic(self, spec_key: str) -> Optional[Callable[[Any], Dict[str, Any]]]:
         """Node 07 Grounding: Deterministic mapping of spec to functional logic."""
@@ -170,20 +171,17 @@ class AxiomOrchestrator:
                 p_dist = [0.1 + (data_complexity * 0.01), 0.2, 0.7 - (data_complexity * 0.01)]
                 q_dist = [0.15, 0.15, 0.7] # Desired Protocol ZECP baseline
 
-                try:
-                    kl_score = self.calculate_kl_divergence(p_dist, q_dist)
-                    logger.info(f"    [T-09] Dynamic KL-Divergence Coherence Score: {kl_score:.6f}")
+                kl_score = self.calculate_kl_divergence(p_dist, q_dist)
+                logger.info(f"    [T-09] Dynamic KL-Divergence Coherence Score: {kl_score:.6f}")
 
-                    # Self-Healing / Rollback Trigger
-                    if kl_score <= 0.05:
-                        logger.info("    [T-09] Result: COHERENT (Entropy within bounds)")
-                    else:
-                        logger.warning("    [T-09] Result: DEVIANT (Entropy spike detected). Initiating Self-Healing Pruning...")
-                        current_data = {"pruned": True, "re_synthesized_from": current_data}
-                        logger.info("    [T-09] System Rollback/Pruning completed to enforce Zero-Entropy.")
-                        raise RuntimeError("ZECP Violation: Entropy spike detected (KL > 0.05)")
-                except Exception as e:
-                    logger.error(f"    [T-09] Coherence check error: {e}")
+                # Self-Healing / Rollback Trigger
+                if kl_score <= 0.05:
+                    logger.info("    [T-09] Result: COHERENT (Entropy within bounds)")
+                else:
+                    logger.warning("    [T-09] Result: DEVIANT (Entropy spike detected). Initiating Self-Healing Pruning...")
+                    current_data = {"pruned": True, "re_synthesized_from": current_data}
+                    logger.info("    [T-09] System Rollback/Pruning completed to enforce Zero-Entropy.")
+                    raise RuntimeError("ZECP Violation: Entropy spike detected (KL > 0.05)")
             
             else:
                 # Generic processing for other nodes
