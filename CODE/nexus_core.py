@@ -34,8 +34,16 @@ class AxiomOrchestrator:
         }
         self.morphing_engine = AxiomMorphingEngine()
 
+    def _deterministic_str(self, data: Any) -> str:
+        if isinstance(data, str):
+            return data
+        try:
+            return json.dumps(data, sort_keys=True)
+        except Exception:
+            return str(data)
+
     def _logic_unit_core_auth(self, data: Any) -> Dict[str, Any]:
-        return {"auth_status": "ZECP_VERIFIED", "timestamp": hashlib.sha256(str(data).encode()).hexdigest()}
+        return {"auth_status": "ZECP_VERIFIED", "timestamp": hashlib.sha256(self._deterministic_str(data).encode()).hexdigest()}
 
     def _dehydration_pipeline(self, raw_input: Any) -> Dict[str, Any]:
         """
@@ -61,7 +69,7 @@ class AxiomOrchestrator:
         return {"original": raw_str, "canonical_payload": canonical_payload, "entropy_status": "DEHYDRATED"}
 
     def _logic_unit_memory_shard(self, data: Any) -> Dict[str, Any]:
-        data_str = json.dumps(data) if isinstance(data, dict) else str(data)
+        data_str = self._deterministic_str(data)
         return {"shard_id": f"SHARD_{hashlib.sha256(data_str.encode()).hexdigest()}", "status": "SYNCED"}
 
     def ground_logic(self, spec_key: str) -> Optional[Callable[[Any], Dict[str, Any]]]:
@@ -152,7 +160,7 @@ class AxiomOrchestrator:
                 if self.morphing_engine.current_state.name == "SOLID":
                     logger.info("    [T-07] SOLID state detected. Enforcing strict validation check.")
 
-                spec_key = "FUNC_LOGIC_001" if "authorized" in str(current_data) else "FUNC_LOGIC_002"
+                spec_key = "FUNC_LOGIC_001" if "authorized" in self._deterministic_str(current_data) else "FUNC_LOGIC_002"
                 func = self.ground_logic(spec_key)
                 if func:
                     logger.info(f"    [T-07] Mapped to: {func.__name__}")
@@ -165,7 +173,7 @@ class AxiomOrchestrator:
             elif "T-09" in node:
                 # Node 09 Coherence via Dynamic KL-Divergence
                 # Dynamic Entropy tracking based on the data length/complexity
-                data_complexity = len(str(current_data)) % 10
+                data_complexity = len(self._deterministic_str(current_data)) % 10
 
                 # Dynamic base distribution tracking simulated belief shift
                 p_dist = [0.1 + (data_complexity * 0.01), 0.2, 0.7 - (data_complexity * 0.01)]
