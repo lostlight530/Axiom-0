@@ -51,7 +51,7 @@ class AxiomOrchestrator:
         Performs segmentation, classification, routing, and dehydration.
         Removes redundant entropy from raw conversational text.
         """
-        raw_str = str(raw_input)
+        raw_str = self._deterministic_str(raw_input)
         # 1. Segmentation
         segments = raw_str.split('.')
         # 2. Classification & 3. Routing (simplified heuristic)
