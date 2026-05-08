@@ -37,10 +37,7 @@ class AxiomOrchestrator:
     def _deterministic_str(self, data: Any) -> str:
         if isinstance(data, str):
             return data
-        try:
-            return json.dumps(data, sort_keys=True)
-        except Exception:
-            return str(data)
+        return json.dumps(data, sort_keys=True)
 
     def _logic_unit_core_auth(self, data: Any) -> Dict[str, Any]:
         return {"auth_status": "ZECP_VERIFIED", "timestamp": hashlib.sha256(self._deterministic_str(data).encode()).hexdigest()}
