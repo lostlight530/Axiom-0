@@ -165,7 +165,7 @@ class AxiomOrchestrator:
                         current_data = func(current_data)
                     except Exception as e:
                         logger.error(f"    [T-07] Execution error: {e}")
-                        current_data = {"error": str(e), "payload": current_data}
+                        current_data = {"error": e.__class__.__name__, "payload": current_data}
                 
             elif "T-09" in node:
                 # Node 09 Coherence via Dynamic KL-Divergence
