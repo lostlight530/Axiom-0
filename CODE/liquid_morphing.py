@@ -49,7 +49,7 @@ class SystemMetrics:
     active_tasks: int = 0
     queue_depth: int = 0
     entropy_level: float = 0.0
-    timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat(timespec='microseconds'))
     
     @property
     def load_score(self) -> float:
