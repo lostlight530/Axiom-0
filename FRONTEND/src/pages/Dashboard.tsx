@@ -43,15 +43,18 @@ const rawData: TrafficData[] = [
   { repo: "welcome-to-github", period: "04/02", clones: 910, uniqueCloners: 290, views: 800, uniqueVisitors: 110 },
   { repo: "welcome-to-github", period: "04/18", clones: 1050, uniqueCloners: 300, views: 960, uniqueVisitors: 70 },
   { repo: "welcome-to-github", period: "04/29", clones: 1900, uniqueCloners: 610, views: 620, uniqueVisitors: 20 },
+  { repo: "welcome-to-github", period: "05/14", clones: 1630, uniqueCloners: 350, views: 80, uniqueVisitors: 20 },
 
   // zero-entropy-lab
   { repo: "zero-entropy-lab", period: "03/21", clones: 760, uniqueCloners: 270, views: 520, uniqueVisitors: 20 },
   { repo: "zero-entropy-lab", period: "04/02", clones: 720, uniqueCloners: 300, views: 690, uniqueVisitors: 80 },
   { repo: "zero-entropy-lab", period: "04/12", clones: 580, uniqueCloners: 230, views: 870, uniqueVisitors: 100 },
   { repo: "zero-entropy-lab", period: "04/29", clones: 1010, uniqueCloners: 350, views: 540, uniqueVisitors: 20 },
+  { repo: "zero-entropy-lab", period: "05/14", clones: 1200, uniqueCloners: 300, views: 30, uniqueVisitors: 20 },
 
   // Axiom-0
   { repo: "Axiom-0", period: "04/29", clones: 370, uniqueCloners: 170, views: 100, uniqueVisitors: 10 },
+  { repo: "Axiom-0", period: "05/14", clones: 900, uniqueCloners: 320, views: 40, uniqueVisitors: 30 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -174,7 +177,7 @@ export default function RepoTrafficVisualizationDashboard() {
   }, [filtered]);
 
   const comparisonData = useMemo(() => {
-    const period = "04/29";
+    const period = "05/14";
     const axiomRepo = data.find((d) => d.repo === "Axiom-0" && d.period === period);
     const zeroRepo = data.find((d) => d.repo === "zero-entropy-lab" && d.period === period);
     const mainRepo = data.find((d) => d.repo === "welcome-to-github" && d.period === period);
