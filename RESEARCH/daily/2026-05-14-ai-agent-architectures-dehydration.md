@@ -1,0 +1,43 @@
+# 每日研究报告：2025年 AI Agent 架构演进与 Axiom-0 脱水 / Daily Research: 2025 AI Agent Architecture Evolution & Axiom-0 Dehydration
+
+---
+
+## 证据等级 / Evidence Status
+**[REAL]** (Tredence: Step-by-Step Guide: How to Build AI Agents in 2025; Relevance AI: How to Build an AI Agent: A Comprehensive Guide for 2025)
+
+---
+
+## 摘要 / Executive Summary
+> **[CN]:** 本次数字考古研究提取了 2025 年业界关于构建 AI Agent 的主流架构演进记录。文献揭示了行业向模块化分层设计的转变——将基础设施、自然语言理解（NLU）、推理/规划模块与执行层解耦。此外，业界提出了集成 RAG、记忆模块与多智能体（Multi-agent）编排以处理复杂工作流的方案。然而，从 Axiom-0 的严格标准来看，这些“创新”仅仅是将系统从单体 LLM 的高熵灾难，拆分成了由微服务和 API 连接的分布式高熵集合，本质上并未消除非确定性带来的系统脆性。
+>
+> **[EN]:** This digital archaeology research extracts the 2025 industry's mainstream architectural evolution records for building AI Agents. Literature reveals a shift towards modular layered designs—decoupling infrastructure, Natural Language Understanding (NLU), reasoning/planning modules, and execution layers. Furthermore, the industry proposed integrating RAG, memory modules, and Multi-agent orchestration to handle complex workflows. However, from Axiom-0's strict standards, these "innovations" merely fragment the high-entropy disaster of monolithic LLMs into distributed high-entropy clusters connected by microservices and APIs, failing to eliminate the systemic fragility caused by non-determinism.
+
+---
+
+## 1. What: 模块化设计与多智能体协同 / Modular Design and Multi-Agent Orchestration
+
+> **[CN]:** 根据 2025 年的历史记录（如 Tredence 与 Relevance AI 的构建指南），当时的 AI Agent 架构设计呈现出明显的模块化趋势。典型的架构层级包括：负责处理文本和对话管理的 NLU 层、负责任务排序的推理与决策层（融合符号逻辑与神经网络推理）、以及通过 API 与 RPA 调动外部系统的执行层。同时，随着单体 Agent 遇到瓶颈，业界开始倡导 Multi-agent 编排策略，即让执行者、规划者和审查者（Reviewers）在共享内存（如向量数据库）的支持下协同工作。
+>
+> **[EN]:** According to 2025 historical records (e.g., Tredence and Relevance AI build guides), AI Agent architectural design exhibited a clear modular trend. Typical architectural layers included: an NLU layer for text and dialogue management, a reasoning and decision-making layer for task sequencing (blending symbolic logic with neural reasoning), and an execution layer mobilizing external systems via APIs and RPA. Concurrently, as monolithic Agents hit bottlenecks, the industry began advocating for Multi-agent orchestration strategies, allowing executors, planners, and reviewers to collaborate supported by shared memory (like vector databases).
+
+---
+
+## 2. Why: 应对系统复杂性与规模化挑战 / Addressing System Complexity and Scaling Challenges
+
+> **[CN]:** 为什么 2025 年的开发者必须采用分层架构和多智能体编排？因为单纯依靠 LLM 直接输出结果（甚至早期的简单提示工程）在处理真正的企业级任务（如金融合规验证或复杂供应链调度）时极易崩溃。开发者试图将大模型作为“推理内核”，通过外围的检索增强（RAG）、记忆保留模块（Context Retention）和严格的 API 工具链，为其不可控的涌现能力带上枷锁，以期在规模化部署中获得可度量的投资回报率（ROI）。
+>
+> **[EN]:** Why did developers in 2025 have to adopt layered architectures and multi-agent orchestration? Because relying solely on direct LLM outputs (or early simple prompt engineering) easily collapsed when handling genuine enterprise-grade tasks (like financial compliance validation or complex supply chain scheduling). Developers attempted to use large models as "reasoning cores", shackling their uncontrollable emergent capabilities with peripheral Retrieval-Augmented Generation (RAG), Context Retention modules, and rigid API toolchains, hoping to achieve a measurable ROI in large-scale deployments.
+
+---
+
+## 3. Axiom-0 Dehydration: 被拆解的概率泥潭 / A Fragmented Probabilistic Quagmire
+
+> **[CN]:** 在 Axiom-0 的 10 节点认知连续体（ZECP）视角下，2025 年的这些架构创新暴露了致命的妥协：
+> 1. **推理层的污染**：尽管业界引入了混合推理（混合符号与神经网络），但只要核心决策回路（T-05 Grounding 到 T-08 Execution）仍然包含概率驱动的 LLM 调用，系统就无法实现真正的零熵（Zero-Entropy）。Axiom-0 坚持决策的锚定必须是 100% 的裸机代码级别确定性。
+> 2. **多智能体是规模化的陷阱**：利用多个 Agent 互相“审查”或“协作”，本质上是在用不可靠的审查者去监督不可靠的执行者。这种网络不但增加了状态空间的高熵扩散，而且彻底破坏了严格的单向管道控制。在 Axiom-0 中，不存在平级的民主协商，只有自上而下、由 SQLite 驱动的状态推进。
+> 3. **工具链的伪锚定**：将外部工具（API/RPA）交由 LLM 动态调用是一场豪赌。Axiom-0 的 T-03 (Provisioning) 明确要求工具链的挂载是在启动前基于确定性逻辑静态装载的，绝不允许运行时由大模型通过模糊的意图猜测来决定执行路径。
+>
+> **[EN]:** From the perspective of Axiom-0's 10-node ZECP, these 2025 architectural innovations exposed fatal compromises:
+> 1. **Pollution of the Reasoning Layer**: Although the industry introduced hybrid reasoning (mixing symbolic and neural networks), as long as the core decision loop (T-05 Grounding to T-08 Execution) still includes probability-driven LLM calls, the system cannot achieve true Zero-Entropy. Axiom-0 insists that decision anchoring must be 100% deterministic at the bare-metal code level.
+> 2. **Multi-Agent is a Scaling Trap**: Utilizing multiple Agents to "review" or "collaborate" with each other is essentially using an unreliable reviewer to supervise an unreliable executor. This network not only increases the high-entropy diffusion of the state space but also completely destroys strict unidirectional pipeline control. In Axiom-0, there is no peer-level democratic negotiation, only top-down, SQLite-driven state advancement.
+> 3. **Pseudo-Anchoring of Toolchains**: Handing external tools (API/RPA) over to LLM for dynamic calling is a massive gamble. Axiom-0's T-03 (Provisioning) explicitly requires toolchains to be statically mounted based on deterministic logic before launch, absolutely forbidding run-time execution path decisions made through fuzzy intent guessing by large models.
