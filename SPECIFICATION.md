@@ -60,3 +60,51 @@
 
 ---
 *"Build it Brutally, Run it Deterministically"*
+---
+
+## 6. 知识分层架构 (Knowledge Stratification)
+
+> **[CN]**: Axiom-0 仓库至少采用以下四层知识分层
+> **[EN]**: Axiom-0 repository adopts at least the following four layers of knowledge stratification
+
+> **[CN]**: 1. 研究 (Research)
+> **[EN]**: 1. Research
+> **[CN]**: 2. 方法论 (Methodology)
+> **[EN]**: 2. Methodology
+> **[CN]**: 3. ADR (架构决策记录)
+> **[EN]**: 3. ADR
+> **[CN]**: 4. 代码 (Code)
+> **[EN]**: 4. Code
+
+> **[CN]**: 说明：若后续需要接回自动化链，可以在此四层之外追加 Prompt and Automation 层。但本次落库切片不包含该部分。
+> **[EN]**: Illustration: If you need to connect the automation chain later, you can add Prompt and Automation layers in addition to these four layers. However, this part of the library slice does not include this part.
+
+---
+
+## 7. 证据状态约束 (Evidence Status)
+
+> **[CN]**: 系统允许四类状态标签，用于强制进行物理防伪与幻觉隔离。
+> **[EN]**: Four types of status labels are allowed, used to force physical anti-counterfeiting and hallucination isolation.
+
+- **[CN]**: `[REAL]` (真实的)
+  - **[EN]**: REAL
+- **[CN]**: `[NEXUS_ORIGINAL]`
+  - **[EN]**: NEXUS_ORIGINAL
+- **[CN]**: `[SPECULATIVE]` (投机性)
+  - **[EN]**: SPECULATIVE
+- **[CN]**: `[FICTIONAL_WRAPPER]` (虚构_包装器)
+  - **[EN]**: FICTIONAL_WRAPPER
+
+---
+
+## 8. 上下文摄取法则 (Context Ingestion Rule)
+
+> **[CN]**: 原始聊天或自由文本不得直接作为长期仓库资产。必须经过分类、路由、脱水与规范化改写。
+> **[EN]**: Raw chat or free text may not be used directly as long-term repository assets. Must be classified, routed, dehydrated and standardized rewritten.
+
+---
+
+## 9. 代码层边界 (Code Layer Boundary)
+
+> **[CN]**: `CODE/` 维持 reference implementation 定位。不承担吞并全部方法论与叙事世界观的任务。
+> **[EN]**: `CODE/` maintains reference implementation location. Does not undertake the task of annexing all methodologies and narrative worldviews.

@@ -91,3 +91,43 @@
 ---
 > **[CN]**: *“残酷地构建它，确定性地运行它”*
 > **[EN]**: *"Build it Brutally, Run it Deterministically"*
+
+---
+
+## 6. 上下文摄取与方法论派生 (Context & Methodology Spawning)
+- **[CN]**: **[神话生成方法论](./METHODOLOGY/mythic-architecture-generation.md)**: 通过现实锚点进行神话级架构推理。
+  - **[EN]**: **[Mythic Architecture Generation](./METHODOLOGY/mythic-architecture-generation.md)**: Mythical architecture reasoning via reality anchors.
+- **[CN]**: **[现实锚点与神话增压](./METHODOLOGY/reality-anchor-and-mythic-amplification.md)**: 保证叙事宏大与物理现实不脱钩。
+  - **[EN]**: **[Reality Anchor and Mythic Amplification](./METHODOLOGY/reality-anchor-and-mythic-amplification.md)**: Ensuring grandiose narrative doesn't decouple from physical reality.
+- **[CN]**: **[后处理与脱水链](./METHODOLOGY/post-processing-and-dehydration.md)**: 将高熵聊天记录转换为结构化资产的强制管线。
+  - **[EN]**: **[Post-processing and dehydration chain](./METHODOLOGY/post-processing-and-dehydration.md)**: The forced pipeline converting high-entropy chat logs into structured assets.
+
+---
+
+## 7. 仓库治理与状态 (Repository Governance)
+- **[CN]**: **[ADR-061: 上下文摄取和规范化](./ADR/ADR-061-context-ingestion-and-canonicalization.md)**: 人类对话如何合法地入库。
+  - **[EN]**: **[ADR-061: Context Ingestion and Canonicalization](./ADR/ADR-061-context-ingestion-and-canonicalization.md)**: How human dialogues legally enter the repository.
+- **[CN]**: **[ADR-062: 神话生成链路](./ADR/ADR-062-mythic-generation-lane.md)**: 确立结构化神话生成的合法性。
+  - **[EN]**: **[ADR-062: Mythic Generation Lane](./ADR/ADR-062-mythic-generation-lane.md)**: Establishing the legitimacy of structured myth generation.
+- **[CN]**: **[ADR-063: 人类-AI 后处理边界](./ADR/ADR-063-human-ai-postprocessing-boundary.md)**: 剥离原始提示词与生成结果。
+  - **[EN]**: **[ADR-063: Human-AI Postprocessing Boundary](./ADR/ADR-063-human-ai-postprocessing-boundary.md)**: Stripping raw prompts from generation results.
+- **[CN]**: **[ADR-064: 每日 10 节点自动化调度](./ADR/ADR-064-daily-10-node-automation-schedule.md)**: 全新克隆与强制隔离节拍。
+  - **[EN]**: **[ADR-064: Daily 10-node automation schedule](./ADR/ADR-064-daily-10-node-automation-schedule.md)**: Fresh clone and forced isolation beat.
+- **[CN]**: **[ADR-065: 每日白皮书输出契约](./ADR/ADR-065-daily-whitepaper-output-contract.md)**: 规范 T-10 综合节点产出三件套。
+  - **[EN]**: **[ADR-065: Daily whitepaper output contract](./ADR/ADR-065-daily-whitepaper-output-contract.md)**: Standardizing the three-piece suite output of the T-10 synthesis node.
+- **[CN]**: **[ADR-066: 研究到 ADR 的蒸馏](./ADR/ADR-066-research-to-adr-distillation.md)**: 从投机向法则的提炼。
+  - **[EN]**: **[ADR-066: Research to ADR distillation](./ADR/ADR-066-research-to-adr-distillation.md)**: Distillation from speculation to laws.
+- **[CN]**: **[ADR-067: 证据状态标签](./ADR/ADR-067-evidence-status-labeling.md)**: 强制物理防伪与幻觉隔离。
+  - **[EN]**: **[ADR-067: Evidence status labeling](./ADR/ADR-067-evidence-status-labeling.md)**: Forced physical anti-counterfeiting and hallucination isolation.
+- **[CN]**: **[ADR-068: 索引同步契约](./ADR/ADR-068-index-synchronization-and-nav-contract.md)**: INDEX 必须始终反映最新系统状态。
+  - **[EN]**: **[ADR-068: Index synchronization and nav contract](./ADR/ADR-068-index-synchronization-and-nav-contract.md)**: INDEX must always reflect the latest system state.
+- **[CN]**: **[ADR-069: 知识分层架构](./ADR/ADR-069-repo-knowledge-stratification.md)**: Research, Methodology, ADR, Code 的四层隔离。
+  - **[EN]**: **[ADR-069: Repo knowledge stratification](./ADR/ADR-069-repo-knowledge-stratification.md)**: 4-layer isolation of Research, Methodology, ADR, Code.
+- **[CN]**: **[ADR-070: 参考实现边界](./ADR/ADR-070-reference-implementation-boundary.md)**: CODE/ 仅作为理论的投影。
+  - **[EN]**: **[ADR-070: Reference implementation boundary](./ADR/ADR-070-reference-implementation-boundary.md)**: CODE/ only serves as a projection of theory.
+
+---
+
+## 8. 每日自动产出 (Daily Assets)
+- **[CN]**: **[日度研究资产说明](./RESEARCH/daily/README.md)**: 定义白皮书、归档与假说的存放规范与契约。
+  - **[EN]**: **[Daily research asset description](./RESEARCH/daily/README.md)**: Defines the storage norms and contracts for whitepapers, archives, and hypotheses.
