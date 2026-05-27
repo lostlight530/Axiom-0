@@ -1,4 +1,4 @@
-# Axiom-0: ZECP Technical Specification
+# Axiom-0 ZECP Technical Specification
 
 ---
 
@@ -23,6 +23,30 @@
 ### 2.3 液态知识固化 (Liquid Knowledge Solidification)
 > **[CN]**: 通过多层蒸馏，外部高熵信息强行凝固为 ADR，作为约束系统的物理法则沉淀。
 > **[EN]**: Through multi-layer distillation, external high-entropy information forcefully solidifies into ADRs, precipitating as physical laws constraining the system.
+
+## 3. 知识分层 / Knowledge Stratification
+> **[CN]**: Axiom-0 仓库采用以下四层知识分层：
+> **[EN]**: Axiom-0 repository adopts the following four layers of knowledge stratification:
+1. **[CN]**: 研究 / **[EN]**: Research
+2. **[CN]**: 方法论 / **[EN]**: Methodology
+3. **[CN]**: ADR (架构决策记录) / **[EN]**: ADR (Architectural Decision Records)
+4. **[CN]**: 代码 / **[EN]**: Code
+
+## 4. 证据状态 / Evidence Status
+> **[CN]**: 允许四类状态标签：
+> **[EN]**: Four types of status labels are allowed:
+- `REAL`: 真实的事实。
+- `NEXUS_ORIGINAL`: Axiom-0 原创内容。
+- `SPECULATIVE`: 投机性/推测性内容。
+- `FICTIONAL_WRAPPER`: 虚构包装器。
+
+## 5. 上下文摄取规则 / Context Ingestion Rule
+> **[CN]**: 原始聊天或自由文本不得直接作为长期仓库资产。必须经过分类、路由、脱水与规范化改写。
+> **[EN]**: Raw chat or free text may not be used directly as long-term repository assets. It must be classified, routed, dehydrated, and standardized through rewriting.
+
+## 6. 代码层边界 / Code Layer Boundary
+> **[CN]**: `CODE/` 维持参考实现（Reference Implementation）定位，不承担吞并全部方法论与叙事世界观的任务。
+> **[EN]**: `CODE/` maintains its position as a Reference Implementation and does not undertake the task of annexing all methodologies and narrative worldviews.
 
 ---
 *"Restraint is the ultimate form of digital violence."*
