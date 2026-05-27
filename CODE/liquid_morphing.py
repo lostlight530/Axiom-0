@@ -115,7 +115,7 @@ class AxiomMorphingEngine:
             logger.info("Axiom-0 Topological Morphing Secured.")
             return True
         except Exception as e:
-            logger.error(f"ZECP Morphing Constraint Failure: {e}")
+            logger.error(f"ZECP Morphing Constraint Failure: {e.__class__.__name__}")
             return False
         finally:
             self.morphing = False

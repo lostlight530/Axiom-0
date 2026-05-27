@@ -48,7 +48,7 @@ def check_system():
         else:
             print("System Coherent. Zero-Entropy Maintained.")
     except Exception as e:
-        print(f"Error: {e.__class__.__name__} - {e}")
+        print(f"Error: {e.__class__.__name__}")
         sys.exit(1)
 
 if __name__ == "__main__":
