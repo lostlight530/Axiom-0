@@ -1,4 +1,4 @@
-# 2026-05-24-whitepaper.md
+# 2026-05-27-whitepaper.md
 
 ## 1. 核心叙事 / Core Narrative
 
