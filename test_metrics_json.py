@@ -6,4 +6,4 @@ try:
     json.dumps(metrics.__dict__, sort_keys=True)
     print("Success")
 except Exception as e:
-    print(f"Failed: {e}")
+    print(f"Failed: {e.__class__.__name__}")

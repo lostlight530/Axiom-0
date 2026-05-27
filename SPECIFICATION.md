@@ -25,12 +25,13 @@
 > **[EN]**: Through multi-layer distillation, external high-entropy information forcefully solidifies into ADRs, precipitating as physical laws constraining the system.
 
 ## 3. 知识分层 / Knowledge Stratification
-> **[CN]**: Axiom-0 仓库采用以下四层知识分层：
-> **[EN]**: Axiom-0 repository adopts the following four layers of knowledge stratification:
-1. **[CN]**: 研究 / **[EN]**: Research
-2. **[CN]**: 方法论 / **[EN]**: Methodology
-3. **[CN]**: ADR (架构决策记录) / **[EN]**: ADR (Architectural Decision Records)
-4. **[CN]**: 代码 / **[EN]**: Code
+> **[CN]**: Axiom-0 仓库采用以下五层知识分层：
+> **[EN]**: Axiom-0 repository adopts the following five layers of knowledge stratification:
+1. **[CN]**: 提示与自动化 / **[EN]**: Prompt and Automation
+2. **[CN]**: 研究 / **[EN]**: Research
+3. **[CN]**: 方法论 / **[EN]**: Methodology
+4. **[CN]**: ADR (架构决策记录) / **[EN]**: ADR (Architectural Decision Records)
+5. **[CN]**: 代码 / **[EN]**: Code
 
 ## 4. 证据状态 / Evidence Status
 > **[CN]**: 允许四类状态标签：
