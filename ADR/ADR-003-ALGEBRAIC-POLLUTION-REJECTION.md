@@ -1,13 +1,13 @@
-# ADR-003: 代数级污染拒绝与 KL 散度硬防御 / Algebraic Pollution Rejection and KL Divergence Hard Defense
+# ADR-003: 代数级污染拒绝法则 / Algebraic Pollution Rejection Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)
 > **[EN]:** Absolute Law
 
 ## 背景 / Context
-> **[CN]:** 仅仅通过自然语言提示词去“命令”推理节点保持理智是无效的。缺乏信息论级别的数学度量，系统无法物理地隔绝概率空间带来的畸变，最终会导致整个知识拓扑被微小的幻觉彻底破坏。
-> **[EN]:** "Commanding" reasoning nodes to stay sane merely through natural language prompts is futile. Lacking information-theory-level mathematical metrics, the system cannot physically isolate distortions from the probabilistic space, ultimately causing the entire knowledge topology to be devastated by microscopic hallucinations.
+> **[CN]:** 传统大型语言模型（LLM）通过近似与概率推演生成答案，不可避免地引入上下文污染与“代数级幻觉”。在高频次、长文本的复杂智能体交互中，这些微小的熵增误差会呈指数级积累，最终导致系统逻辑基石的全面崩溃与认知发散。
+> **[EN]:** Traditional Large Language Models (LLMs) generate answers through approximation and probabilistic deduction, inevitably introducing context pollution and "algebraic hallucinations." In high-frequency, long-text complex agent interactions, these minute entropy-increasing errors accumulate exponentially, ultimately causing the complete collapse of the system's logical foundation and cognitive divergence.
 
 ## 决策 / Decision
-> **[CN]:** 引入动态相干性防御，作为系统最终融合前的加密级审计标准。在流转进入最终的封存状态前，必须测量输出特征分布与理想基线之间的 KL 散度。硬编码物理阈值为 0.05。一旦 $D_{KL} > 0.05$，系统在代数层面直接判定其为“逻辑污染”，并以暴力、绝对的方式拒绝合并。
-> **[EN]:** Introduce dynamic coherence defense as the cryptographic-grade auditing standard before the system's final merge. Before finalizing the state, the KL divergence between the output feature distribution and the ideal baseline must be measured. Hardcode the physical threshold at 0.05. Once $D_{KL} > 0.05$, the system algebraically flags it as "logic pollution" and rejects the merge in a brutal, absolute manner.
+> **[CN]:** Axiom-0 强制引入基于哈希树的物理级脱水机制。任何进入系统的信息流都必须被剥离情感与概率成分，转化为纯粹的代数断言。如果新输入的信息与系统记忆的加密账本发生冲突，且无法通过严格的数学溯源验证，则被立即判定为“代数级污染”，并遭到物理级拒绝。系统宁可触发致命错误并陷入宕机，也绝不容忍哪怕1比特的概率妥协。
+> **[EN]:** Axiom-0 forcefully introduces a physical-level dehydration mechanism based on hash trees. Any information flow entering the system must be stripped of emotional and probabilistic components, transformed into pure algebraic assertions. If new information conflicts with the cryptographic ledger of system memory and cannot be verified through strict mathematical traceability, it is immediately judged as "algebraic pollution" and physically rejected. The system would rather trigger a fatal error and halt than tolerate even a single bit of probabilistic compromise.

@@ -1,9 +1,9 @@
-# METH-003: 液态知识的绝对固化 / Absolute Solidification of Liquid Knowledge
+# METH-003: 法则蒸馏与绝对固化协议 / Law Distillation and Absolute Solidification Protocol
 
-## 从噪音到法则的跃迁 / Transition from Noise to Law
-> **[CN]:** 知识如果没有形成约束，就只是高熵的废气。Axiom-0 通过 10 节点的绝对收敛机制，剥离外部情报的随机性与发散性。
-> **[EN]:** Knowledge without constraint is merely high-entropy exhaust. Axiom-0 utilizes the 10-node absolute convergence mechanism to strip away the randomness and divergence of external intelligence.
+## 剥离噪音的认知升华 / Cognitive Sublimation Stripping Noise
+> **[CN]:** AI 代理在日常运行中会产生海量的中间思考、假设碰撞与验证日志，这些都是含有大量杂质的液态数据。为了维持系统结构的绝对刚性，必须启动“法则蒸馏协议”，将其中的物理真相与架构因果通过高压剥离出来，滤除一切情绪化的修辞与不确定的摇摆。
+> **[EN]:** During daily operations, AI agents generate massive amounts of intermediate thoughts, hypothesis collisions, and verification logs, all of which are liquid data containing massive impurities. To maintain the absolute rigidity of the system structure, the "Law Distillation Protocol" must be activated to extract the physical truths and architectural causality under high pressure, filtering out all emotional rhetoric and uncertain vacillations.
 
-## 密码学级沉淀 / Cryptographic-Grade Sedimentation
-> **[CN]:** 经过极限脱水的信息，被强行注入 `ADR/` 目录。这些生成的决策记录必须携带密码学哈希签名，成为不可变质的“系统公理”。这向业界证明了，极致的拓扑约束能将高度发散的信息网络，降维打击成齿轮般精密的物理作业。
-> **[EN]:** Information undergoing extreme dehydration is forcefully injected into the `ADR/` directory. These generated decision records must carry cryptographic hash signatures, becoming immutable "system axioms." This proves to the industry that extreme topological constraint can dimensionally reduce highly divergent information networks into gear-precise physical operations.
+## 从认知游离到绝对立法 / From Cognitive Drifting to Absolute Legislation
+> **[CN]:** 经过提纯的认知晶体不再具备被讨论的资格，它们将直接越级至 ADR 层进行绝对立法。在 Axiom-0 中，ADR 不是一份技术备忘录，它是写进底层固件的物理宪法。任何蒸馏产生的决议都将化作限制未来系统所有随机行为的坚硬外壳，确保系统在算力宇宙中永不解体。
+> **[EN]:** Purified cognitive crystals no longer hold the right to be debated; they directly bypass to the ADR layer for absolute legislation. In Axiom-0, an ADR is not a technical memo; it is a physical constitution burned into the underlying firmware. Any resolution produced by distillation morphs into a hard shell restricting all future random behaviors of the system, ensuring the system never disintegrates within the compute universe.
