@@ -55,6 +55,13 @@ const rawData: TrafficData[] = [
   // Axiom-0
   { repo: "Axiom-0", period: "04/29", clones: 370, uniqueCloners: 170, views: 100, uniqueVisitors: 10 },
   { repo: "Axiom-0", period: "05/14", clones: 900, uniqueCloners: 320, views: 40, uniqueVisitors: 30 },
+
+  // 05/28 Data (Preserved single digits, rounded tens)
+  { repo: "welcome-to-github", period: "05/28", clones: 2010, uniqueCloners: 60, views: 10, uniqueVisitors: 6 },
+  { repo: "zero-entropy-lab", period: "05/28", clones: 950, uniqueCloners: 300, views: 10, uniqueVisitors: 10 },
+  { repo: "Axiom-0", period: "05/28", clones: 590, uniqueCloners: 40, views: 10, uniqueVisitors: 6 },
+  { repo: "reflective-continuum", period: "05/28", clones: 450, uniqueCloners: 40, views: 7, uniqueVisitors: 5 },
+  { repo: "agent-foundations", period: "05/28", clones: 80, uniqueCloners: 30, views: 1, uniqueVisitors: 1 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -64,13 +71,15 @@ const data: ProcessedData[] = rawData.map((d) => ({
     d.uniqueCloners !== null && d.uniqueVisitors > 0
       ? Number((d.uniqueCloners / d.uniqueVisitors).toFixed(2))
       : null,
-  periodLabel: `${d.repo === "Axiom-0" ? "[Axiom-0]" : d.repo === "zero-entropy-lab" ? "[new]" : "[main]"} ${d.period}`,
+  periodLabel: `${d.repo === "Axiom-0" ? "[Axiom]" : d.repo === "zero-entropy-lab" ? "[zero]" : d.repo === "reflective-continuum" ? "[ref]" : d.repo === "agent-foundations" ? "[agent]" : "[main]"} ${d.period}`,
 }));
 
 const repoLabels: Record<string, string> = {
   "Axiom-0": "Axiom-0",
   "zero-entropy-lab": "zero-entropy-lab",
   "welcome-to-github": "welcome-to-github",
+  "reflective-continuum": "reflective-continuum",
+  "agent-foundations": "agent-foundations",
 };
 
 const formatNumber = (value: number | null | undefined): string => {
@@ -177,12 +186,15 @@ export default function RepoTrafficVisualizationDashboard() {
   }, [filtered]);
 
   const comparisonData = useMemo(() => {
-    const period = "05/14";
+    const period = "05/28";
     const axiomRepo = data.find((d) => d.repo === "Axiom-0" && d.period === period);
     const zeroRepo = data.find((d) => d.repo === "zero-entropy-lab" && d.period === period);
     const mainRepo = data.find((d) => d.repo === "welcome-to-github" && d.period === period);
+    const refRepo = data.find((d) => d.repo === "reflective-continuum" && d.period === period);
+    const agentRepo = data.find((d) => d.repo === "agent-foundations" && d.period === period);
 
-    if (!axiomRepo || !zeroRepo || !mainRepo) return [];
+    if (!axiomRepo || !zeroRepo || !mainRepo || !refRepo || !agentRepo) return [];
+
 
     return [
       {
@@ -193,6 +205,10 @@ export default function RepoTrafficVisualizationDashboard() {
         zeroViews: zeroRepo.views,
         mainClones: mainRepo.clones,
         mainViews: mainRepo.views,
+        refClones: refRepo.clones,
+        refViews: refRepo.views,
+        agentClones: agentRepo.clones,
+        agentViews: agentRepo.views,
       },
     ];
   }, []);
@@ -225,10 +241,13 @@ export default function RepoTrafficVisualizationDashboard() {
           </div>
 
           <Tabs value={repo} onValueChange={handleTabChange} className="w-full md:w-auto mt-2 md:mt-0">
-            <TabsList className="grid grid-cols-3 w-full md:w-[420px] rounded-2xl bg-slate-100/70 p-1 border border-slate-200" aria-label="Repository filter">
+            <TabsList className="grid grid-cols-6 w-full md:w-[850px] rounded-2xl bg-slate-100/70 p-1 border border-slate-200" aria-label="Repository filter">
               <TabsTrigger value="all" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Unified</TabsTrigger>
               <TabsTrigger value="zero-entropy-lab" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">New Repo</TabsTrigger>
               <TabsTrigger value="welcome-to-github" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Main Repo</TabsTrigger>
+              <TabsTrigger value="Axiom-0" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Axiom-0</TabsTrigger>
+              <TabsTrigger value="reflective-continuum" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Reflective</TabsTrigger>
+              <TabsTrigger value="agent-foundations" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Agent</TabsTrigger>
             </TabsList>
           </Tabs>
         </header>
@@ -398,6 +417,10 @@ export default function RepoTrafficVisualizationDashboard() {
                   <Bar dataKey="zeroViews" name="zero-entropy Views" fill="#c7d2fe" radius={[0, 6, 6, 0]} />
                   <Bar dataKey="mainClones" name="welcome Clones" fill="#10b981" radius={[0, 6, 6, 0]} />
                   <Bar dataKey="mainViews" name="welcome Views" fill="#a7f3d0" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="refClones" name="Reflective Clones" fill="#fb923c" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="refViews" name="Reflective Views" fill="#fdba74" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="agentClones" name="Agent Clones" fill="#c084fc" radius={[0, 6, 6, 0]} />
+                  <Bar dataKey="agentViews" name="Agent Views" fill="#d8b4fe" radius={[0, 6, 6, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
@@ -421,21 +444,21 @@ export default function RepoTrafficVisualizationDashboard() {
                 <div className="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
                   <p className="font-semibold text-slate-950 text-sm">Spontaneous High-Density Execution Events</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    During the 04/29 window, a previously dormant node (Axiom-0) registered an unprecedented high Clone-to-View ratio. This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent.
+                    During the 04/29 and 05/28 windows, nodes (Axiom-0, reflective-continuum, agent-foundations) registered unprecedented high Clone-to-View ratios. This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent, pulling repositories directly without browsing presentation layers.
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
                   <p className="font-semibold text-slate-950 text-sm">Verification of the Deterministic Funnel Hypothesis</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The 21-day chronological latency and 17-day asynchronous content gaps appear to have functioned as an involuntary cognitive filter. The audience bypasses the presentation layer entirely, treating the target repository purely as a raw extraction point.
+                    The 21-day chronological latency and 17-day asynchronous content gaps appear to have functioned as an involuntary cognitive filter. The audience bypasses the presentation layer entirely, treating the target repository purely as a raw extraction point. The deterministic pull pressure has now definitively spread to auxiliary repos.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-slate-200/80 p-4 bg-white space-y-1.5 border-dashed">
                   <p className="text-xs font-medium text-slate-600">Method note</p>
                   <p className="text-[11px] text-slate-500 leading-relaxed">
-                    我们去重+去除个人访问个位数据，抛弃了10多个零散的数据
+                    我们去重+去除个人访问十位数的个位数据（抹零），保留纯个位数（6，7等），抛弃了多个零散的数据
                   </p>
                 </div>
               </div>
