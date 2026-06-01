@@ -39,3 +39,7 @@
 ## 5. 参考实现 / Reference Implementation
 - 位于 `CODE/` 目录，呈现绝对的 DAG 物理作业机制。
 - Located in `CODE/`, presenting absolute DAG physical operational mechanics.
+- [2026-06-01 Coherence Report](RESEARCH/daily/2026-06-01-coherence-report.md)
+- [2026-06-01 Blast Test](RESEARCH/daily/2026-06-01-blast-test.md)
+- [2026-W23 Spec Audit](RESEARCH/weekly/2026-W23-spec-audit.md)
+- [2026-06 Protocol Audit](RESEARCH/monthly/2026-06-protocol-audit.md)
