@@ -14,6 +14,12 @@
 ## RESEARCH
 - **[CN]**: `RESEARCH/daily/README.md`  日度研究资产说明
   - **[EN]**: `RESEARCH/daily/README.md` Daily research asset description
+- **[CN]**: `RESEARCH/daily/2026-06-01-archive.md`
+  - **[EN]**: `RESEARCH/daily/2026-06-01-archive.md`
+- **[CN]**: `RESEARCH/daily/2026-06-01-hypotheses.md`
+  - **[EN]**: `RESEARCH/daily/2026-06-01-hypotheses.md`
+- **[CN]**: `RESEARCH/daily/2026-06-01-whitepaper.md`
+  - **[EN]**: `RESEARCH/daily/2026-06-01-whitepaper.md`
 
 ## ADR
 - **[CN]**: `ADR/ADR-061-上下文摄取和规范化.md`
