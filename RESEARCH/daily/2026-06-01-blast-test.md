@@ -1,4 +1,4 @@
-# Sandbox Blast Test Report (2026-05-27)
+# Sandbox Blast Test Report (2026-06-01)
 
 > **[CN]**: 核心引擎 AOT 沙盒高压爆破测试结果
 > **[EN]**: Core Engine AOT Sandbox High-Pressure Blast Test Results

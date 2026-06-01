@@ -1,4 +1,4 @@
-# Coherence Report (2026-05-27)
+# Coherence Report (2026-06-01)
 
 > **[CN]**: 零熵协议每日架构散度侦测报告
 > **[EN]**: ZECP Daily Architectural Divergence Detection Report

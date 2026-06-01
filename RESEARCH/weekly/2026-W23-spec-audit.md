@@ -1,4 +1,4 @@
-# Weekly Specification Audit (2026-W22)
+# Weekly Specification Audit (2026-W23)
 
 > **[CN]**: Axiom-0 全局架构与代码实现对齐审计报告
 > **[EN]**: Axiom-0 Global Architecture and Code Implementation Alignment Audit Report

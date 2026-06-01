@@ -32,6 +32,6 @@
   - **[EN]**: `ADR/ADR-069-repo-knowledge-stratification.md`
 - **[CN]**: `ADR/ADR-070-参考-实现-边界.md`
   - **[EN]**: `ADR/ADR-070-reference-implementation-boundary.md`
-- PATCH_REF: 2026-05-27-daily-reports
-- PATCH_REF: 2026-W22-weekly-audit
-- PATCH_REF: 2026-05-monthly-audit
+- PATCH_REF: 2026-06-01-daily-reports
+- PATCH_REF: 2026-W23-weekly-audit
+- PATCH_REF: 2026-06-monthly-audit
