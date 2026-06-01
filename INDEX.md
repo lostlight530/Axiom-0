@@ -35,6 +35,9 @@
 ## 4. 研究资产 / Research Assets
 - [RESEARCH/daily/README.md](./RESEARCH/daily/README.md) - 日度研究资产说明 / Daily research asset description
 - [RPT-2026-Q1-AGENT-ARCHITECTURE.md](./RESEARCH/RPT-2026-Q1-AGENT-ARCHITECTURE.md) - 2026 Q1 Agent 架构报告 / 2026 Q1 Agent Architecture Report
+- [2026-06-01 Archive](RESEARCH/daily/2026-06-01-archive.md)
+- [2026-06-01 Hypotheses](RESEARCH/daily/2026-06-01-hypotheses.md)
+- [2026-06-01 Whitepaper](RESEARCH/daily/2026-06-01-whitepaper.md)
 
 ## 5. 参考实现 / Reference Implementation
 - 位于 `CODE/` 目录，呈现绝对的 DAG 物理作业机制。
