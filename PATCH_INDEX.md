@@ -14,12 +14,8 @@
 ## RESEARCH
 - **[CN]**: `RESEARCH/daily/README.md`  日度研究资产说明
   - **[EN]**: `RESEARCH/daily/README.md` Daily research asset description
-- **[CN]**: `RESEARCH/daily/2026-06-01-archive.md`
-  - **[EN]**: `RESEARCH/daily/2026-06-01-archive.md`
-- **[CN]**: `RESEARCH/daily/2026-06-01-hypotheses.md`
-  - **[EN]**: `RESEARCH/daily/2026-06-01-hypotheses.md`
-- **[CN]**: `RESEARCH/daily/2026-06-01-whitepaper.md`
-  - **[EN]**: `RESEARCH/daily/2026-06-01-whitepaper.md`
+- **[CN]**: `RESEARCH/daily/2026-06-01-pipeline-manifest.md`
+  - **[EN]**: `RESEARCH/daily/2026-06-01-pipeline-manifest.md`
 
 ## ADR
 - **[CN]**: `ADR/ADR-061-上下文摄取和规范化.md`
@@ -39,5 +35,5 @@
 - **[CN]**: `ADR/ADR-070-参考-实现-边界.md`
   - **[EN]**: `ADR/ADR-070-reference-implementation-boundary.md`
 - PATCH_REF: 2026-06-01-daily-reports
-- PATCH_REF: 2026-W23-weekly-audit
-- PATCH_REF: 2026-06-monthly-audit
+- PATCH_REF: 2026-W23-weekly-manifest
+- PATCH_REF: 2026-06-monthly-manifest
