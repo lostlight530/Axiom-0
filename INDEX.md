@@ -33,6 +33,7 @@
 - [ADR-070](./ADR/ADR-070-reference-implementation-boundary.md) - 参考-实现-边界 / Reference Implementation Boundary
 
 ## 4. 研究资产 / Research Assets
+- [2026-06-02 Pipeline Manifest](RESEARCH/daily/2026-06-02-pipeline-manifest.md)
 - [RESEARCH/daily/README.md](./RESEARCH/daily/README.md) - 日度研究资产说明 / Daily research asset description
 - [RPT-2026-Q1-AGENT-ARCHITECTURE.md](./RESEARCH/RPT-2026-Q1-AGENT-ARCHITECTURE.md) - 2026 Q1 Agent 架构报告 / 2026 Q1 Agent Architecture Report
 - [2026-06-01 Pipeline Manifest](RESEARCH/daily/2026-06-01-pipeline-manifest.md)
