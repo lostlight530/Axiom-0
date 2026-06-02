@@ -37,5 +37,5 @@
 - PATCH_REF: 2026-06-01-daily-reports
 - PATCH_REF: 2026-W23-weekly-manifest
 - PATCH_REF: 2026-06-monthly-manifest
-  - **[CN]**: RESEARCH/daily/2026-05-27-pipeline-manifest.md
-  - **[EN]**: RESEARCH/daily/2026-05-27-pipeline-manifest.md
+  - **[CN]**: RESEARCH/daily/2026-06-02-pipeline-manifest.md
+  - **[EN]**: RESEARCH/daily/2026-06-02-pipeline-manifest.md
