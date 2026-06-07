@@ -47,3 +47,4 @@
 - Located in `CODE/`, presenting absolute DAG physical operational mechanics.
 - [2026-W23 Weekly Manifest](RESEARCH/weekly/2026-W23-weekly-manifest.md)
 - [2026-06 Monthly Manifest](RESEARCH/monthly/2026-06-monthly-manifest.md)
+- [2026-06-07 Pipeline Manifest](RESEARCH/daily/2026-06-07-pipeline-manifest.md)
