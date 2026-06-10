@@ -50,3 +50,4 @@
 - [2026-06-07 Pipeline Manifest](RESEARCH/daily/2026-06-07-pipeline-manifest.md)
 - [2026-06-08 Pipeline Manifest](RESEARCH/daily/2026-06-08-pipeline-manifest.md)
 - [2026-06-09 Pipeline Manifest](RESEARCH/daily/2026-06-09-pipeline-manifest.md)
+- [2026-06-10 Pipeline Manifest](RESEARCH/daily/2026-06-10-pipeline-manifest.md)
