@@ -52,3 +52,4 @@
 - [2026-06 Monthly Manifest](RESEARCH/monthly/2026-06-monthly-manifest.md)
 - [2026-06-07 Pipeline Manifest](RESEARCH/daily/2026-06-07-pipeline-manifest.md)
 - [2026-06-08 Pipeline Manifest](RESEARCH/daily/2026-06-08-pipeline-manifest.md)
+- [2026-06-12 Pipeline Manifest](RESEARCH/daily/2026-06-12-pipeline-manifest.md)
