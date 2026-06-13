@@ -1,4 +1,4 @@
-# ADR-067: 证据状态刚性标记法则 / Rigid Evidence Status Labeling Law
+# ADR-009: 证据状态刚性标记法则 / Rigid Evidence Status Labeling Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)

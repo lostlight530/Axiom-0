@@ -1,4 +1,4 @@
-# METHODOLOGY: 后处理与绝对脱水机制 / Post-Processing and Absolute Dehydration Mechanism
+# METH-006: 后处理与绝对脱水机制 / Post-Processing and Absolute Dehydration Mechanism
 
 ## 高熵输入的强制抽干 / Mandatory Draining of High-Entropy Inputs
 > **[CN]:** 世界是高熵的，而系统必须是绝对零熵的。后处理机制的核心使命，就是在信息洪流撞击核心防线之前，将其所有的不确定性与混沌水分强行抽干。任何冗余的礼貌用语、含糊的猜测与人类思维的跳跃，都必须在这个阶段被粉碎成最基础的结构化断言。

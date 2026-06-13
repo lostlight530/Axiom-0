@@ -1,4 +1,4 @@
-# ADR-061: 上下文摄入与规范化法则 / Context Ingestion and Canonicalization Law
+# ADR-005: 上下文摄入与规范化法则 / Context Ingestion and Canonicalization Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)

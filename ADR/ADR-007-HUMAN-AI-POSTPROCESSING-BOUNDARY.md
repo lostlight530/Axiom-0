@@ -1,4 +1,4 @@
-# ADR-063: 人机后处理边界法则 / Human-AI Post-Processing Boundary Law
+# ADR-007: 人机后处理边界法则 / Human-AI Post-Processing Boundary Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)
