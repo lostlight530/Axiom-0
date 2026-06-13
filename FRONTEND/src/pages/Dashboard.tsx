@@ -62,6 +62,13 @@ const rawData: TrafficData[] = [
   { repo: "Axiom-0", period: "05/28", clones: 590, uniqueCloners: 40, views: 10, uniqueVisitors: 6 },
   { repo: "reflective-continuum", period: "05/28", clones: 450, uniqueCloners: 40, views: 7, uniqueVisitors: 5 },
   { repo: "agent-foundations", period: "05/28", clones: 80, uniqueCloners: 30, views: 1, uniqueVisitors: 1 },
+
+  // 06/12 Data (Preserved single digits, rounded tens)
+  { repo: "welcome-to-github", period: "06/12", clones: 2440, uniqueCloners: 550, views: 70, uniqueVisitors: 10 },
+  { repo: "zero-entropy-lab", period: "06/12", clones: 1400, uniqueCloners: 310, views: 20, uniqueVisitors: 7 },
+  { repo: "Axiom-0", period: "06/12", clones: 540, uniqueCloners: 210, views: 7, uniqueVisitors: 7 },
+  { repo: "reflective-continuum", period: "06/12", clones: 700, uniqueCloners: 270, views: 5, uniqueVisitors: 4 },
+  { repo: "agent-foundations", period: "06/12", clones: 280, uniqueCloners: 150, views: 4, uniqueVisitors: 4 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -186,7 +193,7 @@ export default function RepoTrafficVisualizationDashboard() {
   }, [filtered]);
 
   const comparisonData = useMemo(() => {
-    const period = "05/28";
+    const period = "06/12";
     const axiomRepo = data.find((d) => d.repo === "Axiom-0" && d.period === period);
     const zeroRepo = data.find((d) => d.repo === "zero-entropy-lab" && d.period === period);
     const mainRepo = data.find((d) => d.repo === "welcome-to-github" && d.period === period);
@@ -444,7 +451,7 @@ export default function RepoTrafficVisualizationDashboard() {
                 <div className="rounded-2xl border border-slate-200 p-5 bg-white space-y-2">
                   <p className="font-semibold text-slate-950 text-sm">Spontaneous High-Density Execution Events</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    During the 04/29 and 05/28 windows, nodes (Axiom-0, reflective-continuum, agent-foundations) registered unprecedented high Clone-to-View ratios. This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent, pulling repositories directly without browsing presentation layers.
+                    During the 04/29, 05/28, and 06/12 windows, nodes (Axiom-0, reflective-continuum, agent-foundations) registered unprecedented high Clone-to-View ratios. This statistical impossibility under normal browsing patterns suggests visitors arrived with pre-compiled intent, pulling repositories directly without browsing presentation layers.
                   </p>
                 </div>
 
