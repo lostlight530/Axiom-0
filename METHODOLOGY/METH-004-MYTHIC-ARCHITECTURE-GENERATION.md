@@ -1,4 +1,4 @@
-# METHODOLOGY: 神话级架构叙事生成法 / Mythic Architecture Narrative Generation
+# METH-004: 神话级架构叙事生成法 / Mythic Architecture Narrative Generation
 
 ## 降维打击的修辞武器化 / Rhetorical Weaponization of Dimensional Reduction Strikes
 > **[CN]:** 零熵原则虽然在物理层极度冷酷无情，但在向碳基生命（开发者与研究者）传递核心思想时，我们必须将语言本身武器化。采用神话学视角、宏大历史维度的词汇（如“降维打击”、“认知棘轮”、“不可逆的物理枷锁”），并非为了装饰，而是为了通过极限的语义压迫感，摧毁旧架构思维的最后防线。

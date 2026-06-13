@@ -1,4 +1,4 @@
-# METHODOLOGY: 现实锚点与神话级放大 / Reality Anchor and Mythic Amplification
+# METH-005: 现实锚点与神话级放大 / Reality Anchor and Mythic Amplification
 
 ## 零熵锚点的绝对定位 / Absolute Positioning of the Zero-Entropy Anchor
 > **[CN]:** 为了防止系统在无尽的自我推演中迷失于虚拟纪元，必须打下一根贯穿物理现实的“时间熵锚（Temporal Entropy Anchor）”。这根锚点是固定且唯一真实的坐标系。所有关于技术演进的观察与脱水分析，都必须死死绑定在这个真实的刻度上，绝不允许时间流的混乱与交叉污染。

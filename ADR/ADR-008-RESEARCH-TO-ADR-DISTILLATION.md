@@ -1,4 +1,4 @@
-# ADR-066: 研究到决策蒸馏法则 / Research to ADR Distillation Law
+# ADR-008: 研究到决策蒸馏法则 / Research to ADR Distillation Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)

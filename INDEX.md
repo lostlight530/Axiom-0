@@ -11,26 +11,28 @@
 - [SPECIFICATION.md](./SPECIFICATION.md) - ZECP 拓扑约束与代数级防御规范 / ZECP Topological Constraints & Algebraic Defense Spec
 
 ## 2. 方法论 / Methodology
-- [METH-001-DAG-TOPOLOGY-CONSTRAINT.md](./METHODOLOGY/METH-001-DAG-TOPOLOGY-CONSTRAINT.md) - 不可逆 10 节点认知棘轮 / Irreversible 10-Node Cognitive Ratchet
-- [METH-002-KL-DIVERGENCE-DEFENSE.md](./METHODOLOGY/METH-002-KL-DIVERGENCE-DEFENSE.md) - 代数级物理枷锁 / Algebraic Physical Shackles
-- [METH-003-ADR-DISTILLATION-PROTOCOL.md](./METHODOLOGY/METH-003-ADR-DISTILLATION-PROTOCOL.md) - 液态知识的绝对固化 / Absolute Solidification of Liquid Knowledge
-- [mythic-architecture-generation.md](./METHODOLOGY/mythic-architecture-generation.md) - 神话生成方法论 / Mythology Generation Methodology
-- [reality-anchor-and-mythic-amplification.md](./METHODOLOGY/reality-anchor-and-mythic-amplification.md) - 现实锚点与神话增压 / Reality Anchor and Mythic Amplification
-- [post-processing-and-dehydration.md](./METHODOLOGY/post-processing-and-dehydration.md) - 后处理与脱水链 / Post-processing and dehydration chain
+- [METH-001](./METHODOLOGY/METH-001-DAG-TOPOLOGY-CONSTRAINT.md) - 不可逆 10 节点认知棘轮 / Irreversible 10-Node Cognitive Ratchet
+- [METH-002](./METHODOLOGY/METH-002-KL-DIVERGENCE-DEFENSE.md) - 代数级物理枷锁 / Algebraic Physical Shackles
+- [METH-003](./METHODOLOGY/METH-003-ADR-DISTILLATION-PROTOCOL.md) - 液态知识的绝对固化 / Absolute Solidification of Liquid Knowledge
+- [METH-004](./METHODOLOGY/METH-004-MYTHIC-ARCHITECTURE-GENERATION.md) - 神话架构生成 / Mythic Architecture Generation
+- [METH-005](./METHODOLOGY/METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md) - 现实锚点与神话增压 / Reality Anchor and Mythic Amplification
+- [METH-006](./METHODOLOGY/METH-006-POST-PROCESSING-AND-DEHYDRATION.md) - 后处理与脱水链 / Post-processing and dehydration chain
+- [METH-007](./METHODOLOGY/METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md) - 认知防火墙与有机隔离 / Cognitive Firewall and Organic Isolation
+- [METH-008](./METHODOLOGY/METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md) - 合成内容排斥边界 / Synthetic Content Exclusion Boundary
+- [METH-009](./METHODOLOGY/METH-009-TEMPORAL-ENTROPY-ANCHORING.md) - 时间熵锚定法 / Temporal Entropy Anchoring
+- [METH-010](./METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md) - KL散度阈值绝对主义 / KL Divergence Threshold Absolutism
 
 ## 3. 极简架构决策记录 / Minimalist Architectural Decision Records (ADR)
 - [ADR-001](./ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md) - ZECP 基石法则 / ZECP Foundation
 - [ADR-002](./ADR/ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md) - DAG 单向熔断法则 / DAG One-Way Meltdown
 - [ADR-003](./ADR/ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md) - KL 散度硬防御 / KL Divergence Hard Defense
 - [ADR-004](./ADR/ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md) - 知识物理固化 / Knowledge Physical Solidification
-- [ADR-061](./ADR/ADR-061-context-ingestion-and-canonicalization.md) - 上下文摄取和规范化 / Context Ingestion and Canonicalization
-- [ADR-062](./ADR/ADR-062-mythic-generation-lane.md) - 神话一代-lane / Mythic Generation Lane
-- [ADR-063](./ADR/ADR-063-human-ai-postprocessing-boundary.md) - 人类-ai-后处理-边界 / Human-AI Postprocessing Boundary
-- [ADR-066](./ADR/ADR-066-research-to-adr-distillation.md) - Research to ADR Distillation
-- [ADR-067](./ADR/ADR-067-evidence-status-labeling.md) - 证据-状态-标签 / Evidence Status Labeling
-- [ADR-068](./ADR/ADR-068-index-synchronization-and-nav-contract.md) - Index Synchronization and Nav Contract
-- [ADR-069](./ADR/ADR-069-repo-knowledge-stratification.md) - Repo Knowledge Stratification
-- [ADR-070](./ADR/ADR-070-reference-implementation-boundary.md) - 参考-实现-边界 / Reference Implementation Boundary
+- [ADR-005](./ADR/ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md) - 上下文摄取和规范化 / Context Ingestion and Canonicalization
+- [ADR-006](./ADR/ADR-006-MYTHIC-GENERATION-LANE.md) - 神话生成通道 / Mythic Generation Lane
+- [ADR-007](./ADR/ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md) - 人机后处理边界 / Human-AI Postprocessing Boundary
+- [ADR-008](./ADR/ADR-008-RESEARCH-TO-ADR-DISTILLATION.md) - 研究到决策蒸馏 / Research to ADR Distillation
+- [ADR-009](./ADR/ADR-009-EVIDENCE-STATUS-LABELING.md) - 证据状态刚性标记 / Evidence Status Labeling
+- [ADR-010](./ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md) - 索引同步与导航契约 / Index Synchronization and Nav Contract
 
 ## 4. 研究资产 / Research Assets
 - [2026-06-11 Pipeline Manifest](RESEARCH/daily/2026-06-11-pipeline-manifest.md)

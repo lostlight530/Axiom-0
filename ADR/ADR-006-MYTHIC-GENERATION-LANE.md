@@ -1,4 +1,4 @@
-# ADR-062: 神话学生成通道法则 / Mythic Generation Lane Law
+# ADR-006: 神话学生成通道法则 / Mythic Generation Lane Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)

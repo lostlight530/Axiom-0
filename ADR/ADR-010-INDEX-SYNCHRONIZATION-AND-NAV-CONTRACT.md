@@ -1,4 +1,4 @@
-# ADR-068: 索引同步与导航契约法则 / Index Synchronization and Navigation Contract Law
+# ADR-010: 索引同步与导航契约法则 / Index Synchronization and Navigation Contract Law
 
 ## 状态 / Status
 > **[CN]:** 绝对法则 (Absolute Law)
