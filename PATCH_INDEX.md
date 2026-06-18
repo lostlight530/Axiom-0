@@ -4,6 +4,10 @@
 > **[EN]**: Append the following entries to `INDEX.md`
 
 ## METHODOLOGY
+- **[CN]**: `METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md` 确定性协作协议
+  - **[EN]**: `METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md` Deterministic Collaboration Protocol
+- **[CN]**: `METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md` 零信任资源分配
+  - **[EN]**: `METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md` Zero Trust Resource Allocation
 - **[CN]**: `METHODOLOGY/mythic-architecture-generation.md`  神话生成方法论
   - **[EN]**: `METHODOLOGY/mythic-architecture-generation.md` Mythology Generation Methodology
 - **[CN]**: `METHODOLOGY/reality-anchor-and-mythic-amplification.md`  现实锚点与神话增压
@@ -22,6 +26,10 @@
   - **[EN]**: `RESEARCH/daily/2026-06-01-pipeline-manifest.md`
 
 ## ADR
+- **[CN]**: `ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md` 零信任工具执行法则
+  - **[EN]**: `ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md` Zero-Trust Tool Execution Law
+- **[CN]**: `ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md` 沙箱自毁协议
+  - **[EN]**: `ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md` Sandbox Self-Destruction Protocol
 - **[CN]**: `ADR/ADR-061-上下文摄取和规范化.md`
   - **[EN]**: `ADR/ADR-061-context-ingestion-and-canonicalization.md`
 - **[CN]**: `ADR/ADR-062-神话一代-lane.md`

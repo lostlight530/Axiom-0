@@ -21,6 +21,8 @@
 - [METH-008](./METHODOLOGY/METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md) - 合成内容排斥边界 / Synthetic Content Exclusion Boundary
 - [METH-009](./METHODOLOGY/METH-009-TEMPORAL-ENTROPY-ANCHORING.md) - 时间熵锚定法 / Temporal Entropy Anchoring
 - [METH-010](./METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md) - KL散度阈值绝对主义 / KL Divergence Threshold Absolutism
+- [METH-011](./METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md) - 确定性协作协议 / Deterministic Collaboration Protocol
+- [METH-012](./METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) - 零信任资源分配 / Zero Trust Resource Allocation
 
 ## 3. 极简架构决策记录 / Minimalist Architectural Decision Records (ADR)
 - [ADR-001](./ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md) - ZECP 基石法则 / ZECP Foundation
@@ -33,6 +35,8 @@
 - [ADR-008](./ADR/ADR-008-RESEARCH-TO-ADR-DISTILLATION.md) - 研究到决策蒸馏 / Research to ADR Distillation
 - [ADR-009](./ADR/ADR-009-EVIDENCE-STATUS-LABELING.md) - 证据状态刚性标记 / Evidence Status Labeling
 - [ADR-010](./ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md) - 索引同步与导航契约 / Index Synchronization and Nav Contract
+- [ADR-011](./ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md) - 零信任工具执行法则 / Zero-Trust Tool Execution Law
+- [ADR-012](./ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md) - 沙箱自毁协议 / Sandbox Self-Destruction Protocol
 
 ## 4. 研究资产 / Research Assets
 - [2026-06-11 Pipeline Manifest](RESEARCH/daily/2026-06-11-pipeline-manifest.md)
