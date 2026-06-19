@@ -65,3 +65,4 @@
 - [2026-06-16 Pipeline Manifest](RESEARCH/daily/2026-06-16-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest
 - [2026-06-17 Pipeline Manifest](RESEARCH/daily/2026-06-17-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest
 - [2026-06-18 Pipeline Manifest](RESEARCH/daily/2026-06-18-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest
+- [2026-06-19 Pipeline Manifest](RESEARCH/daily/2026-06-19-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest
