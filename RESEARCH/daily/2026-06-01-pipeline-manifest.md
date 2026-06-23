@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: arXiv, Anthropic, OpenAI
-- **Temporal Entropy Anchor**: 2026-06-01T12:09:05.749558+00:00
+- **Temporal Entropy Anchor**: 2026-06-01
 - **[CN]**: 大语言模型提供商已彻底演化为国家级核心系统的底层基础设施
 - **[EN]**: Large language model providers have definitively evolved into the foundational infrastructure of state-level core systems
 

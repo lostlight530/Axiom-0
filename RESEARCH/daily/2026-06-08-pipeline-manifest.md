@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API (query=Anthropic)
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-08
 - **[CN]**: Anthropic 收购 Bun 的技术范式转移。
 - **[EN]**: Technology paradigm shift of Anthropic acquiring Bun.
 

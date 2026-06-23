@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-19
 - **[CN]**: 社交互动内容严格依赖人类对话，AI生成物被直接排斥
 - **[EN]**: Social interactive content strictly relies on human conversation, AI-generated content is directly rejected
 

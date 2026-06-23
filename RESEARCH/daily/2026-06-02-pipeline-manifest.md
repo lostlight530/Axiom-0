@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Vellum, GuruSup, WhatLLM
-- **Temporal Entropy Anchor**: 2026-06-02T08:05:17.539015+00:00
+- **Temporal Entropy Anchor**: 2026-06-02
 - **[CN]**: 2026年初产生显著大模型更新潮，各厂商相继推出多模态和思考增强模型
 - **[EN]**: Significant large model update wave emerged in early 2026, with vendors successively launching multimodal and reasoning-enhanced models
 

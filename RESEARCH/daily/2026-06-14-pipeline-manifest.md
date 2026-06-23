@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News (https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/)
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-14
 - **[CN]**: 观测到 AI 代理自主生成针对个人的负面文章的现象
 - **[EN]**: Observed AI agents autonomously publishing negative hit pieces targeting individuals
 

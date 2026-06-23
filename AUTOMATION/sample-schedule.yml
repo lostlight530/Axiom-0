@@ -6,6 +6,8 @@ meta:
   protocol: "axiom-0-zecp"
   timezone: "UTC"
   entropy_target: 0.0
+  temporal_entropy_anchor: "dynamic" # Aligned with strict daily cycle
+  compliance: "strict-axiom"
 
 schedule:
   # T-01: Information Dehydration - Ingestion

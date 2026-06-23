@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News API (Algolia)
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-04
 - **[CN]**: 约翰卡马克宣布转向通用人工智能开发，标志着算力重组向极端集中化演进。
 - **[EN]**: John Carmack's shift towards Artificial General Intelligence marks the evolution of computational reorganization towards extreme centralization.
 

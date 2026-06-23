@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Search API
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-10
 - **[CN]**: 前沿源显示关于开放源码人工智能和抵制生成式评论的明确规定
 - **[EN]**: Frontier sources display explicit regulations regarding open-source artificial intelligence and resistance to generated comments
 

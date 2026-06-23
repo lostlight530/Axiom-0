@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia ("Don't post generated/AI-edited comments. HN is for conversation between humans")
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-17
 - **[CN]**: 人类主导平台强制剥离机器合成流量的免疫防御机制已正式确立边界。
 - **[EN]**: The immune defense mechanism of human-dominated platforms forcibly stripping machine-synthesized traffic has formally established boundaries.
 
