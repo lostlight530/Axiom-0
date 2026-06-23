@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News
-- **Temporal Entropy Anchor**: 2026-06-03T08:05:08.743926+00:00
+- **Temporal Entropy Anchor**: 2026-06-03
 - **[CN]**: 2026年涌现通过AI大模型函数调用实现IDE自动化和隐私优先本地桌面的技术
 - **[EN]**: Technologies enabling IDE automation via AI large model function calling and privacy-first local desktop AI emerge in 2026
 

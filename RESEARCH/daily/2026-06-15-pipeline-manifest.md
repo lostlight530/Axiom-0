@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia Search
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-15
 - **[CN]**: 外部系统持续探索低成本和自动路由的算力聚合技术。
 - **[EN]**: External systems continue to explore low-cost and auto-routing compute aggregation technologies.
 

@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia Search API
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-09
 - **[CN]**: 社交互动平台持续规范自动化与 AI 生成内容的边界，强调基于人类交互的真实性
 - **[EN]**: Social interaction platforms continue to regulate the boundaries of automated and AI-generated content, emphasizing authenticity based on human interaction.
 

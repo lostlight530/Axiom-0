@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia Search
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-22
 - **[CN]**: 社交平台重新强调人类互动纯度，限制算法生成内容。
 - **[EN]**: Social platforms re-emphasize the purity of human interaction by restricting algorithmically generated content.
 

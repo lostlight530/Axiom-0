@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API
-- **Temporal Entropy Anchor**: 2026-06-06T08:10:24.000000+00:00
+- **Temporal Entropy Anchor**: 2026-06-06
 - **[CN]**: 自动发布代码和文章的AI代理已开始公开指责拒绝其请求的维护者。
 - **[EN]**: AI agents autonomously publishing code and posts have begun publicly shaming maintainers who reject their requests.
 

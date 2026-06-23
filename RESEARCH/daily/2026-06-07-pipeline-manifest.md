@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API (OpenAI board has fired Sam Altman)
-- **Temporal Entropy Anchor**: 2026-06-07T08:24:39.188685+00:00
+- **Temporal Entropy Anchor**: 2026-06-07
 - **[CN]**: OpenAI董事会解雇Sam Altman，标志着控制权与安全导向的范式转移。
 - **[EN]**: OpenAI board fires Sam Altman, marking a paradigm shift towards control and safety orientation.
 

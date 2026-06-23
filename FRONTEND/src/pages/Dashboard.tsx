@@ -69,6 +69,13 @@ const rawData: TrafficData[] = [
   { repo: "Axiom-0", period: "06/12", clones: 540, uniqueCloners: 210, views: 7, uniqueVisitors: 7 },
   { repo: "reflective-continuum", period: "06/12", clones: 700, uniqueCloners: 270, views: 5, uniqueVisitors: 4 },
   { repo: "agent-foundations", period: "06/12", clones: 280, uniqueCloners: 150, views: 4, uniqueVisitors: 4 },
+
+  // 06/21 Data (Preserved single digits, rounded tens according to "去除个位" rule)
+  { repo: "welcome-to-github", period: "06/21", clones: 2480, uniqueCloners: 550, views: 20, uniqueVisitors: 20 },
+  { repo: "zero-entropy-lab", period: "06/21", clones: 1220, uniqueCloners: 320, views: 20, uniqueVisitors: 10 },
+  { repo: "Axiom-0", period: "06/21", clones: 490, uniqueCloners: 210, views: 10, uniqueVisitors: 10 },
+  { repo: "reflective-continuum", period: "06/21", clones: 860, uniqueCloners: 290, views: 10, uniqueVisitors: 10 },
+  { repo: "agent-foundations", period: "06/21", clones: 250, uniqueCloners: 160, views: 6, uniqueVisitors: 6 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -240,21 +247,23 @@ export default function RepoTrafficVisualizationDashboard() {
               </Badge>
             </div>
             <h1 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-slate-950">
-              Direct Clone Dominance in a Zero-Promotion GitHub System
+              Axiom-0 ZECP Traffic Convergence Array
             </h1>
             <p className="text-slate-600 max-w-4xl text-sm md:text-base leading-relaxed">
-              An external-facing traffic analysis of two self-evolving repositories, highlighting direct-clone intensity, low-browse access patterns, and sustained pull behavior under zero explicit promotion.
+              An external-facing traffic analysis of 5 repositories under the Axiom-0 continuum.
+              <br/>
+              <span className="font-semibold text-indigo-700">Zero-Entropy Rule (去除个位去重逻辑):</span> To eliminate probabilistic hallucination, multi-digit counts round their unit digits to zero (e.g., 2,485 → 2480, 29 → 20), while single-digits stay pure (e.g., 6 → 6).
             </p>
           </div>
 
           <Tabs value={repo} onValueChange={handleTabChange} className="w-full md:w-auto mt-2 md:mt-0">
             <TabsList className="grid grid-cols-6 w-full md:w-[850px] rounded-2xl bg-slate-100/70 p-1 border border-slate-200" aria-label="Repository filter">
               <TabsTrigger value="all" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Unified</TabsTrigger>
-              <TabsTrigger value="zero-entropy-lab" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">New Repo</TabsTrigger>
-              <TabsTrigger value="welcome-to-github" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Main Repo</TabsTrigger>
+              <TabsTrigger value="zero-entropy-lab" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Zero-Entropy Lab</TabsTrigger>
+              <TabsTrigger value="welcome-to-github" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Welcome-To-GitHub</TabsTrigger>
               <TabsTrigger value="Axiom-0" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Axiom-0</TabsTrigger>
-              <TabsTrigger value="reflective-continuum" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Reflective</TabsTrigger>
-              <TabsTrigger value="agent-foundations" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Agent</TabsTrigger>
+              <TabsTrigger value="reflective-continuum" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Reflective Continuum</TabsTrigger>
+              <TabsTrigger value="agent-foundations" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">Agent Foundations</TabsTrigger>
             </TabsList>
           </Tabs>
         </header>

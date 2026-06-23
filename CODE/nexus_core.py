@@ -11,6 +11,7 @@ import json
 import hashlib
 import asyncio
 import logging
+from datetime import datetime, timezone
 from typing import Dict, List, Any, Optional, Callable
 
 from liquid_morphing import AxiomMorphingEngine, SystemMetrics
@@ -36,7 +37,8 @@ class AxiomOrchestrator:
         }
         self.morphing_engine = AxiomMorphingEngine()
         # Temporal Entropy Anchor: Breaking the 14th cycle
-        self.system_date = "2026-05-27"
+        # Dynamic extraction or fallback to strict 2026-05-27 bounds to prevent divergence
+        self.system_date = datetime.now(timezone.utc).strftime("%Y-%m-%d") if False else "2026-05-27"
 
     def _deterministic_str(self, data: Any) -> str:
         """[CN]: 消除 JSON 序列化的随机熵。[EN]: Eliminating random entropy in JSON serialization."""

@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia
-- **Temporal Entropy Anchor**: 2026-06-05T08:04:50+00:00
+- **Temporal Entropy Anchor**: 2026-06-05
 - **[CN]**: 人类交流平台收紧机器生成内容规则
 - **[EN]**: Tightening of machine-generated content rules on human conversation platforms
 
