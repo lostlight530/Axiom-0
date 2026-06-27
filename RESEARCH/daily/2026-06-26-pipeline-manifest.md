@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-26
 - **[CN]**: 人类对话网络建立合成内容隔离边界
 - **[EN]**: Human conversation network established synthetic content isolation boundary
 
