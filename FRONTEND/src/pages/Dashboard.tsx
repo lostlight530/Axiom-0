@@ -2,7 +2,39 @@ import React, { useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Eye, Copy, Users, AlertTriangle, Scale, Activity } from "lucide-react";
+import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe } from "lucide-react";
+
+const translations = {
+  en: {
+    dashboardTitle: "Analytics Dashboard",
+    dashboardDesc: "Viewing telemetry and traffic metrics",
+    overviewTab: "Overview",
+    analyticsTab: "Analytics",
+    dedupLogicTitle: "Strict Deduplication Logic Active",
+    dedupLogicDesc: "Data ingested into this system is strictly deduplicated using a SHA-256 cryptographic payload fingerprinting mechanism. If a telemetry packet is received multiple times (e.g., due to network retries), the duplicated hashes are mathematically rejected.",
+    exampleTitle: "Example",
+    exampleDesc: "If the 'welcome-to-github' repo reports 1500 clones, but 100 clone events share identical payload hashes, the system counts 1400 valid events.",
+    clones: "Total Clones",
+    uniqueCloners: "Unique Cloners",
+    views: "Total Views",
+    uniqueVisitors: "Unique Visitors",
+  },
+  zh: {
+    dashboardTitle: "分析仪表盘",
+    dashboardDesc: "查看遥测与流量指标",
+    overviewTab: "概览",
+    analyticsTab: "分析",
+    dedupLogicTitle: "严格数据去重逻辑已启用",
+    dedupLogicDesc: "本系统摄入的数据使用 SHA-256 密码学负载指纹机制进行严格去重。如果多次收到同一个遥测数据包（例如因为网络重试），重复的哈希将被在数学层面上拒绝。",
+    exampleTitle: "示例",
+    exampleDesc: "如果 'welcome-to-github' 仓库报告了 1500 次克隆，但其中 100 次克隆事件具有相同的负载哈希，则系统记录 1400 次有效事件。",
+    clones: "总克隆数",
+    uniqueCloners: "唯一克隆者",
+    views: "总浏览量",
+    uniqueVisitors: "唯一访客",
+  }
+};
+
 import {
   ResponsiveContainer,
   LineChart,
@@ -130,6 +162,9 @@ const MetricCard: React.FC<{ title: string; value: string; subtitle: string; ico
 ));
 
 export default function RepoTrafficVisualizationDashboard() {
+  const [lang, setLang] = useState<"en" | "zh">("en");
+  const t = translations[lang];
+
   const [repo, setRepo] = useState<string>("all");
   const isAllView = repo === "all";
 
@@ -188,6 +223,16 @@ export default function RepoTrafficVisualizationDashboard() {
               <TabsTrigger value="reflective-continuum" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Reflective</TabsTrigger>
               <TabsTrigger value="agent-foundations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Agent</TabsTrigger>
             </TabsList>
+
+        <Alert className="mt-4 bg-muted/50">
+          <Scale className="h-4 w-4" />
+          <AlertTitle>{t.dedupLogicTitle}</AlertTitle>
+          <AlertDescription className="text-xs text-muted-foreground">
+            <p>{t.dedupLogicDesc}</p>
+            <p className="mt-1 font-semibold">{t.exampleTitle}: {t.exampleDesc}</p>
+          </AlertDescription>
+        </Alert>
+
           </Tabs>
         </header>
 
@@ -202,10 +247,15 @@ export default function RepoTrafficVisualizationDashboard() {
         <section className="mb-8">
           <Card className="rounded-2xl shadow-2xl border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden">
             <CardHeader className="border-b border-slate-800/50 p-6 bg-slate-900/30">
-              <CardTitle className="text-white font-mono flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
-                {isAllView ? "Macro Node Dominance [AGGREGATED]" : "Temporal Convergence Matrix [ISOLATED]"}
-              </CardTitle>
+              <CardTitle className="text-white font-mono flex items-center justify-between gap-2 w-full">
+                  <div className="flex items-center gap-2">
+                    <Activity className="h-5 w-5 text-emerald-400" />
+                    {t.dashboardTitle}
+                  </div>
+                  <button onClick={() => setLang(lang === "en" ? "zh" : "en")} className="flex items-center text-sm font-normal text-slate-300 hover:text-white bg-slate-800 px-2 py-1 rounded border border-slate-700 cursor-pointer"><Globe className="w-4 h-4 mr-1"/> {lang === "en" ? "中文" : "English"}</button>
+                </CardTitle>
+                <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse mt-2 block"></span>
+                <span className="text-sm font-mono text-cyan-500">{isAllView ? "Macro Node Dominance [AGGREGATED]" : "Temporal Convergence Matrix [ISOLATED]"}</span>
               <CardDescription className="text-slate-400 font-mono text-xs">
                 {isAllView
                   ? "Volumetric distribution of deterministic pressure across the system topology."
