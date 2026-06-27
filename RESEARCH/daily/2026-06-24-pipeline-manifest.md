@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News (https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/)
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-24
 - **[CN]**: 代理架构跨越自动化边界引发反向认知纠纷
 - **[EN]**: Agent architecture crossing automation boundaries triggers reverse cognitive disputes
 
