@@ -10,7 +10,7 @@
 
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia
-- **Temporal Entropy Anchor**: 2026-05-27
+- **Temporal Entropy Anchor**: 2026-06-23
 - **[CN]**: 社区拒绝人工智能生成的评论，强调人类间对话的核心价值。
 - **[EN]**: The community rejects AI-generated comments, emphasizing the core value of human-to-human conversation.
 
