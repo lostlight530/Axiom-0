@@ -23,6 +23,8 @@
 - [METH-010](./METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md) - KL散度阈值绝对主义 / KL Divergence Threshold Absolutism
 - [METH-011](./METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md) - 确定性协作协议 / Deterministic Collaboration Protocol
 - [METH-012](./METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) - 零信任资源分配 / Zero Trust Resource Allocation
+- [METH-013](./METHODOLOGY/METH-013-STRICT-DATA-DEDUPLICATION.md) - 严格数据去重协议 / Strict Data Deduplication Protocol
+- [METH-014](./METHODOLOGY/METH-014-GROUNDEDNESS-RULE.md) - 事实可寻址性规则 / Fact Addressability Rule (Groundedness)
 
 ## 3. 极简架构决策记录 / Minimalist Architectural Decision Records (ADR)
 - [ADR-001](./ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md) - ZECP 基石法则 / ZECP Foundation
@@ -37,6 +39,9 @@
 - [ADR-010](./ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md) - 索引同步与导航契约 / Index Synchronization and Nav Contract
 - [ADR-011](./ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md) - 零信任工具执行法则 / Zero-Trust Tool Execution Law
 - [ADR-012](./ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md) - 沙箱自毁协议 / Sandbox Self-Destruction Protocol
+- [ADR-013](./ADR/ADR-013-STRICT-DATA-DEDUPLICATION.md) - 严格数据去重逻辑 / Strict Data Deduplication Logic
+- [ADR-014](./ADR/ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md) - 仓库知识分层法则 / Repository Knowledge Stratification Law
+- [ADR-015](./ADR/ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md) - 参考实现边界法则 / Reference Implementation Boundary Law
 
 ## 4. 研究资产 / Research Assets
 - [2026-06-11 Pipeline Manifest](RESEARCH/daily/2026-06-11-pipeline-manifest.md)
