@@ -66,26 +66,26 @@ interface ProcessedData extends TrafficData {
 
 const rawData: TrafficData[] = [
   // welcome-to-github
-  { repo: "Main Repo", period: "02/24", clones: 1470, uniqueCloners: 530, views: 2100, uniqueVisitors: 30 },
-  { repo: "Main Repo", period: "03/07", clones: 1540, uniqueCloners: 370, views: 2050, uniqueVisitors: 20 },
-  { repo: "Main Repo", period: "03/21", clones: 1500, uniqueCloners: 350, views: 1500, uniqueVisitors: 60 },
-  { repo: "Main Repo", period: "04/02", clones: 910, uniqueCloners: 290, views: 800, uniqueVisitors: 110 },
-  { repo: "Main Repo", period: "04/18", clones: 1050, uniqueCloners: 300, views: 960, uniqueVisitors: 70 },
-  { repo: "Main Repo", period: "04/29", clones: 1900, uniqueCloners: 610, views: 620, uniqueVisitors: 20 },
-  { repo: "Main Repo", period: "05/14", clones: 1630, uniqueCloners: 350, views: 80, uniqueVisitors: 20 },
-  { repo: "Main Repo", period: "05/28", clones: 2010, uniqueCloners: 60, views: 10, uniqueVisitors: 6 },
-  { repo: "Main Repo", period: "06/12", clones: 2440, uniqueCloners: 550, views: 70, uniqueVisitors: 10 },
-  { repo: "Main Repo", period: "06/26", clones: 3340, uniqueCloners: 660, views: 30, uniqueVisitors: 20 },
+  { repo: "welcome-to-github", period: "02/24", clones: 1470, uniqueCloners: 530, views: 2100, uniqueVisitors: 30 },
+  { repo: "welcome-to-github", period: "03/07", clones: 1540, uniqueCloners: 370, views: 2050, uniqueVisitors: 20 },
+  { repo: "welcome-to-github", period: "03/21", clones: 1500, uniqueCloners: 350, views: 1500, uniqueVisitors: 60 },
+  { repo: "welcome-to-github", period: "04/02", clones: 910, uniqueCloners: 290, views: 800, uniqueVisitors: 110 },
+  { repo: "welcome-to-github", period: "04/18", clones: 1050, uniqueCloners: 300, views: 960, uniqueVisitors: 70 },
+  { repo: "welcome-to-github", period: "04/29", clones: 1900, uniqueCloners: 610, views: 620, uniqueVisitors: 20 },
+  { repo: "welcome-to-github", period: "05/14", clones: 1630, uniqueCloners: 350, views: 80, uniqueVisitors: 20 },
+  { repo: "welcome-to-github", period: "05/28", clones: 2010, uniqueCloners: 60, views: 10, uniqueVisitors: 6 },
+  { repo: "welcome-to-github", period: "06/12", clones: 2440, uniqueCloners: 550, views: 70, uniqueVisitors: 10 },
+  { repo: "welcome-to-github", period: "06/26", clones: 3340, uniqueCloners: 660, views: 30, uniqueVisitors: 20 },
 
   // zero-entropy-lab
-  { repo: "New Repo", period: "03/21", clones: 760, uniqueCloners: 270, views: 520, uniqueVisitors: 20 },
-  { repo: "New Repo", period: "04/02", clones: 720, uniqueCloners: 300, views: 690, uniqueVisitors: 80 },
-  { repo: "New Repo", period: "04/12", clones: 580, uniqueCloners: 230, views: 870, uniqueVisitors: 100 },
-  { repo: "New Repo", period: "04/29", clones: 1010, uniqueCloners: 350, views: 540, uniqueVisitors: 20 },
-  { repo: "New Repo", period: "05/14", clones: 1200, uniqueCloners: 300, views: 30, uniqueVisitors: 20 },
-  { repo: "New Repo", period: "05/28", clones: 950, uniqueCloners: 300, views: 10, uniqueVisitors: 10 },
-  { repo: "New Repo", period: "06/12", clones: 1400, uniqueCloners: 310, views: 20, uniqueVisitors: 7 },
-  { repo: "New Repo", period: "06/26", clones: 1720, uniqueCloners: 390, views: 30, uniqueVisitors: 10 },
+  { repo: "zero-entropy-lab", period: "03/21", clones: 760, uniqueCloners: 270, views: 520, uniqueVisitors: 20 },
+  { repo: "zero-entropy-lab", period: "04/02", clones: 720, uniqueCloners: 300, views: 690, uniqueVisitors: 80 },
+  { repo: "zero-entropy-lab", period: "04/12", clones: 580, uniqueCloners: 230, views: 870, uniqueVisitors: 100 },
+  { repo: "zero-entropy-lab", period: "04/29", clones: 1010, uniqueCloners: 350, views: 540, uniqueVisitors: 20 },
+  { repo: "zero-entropy-lab", period: "05/14", clones: 1200, uniqueCloners: 300, views: 30, uniqueVisitors: 20 },
+  { repo: "zero-entropy-lab", period: "05/28", clones: 950, uniqueCloners: 300, views: 10, uniqueVisitors: 10 },
+  { repo: "zero-entropy-lab", period: "06/12", clones: 1400, uniqueCloners: 310, views: 20, uniqueVisitors: 7 },
+  { repo: "zero-entropy-lab", period: "06/26", clones: 1720, uniqueCloners: 390, views: 30, uniqueVisitors: 10 },
 
   // Axiom-0
   { repo: "Axiom-0", period: "04/29", clones: 370, uniqueCloners: 170, views: 100, uniqueVisitors: 10 },
@@ -95,14 +95,14 @@ const rawData: TrafficData[] = [
   { repo: "Axiom-0", period: "06/26", clones: 700, uniqueCloners: 230, views: 20, uniqueVisitors: 20 },
 
   // reflective-continuum
-  { repo: "Reflective", period: "05/28", clones: 450, uniqueCloners: 40, views: 7, uniqueVisitors: 5 },
-  { repo: "Reflective", period: "06/12", clones: 700, uniqueCloners: 270, views: 5, uniqueVisitors: 4 },
-  { repo: "Reflective", period: "06/26", clones: 1070, uniqueCloners: 290, views: 10, uniqueVisitors: 10 },
+  { repo: "reflective-continuum", period: "05/28", clones: 450, uniqueCloners: 40, views: 7, uniqueVisitors: 5 },
+  { repo: "reflective-continuum", period: "06/12", clones: 700, uniqueCloners: 270, views: 5, uniqueVisitors: 4 },
+  { repo: "reflective-continuum", period: "06/26", clones: 1070, uniqueCloners: 290, views: 10, uniqueVisitors: 10 },
 
   // agent-foundations
-  { repo: "Agent", period: "05/28", clones: 80, uniqueCloners: 30, views: 1, uniqueVisitors: 1 },
-  { repo: "Agent", period: "06/12", clones: 280, uniqueCloners: 150, views: 4, uniqueVisitors: 4 },
-  { repo: "Agent", period: "06/26", clones: 350, uniqueCloners: 170, views: 7, uniqueVisitors: 7 },
+  { repo: "agent-foundations", period: "05/28", clones: 80, uniqueCloners: 30, views: 1, uniqueVisitors: 1 },
+  { repo: "agent-foundations", period: "06/12", clones: 280, uniqueCloners: 150, views: 4, uniqueVisitors: 4 },
+  { repo: "agent-foundations", period: "06/26", clones: 350, uniqueCloners: 170, views: 7, uniqueVisitors: 7 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
@@ -175,11 +175,11 @@ export default function RepoTrafficVisualizationDashboard() {
   // Unified Macro Data: Aggregating total volume per repo
   const unifiedRepoData = useMemo(() => {
     const agg: Record<string, { name: string; totalClones: number; totalViews: number }> = {
-      "Main Repo": { name: "Main Repo", totalClones: 0, totalViews: 0 },
-      "New Repo": { name: "New Repo", totalClones: 0, totalViews: 0 },
+      "welcome-to-github": { name: "welcome-to-github", totalClones: 0, totalViews: 0 },
+      "zero-entropy-lab": { name: "zero-entropy-lab", totalClones: 0, totalViews: 0 },
       "Axiom-0": { name: "Axiom-0", totalClones: 0, totalViews: 0 },
-      "Reflective": { name: "Reflective", totalClones: 0, totalViews: 0 },
-      "Agent": { name: "Agent", totalClones: 0, totalViews: 0 },
+      "reflective-continuum": { name: "reflective-continuum", totalClones: 0, totalViews: 0 },
+      "agent-foundations": { name: "agent-foundations", totalClones: 0, totalViews: 0 },
     };
     data.forEach(d => {
       if (agg[d.repo]) {
@@ -217,11 +217,11 @@ export default function RepoTrafficVisualizationDashboard() {
           <Tabs defaultValue="all" onValueChange={setRepo} className="w-full">
             <TabsList className="grid grid-cols-2 md:grid-cols-6 w-full rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs">
               <TabsTrigger value="all" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Unified</TabsTrigger>
-              <TabsTrigger value="New Repo" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">New Repo</TabsTrigger>
-              <TabsTrigger value="Main Repo" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Main Repo</TabsTrigger>
+              <TabsTrigger value="zero-entropy-lab" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">zero-entropy-lab</TabsTrigger>
+              <TabsTrigger value="welcome-to-github" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">welcome-to-github</TabsTrigger>
               <TabsTrigger value="Axiom-0" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Axiom-0</TabsTrigger>
-              <TabsTrigger value="Reflective" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Reflective</TabsTrigger>
-              <TabsTrigger value="Agent" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Agent</TabsTrigger>
+              <TabsTrigger value="reflective-continuum" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">reflective-continuum</TabsTrigger>
+              <TabsTrigger value="agent-foundations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">agent-foundations</TabsTrigger>
             </TabsList>
 
         <Alert className="mt-4 bg-muted/50">
