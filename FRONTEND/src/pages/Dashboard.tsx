@@ -207,10 +207,10 @@ export default function RepoTrafficVisualizationDashboard() {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <Activity className="h-6 w-6 text-cyan-400" />
-              <h1 className="text-3xl font-bold tracking-tight text-white">ZECP Telemetry Array</h1>
+              <h1 className="text-3xl font-bold tracking-tight text-white">GitHub Traffic Telemetry Array</h1>
             </div>
             <p className="text-slate-400 text-sm font-mono max-w-3xl">
-              [SYSTEM_STATUS: ONLINE] Monitoring absolute deterministic pull requests and cognitive ratchet execution paths across all active nodes.
+              [SYSTEM_STATUS: ONLINE] Monitoring repository clone events, traffic metrics, and visitor analytics across all active nodes.
             </p>
           </div>
 
@@ -340,7 +340,7 @@ export default function RepoTrafficVisualizationDashboard() {
 
         <footer className="mt-8 border-t border-slate-800 pt-6 pb-6 text-center">
           <p className="text-[11px] text-slate-500 font-mono tracking-widest">
-            Axiom-0 Terminal UI • Zero-Entropy Rendering Pipeline • SECURE NODE
+            GitHub Traffic Terminal UI • Telemetry Rendering Pipeline • SECURE NODE
           </p>
         </footer>
       </div>
