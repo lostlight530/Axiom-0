@@ -64,3 +64,4 @@
 - [2026-06-27 Pipeline Manifest](RESEARCH/daily/2026-06-27-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest
 - [2026-06-28 Pipeline Manifest](RESEARCH/daily/2026-06-28-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
 - [2026-06-29 Pipeline Manifest](RESEARCH/daily/2026-06-29-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
+- [2026-06-30 Pipeline Manifest](RESEARCH/daily/2026-06-30-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
