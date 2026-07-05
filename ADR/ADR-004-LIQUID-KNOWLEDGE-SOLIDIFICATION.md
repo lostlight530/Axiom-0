@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** 系统必须在 T-04 与 T-10 节点之间执行严格的状态相变约束。所有进入液态阶段的临时记忆，必须通过去重、重构与抽象化，最终“固化”为完全确定性的结构化文档。固化后的文件如同冷凝的晶体，成为不可篡改的系统共识，作为未来所有零熵推演的绝对物理基石。
 > **[EN]:** The system must enforce strict state phase transition constraints between nodes T-04 and T-10. All temporary memories entering the liquid phase must undergo deduplication, restructuring, and abstraction, ultimately "solidifying" into completely deterministic structured documents. Solidified files, like condensed crystals, become immutable systemic consensus, serving as the absolute physical cornerstones for all future zero-entropy deductions.
+
+
+---
+## 补充决议 / Supplementary Resolution (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/jamesob/local-llm
+* **脱水描述**: Everything I know about running LLMs locally
+
+### 架构投射 (Architectural Projection)
+> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
+> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.

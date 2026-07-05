@@ -7,3 +7,16 @@
 ## 协议层面的物理红线 / Physical Red Lines at the Protocol Level
 > **[CN]:** 这条边界不是建议，而是物理红线。它确保 Axiom-0 的知识库和方法论不会被同质化的概率废话稀释。只有通过了严格人工介入痕迹验证的输入，才能获准进入下一级抽象节点。
 > **[EN]:** This boundary is not a suggestion; it is a physical red line. It ensures that Axiom-0's knowledge base and methodologies are not diluted by homogenized probabilistic nonsense. Only inputs that have passed strict verification of human intervention traces are granted permission to enter the next level of abstraction nodes.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.
