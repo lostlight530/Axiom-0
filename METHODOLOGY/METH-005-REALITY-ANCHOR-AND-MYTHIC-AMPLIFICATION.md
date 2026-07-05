@@ -7,3 +7,16 @@
 ## 锚点之上的降维重击 / Dimensional Reduction Heavy Strikes Upon the Anchor
 > **[CN]:** 在现实锚点确保系统不产生幻觉的前提下，神话级的语言放大技术得以被安全释放。基于硬核事实的推演，配合宏大视角的叙事张力，能够以极高的信息密度对阅读者的心智发起降维重击。这构成了 Axiom-0 冰冷代码背后的致命吸引力——用最死寂的数学边界，讲述最具破坏力的科技神话。
 > **[EN]:** Under the premise that the reality anchor ensures the system does not hallucinate, mythic-level language amplification technology can be safely unleashed. Deductions based on hardcore facts, coupled with the narrative tension of a grandiose perspective, can launch dimensional reduction heavy strikes on the reader's mind with extremely high information density. This constitutes the fatal attraction behind the frigid code of Axiom-0—using the most dead-silent mathematical boundaries to narrate the most destructive technological myths.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

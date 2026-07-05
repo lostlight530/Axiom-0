@@ -11,3 +11,15 @@
 ## 决策 / Decision
 > **[CN]:** 引入“沙箱自毁协议”。每一次自动化工作流（如每日研究聚合）必须在一个基于云端的全新克隆（Fresh Clone）沙箱中启动。在流程结束或触发严重熔断错误时，该沙箱节点必须立即进入物理自毁序列，彻底清除所有的临时文件、内存缓存以及执行痕迹，不向未来遗留任何状态。唯一被允许持久化的，是那些经过严格签名和提交到中央 Git 仓库的合法架构资产。
 > **[EN]:** Introduce the "Sandbox Self-Destruction Protocol." Every automated workflow (e.g., daily research aggregation) must initialize within a cloud-based Fresh Clone sandbox. Upon process completion or triggering of a severe meltdown error, this sandbox node must immediately enter a physical self-destruction sequence, completely obliterating all temporary files, memory caches, and execution traces, leaving zero state for the future. The only entities permitted for persistence are legitimate architectural assets strictly signed and submitted to the central Git repository.
+
+---
+## 补充决议 / Supplementary Resolution (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/jamesob/local-llm
+* **脱水描述**: Everything I know about running LLMs locally
+
+### 架构投射 (Architectural Projection)
+> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
+> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.

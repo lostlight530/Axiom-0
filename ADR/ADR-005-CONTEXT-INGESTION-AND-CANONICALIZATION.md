@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** 实施极端的 T-01 摄入截断。所有外部数据流必须经过强制的规范化（Canonicalization）处理，转换为统一的 AST（抽象语法树）或严格限定的 JSON Schema。任何带有冗余修饰或格式歧义的载荷将被无情丢弃，确保摄入层的绝对零熵。
 > **[EN]:** Implement extreme T-01 ingestion truncation. All external data streams must undergo mandatory canonicalization, converted into unified ASTs (Abstract Syntax Trees) or strictly constrained JSON Schemas. Any payload bearing redundant embellishments or formatting ambiguity will be ruthlessly discarded, ensuring absolute zero-entropy at the ingestion layer.
+
+
+---
+## 补充决议 / Supplementary Resolution (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/jamesob/local-llm
+* **脱水描述**: Everything I know about running LLMs locally
+
+### 架构投射 (Architectural Projection)
+> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
+> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.

@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** 因此，我们确立“确定性协作协议”。所有跨节点的信息传递，必须被强制转换并封装为结构化的强类型数据（如带有加密哈希签名的 JSON 载荷）。节点B不负责“理解”节点A的话语，而是机械地“解析”并“执行”代数指令。格式必须绝对刚性，任何无法解析的载荷将引发直接熔断；通信必须无状态，所有必要的上下文必须显式传递；数据流只允许单向不可逆，严禁向后澄清请求。
 > **[EN]:** Therefore, we establish the "Deterministic Collaboration Protocol." All cross-node information transfer must be forcibly converted and encapsulated into structured, strongly-typed data (e.g., JSON payloads with cryptographic hash signatures). Node B is not responsible for "understanding" Node A's utterances but rather for mechanically "parsing" and "executing" algebraic commands. Format must be absolutely rigid; any unparseable payload will trigger immediate meltdown. Communication must be stateless with all context explicitly passed. Data flow is unidirectional and irreversible; backward clarification requests are strictly prohibited.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.
