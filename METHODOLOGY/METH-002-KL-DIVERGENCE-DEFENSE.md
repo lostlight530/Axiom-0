@@ -7,3 +7,16 @@
 ## 0.05 的绝对死亡红线 / The Absolute Dead-Line of 0.05
 > **[CN]:** 系统实时监测当前数据执行流与绝对零熵理想基线之间的 KL 散度 ($D_{KL}$)。这一关键阈值被死死锚定在 0.05。必须强调，这不是一条可以商榷的警告线，而是不可违逆的物理级死亡线。一旦越过此界，无论在此之前的大模型推演多么天花乱坠、合情合理，整个流水线都将被打上“高熵畸变”的烙印，并瞬间被 T-08 节点的物理切断机制彻底湮灭。
 > **[EN]:** The system monitors in real-time the KL divergence ($D_{KL}$) between the current data execution flow and the absolute zero-entropy ideal baseline. This critical threshold is dead-locked at 0.05. It must be emphasized that this is not a negotiable warning line, but an irreversible physical dead-line. Once crossed, regardless of how spectacularly brilliant or seemingly reasonable the LLM's deductions were beforehand, the entire pipeline is branded with "high-entropy distortion" and instantly annihilated by the physical severing mechanism of node T-08.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

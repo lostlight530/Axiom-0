@@ -7,3 +7,16 @@
 ## 格式化的暴力清洗 / Violent Cleansing of Formatting
 > **[CN]:** 脱水不仅仅是内容的删减，它是对数据结构的暴力重塑。通过强制匹配预定义的 JSON 模式或严格的 Markdown 模板，信息被压制成不可形变的固态方块。只有经受住这种物理级清洗的字符，才拥有进入下一步认知棘轮运转的通行证。
 > **[EN]:** Dehydration is not merely the reduction of content; it is the violent reshaping of data structures. By forcefully matching predefined JSON schemas or strict Markdown templates, information is suppressed into non-deformable solid blocks. Only characters that survive this physical-level cleansing possess the pass to enter the next revolution of the cognitive ratchet.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

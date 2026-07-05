@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** 确立自下而上的认知提纯管道。任何在 RESEARCH/ 目录下经过实践检验并符合 KL 散度 <= 0.05 要求的理论，必须被强制“蒸馏”并升华至 ADR/ 目录。升华后的内容必须转换为去语境化的绝对法则，作为指导底层代码拓扑的物理指令，实现从探索到立法的收束。
 > **[EN]:** Establish a bottom-up cognitive purification pipeline. Any theory in the `RESEARCH/` directory that has been practically verified and meets the KL divergence <= 0.05 requirement must be forcefully "distilled" and elevated to the `ADR/` directory. The elevated content must be converted into de-contextualized absolute laws, serving as physical commands instructing underlying code topology, achieving convergence from exploration to legislation.
+
+
+---
+## 补充决议 / Supplementary Resolution (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/jamesob/local-llm
+* **脱水描述**: Everything I know about running LLMs locally
+
+### 架构投射 (Architectural Projection)
+> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
+> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.

@@ -7,3 +7,16 @@
 ## 系统级熵减与反向蒸馏 / Systemic Entropy Reduction and Reverse Distillation
 > **[CN]:** 我们不再盲目摄取一切合成内容，而是通过反向蒸馏法则，过滤掉冗余的生成修辞，仅保留人类干预的锚点数据。系统在 A1 考古节点就将这类带有明确拒绝态度的信息定义为高价值（`[REAL]`），以此作为校准自身零熵协议的参照物。
 > **[EN]:** We no longer blindly ingest all synthetic content; instead, through the reverse distillation law, we filter out redundant generative rhetoric, retaining only the anchor data of human intervention. At the A1 archaeology node, the system defines such information carrying a clear rejection attitude as high-value (`[REAL]`), using it as a reference to calibrate its own zero-entropy protocol.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.
