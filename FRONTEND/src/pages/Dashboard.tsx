@@ -340,7 +340,7 @@ export default function RepoTrafficVisualizationDashboard() {
 
         <footer className="mt-8 border-t border-slate-800 pt-6 pb-6 text-center">
           <p className="text-[11px] text-slate-500 font-mono tracking-widest">
-            GitHub Traffic Terminal UI • Telemetry Rendering Pipeline • SECURE NODE
+            GitHub Traffic Terminal UI • Telemetry Rendering Pipeline • SECURE NODE - BUILD 2
           </p>
         </footer>
       </div>
