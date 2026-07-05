@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** 每一个声明的事实、时间戳、哈希值、性能数据、测试结果和外部来源必须来自真实的执行或绝对存在的物理读取。系统不得猜测任何散列值、执行速度，也不得在最终报告中留下任何模板占位符（如 [INSERT NAME]）。所有的输入必须映射到已确定的实体，所有的输出都必须基于强验证的零熵态。
 > **[EN]:** Every stated fact, timestamp, hash, performance value, test result, and external source must come from an actual read or an absolutely extant physical execution. The system must not guess any hash values or execution speeds, nor leave template placeholders (such as [INSERT NAME]) in final reports. All inputs must map to confirmed entities, and all outputs must be anchored in rigidly verified Zero-Entropy states.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

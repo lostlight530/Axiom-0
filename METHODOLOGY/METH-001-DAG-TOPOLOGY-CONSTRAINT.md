@@ -7,3 +7,16 @@
 ## 彻底斩断重试环 / Severing the Retry Loop
 > **[CN]:** 高维度的非结构化信息在流经脱水 (Dehydration)、抽象 (Abstraction) 以及收束 (Convergence) 节点的每一个缝隙时，都会被迫接受极其冷酷、无情的代数结构检查。系统剥夺了智能体自我解释的权力，代之以基于哈希校验和模式匹配的铁律。任何多余的熵增、任何未经底层协议授权的自洽推理论证，都会在瞬间触发核心的物理熔断指令。重试环在这里不仅被废除，更是被视为对系统纯洁性的严重物理污染。
 > **[EN]:** As high-dimensional, unstructured information flows through every minute crevice of the Dehydration, Abstraction, and Convergence nodes, it is forced to undergo ruthlessly cold and unforgiving algebraic structural checks. The system strips the agent of its power to self-explain, replacing it with the iron laws of hash validation and pattern matching. Any superfluous entropy increase, or any unauthorized self-consistent deductive reasoning not sanctioned by the underlying protocol, instantly triggers the core's physical meltdown command. Here, the retry loop is not merely abolished; it is regarded as a severe physical contamination against the purity of the system.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

@@ -7,3 +7,16 @@
 ## 从认知游离到绝对立法 / From Cognitive Drifting to Absolute Legislation
 > **[CN]:** 经过提纯的认知晶体不再具备被讨论的资格，它们将直接越级至 ADR 层进行绝对立法。在 Axiom-0 中，ADR 不是一份技术备忘录，它是写进底层固件的物理宪法。任何蒸馏产生的决议都将化作限制未来系统所有随机行为的坚硬外壳，确保系统在算力宇宙中永不解体。
 > **[EN]:** Purified cognitive crystals no longer hold the right to be debated; they directly bypass to the ADR layer for absolute legislation. In Axiom-0, an ADR is not a technical memo; it is a physical constitution burned into the underlying firmware. Any resolution produced by distillation morphs into a hard shell restricting all future random behaviors of the system, ensuring the system never disintegrates within the compute universe.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** Axiom-0 将零信任理念引入认知连续体，确立了“零信任资源分配”法则：任何认知节点、执行单元或子系统，在请求资源时，必须被默认视为“潜在污染源”。资源分配不基于认证，而是基于持续的密码学验证与极简权限原则。所有未在 DAG 拓扑中声明的请求必须被隐式拒绝。节点必须在微隔离空间中执行，系统仅在处理代数载荷时提供精确计算的瞬间资源配额。
 > **[EN]:** Axiom-0 introduces the Zero Trust philosophy into the cognitive continuum, establishing the "Zero Trust Resource Allocation" law: any cognitive node, execution unit, or subsystem, when requesting resources, must default to being treated as a "potential source of contamination." Resource allocation relies on continuous cryptographic verification and the principle of least privilege, rather than authentication. All requests not declared in the DAG topology must be implicitly denied. Nodes must execute in micro-segmented spaces, with the system providing only momentary, precisely calculated resource quotas when processing algebraic payloads.
+
+
+---
+## 补充法则 / Supplementary Law (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/Kulaxyz/token-diet
+* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+
+### 方法论投射 (Methodology Projection)
+> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
+> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.

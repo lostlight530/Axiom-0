@@ -11,3 +11,16 @@
 ## 决策 / Decision
 > **[CN]:** 彻底摒弃一切以大模型为中心、依赖概率代理的自由流转架构，将“零熵认知协议 (Zero-Entropy Cognitive Protocol, ZECP)”正式确立为 Axiom-0 项目的最高物理边界与根本大法。ZECP 在设计上完全不关心底层的计算节点或是具体的语言模型实现，它直接剥夺了大语言模型的“自由意志”，强制实施一套极其严苛、基于有向无环图 (DAG) 的拓扑约束。任何试图接入此协议的信息流水线、工具调用或决策节点，都必须无条件服从这套“只进不退”的物理枷锁。系统通过将高维不确定性碾压至单向确定的代数方程，确保在任何极端的 AOT 爆发测试中，每一次信息流动都是绝对确定且不可逆转的。
 > **[EN]:** Completely abandon all LLM-centric, free-flow architectures reliant on probabilistic proxies, and formally establish the "Zero-Entropy Cognitive Protocol (ZECP)" as the supreme physical boundary and fundamental law of the Axiom-0 project. ZECP is intentionally agnostic to underlying compute nodes or specific language model implementations; it directly strips away the "free will" of the LLM, strictly enforcing a severely rigorous topological constraint based on a Directed Acyclic Graph (DAG). Any information pipeline, tool invocation, or decision node attempting to connect to this protocol must unconditionally submit to this "one-way" physical shackle. By crushing high-dimensional uncertainty down into one-way deterministic algebraic equations, the system ensures that in any extreme AOT blast test, every single flow of information remains absolutely deterministic and irreversible.
+
+
+---
+## 补充决议 / Supplementary Resolution (2026-07-05)
+
+### 事实资产 (Factual Assets)
+* **证据状态**: `[REAL]`
+* **来源**: https://github.com/jamesob/local-llm
+* **脱水描述**: Everything I know about running LLMs locally
+
+### 架构投射 (Architectural Projection)
+> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
+> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
