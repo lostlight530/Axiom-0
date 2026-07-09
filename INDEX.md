@@ -90,3 +90,4 @@
 - [2026-07-06 Pipeline Manifest](RESEARCH/daily/2026-07-06-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
 - [2026-07-07 Pipeline Manifest](RESEARCH/daily/2026-07-07-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
 - [2026-07-08 Pipeline Manifest](RESEARCH/daily/2026-07-08-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
+- [2026-07-09 Pipeline Manifest](RESEARCH/daily/2026-07-09-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
