@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia Search
 - **Temporal Entropy Anchor**: 2026-06-15
-- **[CN]**: 外部系统持续探索低成本和自动路由的算力聚合技术。
+- **[CN]**: 外部系统持续探索低成本和自动路由的算力聚合技术,
 - **[EN]**: External systems continue to explore low-cost and auto-routing compute aggregation technologies.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 算力套利将成为高熵系统的最后生存法则。
+- **Hypothesis 1 Title**: 算力套利将成为高熵系统的最后生存法则,
   - **Status**: `[SPECULATIVE]`
-  - **[CN]**: 算力成本的波动性将迫使高熵系统退化为纯粹的套利路由网络。
+  - **[CN]**: 算力成本的波动性将迫使高熵系统退化为纯粹的套利路由网络,
   - **[EN]**: The volatility of compute costs will force high-entropy systems to devolve into pure arbitrage routing networks.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: API 自动路由至最便宜的 AI 提供商 (OpenAI/Anthropic/Gemini)。
-- **WHY**: 大模型厂商之间的算力同质化竞争与价格战必然导致中间商路由器的出现。
+- **WHAT**: API 自动路由至最便宜的 AI 提供商 (OpenAI/Anthropic/Gemini),
+- **WHY**: 大模型厂商之间的算力同质化竞争与价格战必然导致中间商路由器的出现,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：算力商品的同质化正在剥离大模型虚构的附加值，将其降维为纯粹的度量单位。
+  - **[CN]**: **不可置疑的单句硬断言**：算力商品的同质化正在剥离大模型虚构的附加值，将其降维为纯粹的度量单位,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The commoditization of compute power is stripping away the fictional added value of large language models, reducing them to pure units of measurement.
 
 ---

@@ -17,14 +17,14 @@
 ### 2. 系统性假设 (Systemic Hypotheses)
 - **Hypothesis 1 Title**: Don't post generated/AI-edited comments. HN is for conversation between humans
   - **Status**: `REAL`
-  - **[CN]**: 机器生成内容的泛滥导致了基于纯粹人类交流平台规则的收紧。
+  - **[CN]**: 机器生成内容的泛滥导致了基于纯粹人类交流平台规则的收紧,
   - **[EN]**: The proliferation of machine-generated content has led to a tightening of rules on platforms based on pure human conversation.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: 平台收紧机器生成内容规则。
-- **WHY**: 保护纯粹人类交流环境，抵制机器生成内容污染。
+- **WHAT**: 平台收紧机器生成内容规则,
+- **WHY**: 保护纯粹人类交流环境，抵制机器生成内容污染,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：机器生成内容的泛滥导致了基于纯粹人类交流平台规则的收紧。
+  - **[CN]**: **不可置疑的单句硬断言**：机器生成内容的泛滥导致了基于纯粹人类交流平台规则的收紧,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The proliferation of machine-generated content has led to a tightening of rules on platforms based on pure human conversation.
 
 ---

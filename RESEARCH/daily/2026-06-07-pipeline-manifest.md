@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API (OpenAI board has fired Sam Altman)
 - **Temporal Entropy Anchor**: 2026-06-07
-- **[CN]**: OpenAI董事会解雇Sam Altman，标志着控制权与安全导向的范式转移。
+- **[CN]**: OpenAI董事会解雇Sam Altman，标志着控制权与安全导向的范式转移,
 - **[EN]**: OpenAI board fires Sam Altman, marking a paradigm shift towards control and safety orientation.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: OpenAI的权力重构将加速去中心化开源模型的算力平权与资本重分配。
+- **Hypothesis 1 Title**: OpenAI的权力重构将加速去中心化开源模型的算力平权与资本重分配,
   - **Status**: `[REAL]`
-  - **[CN]**: 公司内部冲突揭示了闭源大模型发展中的治理瓶颈，将导致算力和资本向开源生态流动。
+  - **[CN]**: 公司内部冲突揭示了闭源大模型发展中的治理瓶颈，将导致算力和资本向开源生态流动,
   - **[EN]**: Internal corporate conflict reveals governance bottlenecks in closed-source large model development, driving compute and capital towards open-source ecosystems.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: OpenAI董事会解雇了CEO Sam Altman，引发了领导层过渡。
-- **WHY**: 对人工智能发展速度和安全性的分歧，以及董事会控制权的争夺。
+- **WHAT**: OpenAI董事会解雇了CEO Sam Altman，引发了领导层过渡,
+- **WHY**: 对人工智能发展速度和安全性的分歧，以及董事会控制权的争夺,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：OpenAI的领导层剧变证明了高熵概率模型在传统企业治理架构下的内在不稳定性。
+  - **[CN]**: **不可置疑的单句硬断言**：OpenAI的领导层剧变证明了高熵概率模型在传统企业治理架构下的内在不稳定性,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The leadership upheaval at OpenAI proves the inherent instability of high-entropy probabilistic models under traditional corporate governance architectures.
 
 ---

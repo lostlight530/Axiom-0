@@ -15,16 +15,16 @@
 - **[EN]**: Social network human communication protocol
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 社交网络平台强制人类间直接交流，排斥机器生成内容。
+- **Hypothesis 1 Title**: 社交网络平台强制人类间直接交流，排斥机器生成内容,
   - **Status**: `[REAL]`
-  - **[CN]**: 高级认知流媒体拒绝低熵自动化内容的注入。
+  - **[CN]**: 高级认知流媒体拒绝低熵自动化内容的注入,
   - **[EN]**: Advanced cognitive streams reject low-entropy automated content injection.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: Hacker News 拒绝 AI 生成或编辑的评论。
-- **WHY**: 平台旨在维持真实的人类交互，防止合成数据污染讨论空间。
+- **WHAT**: Hacker News 拒绝 AI 生成或编辑的评论,
+- **WHY**: 平台旨在维持真实的人类交互，防止合成数据污染讨论空间,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：人工交互系统必须绝对排斥机器合成的概率性陈述。
+  - **[CN]**: **不可置疑的单句硬断言**：人工交互系统必须绝对排斥机器合成的概率性陈述,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: Manual interactive systems must absolutely repel probabilistically synthesized machine statements.
 
 ---

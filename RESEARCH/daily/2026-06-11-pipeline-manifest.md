@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API (Search: OpenAI)
 - **Temporal Entropy Anchor**: 2026-06-11
-- **[CN]**: OpenAI 宣布领导层过渡。
+- **[CN]**: OpenAI 宣布领导层过渡,
 - **[EN]**: OpenAI announces leadership transition.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 领导层变动将引发系统性组织重构。
+- **Hypothesis 1 Title**: 领导层变动将引发系统性组织重构,
   - **Status**: `[REAL]`
-  - **[CN]**: 核心人员变动必然导致权力结构与技术路线的再分配。
+  - **[CN]**: 核心人员变动必然导致权力结构与技术路线的再分配,
   - **[EN]**: Core personnel shifts inevitably lead to the redistribution of power structures and technological trajectories.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: OpenAI 董事会解雇了 Sam Altman，宣布领导层过渡。
-- **WHY**: 组织内部对于技术发展速度、商业化路径或安全控制策略存在不可调和的矛盾。
+- **WHAT**: OpenAI 董事会解雇了 Sam Altman，宣布领导层过渡,
+- **WHY**: 组织内部对于技术发展速度、商业化路径或安全控制策略存在不可调和的矛盾,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：高熵组织的不可预测性再次印证了零熵架构在追求终极智能过程中的绝对必要性。
+  - **[CN]**: **不可置疑的单句硬断言**：高熵组织的不可预测性再次印证了零熵架构在追求终极智能过程中的绝对必要性,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The unpredictability of high-entropy organizations reiterates the absolute necessity of zero-entropy architectures in the pursuit of ultimate intelligence.
 
 ---

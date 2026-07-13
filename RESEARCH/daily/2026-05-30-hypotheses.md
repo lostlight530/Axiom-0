@@ -9,3 +9,5 @@
 - **Description**: Fully autonomous agents (ReAct loops) are inherently unstable at scale. To achieve enterprise reliability (<1% failure rate), architectures are regressing to more deterministic, human-oversight paths or strict Plan-and-Execute pipelines.
 - **Trigger**: The engineering constraint where a 5% failure rate in a 20-step process renders an autonomous system unusable.
 - **Status**: [REAL]
+
+entropy=0

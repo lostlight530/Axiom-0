@@ -21,10 +21,10 @@
   - **[EN]**: The decentralization of cognitive compute will forcefully restructure global resource topologies, causing deterministic collapse of closed-source architectures
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: Meta 等巨头推动开源 AI 模型作为行业通用标准。
-- **WHY**: 算力边际成本递减与地缘政治下认知主权的博弈，迫使底层模型走向开源化以争夺标准制定权。
+- **WHAT**: Meta 等巨头推动开源 AI 模型作为行业通用标准,
+- **WHY**: 算力边际成本递减与地缘政治下认知主权的博弈，迫使底层模型走向开源化以争夺标准制定权,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：开源认知引擎的不可逆扩散将永久瓦解以闭源模型为核心的商业地主阶级绝对垄断。
+  - **[CN]**: **不可置疑的单句硬断言**：开源认知引擎的不可逆扩散将永久瓦解以闭源模型为核心的商业地主阶级绝对垄断,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The irreversible proliferation of open-source cognitive engines will permanently dismantle the absolute monopoly of the closed-source model-centric commercial landlord class.
 
 ---
