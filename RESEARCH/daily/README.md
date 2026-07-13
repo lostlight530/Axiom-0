@@ -31,3 +31,5 @@ automation run
 > **[EN]**: Research assets allow for high density, mythification, and intermediate states
 > **[CN]**: 但最好保留来源状态标签
 > **[EN]**: But it's better to keep the source status tag
+
+entropy=0

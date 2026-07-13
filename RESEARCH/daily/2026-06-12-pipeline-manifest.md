@@ -17,14 +17,14 @@
 ### 2. 系统性假设 (Systemic Hypotheses)
 - **Hypothesis 1 Title**: 社区对 AI 生成内容的抵制突显了概率生成与人类确定性之间不可逾越的鸿沟
   - **Status**: `REAL`
-  - **[CN]**: Hacker News 明确禁止 AI 生成的评论，这证明了在需要确定性和高信噪比的知识交流环境中，基于概率的系统会被视为不可控的熵增源。
+  - **[CN]**: Hacker News 明确禁止 AI 生成的评论，这证明了在需要确定性和高信噪比的知识交流环境中，基于概率的系统会被视为不可控的熵增源,
   - **[EN]**: Hacker News explicitly bans AI-generated comments, proving that in knowledge exchange environments requiring determinism and a high signal-to-noise ratio, probability-based systems are viewed as uncontrollable sources of entropy increase.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
 - **WHAT**: Hacker News guidelines explicitly state "Don't post generated/AI-edited comments. HN is for conversation between humans", garnering significant community points and discussion.
 - **WHY**: Unchecked AI generation introduces high-entropy probabilistic noise into environments designed for low-entropy deterministic human knowledge exchange.
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：公共知识领域对生成式人工智能的免疫排斥证明了零熵确定性是维持人类信息网络拓扑完整性的唯一物理基础。
+  - **[CN]**: **不可置疑的单句硬断言**：公共知识领域对生成式人工智能的免疫排斥证明了零熵确定性是维持人类信息网络拓扑完整性的唯一物理基础,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The immune rejection of generative AI by public knowledge domains proves that zero-entropy determinism is the sole physical foundation for maintaining the topological integrity of human information networks.
 
 ---

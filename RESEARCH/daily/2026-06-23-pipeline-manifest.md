@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia
 - **Temporal Entropy Anchor**: 2026-06-23
-- **[CN]**: 社区拒绝人工智能生成的评论，强调人类间对话的核心价值。
+- **[CN]**: 社区拒绝人工智能生成的评论，强调人类间对话的核心价值,
 - **[EN]**: The community rejects AI-generated comments, emphasizing the core value of human-to-human conversation.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 社交平台的价值在于真实的人类交互，而非机器生成内容的堆砌。
+- **Hypothesis 1 Title**: 社交平台的价值在于真实的人类交互，而非机器生成内容的堆砌,
   - **Status**: `[REAL]`
-  - **[CN]**: 在信息过载的环境下，非确定性的生成内容将被确定性的人类真实意图所过滤。
+  - **[CN]**: 在信息过载的环境下，非确定性的生成内容将被确定性的人类真实意图所过滤,
   - **[EN]**: In an environment of information overload, non-deterministic generated content will be filtered by the deterministic true intent of humans.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: 极客社区对纯人类对话环境的自发维护。
-- **WHY**: 机器生成内容的泛滥导致信噪比降低，危及高质量交流生态。
+- **WHAT**: 极客社区对纯人类对话环境的自发维护,
+- **WHY**: 机器生成内容的泛滥导致信噪比降低，危及高质量交流生态,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：零熵的真实人类意图是维系高价值信息网络的唯一物理基础。
+  - **[CN]**: **不可置疑的单句硬断言**：零熵的真实人类意图是维系高价值信息网络的唯一物理基础,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The zero-entropy true human intent is the sole physical foundation for maintaining high-value information networks.
 
 ---

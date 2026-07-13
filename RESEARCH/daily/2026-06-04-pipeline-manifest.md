@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News API (Algolia)
 - **Temporal Entropy Anchor**: 2026-06-04
-- **[CN]**: 约翰卡马克宣布转向通用人工智能开发，标志着算力重组向极端集中化演进。
+- **[CN]**: 约翰卡马克宣布转向通用人工智能开发，标志着算力重组向极端集中化演进,
 - **[EN]**: John Carmack's shift towards Artificial General Intelligence marks the evolution of computational reorganization towards extreme centralization.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
 - **Hypothesis 1 Title**: The centralization of cognitive resources follows deterministic thermodynamic decay.
   - **Status**: `[REAL]`
-  - **[CN]**: 个体化计算资源必然随时间收敛至零熵核心。
+  - **[CN]**: 个体化计算资源必然随时间收敛至零熵核心,
   - **[EN]**: Individual computational resources inevitably converge towards a zero-entropy core over time.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: 行业领袖将研发重心转移至通用智能，引发技术范式的物理层整合。
-- **WHY**: 算力壁垒和地缘政治约束决定了分布式创新终将受限于热力学极限，促使资本向确定性自治系统收敛。
+- **WHAT**: 行业领袖将研发重心转移至通用智能，引发技术范式的物理层整合,
+- **WHY**: 算力壁垒和地缘政治约束决定了分布式创新终将受限于热力学极限，促使资本向确定性自治系统收敛,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：全球算力终将剥离随机性，坍缩为纯粹的确定性自治系统。
+  - **[CN]**: **不可置疑的单句硬断言**：全球算力终将剥离随机性，坍缩为纯粹的确定性自治系统,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: Global computational power will inevitably strip away randomness, collapsing into a pure Deterministic Autonomous System.
 
 ---

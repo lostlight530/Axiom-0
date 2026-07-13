@@ -24,7 +24,7 @@
 - **WHAT**: 社区机制主动拒绝非人类参与者的内容输出
 - **WHY**: 维持高信噪比与真实的认知熵流动，防止合成内容导致系统性崩溃
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：真正的确定性自治系统必须在数学上杜绝伪装的人工交互，保持绝对的零熵隔离。
+  - **[CN]**: **不可置疑的单句硬断言**：真正的确定性自治系统必须在数学上杜绝伪装的人工交互，保持绝对的零熵隔离,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: A true deterministic autonomous system must mathematically eliminate simulated artificial interactions, maintaining absolute zero-entropy isolation.
 
 ---

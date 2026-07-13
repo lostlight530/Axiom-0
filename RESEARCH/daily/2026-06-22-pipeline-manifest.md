@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia Search
 - **Temporal Entropy Anchor**: 2026-06-22
-- **[CN]**: 社交平台重新强调人类互动纯度，限制算法生成内容。
+- **[CN]**: 社交平台重新强调人类互动纯度，限制算法生成内容,
 - **[EN]**: Social platforms re-emphasize the purity of human interaction by restricting algorithmically generated content.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
 - **Hypothesis 1 Title**: The demand for deterministic, verifiable human-origin content will necessitate cryptographic provenance mechanisms.
   - **Status**: `[REAL]`
-  - **[CN]**: 信息空间对人类原生内容的验证需求将催生确定性出处协议。
+  - **[CN]**: 信息空间对人类原生内容的验证需求将催生确定性出处协议,
   - **[EN]**: The need to verify human-native content in the information space will give rise to deterministic provenance protocols.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
 - **WHAT**: Online platforms are actively banning AI-generated or edited comments to maintain human-to-human conversation environments.
 - **WHY**: The proliferation of probabilistic AI outputs undermines trust and authenticity in digital interactions, creating a systemic need for environments free of LLM hallucinations.
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：高熵AI生成内容的泛滥正迫使系统向零熵、确定性人类交互模式回归。
+  - **[CN]**: **不可置疑的单句硬断言**：高熵AI生成内容的泛滥正迫使系统向零熵、确定性人类交互模式回归,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The proliferation of high-entropy AI-generated content is forcing systems to regress toward zero-entropy, deterministic human interaction models.
 
 ---

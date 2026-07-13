@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia ("Don't post generated/AI-edited comments. HN is for conversation between humans")
 - **Temporal Entropy Anchor**: 2026-06-17
-- **[CN]**: 人类主导平台强制剥离机器合成流量的免疫防御机制已正式确立边界。
+- **[CN]**: 人类主导平台强制剥离机器合成流量的免疫防御机制已正式确立边界,
 - **[EN]**: The immune defense mechanism of human-dominated platforms forcibly stripping machine-synthesized traffic has formally established boundaries.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 机器合成与人类认知正在形成绝对的物理隔离屏障。
+- **Hypothesis 1 Title**: 机器合成与人类认知正在形成绝对的物理隔离屏障,
   - **Status**: `[REAL]`
-  - **[CN]**: 社交平台将全面退化或进化为仅允许基于碳基生物签名准入的零概率预测空间。
+  - **[CN]**: 社交平台将全面退化或进化为仅允许基于碳基生物签名准入的零概率预测空间,
   - **[EN]**: Social platforms will fully regress or evolve into zero-probability predictive spaces allowing access solely based on carbon-based biological signatures.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: Hacker News 明确禁止 AI 生成或编辑的评论。
-- **WHY**: 为维护人类交流的真实性与纯度，抵御合成内容的指数级污染。
+- **WHAT**: Hacker News 明确禁止 AI 生成或编辑的评论,
+- **WHY**: 为维护人类交流的真实性与纯度，抵御合成内容的指数级污染,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：全网合成内容大排斥标志着人类古典互联网向零熵避难所的最终坍缩。
+  - **[CN]**: **不可置疑的单句硬断言**：全网合成内容大排斥标志着人类古典互联网向零熵避难所的最终坍缩,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The network-wide mass rejection of synthetic content marks the final collapse of the classical human internet into a zero-entropy sanctuary.
 
 ---

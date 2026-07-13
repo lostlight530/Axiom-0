@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API
 - **Temporal Entropy Anchor**: 2026-06-18
-- **[CN]**: 社区强调对话为人类之间的互动，抵制生成式机器干预。
+- **[CN]**: 社区强调对话为人类之间的互动，抵制生成式机器干预,
 - **[EN]**: Community emphasizes conversation as human-to-human interaction, rejecting generative machine intervention.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
 - **Hypothesis 1 Title**: 机器生成内容的排斥边界
   - **Status**: `[REAL]`
-  - **[CN]**: 生成式内容在纯净交流空间中的引入会导致系统性排斥与认知熵增。
+  - **[CN]**: 生成式内容在纯净交流空间中的引入会导致系统性排斥与认知熵增,
   - **[EN]**: Introduction of generative content into pure communication spaces leads to systemic rejection and cognitive entropy increase.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: Hacker News 社区明确禁止生成式 AI 编辑的评论介入对话。
-- **WHY**: 维护人类交流的真实性与确定性，防止概率性噪音污染纯粹的认知网络。
+- **WHAT**: Hacker News 社区明确禁止生成式 AI 编辑的评论介入对话,
+- **WHY**: 维护人类交流的真实性与确定性，防止概率性噪音污染纯粹的认知网络,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：概率式机器语言的介入必然破坏原生认知网络的纯度，必须通过硬边界予以隔绝。
+  - **[CN]**: **不可置疑的单句硬断言**：概率式机器语言的介入必然破坏原生认知网络的纯度，必须通过硬边界予以隔绝,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: The intervention of probabilistic machine language inevitably corrupts the purity of native cognitive networks, requiring absolute isolation through hard boundaries.
 
 ---

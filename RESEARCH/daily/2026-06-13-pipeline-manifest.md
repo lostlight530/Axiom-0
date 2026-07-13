@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia Search (Query: "AI")
 - **Temporal Entropy Anchor**: 2026-06-13
-- **[CN]**: Hacker News 社区指南明确禁止发布由人工智能生成或编辑的评论，以维护人类间的纯粹对话。
+- **[CN]**: Hacker News 社区指南明确禁止发布由人工智能生成或编辑的评论，以维护人类间的纯粹对话,
 - **[EN]**: The Hacker News community guidelines explicitly prohibit posting generated or AI-edited comments to preserve pure conversation between humans.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 社区交互环境正逐渐排斥合成内容介入。
+- **Hypothesis 1 Title**: 社区交互环境正逐渐排斥合成内容介入,
   - **Status**: `[REAL]`
-  - **[CN]**: 社交平台将建立绝对的人类交流边界，从协议层阻断 AI 生成文本对有机讨论的熵增。
+  - **[CN]**: 社交平台将建立绝对的人类交流边界，从协议层阻断 AI 生成文本对有机讨论的熵增,
   - **[EN]**: Social platforms will establish absolute human communication boundaries, blocking entropy increase from AI-generated text to organic discussion at the protocol level.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: Hacker News 更新指导原则，禁止提交 AI 参与生成的评论。
-- **WHY**: 随着语言模型泛滥，平台需要通过物理红线维持高信噪比的人类对话价值。
+- **WHAT**: Hacker News 更新指导原则，禁止提交 AI 参与生成的评论,
+- **WHY**: 随着语言模型泛滥，平台需要通过物理红线维持高信噪比的人类对话价值,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：纯人类交互网络已开始部署零容忍的认知防火墙以抵御机器生成内容的渗透。
+  - **[CN]**: **不可置疑的单句硬断言**：纯人类交互网络已开始部署零容忍的认知防火墙以抵御机器生成内容的渗透,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: Pure human interaction networks have begun deploying zero-tolerance cognitive firewalls to resist the infiltration of machine-generated content.
 
 ---

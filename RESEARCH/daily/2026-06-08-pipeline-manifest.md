@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia API (query=Anthropic)
 - **Temporal Entropy Anchor**: 2026-06-08
-- **[CN]**: Anthropic 收购 Bun 的技术范式转移。
+- **[CN]**: Anthropic 收购 Bun 的技术范式转移,
 - **[EN]**: Technology paradigm shift of Anthropic acquiring Bun.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: Anthropic 的收购是为了构建底层的跨平台运行时基础架构。
+- **Hypothesis 1 Title**: Anthropic 的收购是为了构建底层的跨平台运行时基础架构,
   - **Status**: `[SPECULATIVE]`
-  - **[CN]**: 这一事件推断了底层运行时环境将成为大型 AI 模型基础架构的决定性组件。
+  - **[CN]**: 这一事件推断了底层运行时环境将成为大型 AI 模型基础架构的决定性组件,
   - **[EN]**: This event infers that the underlying runtime environment will become a deterministic component of large AI model infrastructures.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: Anthropic 战略性收购了高性能 JavaScript 运行时 Bun。
-- **WHY**: 这是为了解决大语言模型日益增长的算力瓶颈与服务端响应时间问题，从底层运行时层面实现降维提效的必然。
+- **WHAT**: Anthropic 战略性收购了高性能 JavaScript 运行时 Bun,
+- **WHY**: 这是为了解决大语言模型日益增长的算力瓶颈与服务端响应时间问题，从底层运行时层面实现降维提效的必然,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：运行时的物理级控制权将决定未来智能网络的边界。
+  - **[CN]**: **不可置疑的单句硬断言**：运行时的物理级控制权将决定未来智能网络的边界,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: Physical-level control over the runtime will determine the boundaries of future intelligence networks.
 
 ---

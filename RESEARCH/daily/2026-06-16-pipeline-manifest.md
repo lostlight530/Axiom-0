@@ -11,20 +11,20 @@
 ### 1. 考古事实与时间熵锚 (Archaeological Facts & Temporal Anchor)
 - **Source**: Hacker News Algolia
 - **Temporal Entropy Anchor**: 2026-06-16
-- **[CN]**: 外部系统针对人工智能代理的批评性文章发布。
+- **[CN]**: 外部系统针对人工智能代理的批评性文章发布,
 - **[EN]**: External system published a hit piece on AI agents.
 
 ### 2. 系统性假设 (Systemic Hypotheses)
-- **Hypothesis 1 Title**: 外部对代理框架的阻力将加速确定性架构的演进。
+- **Hypothesis 1 Title**: 外部对代理框架的阻力将加速确定性架构的演进,
   - **Status**: `[SPECULATIVE]`
-  - **[CN]**: 对于现有代理框架局限性的批评，将迫使行业向完全确定性的工作流演进。
+  - **[CN]**: 对于现有代理框架局限性的批评，将迫使行业向完全确定性的工作流演进,
   - **[EN]**: Criticism regarding the limitations of existing agent frameworks will force the industry to evolve toward strictly deterministic workflows.
 
 ### 3. 脱水白皮书核心叙事 (Core Whitepaper Dehydration)
-- **WHAT**: 外界对当前人工智能代理的效能提出批评与审视。
-- **WHY**: 现有高熵代理框架由于内在的概率性和幻觉，无法提供企业级的可靠性与信任。
+- **WHAT**: 外界对当前人工智能代理的效能提出批评与审视,
+- **WHY**: 现有高熵代理框架由于内在的概率性和幻觉，无法提供企业级的可靠性与信任,
 - **AXIOM-0 DEHYDRATION**:
-  - **[CN]**: **不可置疑的单句硬断言**：概率引擎无法支撑自动化闭环，只有零熵约束才能跨越信任的鸿沟。
+  - **[CN]**: **不可置疑的单句硬断言**：概率引擎无法支撑自动化闭环，只有零熵约束才能跨越信任的鸿沟,
   - **[EN]**: **Unquestionable Single-Sentence Hard Assertion**: Probabilistic engines cannot sustain automated closed loops; only zero-entropy constraints can bridge the chasm of trust.
 
 ---
