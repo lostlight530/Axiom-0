@@ -12,7 +12,7 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://openai.com/index/learning-to-reason-with-llms/
+* Source 1: https://techcrunch.com/2024/11/27/alibaba-releases-an-open-challenger-to-openais-o1-reasoning-model/
 * Source 2: https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/
 * Source 3: https://tomrenner.com/posts/llm-inevitabilism/
 * Temporal Entropy Anchor: 2026-07-14T08:04:18Z

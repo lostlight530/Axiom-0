@@ -14,7 +14,7 @@
 
 * Source 1: https://dixonary.co.uk/ai
 * Source 2: https://opensource.getren.xyz/ittm/
-* Source 3: https://medium.com/@MStennicke/why-space-mining-analysts-are-still-stuck-in-the-pre-ai-paradigm-b42da726f526
+* Source 3: https://www.wired.com/story/want-to-learn-how-to-mine-in-space-theres-a-school-for-you/
 * Temporal Entropy Anchor: 2026-07-18T08:12:19Z
 * CN: AI 范式正在超越深度学习并探索通用状态机架构
 * EN: The AI paradigm is expanding beyond deep learning to explore universal state machine architectures

@@ -12,7 +12,7 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://jina.ai/news/jina-ai-launches-worlds-first-open-source-8k-text-embedding-rivaling-openai/
+* Source 1: https://jina.ai/news/jina-embeddings-v3-a-frontier-multilingual-embedding-model/
 * Source 2: https://github.com/SilasMarvin/lsp-ai
 * Source 3: https://twitter.com/AIatMeta/status/1834633042339741961
 * Temporal Entropy Anchor: 2026-07-13T08:23:55Z
