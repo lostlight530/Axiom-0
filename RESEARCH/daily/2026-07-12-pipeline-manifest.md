@@ -12,7 +12,7 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://sebastianraschka.com/llm-architecture-gallery/
+* Source 1: https://magazine.sebastianraschka.com/p/understanding-large-language-models
 * Source 2: https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison
 * Source 3: https://news.future-shock.ai/the-weight-of-remembering/
 * Temporal Entropy Anchor: 2026-07-12T08:22:11.124240+00:00
