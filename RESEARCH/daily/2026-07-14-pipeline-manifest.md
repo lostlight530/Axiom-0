@@ -12,18 +12,17 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://techcrunch.com/2024/11/27/alibaba-releases-an-open-challenger-to-openais-o1-reasoning-model/
-* Source 2: https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/
-* Source 3: https://tomrenner.com/posts/llm-inevitabilism/
-* Temporal Entropy Anchor: 2026-07-14T08:04:18Z
-* CN: 大语言模型展现出了能够通过学习推理提升性能的趋势
-* EN: Large language models demonstrate a trend of improving performance through learning to reason
+* Source 1: https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/
+* Source 2: https://prismml.com/news/bonsai-27b
+* Temporal Entropy Anchor: 2026-07-14T08:23:55Z
+* CN: 日本开发出从废旧电动汽车电池中回收高达90%锂的方法、Bonsai 27B：可在手机上运行的27B参数级模型 引发了技术生态的新思考
+* EN: Japan develops a method to recover up to 90% of lithium from used EV batteries and Bonsai 27B: A 27B-Class model that runs on a phone provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260714-01 | REAL | 推理能力的增强将成为模型性能跃升的核心动力 | The enhancement of reasoning capabilities will become the core driver for a leap in model performance |
+| A1-20260714-01 | REAL | 日本开发出从废旧电动汽车电池中回收高达90%锂的方法、Bonsai 27B：可在手机上运行的27B参数级模型 引发了技术生态的新思考 | Japan develops a method to recover up to 90% of lithium from used EV batteries and Bonsai 27B: A 27B-Class model that runs on a phone provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 

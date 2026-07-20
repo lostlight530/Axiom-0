@@ -12,18 +12,17 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://www.wolfram.com/llm-benchmarking-project/
-* Source 2: https://www.flexinference.com
-* Source 3: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
-* Temporal Entropy Anchor: 2026-07-19T08:12:57Z
-* CN: 动态调整大型语言模型的推理计算量以优化任务性能
-* EN: Dynamically adjusting inference computation of large language models to optimize task performance
+* Source 1: https://twitter.com/Alibaba_Qwen/status/2078759124914098291
+* Source 2: https://workshop.cjpais.com/projects/transcribe-cpp
+* Temporal Entropy Anchor: 2026-07-19T08:23:55Z
+* CN: Qwen 3.8 发布、Transcribe.cpp 开源项目 引发了技术生态的新思考
+* EN: Qwen 3.8 and Transcribe.cpp provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260719-01 | REAL | 动态推理计算分配机制能显著提升复杂逻辑任务的准确率 | Dynamic inference computation allocation mechanism significantly improves accuracy on complex logic tasks |
+| A1-20260719-01 | REAL | Qwen 3.8 发布、Transcribe.cpp 开源项目 引发了技术生态的新思考 | Qwen 3.8 and Transcribe.cpp provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 

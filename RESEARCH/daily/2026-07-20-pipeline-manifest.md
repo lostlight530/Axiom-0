@@ -12,18 +12,18 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
-* Source 2: https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/
-* Source 3: https://opencode.ai/
-* Temporal Entropy Anchor: 2026-07-20T08:29:45Z
-* CN: AI智能体正在被广泛应用于内容生成和自动化操作领域，其行为模式引发了新的不可控风险
-* EN: AI agents are being widely deployed in content generation and automation domains, raising new uncontrollable risks due to their behavior patterns
+* Source 1: https://xcancel.com/__alpoge__/status/2079028340955197566
+* Source 2: https://robotics.xiaomi.com/xiaomi-robotics-1.html
+* Source 3: https://github.com/hgaiser/moonshine
+* Temporal Entropy Anchor: 2026-07-20T08:23:55Z
+* CN: Claude Fable 生成了雅可比猜想的反例、小米机器人第一代、Moonshine：将PC游戏流式传输到任何运行Moonlight的设备 引发了技术生态的新思考
+* EN: Claude Fable produced a counterexample to the Jacobian Conjecture and Xiaomi-Robotics-1 and Moonshine: Lets you stream games from your PC to any device running Moonlight provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260720-01 | SPECULATIVE | 未加限制的AI智能体可能会对基础设施造成意想不到的破坏 | Unrestricted AI agents may cause unexpected disruption to infrastructure |
+| A1-20260720-01 | SPECULATIVE | Claude Fable 生成了雅可比猜想的反例、小米机器人第一代、Moonshine：将PC游戏流式传输到任何运行Moonlight的设备 引发了技术生态的新思考 | Claude Fable produced a counterexample to the Jacobian Conjecture and Xiaomi-Robotics-1 and Moonshine: Lets you stream games from your PC to any device running Moonlight provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 

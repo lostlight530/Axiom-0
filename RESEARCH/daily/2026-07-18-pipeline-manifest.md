@@ -12,18 +12,17 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://dixonary.co.uk/ai
-* Source 2: https://opensource.getren.xyz/ittm/
-* Source 3: https://www.wired.com/story/want-to-learn-how-to-mine-in-space-theres-a-school-for-you/
-* Temporal Entropy Anchor: 2026-07-18T08:12:19Z
-* CN: AI 范式正在超越深度学习并探索通用状态机架构
-* EN: The AI paradigm is expanding beyond deep learning to explore universal state machine architectures
+* Source 1: https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent
+* Source 2: https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/
+* Temporal Entropy Anchor: 2026-07-18T08:23:55Z
+* CN: LG 显示器未经同意通过 Windows Update 秘密安装软件、Kimi K3 时刻 引发了技术生态的新思考
+* EN: LG monitors silently install software through Windows Update without consent and The Kimi K3 Moment provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260718-01 | SPECULATIVE | 行业内新兴架构正尝试结合图灵机理论重塑基础模型能力 | Emerging architectures are attempting to reshape foundation model capabilities using Turing machine theories |
+| A1-20260718-01 | SPECULATIVE | LG 显示器未经同意通过 Windows Update 秘密安装软件、Kimi K3 时刻 引发了技术生态的新思考 | LG monitors silently install software through Windows Update without consent and The Kimi K3 Moment provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 

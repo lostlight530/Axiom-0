@@ -12,18 +12,17 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://arstechnica.com/gadgets/2026/01/bose-open-sources-its-soundtouch-home-theater-smart-speakers-ahead-of-eol/
-* Source 2: https://developer.nvidia.com/blog/nvidia-releases-open-source-gpu-kernel-modules/
-* Source 3: https://github.com/ValveSoftware/source-sdk-2013/commit/0759e2e8e179d5352d81d0d4aaded72c1704b7a9
-* Temporal Entropy Anchor: 2026-07-15T08:28:27Z
-* CN: 硬件制造商正加速核心软件模块开源以适应生命周期终结与生态整合
-* EN: Hardware manufacturers are accelerating the open-sourcing of core software modules to adapt to end-of-life and ecosystem integration
+* Source 1: https://thinkingmachines.ai/news/introducing-inkling/
+* Source 2: https://fabiensanglard.net/jurrasic_park_computers/index.html
+* Temporal Entropy Anchor: 2026-07-15T08:23:55Z
+* CN: Inkling：我们的开放权重模型、极其详尽的《侏罗纪公园》计算机技术解析 引发了技术生态的新思考
+* EN: Inkling: Our Open-Weights Model and Jurassic Park computers in excruciating detail provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260715-01 | REAL | 开源化成为硬件企业在产品生命周期末期的标准退出策略 | Open-sourcing has become the standard exit strategy for hardware companies at the end of product lifecycles |
+| A1-20260715-01 | REAL | Inkling：我们的开放权重模型、极其详尽的《侏罗纪公园》计算机技术解析 引发了技术生态的新思考 | Inkling: Our Open-Weights Model and Jurassic Park computers in excruciating detail provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 
