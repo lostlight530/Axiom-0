@@ -12,11 +12,11 @@
 
 ### 1.1 Top 5 Hard Signals
 
-1 CN: 去中心化的开源工具加速了确定性执行和认知可审计性 | EN: Decentralized open source tools accelerate deterministic execution and cognitive auditability
-2 CN: 模型推理能力的提升和开源架构的扩展奠定了智能系统的发展轨迹 | EN: The advancement of model reasoning capabilities and the expansion of open-source architectures establish the developmental trajectory of intelligent systems
-3 CN: 封闭硬件架构将因成本与生态限制逐步转向开源支持 | EN: Closed hardware architectures will gradually shift towards open-source support due to cost and ecosystem constraints
-4 CN: 智能体框架的更新反映了自动化生态系统的积极扩展 | EN: Agent framework updates reflect active expansion of the automation ecosystem
-5 CN: 开源策略正重塑AI基础设施层 | EN: Open source strategy is reshaping the AI infrastructure layer
+1 CN: Zig 创造者直言不讳与图表数据引发开源社区对 AI 实际价值的反思 | EN: Zig creator's blunt remarks and chart data prompt the open-source community to reflect on the practical value of AI
+2 CN: 日本电池回收技术与可在手机上运行的 27B 模型推动了硬件与 AI 的端侧结合 | EN: Japan's battery recycling tech and the 27B model running on phones drive the integration of hardware and AI at the edge
+3 CN: 开放权重模型与开源聊天工具加速了去中心化人工智能的普及 | EN: Open-weights models and open-source chat tools accelerate the popularization of decentralized AI
+4 CN: 医疗监控争议与静默软件安装事件凸显了 AI 时代的隐私与安全隐患 | EN: Medical surveillance controversies and silent software installations highlight privacy and security risks in the AI era
+5 CN: Qwen 3.8 发布与 Claude 解决数学猜想展示了前沿模型的认知突破 | EN: The release of Qwen 3.8 and Claude solving mathematical conjectures demonstrate the cognitive breakthroughs of frontier models
 
 ### 1.2 Hypothesis Tracker Status
 

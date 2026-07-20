@@ -12,18 +12,16 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://news.ycombinator.com/newsguidelines.html#generated
-* Source 2: https://ciechanow.ski/airfoil/
-* Source 3: https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/
-* Temporal Entropy Anchor: 2026-07-17T08:13:36Z
-* CN: Meta在2024年7月宣布开源AI是前进的道路
-* EN: Meta announced in July 2024 that open source AI is the path forward
+* Source 1: https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/
+* Temporal Entropy Anchor: 2026-07-17T08:23:55Z
+* CN: Kaiser 护士表示 AI 和监控使他们的工作和病患护理恶化 引发了技术生态的新思考
+* EN: Kaiser nurses say AI, surveillance are making their jobs and patient care worse provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260717-01 | REAL | 开源AI模型将成为行业标准 | Open source AI models will become the industry standard |
+| A1-20260717-01 | REAL | Kaiser 护士表示 AI 和监控使他们的工作和病患护理恶化 引发了技术生态的新思考 | Kaiser nurses say AI, surveillance are making their jobs and patient care worse provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 

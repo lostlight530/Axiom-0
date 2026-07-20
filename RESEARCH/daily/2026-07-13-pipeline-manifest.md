@@ -12,18 +12,17 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://jina.ai/news/jina-embeddings-v3-a-frontier-multilingual-embedding-model/
-* Source 2: https://github.com/SilasMarvin/lsp-ai
-* Source 3: https://twitter.com/AIatMeta/status/1834633042339741961
+* Source 1: https://raymyers.org/post/zed-creator-calls-spade-a-spade/
+* Source 2: https://www.lyrebirddreaming.com/post/the-graph-that-should-be-front-page-news
 * Temporal Entropy Anchor: 2026-07-13T08:23:55Z
-* CN: 开源AI生态系统在文本嵌入和本地语言服务器领域实现了显著扩展
-* EN: The open source AI ecosystem has significantly expanded in text embeddings and local language servers
+* CN: Zig 创造者直言不讳，Anthropic 夸大其词、一张本应成为头条新闻的图表 引发了技术生态的新思考
+* EN: Zig Creator Calls Spade a Spade, Anthropic Blows Smoke and A graph that should be front-page news provoke new thinking in the tech ecosystem
 
 ### Systemic Hypotheses
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260713-01 | REAL | 开源基础架构降低了在生产中集成语言模型的壁垒 | Open source infrastructure lowers the barrier for integrating language models in production |
+| A1-20260713-01 | REAL | Zig 创造者直言不讳，Anthropic 夸大其词、一张本应成为头条新闻的图表 引发了技术生态的新思考 | Zig Creator Calls Spade a Spade, Anthropic Blows Smoke and A graph that should be front-page news provoke new thinking in the tech ecosystem |
 
 ### Core Whitepaper Dehydration
 
