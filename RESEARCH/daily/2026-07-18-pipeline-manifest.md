@@ -12,7 +12,7 @@
 
 ### Archaeological Facts and Temporal Anchor
 
-* Source 1: https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent
+* Source 1: https://felixrieseberg.github.io/clippy/
 * Source 2: https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/
 * Temporal Entropy Anchor: 2026-07-18T08:23:55Z
 * CN: LG 显示器未经同意通过 Windows Update 秘密安装软件、Kimi K3 时刻 引发了技术生态的新思考

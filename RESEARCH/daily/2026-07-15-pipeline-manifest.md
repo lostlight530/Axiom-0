@@ -13,7 +13,7 @@
 ### Archaeological Facts and Temporal Anchor
 
 * Source 1: https://thinkingmachines.ai/news/introducing-inkling/
-* Source 2: https://fabiensanglard.net/jurrasic_park_computers/index.html
+* Source 2: https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/
 * Temporal Entropy Anchor: 2026-07-15T08:23:55Z
 * CN: Inkling：我们的开放权重模型、极其详尽的《侏罗纪公园》计算机技术解析 引发了技术生态的新思考
 * EN: Inkling: Our Open-Weights Model and Jurassic Park computers in excruciating detail provoke new thinking in the tech ecosystem
