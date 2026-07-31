@@ -2,8 +2,12 @@
 
 * Execution Type: Global Protocol Audit
 * Orphan Nodes Extinguished: YES
-* System Integrity Seal: SECURE
-* Monthly Status: SUCCESS
+* System Integrity Seal: PENDING_FINAL_REVIEW
+* Coverage Window: 2026-07-01 to 2026-07-30
+* Month Closure Status: OPEN
+* Report Status: PROVISIONAL
+* Excluded Date: 2026-07-31
+* Final Protocol Verdict: NOT_AUTHORIZED
 * Temporal Entropy Anchor: 2026-07-30T12:49:36Z
 * Internet Anchor Status: VERIFIED
 
@@ -64,8 +68,8 @@
 
 | Expected Range | Missing Asset |
 | --- | --- |
-| 2026-07-31 | RESEARCH/daily/2026-07-31-pipeline-manifest.md |
-| 2026-W31 | RESEARCH/weekly/2026-W31-weekly-manifest.md |
+| 2026-07-31 | NOT_YET_DUE |
+| 2026-W31 | PERIOD_OPEN |
 
 ### Monthly Core Macro Narrative
 
@@ -96,6 +100,6 @@
 
 ---
 
-Axiom-0 Monthly Supreme Audit Concluded
-State: SOLIDIFIED
+Axiom-0 Monthly Provisional Audit
+State: PROVISIONAL
 entropy=0

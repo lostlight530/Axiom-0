@@ -23,7 +23,7 @@
 
 | Hypothesis ID | Status | CN | EN |
 | --- | --- | --- | --- |
-| A1-20260726-01 | REAL | 开源基础模型正在重塑开发者的工作流程和生态规范 | Open-source foundation models are reshaping developer workflows and ecological norms |
+| A1-20260726-01 | SUPPORTED_ONCE | 开源基础模型正在重塑开发者的工作流程和生态规范 | Open-source foundation models are reshaping developer workflows and ecological norms |
 
 ### Core Whitepaper Dehydration
 
@@ -39,7 +39,7 @@
 * scan_kl_divergence.py Exit Code: 0
 * scan_consistency.py Exit Code: 0
 * KL Divergence D_KL: 0.0
-* Safety Verdict: STABLE
+* Safety Verdict: CONSISTENCY_CHECK_PASS
 * ADR vs Code: PASS
 * Methodology vs Code: PASS
 * Bilingual Formatting: PASS
@@ -49,7 +49,7 @@
 
 ## A3 Sandbox High-Pressure Blast Test
 
-* Test Verdict: Zero-Entropy Locked = YES
+* Test Verdict: 100 of 100 specified executions passed
 * nexus_core.py: Hash=f9e7f5122ad67c8d1d87fb682321a324870becbb654067acb120489363becab6 Success_Rate=100
 * liquid_morphing.py: Hash=77d6038132238f0422f0fb10aaea424c4c5bdccae3c04f019306fbf314765a21 Success_Rate=100
 * Entropy Level max min mean: 0.018501 / 0.009043 / 0.012608
