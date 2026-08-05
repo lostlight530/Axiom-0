@@ -1,143 +1,30 @@
-# Axiom-0 ZECP - 10-Node Cognitive Continuum Schedule
-# This configuration implements the rigorous, zero-entropy 10-Node DAG pipeline.
-# Executed daily to maintain the system's deterministic state.
-
-meta:
-  protocol: "axiom-0-zecp"
-  timezone: "UTC"
-  entropy_target: 0.0
-  temporal_entropy_anchor: "dynamic" # Aligned with strict daily cycle
-  compliance: "strict-axiom"
-
-schedule:
-  # T-01: Information Dehydration - Ingestion
-  - id: "T-01"
-    name: "Ingestion"
-    trigger:
-      type: "cron"
-      expression: "0 0 * * *"
-    actions:
-      - type: "bare_metal_fetch"
-        protocols: ["http", "git-delta"]
-        targets:
-          - "frontier_research_journals"
-          - "axiom_repo_diff"
-      - type: "dehydration_pipeline"
-        output_format: "binary_ast_or_json_schema"
-    dependencies: []
-
-  # T-02: Information Dehydration - Provisioning
-  - id: "T-02"
-    name: "Provisioning"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "mcp_tool_mount"
-        queue_type: "lock_free_ring"
-      - type: "sandbox_environment_init"
-    dependencies: ["T-01"]
-
-  # T-03: Cognitive Reduction - Abstraction
-  - id: "T-03"
-    name: "Abstraction"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "fts5_vectorization"
-      - type: "tf_idf_keyword_graphing"
-    dependencies: ["T-02"]
-
-  # T-04: Cognitive Reduction - Morphing
-  - id: "T-04"
-    name: "Morphing"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "system_load_evaluation"
-      - type: "liquid_differential_shift"
-        target_states: ["SOLID", "LIQUID", "GAS", "PLASMA"]
-    dependencies: ["T-03"]
-
-  # T-05: Deterministic Deduction - Orchestration
-  - id: "T-05"
-    name: "Orchestration"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "hardcoded_state_machine_dispatch"
-      - type: "global_graph_sync"
-    dependencies: ["T-04"]
-
-  # T-06: Deterministic Deduction - Analysis & Test-Time Compute
-  - id: "T-06"
-    name: "Analysis"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "test_time_compute_execution"
-        constraint: "sandbox_isolated"
-      - type: "formal_verification_check"
-    dependencies: ["T-05"]
-
-  # T-07: Physical Boundary Convergence - Grounding
-  - id: "T-07"
-    name: "Grounding"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "ast_to_native_python_compile"
-      - type: "sql_statement_generation"
-      - type: "aot_blast_testing"
-    dependencies: ["T-06"]
-
-  # T-08: Physical Boundary Convergence - Execution & Pruning
-  - id: "T-08"
-    name: "Execution"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "execute_grounded_logic"
-        on_fail: "physical_prune_and_rollback"
-      - type: "dead_code_elimination"
-    dependencies: ["T-07"]
-
-  # T-09: Zero-Entropy Alignment - Coherence
-  - id: "T-09"
-    name: "Coherence"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "kl_divergence_coherence_check"
-        threshold: 0.05
-        on_exceed: "trigger_ADR_004_healing"
-    dependencies: ["T-08"]
-
-  # T-10: Zero-Entropy Alignment - Synthesis
-  - id: "T-10"
-    name: "Synthesis"
-    trigger:
-      type: "cascade"
-    actions:
-      - type: "cryptographic_ledger_sign"
-      - type: "daily_whitepaper_export"
-        format: "zero_entropy_markdown"
-    dependencies: ["T-09"]
-
-global:
-  telemetry:
-    enabled: true
-    mode: "zero_copy_memory_mapped"
-  
-  error_handling:
-    retry_count: 0  # Axiom-0 explicitly forbids blind LLM retries
-    fallback: "hard_system_halt_and_prune"
-  
-  resource_limits:
-    timeout: "120m"
-
-notifications:
-  on_failure:
-    - type: "system_halt_log"
-      path: "/var/log/axiom-0/zecp_fatal.log"
-  on_completion:
-    - type: "ledger_commit_receipt"
+schema_version: "1.0"
+id: axiom-contract-verification
+enabled: false
+owner: repository-maintainers
+trigger:
+  kind: cron
+  expression: "17 3 * * 1"
+  timezone: UTC
+execution:
+  command:
+    - python
+    - -m
+    - unittest
+    - discover
+    - -s
+    - tests
+    - -v
+  timeout_seconds: 600
+  concurrency_group: axiom-contract-verification
+  cancel_in_progress: false
+permissions:
+  repository_contents: read
+artifacts:
+  - kind: test-summary
+    format: text
+    retention_days: 14
+failure:
+  max_attempts: 2
+  backoff_seconds: 60
+  notify_owner: true

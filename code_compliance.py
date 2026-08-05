@@ -1,35 +1,33 @@
-import os
+"""Fail-closed source checks kept at the historical Jules entry path."""
+from __future__ import annotations
 import re
+from pathlib import Path
 
-def check_file(filepath):
-    errors = []
-    with open(filepath, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        for i, line in enumerate(lines):
-            if 'time.time()' in line:
-                errors.append(f"Line {i+1}: 'time.time()' found. Use deterministic alternative.")
-            if re.search(r'\bhash\(', line):
-                errors.append(f"Line {i+1}: 'hash()' found. Use hashlib.sha256() instead.")
-            if 'str(e)' in line:
-                errors.append(f"Line {i+1}: 'str(e)' found. Use 'e.__class__.__name__' instead.")
-            if '.isoformat()' in line and 'timespec' not in line:
-                errors.append(f"Line {i+1}: '.isoformat()' without timespec found. Must use timespec='microseconds'.")
-    return errors
+ROOT = Path(__file__).resolve().parent
+TARGETS = [ROOT / "CODE", ROOT / "tests"]
+RULES = {
+    "unstable builtin hash": re.compile(r"(?<![\w.])hash\("),
+    "wall-clock epoch": re.compile(r"\btime\.time\("),
+    "exception detail leak": re.compile(r"\bstr\(\s*(?:e|exc|error)\s*\)"),
+    "global logging configuration": re.compile(r"logging\.basicConfig\("),
+    "simulated transition sleep": re.compile(r"asyncio\.sleep\("),
+}
 
-def scan_dir(dir_path):
-    all_errors = {}
-    for root, dirs, files in os.walk(dir_path):
-        if '.git' in root or 'node_modules' in root: continue
-        for file in files:
-            if file.endswith('.py') and file not in ['code_compliance.py', 'scan_consistency.py', 'scan_kl_divergence.py']:
-                filepath = os.path.join(root, file)
-                errs = check_file(filepath)
-                if errs:
-                    all_errors[filepath] = errs
-    return all_errors
 
-errors = scan_dir('.')
-for k, v in errors.items():
-    print(f"File: {k}")
-    for err in v:
-        print(f"  - {err}")
+def violations() -> list[str]:
+    found: list[str] = []
+    for directory in TARGETS:
+        for path in sorted(directory.rglob("*.py")):
+            for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                for label, pattern in RULES.items():
+                    if pattern.search(line):
+                        found.append(f"{path.relative_to(ROOT)}:{number}: {label}")
+    return found
+
+
+if __name__ == "__main__":
+    errors = violations()
+    if errors:
+        print("\n".join(errors))
+        raise SystemExit(1)
+    print("code compliance: passed")

@@ -1,38 +1,38 @@
-# ADR-007: 人机后处理边界法则 / Human-AI Post-Processing Boundary Law
+# Accountable human review boundary
+
+- Decision date: 2026-08-05
+- Scope: Axiom-0 reference contracts, methods, code, and verification
 
 ## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+
+[CN] 已接受；替代同名文件中的绝对化表述。
+
+[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
-> **[CN]:** 原始的对话提示和交互文本充满了模糊性、冗余与不可预测的情感波动。将这些未经提炼的聊天记录直接纳入系统认知库，等同于在纯净的超导电路中引入高阻抗杂质，严重破坏零熵协议。
-> **[EN]:** Raw dialogue prompts and interaction texts are full of ambiguity, redundancy, and unpredictable emotional fluctuations. Incorporating these unrefined chat logs directly into the system's cognitive repository is equivalent to introducing high-impedance impurities into a pure superconducting circuit, severely damaging the zero-entropy protocol.
+
+[CN] Generated text and code may be plausible while incorrect. A model response is not approval, evidence, or a security decision.
+
+[EN] Generated text and code may be plausible while incorrect. A model response is not approval, evidence, or a security decision.
 
 ## 决策 / Decision
-> **[CN]:** 强制确立双阶段后处理工作流。所有未经分类的交互对话不得直接提交（Commit）至核心知识库，必须经过分割、分类、路由、脱水以及规范化五个硬性步骤的清洗。只有被彻底剥离了上下文噪音、提纯为物理事实与架构决议的文本，才被允许跨越人机边界。
-> **[EN]:** Forcefully establish a dual-phase post-processing workflow. All unclassified interactive dialogues must not be directly committed to the core knowledge repository; they must undergo cleansing through five rigid steps: segmentation, classification, routing, dehydration, and canonicalization. Only text thoroughly stripped of context noise and purified into physical facts and architectural resolutions is permitted to cross the Human-AI boundary.
 
+[CN] The contributor owns scope, source verification, tests, and disclosure. High-impact permission, release, security, and destructive decisions require accountable human review. AI output remains untrusted input until validated.
 
----
-## 补充决议 / Supplementary Resolution (2026-07-05)
+[EN] The contributor owns scope, source verification, tests, and disclosure. High-impact permission, release, security, and destructive decisions require accountable human review. AI output remains untrusted input until validated.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/jamesob/local-llm
-* **脱水描述**: Everything I know about running LLMs locally
+## 后果 / Consequences
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
-> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
+[CN] Review costs remain visible; responsibility cannot be delegated to a model.
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] Review costs remain visible; responsibility cannot be delegated to a model.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/2512.23262v1
-* **脱水描述**: PFed-Signal: An ADR Prediction Model based on Federated Learning - The adverse drug reactions (ADRs) predicted based on the biased records in FAERS (U.S. Food and Drug Administration Adverse Event Reporting System) ma...
+## 验证 / Verification
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 PFed-Signal: An ADR Prediction Model based on Federated Learning 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of PFed-Signal: An ADR Prediction Model based on Federated Learning, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] PR template records evidence class, commands, security impact, and unrun checks.
+
+[EN] PR template records evidence class, commands, security impact, and unrun checks. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+
+## 例外 / Exceptions
+
+An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.

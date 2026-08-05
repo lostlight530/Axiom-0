@@ -1,38 +1,38 @@
-# ADR-014: 仓库知识分层法则 / Repository Knowledge Stratification Law
+# Repository knowledge stratification
+
+- Decision date: 2026-08-05
+- Scope: Axiom-0 reference contracts, methods, code, and verification
 
 ## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+
+[CN] 已接受；替代同名文件中的绝对化表述。
+
+[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
-> **[CN]:** 随着系统运行，聊天记录、原始任务日志和高熵文本不断输入。如果允许这些未经验证的原始文本直接沉淀为仓库资产，Axiom-0 的基石将被迅速污染。这破坏了“零熵”原则。
-> **[EN]:** As the system operates, chat logs, raw task manifests, and high-entropy text are continuously ingested. If such unverified raw text is allowed to solidify directly into repository assets, Axiom-0's foundation will be rapidly contaminated. This violates the "Zero-Entropy" principle.
+
+[CN] Decisions, methods, code, research, automation, and presentation have different authority and lifecycle. Mixing them causes generated material to govern runtime accidentally.
+
+[EN] Decisions, methods, code, research, automation, and presentation have different authority and lifecycle. Mixing them causes generated material to govern runtime accidentally.
 
 ## 决策 / Decision
-> **[CN]:** 实施严格的 5 层知识分层结构（0-提示, 1-研究, 2-方法论, 3-ADR, 4-代码）。原始聊天文本绝不允许直接作为仓库资产。所有外部输入必须经过分类、路由、脱水和规范化后，方可成为高阶知识资产。
-> **[EN]:** Implement a strict 5-layer knowledge stratification structure (0-Prompt, 1-Research, 2-Methodology, 3-ADR, 4-Code). Raw chat text is absolutely forbidden from becoming a repository asset directly. All external inputs must pass through classification, routing, dehydration, and canonicalization before becoming higher-order knowledge assets.
 
+[CN] ADR defines durable decisions; METHODOLOGY defines procedures; SPECIFICATION defines contracts; CODE and tests implement them; AUTOMATION schedules checks; RESEARCH and frontend remain separately owned.
 
----
-## 补充决议 / Supplementary Resolution (2026-07-05)
+[EN] ADR defines durable decisions; METHODOLOGY defines procedures; SPECIFICATION defines contracts; CODE and tests implement them; AUTOMATION schedules checks; RESEARCH and frontend remain separately owned.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/jamesob/local-llm
-* **脱水描述**: Everything I know about running LLMs locally
+## 后果 / Consequences
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
-> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
+[CN] Cross-layer changes require explicit links, but ownership conflicts decrease.
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] Cross-layer changes require explicit links, but ownership conflicts decrease.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/2512.23262v1
-* **脱水描述**: PFed-Signal: An ADR Prediction Model based on Federated Learning - The adverse drug reactions (ADRs) predicted based on the biased records in FAERS (U.S. Food and Drug Administration Adverse Event Reporting System) ma...
+## 验证 / Verification
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 PFed-Signal: An ADR Prediction Model based on Federated Learning 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of PFed-Signal: An ADR Prediction Model based on Federated Learning, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] Review checks that a change lands in the correct layer and updates dependent tests without rewriting separately owned material.
+
+[EN] Review checks that a change lands in the correct layer and updates dependent tests without rewriting separately owned material. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+
+## 例外 / Exceptions
+
+An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.

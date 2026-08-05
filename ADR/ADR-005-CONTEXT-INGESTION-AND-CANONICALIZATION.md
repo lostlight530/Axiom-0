@@ -1,38 +1,38 @@
-# ADR-005: 上下文摄入与规范化法则 / Context Ingestion and Canonicalization Law
+# Canonical JSON without semantic mutation
+
+- Decision date: 2026-08-05
+- Scope: Axiom-0 reference contracts, methods, code, and verification
 
 ## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+
+[CN] 已接受；替代同名文件中的绝对化表述。
+
+[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
-> **[CN]:** 在无边界的网络环境中，输入流充满了不可靠的噪音与格式变异。如果直接将原生文本暴露给认知引擎，犹如将未过滤的脏水注入精密液压系统，将直接瘫痪核心推理链路。
-> **[EN]:** In the boundless network environment, input streams are riddled with unreliable noise and formatting mutations. Exposing native text directly to the cognitive engine is akin to injecting unfiltered dirty water into a precision hydraulic system, which will directly paralyze the core reasoning pipeline.
+
+[CN] Uppercasing and punctuation splitting changed payload meaning. Deterministic serialization is narrower than canonical meaning.
+
+[EN] Uppercasing and punctuation splitting changed payload meaning. Deterministic serialization is narrower than canonical meaning.
 
 ## 决策 / Decision
-> **[CN]:** 实施极端的 T-01 摄入截断。所有外部数据流必须经过强制的规范化（Canonicalization）处理，转换为统一的 AST（抽象语法树）或严格限定的 JSON Schema。任何带有冗余修饰或格式歧义的载荷将被无情丢弃，确保摄入层的绝对零熵。
-> **[EN]:** Implement extreme T-01 ingestion truncation. All external data streams must undergo mandatory canonicalization, converted into unified ASTs (Abstract Syntax Trees) or strictly constrained JSON Schemas. Any payload bearing redundant embellishments or formatting ambiguity will be ruthlessly discarded, ensuring absolute zero-entropy at the ingestion layer.
 
+[CN] Canonicalize JSON-compatible values with sorted keys, UTF-8, compact separators, and rejection of NaN/Infinity. Preserve original scalar content and attach a SHA-256 digest. Schema validation belongs at each public boundary.
 
----
-## 补充决议 / Supplementary Resolution (2026-07-05)
+[EN] Canonicalize JSON-compatible values with sorted keys, UTF-8, compact separators, and rejection of NaN/Infinity. Preserve original scalar content and attach a SHA-256 digest. Schema validation belongs at each public boundary.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/jamesob/local-llm
-* **脱水描述**: Everything I know about running LLMs locally
+## 后果 / Consequences
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
-> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
+[CN] Equivalent mappings serialize consistently; semantically different strings remain different.
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] Equivalent mappings serialize consistently; semantically different strings remain different.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/2512.23262v1
-* **脱水描述**: PFed-Signal: An ADR Prediction Model based on Federated Learning - The adverse drug reactions (ADRs) predicted based on the biased records in FAERS (U.S. Food and Drug Administration Adverse Event Reporting System) ma...
+## 验证 / Verification
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 PFed-Signal: An ADR Prediction Model based on Federated Learning 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of PFed-Signal: An ADR Prediction Model based on Federated Learning, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] Contract tests assert stable Unicode serialization and digest behavior.
+
+[EN] Contract tests assert stable Unicode serialization and digest behavior. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+
+## 例外 / Exceptions
+
+An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.

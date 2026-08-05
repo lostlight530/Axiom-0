@@ -1,112 +1,64 @@
-"""
-Axiom-0: The Zero-Entropy Cognitive Protocol (ZECP)
-==================================================
-[CN]: 核心连续体调度器。强制执行不可逆的 10 节点拓扑，确保系统状态绝对确定。
-[EN]: Core continuum orchestrator. Enforces the irreversible 10-node topology,
-      ensuring absolute system state determinism.
-"""
+"""A ten-stage reference pipeline with explicit inputs, outputs, and failure semantics."""
+from __future__ import annotations
 
-import math
-import json
-import hashlib
 import asyncio
 import logging
-from datetime import datetime, timezone
-from typing import Dict, List, Any, Optional, Callable
+from collections.abc import Callable, Mapping
+from typing import Any
 
-from liquid_morphing import AxiomMorphingEngine, SystemMetrics
+try:
+    from .contracts import canonical_json, kl_divergence, stable_digest, utc_now
+    from .liquid_morphing import AxiomMorphingEngine, SystemMetrics
+except ImportError:  # Supports `python CODE/nexus_core.py` without changing package semantics.
+    from contracts import canonical_json, kl_divergence, stable_digest, utc_now
+    from liquid_morphing import AxiomMorphingEngine, SystemMetrics
 
-logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
-logger = logging.getLogger("Axiom-Core")
+logger = logging.getLogger(__name__)
+
 
 class AxiomOrchestrator:
-    """
-    [CN]: ZECP 协议执行器：纯粹数学边界的维护者。
-    [EN]: ZECP Protocol Executor: Guardian of the pure mathematical boundary.
-    """
-    def __init__(self) -> None:
-        self.state: Dict[str, Any] = {}
-        self.nodes: List[str] = [
-            "T-01 Ingestion", "T-02 Decomposition", "T-03 Abstraction",
-            "T-04 Morphing", "T-05 Orchestration", "T-06 Analysis",
-            "T-07 Grounding", "T-08 Execution", "T-09 Coherence", "T-10 Synthesis"
-        ]
-        self.registry: Dict[str, Callable[[Any], Dict[str, Any]]] = {
-            "FUNC_LOGIC_001": self._logic_unit_core_auth,
-            "FUNC_LOGIC_002": self._logic_unit_memory_shard
-        }
+    """Reference orchestration only; it does not establish universal determinism or safety."""
+
+    def __init__(self, *, metrics_provider: Callable[[], SystemMetrics] | None = None, divergence_limit: float = 0.05) -> None:
+        if not 0 <= divergence_limit:
+            raise ValueError("divergence_limit must be non-negative")
+        self.nodes = tuple(f"T-{index:02d}" for index in range(1, 11))
         self.morphing_engine = AxiomMorphingEngine()
-        # Temporal Entropy Anchor: Breaking the 14th cycle
-        # Dynamic extraction or fallback to strict 2026-05-27 bounds to prevent divergence
-        self.system_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        self.metrics_provider = metrics_provider or (lambda: SystemMetrics())
+        self.divergence_limit = float(divergence_limit)
 
-    def _deterministic_str(self, data: Any) -> str:
-        """[CN]: 消除 JSON 序列化的随机熵。[EN]: Eliminating random entropy in JSON serialization."""
-        return json.dumps(data, sort_keys=True)
+    @staticmethod
+    def _dehydration_pipeline(raw_input: Any) -> dict[str, Any]:
+        encoded = canonical_json(raw_input)
+        return {"canonical_payload": encoded, "input_digest": stable_digest(raw_input)}
 
-    def _logic_unit_core_auth(self, data: Any) -> Dict[str, Any]:
-        return {
-            "auth_status": "ZECP_VERIFIED",
-            "anchor": self.system_date,
-            "hash": hashlib.sha256(self._deterministic_str(data).encode()).hexdigest()
-        }
+    def calculate_kl_divergence(self, p: list[float], q: list[float]) -> float:
+        return kl_divergence(p, q)
 
-    def _logic_unit_memory_shard(self, data: Any) -> Dict[str, Any]:
-        data_str = self._deterministic_str(data)
-        return {"shard_id": f"SHARD_{hashlib.sha256(data_str.encode()).hexdigest()}", "status": "SYNCED"}
-
-    def _dehydration_pipeline(self, raw_input: Any) -> Dict[str, Any]:
-        """Node 01/02: Forced topological dehydration."""
-        raw_str = self._deterministic_str(raw_input)
-        segments = [s.strip().upper() for s in raw_str.split('.') if len(s.strip()) > 2]
-        return {"canonical_payload": " | ".join(segments), "entropy": 0.0}
-
-    def calculate_kl_divergence(self, p: List[float], q: List[float]) -> float:
-        """Node 09 Coherence: Algebraic auditing with safety checks."""
-        if len(p) != len(q): raise ValueError("Mismatch")
-        if sum(p) == 0 or sum(q) == 0: return 0.0
-
-        p_norm = [x / sum(p) for x in p]
-        q_norm = [x / sum(q) for x in q]
-        
-        divergence = 0.0
-        for i in range(len(p_norm)):
-            if p_norm[i] > 1e-10:
-                # Ensure q_norm is not zero to avoid domain error
-                denominator = max(q_norm[i], 1e-10)
-                divergence += p_norm[i] * math.log(p_norm[i] / denominator)
-        return divergence
-
-    async def run_continuum(self, input_payload: Any) -> Any:
-        logger.info(f"[ZECP Initiated] Temporal Anchor: {self.system_date}")
-        current_data = input_payload
-        
+    async def run_continuum(self, input_payload: Any) -> dict[str, Any]:
+        state = self._dehydration_pipeline(input_payload)
+        events: list[dict[str, Any]] = []
         for node in self.nodes:
-            logger.info(f"[*] Node: {node}")
-            
-            if "T-01" in node:
-                current_data = self._dehydration_pipeline(current_data)
-            elif "T-04" in node:
-                metrics = SystemMetrics(cpu_percent=0.88, memory_percent=0.75, entropy_level=0.1)
-                target_state = self.morphing_engine.evaluate_morph(metrics)
-                if target_state: await self.morphing_engine.shift(target_state)
-                current_data["morph"] = self.morphing_engine.current_state.name
-            elif "T-07" in node:
-                spec_key = "FUNC_LOGIC_001" if "AUTHORIZED" in str(current_data).upper() else "FUNC_LOGIC_002"
-                func = self.registry.get(spec_key)
-                if func: current_data = func(current_data)
-            elif "T-09" in node:
-                p = [0.1 + (len(str(current_data)) % 10) * 0.001, 0.2, 0.7]
-                q = [0.1, 0.2, 0.7]
-                kl = self.calculate_kl_divergence(p, q)
-                logger.info(f"    [T-09] KL Audit: {kl:.8f}")
-                if kl > 0.05: raise RuntimeError("Entropy Violation")
-            await asyncio.sleep(0.01)
+            event: dict[str, Any] = {"node": node, "observed_at": utc_now(), "status": "completed"}
+            if node == "T-04":
+                metrics = self.metrics_provider()
+                if not isinstance(metrics, SystemMetrics):
+                    raise TypeError("metrics_provider must return SystemMetrics")
+                target = self.morphing_engine.evaluate_morph(metrics)
+                changed = await self.morphing_engine.shift(target) if target is not None else False
+                state["morph"] = {"state": self.morphing_engine.current_state.name, "changed": changed}
+            elif node == "T-09":
+                actual = state.get("distribution", [0.1, 0.2, 0.7])
+                expected = [0.1, 0.2, 0.7]
+                divergence = kl_divergence(actual, expected)
+                state["coherence"] = {"kl_nats": divergence, "limit": self.divergence_limit}
+                if divergence > self.divergence_limit:
+                    event["status"] = "failed"
+                    events.append(event)
+                    raise RuntimeError("coherence divergence exceeded the configured limit")
+            events.append(event)
+        return {"run_id": stable_digest({"input": input_payload, "events": events}), "state": state, "events": events, "limitations": ["heuristic metrics", "single-process reference implementation"]}
 
-        logger.info("[T-10] Synthesis Complete: System Locked at Zero-Entropy State")
-        return current_data
 
 if __name__ == "__main__":
-    orchestrator = AxiomOrchestrator()
-    final_output = asyncio.run(orchestrator.run_continuum("authorized_request_v2"))
-    print(f"\nFinal State Output:\n{json.dumps(final_output, indent=2)}")
+    print(canonical_json(asyncio.run(AxiomOrchestrator().run_continuum({"request": "authorized_request_v2"}))))

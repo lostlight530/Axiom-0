@@ -1,38 +1,44 @@
-# METH-012: 零信任资源分配 / Zero Trust Resource Allocation
+# Budgeted resource allocation
 
-## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+- Method version: 2026-08-05
+- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
 
-## 背景 / Context
-> **[CN]:** 在传统的资源管理模型中，系统通常假设内部网络和组件是可信的，一旦完成初始认证，即可授予广泛的资源访问权限。然而，结合 NIST《Implementing a Zero Trust Architecture》等规范，这种“边界防御”在复杂的 Agentic 生态中极易失效。即使在完全隔离的沙箱中，由大模型驱动的逻辑流依然可能因为提示词注入或上下文污染而产生异常的资源消耗（如无限循环、内存泄漏或恶意网络探测）。
-> **[EN]:** In traditional resource management models, systems often assume internal networks and components are trusted, granting broad resource access privileges once initial authentication is complete. However, aligning with specifications like NIST's "Implementing a Zero Trust Architecture," this "perimeter defense" is highly susceptible to failure in complex Agentic ecosystems. Even within fully isolated sandboxes, logic flows driven by LLMs may still exhibit anomalous resource consumption (e.g., infinite loops, memory leaks, or malicious network probing) due to prompt injection or context contamination.
+## 目标 / Objective
 
-## 决策 / Decision
-> **[CN]:** Axiom-0 将零信任理念引入认知连续体，确立了“零信任资源分配”法则：任何认知节点、执行单元或子系统，在请求资源时，必须被默认视为“潜在污染源”。资源分配不基于认证，而是基于持续的密码学验证与极简权限原则。所有未在 DAG 拓扑中声明的请求必须被隐式拒绝。节点必须在微隔离空间中执行，系统仅在处理代数载荷时提供精确计算的瞬间资源配额。
-> **[EN]:** Axiom-0 introduces the Zero Trust philosophy into the cognitive continuum, establishing the "Zero Trust Resource Allocation" law: any cognitive node, execution unit, or subsystem, when requesting resources, must default to being treated as a "potential source of contamination." Resource allocation relies on continuous cryptographic verification and the principle of least privilege, rather than authentication. All requests not declared in the DAG topology must be implicitly denied. Nodes must execute in micro-segmented spaces, with the system providing only momentary, precisely calculated resource quotas when processing algebraic payloads.
+[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
 
+[EN] Apply budgeted resource allocation without turning a bounded procedure into a universal guarantee.
 
----
-## 补充法则 / Supplementary Law (2026-07-05)
+## 输入 / Inputs
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/Kulaxyz/token-diet
-* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+[CN] task risk, CPU/memory/time/network/cost budgets, concurrency, cancellation。
 
-### 方法论投射 (Methodology Projection)
-> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
-> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.
+[EN] task risk, CPU/memory/time/network/cost budgets, concurrency, cancellation. Inputs remain untrusted until type, range, provenance, and authority checks pass.
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+## 步骤 / Procedure
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/1511.04277v1
-* **脱水描述**: Indirect (source-free) integration method. II. Self-force consistent radial fall - We apply our method of indirect integration, described in Part I, at fourth order, to the radial fall affected by the self-force. The Mode-Sum regular...
+[CN] choose minimum capability; bound workers and queues; propagate deadlines; cancel children; meter calls; degrade explicitly; emit safe events。
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 Indirect (source-free) integration method. II. Self-force consistent radial fall 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of Indirect (source-free) integration method. II. Self-force consistent radial fall, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[EN] choose minimum capability; bound workers and queues; propagate deadlines; cancel children; meter calls; degrade explicitly; emit safe events. Record every material choice with owner and revision.
+
+## 输出 / Outputs
+
+[CN] result or typed exhaustion with consumption and retry guidance。
+
+[EN] result or typed exhaustion with consumption and retry guidance. Distinguish observed result, external support, proposal, and uncertainty.
+
+## 失败条件 / Failure conditions
+
+[CN] 出现以下情况必须失败关闭：unbounded workers, ignored cancellation, silent partial result, or unauthorized spend。
+
+[EN] Fail closed on unbounded workers, ignored cancellation, silent partial result, or unauthorized spend. Partial output is incomplete and cannot trigger consequential automation.
+
+## 度量 / Measures
+
+[CN] peak workers, timeouts, queue depth, external cost。
+
+[EN] Track peak workers, timeouts, queue depth, external cost. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
+
+## 复现与审查 / Reproduction and review
+
+Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.

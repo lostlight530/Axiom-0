@@ -1,34 +1,44 @@
-# METH-009: 时间熵锚定法 / Temporal Entropy Anchoring
+# Time and version anchoring
 
-## 绝对纪元的锁定 / Lockdown of the Absolute Epoch
-> **[CN]:** 为防止系统在无监督的自动化迭代中产生时序混乱与元数据递归（如著名的“第14周期”迷失），Axiom-0 强制引入“时间熵锚（Temporal Entropy Anchor）”。系统并不信任概率模型的相对时间感，而是从物理层直接提取当前的确定性时间戳（如 2026-05-27）作为不可篡改的常数基线。
-> **[EN]:** To prevent the system from suffering temporal chaos and metadata recursion (like the infamous "14th cycle" loss) during unsupervised automated iterations, Axiom-0 forcefully introduces the "Temporal Entropy Anchor". The system does not trust the relative time sense of probabilistic models; instead, it extracts the current deterministic timestamp directly from the physical layer (e.g., 2026-05-27) as an immutable constant baseline.
+- Method version: 2026-08-05
+- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
 
-## 时序不可逆性校验 / Temporal Irreversibility Validation
-> **[CN]:** 所有生成的架构记录、研究资产与日志序列，都必须单向绑定在时间熵锚上。任何企图逆流或重写历史状态的操作，都将在代数层面引发严重散度，进而被系统直接物理熔断。时间成为系统内不可逾越的熵减屏障。
-> **[EN]:** All generated architectural records, research assets, and log sequences must be uni-directionally bound to the temporal entropy anchor. Any operation attempting to flow backward or rewrite historical states will trigger severe algebraic divergence, leading to direct physical meltdown by the system. Time becomes an insurmountable entropy-reduction barrier within the system.
+## 目标 / Objective
 
+[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
 
----
-## 补充法则 / Supplementary Law (2026-07-05)
+[EN] Apply time and version anchoring without turning a bounded procedure into a universal guarantee.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/Kulaxyz/token-diet
-* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+## 输入 / Inputs
 
-### 方法论投射 (Methodology Projection)
-> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
-> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.
+[CN] UTC clock, source revision, schema version, freshness policy。
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] UTC clock, source revision, schema version, freshness policy. Inputs remain untrusted until type, range, provenance, and authority checks pass.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/1511.04277v1
-* **脱水描述**: Indirect (source-free) integration method. II. Self-force consistent radial fall - We apply our method of indirect integration, described in Part I, at fourth order, to the radial fall affected by the self-force. The Mode-Sum regular...
+## 步骤 / Procedure
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 Indirect (source-free) integration method. II. Self-force consistent radial fall 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of Indirect (source-free) integration method. II. Self-force consistent radial fall, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] emit RFC3339 UTC; retain object ids; separate event and processing time; apply predeclared freshness; never treat date as correctness。
+
+[EN] emit RFC3339 UTC; retain object ids; separate event and processing time; apply predeclared freshness; never treat date as correctness. Record every material choice with owner and revision.
+
+## 输出 / Outputs
+
+[CN] trace with times, revision, clock source, freshness decision。
+
+[EN] trace with times, revision, clock source, freshness decision. Distinguish observed result, external support, proposal, and uncertainty.
+
+## 失败条件 / Failure conditions
+
+[CN] 出现以下情况必须失败关闭：naive time, ambiguous precision, missing revision, or post-hoc freshness。
+
+[EN] Fail closed on naive time, ambiguous precision, missing revision, or post-hoc freshness. Partial output is incomplete and cannot trigger consequential automation.
+
+## 度量 / Measures
+
+[CN] clock skew, stale input count, replay match rate。
+
+[EN] Track clock skew, stale input count, replay match rate. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
+
+## 复现与审查 / Reproduction and review
+
+Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
