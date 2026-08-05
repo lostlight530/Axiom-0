@@ -124,4 +124,4 @@ class RepositoryContractTests(unittest.TestCase):
                 self.assertIn(f"]({target})", text)
         for section in range(1, 8):
             with self.subTest(section=section):
-                self.assertRegex(text, rf"(?m)^## {section}\\.")
+                self.assertRegex(text, rf"(?m)^## {section}\.")
