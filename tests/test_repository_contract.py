@@ -79,3 +79,22 @@ class RepositoryContractTests(unittest.TestCase):
         ):
             with self.subTest(value=value):
                 self.assertIn(value, frontend_job)
+    def test_dependabot_groups_compatible_updates(self):
+        path = ROOT / ".github" / "dependabot.yml"
+        text = path.read_text(encoding="utf-8")
+        sections = {
+            section.splitlines()[0]: section
+            for section in text.split("  - package-ecosystem: ")[1:]
+        }
+        actions = sections["github-actions"]
+        npm = sections["npm"]
+
+        self.assertEqual(actions.count("\n    groups:\n"), 1)
+        self.assertIn("\n      github-actions:\n", actions)
+        self.assertIn('\n          - "*"\n', actions)
+        self.assertEqual(npm.count("\n    groups:\n"), 1)
+        self.assertIn("\n      npm-minor-patch:\n", npm)
+        self.assertIn("\n        update-types:\n", npm)
+        self.assertIn('\n          - "minor"\n', npm)
+        self.assertIn('\n          - "patch"\n', npm)
+        self.assertNotIn('\n          - "major"\n', npm)
