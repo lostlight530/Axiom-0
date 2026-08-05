@@ -12,11 +12,22 @@ def changed_paths(base_ref: str) -> list[str]:
     return [line.strip().replace("\\", "/") for line in result.stdout.splitlines() if line.strip()]
 
 
+def blocked_paths(paths: list[str], allowed_files: set[str] | None = None) -> list[str]:
+    allowed = {path.replace("\\", "/") for path in (allowed_files or set())}
+    normalized = [path.replace("\\", "/") for path in paths]
+    return [
+        path for path in normalized
+        if path not in allowed
+        and (path in PROTECTED_FILES or path.startswith(PROTECTED_PREFIXES))
+    ]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--base-ref", required=True)
+    parser.add_argument("--allow-file", action="append", default=[])
     args = parser.parse_args()
-    blocked = [path for path in changed_paths(args.base_ref) if path in PROTECTED_FILES or path.startswith(PROTECTED_PREFIXES)]
+    blocked = blocked_paths(changed_paths(args.base_ref), set(args.allow_file))
     if blocked:
         print("protected path changes:\n" + "\n".join(blocked))
         return 1
