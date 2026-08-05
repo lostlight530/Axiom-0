@@ -10,13 +10,13 @@ class RepositoryContractTests(unittest.TestCase):
     def test_adrs_have_required_sections(self):
         for path in sorted((ROOT / "ADR").glob("*.md")):
             text = path.read_text(encoding="utf-8")
-            for heading in ("## ?? / Status", "## ?? / Context", "## ?? / Decision", "## ?? / Consequences", "## ?? / Verification"):
+            for heading in ("## \u72b6\u6001 / Status", "## \u80cc\u666f / Context", "## \u51b3\u7b56 / Decision", "## \u540e\u679c / Consequences", "## \u9a8c\u8bc1 / Verification"):
                 self.assertIn(heading, text, path)
 
     def test_methods_define_inputs_outputs_and_failure(self):
         for path in sorted((ROOT / "METHODOLOGY").glob("*.md")):
             text = path.read_text(encoding="utf-8")
-            for heading in ("## ?? / Inputs", "## ?? / Procedure", "## ?? / Outputs", "## ???? / Failure conditions"):
+            for heading in ("## \u8f93\u5165 / Inputs", "## \u6b65\u9aa4 / Procedure", "## \u8f93\u51fa / Outputs", "## \u5931\u8d25\u6761\u4ef6 / Failure conditions"):
                 self.assertIn(heading, text, path)
 
     def test_actions_are_full_sha_pinned(self):
