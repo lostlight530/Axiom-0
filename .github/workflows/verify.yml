@@ -1,0 +1,51 @@
+name: Verify Axiom contracts
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.0.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Compile
+        run: python -m compileall -q CODE tests *.py
+      - name: Protected-path gate
+        if: github.event_name == 'pull_request'
+        run: python scope_guard.py --base-ref "${{ github.event.pull_request.base.sha }}"
+      - name: Contract tests
+        run: python -m unittest discover -s tests -v
+      - name: Historical entrypoint checks
+        run: |
+          python code_compliance.py
+          python scan_consistency.py
+          python scan_kl_divergence.py
+          python parallel_test.py
+          python test_complexity.py
+          python test_entropy_spike.py
+          python test_json_dumps.py
+          python test_metrics_json.py
+          python datetime_test.py
+          python str_e_test.py
+          bash test_100.sh

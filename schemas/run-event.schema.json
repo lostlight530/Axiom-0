@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lostlight530.github.io/Axiom-0/schemas/run-event.schema.json",
+  "title": "Axiom run event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["node", "observed_at", "status"],
+  "properties": {
+    "node": {"type": "string", "pattern": "^T-(0[1-9]|10)$"},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["completed", "failed"]}
+  }
+}

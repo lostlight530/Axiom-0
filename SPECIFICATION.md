@@ -1,53 +1,49 @@
-# Axiom-0 ZECP Technical Specification
+# Axiom-0 Engineering Specification
 
----
+- Version: 2026.08
+- Status: implemented reference contract
+- Authority: this file defines repository behavior; ADRs explain durable decisions; tests provide revision-specific evidence
 
-## 零熵认知协议技术规范 (ZECP) / Zero-Entropy Cognitive Protocol Technical Specification
+## Purpose and boundary
 
----
+Axiom is a dependency-free Python reference for a ten-stage, event-recorded transformation pipeline and observable state adaptation. It demonstrates canonical serialization, digests, distribution validation, KL divergence, explicit thresholds, transactional transitions, and structured run output.
 
-## 1. 协议定义：绝对物理法则 / Protocol Definition: Absolute Physical Law
-> **[CN]**: ZECP 是 Axiom-0 引擎的纯粹数学边界。它彻底废除了大模型的高熵自由路由，规定系统每一步动作必须在硬编码的管线中可审计且 100% 确定。
-> **[EN]**: ZECP is the pure mathematical boundary of the Axiom-0 engine. It thoroughly abolishes high-entropy free routing of LLMs, mandating that every action must be auditable and 100% deterministic within a hardcoded pipeline.
+It is not a foundation model, autonomous safety system, authorization layer, sandbox, distributed scheduler, database, or proof of deterministic cognition. “Axiom”, “continuum”, “entropy”, and phase names are project vocabulary unless a unit and measurement contract are stated.
 
-## 2. 核心架构约束 / Core Architectural Constraints
+## Runtime support
 
-### 2.1 不可逆 10 节点拓扑 (Irreversible 10-Node Topology)
-> **[CN]**: 彻底抛弃内循环反馈机制。从摄取到最终呈现严格的单向传递。没有任何回退路径。
-> **[EN]**: Thoroughly abandon inner loop feedback mechanisms. Strict unidirectional transmission from ingestion to finality. There are no fallback paths.
+Python 3.12 and 3.14 are verified in CI. Runtime code uses only the standard library. JSON inputs must contain only JSON-compatible values; non-finite numbers fail serialization.
 
-### 2.2 KL 散度硬审计 (KL Divergence Hard Auditing)
-> **[CN]**: 系统测量流转状态与基线的 Kullback-Leibler 散度。$D_{KL} > 0.05$ 必须触发强行截断。
-> **[EN]**: The system measures Kullback-Leibler divergence between state and baseline. $D_{KL} > 0.05$ must trigger forced truncation.
+## Public contracts
 
-### 2.3 液态知识固化 (Liquid Knowledge Solidification)
-> **[CN]**: 通过多层蒸馏，外部高熵信息强行凝固为 ADR，作为约束系统的物理法则沉淀。
-> **[EN]**: Through multi-layer distillation, external high-entropy information forcefully solidifies into ADRs, precipitating as physical laws constraining the system.
+### Canonicalization
 
-## 3. 知识分层 / Knowledge Stratification
-> **[CN]**: Axiom-0 仓库采用以下五层知识分层：
-> **[EN]**: Axiom-0 repository adopts the following five layers of knowledge stratification:
-1. **[CN]**: 提示与自动化 / **[EN]**: Prompt and Automation
-2. **[CN]**: 研究 / **[EN]**: Research
-3. **[CN]**: 方法论 / **[EN]**: Methodology
-4. **[CN]**: ADR (架构决策记录) / **[EN]**: ADR (Architectural Decision Records)
-5. **[CN]**: 代码 / **[EN]**: Code
+`canonical_json(value) -> str` sorts mapping keys, preserves Unicode and string case, removes insignificant JSON whitespace, and rejects NaN/Infinity. It does not claim semantic equivalence. `stable_digest` returns SHA-256 over those UTF-8 bytes; changing the canonicalization contract requires a versioned migration.
 
-## 4. 证据状态 / Evidence Status
-> **[CN]**: 允许四类状态标签：
-> **[EN]**: Four types of status labels are allowed:
-- `REAL`: 真实的事实。
-- `NEXUS_ORIGINAL`: Axiom-0 原创内容。
-- `SPECULATIVE`: 投机性/推测性内容。
-- `FICTIONAL_WRAPPER`: 虚构包装器。
+### Probability measures
 
-## 5. 上下文摄取规则 / Context Ingestion Rule
-> **[CN]**: 原始聊天或自由文本不得直接作为长期仓库资产。必须经过分类、路由、脱水与规范化改写。
-> **[EN]**: Raw chat or free text may not be used directly as long-term repository assets. It must be classified, routed, dehydrated, and standardized through rewriting.
+`normalize_distribution(values, name=...)` requires a non-empty numeric sequence, rejects booleans, negative/non-finite values and zero total mass, and returns normalized floats. `kl_divergence(p, q)` computes D_KL(P||Q) in nats. Length mismatch fails. A P-positive/Q-zero event returns positive infinity. Threshold selection is caller policy, not a mathematical constant.
 
-## 6. 代码层边界 / Code Layer Boundary
-> **[CN]**: `CODE/` 维持参考实现（Reference Implementation）定位，不承担吞并全部方法论与叙事世界观的任务。
-> **[EN]**: `CODE/` maintains its position as a Reference Implementation and does not undertake the task of annexing all methodologies and narrative worldviews.
+### Metrics and adaptation
 
----
-*"Restraint is the ultimate form of digital violence."*
+`SystemMetrics` accepts normalized CPU, memory, and entropy values in `[0,1]`, non-negative integer task/queue counts, and a non-empty timestamp. `AxiomMorphingEngine.evaluate_morph` is a documented heuristic. `shift` serializes concurrent transitions with an async lock, calls optional preparation and validation hooks, commits state only on success, records event type and time, and re-raises failure.
+
+### Continuum run
+
+`AxiomOrchestrator.run_continuum(input) -> dict` emits exactly T-01 through T-10 in order for a successful reference run. T-04 evaluates injected metrics. T-09 calculates divergence against the declared example baseline and fails above the configured limit. Output includes a run ID, state, events, and limitations. Timestamps make full output non-byte-identical across runs; canonical input digests remain reproducible.
+
+## Error and logging contract
+
+Invalid caller data raises `TypeError` or `ValueError`; failed configured invariants raise `RuntimeError`. Libraries do not configure global logging. Error records expose exception class, never raw exception messages or input payloads by default. Callers own redaction and retention.
+
+## Security ownership
+
+The caller must provide authentication, authorization, isolation, egress policy, quotas, durable idempotency, secret management, and incident response. Tool/web/model output is untrusted data. No module executes arbitrary commands or network calls.
+
+## Repository compatibility
+
+Historical Jules entry paths remain executable and return nonzero on failure. README, `FRONTEND/**`, `docs/**`, `RESEARCH/**`, `INDEX.md`, `PATCH_INDEX.md`, and `LICENSE` are separately owned and protected from this maintenance stream.
+
+## Acceptance
+
+A revision is eligible for review when Python 3.12 and 3.14 compile the code, all `tests/` pass, historical entry checks pass, workflow actions are immutable SHA-pinned with least privilege, and a pull-request diff contains no protected path. Passing is evidence for that revision and environment only.

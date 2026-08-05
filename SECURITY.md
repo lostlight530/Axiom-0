@@ -1,21 +1,19 @@
 # Security Policy
 
-## Supported Versions
+## Supported code
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Security fixes target the current `main` branch. Historical research and generated artifacts are preserved as records and may not receive retroactive correction.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Private reporting
 
-## Reporting a Vulnerability
+Do not open a public issue for a suspected vulnerability. Use GitHub’s private vulnerability reporting when enabled; otherwise contact the repository owner through the private route listed on their GitHub profile. Include the affected commit and path, prerequisites, minimal reproduction, impact, and suggested mitigation. Remove tokens and unnecessary personal data.
 
-Use this section to tell people how to report a vulnerability.
+## Response expectations
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Maintainers should acknowledge a report within 7 days and provide a triage update within 14 days when capacity permits. These are service targets, not guarantees. Coordinated disclosure timing is agreed case by case.
+
+## Security boundaries
+
+Axiom is a reference implementation, not a sandbox or authorization system. Callers must enforce identity, authorization, quotas, network and filesystem isolation, and secret handling. Logs expose event types and timestamps only; never log prompts, credentials, raw tool output, or private payloads by default.
+
+GitHub workflows use least-privilege job permissions, immutable action SHAs, and no pull-request code with write credentials. Dependency updates require passing tests and human review.

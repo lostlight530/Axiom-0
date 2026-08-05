@@ -1,37 +1,38 @@
-# ADR-011: 零信任工具执行法则 / Zero-Trust Tool Execution Law
+# Least-authority tool execution
+
+- Decision date: 2026-08-05
+- Scope: Axiom-0 reference contracts, methods, code, and verification
 
 ## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+
+[CN] 已接受；替代同名文件中的绝对化表述。
+
+[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
-> **[CN]:** 当前的 AI Agent 系统在授予大模型工具调用权限（如 Shell 执行、API 请求）时，普遍缺乏深度的边界隔离。如《 Implementing a Zero Trust Architecture》等业界标准指出，基于静态配置的权限模型在面对动态的 Agent 攻击向量时极度脆弱。如果允许高熵的大模型以系统级权限自由组合并执行工具链，系统将面临灾难性的供应链污染和物理资源劫持风险。Axiom-0 必须从根本上消除这种信任假设。
-> **[EN]:** Current AI Agent systems generally lack deep boundary isolation when granting LLMs tool execution privileges (e.g., Shell execution, API requests). As industry standards like "Implementing a Zero Trust Architecture" indicate, permission models based on static configurations are highly vulnerable against dynamic Agent attack vectors. If high-entropy LLMs are allowed to freely compose and execute toolchains with system-level privileges, the system faces catastrophic risks of supply chain contamination and physical resource hijacking. Axiom-0 must fundamentally eliminate this trust assumption.
+
+[CN] Tool parameters and outputs cross trust boundaries. Prompt text, web content, and generated commands can contain hostile instructions.
+
+[EN] Tool parameters and outputs cross trust boundaries. Prompt text, web content, and generated commands can contain hostile instructions.
 
 ## 决策 / Decision
-> **[CN]:** 强制实施“零信任工具执行法则”。系统不信任任何由大模型直接生成的复杂工具调用链。所有的工具调用必须在请求前被拆解为单一的、具体的、代数级别可验证的指令（Specificity Rule）。执行环境必须是阅后即焚的隔离沙箱（Ephemeral Sandbox）。在工具执行前后，必须伴随硬编码的状态验证步骤（Verification Rule），且系统绝不为任何未经验证的工具输出提供持久化存储。
-> **[EN]:** Forcefully implement the "Zero-Trust Tool Execution Law." The system does not trust any complex tool invocation chain generated directly by LLMs. All tool calls must be decoupled into single, concrete, algebraically verifiable commands prior to request (Specificity Rule). The execution environment must be an ephemeral, burn-after-reading isolated sandbox. Hardcoded state verification steps must accompany tool execution before and after (Verification Rule), and the system absolutely provides no persistent storage for any unverified tool output.
 
----
-## 补充决议 / Supplementary Resolution (2026-07-05)
+[CN] Validate structured inputs; allowlist capabilities; scope credentials, filesystem, network, time, and cost; require confirmation for destructive or external effects; sanitize logs; retain replay identifiers without secrets.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/jamesob/local-llm
-* **脱水描述**: Everything I know about running LLMs locally
+[EN] Validate structured inputs; allowlist capabilities; scope credentials, filesystem, network, time, and cost; require confirmation for destructive or external effects; sanitize logs; retain replay identifiers without secrets.
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
-> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
+## 后果 / Consequences
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[CN] Some operations require extra approval and may fail closed.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/2512.23262v1
-* **脱水描述**: PFed-Signal: An ADR Prediction Model based on Federated Learning - The adverse drug reactions (ADRs) predicted based on the biased records in FAERS (U.S. Food and Drug Administration Adverse Event Reporting System) ma...
+[EN] Some operations require extra approval and may fail closed.
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 PFed-Signal: An ADR Prediction Model based on Federated Learning 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of PFed-Signal: An ADR Prediction Model based on Federated Learning, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+## 验证 / Verification
+
+[CN] Security review exercises denied paths, quota/time limits, redacted logs, and deterministic error types.
+
+[EN] Security review exercises denied paths, quota/time limits, redacted logs, and deterministic error types. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+
+## 例外 / Exceptions
+
+An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.

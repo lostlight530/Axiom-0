@@ -1,38 +1,21 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
+about: Report a reproducible defect in contracts, code, or automation
+title: "[Bug] "
+labels: bug
+assignees: ""
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Affected path and revision
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Reproduction command and minimal input
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Expected observable result
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Actual result and sanitized logs
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## Environment
+Python version, operating system, and relevant configuration. Do not include secrets.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+## Regression evidence
+State whether this worked before and identify the last known good commit if known.

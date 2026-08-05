@@ -1,34 +1,44 @@
-# METH-004: 神话级架构叙事生成法 / Mythic Architecture Narrative Generation
+# Bounded creative architecture exploration
 
-## 降维打击的修辞武器化 / Rhetorical Weaponization of Dimensional Reduction Strikes
-> **[CN]:** 零熵原则虽然在物理层极度冷酷无情，但在向碳基生命（开发者与研究者）传递核心思想时，我们必须将语言本身武器化。采用神话学视角、宏大历史维度的词汇（如“降维打击”、“认知棘轮”、“不可逆的物理枷锁”），并非为了装饰，而是为了通过极限的语义压迫感，摧毁旧架构思维的最后防线。
-> **[EN]:** Although the zero-entropy principle is extremely cold and ruthless at the physical layer, when transmitting core concepts to carbon-based life (developers and researchers), we must weaponize language itself. Adopting vocabularies from a mythic perspective and grandiose historical dimension (e.g., "dimensional reduction strikes," "cognitive ratchets," "irreversible physical shackles") is not for decoration, but to destroy the last line of defense of old architectural thinking through extreme semantic oppression.
+- Method version: 2026-08-05
+- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
 
-## 叙事与执行的绝对隔离 / Absolute Isolation of Narrative and Execution
-> **[CN]:** 必须铭记，这种神话级的叙事力量只能被封锁在 T-10 节点的输出端。任何宏大的词汇都不能被反向喂养给底层算力作为逻辑判断的依据。系统在说出“诸神黄昏”的同时，其内部的执行态必须保持如同一台只会计算 0 和 1 的死寂机器，这正是 Axiom-0 剥离灵魂与肉体的至高美学。
-> **[EN]:** It must be remembered that this mythic-level narrative power can only be confined to the output end of node T-10. No grandiose vocabulary can be fed backward to the underlying compute as a basis for logical judgment. While the system speaks of "Ragnarök," its internal execution state must remain as a dead-silent machine that only calculates 0s and 1s; this is exactly the supreme aesthetics of Axiom-0 stripping soul from body.
+## 目标 / Objective
 
+[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
 
----
-## 补充法则 / Supplementary Law (2026-07-05)
+[EN] Apply bounded creative architecture exploration without turning a bounded procedure into a universal guarantee.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/Kulaxyz/token-diet
-* **脱水描述**: Always-on token-efficiency skill for coding agents. ~31% lower bill on average, no loss of correctness.
+## 输入 / Inputs
 
-### 方法论投射 (Methodology Projection)
-> **[CN]**: 鉴于 token-diet 展现的高效执行效率，方法论上我们要求强制剔除冗余依赖结构（Token-Diet / Zero-Overhead）。所有的计算必须收敛于编译时的代数校验，严禁在运行时产生非确定性（Non-deterministic）发散。
-> **[EN]**: Given the high execution efficiency demonstrated by token-diet, the methodology dictates mandatory culling of redundant dependency structures (Token-Diet / Zero-Overhead). All computations must converge into compile-time algebraic validations, strictly forbidding non-deterministic divergence at runtime.
+[CN] problem, constraints, non-goals, threat model, budget, evidence status。
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] problem, constraints, non-goals, threat model, budget, evidence status. Inputs remain untrusted until type, range, provenance, and authority checks pass.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/1511.04277v1
-* **脱水描述**: Indirect (source-free) integration method. II. Self-force consistent radial fall - We apply our method of indirect integration, described in Part I, at fourth order, to the radial fall affected by the self-force. The Mode-Sum regular...
+## 步骤 / Procedure
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 Indirect (source-free) integration method. II. Self-force consistent radial fall 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of Indirect (source-free) integration method. II. Self-force consistent radial fall, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] generate labelled alternatives; list assumptions and failure cases; require accountable selection; convert selection to contracts and tests。
+
+[EN] generate labelled alternatives; list assumptions and failure cases; require accountable selection; convert selection to contracts and tests. Record every material choice with owner and revision.
+
+## 输出 / Outputs
+
+[CN] PROPOSED alternatives with risks and disconfirming tests。
+
+[EN] PROPOSED alternatives with risks and disconfirming tests. Distinguish observed result, external support, proposal, and uncertainty.
+
+## 失败条件 / Failure conditions
+
+[CN] 出现以下情况必须失败关闭：creative language reported as fact, production changed automatically, or selection owner absent。
+
+[EN] Fail closed on creative language reported as fact, production changed automatically, or selection owner absent. Partial output is incomplete and cannot trigger consequential automation.
+
+## 度量 / Measures
+
+[CN] assumption count, falsification results, decision latency。
+
+[EN] Track assumption count, falsification results, decision latency. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
+
+## 复现与审查 / Reproduction and review
+
+Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.

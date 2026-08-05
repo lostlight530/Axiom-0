@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lostlight530.github.io/Axiom-0/schemas/claim.schema.json",
+  "title": "Axiom claim record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "text", "status", "scope", "owner", "reviewed_on", "disconfirming_condition"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^AX-[0-9]{4}$"},
+    "text": {"type": "string", "minLength": 1},
+    "status": {"enum": ["OBSERVED", "SUPPORTED", "PROPOSED", "HYPOTHESIS", "CONTESTED", "RETIRED"]},
+    "scope": {"type": "string", "minLength": 1},
+    "owner": {"type": "string", "minLength": 1},
+    "reviewed_on": {"type": "string", "format": "date"},
+    "sources": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "disconfirming_condition": {"type": "string", "minLength": 1}
+  }
+}

@@ -1,38 +1,38 @@
-# ADR-009: 证据状态刚性标记法则 / Rigid Evidence Status Labeling Law
+# Explicit evidence states
+
+- Decision date: 2026-08-05
+- Scope: Axiom-0 reference contracts, methods, code, and verification
 
 ## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+
+[CN] 已接受；替代同名文件中的绝对化表述。
+
+[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
-> **[CN]:** 在处理海量数据时，AI极易将真实的观察结果、自身原创的架构推演、未证实的猜测以及神话修辞混为一谈。这种认知边界的模糊是引发递归幻觉和逻辑畸变的万恶之源。
-> **[EN]:** When processing massive amounts of data, AI easily conflates real observations, its own original architectural deductions, unverified speculations, and mythic rhetoric. This blurring of cognitive boundaries is the root of all evil triggering recursive hallucinations and logical distortions.
+
+[CN] Binary true/false labels hide whether a statement was observed locally, supported externally, proposed, or contested.
+
+[EN] Binary true/false labels hide whether a statement was observed locally, supported externally, proposed, or contested.
 
 ## 决策 / Decision
-> **[CN]:** Axiom-0 强制引入四元证据状态标记系统：`[REAL]`（客观事实资产）、`[NEXUS_ORIGINAL]`（零熵系统原创架构推演）、`[SPECULATIVE]`（未经验证的高熵假设）、以及 `[FICTIONAL_WRAPPER]`（纯粹的神话修辞与叙事包装）。所有知识资产必须佩戴相应的标签链，任何跨越标签权限的非定向推演将直接触发系统熔断机制。
-> **[EN]:** Axiom-0 forcefully introduces a quaternary evidence status labeling system: `[REAL]` (objective factual assets), `[NEXUS_ORIGINAL]` (zero-entropy system original architectural deductions), `[SPECULATIVE]` (unverified high-entropy hypotheses), and `[FICTIONAL_WRAPPER]` (pure mythic rhetoric and narrative packaging). All knowledge assets must wear corresponding label chains; any non-directional deduction crossing label permissions will directly trigger the system meltdown mechanism.
 
+[CN] Use OBSERVED, SUPPORTED, PROPOSED, HYPOTHESIS, CONTESTED, and RETIRED. Every consequential claim states scope, source or reproducer, owner, review date, and disconfirming condition.
 
----
-## 补充决议 / Supplementary Resolution (2026-07-05)
+[EN] Use OBSERVED, SUPPORTED, PROPOSED, HYPOTHESIS, CONTESTED, and RETIRED. Every consequential claim states scope, source or reproducer, owner, review date, and disconfirming condition.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/jamesob/local-llm
-* **脱水描述**: Everything I know about running LLMs locally
+## 后果 / Consequences
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
-> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
+[CN] Metadata grows; stale and over-scoped claims become detectable.
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] Metadata grows; stale and over-scoped claims become detectable.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/1408.5283v1
-* **脱水描述**: E12-14-009: Ratio of the electric form factor in the mirror nuclei 3He and 3H - E12-14-009: We propose to extract the ratio of the electric form factor (G_E) of 3He and 3H from the measured ratio of the elastic-scattering cross se...
+## 验证 / Verification
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 E12-14-009: Ratio of the electric form factor in the mirror nuclei 3He and 3H 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of E12-14-009: Ratio of the electric form factor in the mirror nuclei 3He and 3H, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] Repository scans verify required headings; substantive review checks evidence links and expiry.
+
+[EN] Repository scans verify required headings; substantive review checks evidence links and expiry. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+
+## 例外 / Exceptions
+
+An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.

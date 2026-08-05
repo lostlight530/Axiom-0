@@ -1,8 +1,4 @@
-import json
-import sys
+from tests.entrypoints import run_case
 
-# mock what's in the loop
-try:
-    print(json.dumps({"processed_by": "T-01 Ingestion", "payload": "authorized_request_001"}, sort_keys=True))
-except Exception as e:
-    print(e.__class__.__name__)
+if __name__ == "__main__":
+    run_case("json")

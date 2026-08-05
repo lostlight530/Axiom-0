@@ -1,38 +1,38 @@
-# ADR-003: 代数级污染拒绝法则 / Algebraic Pollution Rejection Law
+# Fail-closed numeric contracts
+
+- Decision date: 2026-08-05
+- Scope: Axiom-0 reference contracts, methods, code, and verification
 
 ## 状态 / Status
-> **[CN]:** 绝对法则 (Absolute Law)
-> **[EN]:** Absolute Law
+
+[CN] 已接受；替代同名文件中的绝对化表述。
+
+[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
-> **[CN]:** 传统大型语言模型（LLM）通过近似与概率推演生成答案，不可避免地引入上下文污染与“代数级幻觉”。在高频次、长文本的复杂智能体交互中，这些微小的熵增误差会呈指数级积累，最终导致系统逻辑基石的全面崩溃与认知发散。
-> **[EN]:** Traditional Large Language Models (LLMs) generate answers through approximation and probabilistic deduction, inevitably introducing context pollution and "algebraic hallucinations." In high-frequency, long-text complex agent interactions, these minute entropy-increasing errors accumulate exponentially, ultimately causing the complete collapse of the system's logical foundation and cognitive divergence.
+
+[CN] KL calculations previously accepted negative and non-finite values and treated zero-total inputs inconsistently. Those are invalid probability measures.
+
+[EN] KL calculations previously accepted negative and non-finite values and treated zero-total inputs inconsistently. Those are invalid probability measures.
 
 ## 决策 / Decision
-> **[CN]:** Axiom-0 强制引入基于哈希树的物理级脱水机制。任何进入系统的信息流都必须被剥离情感与概率成分，转化为纯粹的代数断言。如果新输入的信息与系统记忆的加密账本发生冲突，且无法通过严格的数学溯源验证，则被立即判定为“代数级污染”，并遭到物理级拒绝。系统宁可触发致命错误并陷入宕机，也绝不容忍哪怕1比特的概率妥协。
-> **[EN]:** Axiom-0 forcefully introduces a physical-level dehydration mechanism based on hash trees. Any information flow entering the system must be stripped of emotional and probabilistic components, transformed into pure algebraic assertions. If new information conflicts with the cryptographic ledger of system memory and cannot be verified through strict mathematical traceability, it is immediately judged as "algebraic pollution" and physically rejected. The system would rather trigger a fatal error and halt than tolerate even a single bit of probabilistic compromise.
 
+[CN] Centralize validation in `CODE/contracts.py`: equal non-empty length, finite non-negative values, positive mass, normalization with `math.fsum`, and infinity for P support absent from Q.
 
----
-## 补充决议 / Supplementary Resolution (2026-07-05)
+[EN] Centralize validation in `CODE/contracts.py`: equal non-empty length, finite non-negative values, positive mass, normalization with `math.fsum`, and infinity for P support absent from Q.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: https://github.com/jamesob/local-llm
-* **脱水描述**: Everything I know about running LLMs locally
+## 后果 / Consequences
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 根据 local-llm 的核心范式，Axiom-0 系统进一步确认了物理隔离与本地环境执行的必要性，防止因外部网络状态变化导致认知连续体（Cognitive Continuum）发生崩塌或信息熵溢出。
-> **[EN]**: Based on the core paradigm of local-llm, the Axiom-0 system further validates the necessity of physical isolation and localized execution environments, preventing the cognitive continuum from collapsing or entropy overflowing due to external network state variations.
+[CN] Invalid telemetry stops evaluation instead of producing a comforting score.
 
----
-## 深度扩展与补全决议 / Deep Expansion & Completion Resolution (2026-07-06)
+[EN] Invalid telemetry stops evaluation instead of producing a comforting score.
 
-### 事实资产 (Factual Assets)
-* **证据状态**: `[REAL]`
-* **来源**: http://arxiv.org/abs/2512.23262v1
-* **脱水描述**: PFed-Signal: An ADR Prediction Model based on Federated Learning - The adverse drug reactions (ADRs) predicted based on the biased records in FAERS (U.S. Food and Drug Administration Adverse Event Reporting System) ma...
+## 验证 / Verification
 
-### 架构投射 (Architectural Projection)
-> **[CN]**: 本决议通过深度联网信息同步，进一步增强了现有架构的鲁棒性。基于 PFed-Signal: An ADR Prediction Model based on Federated Learning 的核心发现，Axiom-0 系统明确要求在所有边缘节点和高并发场景中，严格执行零熵协议，消除任何潜在的不可预见的非确定性状态。
-> **[EN]**: Through deep networked information synchronization, this resolution further enhances the robustness of the existing architecture. Based on the core findings of PFed-Signal: An ADR Prediction Model based on Federated Learning, the Axiom-0 system explicitly mandates the strict enforcement of the zero-entropy protocol across all edge nodes and high-concurrency scenarios, eliminating any potential unforeseeable non-deterministic states.
+[CN] `tests/test_contracts.py` covers identity, renormalization, invalid values, and support mismatch.
+
+[EN] `tests/test_contracts.py` covers identity, renormalization, invalid values, and support mismatch. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+
+## 例外 / Exceptions
+
+An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.

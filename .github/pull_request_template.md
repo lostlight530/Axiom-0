@@ -1,17 +1,21 @@
-## 变更内容
-简述本次 PR 的核心改动  
-只写 What 和 Why  
+## Outcome and scope
 
-## 关联 Issue
-如有 填写  
-如无 留空  
+## Evidence classification
+- [ ] Observed in repository or test output
+- [ ] Supported by cited primary source
+- [ ] Proposed design or hypothesis is labelled as such
 
-## 自检清单
-- 单一职责  
-- 不引入不必要依赖  
-- 不破坏协议边界  
-- 可测试 可复用 可维护  
-- 变更可审计 append only  
+## Contract impact
+Inputs, outputs, failure behavior, compatibility, and protected paths.
 
-## 其他说明
-补充上下文或截图
+## Verification
+Commands run and results. Explain any unrun checks.
+
+## Security and privacy
+Threat surface, permissions, secrets, logs, and dependency impact.
+
+## Rollback
+
+## Boundaries
+- [ ] No README, `FRONTEND/**`, `docs/**`, `RESEARCH/**`, Jules index, or license change unless separately approved
+- [ ] GitHub Actions use least permissions and immutable SHA pins
