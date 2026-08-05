@@ -1,38 +1,62 @@
-# Axiom-0: Pure Mathematical Boundary & Zero-Entropy Cognitive Protocol
+# Axiom-0
 
----
+A dependency-free Python reference for explicit data contracts, measurable transitions, and reproducible repository checks. / 一个以显式数据契约、可度量状态转换和可复现仓库检查为核心的无第三方运行时依赖 Python 参考实现。
 
-## 协议本质：工业级的数学枷锁 / Protocol Essence: Industrial-Grade Mathematical Shackles
+## 1. 仓库目的与非目标 / Repository purpose and non-goals
 
-> **[CN]:** 如果说其他架构是肌肉和生存实验舱，那么 Axiom-0 就是纯粹的数学边界。它的本质是一个“零熵认知协议 (ZECP)”。业界都在研究怎么让模型变得更聪明，而 Axiom-0 研究的是如何给高维信息流戴上物理枷锁。它不依赖任何具体的计算节点，甚至不关心你用什么语言实现，它提供的是一套严格的、不可逆的有向无环图 (DAG) 拓扑约束。只要接入这个协议，任何智能流水线都必须服从这套“只进不退”的认知棘轮机制。
->
-> **[EN]:** If other architectures are muscles and survival pods, Axiom-0 is a pure mathematical boundary. Its essence is the "Zero-Entropy Cognitive Protocol (ZECP)". While the industry studies how to make models smarter, Axiom-0 studies how to put physical shackles on high-dimensional information flows. It does not rely on specific compute nodes or languages; it provides a strict, irreversible Directed Acyclic Graph (DAG) topological constraint. Any intelligent pipeline connecting to this protocol must submit to this one-way cognitive ratchet mechanism.
+**[CN]** Axiom-0 演示规范化 JSON、SHA-256 摘要、概率分布校验、以 nat 为单位的 KL 散度、带校验钩子的事务式状态转换，以及一个十阶段事件记录样例。它是可检查的参考实现，不是基础模型、自主智能体、安全系统、授权层、沙箱、分布式调度器或数据库。
 
----
+**[EN]** Axiom-0 demonstrates canonical JSON, SHA-256 digests, probability-distribution validation, KL divergence measured in nats, transactional state transitions with validation hooks, and a ten-stage event-recorded fixture. It is an inspectable reference implementation, not a foundation model, autonomous agent, safety system, authorization layer, sandbox, distributed scheduler, or database.
 
-## 核心架构特性：数学级的逻辑封锁 / Core Features: Mathematical Logic Lockdown
+## 2. 已实现能力 / Implemented capabilities
 
-### 1. 不可逆的 10 节点认知连续体 / Irreversible 10-Node Continuum
-> **[CN]:** 这不是普通的自动化脚本，而是基于 DAG 拓扑的单向流动法则。传统架构喜欢在内部让大模型“反复思考纠错”，这种循环往往是熵增与幻觉的温床。Axiom-0 强行将逻辑切分为信息脱水、抽象、收束到对齐的 10 个独立节点。数据一旦流过某个节点，就如同时间流逝一样不可回溯。任何节点产生逻辑畸变，流程直接物理熔断，绝不带着被污染的上下文进入下一个环节。
->
-> **[EN]:** This is not a standard automation script, but a one-way flow law based on DAG topology. Traditional architectures allow LLMs to "re-think and correct", a cycle that breeds entropy and hallucinations. Axiom-0 forcefully slices logic into 10 independent nodes for information dehydration, abstraction, and alignment. Once data passes a node, it is as irreversible as time. Any logical distortion triggers an immediate physical meltdown, ensuring contaminated context never proceeds.
+| 能力 / Capability | 实现路径 / Implementation | 可执行契约 / Executable contract |
+| --- | --- | --- |
+| 规范化与摘要 / Canonicalization and digests | [`CODE/contracts.py`](CODE/contracts.py), [`tests/test_contracts.py`](tests/test_contracts.py) | 排序映射键、保留 Unicode、拒绝非有限数，并对 UTF-8 规范字节计算 SHA-256。 / Sorts mapping keys, preserves Unicode, rejects non-finite numbers, and computes SHA-256 over canonical UTF-8 bytes. |
+| 分布与 KL 散度 / Distributions and KL divergence | [`CODE/contracts.py`](CODE/contracts.py), [`tests/test_contracts.py`](tests/test_contracts.py) | 校验非空、非负、有限且总质量大于零的序列；计算 D_KL(P||Q)，单位为 nat。 / Validates non-empty, non-negative, finite sequences with positive mass and computes D_KL(P||Q) in nats. |
+| 状态适配 / State adaptation | [`CODE/liquid_morphing.py`](CODE/liquid_morphing.py), [`tests/test_morphing.py`](tests/test_morphing.py) | 串行化并发转换，仅在准备和校验成功后提交状态，失败时保留原状态。 / Serializes concurrent transitions, commits only after preparation and validation succeed, and preserves prior state on failure. |
+| 十阶段样例 / Ten-stage fixture | [`CODE/nexus_core.py`](CODE/nexus_core.py), [`tests/test_nexus.py`](tests/test_nexus.py) | 成功运行按顺序产生 T-01 至 T-10，并返回运行标识、状态、事件和限制。 / A successful run emits T-01 through T-10 in order and returns a run ID, state, events, and limitations. |
+| 仓库边界 / Repository boundaries | [`scope_guard.py`](scope_guard.py), [`tests/test_scope_guard.py`](tests/test_scope_guard.py) | 默认拒绝受保护路径，并仅接受调用方显式传入的精确文件例外。 / Denies protected paths by default and accepts only exact-file exceptions explicitly supplied by the caller. |
 
-### 2. 基于 KL 散度的动态相干性防御 / Dynamic Coherence Healing via KL Divergence
-> **[CN]:** 这是 Axiom-0 最硬核的数学防御机制。我们不靠自然语言去“命令”节点保持理智，而是引入了信息论级别的审计。在流转进入最终的封存状态前，系统会测量输出特征分布的 KL 散度。一旦超过设定的物理阈值（如 0.05），系统在代数层面就会判定其为“逻辑污染”，并直接拒绝融合。这种级别的约束是暴力且绝对的。
->
-> **[EN]:** This is Axiom-0's most hardcore mathematical defense mechanism. We do not use natural language to "command" nodes to stay sane; we introduce information-theory-level auditing. Before finalizing the state, the system measures the KL divergence of the output distribution. Once it exceeds the physical threshold (e.g., 0.05), the system algebraically flags it as "logic pollution" and absolutely rejects the merge. This constraint is brutal and absolute.
+## 3. 十阶段参考流程 / Ten-stage reference flow
 
-### 3. 液态知识的物理固化 / Physical Solidification of Liquid Knowledge
-> **[CN]:** 这是协议层的高阶价值体现。Axiom-0 规定了高价值信息不能以散漫的文本形式堆砌，每天的输入流必须经过多层蒸馏，最终强行凝固成带有密码学签名的 ADR (架构决策记录)。这意味着系统吸收的所有外部信息，最终都变成了约束系统自身运转的新法则，实现了逻辑框架的闭环迭代。
->
-> **[EN]:** This manifests the protocol's high-order value. Axiom-0 dictates that high-value information cannot accumulate as scattered text. Daily input streams undergo multi-layer distillation, forcefully solidifying into cryptographically signed ADRs. All absorbed external intel becomes new laws constraining the system itself, closing the logical iteration loop.
+**[CN]** `AxiomOrchestrator.run_continuum(input)` 的成功样例按 T-01 到 T-10 记录有序事件。T-04 使用注入的指标，T-09 将声明的分布与样例基线比较，并按调用方配置的限制失败关闭。输出时间戳会变化；规范化输入摘要可用于比较相同输入字节。阶段名称是项目词汇，不表示认知、对齐或安全保证。
 
----
+**[EN]** A successful `AxiomOrchestrator.run_continuum(input)` fixture records ordered events from T-01 through T-10. T-04 uses injected metrics; T-09 compares a declared distribution with the fixture baseline and fails closed at the caller-configured limit. Output timestamps vary, while canonical input digests can compare identical input bytes. Stage names are project vocabulary and do not imply cognition, alignment, or safety guarantees.
 
-## 工业级降维价值 / Industrial-Grade Dimensionality Reduction
-> **[CN]:** Axiom-0 填补了当前前沿落地的一项空白：缺乏硬核的逻辑隔离与约束层。当大型团队尝试将异构集群投入高风险环境时，他们最怕的不是不够聪明，而是行为无法被度量和收束。Axiom-0 提供了一套经得起密码学审计的协议代码化方案，让高深莫测的推理流转，变成了像机械齿轮一样一环扣一环的物理作业。它向业界证明了：通过极限的层级隔离与拓扑约束，我们可以把高度发散的信息网络，强行收拢为工业级应用所需的绝对收敛输出。
->
-> **[EN]:** Axiom-0 fills a critical void in frontier deployment: the lack of a hardcore logical isolation and constraint layer. In high-risk heterogeneous clusters, the fear is not a lack of intelligence, but immeasurable and divergent behaviors. Axiom-0 provides a cryptographically auditable protocol-as-code solution, turning esoteric reasoning into mechanical, gear-like physical operations. It proves that through extreme isolation and topological constraints, highly divergent information networks can be forcefully compressed into the absolute convergent outputs required by industrial applications.
+## 4. 验证与运行环境 / Verification and runtime
 
----
-*"Build it Brutally, Run it Deterministically"*
+**[CN]** CI 在 Python 3.12 和 3.14 上验证标准库实现。以下命令编译代码并运行当前测试；工作流还执行 `.github/workflows/verify.yml` 中列出的历史入口检查。成功结果只适用于被测提交、环境与样例。
+
+**[EN]** CI verifies the standard-library implementation on Python 3.12 and 3.14. These commands compile the code and run the current tests; the workflow also executes the historical entrypoint checks listed in `.github/workflows/verify.yml`. A successful result applies only to the tested revision, environment, and fixtures.
+
+```bash
+python -m compileall -q CODE tests *.py
+python -m unittest discover -s tests -v
+```
+
+## 5. 前端与 Pages 边界 / Frontend and Pages boundary
+
+**[CN]** [`FRONTEND/`](FRONTEND/) 是独立的 React/Vite 展示层，不是 Python 参考库的运行时依赖。CI 使用 Node 24 和已提交锁文件运行以下命令。Pages 发布读取 [`docs/`](docs/) 中单独维护的静态内容；前端源码和 Pages 内容有独立所有权边界。
+
+**[EN]** [`FRONTEND/`](FRONTEND/) is a separate React/Vite presentation layer and is not a runtime dependency of the Python reference library. CI uses Node 24 and the committed lockfile to run the commands below. Pages deployment reads separately maintained static content from [`docs/`](docs/); frontend source and Pages content have independent ownership boundaries.
+
+```bash
+cd FRONTEND
+npm ci
+npm run lint
+npm run build
+```
+
+## 6. 规范、证据、安全与复现 / Specification, evidence, security, and reproducibility
+
+- [工程规范 / Engineering specification](SPECIFICATION.md)：实现接口、错误行为与仓库兼容边界。 / Implemented interfaces, error behavior, and repository compatibility boundaries.
+- [证据基线 / Evidence baseline](EVIDENCE_BASELINE.md)：外部资料、检索日期与本地结论的适用范围。 / External sources, retrieval dates, and the scope of local conclusions.
+- [复现要求 / Reproducibility](REPRODUCIBILITY.md)：提交、环境、命令、样例摘要和未测试边界的最小记录。 / Minimum records for revisions, environments, commands, fixture digests, and untested boundaries.
+- [安全策略 / Security policy](SECURITY.md)：私密报告流程、受支持代码与调用方责任。 / Private reporting, supported code, and caller responsibilities.
+
+## 7. 限制 / Limitations
+
+**[CN]** 通过样例和检查不能证明语义真值、模型或智能体对齐、性能、通用正确性或生产安全。规范化摘要证明字节级契约，不证明语义等价；KL 散度描述声明分布之间的差异，不判断事实真伪；阈值属于调用方策略。身份、授权、隔离、网络策略、配额、密钥管理、持久幂等和事件响应必须由集成方提供并单独验证。
+
+**[EN]** Passing fixtures and checks do not establish semantic truth, model or agent alignment, performance, general correctness, or production safety. Canonical digests establish a byte-level contract, not semantic equivalence; KL divergence describes differences between declared distributions, not factual truth; thresholds are caller policy. Integrators must provide and separately verify identity, authorization, isolation, network policy, quotas, secret management, durable idempotency, and incident response.

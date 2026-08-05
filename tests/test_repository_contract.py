@@ -98,3 +98,30 @@ class RepositoryContractTests(unittest.TestCase):
         self.assertIn('\n          - "minor"\n', npm)
         self.assertIn('\n          - "patch"\n', npm)
         self.assertNotIn('\n          - "major"\n', npm)
+
+    def test_readme_is_evidence_scoped(self):
+        path = ROOT / "README.md"
+        text = path.read_text(encoding="utf-8")
+        superseded = (
+            "physical shackles",
+            "absolute convergent",
+            "cryptographically signed ADRs",
+            "\u7269\u7406\u67b7\u9501",
+            "\u7edd\u5bf9\u6536\u655b",
+            "\u5bc6\u7801\u5b66\u7b7e\u540d",
+        )
+
+        for phrase in superseded:
+            with self.subTest(phrase=phrase):
+                self.assertNotIn(phrase.casefold(), text.casefold())
+        for target in (
+            "SPECIFICATION.md",
+            "EVIDENCE_BASELINE.md",
+            "REPRODUCIBILITY.md",
+            "SECURITY.md",
+        ):
+            with self.subTest(target=target):
+                self.assertIn(f"]({target})", text)
+        for section in range(1, 8):
+            with self.subTest(section=section):
+                self.assertRegex(text, rf"(?m)^## {section}\\.")
