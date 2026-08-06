@@ -37,14 +37,13 @@ jobs:
         env:
           APPROVE_README: ${{ contains(github.event.pull_request.labels.*.name, 'scope:approved-readme') }}
           APPROVE_DEPENDENCIES: ${{ contains(github.event.pull_request.labels.*.name, 'scope:approved-dependencies') }}
-          ACTOR: ${{ github.actor }}
         shell: bash
         run: |
           args=(--base-ref "${{ github.event.pull_request.base.sha }}")
           if [[ "$APPROVE_README" == "true" ]]; then
             args+=(--allow-file "README.md")
           fi
-          if [[ "$APPROVE_DEPENDENCIES" == "true" || "$ACTOR" == "dependabot[bot]" ]]; then
+          if [[ "$APPROVE_DEPENDENCIES" == "true" ]]; then
             args+=(--allow-file "FRONTEND/package.json")
             args+=(--allow-file "FRONTEND/package-lock.json")
           fi

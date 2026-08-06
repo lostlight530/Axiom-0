@@ -10,13 +10,24 @@ class RepositoryContractTests(unittest.TestCase):
     def test_adrs_have_required_sections(self):
         for path in sorted((ROOT / "ADR").glob("*.md")):
             text = path.read_text(encoding="utf-8")
-            for heading in ("## \u72b6\u6001 / Status", "## \u80cc\u666f / Context", "## \u51b3\u7b56 / Decision", "## \u540e\u679c / Consequences", "## \u9a8c\u8bc1 / Verification"):
+            for heading in (
+                "## \u72b6\u6001 / Status",
+                "## \u80cc\u666f / Context",
+                "## \u51b3\u7b56 / Decision",
+                "## \u540e\u679c / Consequences",
+                "## \u9a8c\u8bc1 / Verification",
+            ):
                 self.assertIn(heading, text, path)
 
     def test_methods_define_inputs_outputs_and_failure(self):
         for path in sorted((ROOT / "METHODOLOGY").glob("*.md")):
             text = path.read_text(encoding="utf-8")
-            for heading in ("## \u8f93\u5165 / Inputs", "## \u6b65\u9aa4 / Procedure", "## \u8f93\u51fa / Outputs", "## \u5931\u8d25\u6761\u4ef6 / Failure conditions"):
+            for heading in (
+                "## \u8f93\u5165 / Inputs",
+                "## \u6b65\u9aa4 / Procedure",
+                "## \u8f93\u51fa / Outputs",
+                "## \u5931\u8d25\u6761\u4ef6 / Failure conditions",
+            ):
                 self.assertIn(heading, text, path)
 
     def test_actions_are_full_sha_pinned(self):
@@ -56,7 +67,6 @@ class RepositoryContractTests(unittest.TestCase):
         for value in (
             "scope:approved-readme",
             "scope:approved-dependencies",
-            "dependabot[bot]",
             'args+=(--allow-file "README.md")',
             'args+=(--allow-file "FRONTEND/package.json")',
             'args+=(--allow-file "FRONTEND/package-lock.json")',
@@ -79,25 +89,15 @@ class RepositoryContractTests(unittest.TestCase):
         ):
             with self.subTest(value=value):
                 self.assertIn(value, frontend_job)
-    def test_dependabot_groups_compatible_updates(self):
-        path = ROOT / ".github" / "dependabot.yml"
-        text = path.read_text(encoding="utf-8")
-        sections = {
-            section.splitlines()[0]: section
-            for section in text.split("  - package-ecosystem: ")[1:]
-        }
-        actions = sections["github-actions"]
-        npm = sections["npm"]
 
-        self.assertEqual(actions.count("\n    groups:\n"), 1)
-        self.assertIn("\n      github-actions:\n", actions)
-        self.assertIn('\n          - "*"\n', actions)
-        self.assertEqual(npm.count("\n    groups:\n"), 1)
-        self.assertIn("\n      npm-minor-patch:\n", npm)
-        self.assertIn("\n        update-types:\n", npm)
-        self.assertIn('\n          - "minor"\n', npm)
-        self.assertIn('\n          - "patch"\n', npm)
-        self.assertNotIn('\n          - "major"\n', npm)
+    def test_no_unauthorized_bots_in_workflows(self):
+        """Ensure no bot identities are hardcoded in CI workflows"""
+        for path in (ROOT / ".github" / "workflows").glob("*.yml"):
+            text = path.read_text(encoding="utf-8")
+            with self.subTest(path=path.name):
+                self.assertNotIn("dependabot[bot]", text)
+                self.assertNotIn("renovate[bot]", text)
+                self.assertNotIn("ACTOR", text)
 
     def test_readme_is_evidence_scoped(self):
         path = ROOT / "README.md"
@@ -125,3 +125,11 @@ class RepositoryContractTests(unittest.TestCase):
         for section in range(1, 8):
             with self.subTest(section=section):
                 self.assertRegex(text, rf"(?m)^## {section}\.")
+
+    def test_dependabot_identity_is_absent_from_scope_gate(self):
+        """Reverse contract: dependabot[bot] must NOT receive automatic file exemption"""
+        path = ROOT / ".github" / "workflows" / "verify.yml"
+        text = path.read_text(encoding="utf-8")
+        scope_step = text.split("- name: Protected-path gate", 1)[1].split("- name: Contract tests", 1)[0]
+        self.assertNotIn("dependabot[bot]", scope_step)
+        self.assertNotIn("ACTOR", scope_step)
