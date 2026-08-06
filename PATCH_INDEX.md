@@ -16,6 +16,8 @@
   - **[EN]**: `METHODOLOGY/post-processing-and-dehydration.md` Post-processing and dehydration chain
 
 ## RESEARCH
+- **[CN]**: `RESEARCH/daily/2026-08-06-pipeline-manifest.md` 2026-08-06 Pipeline Manifest
+  - **[EN]**: `RESEARCH/daily/2026-08-06-pipeline-manifest.md` 2026-08-06 Pipeline Manifest
 - **[CN]**: `RESEARCH/daily/2026-06-06-pipeline-manifest.md` 2026-06-06 Pipeline Manifest
   - **[EN]**: `RESEARCH/daily/2026-06-06-pipeline-manifest.md` 2026-06-06 Pipeline Manifest
 - **[CN]**: `RESEARCH/daily/2026-06-05-pipeline-manifest.md` 2026-06-05 Pipeline Manifest
