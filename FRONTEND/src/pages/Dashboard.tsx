@@ -2,10 +2,13 @@ import React, { useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe } from "lucide-react";
+import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe, Clock, Server, BookOpen, Info } from "lucide-react";
 
 const translations = {
   en: {
+    trafficTab: "Traffic",
+    operationsTab: "Operations",
+    methodTab: "Method",
     dashboardTitle: "Analytics Dashboard",
     dashboardDesc: "Viewing telemetry and traffic metrics",
     overviewTab: "Overview",
@@ -18,8 +21,28 @@ const translations = {
     uniqueCloners: "Unique Cloners",
     views: "Total Views",
     uniqueVisitors: "Unique Visitors",
+    opsWelcome: "welcome-to-github",
+    opsZero: "zero-entropy-lab",
+    opsMinutes: "total minutes",
+    opsRuns: "job runs",
+    opsAvgRun: "avg run",
+    opsFailRate: "fail rate",
+    opsCombined: "Combined · 两仓合计",
+    opsNotMeasured: "Not measured in this snapshot",
+    opsSource: "Source: GitHub Actions · Last year · 2026-02-12 → 2026-08-07",
+    opsSnapshot: "Static snapshot as of 2026-08-07",
+    methodTitle: "Data Methodology",
+    methodLastYear: "GitHub 'Last year' is a rolling 12-month window, not aligned with project inception",
+    methodWindow: "Effective observation window: 2026-02-12 → 2026-08-07 (177 days)",
+    methodUTC: "All timestamps in UTC. GitHub Traffic API provides 14-day unique counts.",
+    methodUsage: "Usage metrics: total minutes, job runs (from Actions). Performance metrics: avg run time, queue time, fail rate (from workflow logs).",
+    methodSnapshot: "This is a static snapshot, not a live dashboard. Data is manually ingested and rendered.",
+    methodDedup: "Traffic data is SHA-256 deduplicated. Values ≥ 10 floored to nearest decile. Cross-period unique cloner sums are not true long-term uniques.",
   },
   zh: {
+    trafficTab: "流量",
+    operationsTab: "运行",
+    methodTab: "方法",
     dashboardTitle: "分析仪表盘",
     dashboardDesc: "查看遥测与流量指标",
     overviewTab: "概览",
@@ -32,6 +55,23 @@ const translations = {
     uniqueCloners: "唯一克隆者",
     views: "总浏览量",
     uniqueVisitors: "唯一访客",
+    opsWelcome: "welcome-to-github",
+    opsZero: "zero-entropy-lab",
+    opsMinutes: "总分钟数",
+    opsRuns: "任务运行次数",
+    opsAvgRun: "平均运行",
+    opsFailRate: "失败率",
+    opsCombined: "Combined · 两仓合计",
+    opsNotMeasured: "快照中未测量",
+    opsSource: "数据源: GitHub Actions · Last year · 2026-02-12 → 2026-08-07",
+    opsSnapshot: "2026-08-07 静态快照",
+    methodTitle: "数据方法论",
+    methodLastYear: "GitHub 'Last year' 是滚动 12 个月窗口，不等于项目实际运行期",
+    methodWindow: "有效观测窗口: 2026-02-12 → 2026-08-07 (177天)",
+    methodUTC: "所有时间戳使用 UTC。GitHub Traffic API 只提供最近 14 天的独立用户计数。",
+    methodUsage: "用量指标: total minutes、job runs（源自 Actions）。性能指标: avg run time、queue time、fail rate（源自 workflow 日志）。",
+    methodSnapshot: "这是静态快照，不是实时仪表盘。数据手动摄入并渲染。",
+    methodDedup: "流量数据经 SHA-256 去重。≥10 的值向下 floor 到最近的十位数。跨周期 unique cloner 累加不代表真实的长期唯一用户总数。",
   }
 };
 
@@ -210,150 +250,226 @@ export default function RepoTrafficVisualizationDashboard() {
     return { clones, views, uniqueClonersSum, ratio };
   }, [filteredData]);
 
+  const [mainTab, setMainTab] = useState<string>("traffic");
+
   return (
     <div className="min-h-screen bg-slate-950 font-sans text-slate-300 selection:bg-cyan-900 selection:text-cyan-50 p-4 md:p-8">
       <div className="max-w-[1400px] mx-auto">
-        <header className="mb-10 space-y-6">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <Activity className="h-6 w-6 text-cyan-400" />
-              <h1 className="text-3xl font-bold tracking-tight text-white">GitHub Traffic Telemetry Array</h1>
-            </div>
-            <p className="text-slate-400 text-sm font-mono max-w-3xl">
-              [SYSTEM_STATUS: ONLINE] Monitoring repository clone events, traffic metrics, and visitor analytics across all active nodes.
-            </p>
+        <header className="mb-6 space-y-4">
+          {/* Axiom-0 identity */}
+          <div className="flex items-center gap-2 text-xs font-mono tracking-[0.2em] text-slate-500 uppercase">
+            <span className="text-cyan-500">Axiom-0</span>
+            <span className="text-slate-700">·</span>
+            <span>Evidence and Telemetry Surface</span>
           </div>
-
-          <Tabs defaultValue="all" onValueChange={setRepo} className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-6 w-full rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs">
-              <TabsTrigger value="all" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Unified</TabsTrigger>
-              <TabsTrigger value="zero-entropy-lab" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">zero-entropy-lab</TabsTrigger>
-              <TabsTrigger value="welcome-to-github" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">welcome-to-github</TabsTrigger>
-              <TabsTrigger value="Axiom-0" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">Axiom-0</TabsTrigger>
-              <TabsTrigger value="reflective-continuum" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">reflective-continuum</TabsTrigger>
-              <TabsTrigger value="agent-foundations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400 data-[state=active]:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">agent-foundations</TabsTrigger>
+          <div className="flex items-center gap-3">
+            <Activity className="h-6 w-6 text-cyan-400" />
+            <h1 className="text-3xl font-bold tracking-tight text-white">GitHub Traffic Telemetry</h1>
+            <button onClick={() => setLang(lang === "en" ? "zh" : "en")} className="ml-auto flex items-center text-sm font-normal text-slate-300 hover:text-white bg-slate-800 px-2 py-1 rounded border border-slate-700 cursor-pointer">
+              <Globe className="w-4 h-4 mr-1"/> {lang === "en" ? "中文" : "English"}
+            </button>
+          </div>
+          <p className="text-slate-400 text-sm font-mono max-w-3xl">
+            [SYSTEM_STATUS: ONLINE] Monitoring repository events and operational metrics across all active nodes.
+          </p>
+          {/* Main tabs */}
+          <Tabs defaultValue="traffic" onValueChange={setMainTab} className="w-full">
+            <TabsList className="grid grid-cols-3 w-full max-w-md rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs">
+              <TabsTrigger value="traffic" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400"><Eye className="w-3.5 h-3.5 mr-1 inline"/>{t.trafficTab}</TabsTrigger>
+              <TabsTrigger value="operations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-emerald-400"><Server className="w-3.5 h-3.5 mr-1 inline"/>{t.operationsTab}</TabsTrigger>
+              <TabsTrigger value="method" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-purple-400"><BookOpen className="w-3.5 h-3.5 mr-1 inline"/>{t.methodTab}</TabsTrigger>
             </TabsList>
-
-        <Alert className="mt-4 bg-muted/50">
-          <Scale className="h-4 w-4" />
-          <AlertTitle>{t.dedupLogicTitle}</AlertTitle>
-          <AlertDescription className="text-sm text-slate-300 leading-relaxed font-mono mt-2">
-            <p>{t.dedupLogicDesc}</p>
-            <p className="mt-1 font-semibold">{t.exampleTitle}: {t.exampleDesc}</p>
-          </AlertDescription>
-        </Alert>
-
           </Tabs>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-8" aria-label="Core Metrics">
-          <MetricCard title="Absolute Clones" value={formatNumber(totals.clones)} subtitle="Total physical pull extractions" icon={Copy} />
-          <MetricCard title="Frontend Views" value={formatNumber(totals.views)} subtitle="Superficial presentation accesses" icon={Eye} />
-          <MetricCard title="Unique Actors" value={formatNumber(totals.uniqueClonersSum)} subtitle="Aggregated terminal endpoints" icon={Users} />
-          <MetricCard title="Entropy Divergence" value={`Δ ${totals.ratio}`} subtitle="Ratio > 1.0 = Deterministic Bypass" icon={Scale} />
-        </section>
+        {/* ===== TRAFFIC ===== */}
+        {mainTab === "traffic" && (<>
+          <Tabs defaultValue="all" onValueChange={setRepo} className="w-full">
+            <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs mb-4">
+              <TabsTrigger value="all" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">Unified</TabsTrigger>
+              <TabsTrigger value="zero-entropy-lab" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">zero</TabsTrigger>
+              <TabsTrigger value="welcome-to-github" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">welcome</TabsTrigger>
+              <TabsTrigger value="Axiom-0" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">Axiom-0</TabsTrigger>
+              <TabsTrigger value="reflective-continuum" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">reflective</TabsTrigger>
+              <TabsTrigger value="agent-foundations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">agent</TabsTrigger>
+            </TabsList>
+            <Alert className="mt-2 bg-muted/50">
+              <Scale className="h-4 w-4" />
+              <AlertTitle>{t.dedupLogicTitle}</AlertTitle>
+              <AlertDescription className="text-sm text-slate-300 leading-relaxed font-mono mt-2">
+                <p>{t.dedupLogicDesc}</p>
+                <p className="mt-1 font-semibold">{t.exampleTitle}: {t.exampleDesc}</p>
+              </AlertDescription>
+            </Alert>
+          </Tabs>
 
-        {/* Dynamic Main Chart Section */}
-        <section className="mb-8">
-          <Card className="rounded-2xl shadow-2xl border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden">
-            <CardHeader className="border-b border-slate-800/50 p-6 bg-slate-900/30">
-              <CardTitle className="text-white font-mono flex items-center justify-between gap-2 w-full">
-                  <div className="flex items-center gap-2">
-                    <Activity className="h-5 w-5 text-emerald-400" />
-                    {t.dashboardTitle}
-                  </div>
-                  <button onClick={() => setLang(lang === "en" ? "zh" : "en")} className="flex items-center text-sm font-normal text-slate-300 hover:text-white bg-slate-800 px-2 py-1 rounded border border-slate-700 cursor-pointer"><Globe className="w-4 h-4 mr-1"/> {lang === "en" ? "中文" : "English"}</button>
+          <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 mt-6" aria-label="Core Metrics">
+            <MetricCard title="Absolute Clones" value={formatNumber(totals.clones)} subtitle="Total physical pull extractions" icon={Copy} />
+            <MetricCard title="Frontend Views" value={formatNumber(totals.views)} subtitle="Superficial presentation accesses" icon={Eye} />
+            <MetricCard title="Unique Actors" value={formatNumber(totals.uniqueClonersSum)} subtitle="Aggregated terminal endpoints" icon={Users} />
+            <MetricCard title="Entropy Divergence" value={`Δ ${totals.ratio}`} subtitle="Ratio > 1.0 = Deterministic Bypass" icon={Scale} />
+          </section>
+
+          <section className="mb-8">
+            <Card className="rounded-2xl shadow-2xl border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden">
+              <CardHeader className="border-b border-slate-800/50 p-6 bg-slate-900/30">
+                <CardTitle className="text-white font-mono flex items-center gap-2">
+                  <Activity className="h-5 w-5 text-emerald-400" />{t.dashboardTitle}
                 </CardTitle>
-                <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse mt-2 block"></span>
-                <span className="text-sm font-mono text-cyan-500">{isAllView ? "Macro Node Dominance [AGGREGATED]" : "Temporal Convergence Matrix [ISOLATED]"}</span>
-              <CardDescription className="text-slate-400 font-mono text-xs">
-                {isAllView
-                  ? "Volumetric distribution of deterministic pressure across the system topology."
-                  : "Chronological mapping of extraction velocity vs superficial browsing."}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="h-[400px] p-6">
-              <ResponsiveContainer width="100%" height="100%">
-                {isAllView ? (
-                  // Unified View: Cross-Node Horizontal Bar Chart
-                  <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                    <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#1e293b" />
-                    <XAxis type="number" tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 12 }} axisLine={false} tickLine={false} />
-                    <YAxis dataKey="name" type="category" tick={{ fill: "#94a3b8", fontFamily: "monospace", fontSize: 13 }} width={100} axisLine={false} tickLine={false} />
-                    <Tooltip content={<CustomChartTooltip />} cursor={{ fill: 'rgba(30, 41, 59, 0.4)' }} />
-                    <Legend iconType="rect" wrapperStyle={{ fontFamily: "monospace", fontSize: 12, color: "#94a3b8" }} />
-                    <Bar dataKey="totalClones" name="Total Extract Volume" fill="#0ea5e9" radius={[0, 4, 4, 0]} barSize={24} />
-                    <Bar dataKey="totalViews" name="Total Surface Views" fill="#334155" radius={[0, 4, 4, 0]} barSize={12} />
-                  </BarChart>
-                ) : (
-                  // Isolated View: Temporal Area + Line Chart
-                  <AreaChart data={filteredData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                    <defs>
-                      <linearGradient id="colorClones" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#0ea5e9" stopOpacity={0.3}/>
-                        <stop offset="95%" stopColor="#0ea5e9" stopOpacity={0}/>
-                      </linearGradient>
-                      <linearGradient id="colorViews" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#64748b" stopOpacity={0.2}/>
-                        <stop offset="95%" stopColor="#64748b" stopOpacity={0}/>
-                      </linearGradient>
-                    </defs>
-                    <XAxis dataKey="period" tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 12 }} axisLine={{ stroke: '#334155' }} tickLine={false} />
-                    <YAxis tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 12 }} axisLine={false} tickLine={false} />
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#1e293b" />
-                    <Tooltip content={<CustomChartTooltip />} />
-                    <Legend iconType="circle" wrapperStyle={{ fontFamily: "monospace", fontSize: 12 }} />
-                    <Area type="monotone" dataKey="views" name="Superficial Views" stroke="#64748b" fillOpacity={1} fill="url(#colorViews)" strokeWidth={2} />
-                    <Area type="monotone" dataKey="clones" name="Absolute Extractions" stroke="#0ea5e9" fillOpacity={1} fill="url(#colorClones)" strokeWidth={3} activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#0f172a", strokeWidth: 2 }} />
-                  </AreaChart>
-                )}
-              </ResponsiveContainer>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Secondary Analysis Row */}
-        {!isAllView && (
-          <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-            <Card className="rounded-2xl shadow-lg border-slate-800 bg-slate-900/40">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm text-slate-300 font-mono">Divergence Pressure Ratio</CardTitle>
+                <span className="text-sm font-mono text-cyan-500 mt-1 block">{isAllView ? "Macro Node Dominance [AGGREGATED]" : "Temporal Convergence Matrix [ISOLATED]"}</span>
+                <CardDescription className="text-slate-400 font-mono text-xs">
+                  {isAllView ? "Volumetric distribution of deterministic pressure across the system topology." : "Chronological mapping of extraction velocity vs superficial browsing."}
+                </CardDescription>
               </CardHeader>
-              <CardContent className="h-[250px] p-4">
+              <CardContent className="h-[400px] p-6">
                 <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={filteredData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="2 2" vertical={false} stroke="#1e293b" />
-                    <XAxis dataKey="period" tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
-                    <YAxis tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
-                    <Tooltip content={<CustomChartTooltip />} />
-                    <ReferenceLine y={1} stroke="#ef4444" strokeDasharray="3 3" strokeWidth={1} label={{ value: "CRITICAL = 1.0", position: "insideTopLeft", fill: "#ef4444", fontSize: 10, fontFamily: "monospace" }} />
-                    <Line type="stepAfter" dataKey="cloneViewRatio" name="C/V Ratio" stroke="#8b5cf6" strokeWidth={2} dot={{ r: 4, fill: "#8b5cf6", strokeWidth: 0 }} />
-                  </LineChart>
+                  {isAllView ? (
+                    <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                      <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#1e293b" />
+                      <XAxis type="number" tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 12 }} axisLine={false} tickLine={false} />
+                      <YAxis dataKey="name" type="category" tick={{ fill: "#94a3b8", fontFamily: "monospace", fontSize: 13 }} width={100} axisLine={false} tickLine={false} />
+                      <Tooltip content={<CustomChartTooltip />} cursor={{ fill: 'rgba(30, 41, 59, 0.4)' }} />
+                      <Legend iconType="rect" wrapperStyle={{ fontFamily: "monospace", fontSize: 12, color: "#94a3b8" }} />
+                      <Bar dataKey="totalClones" name="Total Extract Volume" fill="#0ea5e9" radius={[0, 4, 4, 0]} barSize={24} />
+                      <Bar dataKey="totalViews" name="Total Surface Views" fill="#334155" radius={[0, 4, 4, 0]} barSize={12} />
+                    </BarChart>
+                  ) : (
+                    <AreaChart data={filteredData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="colorClones" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="#0ea5e9" stopOpacity={0.3}/><stop offset="95%" stopColor="#0ea5e9" stopOpacity={0}/></linearGradient>
+                        <linearGradient id="colorViews" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="#64748b" stopOpacity={0.2}/><stop offset="95%" stopColor="#64748b" stopOpacity={0}/></linearGradient>
+                      </defs>
+                      <XAxis dataKey="period" tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 12 }} axisLine={{ stroke: '#334155' }} tickLine={false} />
+                      <YAxis tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 12 }} axisLine={false} tickLine={false} />
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#1e293b" />
+                      <Tooltip content={<CustomChartTooltip />} />
+                      <Legend iconType="circle" wrapperStyle={{ fontFamily: "monospace", fontSize: 12 }} />
+                      <Area type="monotone" dataKey="views" name="Superficial Views" stroke="#64748b" fillOpacity={1} fill="url(#colorViews)" strokeWidth={2} />
+                      <Area type="monotone" dataKey="clones" name="Absolute Extractions" stroke="#0ea5e9" fillOpacity={1} fill="url(#colorClones)" strokeWidth={3} activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#0f172a", strokeWidth: 2 }} />
+                    </AreaChart>
+                  )}
                 </ResponsiveContainer>
               </CardContent>
             </Card>
+          </section>
 
-            <Card className="rounded-2xl shadow-lg border-slate-800 bg-slate-900/40 flex flex-col justify-center p-8">
-               <Alert className="rounded-xl bg-slate-950 border border-indigo-500/30 text-indigo-100 shadow-[0_0_15px_rgba(99,102,241,0.1)]">
-                <AlertTriangle className="h-5 w-5 text-indigo-400" aria-hidden="true" />
-                <AlertTitle className="font-bold text-indigo-300 font-mono tracking-wide">Axiom-0 Protocol Validation</AlertTitle>
-                <AlertDescription className="text-indigo-200/70 leading-relaxed text-xs mt-2 font-mono">
-                  Analysis of isolated chronological vectors confirms the deterministic funnel.
-                  Audience bypasses external presentation layer [Views], treating nodes purely as raw extraction targets [Clones].
-                  <br/><br/>
-                  <span className="text-slate-400 text-[10px]">* Method Note: Aggressive telemetry sanitization applied. Deciles rounded down, single digits preserved for algorithmic purity.</span>
-                </AlertDescription>
-              </Alert>
+          {!isAllView && (
+            <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+              <Card className="rounded-2xl shadow-lg border-slate-800 bg-slate-900/40">
+                <CardHeader className="pb-2"><CardTitle className="text-sm text-slate-300 font-mono">Divergence Pressure Ratio</CardTitle></CardHeader>
+                <CardContent className="h-[250px] p-4">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <LineChart data={filteredData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                      <CartesianGrid strokeDasharray="2 2" vertical={false} stroke="#1e293b" />
+                      <XAxis dataKey="period" tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
+                      <YAxis tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<CustomChartTooltip />} />
+                      <ReferenceLine y={1} stroke="#ef4444" strokeDasharray="3 3" strokeWidth={1} label={{ value: "CRITICAL = 1.0", position: "insideTopLeft", fill: "#ef4444", fontSize: 10, fontFamily: "monospace" }} />
+                      <Line type="stepAfter" dataKey="cloneViewRatio" name="C/V Ratio" stroke="#8b5cf6" strokeWidth={2} dot={{ r: 4, fill: "#8b5cf6", strokeWidth: 0 }} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </CardContent>
+              </Card>
+              <Card className="rounded-2xl shadow-lg border-slate-800 bg-slate-900/40 flex flex-col justify-center p-8">
+                <Alert className="rounded-xl bg-slate-950 border border-indigo-500/30 text-indigo-100 shadow-[0_0_15px_rgba(99,102,241,0.1)]">
+                  <AlertTriangle className="h-5 w-5 text-indigo-400" />
+                  <AlertTitle className="font-bold text-indigo-300 font-mono tracking-wide">Axiom-0 Protocol Validation</AlertTitle>
+                  <AlertDescription className="text-indigo-200/70 leading-relaxed text-xs mt-2 font-mono">
+                    Analysis of isolated chronological vectors confirms the deterministic funnel. Audience bypasses external presentation layer [Views], treating nodes purely as raw extraction targets [Clones].
+                    <br/><br/>
+                    <span className="text-slate-400 text-[10px]">* Method Note: Aggressive telemetry sanitization applied. Deciles rounded down, single digits preserved for algorithmic purity.</span>
+                  </AlertDescription>
+                </Alert>
+              </Card>
+            </section>
+          )}
+        </>)}
+
+        {/* ===== OPERATIONS ===== */}
+        {mainTab === "operations" && (
+          <section className="space-y-6 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="rounded-2xl border-slate-800 bg-slate-900/50 backdrop-blur-sm border-emerald-500/20 hover:border-emerald-500/40 transition-all">
+                <CardHeader className="border-b border-slate-800/50 pb-4">
+                  <div className="flex items-center gap-2"><Server className="h-5 w-5 text-emerald-400" /><CardTitle className="text-white font-mono">{t.opsWelcome}</CardTitle></div>
+                  <CardDescription className="text-slate-400 font-mono text-xs">{t.opsSource}</CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">7,045</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsMinutes}</div></div>
+                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">5,786</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsRuns}</div></div>
+                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">42s</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsAvgRun}</div></div>
+                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">2%</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsFailRate}</div></div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="rounded-2xl border-slate-800 bg-slate-900/50 backdrop-blur-sm border-cyan-500/20 hover:border-cyan-500/40 transition-all">
+                <CardHeader className="border-b border-slate-800/50 pb-4">
+                  <div className="flex items-center gap-2"><Server className="h-5 w-5 text-cyan-400" /><CardTitle className="text-white font-mono">{t.opsZero}</CardTitle></div>
+                  <CardDescription className="text-slate-400 font-mono text-xs">{t.opsSource}</CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">3,870</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsMinutes}</div></div>
+                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">3,172</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsRuns}</div></div>
+                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">37s</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsAvgRun}</div></div>
+                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">2%</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsFailRate}</div></div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Combined */}
+            <Card className="rounded-2xl border-slate-800 bg-slate-900/30">
+              <CardContent className="p-5 text-center">
+                <p className="text-xs font-mono text-slate-400 mb-2">{t.opsCombined}</p>
+                <p className="text-2xl font-bold text-white font-mono">
+                  10,915 <span className="text-slate-500 font-normal text-sm">{t.opsMinutes}</span>
+                  <span className="mx-3 text-slate-700">/</span>
+                  8,958 <span className="text-slate-500 font-normal text-sm">{t.opsRuns}</span>
+                </p>
+              </CardContent>
             </Card>
+
+            {/* Not measured */}
+            <Card className="rounded-2xl border-slate-800 bg-slate-900/20 border-dashed">
+              <CardContent className="p-4 text-center">
+                <p className="text-xs font-mono text-slate-500">
+                  Axiom-0 · reflective-continuum · agent-foundations — {t.opsNotMeasured}
+                </p>
+              </CardContent>
+            </Card>
+
+            <p className="text-[11px] text-slate-600 font-mono text-center">{t.opsSource}</p>
+            <p className="text-[11px] text-slate-600 font-mono text-center -mt-4">{t.opsSnapshot}</p>
           </section>
         )}
 
-        <footer className="mt-8 border-t border-slate-800 pt-6 pb-6 text-center">
+        {/* ===== METHOD ===== */}
+        {mainTab === "method" && (
+          <section className="space-y-4 mt-6">
+            <Card className="rounded-2xl border-slate-800 bg-slate-900/50">
+              <CardHeader><CardTitle className="text-white font-mono flex items-center gap-2"><Info className="h-5 w-5 text-purple-400" />{t.methodTitle}</CardTitle></CardHeader>
+              <CardContent className="space-y-4 font-mono text-sm text-slate-300 leading-relaxed">
+                <div className="border-l-2 border-purple-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Observation Window</p><p>{t.methodLastYear}</p><p className="text-cyan-400 mt-1">{t.methodWindow}</p></div>
+                <div className="border-l-2 border-cyan-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Timestamps & Uniques</p><p>{t.methodUTC}</p></div>
+                <div className="border-l-2 border-emerald-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Metric Classification</p><p>{t.methodUsage}</p></div>
+                <div className="border-l-2 border-amber-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Snapshot vs Live</p><p>{t.methodSnapshot}</p></div>
+                <div className="border-l-2 border-red-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Deduplication & Limitations</p><p>{t.methodDedup}</p></div>
+              </CardContent>
+            </Card>
+            <p className="text-[11px] text-slate-600 font-mono text-center">{t.opsSource}</p>
+          </section>
+        )}
+
+        <footer className="mt-10 border-t border-slate-800 pt-6 pb-6 text-center">
           <p className="text-[11px] text-slate-500 font-mono tracking-widest">
-            GitHub Traffic Terminal UI • Telemetry Rendering Pipeline • SECURE NODE - BUILD 2
+            Axiom-0 Telemetry Terminal • Evidence and Telemetry Surface • BUILD 3
           </p>
         </footer>
       </div>
     </div>
   );
 }
+
