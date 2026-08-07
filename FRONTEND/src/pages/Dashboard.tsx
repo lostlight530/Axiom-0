@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe, Clock, Server, BookOpen, Info } from "lucide-react";
+import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe, Server, BookOpen, Info } from "lucide-react";
 
 const translations = {
   en: {
