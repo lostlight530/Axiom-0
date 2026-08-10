@@ -58,14 +58,16 @@ Present: 2026-08-03, 2026-08-04, 2026-08-05, 2026-08-06, 2026-08-07, 2026-08-08,
 - 结论: 扫描显示15个ADR文件完整。
 
 ## Weekly D_KL
-- **D_KL**: 0.0
-- **结论**: 根据 grep 日志记录，在审计窗口期内相关 Daily Manifest (2026-08-04, 2026-08-05, 2026-08-06, 2026-08-08, 2026-08-09) 的 D_KL 值为 0.0。
+- **Explicit numeric D_KL:** `0.0`
+- **Days with an explicit numeric D_KL field:** 2026-08-03, 2026-08-04, 2026-08-05, 2026-08-06, 2026-08-08, 2026-08-09
+- **2026-08-07:** `scan_kl_divergence.py` exited `0` with `KL contract: passed`, but that daily manifest does not persist an explicit numeric `D_KL` scalar.
+- **结论:** 六个明确记录数值的 Daily Manifest 均为 `D_KL = 0.0`。8 月 7 日只支持“KL 合同检查通过”，不能补写一个未落盘的数值，因此本周不把七天都表述为具有显式数值观测。
 
 ## 污染节点
 NONE
 
 ## 未决问题
-NONE
+- 2026-08-07 lacks a persisted numeric `D_KL` scalar even though its KL contract check passed. This is an evidence-format gap, not a failed KL check.
 
 ## 禁止区域未修改声明
 PROTECTED_PATHS_UNMODIFIED
@@ -80,7 +82,7 @@ Daily 日期范围: 2026-08-03 to 2026-08-09
 Hard Signals: PEP 8, PEP 20, PEP 257, What’s New In Python 3.12, PEP 711
 假设状态变化: None
 规范审计结果: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
-Weekly D_KL: 0.0
+Weekly D_KL: explicit numeric 0.0 on 2026-08-03, 04, 05, 06, 08, 09; 2026-08-07 contract pass without persisted scalar
 测试命令: python3 parallel_test.py && python3 test_complexity.py && python3 test_entropy_spike.py && python3 test_json_dumps.py && python3 test_metrics_json.py && python3 datetime_test.py && python3 str_e_test.py && python3 code_compliance.py, python3 scan_kl_divergence.py, python3 scan_consistency.py, time ./test_100.sh
 创建文件: RESEARCH/weekly/2026-W32-weekly-manifest.md
 受保护路径声明: PROTECTED_PATHS_UNMODIFIED
