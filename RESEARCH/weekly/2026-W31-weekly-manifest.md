@@ -27,17 +27,25 @@
 | A1-20260729-01 | SUPPORTED_ONCE | 平台逐渐禁止AI生成内容以保护人类对话的纯粹性 | Platforms are increasingly banning AI-generated content to preserve the purity of human conversation |
 | A1-20260730-01 | SUPPORTED_ONCE | 开源人工智能框架将成为未来主要的开发路径 | Open source AI frameworks will become the primary development path |
 
-### 1.3 Missing Daily Manifests
+### 1.3 Daily Manifest Coverage
 
-| Date | Status |
-| --- | --- |
-| 2026-08-02 | MISSING |
-| 2026-08-01 | PRESENT |
-| 2026-07-31 | PRESENT |
-| 2026-07-30 | PRESENT |
-| 2026-07-29 | PRESENT |
-| 2026-07-28 | PRESENT |
-| 2026-07-27 | PRESENT |
+| Date | Current Status | Original W31 Snapshot |
+| --- | --- | --- |
+| 2026-08-02 | PRESENT_AFTER_RECONCILIATION | MISSING |
+| 2026-08-01 | PRESENT | PRESENT |
+| 2026-07-31 | PRESENT | PRESENT |
+| 2026-07-30 | PRESENT | PRESENT |
+| 2026-07-29 | PRESENT | PRESENT |
+| 2026-07-28 | PRESENT | PRESENT |
+| 2026-07-27 | PRESENT | PRESENT |
+
+### 1.4 Reconciliation Record — 2026-08-10
+
+- The original W31 weekly execution recorded `2026-08-02` as `MISSING`.
+- Current `main` contains `RESEARCH/daily/2026-08-02-pipeline-manifest.md` with logical date `2026-08-02`.
+- The recovered current artifact contains A1 through A4, records `D_KL: 0.0`, and records the specified A3 stress test as `100 / 100` passed.
+- This reconciliation does not claim that the Aug 2 artifact was visible to the original weekly run. The original missing observation is preserved in the `Original W31 Snapshot` column.
+- Reconciliation Status: `STALE_MISSING_STATE_RESOLVED`.
 
 ---
 
@@ -62,7 +70,8 @@
 ---
 
 ## Unresolved Issues
-* None detected.
+* No current daily-manifest coverage gap remains after the 2026-08-10 reconciliation.
+* Historical fact retained: the original W31 weekly execution observed 2026-08-02 as missing.
 
 ## PR Contract
 * Authorized paths correctly modified.
