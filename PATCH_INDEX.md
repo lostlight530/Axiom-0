@@ -28,6 +28,8 @@
   - **[EN]**: `RESEARCH/daily/2026-08-10-pipeline-manifest.md` 2026-08-10 Pipeline Manifest
 - **[CN]**: `RESEARCH/daily/2026-08-11-pipeline-manifest.md` 2026-08-11 Pipeline Manifest
   - **[EN]**: `RESEARCH/daily/2026-08-11-pipeline-manifest.md` 2026-08-11 Pipeline Manifest
+- **[CN]**: `RESEARCH/daily/2026-08-12-pipeline-manifest.md` 2026-08-12 Pipeline Manifest
+  - **[EN]**: `RESEARCH/daily/2026-08-12-pipeline-manifest.md` 2026-08-12 Pipeline Manifest
 - **[CN]**: `RESEARCH/daily/2026-06-06-pipeline-manifest.md` 2026-06-06 Pipeline Manifest
   - **[EN]**: `RESEARCH/daily/2026-06-06-pipeline-manifest.md` 2026-06-06 Pipeline Manifest
 - **[CN]**: `RESEARCH/daily/2026-06-05-pipeline-manifest.md` 2026-06-05 Pipeline Manifest
@@ -116,3 +118,4 @@
 - [2026-08-05 Pipeline Manifest](RESEARCH/daily/2026-08-05-pipeline-manifest.md) - Status: SUCCESS
 - [2026-08-10 Pipeline Manifest](RESEARCH/daily/2026-08-10-pipeline-manifest.md) - Status: SUCCESS
 - [2026-08-11 Pipeline Manifest](RESEARCH/daily/2026-08-11-pipeline-manifest.md) - Status: SUCCESS
+- [2026-08-12 Pipeline Manifest](RESEARCH/daily/2026-08-12-pipeline-manifest.md) - Status: SUCCESS
