@@ -127,3 +127,4 @@
 - [2026-08-11 Pipeline Manifest](RESEARCH/daily/2026-08-11-pipeline-manifest.md) - Status: SUCCESS
 - [2026-08-12 Pipeline Manifest](RESEARCH/daily/2026-08-12-pipeline-manifest.md) - Status: SUCCESS
 - [2026-08-13 Pipeline Manifest](RESEARCH/daily/2026-08-13-pipeline-manifest.md) - Status: SUCCESS
+- [2026-08-14 Pipeline Manifest](RESEARCH/daily/2026-08-14-pipeline-manifest.md) - Status: SUCCESS
