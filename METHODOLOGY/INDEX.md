@@ -2,6 +2,12 @@
 
 Status: procedure navigation map
 
+## Jules automation boundary
+
+This index serves human and independent repository maintenance outside the Jules scheduled automation stream. It documents procedures and authority relationships; it is not a Jules task prompt, Jules memory entry, or `AGENTS.md` instruction and does not change existing Jules automation behavior.
+
+Jules-produced research may be reviewed against these procedures after generation, but that post-hoc use does not mean Jules consumed this index during task execution.
+
 `METHODOLOGY/**` defines procedures and analytical disciplines. It does not override `SPECIFICATION.md`, create runtime configuration, or turn research prose into implementation.
 
 ## Procedures
@@ -35,6 +41,8 @@ A procedure may propose additional evidence or checks. It may not silently:
 - turn a heuristic or threshold into a universal mathematical law
 - modify separately owned research, automation, or presentation layers without explicit scope
 
+These authority rules govern independent repository maintenance; they are not injected into Jules automation unless a Jules instruction surface is separately changed.
+
 ## Related navigation
 
 - [Architecture decision index](../ADR/INDEX.md)
@@ -42,4 +50,4 @@ A procedure may propose additional evidence or checks. It may not silently:
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
 - [Contributing](../CONTRIBUTING.md)
 
-This index is navigation/documentation only and introduces no executable methodology change.
+This index is navigation/documentation only and introduces no executable methodology or Jules automation change.
