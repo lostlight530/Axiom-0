@@ -10,7 +10,9 @@
 - **Publisher**: python.org
 - **URL**: https://peps.python.org/pep-0020/
 - **Check Time**: 2026-08-14
-- **Publish Time**: 2025-02-01 08:55:40 UTC
+- **Created**: 19-Aug-2004
+- **Page/Source Last Modified Observed**: 2025-02-01 08:55:40 UTC
+- **Provenance Calibration**: The 2025 timestamp is page/source modification metadata and is not the PEP creation/publication date.
 - **Status**: OBSERVED
 - **Supported Facts**: "Readability counts." "Explicit is better than implicit."
 - **Unsupported Inferences**: Applicable to non-Python languages.
@@ -22,6 +24,7 @@
 - **Publish Time**: MISSING_DATA
 - **Status**: SUPPORTED_ONCE
 - **Supported Facts**: "Use 4 spaces per indentation level." "Limit all lines to a maximum of 79 characters."
+- **Scope Note**: PEP 8 requires the conservative 79-character limit for the Python standard library; teams maintaining their own code may agree on a longer limit up to 99 characters while comments/docstrings remain at 72.
 - **Unsupported Inferences**: Mandatory for all Python projects regardless of team agreement.
 
 ### Source 3: What's New In Python 3.12
@@ -51,6 +54,7 @@ repository consistency: passed
 ```
 - **Consistency Scan Standard Error**: MISSING_DATA
 - **D_KL**: 0.0
+- **D_KL Scope**: Observed only for the recorded `identity` and `renormalized_identity` cases; not a repository-wide zero-divergence claim.
 - **Exception Stack**: MISSING_DATA
 - **Actual Input Range**: 2 cases tested (identity, renormalized_identity)
 - **Audit Status**: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
@@ -75,6 +79,7 @@ sys	0m0.292s
 - **SHA256**: 54a405488319933a8293a93646bf967dde6942968204bfa8e611ba808b793457
 - **Uncovered Conditions**: MISSING_DATA
 - **Result Status**: 100 / 100 specified executions passed
+- **Result Scope**: This is execution evidence for the specified test target and cases, not exhaustive condition coverage.
 
 ## A4: Topology & Index Alignment
 
@@ -86,5 +91,5 @@ sys	0m0.292s
 
 - **Pipeline Status**: SUCCESS
 - **Missing Data**: Exception Stack, Uncovered Conditions
-- **Failure Types**: NONE
+- **Failure Types**: NONE OBSERVED IN THE RECORDED EXECUTION SCOPE
 - **Protected Paths**: Unmodified (Boundary Status: PASS)
