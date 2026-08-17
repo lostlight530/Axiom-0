@@ -40,6 +40,21 @@ Calibration:
 - the ingestion status `OBSERVED` records that the page was observed; it does not upgrade source authority
 - future reuse of this historical fact should prefer a Python/PSF or other primary historical source
 
+### PEP 8 — recommendation scope, not universal mandate
+
+Several W33 Daily/Weekly statements correctly preserve PEP 8's `4 spaces` and `79 characters` guidance, but the W33 Weekly conclusion uses the stronger verb `dictates`.
+
+Primary PEP 8 text distinguishes the conservative Python standard-library rule from team-level exceptions: teams may agree to extend the line limit to 99 characters while keeping comments/docstrings at 72 characters.
+
+Calibrated interpretation:
+
+- `Use 4 spaces per indentation level` is directly supported
+- `79 characters` is the conservative PEP 8 / Python standard-library limit
+- `PEP 8 dictates 79 characters for every Python project` is too broad
+- preferred weekly wording: `PEP 8 recommends 4-space indentation and a 79-character line limit, while explicitly permitting team-agreed longer code lines up to 99 characters in appropriate codebases`
+
+Primary source: https://peps.python.org/pep-0008/
+
 ## 2. Hypothesis lifecycle reconciliation
 
 The W33 Weekly manifest contains:
@@ -99,14 +114,30 @@ Any W33 weekly statement describing repository alignment must be interpreted as 
 
 No protected file is modified by this reconciliation.
 
-## 7. Final calibrated W33 state
+## 7. Daily source-selection quality observation
+
+The W33 Daily files are generally source-grounded, but the A1 research value is uneven because several days repeatedly sample PEP 8, PEP 20, Python 3.12 release documentation, or title-level facts.
+
+This is not a correctness failure. It is a research-depth limitation.
+
+Future A1 quality should distinguish:
+
+- `SOURCE_VALIDATED`: source identity/fact is correct
+- `NOVEL_SIGNAL`: the observation adds material information not already captured in the current week
+- `REPEATED_ANCHOR`: the source is intentionally reused only to test persistence or lifecycle consistency
+
+Repeated authoritative anchors are acceptable, but they should not be counted as new hard signals unless they contain a genuinely new observation.
+
+## 8. Final calibrated W33 state
 
 - Daily coverage: `COMPLETE`
 - Primary-source discipline: `PARTIAL_RECONCILIATION_REQUIRED_AND_RECORDED`
+- PEP 8 weekly wording: `CALIBRATED_FROM_MANDATE_TO_SCOPED_GUIDANCE`
 - Orphan weekly hypothesis: `PEP_703_W33_ROW_UNSUPPORTED_BY_DAILY_EVIDENCE`
 - Numeric KL evidence: `SUPPORTED_WITHIN_RECORDED_TEST_SCOPE`
 - Stress-test evidence: `100_OF_100_SPECIFIED_EXECUTIONS_PASSED`
 - Missing evidence: `PRESENT_AND_EXPLICIT`
+- Daily source novelty: `MIXED; REPEATED_ANCHORS_PRESENT`
 - Historical Daily manifests rewritten: `NO`
 - Protected paths modified: `NO`
 - Tests rerun during this reconciliation: `NO`
