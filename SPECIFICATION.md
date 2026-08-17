@@ -10,6 +10,21 @@ Axiom is a dependency-free Python reference for a ten-stage, event-recorded tran
 
 It is not a foundation model, autonomous safety system, authorization layer, sandbox, distributed scheduler, database, or proof of deterministic cognition. “Axiom”, “continuum”, “entropy”, and phase names are project vocabulary unless a unit and measurement contract are stated.
 
+## Knowledge-layer topology
+
+Axiom separates durable decisions, procedures, contracts, implementation, evidence, research, automation, and presentation so generated or contextual material cannot silently govern runtime behavior.
+
+- [`ADR/INDEX.md`](ADR/INDEX.md): durable architectural decisions and their authority role
+- [`METHODOLOGY/INDEX.md`](METHODOLOGY/INDEX.md): procedures and analytical disciplines
+- `SPECIFICATION.md`: behavioral contract and public boundary
+- `CODE/**` and tests: executable implementation and revision-specific evidence
+- [`EVIDENCE_BASELINE.md`](EVIDENCE_BASELINE.md): external-source and completion-claim boundaries
+- `RESEARCH/**`: separately owned historical/research artifacts
+- `AUTOMATION/**` and `.github/**`: scheduling/check orchestration, not semantic authority
+- `FRONTEND/**`, README, and other presentation surfaces: presentation, not executable policy
+
+ADR-014 defines this repository knowledge stratification. Cross-layer changes should link the relevant decision, methodology, specification surface, and executable evidence where applicable. Numerical ADR/METH identifiers do not by themselves create a supersession or dependency chain.
+
 ## Runtime support
 
 Python 3.12 and 3.14 are verified in CI. Runtime code uses only the standard library. JSON inputs must contain only JSON-compatible values; non-finite numbers fail serialization.
