@@ -4,6 +4,14 @@
 - Scope: external facts and evidence semantics that bound Axiom runtime, research, security, and evaluation claims
 - Policy: an official or primary source informs a bounded local decision; it never certifies this repository by itself
 
+## Jules automation boundary
+
+This baseline belongs to the independent repository-governance and post-hoc review layer outside the Jules scheduled automation stream.
+
+It is **not** a Jules task prompt, Jules memory entry, or repository-level Jules instruction file. It does not modify, override, or guarantee the behavior of existing Jules Daily/Weekly/Monthly tasks. Jules-generated artifacts may be audited against this baseline after generation by a human or independent maintainer, but compliance must not be assumed unless the relevant Jules instruction surface explicitly incorporates the same rule.
+
+This maintenance intentionally does not create or modify `AGENTS.md`, Jules task prompts, or Jules repository memory. No claim is made that Jules reads this file as automation policy.
+
 ## Runtime and automation
 
 - [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) is the current stable documentation line used by this baseline. CI also verifies 3.12 compatibility; recheck lifecycle status when changing the matrix.
