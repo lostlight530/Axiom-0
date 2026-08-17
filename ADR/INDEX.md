@@ -2,6 +2,12 @@
 
 Status: navigation and authority map
 
+## Jules automation boundary
+
+This index serves human and independent repository maintenance outside the Jules scheduled automation stream. It documents repository authority and navigation; it is not a Jules task prompt, Jules memory entry, or `AGENTS.md` instruction and does not change existing Jules automation behavior.
+
+Jules-produced research may be interpreted against this topology during later review, but that does not mean Jules consumed this index during generation.
+
 `ADR/**` records durable architectural decisions. ADR numbering is an identifier/order convention; it does not by itself establish a supersession chain.
 
 `SPECIFICATION.md` remains the behavioral contract. ADRs explain why durable boundaries exist. `METHODOLOGY/**` describes procedures. `CODE/**` and tests provide executable implementation/evidence. `RESEARCH/**`, automation, and presentation are separately owned layers.
@@ -39,6 +45,8 @@ ADR-014 defines the authority stratification used by this index:
 
 A change in one layer does not silently rewrite the authority of another. Cross-layer changes should link the affected decision, procedure, contract, and executable evidence as applicable.
 
+These cross-layer rules govern independent repository maintenance; they are not instructions injected into Jules automation.
+
 ## Related navigation
 
 - [Engineering specification](../SPECIFICATION.md)
@@ -46,4 +54,4 @@ A change in one layer does not silently rewrite the authority of another. Cross-
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
 - [AI use disclosure](../AI_USE_DISCLOSURE.md)
 
-This index is navigation/documentation only. It does not alter executable behavior or create new ADR decisions.
+This index is navigation/documentation only. It does not alter executable behavior, create new ADR decisions, or modify Jules automation.
