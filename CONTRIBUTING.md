@@ -2,6 +2,14 @@
 
 Axiom accepts small, reviewable changes that make contracts, evidence, and execution behavior more precise.
 
+## Jules automation boundary
+
+This contribution guide governs human and independent-maintainer changes to the repository. It is outside the existing Jules scheduled automation stream and is not a Jules task prompt.
+
+Do not assume Jules Daily/Weekly/Monthly tasks consume or enforce this file. Existing Jules automation remains governed by its own task prompts, repository memory, and any explicit Jules instruction surface. This maintenance intentionally does not create or modify `AGENTS.md`, Jules prompts, or Jules memory.
+
+The rules below may be used to review or correct Jules-generated artifacts after generation, but that post-hoc audit does not mean the automation itself followed them.
+
 ## Before changing code
 
 1. Identify the affected ADR or methodology and its explicit boundary.
@@ -67,3 +75,4 @@ Research-only pull requests should additionally state:
 - whether historical records were rewritten or preserved
 - what claim strength changed
 - what remains unresolved
+- whether the change affects Jules automation instructions; default is `NO` unless a Jules instruction surface is explicitly modified
