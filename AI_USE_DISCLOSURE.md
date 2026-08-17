@@ -2,6 +2,12 @@
 
 AI assistance may be used for drafting, code suggestions, translation, test ideas, source discovery, summarization, and review. The human contributor remains accountable for scope, sources, licenses, security, correctness, and every completion claim.
 
+## Jules automation boundary
+
+This file governs accountable review of AI-assisted repository changes outside the Jules scheduled automation stream. It is not a Jules task prompt or repository memory entry and does not change how existing Jules tasks operate.
+
+Jules-generated Daily/Weekly/Monthly artifacts may be reviewed under this disclosure after generation. That review is independent of Jules execution and must not be described as proof that Jules consumed or followed these rules. This maintenance intentionally does not create or modify `AGENTS.md`, Jules prompts, or Jules repository memory.
+
 ## Required disclosure
 
 For a material AI-assisted change, the pull request states the affected artifacts, assistance category, model/service and date when known, whether repository/private data was supplied, primary-source checks performed, commands and results, and unresolved uncertainty. Do not paste secrets, personal data, embargoed vulnerabilities, or third-party confidential material into a model.
@@ -21,7 +27,9 @@ AI assistance must not upgrade evidence merely by restating it. In particular:
 
 ## Derived reports
 
-AI-generated Daily, Weekly, or Monthly summaries inherit the uncertainty of their inputs. A higher-level summary may downgrade evidence but must not silently strengthen it.
+AI-generated Daily, Weekly, or Monthly summaries inherit the uncertainty of their inputs when this review framework is applied to them. This is a post-hoc audit rule, not a claim about Jules task behavior.
+
+A higher-level summary may downgrade evidence but must not silently strengthen it.
 
 If a Weekly report adds new external evidence not present in Daily artifacts, label it as a new Weekly observation rather than retroactively inserting it into the Daily lifecycle.
 
