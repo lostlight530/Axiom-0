@@ -33,10 +33,10 @@ const translations = {
     opsSnapshot: "Static snapshot as of 2026-08-07",
     methodTitle: "Data Methodology",
     methodLastYear: "GitHub 'Last year' is a rolling 12-month window, not aligned with project inception",
-    methodWindow: "Effective observation window: 2026-02-12 → 2026-08-07 (177 days)",
+    methodWindow: "Effective observation window: 2026-02-12 → 2026-08-21 (191 days)",
     methodUTC: "All timestamps in UTC. GitHub Traffic API provides 14-day unique counts.",
     methodUsage: "Usage metrics: total minutes, job runs (from Actions). Performance metrics: avg run time, queue time, fail rate (from workflow logs).",
-    methodSnapshot: "This is a static snapshot, not a live dashboard. Data is manually ingested and rendered.",
+    methodSnapshot: "This is a static traffic snapshot as of 2026-08-21, not a live dashboard. Data is manually ingested and rendered.",
     methodDedup: "Traffic data is SHA-256 deduplicated. Values ≥ 10 floored to nearest decile. Cross-period unique cloner sums are not true long-term uniques.",
   },
   zh: {
@@ -67,10 +67,10 @@ const translations = {
     opsSnapshot: "2026-08-07 静态快照",
     methodTitle: "数据方法论",
     methodLastYear: "GitHub 'Last year' 是滚动 12 个月窗口，不等于项目实际运行期",
-    methodWindow: "有效观测窗口: 2026-02-12 → 2026-08-07 (177天)",
+    methodWindow: "有效观测窗口: 2026-02-12 → 2026-08-21（191天）",
     methodUTC: "所有时间戳使用 UTC。GitHub Traffic API 只提供最近 14 天的独立用户计数。",
     methodUsage: "用量指标: total minutes、job runs（源自 Actions）。性能指标: avg run time、queue time、fail rate（源自 workflow 日志）。",
-    methodSnapshot: "这是静态快照，不是实时仪表盘。数据手动摄入并渲染。",
+    methodSnapshot: "这是截至 2026-08-21 的流量静态快照，不是实时仪表盘。数据手动摄入并渲染。",
     methodDedup: "流量数据经 SHA-256 去重。≥10 的值向下 floor 到最近的十位数。跨周期 unique cloner 累加不代表真实的长期唯一用户总数。",
   }
 };
@@ -119,6 +119,7 @@ const rawData: TrafficData[] = [
   { repo: "welcome-to-github", period: "07/10", clones: 1840, uniqueCloners: 360, views: 10, uniqueVisitors: 8 },
   { repo: "welcome-to-github", period: "07/24", clones: 1200, uniqueCloners: 170, views: 90, uniqueVisitors: 30 },
   { repo: "welcome-to-github", period: "08/07", clones: 1120, uniqueCloners: 300, views: 10, uniqueVisitors: 10 },
+  { repo: "welcome-to-github", period: "08/21", clones: 1470, uniqueCloners: 470, views: 10, uniqueVisitors: 10 },
 
   // zero-entropy-lab
   { repo: "zero-entropy-lab", period: "03/21", clones: 760, uniqueCloners: 270, views: 520, uniqueVisitors: 20 },
@@ -132,6 +133,7 @@ const rawData: TrafficData[] = [
   { repo: "zero-entropy-lab", period: "07/10", clones: 1230, uniqueCloners: 230, views: 10, uniqueVisitors: 4 },
   { repo: "zero-entropy-lab", period: "07/24", clones: 960, uniqueCloners: 140, views: 40, uniqueVisitors: 10 },
   { repo: "zero-entropy-lab", period: "08/07", clones: 1060, uniqueCloners: 250, views: 10, uniqueVisitors: 10 },
+  { repo: "zero-entropy-lab", period: "08/21", clones: 820, uniqueCloners: 190, views: 10, uniqueVisitors: 10 },
 
   // Axiom-0
   { repo: "Axiom-0", period: "04/29", clones: 370, uniqueCloners: 170, views: 100, uniqueVisitors: 10 },
@@ -142,6 +144,7 @@ const rawData: TrafficData[] = [
   { repo: "Axiom-0", period: "07/10", clones: 590, uniqueCloners: 180, views: 8, uniqueVisitors: 6 },
   { repo: "Axiom-0", period: "07/24", clones: 360, uniqueCloners: 110, views: 20, uniqueVisitors: 10 },
   { repo: "Axiom-0", period: "08/07", clones: 560, uniqueCloners: 220, views: 20, uniqueVisitors: 10 },
+  { repo: "Axiom-0", period: "08/21", clones: 710, uniqueCloners: 200, views: 10, uniqueVisitors: 10 },
 
   // reflective-continuum
   { repo: "reflective-continuum", period: "05/28", clones: 450, uniqueCloners: 40, views: 7, uniqueVisitors: 5 },
@@ -150,6 +153,7 @@ const rawData: TrafficData[] = [
   { repo: "reflective-continuum", period: "07/10", clones: 800, uniqueCloners: 270, views: 8, uniqueVisitors: 5 },
   { repo: "reflective-continuum", period: "07/24", clones: 480, uniqueCloners: 170, views: 10, uniqueVisitors: 10 },
   { repo: "reflective-continuum", period: "08/07", clones: 590, uniqueCloners: 300, views: 10, uniqueVisitors: 10 },
+  { repo: "reflective-continuum", period: "08/21", clones: 640, uniqueCloners: 200, views: 8, uniqueVisitors: 8 },
 
   // agent-foundations
   { repo: "agent-foundations", period: "05/28", clones: 80, uniqueCloners: 30, views: 1, uniqueVisitors: 1 },
@@ -158,6 +162,7 @@ const rawData: TrafficData[] = [
   { repo: "agent-foundations", period: "07/10", clones: 450, uniqueCloners: 190, views: 6, uniqueVisitors: 3 },
   { repo: "agent-foundations", period: "07/24", clones: 210, uniqueCloners: 100, views: 10, uniqueVisitors: 10 },
   { repo: "agent-foundations", period: "08/07", clones: 360, uniqueCloners: 230, views: 10, uniqueVisitors: 10 },
+  { repo: "agent-foundations", period: "08/21", clones: 270, uniqueCloners: 120, views: 10, uniqueVisitors: 10 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
