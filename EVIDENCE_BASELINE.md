@@ -1,6 +1,6 @@
 # 2026 Evidence Baseline
 
-- Retrieval date: 2026-08-17
+- Retrieval date: 2026-08-24
 - Scope: external facts and evidence semantics that bound Axiom runtime, research, security, and evaluation claims
 - Policy: an official or primary source informs a bounded local decision; it never certifies this repository by itself
 
@@ -26,6 +26,51 @@ This maintenance intentionally does not create or modify `AGENTS.md`, Jules task
 - [Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) describes evaluation challenges for multi-turn, tool-using, state-changing systems. [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents) says layered safeguards are not guarantees and emphasizes tools, data, permissions, and environment choices.
 - [Anthropic’s 2026 constitution announcement](https://www.anthropic.com/news/claude-new-constitution) notes that model outputs may not always adhere to intended ideals. Prose principles therefore cannot be executable guarantees.
 - [Google DeepMind AlphaEvolve](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) combines language-model proposals with automated evaluators that run and score programs in executable domains. It supports evaluator-backed search as a design reference, not deterministic cognition or universal convergence.
+
+## 2026 protocol, state, and observability calibration
+
+The following primary sources sharpen evidence vocabulary used by the August 1–23 review. They are `REFERENCE_ONLY`: none is an Axiom dependency, implementation claim, or production requirement.
+
+### Model Context Protocol 2026-07-28
+
+- Primary release: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+- The named protocol version adopts a stateless protocol core and removes the prior required `initialize` / `initialized` exchange and `Mcp-Session-Id` mechanism.
+- The same release explicitly distinguishes protocol statelessness from application statelessness: an application may still maintain its own state above the protocol core.
+- Optional discovery, MRTR, routable headers, cacheable list semantics, extensions, authorization hardening, and formal deprecation are version-specific protocol facts.
+
+Axiom use: external reference for keeping protocol/session mechanics separate from application/runtime state and for tying claims to exact protocol versions.
+
+### A2A Protocol v1.0
+
+- Specification: https://a2a-protocol.org/latest/specification/
+- Stable release note: https://a2a-protocol.org/latest/announcing-1.0/
+- A2A v1.0 is the stable production-ready protocol line and distinguishes Agent Cards, stateful Tasks, Messages, Artifacts, Context, streaming, push updates, negotiation, and extensions.
+
+Axiom use: external example of typed lifecycle and identity boundaries. It does not imply that Axiom implements an A2A endpoint or agent runtime.
+
+### OpenAI Agents SDK tracing
+
+- Tracing guide: https://openai.github.io/openai-agents-python/tracing/
+- Tracing API reference: https://openai.github.io/openai-agents-python/ref/tracing/
+- A workflow trace contains related operation spans such as agent, generation, tool/function, handoff, guardrail, task/turn, and custom spans.
+
+Axiom use: trace/span data is one execution-evidence surface. A trace does not independently prove that the resulting outcome is correct, complete, safe, or externally committed.
+
+### Anthropic agent-evaluation decomposition
+
+- Primary guidance: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+- The guidance separates task, trial, grader, transcript/trajectory, outcome, evaluation harness, and agent harness.
+
+Axiom use: trajectory evidence, outcome evidence, grader judgments, and harness assumptions must remain distinguishable when a claim depends on them.
+
+### Google ADK conversational context
+
+- Primary documentation: https://adk.dev/sessions/
+- ADK distinguishes a current Session, session State, and searchable Memory that may span sessions, with separate lifecycle services.
+
+Axiom use: external state-scope vocabulary only. It does not establish an ADK integration or durable-memory implementation in this repository.
+
+Together these sources reinforce a general rule already present in the repository: protocol state, application state, task/context identity, session state, cross-session memory, trace/trajectory, final outcome, grader result, and repository artifact state are not interchangeable evidence surfaces.
 
 ## Research source authority
 
@@ -61,6 +106,26 @@ Required distinctions:
 - `NOT_COMPUTED`, `MISSING_DATA`, rejected observations, unresolved hypotheses, and untested conditions survive aggregation.
 - A later successful run does not erase an earlier error or missing field in the same audit window.
 - A Weekly conclusion cannot be stronger than its strongest traceable supporting evidence without an explicit new evidence record.
+
+## Temporal evidence availability and reconciliation
+
+August 2026 also established a temporal distinction that is orthogonal to source quality and path coverage.
+
+When they materially differ, keep these facts separate:
+
+- logical date or target period
+- original execution state
+- evidence that an artifact was generated
+- delivery / commit / merge state
+- visibility to the aggregation snapshot that actually ran
+- current repository presence
+- substantive evidence completeness
+
+`CURRENT_REPOSITORY_PRESENCE = PRESENT` does not prove that the artifact was available to an earlier Weekly/Monthly snapshot or that its original task executed successfully.
+
+`MISSING_AT_SNAPSHOT` does not prove `NEVER_GENERATED` unless generation history independently supports that conclusion.
+
+Use [ADR-016](ADR/ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md) for the decision boundary and [METH-015](METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) for the reconciliation procedure. A partial August stage audit remains provisional until the natural-month A6 lifecycle closes.
 
 ## Repeated evidence and research novelty
 
