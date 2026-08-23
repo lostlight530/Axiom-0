@@ -31,6 +31,7 @@ Jules-produced research may be interpreted against this topology during later re
 | [ADR-013](./ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md) | Verification and claim scope | Completion/evidence boundary |
 | [ADR-014](./ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md) | Repository knowledge stratification | Cross-layer authority model |
 | [ADR-015](./ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md) | Reference implementation boundary | Library vs production-control ownership |
+| [ADR-016](./ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md) | Temporal evidence availability lifecycle | Execution/delivery/snapshot/current-state separation |
 
 ## Cross-layer rules
 
@@ -45,6 +46,8 @@ ADR-014 defines the authority stratification used by this index:
 
 A change in one layer does not silently rewrite the authority of another. Cross-layer changes should link the affected decision, procedure, contract, and executable evidence as applicable.
 
+ADR-016 adds a temporal rule across those layers: logical date, execution state, generation evidence, delivery/merge visibility, aggregation snapshot, current path presence, and substantive evidence completeness are separate facts when they differ.
+
 These cross-layer rules govern independent repository maintenance; they are not instructions injected into Jules automation.
 
 ## Related navigation
@@ -52,6 +55,7 @@ These cross-layer rules govern independent repository maintenance; they are not 
 - [Engineering specification](../SPECIFICATION.md)
 - [Methodology index](../METHODOLOGY/INDEX.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [2026-08-01 through 2026-08-23 stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
 - [AI use disclosure](../AI_USE_DISCLOSURE.md)
 
-This index is navigation/documentation only. It does not alter executable behavior, create new ADR decisions, or modify Jules automation.
+This index is navigation/documentation only. It does not alter executable behavior, create automation policy, or modify Jules automation.
