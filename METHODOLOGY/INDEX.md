@@ -28,6 +28,7 @@ Jules-produced research may be reviewed against these procedures after generatio
 | [METH-012](./METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) | Zero-trust resource allocation | Resource/authority methodology |
 | [METH-013](./METH-013-STRICT-DATA-DEDUPLICATION.md) | Strict data deduplication | Duplicate/evidence hygiene procedure |
 | [METH-014](./METH-014-GROUNDEDNESS-RULE.md) | Groundedness rule | Source/claim grounding procedure |
+| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Historical evidence reconciliation | Execution/delivery/snapshot history reconstruction |
 
 ## Authority boundary
 
@@ -40,6 +41,9 @@ A procedure may propose additional evidence or checks. It may not silently:
 - strengthen an evidence state beyond its source
 - turn a heuristic or threshold into a universal mathematical law
 - modify separately owned research, automation, or presentation layers without explicit scope
+- backdate a later reconciliation as if it were an original execution result
+
+METH-015 implements ADR-016 by separating logical date, execution evidence, generation/delivery history, aggregation-snapshot visibility, current path presence, and substantive evidence completeness.
 
 These authority rules govern independent repository maintenance; they are not injected into Jules automation unless a Jules instruction surface is separately changed.
 
@@ -48,6 +52,7 @@ These authority rules govern independent repository maintenance; they are not in
 - [Architecture decision index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [2026-08-01 through 2026-08-23 stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
 - [Contributing](../CONTRIBUTING.md)
 
 This index is navigation/documentation only and introduces no executable methodology or Jules automation change.
