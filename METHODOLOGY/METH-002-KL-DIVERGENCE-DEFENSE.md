@@ -1,87 +1,71 @@
 # KL divergence evaluation
 
 - Method version: 2026-08-24
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Implementation anchor: `CODE/contracts.py`
+- Evidence surface: exact vectors/cases emitted by the relevant calculation or research record
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内计算、记录并解释 KL 散度，产生可复现、可审查的数值证据，不把有限输入上的结果扩张成仓库级“零熵”或通用正确性保证。
+Compute and interpret `D_KL(P || Q)` only for explicitly identified probability vectors under the repository's implemented numeric contract.
 
-[EN] Compute, record, and interpret KL divergence within a declared scope. The method produces reproducible numeric evidence for specified inputs; it does not turn a bounded result into a repository-wide zero-entropy, safety, or correctness guarantee.
+The method produces a bounded numeric observation. It does not establish repository-wide zero entropy, semantic truth, safety, or convergence.
 
-## 输入 / Inputs
+## Inputs
 
-[CN]
-
-- 两个等长、非空、有限、非负向量 `P` 与 `Q`
-- 各向量对应的样本来源、单位与语义
-- 明确的方向 `D_KL(P || Q)`
-- 如需判定阈值，必须提前声明阈值、适用范围和依据
-
-[EN]
-
-- equal-length, non-empty, finite, non-negative vectors `P` and `Q`
-- sample provenance, units, and semantics for both vectors
+- equal-length, non-empty numeric vectors `P` and `Q`
+- provenance/meaning of both vectors
 - explicit direction `D_KL(P || Q)`
-- when a decision threshold is used, a predeclared threshold, scope, and rationale
+- the implementation revision
+- any comparison threshold, if a threshold is actually part of the claim being evaluated
 
-Inputs remain untrusted until type, range, provenance, and authority checks pass.
+## Implemented validation
 
-## 步骤 / Procedure
+`normalize_distribution()` requires:
 
-1. Validate equal non-zero length and reject negative, NaN, or infinite values.
-2. Require strictly positive total mass for both vectors.
-3. Normalize with a numerically stable summation method.
-4. Compute
+- non-empty numeric input
+- no booleans
+- finite, non-negative values
+- positive total mass
 
-   `D_KL(P || Q) = Σ_i p_i * ln(p_i / q_i)`
+`kl_divergence()` additionally requires equal vector length.
 
-   for terms where `p_i > 0`.
-5. If `p_i > 0` while `q_i = 0`, report `+∞` as a support mismatch rather than smoothing it away silently.
-6. Record the direction, normalized inputs or their reproducible fixture/digest, unit (`nats` when using the natural logarithm), result, implementation revision, and execution context.
-7. Compare with a threshold only when that threshold was declared before observing the result and is valid for the same measurement definition.
-8. Keep the observed scalar separate from any interpretation such as drift, anomaly, safety, correctness, or convergence.
+Normalization uses `math.fsum` and the implemented logarithm is natural log, so finite results are in nats.
 
-## 输出 / Outputs
+## Procedure
 
-[CN] 输出必须包含：数值结果或 `+∞`、方向、单位、输入/样本范围、有效性状态、阈值（如使用）、执行或计算证据，以及未覆盖边界。
+1. Validate both vectors under `normalize_distribution()`.
+2. Normalize both vectors.
+3. Compute `D_KL(P || Q)` in the implemented direction.
+4. Terms with `p_i = 0` contribute zero.
+5. If `p_i > 0` while `q_i = 0`, report `+∞`; do not silently smooth the support mismatch.
+6. Record exact vector/case identity, direction, unit, result, and implementation revision.
+7. If a threshold is used, keep the threshold interpretation separate from the raw scalar.
 
-[EN] Output MUST include the numeric result or `+∞`, direction, unit, input/sample scope, validity state, threshold when used, execution/computation evidence, and untested boundary.
+## Outputs
 
-`D_KL = 0.0` means zero divergence only for the recorded `P` and `Q` after the declared normalization. It is not evidence of repository-wide mathematical zero entropy.
+- finite KL value in nats or `+∞`
+- direction `P || Q`
+- exact input/case identity or reproducible fixture identity
+- validation state
+- threshold interpretation only when applicable
+- unresolved or missing evidence fields
 
-## 失败条件 / Failure conditions
+## Failure conditions
 
-Fail closed when any material condition applies:
+Do not report a valid scalar when:
 
-- vectors are empty or have unequal length
-- a value is negative, NaN, or infinite
+- input is empty
+- lengths differ
+- values are negative, NaN, infinite, or boolean
 - either vector has zero total mass
-- direction is omitted or later reversed without a new calculation
-- support mismatch is silently converted to a finite value
-- a threshold is selected after seeing the result and then presented as predeclared
-- the numeric value is claimed without emitted or independently reproducible numeric evidence
-- a bounded result is promoted to an unrelated semantic, safety, or system-wide conclusion
+- direction is unknown
+- support mismatch is silently converted to a finite result
+- a historical artifact contains only a success label but no recoverable numeric result
 
-## 度量 / Measures
+## Interpretation boundary
 
-Track separately:
+`D_KL = 0.0` means zero divergence only for the recorded normalized `P` and `Q`.
 
-- numeric `D_KL` observations
-- invalid-input rate
-- support-mismatch count
-- threshold crossings when a valid threshold exists
-- baseline/version drift
-- missing or non-computable evidence fields
+Historical `identity` and `renormalized_identity` cases therefore remain case-specific evidence. A field such as `Actual Input Range: 0.0 to 0.0` is output/result-like wording and must not substitute for the actual input vectors or named case identity.
 
-These diagnose the declared procedure; no metric alone proves safety, truth, determinism, or convergence.
-
-## August 2026 calibration
-
-Several August Daily manifests record `D_KL = 0.0` for hard-coded `identity` and `renormalized_identity` cases. Those observations support only those recorded cases. Fields such as `Actual Input Range: 0.0 to 0.0` are not a valid description of the input vectors and must not be reused as input provenance; the persisted `KL_EVIDENCE` case names are the stronger available evidence when present.
-
-A weekly aggregate may summarize numeric Daily evidence only when the contributing numeric observations are actually persisted. An exit code or `KL contract: passed` message alone must not be converted into an unrecorded scalar.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command or calculation path, exit code when applicable, emitted numeric evidence, artifact, and untested boundary. Review after a contract change, measurement-definition change, material failure, or evidence expiry.
+A weekly summary may preserve a Daily scalar only when the scalar is actually present in the contributing evidence. Missing numerical evidence remains `MISSING_DATA` or `NOT_COMPUTED` rather than being reconstructed from a pass/fail label.
