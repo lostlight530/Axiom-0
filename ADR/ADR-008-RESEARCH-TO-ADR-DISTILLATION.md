@@ -1,38 +1,41 @@
 # Research-to-decision distillation
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `RESEARCH/**` → `ADR/**` interpretation boundary
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Historical research artifacts can mix local observations, external-source summaries, hypotheses, generated interpretation, and provisional proposals.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+Copying research prose directly into an ADR would collapse those evidence classes into policy.
 
-## 背景 / Context
+## Decision
 
-[CN] Research notes mix observations, quotations, interpretations, and proposals. Copying them into an ADR imports uncertainty as policy.
+An ADR is a repository-specific decision, not a research summary.
 
-[EN] Research notes mix observations, quotations, interpretations, and proposals. Copying them into an ADR imports uncertainty as policy.
+Before a research proposition becomes an ADR decision:
 
-## 决策 / Decision
+1. identify the concrete repository problem or capability boundary
+2. identify whether the proposition is local observation, external support, or proposal
+3. recheck material source identity/version when external evidence matters
+4. map the decision to an existing implementation surface or explicitly state `NOT_IMPLEMENTED` / caller-owned scope
+5. record alternatives and limitations that materially affect the decision
+6. make one bounded repository decision
 
-[CN] An ADR cites primary sources, states retrieval date and applicability, records counterevidence, and makes a repository-specific decision. Source material remains unchanged; the ADR is independently reviewable.
+Historical research remains historical evidence and is not rewritten to make the ADR appear to have existed earlier.
 
-[EN] An ADR cites primary sources, states retrieval date and applicability, records counterevidence, and makes a repository-specific decision. Source material remains unchanged; the ADR is independently reviewable.
+## Consequences
 
-## 后果 / Consequences
+ADRs become stable explanations of actual repository architecture rather than containers for transient research language.
 
-[CN] Distillation is slower but policy becomes traceable and replaceable.
+## Evidence boundary
 
-[EN] Distillation is slower but policy becomes traceable and replaceable.
+A source can justify an architectural rationale without proving that Axiom implements the sourced mechanism.
 
-## 验证 / Verification
+An ADR can document a non-implementation boundary, but it must not imply that a missing runtime feature exists.
 
-[CN] Reviewers follow each normative claim to repository evidence or a primary source and verify the decision does not exceed it.
+## Temporal boundary
 
-[EN] Reviewers follow each normative claim to repository evidence or a primary source and verify the decision does not exceed it. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+Later ADR distillation changes current architecture interpretation only. It does not backdate a decision into earlier Daily/Weekly evidence.
