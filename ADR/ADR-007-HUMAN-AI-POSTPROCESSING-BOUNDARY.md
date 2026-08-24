@@ -1,38 +1,39 @@
-# Accountable human review boundary
+# Generated content is evidence input, not repository authority
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `RESEARCH/**`, ADR/Methodology/Evidence interpretation layers
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Generated text or code can be plausible while wrong. A generated completion statement is not itself proof of execution, correctness, source validity, safety, or implementation status.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+Axiom stores historical research artifacts alongside a narrower executable reference core. Those surfaces must remain distinct.
 
-## 背景 / Context
+## Decision
 
-[CN] Generated text and code may be plausible while incorrect. A model response is not approval, evidence, or a security decision.
+Treat generated material as an input to repository review and evidence interpretation.
 
-[EN] Generated text and code may be plausible while incorrect. A model response is not approval, evidence, or a security decision.
+For material claims:
 
-## 决策 / Decision
+- separate locally observed behavior from externally supported propositions
+- preserve source identity/version where external evidence is used
+- keep implementation status tied to concrete code paths
+- preserve unresolved, contested, missing, or temporally conflicting evidence instead of normalizing it into success
 
-[CN] The contributor owns scope, source verification, tests, and disclosure. High-impact permission, release, security, and destructive decisions require accountable human review. AI output remains untrusted input until validated.
+A later correction may supersede the **current interpretation** of historical generated text without rewriting the fact that the earlier artifact existed.
 
-[EN] The contributor owns scope, source verification, tests, and disclosure. High-impact permission, release, security, and destructive decisions require accountable human review. AI output remains untrusted input until validated.
+## Consequences
 
-## 后果 / Consequences
+Research history stays inspectable while executable and evidentiary authority remain explicit.
 
-[CN] Review costs remain visible; responsibility cannot be delegated to a model.
+## Evidence boundary
 
-[EN] Review costs remain visible; responsibility cannot be delegated to a model.
+AI-generated prose, summaries, code suggestions, or completion language are not evidence by themselves.
 
-## 验证 / Verification
+The relevant evidence surface is the actual repository artifact, emitted result, primary source, or historical record that supports the claim.
 
-[CN] PR template records evidence class, commands, security impact, and unrun checks.
+## Public-boundary rule
 
-[EN] PR template records evidence class, commands, security impact, and unrun checks. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+Repository documents may expose bounded evidence outcomes and current interpretation. They do not expose private prompts, hidden reasoning, confidential context, private memory, or unpublished automation strategy.
