@@ -1,38 +1,45 @@
 # Indexes are derived navigation
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: repository index/navigation files
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Indexes and navigation pages can lag the files they point to. Treating an index as stronger authority than the addressed artifact creates conflicts between navigation and content.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+## Decision
 
-## 背景 / Context
+Indexes are derived, non-normative views.
 
-[CN] Navigation files can lag canonical artifacts and are also maintained by separate automation. Treating an index as authority creates conflicts.
+Current semantic authority remains in the addressed artifact:
 
-[EN] Navigation files can lag canonical artifacts and are also maintained by separate automation. Treating an index as authority creates conflicts.
+- implementation behavior → `CODE/**`
+- behavioral interpretation → `SPECIFICATION.md`
+- architectural decision → exact ADR file
+- procedure → exact Methodology file
+- external-source/evidence semantics → `EVIDENCE_BASELINE.md`
+- historical observation → exact `RESEARCH/**` artifact or explicit reconciliation
 
-## 决策 / Decision
+An index may summarize those surfaces but must not silently create, strengthen, or retire a claim.
 
-[CN] Canonical authority stays in the addressed file and tests. Indexes are derived, non-normative views updated only by their owning workflow. This change deliberately does not edit Jules-maintained indexes.
+## Consequences
 
-[EN] Canonical authority stays in the addressed file and tests. Indexes are derived, non-normative views updated only by their owning workflow. This change deliberately does not edit Jules-maintained indexes.
+Readers follow the addressed file when an index and artifact disagree.
 
-## 后果 / Consequences
+Navigation can be refreshed independently without changing runtime or evidence semantics.
 
-[CN] Readers must follow links to authoritative content; automation ownership remains separated.
+## Evidence boundary
 
-[EN] Readers must follow links to authoritative content; automation ownership remains separated.
+Index completeness proves navigation coverage only. It does not prove:
 
-## 验证 / Verification
+- implementation completeness
+- research completeness
+- source correctness
+- successful execution
+- semantic consistency of every linked file
 
-[CN] Diff review confirms protected indexes are untouched and no validator derives policy from them.
+## Public-boundary rule
 
-[EN] Diff review confirms protected indexes are untouched and no validator derives policy from them. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+Navigation documents describe repository structure only. They do not carry private prompts, hidden reasoning, future control strategy, or unpublished automation instructions.
