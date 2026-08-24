@@ -1,44 +1,43 @@
 # Claim groundedness review
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Scope: repository research, ADR, specification, and evidence interpretation
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Determine whether a material claim is supported at the exact strength and scope in which it is written.
 
-[EN] Apply claim groundedness review without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- claim text
+- repository implementation status relevant to the claim
+- cited source or local reproducer/evidence
+- source/version identity where material
+- historical/current interpretation context
 
-[CN] claim, scope, evidence state, source/reproducer, owner, review date, disconfirming condition。
+## Procedure
 
-[EN] claim, scope, evidence state, source/reproducer, owner, review date, disconfirming condition. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. Decompose compound claims into separately checkable propositions when needed.
+2. Identify whether each proposition is about local implementation, local observation, external research, or inference.
+3. For local implementation claims, require a concrete executable artifact.
+4. For external claims, prefer the strongest appropriate source for the exact proposition and preserve the source's assumptions/domain.
+5. Keep source identity verification separate from claim-support verification.
+6. Narrow or relabel a claim when the source supports only a weaker proposition.
+7. Record `SOURCE_CLAIM_MISMATCH`, `UNVERIFIED`, `HYPOTHESIS`, or other bounded states instead of forcing binary true/false.
+8. Preserve historical wording through an erratum/reconciliation when silent rewriting would falsify chronology.
 
-## 步骤 / Procedure
+## Outputs
 
-[CN] decompose; find primary evidence; record applicability/counterevidence; narrow wording; label proposals; retire stale claims。
+- bounded proposition
+- evidence/source identity
+- claim-support state
+- implementation state
+- limitations/unresolved dimensions
 
-[EN] decompose; find primary evidence; record applicability/counterevidence; narrow wording; label proposals; retire stale claims. Record every material choice with owner and revision.
+## Failure conditions
 
-## 输出 / Outputs
+The review is incomplete when the citation does not support the proposition, an inference is presented as observation, a local implementation claim lacks an implementation anchor, or source/version identity is unresolved and material to the claim.
 
-[CN] observable, sourced, falsifiable, time-bounded claim record。
+## Evidence boundary
 
-[EN] observable, sourced, falsifiable, time-bounded claim record. Distinguish observed result, external support, proposal, and uncertainty.
-
-## 失败条件 / Failure conditions
-
-[CN] 出现以下情况必须失败关闭：citation mismatch, inference presented as observation, no disconfirmation, or expired review。
-
-[EN] Fail closed on citation mismatch, inference presented as observation, no disconfirmation, or expired review. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] unsupported claims, citation validity, review age。
-
-[EN] Track unsupported claims, citation validity, review age. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+Groundedness review can bound what the evidence supports. It does not make the cited source infallible or prove untested local behavior.
