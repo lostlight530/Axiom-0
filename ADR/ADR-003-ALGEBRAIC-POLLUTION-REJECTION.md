@@ -1,38 +1,43 @@
-# Fail-closed numeric contracts
+# Fail-closed probability and KL input contracts
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `CODE/contracts.py`
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+KL divergence is defined over probability measures. Negative values, non-finite values, empty vectors, unequal lengths, and zero-total mass are invalid inputs for the repository's implementation.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+## Decision
 
-## 背景 / Context
+Centralize the implemented numeric contract in `CODE/contracts.py`.
 
-[CN] KL calculations previously accepted negative and non-finite values and treated zero-total inputs inconsistently. Those are invalid probability measures.
+`normalize_distribution(values, name=...)`:
 
-[EN] KL calculations previously accepted negative and non-finite values and treated zero-total inputs inconsistently. Those are invalid probability measures.
+- requires a non-empty numeric sequence
+- rejects booleans
+- rejects negative, NaN, and infinite values
+- requires positive total mass
+- normalizes with `math.fsum`
 
-## 决策 / Decision
+`kl_divergence(p, q)`:
 
-[CN] Centralize validation in `CODE/contracts.py`: equal non-empty length, finite non-negative values, positive mass, normalization with `math.fsum`, and infinity for P support absent from Q.
+- requires equal vector length
+- computes `D_KL(P||Q)` after validation/normalization
+- ignores P-zero terms as zero contribution
+- returns positive infinity when P has positive mass where Q has zero mass
 
-[EN] Centralize validation in `CODE/contracts.py`: equal non-empty length, finite non-negative values, positive mass, normalization with `math.fsum`, and infinity for P support absent from Q.
+No silent smoothing is part of this contract.
 
-## 后果 / Consequences
+## Consequences
 
-[CN] Invalid telemetry stops evaluation instead of producing a comforting score.
+Invalid numeric evidence fails explicitly instead of producing a finite score that could be misinterpreted as coherence.
 
-[EN] Invalid telemetry stops evaluation instead of producing a comforting score.
+## Evidence boundary
 
-## 验证 / Verification
+A successful calculation establishes only the numeric result for the supplied vectors under the current implementation.
 
-[CN] `tests/test_contracts.py` covers identity, renormalization, invalid values, and support mismatch.
+It does not establish semantic truth, safety, or system-level convergence.
 
-[EN] `tests/test_contracts.py` covers identity, renormalization, invalid values, and support mismatch. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+`scan_kl_divergence.py` is one measurement surface over named cases; it is not a general proof of repository correctness.
