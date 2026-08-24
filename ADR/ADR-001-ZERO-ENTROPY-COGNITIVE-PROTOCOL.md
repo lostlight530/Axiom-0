@@ -1,38 +1,50 @@
-# Entropy as a measured risk signal
+# Entropy and divergence are scoped measurements
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `CODE/contracts.py`, `scan_kl_divergence.py`; heuristic metric input in `CODE/liquid_morphing.py`
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+“Zero entropy” remains project vocabulary, not an implemented guarantee of deterministic cognition, zero semantic drift, safety, or universal convergence.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+The repository currently contains two different uses of entropy-like language:
 
-## 背景 / Context
+1. `kl_divergence(P, Q)` in `CODE/contracts.py`, which computes a precise probability-distribution divergence in nats
+2. `SystemMetrics.entropy_level` in `CODE/liquid_morphing.py`, which is a caller-supplied scalar in `[0,1]` used by a heuristic morphing policy
 
-[CN] “Zero entropy” is retained only as project vocabulary. Real agent runs contain model, tool, network, data, and scheduler variability; the repository has no evidence for universal deterministic cognition.
+These are not the same measurement.
 
-[EN] “Zero entropy” is retained only as project vocabulary. Real agent runs contain model, tool, network, data, and scheduler variability; the repository has no evidence for universal deterministic cognition.
+## Decision
 
-## 决策 / Decision
+Axiom MUST name the exact measurement before interpreting an entropy/divergence result.
 
-[CN] Treat entropy and divergence as named, unit-bearing measurements with declared samples, baselines, thresholds, and error behavior. Never use a zero score as proof of truth, safety, or convergence.
+For KL evidence:
 
-[EN] Treat entropy and divergence as named, unit-bearing measurements with declared samples, baselines, thresholds, and error behavior. Never use a zero score as proof of truth, safety, or convergence.
+- state the direction `D_KL(P||Q)`
+- preserve exact input identity or reproducible fixture identity
+- state unit (`nats` for the implemented natural-log calculation)
+- treat support mismatch as `+∞` under the implemented contract
+- scope any threshold to the declared comparison
 
-## 后果 / Consequences
+For `SystemMetrics.entropy_level`:
 
-[CN] This removes a strong slogan as an engineering guarantee, but makes results falsifiable and comparable.
+- treat it as an implementation-specific input variable
+- do not call it Shannon entropy or KL divergence unless the caller explicitly computes and supplies such a quantity under a declared contract
 
-[EN] This removes a strong slogan as an engineering guarantee, but makes results falsifiable and comparable.
+A zero value from either surface never proves repository-wide truth, safety, determinism, or convergence.
 
-## 验证 / Verification
+## Consequences
 
-[CN] Unit tests cover normalization, support mismatch, and configured divergence limits; reviews reject absolute claims.
+The project keeps its conceptual vocabulary while research and engineering claims become falsifiable against concrete code paths.
 
-[EN] Unit tests cover normalization, support mismatch, and configured divergence limits; reviews reject absolute claims. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+## Evidence boundary
 
-## 例外 / Exceptions
+`scan_kl_divergence.py` can support the named cases it emits. A historical `D_KL = 0.0` supports only its recorded input pair/case.
 
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+`SystemMetrics.entropy_level` participates only in local heuristic state selection; it is not a scientific system-health metric by default.
+
+## Non-implementation boundary
+
+Axiom contains no global entropy monitor, no cognitive-state estimator, and no mechanism that proves “zero entropy” for the repository or an external agent system.
