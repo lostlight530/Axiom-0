@@ -1,44 +1,44 @@
-# Threshold calibration and review
+# Threshold interpretation is surface-specific
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Scope: numeric/research interpretation across `contracts.py` and `liquid_morphing.py`
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Prevent one threshold from being treated as a universal repository law when Axiom contains different measurement surfaces with different semantics.
 
-[EN] Apply threshold calibration and review without turning a bounded procedure into a universal guarantee.
+## Repository surfaces
 
-## 输入 / Inputs
+### KL divergence
 
-[CN] labelled validation data, error costs, baseline, owner。
+`CODE/contracts.py` computes a scalar `D_KL(P || Q)` but does not define one universal pass/fail threshold for all claims.
 
-[EN] labelled validation data, error costs, baseline, owner. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+### Morphing heuristics
 
-## 步骤 / Procedure
+`CODE/liquid_morphing.py` contains implementation-specific thresholds/weights used to select a local state label from `SystemMetrics`.
 
-[CN] preselect candidates; report sensitivity; validate out of sample; scope and expire; monitor drift; suspend when assumptions fail。
+These thresholds are heuristic control parameters, not scientific proofs of entropy, safety, or optimality.
 
-[EN] preselect candidates; report sensitivity; validate out of sample; scope and expire; monitor drift; suspend when assumptions fail. Record every material choice with owner and revision.
+## Procedure
 
-## 输出 / Outputs
+1. Identify the exact metric and code surface.
+2. Record the threshold value only if it is actually part of that surface or the evidence artifact.
+3. State whether the threshold is an implementation heuristic, a research decision rule, or an externally sourced criterion.
+4. Keep the raw measurement separate from the threshold-crossing interpretation.
+5. Do not transfer a threshold between KL evidence and morphing metrics merely because both use entropy-related vocabulary.
+6. When no threshold is defined for the claim, report the scalar without inventing one.
 
-[CN] versioned threshold with tradeoffs and review date。
+## Outputs
 
-[EN] versioned threshold with tradeoffs and review date. Distinguish observed result, external support, proposal, and uncertainty.
+- metric identity
+- raw value where available
+- threshold and source, when applicable
+- interpretation limited to that metric/surface
 
-## 失败条件 / Failure conditions
+## Failure conditions
 
-[CN] 出现以下情况必须失败关闭：universal 0.05 assumed, same data tunes and scores, or drift ignored。
+The method fails when a generic threshold is asserted without a source, when one metric's threshold is applied to another metric, or when a threshold crossing is promoted to safety/truth/convergence.
 
-[EN] Fail closed on universal 0.05 assumed, same data tunes and scores, or drift ignored. Partial output is incomplete and cannot trigger consequential automation.
+## Evidence boundary
 
-## 度量 / Measures
-
-[CN] precision/recall, calibration error, drift, overrides。
-
-[EN] Track precision/recall, calibration error, drift, overrides. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+Thresholds classify under their declared rule. They do not independently validate the world-state or the correctness of the underlying model.
