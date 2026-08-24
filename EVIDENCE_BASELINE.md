@@ -14,8 +14,8 @@ This maintenance intentionally does not create or modify `AGENTS.md`, Jules task
 
 ## Runtime and automation
 
-- [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) is the current stable documentation line used by this baseline. CI also verifies 3.12 compatibility; recheck lifecycle status when changing the matrix.
-- [GitHub secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) identifies a full commit SHA as the immutable action reference and recommends minimum `GITHUB_TOKEN` permissions. Axiom pins official actions and isolates Pages write authority to deployment.
+- [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) is the current stable documentation line used by this baseline. Python 3.12 also appears in persisted August execution environments. Version support or compatibility MUST be claimed only from the exact verification evidence actually recorded for the relevant revision; this baseline does not assert a CI test matrix.
+- [GitHub secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) identifies a full commit SHA as the immutable action reference and recommends minimum `GITHUB_TOKEN` permissions. This is external operational guidance; referencing it does not authorize, add, or modify CI/workflow policy in this maintenance.
 - [SLSA v1.2](https://slsa.dev/spec/v1.2/) informs provenance vocabulary. Axiom does not claim an SLSA level because it has not produced the required attestation chain.
 
 ## Agent and AI claim boundaries
@@ -91,6 +91,7 @@ Bibliographic fields are not interchangeable.
 - A page modification timestamp must not be presented as the original publication or creation date.
 - If a source identifies an explicit version, the recorded date must belong to that version rather than being inherited from v1 or from the current page metadata.
 - If exact version/date pairing cannot be verified, record `VERSION_DATE_NOT_VERIFIED` rather than guessing.
+- If a persisted check/observation time precedes the same record's material source-event/publication time, classify the observation as `TEMPORAL_PROVENANCE_CONFLICT` until independent history resolves the timestamps.
 
 For Python PEPs, use the PEP metadata fields directly. For example, PEP 8 records `Created: 05-Jul-2001`; its line-length guidance also explicitly allows a team-agreed code limit up to 99 characters while the standard library remains at 79. See https://peps.python.org/pep-0008/.
 
@@ -115,6 +116,8 @@ When they materially differ, keep these facts separate:
 
 - logical date or target period
 - original execution state
+- execution/check timestamp
+- source event/publication timestamp
 - evidence that an artifact was generated
 - delivery / commit / merge state
 - visibility to the aggregation snapshot that actually ran
@@ -124,6 +127,8 @@ When they materially differ, keep these facts separate:
 `CURRENT_REPOSITORY_PRESENCE = PRESENT` does not prove that the artifact was available to an earlier Weekly/Monthly snapshot or that its original task executed successfully.
 
 `MISSING_AT_SNAPSHOT` does not prove `NEVER_GENERATED` unless generation history independently supports that conclusion.
+
+A source event dated after the persisted observation time cannot be treated as temporally valid observation evidence without an independently resolved timestamp history.
 
 Use [ADR-016](ADR/ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md) for the decision boundary and [METH-015](METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) for the reconciliation procedure. A partial August stage audit remains provisional until the natural-month A6 lifecycle closes.
 
@@ -147,6 +152,7 @@ A numeric result belongs to the executed input and harness.
 - `D_KL = 0.0` means zero divergence for the explicitly recorded test case or input scope; it is not repository-wide mathematical zero entropy.
 - `100 / 100 specified executions passed` means all specified executions in that run passed. It does not establish exhaustive state-space coverage, absence of uncovered conditions, universal determinism, or future correctness.
 - An exit code alone does not justify a numeric result unless the numeric evidence is emitted or independently computed and recorded.
+- A phrase such as `Actual Input Range: 0.0 to 0.0` is not valid input provenance when the emitted evidence instead identifies named test cases; output values and input identity must remain separate.
 - Missing timing, coverage, exception, or environmental evidence stays missing; it is not reconstructed after the fact.
 
 ## Local consequences
