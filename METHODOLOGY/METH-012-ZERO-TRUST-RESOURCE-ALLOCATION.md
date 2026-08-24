@@ -1,44 +1,47 @@
-# Budgeted resource allocation
+# Resource allocation and quota control are not implemented by the reference core
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Implementation status: `NOT_IMPLEMENTED_IN_REFERENCE_CORE`
+- Historical filename retained for continuity
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Prevent generic resource-governance guidance from being mistaken for an Axiom runtime capability.
 
-[EN] Apply budgeted resource allocation without turning a bounded procedure into a universal guarantee.
+## Repository fact
 
-## 输入 / Inputs
+The current reference core does not provide:
 
-[CN] task risk, CPU/memory/time/network/cost budgets, concurrency, cancellation。
+- worker-pool management
+- queue scheduling
+- CPU/memory quota enforcement
+- network policy
+- cost metering
+- deadline propagation
+- cancellation trees
+- external spend authorization
 
-[EN] task risk, CPU/memory/time/network/cost budgets, concurrency, cancellation. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+`SystemMetrics` contains resource-like scalar inputs for local heuristic state selection, but it does not enforce those resources.
 
-## 步骤 / Procedure
+## Interpretation method
 
-[CN] choose minimum capability; bound workers and queues; propagate deadlines; cancel children; meter calls; degrade explicitly; emit safe events。
+When research discusses resource allocation:
 
-[EN] choose minimum capability; bound workers and queues; propagate deadlines; cancel children; meter calls; degrade explicitly; emit safe events. Record every material choice with owner and revision.
+1. distinguish **observed/caller-supplied metrics** from **enforced quotas**
+2. treat Axiom's resource fields as heuristic inputs only
+3. label external quota/scheduling patterns as `REFERENCE_ONLY`
+4. do not infer resource governance from state-label changes
 
-## 输出 / Outputs
+## Outputs
 
-[CN] result or typed exhaustion with consumption and retry guidance。
+- exact local metric surface, if relevant
+- explicit `NOT_IMPLEMENTED` status for enforcement
+- bounded external-reference mapping
 
-[EN] result or typed exhaustion with consumption and retry guidance. Distinguish observed result, external support, proposal, and uncertainty.
+## Failure conditions
 
-## 失败条件 / Failure conditions
+The method fails when documentation claims quota enforcement, cost control, concurrency management, or cancellation semantics without an executable implementation.
 
-[CN] 出现以下情况必须失败关闭：unbounded workers, ignored cancellation, silent partial result, or unauthorized spend。
+## Evidence boundary
 
-[EN] Fail closed on unbounded workers, ignored cancellation, silent partial result, or unauthorized spend. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] peak workers, timeouts, queue depth, external cost。
-
-[EN] Track peak workers, timeouts, queue depth, external cost. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+A recorded CPU/memory scalar can describe one input value. It cannot prove that the repository constrained the underlying resource.
