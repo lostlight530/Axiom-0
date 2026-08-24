@@ -1,38 +1,43 @@
-# Least-authority tool execution
+# Tool execution is outside the Axiom reference core
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted as a non-implementation boundary
+- Implementation anchor: none; caller-owned concern
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+The Axiom executable core does not implement a general-purpose tool executor, permission broker, credential manager, shell runner, browser controller, or external-effect runtime.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+Earlier “zero-trust tool execution” wording could be misread as a local capability.
 
-## 背景 / Context
+## Decision
 
-[CN] Tool parameters and outputs cross trust boundaries. Prompt text, web content, and generated commands can contain hostile instructions.
+Treat tool authority and external-effect control as **embedding-system responsibilities**, not implemented Axiom features.
 
-[EN] Tool parameters and outputs cross trust boundaries. Prompt text, web content, and generated commands can contain hostile instructions.
+If an external system embeds Axiom alongside consequential tools, that external system should independently own concerns such as:
 
-## 决策 / Decision
+- authenticated actor identity
+- allowed operation and target scope
+- argument validation
+- credential and filesystem/network scope
+- time/cost/resource limits
+- confirmation for destructive/external effects where appropriate
+- result/side-effect verification
+- secret-safe logging
 
-[CN] Validate structured inputs; allowlist capabilities; scope credentials, filesystem, network, time, and cost; require confirmation for destructive or external effects; sanitize logs; retain replay identifiers without secrets.
+These are architecture boundaries, not local runtime mechanisms.
 
-[EN] Validate structured inputs; allowlist capabilities; scope credentials, filesystem, network, time, and cost; require confirmation for destructive or external effects; sanitize logs; retain replay identifiers without secrets.
+## Consequences
 
-## 后果 / Consequences
+Axiom can remain a small reference library without implying security controls it does not contain.
 
-[CN] Some operations require extra approval and may fail closed.
+## Evidence boundary
 
-[EN] Some operations require extra approval and may fail closed.
+The absence of arbitrary command/network execution in the current reference core is a local code property.
 
-## 验证 / Verification
+It does not prove that every embedding system is safe, least-privileged, or correctly authorized.
 
-[CN] Security review exercises denied paths, quota/time limits, redacted logs, and deterministic error types.
+## Non-implementation rule
 
-[EN] Security review exercises denied paths, quota/time limits, redacted logs, and deterministic error types. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+Do not cite this ADR as evidence that Axiom implements tool authorization, sandboxing, external-effect confirmation, or security enforcement.
