@@ -4,46 +4,78 @@
 - Review calibration: 2026-08-24
 - Scope: Axiom-0 reference contracts, methods, code, and evidence claims
 
-## 状态 / Status
+## Status
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Accepted.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+## Context
 
-## 背景 / Context
+A single check, scan, metric, retained result, or point-in-time research artifact supports only the property it actually observes under the revision/configuration it actually addresses.
 
-[CN] 单个检查、测试、扫描或指标只能证明其实际覆盖的配置和属性。历史表述曾把启发式演示推广为通用安全、确定性或收敛结论。
+Repository evidence surfaces are heterogeneous. They must not be collapsed into one generic `verified` state.
 
-[EN] A single check, test, scan, or metric supports only the configuration and property it actually covers. Historical wording generalized heuristic demonstrations into universal safety, determinism, or convergence claims.
+## Decision
 
-## 决策 / Decision
+Every material verification/completion claim identifies:
 
-[CN] 每个完成或验证声明应明确关联到具体产物/修订、实际证据面、结果与未覆盖边界。行为证据、结构扫描、数值测量、安全论证和科学证据不得互相替代。
-
-[EN] Every completion or verification claim must identify the concrete artifact/revision, the evidence surface actually used, its result, and the unobserved boundary. Behavioral evidence, structural scans, numerical measurements, security arguments, and scientific evidence are not interchangeable.
+- concrete artifact or revision
+- exact evidence surface used
+- property actually checked
+- result actually retained/observed
+- material unobserved boundary
 
 File presence, configuration presence, historical prose, or a generated completion statement is not execution evidence by itself.
 
-## 后果 / Consequences
+## Current evidence-surface map
 
-[CN] 报告会更窄，但能明确回答“到底验证了什么”。
+### `scan_kl_divergence.py`
 
-[EN] Reports become narrower but can state exactly what was established.
+Supports only its implemented named KL cases and support-mismatch calculation.
 
-## 验证 / Verification
+It can provide numeric evidence for those cases; it does not establish repository-wide zero entropy or general correctness.
 
-Use the evidence surface appropriate to the claim and retain the result when the result matters to a later claim.
+### `scan_consistency.py`
 
-Examples:
+This is a **legacy structural scanner**.
 
-- `scan_kl_divergence.py` supports its recorded KL cases
-- `scan_consistency.py` supports the document-structure properties it checks
-- `code_compliance.py` supports only the declared source-pattern rules it scans
-- `scope_guard.py` supports only the declared path boundary it evaluates
-- a research record supports its own point-in-time observation subject to source/provenance reconciliation
+Current code is hard-coded for:
 
-A passing result is evidence for the stated property and revision only; it is not a universal guarantee.
+- 15 ADR files
+- 14 Methodology files
+- the older bilingual heading set
 
-## 例外 / Exceptions
+The current architecture contains 16 ADRs and 15 Methodologies, several of which deliberately use the newer architecture-bound structure.
 
-An exception requires an explicit owner, affected claim/failure model, bounded compensating evidence, and rollback or correction path. Silent exceptions are invalid.
+Therefore its current status relative to this branch is:
+
+`LEGACY_STRUCTURAL_SCANNER / CURRENT_CONTRACT_MISMATCH`.
+
+Its existence must not be cited as proof that the current 16/15 architecture is structurally validated.
+
+### `code_compliance.py`
+
+Supports only its explicit source-pattern rules over the declared Python target directories. Pattern absence is not a general security proof.
+
+### `scope_guard.py`
+
+Supports only its declared protected-path comparison and explicit allow-file semantics. It does not determine semantic correctness of an allowed change.
+
+### `validate_research_record.py`
+
+Validates the specific Daily/Weekly filename, section, date/window, bounded-result, hypothesis-state, and missing-KL semantics implemented in that script.
+
+It does not verify source truth, theorem correctness, or every research claim.
+
+### Historical research records
+
+A Daily/Weekly record supports its point-in-time stored observation subject to source, field, and temporal-provenance reconciliation.
+
+## Consequences
+
+Reports become narrower but can answer exactly which surface established which property.
+
+A stale/legacy checker is itself an evidence fact; it must be documented as a mismatch rather than silently treated as current validation.
+
+## Evidence boundary
+
+No evidence surface inherits capabilities from another. A numeric scan, structural scan, source-pattern scan, path guard, research validator, and research artifact remain distinct evidence classes.
