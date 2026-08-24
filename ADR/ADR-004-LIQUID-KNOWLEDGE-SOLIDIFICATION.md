@@ -1,38 +1,47 @@
-# Transactional state adaptation
+# Serialized heuristic state adaptation
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `CODE/liquid_morphing.py`
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+The repository implements local state labels and heuristic transitions, not “knowledge solidification” in a semantic or cognitive sense.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+`AxiomMorphingEngine` evaluates caller-provided `SystemMetrics` and may request a transition among local state labels such as `SOLID`, `LIQUID`, `GAS`, and `PLASMA`.
 
-## 背景 / Context
+## Decision
 
-[CN] Fixed sleeps simulated preparation and validation but proved nothing about readiness. State could be reported as secure without an external check.
+Describe the mechanism as serialized heuristic state adaptation.
 
-[EN] Fixed sleeps simulated preparation and validation but proved nothing about readiness. State could be reported as secure without an external check.
+Implemented properties:
 
-## 决策 / Decision
+- `SystemMetrics` validates normalized CPU, memory, and entropy-level inputs plus non-negative task/queue counts
+- `evaluate_morph()` applies explicit local thresholds and weights
+- `shift()` serializes transition commit using `asyncio.Lock`
+- optional `prepare` and `validate` hooks run before state commit
+- failure preserves the source state and records the exception type
+- transition history records source/target state, timing, success, and error type
 
-[CN] A transition invokes injectable prepare and validate hooks under an async lock. State changes only after both succeed; failure preserves the source state and records the exception type without private details.
+The state names are operational labels only.
 
-[EN] A transition invokes injectable prepare and validate hooks under an async lock. State changes only after both succeed; failure preserves the source state and records the exception type without private details.
+## Consequences
 
-## 后果 / Consequences
+The code remains useful as an auditable reference for bounded state adaptation without implying semantic transformation, self-optimization, or production control safety.
 
-[CN] Callers must implement real readiness checks; the reference engine stays fast and testable.
+## Evidence boundary
 
-[EN] Callers must implement real readiness checks; the reference engine stays fast and testable.
+A successful transition shows that the local hook/commit path completed for the supplied metrics and revision.
 
-## 验证 / Verification
+It does not prove:
 
-[CN] `tests/test_morphing.py` verifies success ordering, rollback-on-validation-failure, and history.
+- globally optimal state selection
+- workload prediction accuracy
+- semantic/cognitive phase change
+- production readiness
+- durable state persistence beyond the object lifetime
 
-[EN] `tests/test_morphing.py` verifies success ordering, rollback-on-validation-failure, and history. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+## Caller boundary
 
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+Embedding systems own real readiness checks, external state persistence, resource isolation, and consequential side effects.
