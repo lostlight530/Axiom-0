@@ -1,73 +1,84 @@
-# Temporal evidence availability lifecycle
+# Temporal evidence availability is multi-dimensional
 
 - Decision date: 2026-08-24
-- Status: Accepted for independent repository maintenance
-- Scope: research artifacts, periodic aggregation, reconciliation, and evidence interpretation
-
-## Jules automation boundary
-
-This decision belongs to the repository governance and post-hoc review layer. It is not a Jules prompt, Jules memory entry, scheduler rule, CI gate, workflow, or runtime instruction.
+- Status: Accepted
+- Scope: `RESEARCH/**`, periodic aggregation, reconciliation, and current evidence interpretation
 
 ## Context
 
-August 2026 showed that one word such as `missing` can collapse several different facts:
+August 2026 demonstrated that one word such as `missing`, `present`, or `complete` can collapse several different facts:
 
-- the logical date assigned to an artifact
-- whether a task actually executed
+- logical date or target period
+- whether an original task/run executed
 - whether an artifact was generated
-- whether the generated artifact was delivered or merged
-- whether it was visible to a Weekly/Monthly aggregation snapshot
+- whether it was delivered or committed
+- whether it was visible to the aggregation snapshot that actually ran
 - whether it exists in the repository now
-- whether its substantive evidence fields are complete
+- whether its substantive evidence fields were complete
 
-A path can exist today while the original run was blocked, late, incomplete, or reconstructed only as a reconciliation record. Conversely, an artifact absent from an aggregation snapshot may later become available without proving that it existed at the earlier snapshot.
+These dimensions must remain separable because a path can exist today while the historical execution was late, blocked, incomplete, or only later reconciled.
 
 ## Decision
 
-Axiom evidence interpretation MUST keep the following dimensions separate when they materially differ:
+When the dimensions materially differ, Axiom evidence records keep these states separate:
 
 1. `LOGICAL_DATE_OR_PERIOD`
 2. `EXECUTION_STATE`
 3. `GENERATION_EVIDENCE`
-4. `DELIVERY_OR_MERGE_STATE`
+4. `DELIVERY_OR_COMMIT_STATE`
 5. `AGGREGATION_SNAPSHOT_VISIBILITY`
 6. `CURRENT_REPOSITORY_PRESENCE`
 7. `SUBSTANTIVE_EVIDENCE_COMPLETENESS`
 
-A later repository state MUST NOT retroactively rewrite an earlier execution-state fact.
+A later repository state does not retroactively rewrite an earlier execution-state fact.
 
-`CURRENT_REPOSITORY_PRESENCE = PRESENT` does not imply `AVAILABLE_AT_ORIGINAL_SNAPSHOT`, `EXECUTION_SUCCESS`, or `EVIDENCE_COMPLETE`.
+Therefore:
 
-`MISSING_AT_SNAPSHOT` does not imply `NEVER_GENERATED` unless generation history is independently established.
+- `CURRENT_REPOSITORY_PRESENCE = PRESENT` does not imply `AVAILABLE_AT_ORIGINAL_SNAPSHOT`
+- current path presence does not imply original execution success
+- path completeness does not imply evidence completeness
+- `MISSING_AT_SNAPSHOT` does not imply `NEVER_GENERATED` unless generation history independently supports that conclusion
+- when non-generation and non-delivery cannot be distinguished, use `UNRESOLVED_DELIVERY_HISTORY`
 
-When history cannot distinguish non-generation from non-delivery, use `UNRESOLVED_DELIVERY_HISTORY` or an equally explicit uncertainty state.
+## Reconciliation semantics
 
-## Reconciliation precedence
+Historical Daily/Weekly/Monthly artifacts remain point-in-time records.
 
-Historical Daily/Weekly/Monthly artifacts remain point-in-time execution records. A post-hoc reconciliation may supersede their **current interpretation**, but it does not erase their original run state.
+A later reconciliation may change the **current interpretation** of a historical artifact while preserving the original execution state.
 
-A reconciliation record SHOULD state:
+A useful reconciliation identifies:
 
-- original observation or run state
+- original observation/run state
 - later repository evidence
 - corrected current interpretation
 - unresolved dimensions
-- precedence and scope
-- explicit non-retroactivity statement
+- precedence/scope
+- explicit non-retroactivity
 
-## Monthly closure
+## Temporal causality
 
-A partial-month stage report is not a formal monthly closure. Before the natural month ends, use `PROVISIONAL_STAGE_AUDIT` or equivalent wording. Formal A6/Monthly status remains open until its own scheduled evidence exists.
+Availability history and source chronology are related but distinct.
 
-## Relationship to existing decisions
+If a persisted observation/check time precedes the material source event/publication time recorded for the same claim, classify the evidence as `TEMPORAL_PROVENANCE_CONFLICT` until independent history resolves the chronology.
 
-- ADR-013 limits verification and completion claims to their tested scope
-- ADR-014 separates repository knowledge layers
-- ADR-016 adds the temporal availability dimension across those layers
-- METH-015 defines the corresponding reconciliation procedure
+A chronological conflict does not by itself prove fabrication; it means the stored chronology cannot support the observation as written.
+
+## Monthly boundary
+
+A partial-month stage audit is not a formal monthly closure.
+
+Before the natural month ends, the current August synthesis remains provisional. A later final-month artifact must arise from actual later evidence rather than synthetic future dates.
+
+## Relationship to repository layers
+
+- ADR-013 limits verification/completion claims to the evidence surface actually used
+- ADR-014 separates repository authority layers
+- METH-015 defines the detailed historical reconciliation procedure
 
 ## Consequences
 
-Repository history becomes more verbose but materially harder to misread. Aggregation can remain deterministic without pretending that delivery order, path existence, execution success, and evidence completeness are the same state.
+Repository history becomes more explicit, but delivery order, path presence, execution success, and evidence completeness can no longer be mistaken for one binary state.
 
-No runtime behavior, host code, automation cadence, CI, frontend, or production policy changes are authorized by this ADR.
+## Evidence boundary
+
+This ADR governs evidence interpretation only. It does not alter `CODE/**` behavior or create an implementation capability.
