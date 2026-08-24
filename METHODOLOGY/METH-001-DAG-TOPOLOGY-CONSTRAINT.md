@@ -1,44 +1,50 @@
-# Versioned stage topology
+# Ordered T-01 to T-10 reference-pipeline inspection
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Implementation anchor: `CODE/nexus_core.py`
+- Scope: one `AxiomOrchestrator.run_continuum()` execution
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Inspect and interpret the implemented stage sequence without calling it a distributed DAG, irreversible workflow, or exactly-once execution system.
 
-[EN] Apply versioned stage topology without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- the concrete `AxiomOrchestrator` revision
+- one run identifier
+- canonicalizable input payload
+- the metrics provider used by the run
+- the two probability vectors used by the KL stage
 
-[CN] run id, input digest, ordered stage version, idempotency policy。
+## Procedure
 
-[EN] run id, input digest, ordered stage version, idempotency policy. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. Identify the exact code revision and run.
+2. Treat `T-01` through `T-10` as the implemented ordered sequence.
+3. Record each emitted event in order with its stage identity and status.
+4. Record the local state before/after any morph request at `T-04` where observable.
+5. Record the exact KL input identity and result used at `T-09`.
+6. Preserve a failure as a failure of that run; do not infer later-stage success when execution stopped earlier.
+7. Interpret a new call to `run_continuum()` as a new run, not as proof of retry/idempotency semantics for external effects.
 
-## 步骤 / Procedure
+## Outputs
 
-[CN] validate schema; emit start/completion/failure events; retain digests; retry as a new attempt; compensate external effects。
+- run identifier
+- observed ordered stage/event sequence
+- resulting local state label
+- KL evidence attached to that run where emitted
+- limitations and unobserved stages if execution did not complete
 
-[EN] validate schema; emit start/completion/failure events; retain digests; retry as a new attempt; compensate external effects. Record every material choice with owner and revision.
+## Failure / unknown conditions
 
-## 输出 / Outputs
+Use an incomplete/unknown state rather than filling gaps when:
 
-[CN] ordered event record with stage status, timestamps, digests, and attempt。
+- an expected stage event is absent
+- the run/revision cannot be identified
+- the KL vectors or result are not recoverable
+- the metrics provider identity matters but is unknown
 
-[EN] ordered event record with stage status, timestamps, digests, and attempt. Distinguish observed result, external support, proposal, and uncertainty.
+## Evidence boundary
 
-## 失败条件 / Failure conditions
+This method can establish the event order and outputs observed for one reference-core run.
 
-[CN] 出现以下情况必须失败关闭：silent skip, unversioned reordering, or side effect without retry/compensation。
-
-[EN] Fail closed on silent skip, unversioned reordering, or side effect without retry/compensation. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] event completeness, duplicate effects, recovery time。
-
-[EN] Track event completeness, duplicate effects, recovery time. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+It does not establish durable workflow persistence, external-effect idempotency, compensation, distributed scheduling, global convergence, or future-run correctness.
