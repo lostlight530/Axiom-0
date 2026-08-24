@@ -1,44 +1,37 @@
-# Untrusted-content isolation
+# Tool and content isolation are external to the Axiom reference core
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Implementation status: `NOT_IMPLEMENTED_IN_REFERENCE_CORE`
+- Historical filename retained for continuity
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Prevent documentation from implying that Axiom-0 implements a tool sandbox, capability allowlist, credential boundary, prompt firewall, or policy-enforcement runtime when those mechanisms are absent from the current executable core.
 
-[EN] Apply untrusted-content isolation without turning a bounded procedure into a universal guarantee.
+## Repository fact
 
-## 输入 / Inputs
+`CODE/contracts.py`, `CODE/liquid_morphing.py`, and `CODE/nexus_core.py` do not implement general-purpose tool authorization or untrusted-content isolation.
 
-[CN] typed tool request, allowlist, caller context, quotas, confirmation policy。
+## Interpretation method
 
-[EN] typed tool request, allowlist, caller context, quotas, confirmation policy. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+When research discusses tool isolation or prompt/content trust boundaries:
 
-## 步骤 / Procedure
+1. label the mechanism as external guidance, reference architecture, or non-implemented requirement
+2. identify the exact local surface, if any, that is actually relevant
+3. do not infer authorization from input validation
+4. do not infer sandboxing from a single-process reference pipeline
+5. do not infer prompt-injection resistance from canonicalization or evidence labeling
 
-[CN] separate data from instructions; validate; deny undeclared capabilities; scope credentials; limit time/cost; sanitize output; confirm destructive effects。
+## Outputs
 
-[EN] separate data from instructions; validate; deny undeclared capabilities; scope credentials; limit time/cost; sanitize output; confirm destructive effects. Record every material choice with owner and revision.
+- explicit `NOT_IMPLEMENTED` or `REFERENCE_ONLY` status
+- bounded mapping from the external idea to any genuinely relevant local component
+- unresolved implementation gap where applicable
 
-## 输出 / Outputs
+## Failure conditions
 
-[CN] authorized result or structured denial with replay id。
+The method fails when documentation claims local credential scoping, tool allowlisting, sandbox isolation, or policy enforcement without a concrete implementation artifact.
 
-[EN] authorized result or structured denial with replay id. Distinguish observed result, external support, proposal, and uncertainty.
+## Evidence boundary
 
-## 失败条件 / Failure conditions
-
-[CN] 出现以下情况必须失败关闭：prompt changes policy, credential scope expands, denial falls back, or secrets logged。
-
-[EN] Fail closed on prompt changes policy, credential scope expands, denial falls back, or secrets logged. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] denial rate, budget breaches, redaction failures。
-
-[EN] Track denial rate, budget breaches, redaction failures. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+This methodology is a claim-control boundary only. It does not provide the missing security mechanism.

@@ -1,38 +1,39 @@
-# Labelled creative generation lane
+# Synthetic architecture remains documentary
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: research/presentation layers only
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Axiom uses expressive vocabulary such as “zero entropy”, “liquid”, “mythic”, and phase/state metaphors. These can be useful research language but are unsafe when interpreted as implemented mechanisms or measured guarantees.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+The executable core contains only the contracts and reference mechanisms documented in `SPECIFICATION.md` and `CODE/**`.
 
-## 背景 / Context
+## Decision
 
-[CN] Metaphor can help ideation but becomes dangerous when presented as measured architecture or sourced research.
+Synthetic, metaphorical, speculative, or architecture-exploration content MUST remain explicitly non-executable.
 
-[EN] Metaphor can help ideation but becomes dangerous when presented as measured architecture or sourced research.
+Use statuses such as:
 
-## 决策 / Decision
+- `PROPOSED`
+- `HYPOTHESIS`
+- `REFERENCE_ONLY`
+- `NOT_IMPLEMENTED`
 
-[CN] Creative outputs must be marked PROPOSED or HYPOTHESIS, isolated from accepted contracts, and promoted only after an owner, acceptance test, and evidence review exist.
+when a concept has no corresponding code path.
 
-[EN] Creative outputs must be marked PROPOSED or HYPOTHESIS, isolated from accepted contracts, and promoted only after an owner, acceptance test, and evidence review exist.
+A concept may be promoted to an implementation claim only when a concrete repository artifact implements the claimed behavior and the claim is narrowed to that artifact.
 
-## 后果 / Consequences
+## Consequences
 
-[CN] The repository can retain expressive language without letting it silently govern execution.
+The repository can preserve creative research language without letting it silently redefine the runtime.
 
-[EN] The repository can retain expressive language without letting it silently govern execution.
+## Evidence boundary
 
-## 验证 / Verification
+A well-written architectural concept is not execution evidence. External papers or standards may support the concept, but they do not implement it locally.
 
-[CN] Pull-request review checks claim status, source links, and whether tests establish the asserted behavior.
+## Public-boundary rule
 
-[EN] Pull-request review checks claim status, source links, and whether tests establish the asserted behavior. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+Document only committed repository facts, public evidence states, and bounded research interpretation. Do not encode private prompts, hidden reasoning, unpublished future control strategy, or internal automation instructions in this ADR.

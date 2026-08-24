@@ -1,38 +1,49 @@
-# Versioned DAG execution, not irreversible state
+# T-01 to T-10 is a single-run reference sequence
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `CODE/nexus_core.py`
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+`AxiomOrchestrator` implements a fixed successful-run sequence from `T-01` through `T-10`. Earlier “DAG irreversibility” language was stronger than the code.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+The implementation is a single-process reference pipeline. It records ordered events for one run; it does not provide a distributed DAG scheduler, durable workflow engine, external transaction coordinator, or irreversible global state machine.
 
-## 背景 / Context
+## Decision
 
-[CN] A fixed ten-stage order is useful for traceability, but production work needs retry, compensation, cancellation, and migration. “Irreversible” prevents safe recovery.
+Describe the implemented topology as:
 
-[EN] A fixed ten-stage order is useful for traceability, but production work needs retry, compensation, cancellation, and migration. “Irreversible” prevents safe recovery.
+`ORDERED_REFERENCE_PIPELINE(T-01 ... T-10)`.
 
-## 决策 / Decision
+For a successful `run_continuum()` execution:
 
-[CN] Represent the reference order as T-01 through T-10 events. Inputs and outputs are immutable records; execution state may be retried under a new run identifier. Side effects require idempotency keys or compensating actions outside this library.
+- stage order is fixed by the implementation
+- each event records stage identity and status
+- `T-04` may request a state morph through the injected metrics provider
+- `T-09` performs the configured KL comparison
+- output includes the run identifier, resulting local state, event records, and limitations
 
-[EN] Represent the reference order as T-01 through T-10 events. Inputs and outputs are immutable records; execution state may be retried under a new run identifier. Side effects require idempotency keys or compensating actions outside this library.
+A new execution is a new run. Historical run events are not an idempotency or retry protocol for external side effects.
 
-## 后果 / Consequences
+## Consequences
 
-[CN] More metadata is required; recovery becomes explicit and auditable.
+Research can reason about ordered stage behavior without claiming irreversible state or a production workflow engine.
 
-[EN] More metadata is required; recovery becomes explicit and auditable.
+## Evidence boundary
 
-## 验证 / Verification
+A retained run/event sequence can establish the stages observed for that run and revision.
 
-[CN] `tests/test_nexus.py` checks ordered events. Integration owners must test idempotency and compensation for external effects.
+It cannot by itself establish:
 
-[EN] `tests/test_nexus.py` checks ordered events. Integration owners must test idempotency and compensation for external effects. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+- durable workflow persistence
+- exactly-once external effects
+- distributed scheduling
+- compensation semantics
+- global convergence
+- future-run correctness
 
-## 例外 / Exceptions
+## External-effect boundary
 
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+The reference core does not implement external side-effect idempotency or compensation. An embedding system that adds consequential effects owns those semantics separately.

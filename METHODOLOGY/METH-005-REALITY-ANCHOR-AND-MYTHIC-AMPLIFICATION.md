@@ -1,44 +1,43 @@
-# Reality anchor and hypothesis expansion
+# Repository fact and hypothesis separation
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Scope: research and architecture interpretation
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Keep verified repository facts, external evidence, inference, and hypothesis in separate states so speculative material cannot overwrite what the repository actually implements or observed.
 
-[EN] Apply reality anchor and hypothesis expansion without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- concrete repository revision/files
+- retained execution or research artifacts
+- relevant external sources
+- bounded question to be interpreted
 
-[CN] verified repository facts, source revision, observed outputs, bounded question。
+## Procedure
 
-[EN] verified repository facts, source revision, observed outputs, bounded question. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. Freeze the repository/evidence snapshot being discussed.
+2. List directly observed repository facts.
+3. List external evidence separately from local implementation.
+4. Mark inference and hypothesis explicitly.
+5. Record unknown or unresolved dimensions.
+6. Change a hypothesis state only when new evidence actually bears on that hypothesis.
+7. Use reconciliation rather than silently rewriting historical observations when later evidence changes interpretation.
 
-## 步骤 / Procedure
+## Outputs
 
-[CN] freeze evidence snapshot; mark unknowns; separate hypotheses; design cheap disconfirming checks; update status only from results。
+A compact ledger or section that distinguishes:
 
-[EN] freeze evidence snapshot; mark unknowns; separate hypotheses; design cheap disconfirming checks; update status only from results. Record every material choice with owner and revision.
+- `LOCAL_REPOSITORY_FACT`
+- `EXTERNAL_EVIDENCE`
+- `INFERENCE`
+- `HYPOTHESIS`
+- `UNRESOLVED`
 
-## 输出 / Outputs
+## Failure conditions
 
-[CN] ledger linking observations, hypotheses, tests, and status。
+The method fails when a hypothesis overwrites retained evidence, when current files are backdated into earlier execution history, or when external evidence is promoted into local implementation without an implementation anchor.
 
-[EN] ledger linking observations, hypotheses, tests, and status. Distinguish observed result, external support, proposal, and uncertainty.
+## Evidence boundary
 
-## 失败条件 / Failure conditions
-
-[CN] 出现以下情况必须失败关闭：hypothesis overwrites evidence, revision missing, or only confirmation tests used。
-
-[EN] Fail closed on hypothesis overwrites evidence, revision missing, or only confirmation tests used. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] rejection rate, evidence age, unresolved unknowns。
-
-[EN] Track rejection rate, evidence age, unresolved unknowns. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+This is an interpretation method. It does not add runtime capability or prove a hypothesis merely by documenting it.

@@ -1,44 +1,41 @@
-# Synthetic-content provenance boundary
+# Synthetic content provenance and claim-status method
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Scope: research/documentary evidence
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Keep generated or synthetic content distinguishable from sourced evidence and from repository implementation.
 
-[EN] Apply synthetic-content provenance boundary without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- content under review
+- known producer/origin when available
+- cited source links or repository evidence
+- intended use of the content
+- current claim/evidence state
 
-[CN] content, known producer, source links, intended use, risk tier。
+## Procedure
 
-[EN] content, known producer, source links, intended use, risk tier. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. Record known provenance without treating origin-detection heuristics as truth.
+2. Separate generated wording from the evidence it cites.
+3. Verify consequential factual claims against the strongest available source appropriate to the claim.
+4. Keep source identity, claim support, and repository implementation as separate fields/conclusions.
+5. Label unsupported generated architecture as `PROPOSED`, `HYPOTHESIS`, or `UNVERIFIED` rather than silently accepting it.
+6. Preserve correction history when later evidence changes a previously generated claim.
 
-## 步骤 / Procedure
+## Outputs
 
-[CN] record provenance without trusting origin detectors; verify consequential claims with primary sources; label generated material; require risk-based review。
+- provenance/origin statement where known
+- source-support status
+- claim state
+- repository implementation status
+- correction/erratum link when required
 
-[EN] record provenance without trusting origin detectors; verify consequential claims with primary sources; label generated material; require risk-based review. Record every material choice with owner and revision.
+## Failure conditions
 
-## 输出 / Outputs
+The method fails when a generated sentence is treated as evidence for itself, when a source trace is lost, or when synthetic content becomes a normative implementation claim without an implementation anchor.
 
-[CN] content package with provenance, verification status, permitted use。
+## Evidence boundary
 
-[EN] content package with provenance, verification status, permitted use. Distinguish observed result, external support, proposal, and uncertainty.
-
-## 失败条件 / Failure conditions
-
-[CN] 出现以下情况必须失败关闭：origin score treated as truth, unsupported content becomes normative, or source trace lost。
-
-[EN] Fail closed on origin score treated as truth, unsupported content becomes normative, or source trace lost. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] verified-claim ratio, provenance completeness, correction rate。
-
-[EN] Track verified-claim ratio, provenance completeness, correction rate. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+Provenance explains where content came from. It does not establish that the content is true, safe, or implemented.

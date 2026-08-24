@@ -1,38 +1,69 @@
-# Repository knowledge stratification
+# Repository knowledge stratification follows the actual repository surfaces
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Axiom-0 contains several kinds of artifacts with different authority. Treating them as interchangeable causes research prose, methodology, implementation, or point-in-time evidence to silently govern another layer.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+The current repository exposes these distinct surfaces:
 
-## 背景 / Context
+- `ADR/**` — durable repository decisions and bounded non-implementation decisions
+- `METHODOLOGY/**` — procedures for measuring, interpreting, reconciling, or reviewing repository evidence
+- `SPECIFICATION.md` — current engineering contract for the reference implementation and evidence semantics
+- `CODE/**` — executable reference implementation
+- repository scanners/validators — narrow executable evidence surfaces for the properties they actually inspect
+- `RESEARCH/**` — periodic research/history artifacts and stage synthesis
+- supporting evidence/provenance documents — source and claim interpretation
+- presentation/documentation surfaces — explanatory views, not runtime authority
 
-[CN] Decisions, methods, code, research, automation, and presentation have different authority and lifecycle. Mixing them causes generated material to govern runtime accidentally.
+## Decision
 
-[EN] Decisions, methods, code, research, automation, and presentation have different authority and lifecycle. Mixing them causes generated material to govern runtime accidentally.
+Keep authority local to the surface that owns the claim.
 
-## 决策 / Decision
+### ADR
 
-[CN] ADR defines durable decisions; METHODOLOGY defines procedures; SPECIFICATION defines contracts; CODE and tests implement them; AUTOMATION schedules checks; RESEARCH and frontend remain separately owned.
+An ADR answers: **what repository decision or boundary is accepted, and why?**
 
-[EN] ADR defines durable decisions; METHODOLOGY defines procedures; SPECIFICATION defines contracts; CODE and tests implement them; AUTOMATION schedules checks; RESEARCH and frontend remain separately owned.
+It must not invent an implementation. If the corresponding mechanism does not exist in `CODE/**` or another explicit executable artifact, the ADR records a non-implementation/reference boundary.
 
-## 后果 / Consequences
+### Methodology
 
-[CN] Cross-layer changes require explicit links, but ownership conflicts decrease.
+A methodology answers: **how is a concrete property measured, interpreted, or reconciled?**
 
-[EN] Cross-layer changes require explicit links, but ownership conflicts decrease.
+It must identify its actual inputs, process, outputs, evidence boundary, and failure/unknown conditions. It does not change runtime behavior merely by existing.
 
-## 验证 / Verification
+### Specification
 
-[CN] Review checks that a change lands in the correct layer and updates dependent tests without rewriting separately owned material.
+`SPECIFICATION.md` describes the current engineering contract and maps concepts to concrete implementation surfaces.
 
-[EN] Review checks that a change lands in the correct layer and updates dependent tests without rewriting separately owned material. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+### Code and scanners
 
-## 例外 / Exceptions
+Executable files establish only their implemented behavior. A scanner result is evidence only for the rule set that scanner actually checks.
 
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+### Research
+
+`RESEARCH/**` preserves point-in-time observations, synthesis, uncertainty, and historical execution state. Research wording does not automatically override the current engineering contract or turn an external idea into a local capability.
+
+## Cross-layer rule
+
+A stronger claim requires a valid bridge between layers.
+
+Examples:
+
+- research idea -> ADR: requires a repository-specific accepted decision
+- ADR -> implementation: requires an executable artifact, not prose alone
+- implementation -> evidence claim: requires evidence for the exact revision/property being asserted
+- historical research -> current interpretation: may require explicit reconciliation rather than silent rewriting
+
+No layer inherits authority merely because another layer links to it.
+
+## Consequences
+
+The repository can preserve conceptual depth and research history while keeping current implementation claims small, explicit, and falsifiable.
+
+## Evidence boundary
+
+This ADR defines document/authority semantics. It does not prove any runtime capability beyond the concrete implementation named elsewhere.

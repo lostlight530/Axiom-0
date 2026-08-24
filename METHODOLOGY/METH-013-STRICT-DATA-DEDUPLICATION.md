@@ -1,44 +1,37 @@
-# Content-addressed deduplication
+# Content-addressed identity without semantic auto-deduplication
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Implementation anchor: `CODE/contracts.py` for canonical serialization and SHA-256 digest
+- Deduplication engine status: `NOT_IMPLEMENTED`
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Use deterministic canonical bytes/digests to identify exact content under the repository contract without claiming that Axiom implements semantic deduplication or safe automatic merging.
 
-[EN] Apply content-addressed deduplication without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- JSON-compatible record/value
+- implementation revision
+- any separately maintained record identity/provenance
 
-[CN] canonicalization version, scoped records, stable ids, merge policy。
+## Procedure
 
-[EN] canonicalization version, scoped records, stable ids, merge policy. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. Canonicalize the value with `canonical_json()`.
+2. Compute the repository digest when content-addressed identity is required.
+3. Treat matching digests as exact canonical-content identity under the same serialization contract.
+4. Preserve provenance/record identity separately when two distinct records happen to have identical content.
+5. Do not auto-delete or merge records based on semantic similarity; no such semantic deduplication mechanism is implemented.
 
-## 步骤 / Procedure
+## Outputs
 
-[CN] validate/canonicalize; cryptographic digest; detect exact copies; retain provenance; review semantic similarity; make merges reversible。
+- canonical representation/digest
+- exact-content match or mismatch where compared
+- explicit unresolved semantic relationship if the question exceeds byte-level identity
 
-[EN] validate/canonicalize; cryptographic digest; detect exact copies; retain provenance; review semantic similarity; make merges reversible. Record every material choice with owner and revision.
+## Failure conditions
 
-## 输出 / Outputs
+Do not claim deduplication when the canonicalization version/implementation differs, the compared input identity is unknown, or only semantic similarity is asserted without a semantic comparison mechanism.
 
-[CN] decision with digest, retained record, provenance, rollback pointer。
+## Evidence boundary
 
-[EN] decision with digest, retained record, provenance, rollback pointer. Distinguish observed result, external support, proposal, and uncertainty.
-
-## 失败条件 / Failure conditions
-
-[CN] 出现以下情况必须失败关闭：unstable hash, lossy canonicalization, semantic auto-delete, or provenance loss。
-
-[EN] Fail closed on unstable hash, lossy canonicalization, semantic auto-delete, or provenance loss. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] duplicate rate, false merges, rollback success。
-
-[EN] Track duplicate rate, false merges, rollback success. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+A matching SHA-256 digest under the same canonicalization contract supports exact content identity, not factual equivalence, provenance equivalence, semantic redundancy, or authorization to delete either record.

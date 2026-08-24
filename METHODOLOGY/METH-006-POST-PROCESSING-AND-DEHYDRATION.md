@@ -1,44 +1,38 @@
-# Semantic-preserving canonicalization
+# Canonical JSON serialization and digest method
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Implementation anchor: `CODE/contracts.py`
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Produce deterministic JSON serialization/digest evidence without changing payload semantics or treating byte identity as semantic truth.
 
-[EN] Apply semantic-preserving canonicalization without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- JSON-compatible value
+- implementation revision
+- any external schema/classification information, when relevant to the surrounding claim
 
-[CN] JSON-compatible input, schema version, classification, retention rule。
+## Procedure
 
-[EN] JSON-compatible input, schema version, classification, retention rule. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. Pass the value through the repository canonical JSON function.
+2. Preserve string/scalar content; do not uppercase, tokenize, or normalize meaning.
+3. Sort mapping keys and use the implementation's compact JSON representation.
+4. Reject non-finite numeric values.
+5. Encode the canonical text as UTF-8 when byte identity is required.
+6. When a digest is needed, compute the repository's SHA-256 digest over the canonical representation.
+7. Record the value/fixture identity and code revision for any reproducibility claim.
 
-## 步骤 / Procedure
+## Outputs
 
-[CN] validate; reject non-finite values; sort keys without changing strings; digest; redact by field policy; retain raw data only when authorized。
+- canonical JSON representation
+- SHA-256 digest when requested
+- validation failure when the value is outside the implemented JSON contract
 
-[EN] validate; reject non-finite values; sort keys without changing strings; digest; redact by field policy; retain raw data only when authorized. Record every material choice with owner and revision.
+## Failure conditions
 
-## 输出 / Outputs
+Do not claim successful canonicalization when serialization failed, non-finite values were accepted outside the contract, payload strings were semantically mutated, or the digest input cannot be identified.
 
-[CN] canonical bytes/digest, validation, schema, redaction record。
+## Evidence boundary
 
-[EN] canonical bytes/digest, validation, schema, redaction record. Distinguish observed result, external support, proposal, and uncertainty.
-
-## 失败条件 / Failure conditions
-
-[CN] 出现以下情况必须失败关闭：case/punctuation mutation, NaN accepted, secrets logged, digest version absent。
-
-[EN] Fail closed on case/punctuation mutation, NaN accepted, secrets logged, digest version absent. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] rejection rate, digest stability, redaction coverage。
-
-[EN] Track rejection rate, digest stability, redaction coverage. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+Matching canonical bytes or digest establishes byte-level identity under the same serialization contract. It does not establish semantic equivalence, factual truth, authorization, freshness, or provenance.

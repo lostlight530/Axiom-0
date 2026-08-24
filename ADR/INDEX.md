@@ -1,57 +1,62 @@
 # Axiom-0 Architecture Decision Index
 
-Status: navigation and authority map
+Status: architecture-decision navigation and authority map
 
-## Jules automation boundary
+`ADR/**` records durable repository decisions. ADR numbering is an identifier/order convention; it is not a supersession chain unless an ADR explicitly says so.
 
-This index serves human and independent repository maintenance outside the Jules scheduled automation stream. It documents repository authority and navigation; it is not a Jules task prompt, Jules memory entry, or `AGENTS.md` instruction and does not change existing Jules automation behavior.
+## Repository authority map
 
-Jules-produced research may be interpreted against this topology during later review, but that does not mean Jules consumed this index during generation.
+Axiom has distinct public layers:
 
-`ADR/**` records durable architectural decisions. ADR numbering is an identifier/order convention; it does not by itself establish a supersession chain.
+- `SPECIFICATION.md` — current behavioral interpretation of the implemented reference core
+- `CODE/**` — executable reference implementation
+- `ADR/**` — durable architectural decisions and capability boundaries
+- `METHODOLOGY/**` — procedures for measuring/interpreting repository behavior and research evidence
+- `EVIDENCE_BASELINE.md` — external-source and evidence-semantics boundary
+- `RESEARCH/**` — historical Daily/Weekly/Monthly evidence and reconciliations
+- `GOVERNANCE/**` — design/planning records
+- `AUTOMATION/**` — operational metadata, not semantic authority
+- presentation/navigation files — discovery surfaces, not runtime authority
 
-`SPECIFICATION.md` remains the behavioral contract. ADRs explain why durable boundaries exist. `METHODOLOGY/**` describes procedures. `CODE/**` and tests provide executable implementation/evidence. `RESEARCH/**`, automation, and presentation are separately owned layers.
+A change in one layer does not silently change another.
+
+This index documents public repository architecture only. It does not encode private prompts, hidden reasoning, future control strategy, or unpublished automation instructions.
 
 ## Decisions
 
-| ADR | Topic | Primary authority role |
+| ADR | Current architectural meaning | Implementation anchor |
 |---|---|---|
-| [ADR-001](./ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md) | Zero-entropy cognitive protocol | Historical protocol vocabulary and bounded interpretation |
-| [ADR-002](./ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md) | DAG irreversibility enforcement | Transformation/topology decision |
-| [ADR-003](./ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md) | Algebraic pollution rejection | Numeric/evidence rejection decision |
-| [ADR-004](./ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md) | Liquid knowledge solidification | Knowledge-state lifecycle decision |
-| [ADR-005](./ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md) | Context ingestion and canonicalization | Input/canonical representation decision |
-| [ADR-006](./ADR-006-MYTHIC-GENERATION-LANE.md) | Mythic generation lane | Narrative/synthetic-content separation decision |
-| [ADR-007](./ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md) | Human/AI post-processing boundary | Accountability/post-processing decision |
-| [ADR-008](./ADR-008-RESEARCH-TO-ADR-DISTILLATION.md) | Research-to-ADR distillation | Research promotion decision |
-| [ADR-009](./ADR-009-EVIDENCE-STATUS-LABELING.md) | Evidence status labeling | Evidence-state decision |
-| [ADR-010](./ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md) | Index synchronization/navigation | Repository navigation decision |
-| [ADR-011](./ADR-011-ZERO-TRUST-TOOL-EXECUTION.md) | Zero-trust tool execution | Tool authority/security boundary |
-| [ADR-012](./ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md) | Sandbox self-destruction protocol | Ephemeral execution/cleanup boundary |
-| [ADR-013](./ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md) | Verification and claim scope | Completion/evidence boundary |
-| [ADR-014](./ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md) | Repository knowledge stratification | Cross-layer authority model |
-| [ADR-015](./ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md) | Reference implementation boundary | Library vs production-control ownership |
+| [ADR-001](./ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md) | Entropy/divergence names are measurement-scoped; “zero entropy” is project vocabulary, not a system guarantee | `CODE/contracts.py`, `scan_kl_divergence.py`; `SystemMetrics.entropy_level` is separately a heuristic scalar |
+| [ADR-002](./ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md) | T-01→T-10 is a fixed single-run reference sequence, not irreversible global state | `CODE/nexus_core.py` |
+| [ADR-003](./ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md) | Probability/KL inputs fail closed on invalid numeric structure | `CODE/contracts.py` |
+| [ADR-004](./ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md) | Morphing is serialized heuristic state adaptation with optional prepare/validate hooks | `CODE/liquid_morphing.py` |
+| [ADR-005](./ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md) | Canonical JSON stabilizes bytes/digests without rewriting semantic content | `CODE/contracts.py` |
+| [ADR-006](./ADR-006-MYTHIC-GENERATION-LANE.md) | Metaphor/synthetic architecture remains documentary and non-executable | research/presentation layers only |
+| [ADR-007](./ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md) | Generated research/code is evidence input, not repository authority by itself | evidence/research layers; no runtime implementation implied |
+| [ADR-008](./ADR-008-RESEARCH-TO-ADR-DISTILLATION.md) | Research observations become ADR decisions only through explicit repository-specific distillation | `RESEARCH/**` → `ADR/**` interpretation boundary |
+| [ADR-009](./ADR-009-EVIDENCE-STATUS-LABELING.md) | Evidence states distinguish local observation, external support, proposal, contest, and retirement | ADR/Methodology/Evidence records |
+| [ADR-010](./ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md) | Indexes are navigation; addressed files remain semantic authority | index/navigation files |
+| [ADR-011](./ADR-011-ZERO-TRUST-TOOL-EXECUTION.md) | Tool-authority language is an embedding/caller boundary; Axiom implements no general tool executor | no local tool-execution runtime |
+| [ADR-012](./ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md) | Cleanup/sandbox language is an external embedding boundary; Axiom implements no sandbox lifecycle | no local sandbox manager |
+| [ADR-013](./ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md) | Every verification claim is limited to the exact evidence surface that produced it | scanners, reference code, retained research evidence |
+| [ADR-014](./ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md) | Code, contracts, methods, decisions, research, operational metadata, and presentation have different authority | repository layout |
+| [ADR-015](./ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md) | Reference core is intentionally incomplete as a production service | `CODE/contracts.py`, `CODE/liquid_morphing.py`, `CODE/nexus_core.py` |
+| [ADR-016](./ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md) | Logical date, execution, source time, generation/delivery, aggregation visibility, and current presence are distinct facts | `RESEARCH/**` historical evidence lifecycle |
 
 ## Cross-layer rules
 
-ADR-014 defines the authority stratification used by this index:
-
-- ADR: durable decisions
-- METHODOLOGY: procedures
-- SPECIFICATION: behavioral contracts
-- CODE/tests: implementation and revision-specific executable evidence
-- AUTOMATION: scheduling/check orchestration
-- RESEARCH and presentation: separately owned material
-
-A change in one layer does not silently rewrite the authority of another. Cross-layer changes should link the affected decision, procedure, contract, and executable evidence as applicable.
-
-These cross-layer rules govern independent repository maintenance; they are not instructions injected into Jules automation.
+1. `CODE/**` defines implemented behavior; filenames and research metaphors do not add capabilities.
+2. `SPECIFICATION.md` describes that behavior and its limitations; it does not create missing runtime features.
+3. ADRs explain durable decisions; a non-implemented boundary ADR must say that the capability is external/reference-only.
+4. Methodology explains how to measure or interpret specific repository/evidence surfaces; it does not become runtime policy.
+5. Historical research remains point-in-time evidence. Later reconciliation can change current interpretation without rewriting original execution state.
+6. External protocols/papers/SDKs remain reference material unless a corresponding implementation surface exists in this repository.
+7. Indexes are derived navigation and must not be treated as stronger authority than the addressed file.
 
 ## Related navigation
 
 - [Engineering specification](../SPECIFICATION.md)
 - [Methodology index](../METHODOLOGY/INDEX.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [2026-08-01 through 2026-08-23 stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
 - [AI use disclosure](../AI_USE_DISCLOSURE.md)
-
-This index is navigation/documentation only. It does not alter executable behavior, create new ADR decisions, or modify Jules automation.

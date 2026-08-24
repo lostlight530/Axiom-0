@@ -1,44 +1,54 @@
-# Evidence-to-ADR distillation
+# Repository evidence to ADR distillation
 
-- Method version: 2026-08-05
-- Normative terms: MUST is required; SHOULD needs a recorded reason when omitted.
+- Method version: 2026-08-24
+- Scope: documentary architecture decisions in `ADR/**`
 
-## 目标 / Objective
+## Objective
 
-[CN] 在声明范围内产生可复现、可审查、可撤销的工程证据。
+Turn a repository problem or durable boundary into an ADR without importing speculative research, historical wording, or external architecture as if it were implemented Axiom behavior.
 
-[EN] Apply evidence-to-adr distillation without turning a bounded procedure into a universal guarantee.
+## Inputs
 
-## 输入 / Inputs
+- concrete repository problem or ambiguity
+- current implementation surface, if one exists
+- current `SPECIFICATION.md`
+- relevant research/evidence records
+- external primary evidence only when the decision depends on an external fact
+- counterevidence or known non-implementation boundaries
 
-[CN] repository problem, observed behavior, dated primary sources, counterevidence, owners。
+## Procedure
 
-[EN] repository problem, observed behavior, dated primary sources, counterevidence, owners. Inputs remain untrusted until type, range, provenance, and authority checks pass.
+1. State the exact repository question being decided.
+2. Identify the concrete implementation anchor, or explicitly mark `NOT_IMPLEMENTED` when none exists.
+3. Separate local observation from external evidence and interpretation.
+4. Preserve conflicting or missing evidence instead of normalizing it away.
+5. Choose one bounded repository decision.
+6. State consequences and what the decision does **not** establish.
+7. Link any corresponding methodology/specification surface when the relationship is real.
+8. Do not convert a historical file name or conceptual label into implementation evidence.
 
-## 步骤 / Procedure
+## Output
 
-[CN] separate observations and interpretations; bound applicability; compare alternatives; make one decision; state consequences and exceptions。
+A reviewable ADR containing:
 
-[EN] separate observations and interpretations; bound applicability; compare alternatives; make one decision; state consequences and exceptions. Record every material choice with owner and revision.
+- status/date
+- context
+- decision
+- implementation anchor or non-implementation status
+- evidence boundary
+- consequences
+- promotion/exception boundary where necessary
 
-## 输出 / Outputs
+## Failure conditions
 
-[CN] reviewable ADR with traceable evidence and rollback。
+The distillation is incomplete when:
 
-[EN] reviewable ADR with traceable evidence and rollback. Distinguish observed result, external support, proposal, and uncertainty.
+- a claimed implementation has no executable anchor
+- an external source is treated as repository implementation
+- counterevidence materially changes the decision but is omitted
+- research wording is copied into normative text without scope reduction
+- the ADR claims a stronger capability than `CODE/**` or retained evidence supports
 
-## 失败条件 / Failure conditions
+## Evidence boundary
 
-[CN] 出现以下情况必须失败关闭：normative claim lacks source/reproducer, counterevidence omitted, or decision exceeds evidence。
-
-[EN] Fail closed on normative claim lacks source/reproducer, counterevidence omitted, or decision exceeds evidence. Partial output is incomplete and cannot trigger consequential automation.
-
-## 度量 / Measures
-
-[CN] source freshness, objections, verification coverage。
-
-[EN] Track source freshness, objections, verification coverage. These diagnose the procedure; no metric alone proves safety, truth, or convergence.
-
-## 复现与审查 / Reproduction and review
-
-Record commit SHA, environment/tool versions, sanitized fixture or digest, command, exit code, artifact, and untested boundary. Review after contract change, material failure, or evidence expiry.
+This methodology produces a documentary decision record. It does not execute or enforce that decision by itself.

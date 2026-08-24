@@ -1,38 +1,52 @@
-# Verified and recoverable cleanup
+# Cleanup and sandbox behavior are not implemented by the reference core
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted boundary decision
+- Implementation status: `NOT_IMPLEMENTED_IN_REFERENCE_CORE`
+- Historical filename retained for continuity
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+The historical ADR name refers to sandbox self-destruction, but the current Axiom executable core contains no sandbox manager, workspace lifecycle service, recursive cleanup engine, credential scrubber, or recoverable deletion subsystem.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+The implemented executable center remains `CODE/contracts.py`, `CODE/liquid_morphing.py`, and `CODE/nexus_core.py`. None of those modules performs repository/workspace deletion.
 
-## 背景 / Context
+## Decision
 
-[CN] Self-destruction language encourages broad deletion and hides recovery requirements. Sandboxes may contain user data, credentials, or shared runtime state.
+Do not describe cleanup or sandbox destruction as an implemented Axiom capability.
 
-[EN] Self-destruction language encourages broad deletion and hides recovery requirements. Sandboxes may contain user data, credentials, or shared runtime state.
+Where an embedding environment performs cleanup, the repository may document only the following bounded safety principle as external/reference guidance:
 
-## 决策 / Decision
+- resolve an exact target before mutation
+- establish that the target belongs to the intended workspace or scope
+- distinguish ephemeral artifacts from durable/user-owned data
+- avoid deriving recursive deletion targets from unverified input
+- retain enough result evidence to know what was actually removed
 
-[CN] Resolve exact targets, prove containment within the owned workspace, delete only declared ephemeral artifacts, prefer recoverable removal, and record what was removed. Never compute a recursive target from an unverified variable.
+These principles are not executable policy in Axiom-0.
 
-[EN] Resolve exact targets, prove containment within the owned workspace, delete only declared ephemeral artifacts, prefer recoverable removal, and record what was removed. Never compute a recursive target from an unverified variable.
+## Consequences
 
-## 后果 / Consequences
+Research prose can discuss cleanup risk without implying that Axiom provides a sandbox runtime.
 
-[CN] Cleanup is more deliberate and may leave artifacts pending review.
+A file deletion performed by an external host, development environment, or automation is an external effect and must not be attributed to this reference core unless a concrete Axiom implementation is later added and reviewed.
 
-[EN] Cleanup is more deliberate and may leave artifacts pending review.
+## Evidence boundary
 
-## 验证 / Verification
+Current repository evidence can establish only that this ADR records a non-implementation boundary.
 
-[CN] Tests or dry runs enumerate targets; review checks absolute containment and rollback/backup strategy.
+It cannot establish:
 
-[EN] Tests or dry runs enumerate targets; review checks absolute containment and rollback/backup strategy. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+- sandbox containment
+- deletion safety
+- secure erasure
+- rollback/recovery behavior
+- credential cleanup
+- lifecycle isolation
 
-## 例外 / Exceptions
+because those mechanisms are not present in the reference core.
 
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+## Promotion boundary
+
+Any future claim that Axiom implements cleanup/sandbox lifecycle behavior requires a concrete executable module and evidence for the exact behavior claimed. Historical terminology alone is insufficient.
