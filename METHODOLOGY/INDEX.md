@@ -1,58 +1,55 @@
 # Axiom-0 Methodology Index
 
-Status: procedure navigation map
+Status: procedure and implementation-boundary map
 
-## Jules automation boundary
+`METHODOLOGY/**` describes how a concrete repository property is measured, interpreted, or reconciled. A method does not create a runtime capability merely by existing.
 
-This index serves human and independent repository maintenance outside the Jules scheduled automation stream. It documents procedures and authority relationships; it is not a Jules task prompt, Jules memory entry, or `AGENTS.md` instruction and does not change existing Jules automation behavior.
+## Method map
 
-Jules-produced research may be reviewed against these procedures after generation, but that post-hoc use does not mean Jules consumed this index during task execution.
-
-`METHODOLOGY/**` defines procedures and analytical disciplines. It does not override `SPECIFICATION.md`, create runtime configuration, or turn research prose into implementation.
-
-## Procedures
-
-| Method | Topic | Procedure role |
+| Method | Current meaning | Implementation relation |
 |---|---|---|
-| [METH-001](./METH-001-DAG-TOPOLOGY-CONSTRAINT.md) | DAG topology constraint | Topology/ordering discipline |
-| [METH-002](./METH-002-KL-DIVERGENCE-DEFENSE.md) | KL divergence defense | Distribution/divergence analysis |
-| [METH-003](./METH-003-ADR-DISTILLATION-PROTOCOL.md) | ADR distillation protocol | Research-to-decision procedure |
-| [METH-004](./METH-004-MYTHIC-ARCHITECTURE-GENERATION.md) | Mythic architecture generation | Synthetic/narrative generation procedure |
-| [METH-005](./METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md) | Reality anchor and mythic amplification | Reality/synthetic separation procedure |
-| [METH-006](./METH-006-POST-PROCESSING-AND-DEHYDRATION.md) | Post-processing and dehydration | Output reduction/post-processing procedure |
-| [METH-007](./METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md) | Cognitive firewall and organic isolation | Isolation/boundary methodology |
-| [METH-008](./METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md) | Synthetic content exclusion boundary | Evidence/synthetic exclusion procedure |
-| [METH-009](./METH-009-TEMPORAL-ENTROPY-ANCHORING.md) | Temporal entropy anchoring | Time-scoped metric interpretation |
-| [METH-010](./METH-010-KL-THRESHOLD-ABSOLUTISM.md) | KL threshold absolutism | Threshold/claim-limiting methodology |
-| [METH-011](./METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md) | Deterministic collaboration protocol | Collaboration procedure |
-| [METH-012](./METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) | Zero-trust resource allocation | Resource/authority methodology |
-| [METH-013](./METH-013-STRICT-DATA-DEDUPLICATION.md) | Strict data deduplication | Duplicate/evidence hygiene procedure |
-| [METH-014](./METH-014-GROUNDEDNESS-RULE.md) | Groundedness rule | Source/claim grounding procedure |
-| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Historical evidence reconciliation | Execution/delivery/snapshot history reconstruction |
+| [METH-001](./METH-001-DAG-TOPOLOGY-CONSTRAINT.md) | Inspect ordered `T-01`…`T-10` run events | `CODE/nexus_core.py` |
+| [METH-002](./METH-002-KL-DIVERGENCE-DEFENSE.md) | Compute/interpret `D_KL(P||Q)` | `CODE/contracts.py` |
+| [METH-003](./METH-003-ADR-DISTILLATION-PROTOCOL.md) | Distill repository evidence into bounded ADR decisions | documentary |
+| [METH-004](./METH-004-MYTHIC-ARCHITECTURE-GENERATION.md) | Keep creative architecture material hypothesis-labelled | documentary only |
+| [METH-005](./METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md) | Separate repository facts, external evidence, inference, hypothesis | documentary |
+| [METH-006](./METH-006-POST-PROCESSING-AND-DEHYDRATION.md) | Canonical JSON + SHA-256 content identity | `CODE/contracts.py` |
+| [METH-007](./METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md) | Bound claims about tool/content isolation | `NOT_IMPLEMENTED` |
+| [METH-008](./METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md) | Preserve synthetic-content provenance and claim status | documentary |
+| [METH-009](./METH-009-TEMPORAL-ENTROPY-ANCHORING.md) | Anchor evidence to time/version semantics | research/evidence |
+| [METH-010](./METH-010-KL-THRESHOLD-ABSOLUTISM.md) | Keep thresholds specific to KL vs morphing surfaces | `contracts.py` / `liquid_morphing.py` interpretation |
+| [METH-011](./METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md) | Bound multi-agent collaboration claims | `NOT_IMPLEMENTED` |
+| [METH-012](./METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) | Distinguish observed metrics from resource enforcement | enforcement `NOT_IMPLEMENTED` |
+| [METH-013](./METH-013-STRICT-DATA-DEDUPLICATION.md) | Exact canonical-content identity; no semantic auto-dedup | digest implemented, dedup engine `NOT_IMPLEMENTED` |
+| [METH-014](./METH-014-GROUNDEDNESS-RULE.md) | Claim/source/implementation groundedness review | documentary/evidence |
+| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile Daily/Weekly history without retroactivity | `RESEARCH/**` evidence lifecycle |
 
-## Authority boundary
+## Method contract
 
-Methodology describes **how** a repository decision or analysis should be carried out. It is subordinate to the behavioral contract in `SPECIFICATION.md` and must remain consistent with relevant ADRs.
+Every methodology should answer five questions:
 
-A procedure may propose additional evidence or checks. It may not silently:
+1. **What exact repository surface or evidence does it apply to?**
+2. **What are the real inputs?**
+3. **What procedure is actually performed?**
+4. **What output can be supported?**
+5. **What does the procedure explicitly not prove or implement?**
 
-- change a runtime constant or contract
-- promote research into an accepted ADR
-- strengthen an evidence state beyond its source
-- turn a heuristic or threshold into a universal mathematical law
-- modify separately owned research, automation, or presentation layers without explicit scope
-- backdate a later reconciliation as if it were an original execution result
+If no executable surface exists, the method must say so rather than inventing an implementation.
 
-METH-015 implements ADR-016 by separating logical date, execution evidence, generation/delivery history, aggregation-snapshot visibility, current path presence, and substantive evidence completeness.
+## Authority relationship
 
-These authority rules govern independent repository maintenance; they are not injected into Jules automation unless a Jules instruction surface is separately changed.
+- ADR records accepted repository decisions/boundaries
+- Methodology records procedures
+- `SPECIFICATION.md` records the current engineering contract
+- `CODE/**` records implementation
+- scanners/retained run artifacts provide narrow evidence for their exact properties
+- `RESEARCH/**` records point-in-time research/history
+
+A methodology cannot silently change a runtime constant, promote research to implementation, strengthen an evidence state beyond its support, or backdate later evidence.
 
 ## Related navigation
 
-- [Architecture decision index](../ADR/INDEX.md)
+- [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
-- [2026-08-01 through 2026-08-23 stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
-- [Contributing](../CONTRIBUTING.md)
-
-This index is navigation/documentation only and introduces no executable methodology or Jules automation change.
+- [August stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
