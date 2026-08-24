@@ -2,7 +2,7 @@
 
 - Decision date: 2026-08-05
 - Review calibration: 2026-08-24
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Scope: Axiom-0 reference contracts, methods, code, and evidence claims
 
 ## 状态 / Status
 
@@ -12,32 +12,38 @@
 
 ## 背景 / Context
 
-[CN] A passing unit test proves only the tested configuration. Previous language generalized heuristic demos into universal safety, determinism, and convergence.
+[CN] 单个检查、测试、扫描或指标只能证明其实际覆盖的配置和属性。历史表述曾把启发式演示推广为通用安全、确定性或收敛结论。
 
-[EN] A passing unit test proves only the tested configuration. Previous language generalized heuristic demos into universal safety, determinism, and convergence.
+[EN] A single check, test, scan, or metric supports only the configuration and property it actually covers. Historical wording generalized heuristic demonstrations into universal safety, determinism, or convergence claims.
 
 ## 决策 / Decision
 
-[CN] Every completion claim names artifact revision, environment, command or verification path, result, and untested boundary. Separate behavior tests, security arguments, performance measurements, and scientific evidence. No single metric substitutes for them.
+[CN] 每个完成或验证声明应明确关联到具体产物/修订、实际证据面、结果与未覆盖边界。行为证据、结构扫描、数值测量、安全论证和科学证据不得互相替代。
 
-[EN] Every completion claim names artifact revision, environment, command or verification path, result, and untested boundary. Separate behavior tests, security arguments, performance measurements, and scientific evidence. No single metric substitutes for them.
+[EN] Every completion or verification claim must identify the concrete artifact/revision, the evidence surface actually used, its result, and the unobserved boundary. Behavioral evidence, structural scans, numerical measurements, security arguments, and scientific evidence are not interchangeable.
 
-A verification surface is evidence only when it actually ran and its result is available. The repository MUST NOT infer test execution from file presence, workflow configuration, a historical statement, or a model-generated completion claim.
+File presence, configuration presence, historical prose, or a generated completion statement is not execution evidence by itself.
 
 ## 后果 / Consequences
 
-[CN] Reports become narrower but trustworthy.
+[CN] 报告会更窄，但能明确回答“到底验证了什么”。
 
-[EN] Reports become narrower but trustworthy.
+[EN] Reports become narrower but can state exactly what was established.
 
 ## 验证 / Verification
 
-[CN] 对可执行行为的变更，应记录实际运行的命令、环境/版本、结果与未运行项；纯文档/证据维护则明确写明未运行测试。不得把不存在或未核实的 CI、矩阵或检查写成已执行证据。
+Use the evidence surface appropriate to the claim and retain the result when the result matters to a later claim.
 
-[EN] For executable-behavior changes, record the commands actually run, environment/version, results, and unrun items. Documentation/evidence-only maintenance states explicitly when no tests were run. Do not describe an absent or unverified CI pipeline, test matrix, or check as executed evidence.
+Examples:
 
-A passing check is evidence for the stated configuration only; it is not a universal guarantee.
+- `scan_kl_divergence.py` supports its recorded KL cases
+- `scan_consistency.py` supports the document-structure properties it checks
+- `code_compliance.py` supports only the declared source-pattern rules it scans
+- `scope_guard.py` supports only the declared path boundary it evaluates
+- a research record supports its own point-in-time observation subject to source/provenance reconciliation
+
+A passing result is evidence for the stated property and revision only; it is not a universal guarantee.
 
 ## 例外 / Exceptions
 
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+An exception requires an explicit owner, affected claim/failure model, bounded compensating evidence, and rollback or correction path. Silent exceptions are invalid.
