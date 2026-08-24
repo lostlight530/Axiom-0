@@ -1,38 +1,46 @@
-# Canonical JSON without semantic mutation
+# Canonical JSON preserves payload semantics
 
 - Decision date: 2026-08-05
-- Scope: Axiom-0 reference contracts, methods, code, and verification
+- Review calibration: 2026-08-24
+- Status: Accepted
+- Implementation anchor: `CODE/contracts.py`
 
-## 状态 / Status
+## Context
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+Deterministic serialization is narrower than semantic normalization. Earlier transformations that changed case or punctuation could alter caller data.
 
-[EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
+## Decision
 
-## 背景 / Context
+`canonical_json(value)` defines the repository byte-level canonicalization contract:
 
-[CN] Uppercasing and punctuation splitting changed payload meaning. Deterministic serialization is narrower than canonical meaning.
+- JSON-compatible values only
+- mapping keys sorted
+- Unicode preserved
+- compact separators
+- non-finite numeric values rejected
+- original scalar/string content preserved
 
-[EN] Uppercasing and punctuation splitting changed payload meaning. Deterministic serialization is narrower than canonical meaning.
+`stable_digest(value)` is SHA-256 over those canonical UTF-8 bytes.
 
-## 决策 / Decision
+## Consequences
 
-[CN] Canonicalize JSON-compatible values with sorted keys, UTF-8, compact separators, and rejection of NaN/Infinity. Preserve original scalar content and attach a SHA-256 digest. Schema validation belongs at each public boundary.
+Equivalent mapping order produces stable serialized bytes while semantically different scalar content remains distinct.
 
-[EN] Canonicalize JSON-compatible values with sorted keys, UTF-8, compact separators, and rejection of NaN/Infinity. Preserve original scalar content and attach a SHA-256 digest. Schema validation belongs at each public boundary.
+## Evidence boundary
 
-## 后果 / Consequences
+A stable digest establishes content identity under this exact canonicalization contract.
 
-[CN] Equivalent mappings serialize consistently; semantically different strings remain different.
+It does not establish:
 
-[EN] Equivalent mappings serialize consistently; semantically different strings remain different.
+- semantic equivalence
+- source provenance
+- authorship
+- authorization
+- truth
+- integrity against a trusted external authority
 
-## 验证 / Verification
+Changing the canonicalization contract changes digest identity and must be treated as a versioned interpretation change.
 
-[CN] Contract tests assert stable Unicode serialization and digest behavior.
+## Scope boundary
 
-[EN] Contract tests assert stable Unicode serialization and digest behavior. A passing check is evidence for the stated configuration only; it is not a universal guarantee.
-
-## 例外 / Exceptions
-
-An exception requires a pull request naming its owner, expiry, affected threat or failure model, compensating control, verification, and rollback. Silent exceptions are invalid.
+This ADR does not describe general context ingestion, retrieval, memory, or document normalization. Axiom's executable implementation here is byte-level canonicalization and hashing only.
