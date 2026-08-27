@@ -1,6 +1,7 @@
 # Axiom-0 Architecture Decision Index
 
-Status: architecture-decision navigation and authority map
+Status: architecture-decision navigation and authority map  
+Current calibration: 2026-08-27
 
 `ADR/**` records durable repository decisions. ADR numbering is an identifier/order convention; it is not a supersession chain unless an ADR explicitly says so.
 
@@ -8,7 +9,7 @@ Status: architecture-decision navigation and authority map
 
 Axiom has distinct public layers:
 
-- `SPECIFICATION.md` — current behavioral interpretation of the implemented reference core
+- `SPECIFICATION.md` — current behavioral and Daily/Weekly/Monthly evidence contract
 - `CODE/**` — executable reference implementation
 - `ADR/**` — durable architectural decisions and capability boundaries
 - `METHODOLOGY/**` — procedures for measuring/interpreting repository behavior and research evidence
@@ -19,8 +20,6 @@ Axiom has distinct public layers:
 - presentation/navigation files — discovery surfaces, not runtime authority
 
 A change in one layer does not silently change another.
-
-This index documents public repository architecture only. It does not encode private prompts, hidden reasoning, future control strategy, or unpublished automation instructions.
 
 ## Decisions
 
@@ -46,17 +45,19 @@ This index documents public repository architecture only. It does not encode pri
 ## Cross-layer rules
 
 1. `CODE/**` defines implemented behavior; filenames and research metaphors do not add capabilities.
-2. `SPECIFICATION.md` describes that behavior and its limitations; it does not create missing runtime features.
+2. `SPECIFICATION.md` describes behavior and current evidence SOP; it does not create missing runtime features.
 3. ADRs explain durable decisions; a non-implemented boundary ADR must say that the capability is external/reference-only.
 4. Methodology explains how to measure or interpret specific repository/evidence surfaces; it does not become runtime policy.
 5. Historical research remains point-in-time evidence. Later reconciliation can change current interpretation without rewriting original execution state.
 6. External protocols/papers/SDKs remain reference material unless a corresponding implementation surface exists in this repository.
 7. Indexes are derived navigation and must not be treated as stronger authority than the addressed file.
+8. `scan_consistency.py` validates current index/document structural agreement only; a pass is not semantic validation.
 
 ## Related navigation
 
 - [Engineering specification](../SPECIFICATION.md)
 - [Methodology index](../METHODOLOGY/INDEX.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
-- [2026-08-01 through 2026-08-23 stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
+- [August stage audit through 2026-08-27](../RESEARCH/monthly/2026-08-through-27-stage-audit.md)
+- [Prior cutoff audit through 2026-08-23](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
 - [AI use disclosure](../AI_USE_DISCLOSURE.md)

@@ -1,12 +1,13 @@
 # Axiom-0 Engineering Specification
 
-- Version: 2026.08
+- Version: 2026.08-r2
+- Calibration: 2026-08-27
 - Status: implemented reference contract
-- Authority: this file describes repository behavior; ADRs explain durable decisions; retained evidence supports revision-specific claims
+- Authority: this file describes current repository behavior; ADRs explain durable decisions; retained evidence supports revision-specific claims
 
 ## Purpose and boundary
 
-Axiom-0 is a dependency-free Python reference for explicit transformation contracts, bounded state adaptation, numerical coherence checks, and structured event output.
+Axiom-0 is a dependency-free Python reference for explicit transformation contracts, bounded state adaptation, numerical coherence checks, structured event output, and claim-scoped repository evidence.
 
 The implemented repository demonstrates:
 
@@ -17,7 +18,7 @@ The implemented repository demonstrates:
 - heuristic state adaptation driven by explicit metrics and thresholds
 - serialized state transitions with optional prepare/validate hooks
 - structured event records and declared limitations
-- several narrow repository-side validation utilities
+- narrow repository-side validation utilities
 
 It is not a foundation model, autonomous safety system, authorization layer, sandbox, distributed scheduler, durable state service, database product, agent protocol runtime, or proof of deterministic cognition.
 
@@ -27,88 +28,75 @@ It is not a foundation model, autonomous safety system, authorization layer, san
 
 ### Executable reference core
 
-`CODE/contracts.py` provides:
+`CODE/contracts.py` provides canonical JSON, SHA-256 content identity, probability normalization, and KL divergence.
 
-- `canonical_json(value)` — sorted-key JSON encoding with Unicode preservation, compact separators, and rejection of non-finite values
-- `stable_digest(value)` — SHA-256 over canonical UTF-8 bytes
-- `normalize_distribution(values, name=...)` — validates and normalizes non-negative finite numeric mass
-- `kl_divergence(p, q)` — computes `D_KL(P||Q)` in nats and returns positive infinity for P-positive/Q-zero support mismatch
-- `utc_now()` — timestamp utility for event records
+`CODE/liquid_morphing.py` provides validated `SystemMetrics`, heuristic state selection, serialized transition commit, optional prepare/validate hooks, and transition history.
 
-These functions define byte/numeric behavior only. A stable digest is content identity under the declared canonicalization contract, not semantic equivalence, provenance, authorization, or truth.
+`CODE/nexus_core.py` provides `AxiomOrchestrator`, a single-process ordered T-01 through T-10 reference pipeline with run-local events.
 
-`CODE/liquid_morphing.py` provides:
-
-- `SystemMetrics` validation for normalized CPU, memory, entropy-level inputs and non-negative task/queue counts
-- `AxiomMorphingEngine.evaluate_morph()` with explicit heuristic thresholds
-- serialized transition commit through `asyncio.Lock`
-- optional `prepare` and `validate` hooks before state commit
-- transition history with source/target state, timing, success, and error type
-
-`SOLID`, `LIQUID`, `GAS`, and `PLASMA` are operational labels, not physical or cognitive-state claims.
-
-`CODE/nexus_core.py` provides `AxiomOrchestrator`, a single-process ten-stage reference pipeline:
-
-- successful runs traverse `T-01` through `T-10` in order
-- `T-04` evaluates the injected metrics provider and may request a local morph transition
-- `T-09` calculates KL divergence against the declared baseline
-- output contains a run ID, current state, event records, and explicit limitations
-
-The orchestrator does not establish distributed correctness, durable workflow semantics, exactly-once external effects, or universal determinism.
+These surfaces do not establish distributed correctness, durable workflow semantics, external authorization, or universal convergence.
 
 ## Repository validation surfaces
 
-The repository contains several narrow utilities with different contracts.
+Every validator has a separate contract. A result from one utility proves only the property that utility actually checks.
 
 ### `scan_kl_divergence.py`
 
-Evaluates the implemented named KL cases (`identity`, `renormalized_identity`) plus a support-mismatch case and emits machine-readable evidence.
+Evaluates the implemented named KL fixtures and support-mismatch behavior.
 
-Its result is case-specific numerical evidence only.
+Supported claim:
+
+`NAMED_KL_CASE_RESULT`.
+
+Not supported:
+
+`REPOSITORY_WIDE_ZERO_ENTROPY`.
 
 ### `scan_consistency.py`
 
-This is a legacy structural scanner, not a current validator for the complete architecture in this branch.
+The structural scanner was recalibrated on 2026-08-27 after historical Daily records exposed drift between its old hard-coded contract and the canonical documentation architecture.
 
-Its current code is hard-coded for:
+Current behavior:
 
-- 15 ADR files
-- 14 Methodology files
-- the older bilingual heading layout
+- reads ADR membership from `ADR/INDEX.md`
+- reads Methodology membership from `METHODOLOGY/INDEX.md`
+- requires index/document topology to agree
+- checks minimum current ADR sections: context, decision, evidence/verification boundary
+- checks minimum current Methodology sections: inputs, procedure, outputs, evidence/verification boundary
 
-The current architecture contains 16 ADRs and 15 Methodologies and several documents now use the newer architecture-bound structure.
+It no longer hard-codes a 15 ADR / 14 Methodology count.
 
-Current classification:
+Supported claim after a success:
 
-`LEGACY_STRUCTURAL_SCANNER / CURRENT_CONTRACT_MISMATCH`.
+`CURRENT_DOCUMENT_TOPOLOGY_AND_MINIMUM_SECTION_CONTRACT_SATISFIED`.
 
-Do not interpret this script's presence as evidence that the current ADR/Methodology set has been validated by it.
+It does not establish architecture semantics, implementation correctness, scientific truth, safety, or convergence.
+
+Historical failures from the pre-repair scanner remain historical evidence and are not retroactively changed.
 
 ### `code_compliance.py`
 
-Scans declared Python targets for a small explicit set of prohibited source patterns. Absence of those patterns is not a general security property.
+Scans declared Python targets for an explicit set of prohibited source patterns. Absence of those patterns is not a general security property.
 
 ### `scope_guard.py`
 
-Checks declared protected repository paths and explicit allow-file exceptions. Passing its path rule says nothing about semantic correctness of an allowed file.
+Checks declared protected repository paths and explicit allow-file rules. Passing a path rule does not establish semantic correctness of an allowed change.
 
 ### `validate_research_record.py`
 
-Validates the specific Daily/Weekly filename, section, logical date/window, bounded-result, hypothesis-state, and missing-KL rules implemented by that script.
+Validates the Daily/Weekly filename, section, logical-date/window, bounded-result, hypothesis-state, and missing-KL rules encoded in that script.
 
-It does not establish source truth or scientific correctness.
-
-A result from one utility proves only the exact property that utility actually checks.
+It does not independently prove that a command ran, a source proposition is true, or a scientific inference is valid.
 
 ## Repository knowledge surfaces
 
 - `ADR/**` — durable architectural decisions and capability boundaries
 - `METHODOLOGY/**` — procedures for measuring/interpreting repository behavior and research evidence
-- `EVIDENCE_BASELINE.md` — source/evidence semantics
-- `RESEARCH/**` — historical Daily/Weekly/Monthly research artifacts and reconciliations
+- `EVIDENCE_BASELINE.md` — current source/evidence semantics
+- `RESEARCH/**` — historical Daily/Weekly/Monthly evidence and reconciliations
 - `GOVERNANCE/**` — repository design/planning records
 - `AUTOMATION/**` — operational metadata, not semantic authority
-- `FRONTEND/**`, README, indexes, and related files — presentation/discovery surfaces
+- presentation/navigation files — discovery surfaces, not runtime authority
 
 Research prose does not silently change executable behavior. Executable code does not automatically validate every research claim.
 
@@ -116,15 +104,15 @@ Research prose does not silently change executable behavior. Executable code doe
 
 ### Canonicalization
 
-`canonical_json(value) -> str` sorts mapping keys, preserves Unicode and string case, removes insignificant JSON whitespace, and rejects NaN/Infinity.
+`canonical_json(value) -> str` sorts mapping keys, preserves Unicode and string case, removes insignificant JSON whitespace, and rejects non-finite values.
 
-It establishes deterministic serialization for JSON-compatible values under this implementation. It does not establish semantic equivalence between differently represented inputs.
+`stable_digest(value)` returns SHA-256 over canonical UTF-8 bytes.
 
-`stable_digest` returns SHA-256 over canonical UTF-8 bytes.
+A digest establishes content identity under this serialization contract, not semantic equivalence, source provenance, authorization, or truth.
 
 ### Probability measures
 
-`normalize_distribution(values, name=...)` requires a non-empty numeric sequence, rejects booleans, negative/non-finite values and zero total mass, and returns normalized floats.
+`normalize_distribution(values, name=...)` requires a non-empty numeric sequence and rejects booleans, negative/non-finite values, and zero total mass.
 
 `kl_divergence(p, q)` computes `D_KL(P||Q)` in nats.
 
@@ -133,15 +121,13 @@ It establishes deterministic serialization for JSON-compatible values under this
 - P-positive/Q-zero support mismatch returns positive infinity
 - threshold selection is caller/configuration policy, not a mathematical constant
 
-A recorded `D_KL = 0.0` is evidence only for the exact input vectors/function revision associated with that observation.
+A recorded `D_KL = 0.0` is evidence only for the exact recorded vectors/fixture and function revision.
 
 ### Metrics and adaptation
 
-`SystemMetrics.entropy_level` is a validated scalar input in `[0,1]` used by the local heuristic morphing policy. Its name does not by itself mean Shannon entropy, KL divergence, thermodynamic entropy, or another formally derived quantity.
+`SystemMetrics.entropy_level` is a validated scalar input in `[0,1]` used by the local heuristic morphing policy. Its name does not make it Shannon entropy, KL divergence, thermodynamic entropy, or a system-health theorem.
 
-CPU/memory/queue weights and morph thresholds are implementation-specific heuristics.
-
-`AxiomMorphingEngine.evaluate_morph()` selects candidate local state changes. `shift()` commits the state only after optional hooks complete successfully.
+`SOLID`, `LIQUID`, `GAS`, and `PLASMA` are local operational labels.
 
 Supported bounded claim:
 
@@ -153,11 +139,70 @@ Not supported:
 
 ### Continuum run
 
-`AxiomOrchestrator.run_continuum(input) -> dict` emits `T-01` through `T-10` for a successful reference run.
+`AxiomOrchestrator.run_continuum(input) -> dict` emits the reference T-01 through T-10 path for a successful run.
 
-Timestamps make complete run output non-byte-identical across executions even when canonical input digests are stable.
+The returned run ID is a local identifier, not a distributed idempotency key or durable transaction identifier.
 
-The returned `run_id` identifies the local reference run; it is not a distributed idempotency key or durable transaction identifier.
+## Daily / Weekly / Monthly evidence SOP
+
+This section defines current interpretation. It does not rewrite historical artifacts.
+
+### Daily
+
+A Daily manifest may assert only what direct retained evidence supports.
+
+1. **A1 source observation**
+   - distinguish check time, publication/version time, source authority, and exact supported proposition
+   - reachability is not claim truth
+2. **A2 numerical/structural audit**
+   - retain each command result separately
+   - KL success is fixture/input scoped
+   - structural scanner success is document-structure scoped
+   - one command success does not override another command failure
+3. **A3 execution surface**
+   - if execution did not occur, record `NOT_EXECUTED` or `NOT_COMPUTED`
+   - a normal/template success phrase is non-evidentiary when actual execution fields say the stage was skipped, missing, or aborted
+   - `100 / 100` supports only the specified executions actually evidenced
+4. **A4 topology/index surface**
+   - navigation/path correctness is not runtime or semantic correctness
+   - if A4 is halted, do not infer index alignment from another date
+
+### Weekly
+
+Weekly synthesis may aggregate, preserve, or downgrade Daily evidence.
+
+It must not:
+
+- backfill an unexecuted Daily stage as success
+- create a missing KL scalar
+- erase Daily failure/error states
+- upgrade repeated citations into independent corroboration
+- treat current file coverage as historical execution coverage
+
+A week that has not completed has no inferred final Weekly result.
+
+### Monthly/A6
+
+A partial-month stage audit may reconcile evidence to a cutoff. It must not create future-day evidence or declare formal monthly closure before the natural monthly lifecycle has actual retained evidence.
+
+Formal August status at 2026-08-27: `OPEN`.
+
+## Historical evidence and correction semantics
+
+Historical Daily and Weekly records remain point-in-time evidence.
+
+Later reconciliation may record:
+
+- `TEMPORAL_PROVENANCE_CONFLICT`
+- `HISTORICAL_COMMAND_RESULT_CONFLICT`
+- `INVALID_INPUT_PROVENANCE_LABEL`
+- `MISSING_DATA`
+- `NOT_COMPUTED`
+- a narrowed run-local interpretation
+
+A repaired current validator does not turn a historical failed validator execution into a historical success.
+
+The current August stage authority is `RESEARCH/monthly/2026-08-through-27-stage-audit.md`; the earlier through-23 stage audit remains the prior cutoff record.
 
 ## Error and ownership boundary
 
@@ -165,27 +210,15 @@ Invalid caller data raises `TypeError` or `ValueError` where explicit input vali
 
 The library does not establish authentication, authorization, isolation, secret management, network policy, quotas, durable retries, or incident handling.
 
-Those remain outside the reference implementation.
-
 ## Evidence boundary
 
-Repository evidence is claim-specific.
+- KL scan → recorded KL fixtures only
+- structural scan → current documentation topology/minimum sections only
+- source-pattern scan → explicit patterns only
+- scope guard → path rules only
+- research-record validator → encoded record structure only
+- Daily/Weekly artifacts → point-in-time retained evidence subject to provenance reconciliation
 
-- a KL scan supports its recorded cases
-- the legacy structural scanner supports only its historical hard-coded structure and is currently mismatched to the 16/15 architecture
-- a source-pattern scan supports only its explicit patterns
-- a scope guard supports only its path rules
-- a research-record validator supports only its encoded structural/field rules
-- a Daily/Weekly artifact supports its point-in-time stored observation subject to source/provenance reconciliation
+File presence alone is not execution evidence. Later success does not erase earlier failure, missing fields, blocked states, or chronology conflicts.
 
-File presence alone is not execution evidence. A current successful observation does not erase an earlier failure, missing field, blocked state, or temporal provenance conflict.
-
-Python-version compatibility is asserted only when relevant executable behavior was actually observed in that environment for the revision under discussion.
-
-## Temporal and research interpretation
-
-Historical research artifacts remain point-in-time records. Later reconciliation can narrow their current interpretation without pretending later evidence was available at the original time.
-
-Logical date, execution state, source-event time, generation/delivery state, aggregation visibility, current path presence, and substantive evidence completeness are separate dimensions when they differ.
-
-Formal August Monthly closure remains open before the natural month ends; partial-stage reconciliation does not manufacture future evidence.
+Python-version compatibility is revision/environment-specific and is asserted only when the relevant executable behavior was actually observed and retained.

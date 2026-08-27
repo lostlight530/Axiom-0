@@ -1,8 +1,8 @@
 # 2026 Evidence Baseline
 
-- Retrieval date: 2026-08-24
-- Scope: external facts and evidence semantics that bound Axiom runtime, research, security, and evaluation claims
-- Policy: an official or primary source informs a bounded local decision; it never certifies this repository by itself
+- Retrieval/calibration date: 2026-08-27
+- Scope: external facts and evidence semantics that bound Axiom runtime, research, security, validation, and evaluation claims
+- Policy: a source, command, file, digest, scanner, or historical artifact supports only the property actually evidenced by that surface
 
 ## Repository implementation anchor
 
@@ -12,126 +12,96 @@ Current executable anchors:
 - `CODE/liquid_morphing.py` — validated local metrics, heuristic state selection, serialized state-transition commit
 - `CODE/nexus_core.py` — single-process ten-stage reference pipeline and structured run events
 - `scan_kl_divergence.py` — named numerical KL cases
-- `scan_consistency.py` — legacy structural scan with a current 16/15 architecture mismatch
+- `scan_consistency.py` — current documentation-topology/minimum-section scanner
 - `code_compliance.py` — explicit source-pattern checks
 - `scope_guard.py` — declared repository-path boundary checks
 - `validate_research_record.py` — encoded Daily/Weekly research-record checks
 
-No external paper, protocol, SDK, standard, or engineering article upgrades a reference idea into an implemented repository capability without a corresponding implementation surface.
+No paper, protocol, SDK, standard, scanner, or generated research artifact upgrades a reference idea into an implemented repository capability without a corresponding implementation surface.
 
 ## Local evidence-surface calibration
 
 ### KL scanner
 
-`scan_kl_divergence.py` emits numeric evidence for the implemented `identity` and `renormalized_identity` cases plus support mismatch.
+`scan_kl_divergence.py` emits numeric evidence for its named `identity`, `renormalized_identity`, and support-mismatch cases.
 
-A successful result supports those cases only.
+A successful result is case-specific numerical evidence. `D_KL = 0.0` is not repository-wide zero entropy, zero semantic drift, safety, or convergence.
 
 ### Structural scanner
 
-`scan_consistency.py` is currently stale relative to the architecture documented in this branch.
+`scan_consistency.py` was repaired on 2026-08-27 after retained August Daily artifacts exposed contract drift.
 
-Its code expects:
+The pre-repair scanner was hard-coded for 15 ADRs, 14 Methodologies, and an obsolete bilingual heading layout while the canonical indexes had evolved to 16 ADRs and 15 Methodologies.
 
-- 15 ADRs
-- 14 Methodologies
-- the older bilingual heading contract
+Historical 2026-08-24/26/27 structural failures therefore remain valid execution-era records but are currently interpreted as:
 
-The current architecture contains 16 ADRs and 15 Methodologies.
+`SCANNER_CONTRACT_DRIFT_AGAINST_CANONICAL_DOCUMENTATION`.
 
-Current state:
+The repaired scanner now derives document membership from `ADR/INDEX.md` and `METHODOLOGY/INDEX.md` and checks minimum current structural sections.
 
-`LEGACY_STRUCTURAL_SCANNER / CURRENT_CONTRACT_MISMATCH`.
+A repaired-scanner success means only:
 
-Do not treat the existence of that scanner as evidence that the current ADR/Methodology set has been structurally validated.
+`CURRENT_DOCUMENT_TOPOLOGY_AND_MINIMUM_SECTION_CONTRACT_SATISFIED`.
+
+It does not prove architecture semantics, implementation correctness, source truth, safety, or convergence.
+
+### 2026-08-25 scanner evidence conflict
+
+The retained 2026-08-25 Daily artifact reports structural-scanner exit code 0 while also saying missing headers were listed. The surrounding retained scanner contract was obsolete relative to the 16/15 canonical document set.
+
+Without stronger retained command output/revision evidence, current status is:
+
+`HISTORICAL_COMMAND_RESULT_CONFLICT / CLEAN_SCANNER_PASS_NOT_ESTABLISHED`.
 
 ### Source-pattern scanner
 
-`code_compliance.py` checks only its explicit regular-expression rules over the declared Python targets. It is not a general security or correctness proof.
+`code_compliance.py` checks only its explicit regular-expression rules over declared Python targets. It is not a general security or correctness proof.
 
 ### Path guard
 
-`scope_guard.py` evaluates only its protected-file/prefix and allow-file rules. It does not determine whether an allowed documentation change is semantically correct.
+`scope_guard.py` evaluates only its protected-file/prefix and allow-file rules. It does not determine whether an allowed change is semantically correct.
 
 ### Research-record validator
 
-`validate_research_record.py` checks the filename/section/date/window and bounded-result rules encoded in that script. It does not verify external source truth, theorem semantics, or every research inference.
+`validate_research_record.py` checks the filename/section/date/window and bounded-result rules encoded in that script. It does not verify external source truth, theorem semantics, command execution, or every research inference.
 
-## Runtime-version evidence
+## Historical Daily execution semantics
 
-Python documentation can establish language/runtime facts, but repository compatibility is revision-specific.
+Historical Daily artifacts remain point-in-time evidence. Current interpretation may narrow a statement without rewriting the original file.
 
-A Python version may be described as a verified environment only when relevant executable behavior was actually observed in that environment for the reviewed revision and the result is retained.
+When fields conflict, prefer the strongest direct execution evidence retained in the same record:
 
-A version appearing in a historical artifact is evidence about that artifact's recorded environment, not automatic compatibility evidence for every revision.
+- explicit `NOT_COMPUTED` / `MISSING_DATA` / `NOT_VERIFIED` is not upgraded by a copied success phrase
+- an aborted stage is not treated as executed merely because a template mentions its normal success string
+- a failed command remains failed even if a later date succeeds
+- a current repaired validator does not retroactively change an old validator result
 
-## Agent and AI claim boundaries
+Reference examples:
 
-- NIST AI 600-1 is a voluntary generative-AI risk profile; it motivates lifecycle evidence, not a proof of Axiom safety or zero entropy
-- OWASP Agentic Applications material defines external risk classes; the Axiom reference core does not implement a complete authorization or sandbox boundary
-- OpenAI third-party evaluation guidance reinforces that harness, tools, retries, scoring, budgets and validity checks affect observed capability
-- Anthropic agent-evaluation guidance separates task, trial, grader, trajectory/transcript, outcome and harness
-- external constitutions or layered safeguards are engineering references, not executable Axiom guarantees
-- AlphaEvolve is a reference example of evaluator-backed search, not evidence of deterministic cognition or universal convergence in Axiom
+- 2026-08-24: pipeline failed at A2; A3 actual fields are `NOT_COMPUTED`; template `100 / 100` wording is non-evidentiary
+- 2026-08-26 and 2026-08-27: pipeline failed at A2; A3 was not established; copied `100 / 100 ... overridden by failure` wording is not an execution result
+- 2026-08-25: A3 retained result can remain run-scoped while the structural-scanner line remains an unresolved command-result conflict
 
-## Protocol/state references
+## Daily → Weekly → Monthly inheritance
 
-The following remain `REFERENCE_ONLY`.
+### Daily
 
-### MCP 2026-07-28
+A Daily record supports only its observed command/source/input/result surface.
 
-The named release defines a stateless protocol core and distinguishes that protocol fact from application state maintained above it.
+### Weekly
 
-Axiom use: vocabulary for keeping protocol/session mechanics separate from application/runtime state.
-
-Axiom does not implement MCP.
-
-### A2A v1.0
-
-A2A distinguishes Agent Cards, Tasks, Messages, Artifacts, Context, streaming/push behavior, negotiation and extensions.
-
-Axiom use: external lifecycle/state reference only.
-
-Axiom does not implement an A2A endpoint.
-
-### OpenAI Agents SDK tracing
-
-Trace/span data is one execution-evidence surface. A trace does not independently prove outcome correctness or authoritative external effect.
-
-### Anthropic evaluation decomposition
-
-Trajectory, outcome, grader judgment and harness assumptions remain distinct evidence surfaces.
-
-### Google ADK context
-
-Session, session State and cross-session Memory are distinct external state scopes. This does not establish an ADK integration or durable-memory implementation in Axiom.
-
-## Research source authority
-
-Evidence authority and repository implementation are independent.
-
-1. `PRIMARY_OFFICIAL` — original specification, official documentation, first-party release record or authoritative project record
-2. `PRIMARY_RESEARCH` — original scholarly work, bounded to the studied system, assumptions, version and reported result
-3. `SECONDARY_TECHNICAL` — survey, vendor explanation, encyclopedia, blog or commentary
-4. `UNVERIFIED` — provenance, version or claim support incomplete
-
-Source reachability does not prove a proposition. Source authority does not prove local implementation.
-
-## Date and version semantics
-
-- `Created`, `Published`, `Submitted`, `Released`, `Updated`, `Last-Modified`, and retrieval/check time are distinct
-- a later-version citation must use the date belonging to that version, not automatically the v1 date
-- unresolved exact version/date pairing remains `VERSION_DATE_NOT_VERIFIED`
-- when persisted observation time precedes the same record's material source-event time, use `TEMPORAL_PROVENANCE_CONFLICT` until stronger history resolves the chronology
-
-## Daily-to-Weekly inheritance
-
-Weekly synthesis may aggregate or downgrade Daily evidence but cannot silently create missing Daily observations or stronger evidence.
+Weekly synthesis may aggregate, preserve, or downgrade Daily evidence but cannot silently create missing evidence.
 
 - `MISSING_DAILY_FILES = NONE` does not imply `MISSING_EVIDENCE = NONE`
-- `NOT_COMPUTED`, `MISSING_DATA`, rejected observations and unresolved hypotheses survive aggregation
+- `NOT_COMPUTED`, `MISSING_DATA`, failed commands, rejected observations, and unresolved hypotheses survive aggregation
 - a later successful observation does not erase an earlier error/missing field
-- a Weekly conclusion cannot be stronger than its traceable support without a new evidence record
+- a Weekly conclusion cannot be stronger than its traceable support without new evidence
+
+At the 2026-08-27 cutoff ISO week W35 is still in progress; no W35 Weekly result is inferred merely because Daily paths exist.
+
+### Monthly
+
+Formal August monthly/A6 closure remains `OPEN` until the natural monthly lifecycle has actual retained evidence. A stage audit must not manufacture 2026-08-28 through 2026-08-31 evidence.
 
 ## Temporal evidence availability
 
@@ -149,6 +119,17 @@ Keep separate when materially different:
 
 Current path presence does not prove earlier snapshot availability or original execution success.
 
+A later correction changes current interpretation, not historical chronology.
+
+## Date and version semantics
+
+- `Created`, `Published`, `Submitted`, `Released`, `Updated`, `Last-Modified`, and retrieval/check time are distinct
+- a later-version citation must use the date belonging to that version, not automatically the v1 date
+- unresolved exact version/date pairing remains `VERSION_DATE_NOT_VERIFIED`
+- when persisted observation time precedes the same record's material source-event time, use `TEMPORAL_PROVENANCE_CONFLICT` until stronger history resolves it
+
+The 2026-08-19 August chronology conflict remains unresolved unless independent history explicitly resolves the timestamps.
+
 ## Numerical boundaries
 
 ### KL divergence
@@ -156,26 +137,53 @@ Current path presence does not prove earlier snapshot availability or original e
 `CODE/contracts.py` defines `D_KL(P||Q)` for validated probability vectors.
 
 - `D_KL = 0.0` is scoped to the exact recorded input pair
-- it does not mean repository-wide zero entropy or zero semantic drift
 - positive P mass against zero Q mass returns positive infinity
 - output range is not input provenance
-
-The named KL cases are stronger input provenance than a generic historical `Actual Input Range: 0.0 to 0.0` field.
+- named fixture/case identity is stronger input provenance than historical output-like text such as `Actual Input Range: 0.0 to 0.0`
 
 ### Morphing metrics
 
-`SystemMetrics.entropy_level` is an input scalar for a local heuristic policy; it is not automatically Shannon entropy or KL divergence.
+`SystemMetrics.entropy_level` is a caller-supplied normalized scalar for a local heuristic policy. It is not automatically Shannon entropy or KL divergence.
 
-CPU/memory/queue thresholds and morph state labels are implementation-specific heuristics.
+CPU/memory/queue thresholds and morph-state labels are implementation-specific heuristics.
 
 ### Ten-stage pipeline
 
-A successful `AxiomOrchestrator` run establishes only the declared single-process event path for that execution. It does not establish distributed coordination, durable transactions, external idempotency or future correctness.
+A successful `AxiomOrchestrator` run establishes only the declared single-process event path for that execution. It does not establish distributed coordination, durable transactions, external idempotency, exactly-once effects, or future correctness.
+
+## Source authority
+
+Evidence authority and repository implementation are independent.
+
+1. `PRIMARY_OFFICIAL` — original specification, official documentation, first-party release record or authoritative project record
+2. `PRIMARY_RESEARCH` — original scholarly work, bounded to the studied system, assumptions, version and reported result
+3. `SECONDARY_TECHNICAL` — survey, vendor explanation, encyclopedia, blog or commentary
+4. `UNVERIFIED` — provenance, version, or claim support incomplete
+
+Source reachability does not prove a proposition. Source authority does not prove local implementation. Repeating one source through Daily and Weekly records does not create independent corroboration.
+
+## External protocol and evaluation references
+
+These remain `REFERENCE_ONLY` unless a local implementation surface is added.
+
+### MCP 2026-07-28
+
+The official release defines a stateless protocol core for that revision while allowing application state above the protocol. Axiom does not implement MCP.
+
+### A2A v1.0
+
+A2A supplies external agent/task/message/artifact/context and transport concepts. Axiom does not implement an A2A endpoint.
+
+### Evaluation/observability references
+
+Trace, trajectory/transcript, outcome, grader decision, harness assumptions, and authoritative external effect remain separate evidence surfaces.
 
 ## Current local consequence
 
-Axiom evidence claims name the exact input, implementation surface, revision/time boundary, result and limitation when those dimensions matter.
+Axiom evidence claims should name, when material:
 
-Canonical serialization, KL divergence, morph-transition history, narrow scanners and historical Daily/Weekly records establish only their declared contracts.
+`SURFACE + INPUT/IDENTITY + REVISION/TIME + RESULT + LIMITATION`.
 
-Security, semantic truth, agent alignment, production reliability, durable external effects and universal convergence require separate evidence.
+The canonical August stage record through 2026-08-27 is `RESEARCH/monthly/2026-08-through-27-stage-audit.md`.
+
+Security, semantic truth, agent alignment, production reliability, durable external effects, and universal convergence require separate evidence.

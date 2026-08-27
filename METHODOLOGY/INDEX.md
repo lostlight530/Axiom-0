@@ -1,6 +1,7 @@
 # Axiom-0 Methodology Index
 
-Status: procedure and implementation-boundary map
+Status: procedure and implementation-boundary map  
+Current calibration: 2026-08-27
 
 `METHODOLOGY/**` describes how a concrete repository property is measured, interpreted, or reconciled. A method does not create a runtime capability merely by existing.
 
@@ -34,13 +35,22 @@ Every methodology should answer five questions:
 4. **What output can be supported?**
 5. **What does the procedure explicitly not prove or implement?**
 
+For current structural validation, `scan_consistency.py` derives membership from this index and checks minimum procedure/evidence sections. That scanner does not validate the semantic quality of a methodology.
+
 If no executable surface exists, the method must say so rather than inventing an implementation.
+
+## Daily / Weekly / Monthly relation
+
+- Daily records preserve point-in-time source, numerical, structural, execution, and topology evidence.
+- Weekly synthesis may aggregate or downgrade Daily evidence but cannot invent missing observations or erase failures.
+- Monthly/stage reconciliation records the strongest current interpretation to a declared cutoff without backdating later evidence.
+- At the 2026-08-27 cutoff W35 and the natural August month are still open; no final W35/month result is inferred.
 
 ## Authority relationship
 
 - ADR records accepted repository decisions/boundaries
 - Methodology records procedures
-- `SPECIFICATION.md` records the current engineering contract
+- `SPECIFICATION.md` records the current engineering and evidence-SOP contract
 - `CODE/**` records implementation
 - scanners/retained run artifacts provide narrow evidence for their exact properties
 - `RESEARCH/**` records point-in-time research/history
@@ -52,4 +62,5 @@ A methodology cannot silently change a runtime constant, promote research to imp
 - [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
-- [August stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
+- [August stage audit through 2026-08-27](../RESEARCH/monthly/2026-08-through-27-stage-audit.md)
+- [Prior cutoff audit through 2026-08-23](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
