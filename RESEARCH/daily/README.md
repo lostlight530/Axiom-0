@@ -1,35 +1,18 @@
-# Daily Research Assets
+# Daily pipeline records
 
-## Purpose
+The canonical Daily artifact is `YYYY-MM-DD-pipeline-manifest.md`. Earlier whitepaper/archive/hypotheses files are historical formats, not the current SOP.
 
-> **[CN]**: 本目录用于收纳 Axiom-0 日度研究资产
-> **[EN]**: This directory is used to store Axiom-0 daily research assets
+## A1–A4 contract
 
-## File Naming
+| Stage | Required evidence | Failure/absence state |
+| --- | --- | --- |
+| A1 — source and input | source identity, version/date, retrieval time, input identity or digest | `NOT_VERIFIED`, `MISSING_DATA`, or a named provenance conflict |
+| A2 — independent scans | KL evidence and structural evidence recorded separately, including command, exit code, and scanner contract identity | `NOT_COMPUTED` when not run; any non-zero result fails closed |
+| A3 — bounded executions | actual execution, success, and failure counts plus environment | `NOT_EXECUTED` after A2 failure; never infer `100 / 100` |
+| A4 — repository/index check | exact checked surface and result | `NOT_EXECUTED` after an earlier failure |
 
-- **[CN]**: `YYYY-MM-DD-whitepaper.md`
-  - **[EN]**: `YYYY-MM-DD-whitepaper.md`
-- **[CN]**: `YYYY-MM-DD-archive.md`
-  - **[EN]**: `YYYY-MM-DD-archive.md`
-- **[CN]**: `YYYY-MM-DD-假设.md`
-  - **[EN]**: `YYYY-MM-DD-hypotheses.md`
+Evidence types are independent: KL evidence does not prove document topology; topology does not prove execution; execution does not prove source truth; path coverage does not prove evidence completeness. A non-zero A2 result stops A3 and A4. A template success sentence cannot override an explicit stop or missing result. Historical template text may remain only when a calibration marks it `NON_EVIDENTIARY_TEMPLATE_TEXT`.
 
-## Expected Flow
+KL values must include their input identity and unit. If KL was not computed, record a missing state instead of a number. Every consistency run must retain the `axiom_document_topology` JSON contract evidence emitted by `scan_consistency.py`.
 
-```text
-automation run
-  -> daily node outputs
-  -> daily whitepaper
-  -> archive snapshot
-  -> hypotheses note
-  -> ADR candidate extraction
-```
-
-## Rule
-
-> **[CN]**: 研究资产允许高密度 神话化 中间态
-> **[EN]**: Research assets allow for high density, mythification, and intermediate states
-> **[CN]**: 但最好保留来源状态标签
-> **[EN]**: But it's better to keep the source status tag
-
-entropy=0
+Weekly A5 may inherit, aggregate, or downgrade Daily evidence; it cannot promote missing or failed evidence. Monthly A6 closes only after the natural month ends and its evidence is retained. See the [August 1–27 ledger](../monthly/2026-08-through-27-stage-audit.md) and [maintenance contract](../../GOVERNANCE/MAINTENANCE.md).

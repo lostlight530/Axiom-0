@@ -216,3 +216,27 @@ The structural-scanner repair changes only repository-document validation. It do
 `DAILY_PATH_COVERAGE_27_OF_27_WITH_HISTORICAL_FAILURES_PRESERVED_SCANNER_CONTRACT_REPAIRED_AND_MONTH_OPEN`
 
 This conclusion preserves historical failures and conflicts while repairing the current canonical validation contract. It is not a final August seal.
+
+## 9. Complete 27-day interpretation matrix
+
+`PRESENT` means a field exists in the retained Daily; it is not a replay. For 1–23, detailed command values remain in the original Daily and through-23 audit. This table records the controlled current disposition needed to prevent promotion.
+
+| Date | A1 | A2 KL | A2 consistency | A3 | A4 | Current disposition |
+| --- | --- | --- | --- | --- | --- | --- |
+| 08-01 | identity disputed | retained | retained | retained | retained | `INPUT_IDENTITY_CALIBRATION_REQUIRED` |
+| 08-02–08-13 | present | run-scoped | run-scoped | execution-scoped | index-scoped | `PRESERVED_WITH_SCOPE_BOUNDARIES` |
+| 08-14 | source date conflict | run-scoped | run-scoped | execution-scoped | index-scoped | `SOURCE_DATE_SUPERSEDED_FOR_CURRENT_INTERPRETATION` |
+| 08-15 | present | run-scoped | run-scoped | execution-scoped | index-scoped | `PRESERVED_WITH_SCOPE_BOUNDARIES` |
+| 08-16 | secondary source | run-scoped | run-scoped | execution-scoped | index-scoped | `SOURCE_AUTHORITY_DOWNGRADED` |
+| 08-17–08-18 | present | run-scoped | run-scoped | execution-scoped | index-scoped | `PRESERVED_WITH_SCOPE_BOUNDARIES` |
+| 08-19 | temporal conflict | run-scoped | run-scoped | execution-scoped | index-scoped | `TEMPORAL_PROVENANCE_CONFLICT` |
+| 08-20–08-21 | input range invalid as provenance | retained scalar | run-scoped | execution-scoped | index-scoped | `INPUT_PROVENANCE_NOT_VERIFIED` |
+| 08-22–08-23 | present | run-scoped | run-scoped | execution-scoped | index-scoped | `PRESERVED_WITH_SCOPE_BOUNDARIES` |
+| 08-24 | present | passed | failed | `NOT_EXECUTED` | `NOT_EXECUTED` | `FAIL_CLOSED; NON_EVIDENTIARY_TEMPLATE_TEXT` |
+| 08-25 | present | passed | conflicting record | 100/100 retained | retained | `HISTORICAL_COMMAND_RESULT_CONFLICT` |
+| 08-26 | present | passed | failed | `NOT_EXECUTED` | `NOT_EXECUTED` | `FAIL_CLOSED; NO_100_OF_100_PROMOTION` |
+| 08-27 | present | passed | failed | `NOT_EXECUTED` | `NOT_EXECUTED` | `FAIL_CLOSED; NO_100_OF_100_PROMOTION` |
+
+Scanner timeline: `HISTORICAL_CONTROL_PLANE_DRIFT_CONFIRMED`; `REMEDIATION_PRESENT_ON_CURRENT_MAIN`; `POST_REPAIR_JULES_EXECUTION_NOT_YET_OBSERVED`. The repaired scanner emits contract version `2026-08-28`; this audit did not replay a historical Daily.
+
+W31–W34 retain their existing reconciliations. W35 is `WEEK_IN_PROGRESS / NO_WEEKLY_CLOSURE`; August is `MONTH_OPEN`. Dates 08-28–08-31 are outside this ledger and are neither filled nor inferred.

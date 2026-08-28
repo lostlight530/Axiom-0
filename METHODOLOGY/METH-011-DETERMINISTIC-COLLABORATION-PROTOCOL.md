@@ -22,6 +22,19 @@ When research discusses collaboration architecture:
 4. do not infer deterministic collaboration from deterministic serialization or ordered local stages
 5. do not infer consensus from repeated agreement in research documents
 
+## Inputs
+
+- the collaboration/consensus claim and cited external mechanism
+- named local message, coordination, or state-transition implementation, if any
+- failure model and validation evidence, if retained
+
+## Procedure
+
+1. distinguish single-process serialized transitions from multi-agent coordination
+2. resolve claimed messages, membership, consensus, and failure handling to executable paths
+3. classify absent surfaces `NOT_IMPLEMENTED` and external mechanisms `REFERENCE_ONLY`
+4. preserve assumptions and counterexamples
+
 ## Outputs
 
 - `REFERENCE_ONLY` / `NOT_IMPLEMENTED` status

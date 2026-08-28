@@ -27,7 +27,7 @@ Turn a repository problem or durable boundary into an ADR without importing spec
 7. Link any corresponding methodology/specification surface when the relationship is real.
 8. Do not convert a historical file name or conceptual label into implementation evidence.
 
-## Output
+## Outputs
 
 A reviewable ADR containing:
 
@@ -38,6 +38,9 @@ A reviewable ADR containing:
 - evidence boundary
 - consequences
 - promotion/exception boundary where necessary
+- a stable ADR identifier and path
+- explicit context, decision, consequences, implementation mapping, and verification boundary
+- unresolved evidence gaps and superseded historical interpretation where applicable
 
 ## Failure conditions
 

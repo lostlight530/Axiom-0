@@ -1,5 +1,15 @@
 # Axiom-0 Daily Pipeline Manifest
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `PIPELINE_FAILED_AT_A2_CONSISTENCY`
+> - Current disposition: `SUPERSEDED_FOR_CURRENT_INTERPRETATION / NON_EVIDENTIARY_TEMPLATE_TEXT`
+> - Reason: A3/A4 stopped after the scanner failure; current-main scanner repair is not a replay of this run.
+> - Evidence boundary: proves historical fail-closed behavior; post-repair Jules validation remains unobserved.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## ZECP Metadata
 - **Date (UTC):** 2026-08-27
 - **Pipeline Status:** FAILED

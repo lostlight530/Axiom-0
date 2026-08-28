@@ -1,5 +1,15 @@
 # Axiom-0 Daily Pipeline Manifest
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `PIPELINE_FAILED_AT_A2_CONSISTENCY`
+> - Current disposition: `SUPERSEDED_FOR_CURRENT_INTERPRETATION / NON_EVIDENTIARY_TEMPLATE_TEXT`
+> - Reason: consistency failed, so A3/A4 did not execute; a retained 100/100 template sentence is not evidence.
+> - Evidence boundary: proves fail-closed behavior and historical scanner drift, not runtime failure or 100 successful executions.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## ZECP Metadata
 - **Date (UTC):** 2026-08-24
 - **Network Status:** CONNECTED

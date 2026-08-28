@@ -1,5 +1,15 @@
 # Axiom-0 Weekly Manifest
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `WEEKLY_RESULT_RETAINED`
+> - Current disposition: `HISTORICAL_ONLY / CALIBRATION_NOTE_REQUIRED`
+> - Reason: KL coverage is case/input scoped, zero-entropy wording is not system-wide, and source authority remains independent.
+> - Evidence boundary: repeated sources and retained paths do not create independent corroboration or evidence completeness.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## 审计窗口
 2026-08-03 to 2026-08-09
 
