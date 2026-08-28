@@ -26,9 +26,9 @@ A dependency-free Python reference for explicit data contracts, measurable trans
 
 ## 4. 验证与运行环境 / Verification and runtime
 
-**[CN]** CI 在 Python 3.12 和 3.14 上验证标准库实现。以下命令编译代码并运行当前测试；工作流还执行 `.github/workflows/verify.yml` 中列出的历史入口检查。成功结果只适用于被测提交、环境与样例。
+**[CN]** 以下命令是本地可运行的标准库验证入口。仓库当前没有自动执行 Python 测试的 GitHub Actions 工作流；只有实际记录了提交、解释器版本、命令和退出码的运行，才构成该环境的验证证据。成功结果只适用于被测提交、环境与样例。
 
-**[EN]** CI verifies the standard-library implementation on Python 3.12 and 3.14. These commands compile the code and run the current tests; the workflow also executes the historical entrypoint checks listed in `.github/workflows/verify.yml`. A successful result applies only to the tested revision, environment, and fixtures.
+**[EN]** The commands below are locally runnable verification entry points for the standard-library implementation. The repository currently has no GitHub Actions workflow that automatically runs the Python tests; only a run that retains its revision, interpreter version, command, and exit code is evidence for that environment. A successful result applies only to the tested revision, environment, and fixtures.
 
 ```bash
 python -m compileall -q CODE tests *.py
@@ -37,9 +37,9 @@ python -m unittest discover -s tests -v
 
 ## 5. 前端与 Pages 边界 / Frontend and Pages boundary
 
-**[CN]** [`FRONTEND/`](FRONTEND/) 是独立的 React/Vite 展示层，不是 Python 参考库的运行时依赖。CI 使用 Node 24 和已提交锁文件运行以下命令。Pages 发布读取 [`docs/`](docs/) 中单独维护的静态内容；前端源码和 Pages 内容有独立所有权边界。
+**[CN]** [`FRONTEND/`](FRONTEND/) 是独立的 React/Vite 展示层，不是 Python 参考库的运行时依赖。当前 Pages deployment workflow 使用 Node 24 和已提交锁文件执行安装与构建，并将构建产物写入 [`docs/`](docs/) 后上传 Pages；这个 deployment build 不是 Python runtime 或研究结论的测试证据。
 
-**[EN]** [`FRONTEND/`](FRONTEND/) is a separate React/Vite presentation layer and is not a runtime dependency of the Python reference library. CI uses Node 24 and the committed lockfile to run the commands below. Pages deployment reads separately maintained static content from [`docs/`](docs/); frontend source and Pages content have independent ownership boundaries.
+**[EN]** [`FRONTEND/`](FRONTEND/) is a separate React/Vite presentation layer and is not a runtime dependency of the Python reference library. The current Pages deployment workflow uses Node 24 and the committed lockfile, writes the build output to [`docs/`](docs/), and uploads that output to Pages. This deployment build is not test evidence for the Python runtime or research claims.
 
 ```bash
 cd FRONTEND
@@ -54,6 +54,7 @@ npm run build
 - [证据基线 / Evidence baseline](EVIDENCE_BASELINE.md)：外部资料、检索日期与本地结论的适用范围。 / External sources, retrieval dates, and the scope of local conclusions.
 - [复现要求 / Reproducibility](REPRODUCIBILITY.md)：提交、环境、命令、样例摘要和未测试边界的最小记录。 / Minimum records for revisions, environments, commands, fixture digests, and untested boundaries.
 - [安全策略 / Security policy](SECURITY.md)：私密报告流程、受支持代码与调用方责任。 / Private reporting, supported code, and caller responsibilities.
+- [长期维护契约 / Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md)：证据继承、失败关闭、历史批注与责任边界。 / Evidence inheritance, fail-closed behavior, historical calibration, and ownership boundaries.
 
 ## 7. 限制 / Limitations
 

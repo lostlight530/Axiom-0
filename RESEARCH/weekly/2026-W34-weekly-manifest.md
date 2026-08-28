@@ -1,5 +1,15 @@
 # Axiom-0 Weekly Manifest: 2026-W34
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `WEEKLY_STATUS_RETAINED`
+> - Current disposition: `HISTORICAL_ONLY / MISSING_DATA_PRESERVED / NOT_ALL_GREEN`
+> - Reason: W34 includes missing KL/structural/execution evidence and later fail-closed Daily results.
+> - Evidence boundary: Weekly cannot turn missing or failed Daily evidence into a successful closure.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## 审计窗口
 - **Window Start**: 2026-08-17
 - **Window End**: 2026-08-23

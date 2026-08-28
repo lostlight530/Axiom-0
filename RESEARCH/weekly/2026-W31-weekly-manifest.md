@@ -1,5 +1,15 @@
 # Axiom-0 Weekly Pipeline Manifest 2026-W31
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `WEEKLY_SUCCESS_CLAIM_RETAINED`
+> - Current disposition: `HISTORICAL_ONLY / SUPERSEDED_FOR_CURRENT_INTERPRETATION`
+> - Reason: 100%, absolute-premise, complete-alignment, and entropy=0 language exceeds the inherited Daily evidence.
+> - Evidence boundary: Weekly may preserve bounded Daily results only; it does not prove universal alignment, zero entropy, or complete execution.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 * Execution Type: Weekly Specification Audit and Review
 * Structural Convergence Rate: 100%
 * Weekly Status: SUCCESS

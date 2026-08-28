@@ -1,3 +1,15 @@
+# Axiom-0 Daily Pipeline Manifest
+
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `RECORDED_SUCCESS_WITH_INTERNALLY_CONFLICTING_SCANNER_RESULT`
+> - Current disposition: `HISTORICAL_COMMAND_RESULT_CONFLICT / A3_EXECUTION_EVIDENCE_RETAINED`
+> - Reason: the record combines an exit-zero claim with reported missing structural fields and lacks enough retained output to resolve the contradiction.
+> - Evidence boundary: the separate 100/100 run remains execution-scoped; it cannot establish a clean structural pass.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## ZECP Metadata
 - **Date (UTC):** 2026-08-25
 - **Network Anchor:** Validated via live external queries
