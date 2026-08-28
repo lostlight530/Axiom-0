@@ -6,10 +6,12 @@ behavior.
 """
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+CONTRACT_VERSION = "2026-08-28"
 
 _INDEX_LINK = re.compile(r"\]\(\./((?:ADR|METH)-\d{3}-[^)]+\.md)\)")
 
@@ -43,7 +45,7 @@ def _indexed_members(directory: str, prefix: str) -> set[str]:
     return {
         name
         for name in _INDEX_LINK.findall(text)
-        if name.startswith(prefix) and (ROOT / directory / name).is_file()
+        if name.startswith(prefix)
     }
 
 
@@ -96,8 +98,28 @@ def scan() -> list[str]:
     return errors
 
 
+def contract_evidence(failures: list[str]) -> dict[str, object]:
+    """Return the scanner identity and index-derived observation surface.
+
+    Counts describe files present in the current checkout. They are deliberately derived at
+    execution time so the scanner cannot silently retain an obsolete document-count contract.
+    """
+    return {
+        "contract": "axiom_document_topology",
+        "contract_version": CONTRACT_VERSION,
+        "adr_index": "ADR/INDEX.md",
+        "methodology_index": "METHODOLOGY/INDEX.md",
+        "adr_count": len(_actual_members("ADR", "ADR-")),
+        "methodology_count": len(_actual_members("METHODOLOGY", "METH-")),
+        "failures": failures,
+        "status": "failed" if failures else "passed",
+    }
+
+
 if __name__ == "__main__":
     failures = scan()
+    evidence = contract_evidence(failures)
+    print("AXIOM_CONSISTENCY_EVIDENCE=" + json.dumps(evidence, sort_keys=True))
     if failures:
         print("\n".join(failures))
         raise SystemExit(1)
