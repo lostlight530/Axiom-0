@@ -22,6 +22,19 @@ When research discusses tool isolation or prompt/content trust boundaries:
 4. do not infer sandboxing from a single-process reference pipeline
 5. do not infer prompt-injection resistance from canonicalization or evidence labeling
 
+## Inputs
+
+- the external security/isolation claim and its source surface
+- any named repository implementation path
+- the exact threat, authority, or isolation boundary being asserted
+
+## Procedure
+
+1. separate metaphor from an executable security control
+2. resolve every claimed control to code and a bounded validation record
+3. otherwise classify it `REFERENCE_ONLY` or `NOT_IMPLEMENTED`
+4. retain missing threat-model and operational evidence explicitly
+
 ## Outputs
 
 - explicit `NOT_IMPLEMENTED` or `REFERENCE_ONLY` status

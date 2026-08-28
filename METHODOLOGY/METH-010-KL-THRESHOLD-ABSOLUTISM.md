@@ -28,6 +28,12 @@ These thresholds are heuristic control parameters, not scientific proofs of entr
 5. Do not transfer a threshold between KL evidence and morphing metrics merely because both use entropy-related vocabulary.
 6. When no threshold is defined for the claim, report the scalar without inventing one.
 
+## Inputs
+
+- named metric, inputs, unit, and implementation revision
+- threshold value and its policy/source identity
+- retained result or explicit missing state
+
 ## Outputs
 
 - metric identity

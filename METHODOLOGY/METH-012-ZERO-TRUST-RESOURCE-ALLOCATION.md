@@ -32,6 +32,19 @@ When research discusses resource allocation:
 3. label external quota/scheduling patterns as `REFERENCE_ONLY`
 4. do not infer resource governance from state-label changes
 
+## Inputs
+
+- named resource metric and collection surface
+- enforcement policy, quota, timeout, or cancellation rule, if implemented
+- command/revision/result for any claimed enforcement test
+
+## Procedure
+
+1. separate observation from enforcement
+2. resolve each limit to an executable mechanism and failure behavior
+3. classify absent enforcement `NOT_IMPLEMENTED`
+4. retain external resource-governance ideas as bounded references only
+
 ## Outputs
 
 - exact local metric surface, if relevant

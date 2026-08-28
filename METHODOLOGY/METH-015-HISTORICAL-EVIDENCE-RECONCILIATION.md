@@ -98,6 +98,13 @@ Current stage conclusion:
 
 `PATH_COVERAGE_COMPLETE_WITH_BOUNDED_EVIDENCE_AND_MONTH_OPEN`
 
+## Outputs
+
+- preserved original record plus a dated current disposition
+- explicit contradiction, missing-data, or supersession state
+- canonical authority and evidence boundary
+- statement of whether execution was replayed
+
 ## Evidence boundary
 
 This method reconciles documentary history. It does not recreate missing execution, manufacture absent metrics, or alter `CODE/**` behavior.

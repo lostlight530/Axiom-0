@@ -64,6 +64,10 @@ Do not report a valid scalar when:
 
 ## Interpretation boundary
 
+## Verification boundary
+
+Verification is limited to the retained vectors or named fixture, normalization rule, direction, unit, implementation revision, and numeric result. It does not establish semantic truth, safety, or repository-wide entropy.
+
 `D_KL = 0.0` means zero divergence only for the recorded normalized `P` and `Q`.
 
 Historical `identity` and `renormalized_identity` cases therefore remain case-specific evidence. A field such as `Actual Input Range: 0.0 to 0.0` is output/result-like wording and must not substitute for the actual input vectors or named case identity.
