@@ -1,5 +1,15 @@
 # Axiom-0 Daily Pipeline Manifest
 
+> **Post-hoc calibration — 2026-08-31**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `SUCCESS`
+> - Current disposition: `SUCCESS_WITH_TEMPLATE_TEXT_CORRECTED_FOR_INTERPRETATION`
+> - Reason: A2, A3, and A4 all retain successful run evidence, so the A3 suffix “overridden by failure” is stale template text rather than an execution fact.
+> - Evidence boundary: the scanner pass is document-topology scoped and the 100/100 result is limited to the named execution surface.
+> - Canonical authority: [`../monthly/2026-08-through-30-stage-audit.md`](../monthly/2026-08-through-30-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## ZECP Metadata
 - **Date (UTC):** 2026-08-28
 - **Network Anchor:** Validated via live external queries
@@ -65,7 +75,7 @@
 - **Average Execution Time:** NOT_COMPUTED
 - **Uncovered Conditions:** MISSING_DATA
 - **SHA256:** 54a405488319933a8293a93646bf967dde6942968204bfa8e611ba808b793457
-- **Test Result:** 100 / 100 specified executions passed (overridden by failure) (A3_EXECUTION_EVIDENCE_RETAINED)
+- **Test Result:** 100 / 100 specified executions passed (A3_EXECUTION_EVIDENCE_RETAINED)
 
 ## A4 Topology and Index Alignment
 - **INDEX.md:** Updated successfully

@@ -39,7 +39,7 @@
 - [ADR-010](./ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md) - 索引同步与导航契约 / Index Synchronization and Nav Contract
 - [ADR-011](./ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md) - 零信任工具执行法则 / Zero-Trust Tool Execution Law
 - [ADR-012](./ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md) - 沙箱自毁协议 / Sandbox Self-Destruction Protocol
-- [ADR-013](./ADR/ADR-013-STRICT-DATA-DEDUPLICATION.md) - 严格数据去重逻辑 / Strict Data Deduplication Logic
+- [ADR-013](./ADR/ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md) - 验证与声明边界 / Verification and Claim Scope
 - [ADR-014](./ADR/ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md) - 仓库知识分层法则 / Repository Knowledge Stratification Law
 - [ADR-015](./ADR/ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md) - 参考实现边界法则 / Reference Implementation Boundary Law
 
@@ -141,3 +141,10 @@
 - [2026-08-28 Pipeline Manifest](RESEARCH/daily/2026-08-28-pipeline-manifest.md) - Status: SUCCESS
 - [2026-08-29 Pipeline Manifest](RESEARCH/daily/2026-08-29-pipeline-manifest.md) - Status: SUCCESS
 - [2026-08-30 Pipeline Manifest](RESEARCH/daily/2026-08-30-pipeline-manifest.md) - Status: SUCCESS
+
+## August 2026 controlled evidence authority
+
+- [W35 calibrated weekly manifest](RESEARCH/weekly/2026-W35-weekly-manifest.md)
+- [August 30-day provisional monthly manifest](RESEARCH/monthly/2026-08-monthly-manifest.md)
+- [August evidence audit through day 30](RESEARCH/monthly/2026-08-through-30-stage-audit.md)
+- [August evidence audit through day 27](RESEARCH/monthly/2026-08-through-27-stage-audit.md) — historical stage authority
