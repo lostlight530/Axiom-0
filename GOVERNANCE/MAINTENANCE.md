@@ -17,7 +17,9 @@ KL, structural, execution, and index evidence are separate and prove only their 
 
 Post-hoc calibration preserves original text and records current disposition, reason, evidence boundary, canonical authority, and whether execution was replayed. ADR and Methodology identifiers and paths remain stable. Update a document when implementation mapping, inputs, procedure, outputs, failure conditions, or verification boundary changes. Metaphorical names may remain, but cannot become runtime, security, convergence, or scientific claims.
 
-Historical control-plane drift closes only after retaining a repaired public entry point, its contract identity, and a later real Jules execution using that revision. Current state: `HISTORICAL_CONTROL_PLANE_DRIFT_CONFIRMED / REMEDIATION_PRESENT_ON_CURRENT_MAIN / POST_REPAIR_JULES_EXECUTION_NOT_YET_OBSERVED`.
+Historical control-plane drift closes only after retaining a repaired public entry point, its contract identity, and a later real Jules execution using that revision. Real Jules Daily records on 2026-08-28 through 2026-08-30 retain contract version `2026-08-28`; current state: `HISTORICAL_CONTROL_PLANE_DRIFT_CONFIRMED / REMEDIATION_PRESENT_ON_CURRENT_MAIN / POST_REPAIR_JULES_EXECUTION_OBSERVED`. Historical failed runs remain failed.
+
+A 30-day provisional audit may be published when 30 logical dates exist, but it is not a natural-month seal. The month remains `MONTH_OPEN` until the calendar month ends and the last date is retained or explicitly classified as missing after it becomes due.
 
 ## Responsibility boundary
 

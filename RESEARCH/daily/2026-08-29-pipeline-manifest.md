@@ -1,5 +1,15 @@
 # Axiom-0 Daily Pipeline Manifest
 
+> **Post-hoc calibration — 2026-08-31**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `SUCCESS`
+> - Current disposition: `SUCCESS_WITH_CANONICAL_COUNT_ALIASES`
+> - Reason: the original 100/100/0 fields used labels not recognized by the public validator; equivalent canonical aliases were added without changing the counts.
+> - Evidence boundary: the result remains limited to the named A3 execution surface; missing timing and uncovered-condition fields remain missing.
+> - Canonical authority: [`../monthly/2026-08-through-30-stage-audit.md`](../monthly/2026-08-through-30-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## ZECP Metadata
 - **Date (UTC):** 2026-08-29
 - **Network Status:** CONNECTED
@@ -65,6 +75,9 @@ repository structural consistency: passed within documented scope
 - **Test Executions**: 100
 - **Successful Executions**: 100
 - **Failed Executions**: 0
+- **Executions:** 100 (canonical validator alias)
+- **Successes:** 100 (canonical validator alias)
+- **Failures:** 0 (canonical validator alias)
 - **Failure Indices**: MISSING_DATA
 - **stdout**: `{"case":"repeat","status":"passed"}`
 - **stderr**: MISSING_DATA
