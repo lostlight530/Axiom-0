@@ -1,76 +1,54 @@
-# React + TypeScript + Vite
+# Axiom — final traffic snapshot
 
-> **[CN]**: 该模板提供了一个最小的设置，可以让 React 在 Vite 中与 HMR 和一些 ESLint 规则一起工作。
-> **[EN]**: This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+核心五仓流量展示封存于 **2026-08-31**，不再追加后续数据。项目窗口 **2026-02-12 → 2026-08-31**，经过 **200 天**，首尾均计 **201 个自然日**。保留现有页面布局；Daily SOP 不受流量封存影响。
 
-> **[CN]**: 目前官方提供了两个插件：
-> **[EN]**: Currently, two official plugins are available:
+## Calculation contract
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**按不超过两周的统计区间汇总，各仓汇总后，再将 ≥10 的计数向下取整到十位，个位数保留。** clones、uniques、views 使用同一规则；不逐日取整，也不对五仓合计再取整。
 
-## React Compiler
+Sum each reporting interval (up to two weeks) per repository before rounding; floor counts ≥10 to tens and preserve single digits. Never round each day. Existing historical rows through 08/21 remain unchanged. Unique-count accumulation is not a count of globally distinct people.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Final appended interval
 
-## Expanding the ESLint configuration
+| Repository | Clones | Uniques | Views |
+| --- | ---: | ---: | ---: |
+| welcome-to-github | 730 | 170 | 3 |
+| zero-entropy-lab | 610 | 160 | 0 |
+| Axiom-0 | 620 | 210 | 5 |
+| reflective-continuum | 590 | 240 | 2 |
+| agent-foundations | 320 | 190 | 10 |
+| Total | **2,870** | **970** | **20** |
 
-> **[CN]**: 如果您正在开发生产应用程序，我们建议更新配置以启用类型感知的 lint 规则：
-> **[EN]**: If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The `08/31` chart point covers 08/22–08/31, not a single day. Intervals have varying lengths; charted totals are not daily rates.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Frozen cumulative display
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **50,750 clones**
+- **13,810 accumulated unique counts**
+- **11,481 repository views**
+- **C/V 4.42 : 1**, calculated from combined clones / combined views, not an average of ratios.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Repository views are not GitHub Pages visits. C/V does not identify bots, humans, intent or adoption. Zero views yield an undefined C/V (`null`, a chart gap), never a fabricated finite ratio.
+
+Operations remains its independent **2026-08-07** snapshot: 10,915 minutes / 8,958 runs. Traffic totals do not extend that operational window. Pages deployment is not Python runtime validation.
+
+## Implementation and verification
+
+[Dashboard.tsx](src/pages/Dashboard.tsx) holds the static display values. Historical rows are inherited from main `fdc0f21f8cb3305e2f2322642fce357325b6d490`; final unique counts use the explicitly normalized interval sum. No polling or ingestion service runs in the page.
+
+From `FRONTEND`, using existing locked dependencies:
+
+```text
+npm ci --ignore-scripts
+node --test tests/final-snapshot.test.mjs
+npm run build -- --outDir <dedicated-empty-preview-directory-outside-the-repository>
+npm run preview -- --host 127.0.0.1 --outDir <same-preview-directory>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Regression tests render the real Dashboard and check totals, dates, the interval-total rounding order and unique-count labels. Browser review checks all five repository filters, language switching and Traffic/Operations/Method tabs. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+No dependency, lockfile, runtime, workflow or private SOP changes are included. Dependency advisories are separate maintenance work. Do not claim deployment from a local build.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Freeze and rollback
+
+No later traffic rows or scheduled updater. Corrections to existing errors require review; they do not authorize extending the window. Revert this frontend commit to restore the previous page without affecting the separate Daily evidence PR.

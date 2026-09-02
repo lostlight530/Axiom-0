@@ -13,8 +13,10 @@ const translations = {
     dashboardDesc: "Viewing telemetry and traffic metrics",
     overviewTab: "Overview",
     analyticsTab: "Analytics",
-    dedupLogicTitle: "Strict Deduplication Logic Active",
-    dedupLogicDesc: "Data ingested into this system is strictly deduplicated using a SHA-256 cryptographic payload fingerprinting mechanism. Duplicate payload hashes are rejected. Values >= 10 are floored to the nearest decile. Single-digit values are preserved unless explicitly normalized.",
+    dedupLogicTitle: "Frozen Snapshot · Historical Baseline Preserved",
+    dedupLogicDesc: "Sum each reporting interval (up to two weeks) per repository before rounding: floor values ≥ 10 to tens; preserve single digits; never round each day. Historical rows through 08/21 are unchanged.",
+    frozenBanner: "[TRAFFIC: FROZEN] 2026-02-12 → 2026-08-31 · 200 elapsed days / 201 inclusive calendar days. No further traffic updates.",
+    finalInterval: "Final interval: 08/22–08/31. The same rounding rule applies to clones, unique counts and views.",
     exampleTitle: "Example",
     exampleDesc: "Example: 13 → 10, 19 → 10, 27 → 20.",
     clones: "Total Clones",
@@ -33,11 +35,11 @@ const translations = {
     opsSnapshot: "Static snapshot as of 2026-08-07",
     methodTitle: "Data Methodology",
     methodLastYear: "GitHub 'Last year' is a rolling 12-month window, not aligned with project inception",
-    methodWindow: "Effective observation window: 2026-02-12 → 2026-08-21 (191 days)",
-    methodUTC: "All timestamps in UTC. GitHub Traffic API provides 14-day unique counts.",
+    methodWindow: "Project window: 2026-02-12 → 2026-08-31 (200 elapsed days; 201 inclusive calendar days). Individual repositories start at their first retained snapshot; missing earlier periods are not zero.",
+    methodUTC: "Dates use UTC. Chart labels identify interval end dates, not single-day totals.",
     methodUsage: "Usage metrics: total minutes, job runs (from Actions). Performance metrics: avg run time, queue time, fail rate (from workflow logs).",
-    methodSnapshot: "This is a static traffic snapshot as of 2026-08-21, not a live dashboard. Data is manually ingested and rendered.",
-    methodDedup: "Traffic data is SHA-256 deduplicated. Values ≥ 10 floored to nearest decile. Cross-period unique cloner sums are not true long-term uniques.",
+    methodSnapshot: "Final traffic snapshot through 2026-08-31; no polling or future append. Operations remains a separate 2026-08-07 historical snapshot, not August 31 activity.",
+    methodDedup: "Per repository: sum a reporting interval of up to two weeks, then floor counts ≥ 10 to tens; preserve single digits. Apply the same rule to clones, unique counts and views. Unique-count sums are not globally distinct people. C/V is undefined when views = 0.",
   },
   zh: {
     trafficTab: "流量",
@@ -47,8 +49,10 @@ const translations = {
     dashboardDesc: "查看遥测与流量指标",
     overviewTab: "概览",
     analyticsTab: "分析",
-    dedupLogicTitle: "严格数据去重逻辑已启用",
-    dedupLogicDesc: "本系统摄入的数据使用 SHA-256 密码学负载指纹机制进行严格去重。重复的负载哈希将被拒绝。大于等于10的值将向下取整到最接近的十位数。个位数值将予以保留，除非被显式要求规范化。",
+    dedupLogicTitle: "最终静态快照 · 保留历史基线",
+    dedupLogicDesc: "按不超过两周的统计区间汇总，各仓汇总后，≥10 向下取整到十位，个位数保留；不逐日取整。截至 08/21 的历史数据保持不变。",
+    frozenBanner: "[流量：已封存] 2026-02-12 → 2026-08-31 · 经过 200 天 / 首尾均计 201 个自然日。此后不再追加流量。",
+    finalInterval: "末段：08/22–08/31。clones、uniques、views 采用相同的取整规则。",
     exampleTitle: "示例",
     exampleDesc: "例如: 13 → 10, 19 → 10, 27 → 20。",
     clones: "总克隆数",
@@ -67,11 +71,11 @@ const translations = {
     opsSnapshot: "2026-08-07 静态快照",
     methodTitle: "数据方法论",
     methodLastYear: "GitHub 'Last year' 是滚动 12 个月窗口，不等于项目实际运行期",
-    methodWindow: "有效观测窗口: 2026-02-12 → 2026-08-21（191天）",
-    methodUTC: "所有时间戳使用 UTC。GitHub Traffic API 只提供最近 14 天的独立用户计数。",
+    methodWindow: "项目窗口：2026-02-12 → 2026-08-31（经过 200 天；首尾均计 201 个自然日）。各仓从首个留存快照起计，缺少的早期区间不当作零。",
+    methodUTC: "日期使用 UTC。图表标签表示统计区间的结束日期，不是单日总量。",
     methodUsage: "用量指标: total minutes、job runs（源自 Actions）。性能指标: avg run time、queue time、fail rate（源自 workflow 日志）。",
-    methodSnapshot: "这是截至 2026-08-21 的流量静态快照，不是实时仪表盘。数据手动摄入并渲染。",
-    methodDedup: "流量数据经 SHA-256 去重。≥10 的值向下 floor 到最近的十位数。跨周期 unique cloner 累加不代表真实的长期唯一用户总数。",
+    methodSnapshot: "截至 2026-08-31 的最终流量快照；不轮询、不追加未来数据。Operations 仍为独立的 2026-08-07 历史快照，不能冒充 8 月 31 日运行数据。",
+    methodDedup: "各仓先汇总不超过两周的统计区间，再将 ≥10 的计数向下取整到十位，个位数保留。clones、uniques、views 采用同一规则。uniques 累计不代表全局独立人数；views=0 时 C/V 未定义。",
   }
 };
 
@@ -97,11 +101,12 @@ interface TrafficData {
   clones: number;
   uniqueCloners: number | null;
   views: number;
-  uniqueVisitors: number;
+  uniqueVisitors: number | null;
+  dailyUniqueCloners?: number; // Interval sum after per-repository display normalization.
 }
 
 interface ProcessedData extends TrafficData {
-  cloneViewRatio: number;
+  cloneViewRatio: number | null;
 }
 
 const rawData: TrafficData[] = [
@@ -163,11 +168,19 @@ const rawData: TrafficData[] = [
   { repo: "agent-foundations", period: "07/24", clones: 210, uniqueCloners: 100, views: 10, uniqueVisitors: 10 },
   { repo: "agent-foundations", period: "08/07", clones: 360, uniqueCloners: 230, views: 10, uniqueVisitors: 10 },
   { repo: "agent-foundations", period: "08/21", clones: 270, uniqueCloners: 120, views: 10, uniqueVisitors: 10 },
+
+  // Final non-overlapping interval: 2026-08-22 through 2026-08-31, within two weeks.
+  // Sum per repository before flooring; daily uniques are not interval uniques.
+  { repo: "welcome-to-github", period: "08/31", clones: 730, uniqueCloners: null, views: 3, uniqueVisitors: null, dailyUniqueCloners: 170 },
+  { repo: "zero-entropy-lab", period: "08/31", clones: 610, uniqueCloners: null, views: 0, uniqueVisitors: null, dailyUniqueCloners: 160 },
+  { repo: "Axiom-0", period: "08/31", clones: 620, uniqueCloners: null, views: 5, uniqueVisitors: null, dailyUniqueCloners: 210 },
+  { repo: "reflective-continuum", period: "08/31", clones: 590, uniqueCloners: null, views: 2, uniqueVisitors: null, dailyUniqueCloners: 240 },
+  { repo: "agent-foundations", period: "08/31", clones: 320, uniqueCloners: null, views: 10, uniqueVisitors: null, dailyUniqueCloners: 190 },
 ];
 
 const data: ProcessedData[] = rawData.map((d) => ({
   ...d,
-  cloneViewRatio: Number((d.clones / d.views).toFixed(2)),
+  cloneViewRatio: d.views === 0 ? null : Number((d.clones / d.views).toFixed(2)),
 }));
 
 const formatNumber = (value: number | null | undefined): string => {
@@ -247,17 +260,17 @@ export default function RepoTrafficVisualizationDashboard() {
         agg[d.repo].totalViews += d.views;
       }
     });
-    return Object.values(agg).sort((a, b) => b.totalClones - a.totalClones); // Sort by highest pressure
+    return Object.values(agg).sort((a, b) => b.totalClones - a.totalClones);
   }, []);
 
   const totals = useMemo(() => {
     const clones = filteredData.reduce((sum, d) => sum + d.clones, 0);
     const views = filteredData.reduce((sum, d) => sum + d.views, 0);
     const uniqueClonersSum = filteredData
-      .filter((d) => typeof d.uniqueCloners === "number")
-      .reduce((sum, d) => sum + (d.uniqueCloners as number), 0);
-    const ratio = views ? (clones / views).toFixed(2) : "0.00";
-    return { clones, views, uniqueClonersSum, ratio };
+      .reduce((sum, d) => sum + (d.uniqueCloners ?? d.dailyUniqueCloners ?? 0), 0);
+    const ratio = views ? `${(clones / views).toFixed(2)} : 1` : "—";
+    const dailyUniqueClonersSum = filteredData.reduce((sum, d) => sum + (d.dailyUniqueCloners ?? 0), 0);
+    return { clones, views, uniqueClonersSum, dailyUniqueClonersSum, ratio };
   }, [filteredData]);
 
   const [mainTab, setMainTab] = useState<string>("traffic");
@@ -280,10 +293,10 @@ export default function RepoTrafficVisualizationDashboard() {
             </button>
           </div>
           <p className="text-slate-400 text-sm font-mono max-w-3xl">
-            [SYSTEM_STATUS: ONLINE] Monitoring repository events and operational metrics across all active nodes.
+            {t.frozenBanner}
           </p>
           {/* Main tabs */}
-          <Tabs defaultValue="traffic" onValueChange={setMainTab} className="w-full">
+          <Tabs value={mainTab} onValueChange={setMainTab} className="w-full">
             <TabsList className="grid grid-cols-3 w-full max-w-md rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs">
               <TabsTrigger value="traffic" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400"><Eye className="w-3.5 h-3.5 mr-1 inline"/>{t.trafficTab}</TabsTrigger>
               <TabsTrigger value="operations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-emerald-400"><Server className="w-3.5 h-3.5 mr-1 inline"/>{t.operationsTab}</TabsTrigger>
@@ -294,7 +307,7 @@ export default function RepoTrafficVisualizationDashboard() {
 
         {/* ===== TRAFFIC ===== */}
         {mainTab === "traffic" && (<>
-          <Tabs defaultValue="all" onValueChange={setRepo} className="w-full">
+          <Tabs value={repo} onValueChange={setRepo} className="w-full">
             <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs mb-4">
               <TabsTrigger value="all" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">Unified</TabsTrigger>
               <TabsTrigger value="zero-entropy-lab" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400">zero</TabsTrigger>
@@ -309,16 +322,23 @@ export default function RepoTrafficVisualizationDashboard() {
               <AlertDescription className="text-sm text-slate-300 leading-relaxed font-mono mt-2">
                 <p>{t.dedupLogicDesc}</p>
                 <p className="mt-1 font-semibold">{t.exampleTitle}: {t.exampleDesc}</p>
+                <p className="mt-2">{t.finalInterval}</p>
               </AlertDescription>
             </Alert>
           </Tabs>
 
           <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-8 mt-6" aria-label="Core Metrics">
-            <MetricCard title="Absolute Clones" value={formatNumber(totals.clones)} subtitle="Total physical pull extractions" icon={Copy} />
-            <MetricCard title="Frontend Views" value={formatNumber(totals.views)} subtitle="Superficial presentation accesses" icon={Eye} />
-            <MetricCard title="Unique Actors" value={formatNumber(totals.uniqueClonersSum)} subtitle="Aggregated terminal endpoints" icon={Users} />
-            <MetricCard title="Entropy Divergence" value={`Δ ${totals.ratio}`} subtitle="Ratio > 1.0 = Deterministic Bypass" icon={Scale} />
+            <MetricCard title={lang === "en" ? "Total Clones" : "总克隆次数"} value={formatNumber(totals.clones)} subtitle={lang === "en" ? "Normalized retained snapshot totals" : "留存快照规范化后的总量"} icon={Copy} />
+            <MetricCard title={lang === "en" ? "Repository Views" : "仓库浏览量"} value={formatNumber(totals.views)} subtitle={lang === "en" ? "GitHub repository views, not Pages visits" : "GitHub 仓库浏览量，不是 Pages 访问量"} icon={Eye} />
+            <MetricCard title={lang === "en" ? "Recorded Unique Counts" : "unique 计数累计"} value={formatNumber(totals.uniqueClonersSum)} subtitle={lang === "en" ? "Historical counts + normalized interval sums" : "历史累计＋本区间规范化总数"} icon={Users} />
+            <MetricCard title="Clones / Views" value={totals.ratio} subtitle={lang === "en" ? "Descriptive ratio; no causal attribution" : "描述性比值，不证明访问者身份或因果"} icon={Scale} />
           </section>
+
+          <p className="mb-6 text-xs font-mono text-slate-400">
+            {lang === "en" ? "08/22–08/31 · Normalized interval unique-count sum: " : "08/22–08/31 · 本区间处理后 uniques 合计："}
+            <strong className="text-cyan-400">{formatNumber(totals.dailyUniqueClonersSum)}</strong>
+            {lang === "en" ? " (included above; cross-day and cross-repository overlap retained)." : "（已计入上方总数；不是跨日、跨仓去重后的独立人数）。"}
+          </p>
 
           <section className="mb-8">
             <Card className="rounded-2xl shadow-2xl border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden">
@@ -326,9 +346,9 @@ export default function RepoTrafficVisualizationDashboard() {
                 <CardTitle className="text-white font-mono flex items-center gap-2">
                   <Activity className="h-5 w-5 text-emerald-400" />{t.dashboardTitle}
                 </CardTitle>
-                <span className="text-sm font-mono text-cyan-500 mt-1 block">{isAllView ? "Macro Node Dominance [AGGREGATED]" : "Temporal Convergence Matrix [ISOLATED]"}</span>
+                <span className="text-sm font-mono text-cyan-500 mt-1 block">{isAllView ? "Repository Totals [FROZEN]" : "Retained Interval Totals [FROZEN]"}</span>
                 <CardDescription className="text-slate-400 font-mono text-xs">
-                  {isAllView ? "Volumetric distribution of deterministic pressure across the system topology." : "Chronological mapping of extraction velocity vs superficial browsing."}
+                  {isAllView ? "Five-repository distribution of retained clones and repository views." : "Interval totals, not daily rates. Final 08/31 point covers only 08/22–08/31."}
                 </CardDescription>
               </CardHeader>
               <CardContent className="h-[400px] p-6">
@@ -340,8 +360,8 @@ export default function RepoTrafficVisualizationDashboard() {
                       <YAxis dataKey="name" type="category" tick={{ fill: "#94a3b8", fontFamily: "monospace", fontSize: 13 }} width={100} axisLine={false} tickLine={false} />
                       <Tooltip content={<CustomChartTooltip />} cursor={{ fill: 'rgba(30, 41, 59, 0.4)' }} />
                       <Legend iconType="rect" wrapperStyle={{ fontFamily: "monospace", fontSize: 12, color: "#94a3b8" }} />
-                      <Bar dataKey="totalClones" name="Total Extract Volume" fill="#0ea5e9" radius={[0, 4, 4, 0]} barSize={24} />
-                      <Bar dataKey="totalViews" name="Total Surface Views" fill="#334155" radius={[0, 4, 4, 0]} barSize={12} />
+                      <Bar dataKey="totalClones" name="Total Clones" fill="#0ea5e9" radius={[0, 4, 4, 0]} barSize={24} />
+                      <Bar dataKey="totalViews" name="Repository Views" fill="#334155" radius={[0, 4, 4, 0]} barSize={12} />
                     </BarChart>
                   ) : (
                     <AreaChart data={filteredData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
@@ -354,8 +374,8 @@ export default function RepoTrafficVisualizationDashboard() {
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#1e293b" />
                       <Tooltip content={<CustomChartTooltip />} />
                       <Legend iconType="circle" wrapperStyle={{ fontFamily: "monospace", fontSize: 12 }} />
-                      <Area type="monotone" dataKey="views" name="Superficial Views" stroke="#64748b" fillOpacity={1} fill="url(#colorViews)" strokeWidth={2} />
-                      <Area type="monotone" dataKey="clones" name="Absolute Extractions" stroke="#0ea5e9" fillOpacity={1} fill="url(#colorClones)" strokeWidth={3} activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#0f172a", strokeWidth: 2 }} />
+                      <Area type="monotone" dataKey="views" name="Repository Views" stroke="#64748b" fillOpacity={1} fill="url(#colorViews)" strokeWidth={2} />
+                      <Area type="monotone" dataKey="clones" name="Clones" stroke="#0ea5e9" fillOpacity={1} fill="url(#colorClones)" strokeWidth={3} activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#0f172a", strokeWidth: 2 }} />
                     </AreaChart>
                   )}
                 </ResponsiveContainer>
@@ -366,7 +386,7 @@ export default function RepoTrafficVisualizationDashboard() {
           {!isAllView && (
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
               <Card className="rounded-2xl shadow-lg border-slate-800 bg-slate-900/40">
-                <CardHeader className="pb-2"><CardTitle className="text-sm text-slate-300 font-mono">Divergence Pressure Ratio</CardTitle></CardHeader>
+                <CardHeader className="pb-2"><CardTitle className="text-sm text-slate-300 font-mono">Clones / Repository Views · zero views = undefined</CardTitle></CardHeader>
                 <CardContent className="h-[250px] p-4">
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={filteredData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
@@ -374,7 +394,7 @@ export default function RepoTrafficVisualizationDashboard() {
                       <XAxis dataKey="period" tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
                       <YAxis tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
                       <Tooltip content={<CustomChartTooltip />} />
-                      <ReferenceLine y={1} stroke="#ef4444" strokeDasharray="3 3" strokeWidth={1} label={{ value: "CRITICAL = 1.0", position: "insideTopLeft", fill: "#ef4444", fontSize: 10, fontFamily: "monospace" }} />
+                      <ReferenceLine y={1} stroke="#ef4444" strokeDasharray="3 3" strokeWidth={1} label={{ value: "C = V (reference only)", position: "insideTopLeft", fill: "#ef4444", fontSize: 10, fontFamily: "monospace" }} />
                       <Line type="stepAfter" dataKey="cloneViewRatio" name="C/V Ratio" stroke="#8b5cf6" strokeWidth={2} dot={{ r: 4, fill: "#8b5cf6", strokeWidth: 0 }} />
                     </LineChart>
                   </ResponsiveContainer>
@@ -383,11 +403,11 @@ export default function RepoTrafficVisualizationDashboard() {
               <Card className="rounded-2xl shadow-lg border-slate-800 bg-slate-900/40 flex flex-col justify-center p-8">
                 <Alert className="rounded-xl bg-slate-950 border border-indigo-500/30 text-indigo-100 shadow-[0_0_15px_rgba(99,102,241,0.1)]">
                   <AlertTriangle className="h-5 w-5 text-indigo-400" />
-                  <AlertTitle className="font-bold text-indigo-300 font-mono tracking-wide">Axiom-0 Protocol Validation</AlertTitle>
+                  <AlertTitle className="font-bold text-indigo-300 font-mono tracking-wide">Evidence Boundary</AlertTitle>
                   <AlertDescription className="text-indigo-200/70 leading-relaxed text-xs mt-2 font-mono">
-                    Analysis of isolated chronological vectors confirms the deterministic funnel. Audience bypasses external presentation layer [Views], treating nodes purely as raw extraction targets [Clones].
+                    Clones and repository views measure different events. Their ratio cannot identify people, bots, downstream use or the cause of a traffic spike. A high ratio is not a protocol validation or an entropy measurement.
                     <br/><br/>
-                    <span className="text-slate-400 text-[10px]">* Method Note: Aggressive telemetry sanitization applied. Deciles rounded down, single digits preserved for algorithmic purity.</span>
+                    <span className="text-slate-400 text-[10px]">* Final interval: 08/22–08/31. Sum per repository before rounding to tens; zero views produce no finite C/V point.</span>
                   </AlertDescription>
                 </Alert>
               </Card>
