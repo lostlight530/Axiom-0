@@ -18,6 +18,15 @@ after(async () => { await server.close(); });
 const { default: Dashboard } = await server.ssrLoadModule('/src/pages/Dashboard.tsx');
 const html = renderToStaticMarkup(React.createElement(Dashboard));
 
+test('final snapshot navigation does not expose the older Operations dataset', () => {
+  assert.doesNotMatch(html, />Operations<|>运行<|2026-08-07/);
+});
+
+test('the rounding example is introduced once', () => {
+  assert.doesNotMatch(html, /Example: Example:/);
+  assert.match(html, /Example: 13 → 10, 19 → 10, 27 → 20/);
+});
+
 test('final combined display retains 47,880 and adds only the non-overlapping 2,870', () => {
   assert.match(html, />50,750</);
   assert.match(html, />11,481</);

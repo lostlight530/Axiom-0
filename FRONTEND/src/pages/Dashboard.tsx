@@ -2,12 +2,11 @@ import React, { useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe, Server, BookOpen, Info } from "lucide-react";
+import { Eye, Copy, Users, AlertTriangle, Scale, Activity, Globe, BookOpen, Info } from "lucide-react";
 
 const translations = {
   en: {
     trafficTab: "Traffic",
-    operationsTab: "Operations",
     methodTab: "Method",
     dashboardTitle: "Analytics Dashboard",
     dashboardDesc: "Viewing telemetry and traffic metrics",
@@ -18,64 +17,43 @@ const translations = {
     frozenBanner: "[TRAFFIC: FROZEN] 2026-02-12 → 2026-08-31 · 200 elapsed days / 201 inclusive calendar days. No further traffic updates.",
     finalInterval: "Final interval: 08/22–08/31. The same rounding rule applies to clones, unique counts and views.",
     exampleTitle: "Example",
-    exampleDesc: "Example: 13 → 10, 19 → 10, 27 → 20.",
+    exampleDesc: "13 → 10, 19 → 10, 27 → 20.",
     clones: "Total Clones",
     uniqueCloners: "Unique Cloners",
     views: "Total Views",
     uniqueVisitors: "Unique Visitors",
-    opsWelcome: "welcome-to-github",
-    opsZero: "zero-entropy-lab",
-    opsMinutes: "total minutes",
-    opsRuns: "job runs",
-    opsAvgRun: "avg run",
-    opsFailRate: "fail rate",
-    opsCombined: "Combined · 两仓合计",
-    opsNotMeasured: "Not measured in this snapshot",
-    opsSource: "Source: GitHub Actions · Last year · 2026-02-12 → 2026-08-07",
-    opsSnapshot: "Static snapshot as of 2026-08-07",
     methodTitle: "Data Methodology",
-    methodLastYear: "GitHub 'Last year' is a rolling 12-month window, not aligned with project inception",
+    methodLastYear: "The final display covers the shared project stage, not each repository's age or continuous operation",
     methodWindow: "Project window: 2026-02-12 → 2026-08-31 (200 elapsed days; 201 inclusive calendar days). Individual repositories start at their first retained snapshot; missing earlier periods are not zero.",
     methodUTC: "Dates use UTC. Chart labels identify interval end dates, not single-day totals.",
-    methodUsage: "Usage metrics: total minutes, job runs (from Actions). Performance metrics: avg run time, queue time, fail rate (from workflow logs).",
-    methodSnapshot: "Final traffic snapshot through 2026-08-31; no polling or future append. Operations remains a separate 2026-08-07 historical snapshot, not August 31 activity.",
+    methodUsage: "Traffic metrics: clones, accumulated unique counts and repository views. C/V is combined clones divided by combined views, not an average of repository ratios.",
+    methodSnapshot: "Final traffic snapshot through 2026-08-31; no polling or future append. Earlier operational snapshots are not part of this final display.",
     methodDedup: "Per repository: sum a reporting interval of up to two weeks, then floor counts ≥ 10 to tens; preserve single digits. Apply the same rule to clones, unique counts and views. Unique-count sums are not globally distinct people. C/V is undefined when views = 0.",
   },
   zh: {
     trafficTab: "流量",
-    operationsTab: "运行",
     methodTab: "方法",
     dashboardTitle: "分析仪表盘",
     dashboardDesc: "查看遥测与流量指标",
     overviewTab: "概览",
     analyticsTab: "分析",
     dedupLogicTitle: "最终静态快照 · 保留历史基线",
-    dedupLogicDesc: "按不超过两周的统计区间汇总，各仓汇总后，≥10 向下取整到十位，个位数保留；不逐日取整。截至 08/21 的历史数据保持不变。",
-    frozenBanner: "[流量：已封存] 2026-02-12 → 2026-08-31 · 经过 200 天 / 首尾均计 201 个自然日。此后不再追加流量。",
-    finalInterval: "末段：08/22–08/31。clones、uniques、views 采用相同的取整规则。",
+    dedupLogicDesc: "按不超过两周的统计区间汇总，各仓汇总后，≥10 向下取整到十位，个位数保留；不逐日取整；截至 08/21 的历史数据保持不变",
+    frozenBanner: "[流量：已封存] 2026-02-12 → 2026-08-31 · 经过 200 天 / 首尾均计 201 个自然日；此后不再追加流量",
+    finalInterval: "末段：08/22–08/31；clones、uniques、views 采用相同的取整规则",
     exampleTitle: "示例",
-    exampleDesc: "例如: 13 → 10, 19 → 10, 27 → 20。",
+    exampleDesc: "13 → 10，19 → 10，27 → 20",
     clones: "总克隆数",
     uniqueCloners: "唯一克隆者",
     views: "总浏览量",
     uniqueVisitors: "唯一访客",
-    opsWelcome: "welcome-to-github",
-    opsZero: "zero-entropy-lab",
-    opsMinutes: "总分钟数",
-    opsRuns: "任务运行次数",
-    opsAvgRun: "平均运行",
-    opsFailRate: "失败率",
-    opsCombined: "Combined · 两仓合计",
-    opsNotMeasured: "快照中未测量",
-    opsSource: "数据源: GitHub Actions · Last year · 2026-02-12 → 2026-08-07",
-    opsSnapshot: "2026-08-07 静态快照",
     methodTitle: "数据方法论",
-    methodLastYear: "GitHub 'Last year' 是滚动 12 个月窗口，不等于项目实际运行期",
-    methodWindow: "项目窗口：2026-02-12 → 2026-08-31（经过 200 天；首尾均计 201 个自然日）。各仓从首个留存快照起计，缺少的早期区间不当作零。",
-    methodUTC: "日期使用 UTC。图表标签表示统计区间的结束日期，不是单日总量。",
-    methodUsage: "用量指标: total minutes、job runs（源自 Actions）。性能指标: avg run time、queue time、fail rate（源自 workflow 日志）。",
-    methodSnapshot: "截至 2026-08-31 的最终流量快照；不轮询、不追加未来数据。Operations 仍为独立的 2026-08-07 历史快照，不能冒充 8 月 31 日运行数据。",
-    methodDedup: "各仓先汇总不超过两周的统计区间，再将 ≥10 的计数向下取整到十位，个位数保留。clones、uniques、views 采用同一规则。uniques 累计不代表全局独立人数；views=0 时 C/V 未定义。",
+    methodLastYear: "最终展示覆盖共同项目阶段，不代表每个仓库的建仓时长或连续运行天数",
+    methodWindow: "项目窗口：2026-02-12 → 2026-08-31（经过 200 天；首尾均计 201 个自然日）；各仓从首个留存快照起计，缺少的早期区间不当作零",
+    methodUTC: "日期使用 UTC；图表标签表示统计区间的结束日期，不是单日总量",
+    methodUsage: "流量指标：clones、unique 计数累计、仓库 views；C/V 为合计 clones 除以合计 views，不是各仓比值的平均",
+    methodSnapshot: "截至 2026-08-31 的最终流量快照；不轮询、不追加未来数据；旧运行快照不纳入本页最终展示",
+    methodDedup: "各仓先汇总不超过两周的统计区间，再将 ≥10 的计数向下取整到十位，个位数保留；clones、uniques、views 采用同一规则；uniques 累计不代表全局独立人数；views=0 时 C/V 未定义",
   }
 };
 
@@ -297,9 +275,8 @@ export default function RepoTrafficVisualizationDashboard() {
           </p>
           {/* Main tabs */}
           <Tabs value={mainTab} onValueChange={setMainTab} className="w-full">
-            <TabsList className="grid grid-cols-3 w-full max-w-md rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs">
+            <TabsList className="grid grid-cols-2 w-full max-w-md rounded-xl bg-slate-900 border border-slate-800 p-1 font-mono text-xs">
               <TabsTrigger value="traffic" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-400"><Eye className="w-3.5 h-3.5 mr-1 inline"/>{t.trafficTab}</TabsTrigger>
-              <TabsTrigger value="operations" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-emerald-400"><Server className="w-3.5 h-3.5 mr-1 inline"/>{t.operationsTab}</TabsTrigger>
               <TabsTrigger value="method" className="rounded-lg data-[state=active]:bg-slate-800 data-[state=active]:text-purple-400"><BookOpen className="w-3.5 h-3.5 mr-1 inline"/>{t.methodTab}</TabsTrigger>
             </TabsList>
           </Tabs>
@@ -321,7 +298,7 @@ export default function RepoTrafficVisualizationDashboard() {
               <AlertTitle>{t.dedupLogicTitle}</AlertTitle>
               <AlertDescription className="text-sm text-slate-300 leading-relaxed font-mono mt-2">
                 <p>{t.dedupLogicDesc}</p>
-                <p className="mt-1 font-semibold">{t.exampleTitle}: {t.exampleDesc}</p>
+                <p className="mt-1 font-semibold">{t.exampleTitle}{lang === "en" ? ": " : "："}{t.exampleDesc}</p>
                 <p className="mt-2">{t.finalInterval}</p>
               </AlertDescription>
             </Alert>
@@ -337,7 +314,7 @@ export default function RepoTrafficVisualizationDashboard() {
           <p className="mb-6 text-xs font-mono text-slate-400">
             {lang === "en" ? "08/22–08/31 · Normalized interval unique-count sum: " : "08/22–08/31 · 本区间处理后 uniques 合计："}
             <strong className="text-cyan-400">{formatNumber(totals.dailyUniqueClonersSum)}</strong>
-            {lang === "en" ? " (included above; cross-day and cross-repository overlap retained)." : "（已计入上方总数；不是跨日、跨仓去重后的独立人数）。"}
+            {lang === "en" ? " (included above; cross-day and cross-repository overlap retained)." : "（已计入上方总数；不是跨日、跨仓去重后的独立人数）"}
           </p>
 
           <section className="mb-8">
@@ -415,66 +392,6 @@ export default function RepoTrafficVisualizationDashboard() {
           )}
         </>)}
 
-        {/* ===== OPERATIONS ===== */}
-        {mainTab === "operations" && (
-          <section className="space-y-6 mt-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="rounded-2xl border-slate-800 bg-slate-900/50 backdrop-blur-sm border-emerald-500/20 hover:border-emerald-500/40 transition-all">
-                <CardHeader className="border-b border-slate-800/50 pb-4">
-                  <div className="flex items-center gap-2"><Server className="h-5 w-5 text-emerald-400" /><CardTitle className="text-white font-mono">{t.opsWelcome}</CardTitle></div>
-                  <CardDescription className="text-slate-400 font-mono text-xs">{t.opsSource}</CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">7,045</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsMinutes}</div></div>
-                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">5,786</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsRuns}</div></div>
-                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">42s</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsAvgRun}</div></div>
-                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">2%</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsFailRate}</div></div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="rounded-2xl border-slate-800 bg-slate-900/50 backdrop-blur-sm border-cyan-500/20 hover:border-cyan-500/40 transition-all">
-                <CardHeader className="border-b border-slate-800/50 pb-4">
-                  <div className="flex items-center gap-2"><Server className="h-5 w-5 text-cyan-400" /><CardTitle className="text-white font-mono">{t.opsZero}</CardTitle></div>
-                  <CardDescription className="text-slate-400 font-mono text-xs">{t.opsSource}</CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">3,870</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsMinutes}</div></div>
-                    <div className="text-center"><div className="text-4xl font-bold text-white font-mono">3,172</div><div className="text-xs text-slate-400 mt-1 font-mono">{t.opsRuns}</div></div>
-                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">37s</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsAvgRun}</div></div>
-                    <div className="text-center"><div className="text-2xl font-bold text-slate-300 font-mono">2%</div><div className="text-xs text-slate-500 mt-1 font-mono">{t.opsFailRate}</div></div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Combined */}
-            <Card className="rounded-2xl border-slate-800 bg-slate-900/30">
-              <CardContent className="p-5 text-center">
-                <p className="text-xs font-mono text-slate-400 mb-2">{t.opsCombined}</p>
-                <p className="text-2xl font-bold text-white font-mono">
-                  10,915 <span className="text-slate-500 font-normal text-sm">{t.opsMinutes}</span>
-                  <span className="mx-3 text-slate-700">/</span>
-                  8,958 <span className="text-slate-500 font-normal text-sm">{t.opsRuns}</span>
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Not measured */}
-            <Card className="rounded-2xl border-slate-800 bg-slate-900/20 border-dashed">
-              <CardContent className="p-4 text-center">
-                <p className="text-xs font-mono text-slate-500">
-                  Axiom-0 · reflective-continuum · agent-foundations — {t.opsNotMeasured}
-                </p>
-              </CardContent>
-            </Card>
-
-            <p className="text-[11px] text-slate-600 font-mono text-center">{t.opsSource}</p>
-            <p className="text-[11px] text-slate-600 font-mono text-center -mt-4">{t.opsSnapshot}</p>
-          </section>
-        )}
 
         {/* ===== METHOD ===== */}
         {mainTab === "method" && (
@@ -489,7 +406,6 @@ export default function RepoTrafficVisualizationDashboard() {
                 <div className="border-l-2 border-red-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Deduplication & Limitations</p><p>{t.methodDedup}</p></div>
               </CardContent>
             </Card>
-            <p className="text-[11px] text-slate-600 font-mono text-center">{t.opsSource}</p>
           </section>
         )}
 

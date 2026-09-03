@@ -30,7 +30,7 @@ The `08/31` chart point covers 08/22–08/31, not a single day. Intervals have v
 
 Repository views are not GitHub Pages visits. C/V does not identify bots, humans, intent or adoption. Zero views yield an undefined C/V (`null`, a chart gap), never a fabricated finite ratio.
 
-Operations remains its independent **2026-08-07** snapshot: 10,915 minutes / 8,958 runs. Traffic totals do not extend that operational window. Pages deployment is not Python runtime validation.
+The public frontend shows only the final **2026-08-31** traffic snapshot and its methodology. The older Operations tab has been removed from this display, not relabelled as 200-day activity. Its original evidence remains in Git history; the 54 traffic interval records are unchanged. Pages deployment is not Python runtime validation.
 
 ## Implementation and verification
 
@@ -45,7 +45,7 @@ npm run build -- --outDir <dedicated-empty-preview-directory-outside-the-reposit
 npm run preview -- --host 127.0.0.1 --outDir <same-preview-directory>
 ```
 
-Regression tests render the real Dashboard and check totals, dates, the interval-total rounding order and unique-count labels. Browser review checks all five repository filters, language switching and Traffic/Operations/Method tabs. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
+Regression tests render the real Dashboard and check totals, dates, interval-total rounding order, unique-count labels, final-only navigation and the nonduplicated example. Browser review checks repository filters, language switching and Traffic/Method tabs. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
 
 No dependency, lockfile, runtime, workflow or private SOP changes are included. Dependency advisories are separate maintenance work. Do not claim deployment from a local build.
 
