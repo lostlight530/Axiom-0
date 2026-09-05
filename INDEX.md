@@ -146,6 +146,7 @@
 - [2026-09-02 Pipeline Manifest](RESEARCH/daily/2026-09-02-pipeline-manifest.md) - Status: SUCCESS_WITHIN_RETAINED_SCOPE; local takeover
 - [2026-09-03 Pipeline Manifest](RESEARCH/daily/2026-09-03-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-04 Pipeline Manifest](RESEARCH/daily/2026-09-04-pipeline-manifest.md) - Status: SUCCESS
+- [2026-09-05 Pipeline Manifest](RESEARCH/daily/2026-09-05-pipeline-manifest.md) - Status: SUCCESS
 
 ## August 2026 controlled evidence authority
 
