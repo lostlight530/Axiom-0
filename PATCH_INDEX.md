@@ -153,6 +153,7 @@
 - [2026-09-08 Pipeline Manifest](RESEARCH/daily/2026-09-08-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-09 Pipeline Manifest](RESEARCH/daily/2026-09-09-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-10 Pipeline Manifest](RESEARCH/daily/2026-09-10-pipeline-manifest.md) - Status: SUCCESS
+- [2026-09-11 Pipeline Manifest](RESEARCH/daily/2026-09-11-pipeline-manifest.md) - Status: SUCCESS
 
 ## August 2026 controlled evidence authority
 
