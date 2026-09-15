@@ -42,7 +42,7 @@ If no executable surface exists, the method must say so rather than inventing an
 ## Daily / Weekly / Monthly relation
 
 - Daily records preserve point-in-time source, numerical, structural, execution, and topology evidence.
-- Weekly synthesis may aggregate or downgrade Daily evidence but cannot invent missing observations or erase failures.
+- Weekly synthesis may aggregate or downgrade Daily evidence but cannot promote missing or failed evidence.
 - Monthly/stage reconciliation records the strongest current interpretation to a declared cutoff without backdating later evidence.
 - At the 2026-08-27 cutoff W35 and the natural August month are still open; no final W35/month result is inferred.
 
@@ -62,5 +62,5 @@ A methodology cannot silently change a runtime constant, promote research to imp
 - [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
-- [August stage audit through 2026-08-27](../RESEARCH/monthly/2026-08-through-27-stage-audit.md)
-- [Prior cutoff audit through 2026-08-23](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
+- [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
+- [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
