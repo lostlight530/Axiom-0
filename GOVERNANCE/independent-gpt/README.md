@@ -15,7 +15,7 @@ At audit start record the current date, default branch, `main` SHA, relevant ope
 
 1. Current implementation and tests under `CODE/`, `AUTOMATION/`, and other active implementation surfaces.
 2. `GOVERNANCE/MAINTENANCE.md` for the canonical public maintenance contract.
-3. `INDEPENDENT_REVIEW.md` for the repository-native reviewer state machine.
+3. `GOVERNANCE/INDEPENDENT_REVIEW.md` for the repository-native reviewer state machine.
 4. `EVIDENCE_BASELINE.md`, current ADRs / Methodologies, and explicit machine-readable contracts for claim and implementation boundaries.
 5. Current `RESEARCH/` Daily / Weekly / Monthly artifacts for repository-visible research execution evidence.
 6. `historical-audits/INDEX.md` and its records for corrections, period audits, evidence accounting, and reconciliation history.

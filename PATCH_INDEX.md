@@ -163,5 +163,5 @@
 
 - [W35 calibrated weekly manifest](RESEARCH/weekly/2026-W35-weekly-manifest.md)
 - [August 30-day provisional monthly manifest](RESEARCH/monthly/2026-08-monthly-manifest.md)
-- [August evidence audit through day 30](RESEARCH/monthly/2026-08-through-30-stage-audit.md)
-- [August evidence audit through day 27](RESEARCH/monthly/2026-08-through-27-stage-audit.md) — historical stage authority
+- [August evidence audit through day 30](historical-audits/03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md)
+- [August evidence audit through day 27](historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) — historical stage authority

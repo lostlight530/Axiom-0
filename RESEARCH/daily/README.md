@@ -15,4 +15,4 @@ Evidence types are independent: KL evidence does not prove document topology; to
 
 KL values must include their input identity and unit. If KL was not computed, record a missing state instead of a number. Every consistency run must retain the `axiom_document_topology` JSON contract evidence emitted by `scan_consistency.py`.
 
-Weekly A5 may inherit, aggregate, or downgrade Daily evidence; it cannot promote missing or failed evidence. Monthly A6 closes only after the natural month ends and its evidence is retained. See the [August 1–27 ledger](../monthly/2026-08-through-27-stage-audit.md) and [maintenance contract](../../GOVERNANCE/MAINTENANCE.md).
+Weekly A5 may inherit, aggregate, or downgrade Daily evidence; it cannot promote missing or failed evidence. Monthly A6 closes only after the natural month ends and its evidence is retained. See the [August 1–27 ledger](../../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) and [maintenance contract](../../GOVERNANCE/MAINTENANCE.md).

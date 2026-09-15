@@ -6,7 +6,7 @@
 
 - `MAINTENANCE.md` — canonical public maintenance contract.
 - `plans/` and `specs/` — retained governance design/specification material in their declared status.
-- `../INDEPENDENT_REVIEW.md` — repository-native post-hoc reviewer state machine.
+- `INDEPENDENT_REVIEW.md` — repository-native post-hoc reviewer state machine.
 - `independent-gpt/README.md` — cold-start recovery kernel for a memoryless Independent GPT reviewer.
 - `../EVIDENCE_BASELINE.md`, `../ADR/`, `../METHODOLOGY/` — subject-specific evidence and decision/procedure boundaries.
 - `../RESEARCH/` — Daily/Weekly/Monthly research and execution records.

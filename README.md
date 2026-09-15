@@ -37,9 +37,9 @@ python -m unittest discover -s tests -v
 
 ## 5. 前端与 Pages 边界 / Frontend and Pages boundary
 
-**[CN]** [`FRONTEND/`](FRONTEND/) 是独立的 React/Vite 展示层，不是 Python 参考库的运行时依赖。当前 Pages deployment workflow 使用 Node 24 和已提交锁文件执行安装与构建，并将构建产物写入 [`docs/`](docs/) 后上传 Pages；这个 deployment build 不是 Python runtime 或研究结论的测试证据。
+**[CN]** [`FRONTEND/`](FRONTEND/) 是独立的 React/Vite 展示层，不是 Python 参考库的运行时依赖。当前 Pages deployment workflow 使用 Node 24 和已提交锁文件执行安装与构建，并在部署过程中写出 `docs/` 构建产物后上传 [GitHub Pages](https://lostlight530.github.io/Axiom-0/)；这个 deployment build 不是 Python runtime 或研究结论的测试证据。
 
-**[EN]** [`FRONTEND/`](FRONTEND/) is a separate React/Vite presentation layer and is not a runtime dependency of the Python reference library. The current Pages deployment workflow uses Node 24 and the committed lockfile, writes the build output to [`docs/`](docs/), and uploads that output to Pages. This deployment build is not test evidence for the Python runtime or research claims.
+**[EN]** [`FRONTEND/`](FRONTEND/) is a separate React/Vite presentation layer and is not a runtime dependency of the Python reference library. The current Pages deployment workflow uses Node 24 and the committed lockfile, writes the `docs/` build output during deployment, and publishes it to [GitHub Pages](https://lostlight530.github.io/Axiom-0/). This deployment build is not test evidence for the Python runtime or research claims.
 
 ```bash
 cd FRONTEND
