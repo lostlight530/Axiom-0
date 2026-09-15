@@ -19,11 +19,11 @@ At audit start record the current date, default branch, `main` SHA, relevant ope
 4. `EVIDENCE_BASELINE.md`, current ADRs / Methodologies, and explicit machine-readable contracts for claim and implementation boundaries.
 5. Current `RESEARCH/` Daily / Weekly / Monthly artifacts for repository-visible research execution evidence.
 6. `historical-audits/INDEX.md` and its records for corrections, period audits, evidence accounting, and reconciliation history.
-7. Git history, PR chronology, and revision-matched test / workflow evidence when historical execution or current validity is disputed.
+7. Git history, PR chronology, and revision-matched test / GitHub Actions evidence when historical execution or current validity is disputed.
 
 ## Evidence boundaries
 
-Keep command, revision, environment, exit code, and untested boundary attached to execution claims. KL evidence, structural scans, bounded executions, index checks, document checks, and frontend state are separate evidence surfaces.
+Keep command, revision, environment, exit code, and untested boundary attached to execution claims. KL evidence, structural scans, bounded executions, index checks, document checks, GitHub Actions runs, and frontend state are separate evidence surfaces.
 
 Native Jules records remain native Jules records. Independent review may calibrate their interpretation but does not retroactively change historical execution. A later successful run does not erase an earlier failed run. File presence or a status field is not execution evidence by itself.
 

@@ -23,7 +23,7 @@ A 30-day provisional audit may be published when 30 logical dates exist, but it 
 
 ## Responsibility boundary
 
-Jules may generate historical records through its existing private task. Public checkers validate declared surfaces. Independent review calibrates claims; a human reviews and merges. This contract does not authorize changes to `CODE/**`, frontend, dependencies, `.github/**`, CI, or private agent controls.
+Jules may generate historical records through its existing private task. Public checkers validate declared surfaces. Independent review calibrates claims; a human reviews and merges. This contract does not authorize changes to `CODE/**`, frontend, dependencies, `.github/**`, GitHub Actions or other repository runner/deployment surfaces, or private agent controls.
 
 ## Definition of Done, rollback, and escalation
 
