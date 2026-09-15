@@ -6,7 +6,7 @@ Status: public post-hoc review contract
 
 This document defines a reviewer-side state machine for independently auditing committed Axiom artifacts after they are produced.
 
-It is deliberately separate from repository runtime behavior, Jules task execution, GPT/cloud maintenance, GitHub Actions, CI, deployment, scheduled automation, and other external maintenance sessions. It is not a task prompt, repository-memory entry, `AGENTS.md` instruction, executable policy, workflow, or CI gate.
+It is deliberately separate from repository runtime behavior, Jules task execution, GPT/cloud maintenance, GitHub Actions, deployment, scheduled automation, and other external maintenance sessions. It is not a task prompt, repository-memory entry, `AGENTS.md` instruction, executable policy, workflow, or repository automation gate.
 
 The review layer may inspect committed research, specifications, ADRs, methodologies, tests, explicit run evidence, and public sources. It may correct the interpretation of an artifact, but it does not retroactively change what a historical run observed.
 
@@ -92,7 +92,7 @@ This reviewer contract borrows selected public principles from international and
 - OECD AI Principles: accountability should be supported by lifecycle traceability and records sufficient for analysis and inquiry, while transparency is contextual rather than a requirement to expose confidential internal material. References: https://oecd.ai/en/dashboards/ai-principles/P9 and https://oecd.ai/en/dashboards/ai-principles/P7
 - SLSA v1.2: provenance is useful only when somebody verifies it against expectations. Axiom reuses this separation between provenance and verification as a review concept; it does not claim a SLSA level or attestation. References: https://slsa.dev/spec/v1.2/provenance and https://slsa.dev/spec/v1.2/verifying-artifacts
 - OpenAI third-party evaluation guidance: an evaluation result should identify the claim being tested, the tested system/harness/budget, and validity hazards before a broader conclusion is accepted. This principle is applied only when reviewing evaluation claims; it creates no automatic evaluation harness. Reference: https://openai.com/index/trustworthy-third-party-evaluations-foundations/
-- Anthropic agent-evaluation guidance: results depend on task specification, trial isolation, graders, environment, and repeated trials; multiple evidence layers and periodic human calibration are stronger than a single evaluator. This is a review principle, not a CI requirement. Reference: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+- Anthropic agent-evaluation guidance: results depend on task specification, trial isolation, graders, environment, and repeated trials; multiple evidence layers and periodic human calibration are stronger than a single evaluator. This is a review principle, not a repository automation requirement. Reference: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
 - OWASP Agentic Top 10: tool misuse, privilege abuse, memory/context poisoning, cascading failures, and human-agent trust exploitation reinforce the decision to keep this reviewer non-operative and isolated from execution authority. The repository does not claim OWASP certification. Reference: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 
 The common pattern is deliberately narrow: **separate producer from reviewer, preserve provenance, verify against explicit expectations, retain uncertainty and conflicts, minimize disclosed sensitive context, and keep the reviewer from acquiring unintended execution authority.**
@@ -127,12 +127,12 @@ A durable independent review may record:
 - safe validation commands and observed results when relevant
 - final public disposition
 
-No timestamp is required by this contract. No private prompt, private memory, hidden reasoning, workflow, or CI field exists in this public schema.
+No timestamp is required by this contract. No private prompt, private memory, hidden reasoning, workflow, or repository-automation field exists in this public schema.
 
 ## Automation isolation
 
 This review contract is intentionally non-operative.
 
-It does not trigger, modify, gate, or replace Jules automation, GPT/cloud maintenance, GitHub Actions, CI, deployment, schedules, repository memory, or runtime behavior. No new CI or workflow is implied by this document.
+It does not trigger, modify, gate, or replace Jules automation, GPT/cloud maintenance, GitHub Actions, deployment, schedules, repository memory, or runtime behavior. No new GitHub Actions workflow or repository automation gate is implied by this document.
 
 Artifacts produced by those systems may be reviewed here later. That post-hoc review must never be represented as proof that the producing system consumed or enforced this contract.
