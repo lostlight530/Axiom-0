@@ -1,0 +1,24 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "Axiom-0",
+  "description": "A dependency-free Python reference implementation for explicit data contracts, canonicalization, measurable state transitions, validation, and reproducible repository checks.",
+  "codeRepository": "https://github.com/lostlight530/Axiom-0",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "author": {
+    "@type": "Person",
+    "name": "lostlight530",
+    "url": "https://github.com/lostlight530"
+  },
+  "applicationCategory": "Research Software",
+  "isAccessibleForFree": true,
+  "programmingLanguage": "Python",
+  "keywords": [
+    "research software",
+    "data contracts",
+    "canonical json",
+    "state transitions",
+    "reproducibility",
+    "validation"
+  ]
+}
