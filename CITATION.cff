@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository in your work, please cite it using the metadata below."
+title: "Axiom-0"
+authors:
+  - name: "lostlight530"
+    website: "https://github.com/lostlight530"
+repository-code: "https://github.com/lostlight530/Axiom-0"
+license: MIT
+abstract: >-
+  A dependency-free Python reference implementation for explicit data
+  contracts, canonicalization, measurable state transitions, validation,
+  and reproducible repository checks.
+keywords:
+  - research software
+  - data contracts
+  - canonical json
+  - state transitions
+  - reproducibility
+  - validation
