@@ -1,5 +1,7 @@
 # Axiom-0
 
+[![DOI](https://zenodo.org/badge/1202105958.svg)](https://zenodo.org/badge/latestdoi/1202105958)
+
 A dependency-free Python reference for explicit data contracts, measurable transitions, and reproducible repository checks. / 一个以显式数据契约、可度量状态转换和可复现仓库检查为核心的无第三方运行时依赖 Python 参考实现。
 
 ## 1. 仓库目的与非目标 / Repository purpose and non-goals
