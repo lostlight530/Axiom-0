@@ -1,6 +1,6 @@
 # 2026 Evidence Baseline
 
-- Retrieval/calibration date: 2026-08-27
+- Retrieval/calibration date: 2026-09-17
 - Scope: external facts and evidence semantics that bound Axiom runtime, research, security, validation, and evaluation claims
 - Policy: a source, command, file, digest, scanner, or historical artifact supports only the property actually evidenced by that surface
 
@@ -45,6 +45,8 @@ A repaired-scanner success means only:
 
 It does not prove architecture semantics, implementation correctness, source truth, safety, or convergence.
 
+Post-repair Daily records through 2026-09-17 continue to retain scanner results under this bounded contract. Those later successes do not alter the historical failures.
+
 ### 2026-08-25 scanner evidence conflict
 
 The retained 2026-08-25 Daily artifact reports structural-scanner exit code 0 while also saying missing headers were listed. The surrounding retained scanner contract was obsolete relative to the 16/15 canonical document set.
@@ -81,6 +83,7 @@ Reference examples:
 - 2026-08-24: pipeline failed at A2; A3 actual fields are `NOT_COMPUTED`; template `100 / 100` wording is non-evidentiary
 - 2026-08-26 and 2026-08-27: pipeline failed at A2; A3 was not established; copied `100 / 100 ... overridden by failure` wording is not an execution result
 - 2026-08-25: A3 retained result can remain run-scoped while the structural-scanner line remains an unresolved command-result conflict
+- 2026-09-17: A1 still contains explicit `MISSING_DATA` fields while A2/A3 retain successful bounded execution evidence; those states coexist rather than collapsing into one repository-wide success
 
 ## Daily → Weekly → Monthly inheritance
 
@@ -96,18 +99,48 @@ Weekly synthesis may aggregate, preserve, or downgrade Daily evidence but cannot
 - `NOT_COMPUTED`, `MISSING_DATA`, failed commands, rejected observations, and unresolved hypotheses survive aggregation
 - a later successful observation does not erase an earlier error/missing field
 - a Weekly conclusion cannot be stronger than its traceable support without new evidence
+- `NOT_YET_DUE` is a point-in-time lifecycle state, not a permanent absence claim
+- a Weekly created before a required date becomes due remains a historical partial/provisional artifact after that Daily later arrives
 
-At the 2026-08-27 cutoff ISO week W35 is still in progress; no W35 Weekly result is inferred merely because Daily paths exist.
+Current W37 example:
+
+- `RESEARCH/weekly/2026-W37-weekly-manifest.md` records 2026-09-13 as `Not Yet Due` and ends `PARTIAL`
+- `RESEARCH/daily/2026-09-13-pipeline-manifest.md` is now present on current main
+- therefore the natural week has ended and current Daily path coverage has advanced, but the earlier Weekly record is not silently upgraded into a final W37 result
 
 ### Monthly
 
-Formal August monthly/A6 closure remains `OPEN` until the natural monthly lifecycle has actual retained evidence. A stage audit must not manufacture 2026-08-28 through 2026-08-31 evidence.
+A partial-month stage audit may reconcile evidence to a cutoff. It must not create future-day evidence or declare formal monthly closure before the natural monthly lifecycle has actual retained evidence.
+
+The retained `RESEARCH/monthly/2026-08-monthly-manifest.md` is explicitly a through-day-30 provisional artifact. August later ended naturally, but that later fact does not transform the through-day-30 artifact into a final month seal.
+
+Current August interpretation:
+
+`NATURAL_PERIOD_ENDED / HISTORICAL_PROVISIONAL_ARTIFACT_PRESERVED / FINAL_PERIOD_SEAL_NOT_ESTABLISHED_BY_THE_THROUGH_DAY_30_ARTIFACT`.
+
+## Period-lifecycle semantics
+
+Keep these dimensions separate:
+
+- `natural_period_state`
+- `expected_input_set`
+- `input_path_coverage`
+- `aggregate_generation_time`
+- `aggregate_evidence_status`
+- `final_period_seal_state`
+
+`NATURAL_PERIOD_ENDED` does not imply `ARTIFACT_COVERAGE_COMPLETE`.
+
+`ARTIFACT_COVERAGE_COMPLETE` does not imply `FINAL_PERIOD_SEAL_ESTABLISHED`.
+
+A final seal requires a repository-authorized aggregate whose own execution had the required due inputs available under the applicable contract.
 
 ## Temporal evidence availability
 
 Keep separate when materially different:
 
 - logical period
+- natural-period lifecycle state
 - original execution state
 - execution/check timestamp
 - source event/publication timestamp
@@ -184,6 +217,10 @@ Axiom evidence claims should name, when material:
 
 `SURFACE + INPUT/IDENTITY + REVISION/TIME + RESULT + LIMITATION`.
 
-The canonical August stage record through 2026-08-27 is `RESEARCH/monthly/2026-08-through-27-stage-audit.md`.
+Periodic evidence claims should additionally keep separate:
+
+`NATURAL_PERIOD_STATE + INPUT_COVERAGE + AGGREGATE_GENERATION_STATE + FINAL_SEAL_STATE`.
+
+Current main contains Daily evidence through 2026-09-17. The W37 Weekly artifact is retained as its historical `PARTIAL` execution state even though the 2026-09-13 Daily is now present. The August through-day-30 Monthly artifact remains provisional rather than being retroactively promoted.
 
 Security, semantic truth, agent alignment, production reliability, durable external effects, and universal convergence require separate evidence.
