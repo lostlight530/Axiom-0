@@ -1,7 +1,7 @@
 # Axiom-0 Methodology Index
 
 Status: procedure and implementation-boundary map  
-Current calibration: 2026-08-27
+Current calibration: 2026-09-17
 
 `METHODOLOGY/**` describes how a concrete repository property is measured, interpreted, or reconciled. A method does not create a runtime capability merely by existing.
 
@@ -23,7 +23,7 @@ Current calibration: 2026-08-27
 | [METH-012](./METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) | Distinguish observed metrics from resource enforcement | enforcement `NOT_IMPLEMENTED` |
 | [METH-013](./METH-013-STRICT-DATA-DEDUPLICATION.md) | Exact canonical-content identity; no semantic auto-dedup | digest implemented, dedup engine `NOT_IMPLEMENTED` |
 | [METH-014](./METH-014-GROUNDEDNESS-RULE.md) | Claim/source/implementation groundedness review | documentary/evidence |
-| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile Daily/Weekly history without retroactivity | `RESEARCH/**` evidence lifecycle |
+| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile historical/periodic evidence without retroactivity | retained evidence lifecycle |
 
 ## Method contract
 
@@ -39,28 +39,38 @@ For current structural validation, `scan_consistency.py` derives membership from
 
 If no executable surface exists, the method must say so rather than inventing an implementation.
 
-## Daily / Weekly / Monthly relation
+## Periodic and historical evidence relation
 
-- Daily records preserve point-in-time source, numerical, structural, execution, and topology evidence.
-- Weekly synthesis may aggregate or downgrade Daily evidence but cannot promote missing or failed evidence.
-- Monthly/stage reconciliation records the strongest current interpretation to a declared cutoff without backdating later evidence.
-- At the 2026-08-27 cutoff W35 and the natural August month are still open; no final W35/month result is inferred.
+The methodology index is a durable procedure map, not a current-period status dashboard.
+
+- Daily/periodic records preserve point-in-time source, numerical, structural, execution, and topology evidence.
+- Weekly synthesis may aggregate or downgrade inherited evidence but cannot promote missing or failed evidence.
+- Monthly/stage reconciliation records the strongest interpretation to a declared cutoff without backdating later evidence.
+- Open/closed status for a particular week or month belongs to the corresponding time-scoped evidence record, not to this current methodology index.
+- Historical 2026-08-27 statements about W35/August remain valid only at that recorded cutoff and are not rewritten here.
 
 ## Authority relationship
 
-- ADR records accepted repository decisions/boundaries
-- Methodology records procedures
-- `SPECIFICATION.md` records the current engineering and evidence-SOP contract
-- `CODE/**` records implementation
-- scanners/retained run artifacts provide narrow evidence for their exact properties
-- `RESEARCH/**` records point-in-time research/history
+- ADR records accepted repository decisions/boundaries.
+- Methodology records procedures.
+- `SPECIFICATION.md` records the current engineering/behavioral contract.
+- `CODE/**` records implementation.
+- scanners and retained revision-matched run artifacts provide narrow evidence for their exact properties.
+- `RESEARCH/**` and dated historical/audit records preserve point-in-time evidence.
+- `REPRODUCIBILITY.md` defines what must be retained before a run/result can be described as reproducible.
+- publication metadata identifies an archived software object and is not an execution or scientific-evidence upgrade.
 
 A methodology cannot silently change a runtime constant, promote research to implementation, strengthen an evidence state beyond its support, or backdate later evidence.
 
-## Related navigation
+## Current navigation
 
 - [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [Reproducibility](../REPRODUCIBILITY.md)
+- [Release policy](../RELEASE_POLICY.md)
+
+## Historical calibration references
+
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
