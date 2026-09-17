@@ -1,7 +1,7 @@
 # Verification and claim scope
 
 - Decision date: 2026-08-05
-- Review calibration: 2026-08-24
+- Review calibration: 2026-09-18
 - Scope: Axiom-0 reference contracts, methods, code, and evidence claims
 
 ## Status
@@ -36,21 +36,25 @@ It can provide numeric evidence for those cases; it does not establish repositor
 
 ### `scan_consistency.py`
 
-This is a **legacy structural scanner**.
+The current scanner is an index-derived structural checker with contract version `2026-08-28`.
 
-Current code is hard-coded for:
+Current code:
 
-- 15 ADR files
-- 14 Methodology files
-- the older bilingual heading set
+- reads ADR membership from `ADR/INDEX.md`
+- reads Methodology membership from `METHODOLOGY/INDEX.md`
+- compares indexed members with the files actually present
+- derives ADR and Methodology counts at execution time rather than retaining a fixed document-count contract
+- checks minimum ADR section groups for context and decision plus an evidence/verification boundary
+- checks minimum Methodology section groups for inputs, procedure, outputs plus an evidence/verification boundary
+- emits `AXIOM_CONSISTENCY_EVIDENCE` with the observed counts, failures, contract identity, and pass/fail state
 
-The current architecture contains 16 ADRs and 15 Methodologies, several of which deliberately use the newer architecture-bound structure.
+The pre-repair scanner historically used a 15 ADR / 14 Methodology contract and obsolete heading expectations. Those earlier failures remain point-in-time evidence, but that legacy contract is not the current scanner implementation.
 
-Therefore its current status relative to this branch is:
+A current successful execution can support only:
 
-`LEGACY_STRUCTURAL_SCANNER / CURRENT_CONTRACT_MISMATCH`.
+`CURRENT_DOCUMENT_TOPOLOGY_AND_MINIMUM_SECTION_CONTRACT_SATISFIED`.
 
-Its existence must not be cited as proof that the current 16/15 architecture is structurally validated.
+Scanner source presence is not scanner execution, and a structural pass does not establish architecture semantics, implementation correctness, source truth, safety, or convergence.
 
 ### `code_compliance.py`
 
@@ -72,10 +76,12 @@ A Daily/Weekly record supports its point-in-time stored observation subject to s
 
 ## Consequences
 
-Reports become narrower but can answer exactly which surface established which property.
+Reports remain narrow enough to answer exactly which surface established which property.
 
-A stale/legacy checker is itself an evidence fact; it must be documented as a mismatch rather than silently treated as current validation.
+Historical checker-contract drift remains preserved as historical evidence while current claims follow the repaired scanner actually present in current `main`.
 
 ## Evidence boundary
 
 No evidence surface inherits capabilities from another. A numeric scan, structural scan, source-pattern scan, path guard, research validator, and research artifact remain distinct evidence classes.
+
+A checker definition in the repository is not an executed checker result. When execution was not observed, use `NOT_EXECUTED` or `EXECUTION_NOT_OBSERVED` rather than inferring PASS from current source state.
