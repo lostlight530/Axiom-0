@@ -1,6 +1,6 @@
 # Historical evidence reconciliation
 
-- Method version: 2026-08-24
+- Method version: 2026-09-18
 - Governing decision: ADR-016
 - Scope: `RESEARCH/**`, periodic aggregation, source chronology, and current interpretation
 
@@ -83,20 +83,24 @@ Return an unresolved/insufficient-history conclusion rather than guessing when:
 - source version/date identity is unresolved for a material proposition
 - Weekly/Monthly synthesis would strengthen unresolved Daily evidence without a new evidence record
 
-## August 2026 calibration
+## Historical August 2026 calibration example
 
-Current Axiom history supports these bounded conclusions:
+The statements below are retained as an example of how this method was applied to an August 2026 cutoff. They are **not current week/month status** and must not be read as the repository's present monthly state.
 
-- Daily artifact paths for August 1–23 are currently present
-- W31–W34 Weekly artifacts are currently present
-- current path coverage does not erase missing/not-computed evidence inside those records
-- 2026-08-19 contains a stored chronology conflict between check time and cited source release time
-- 2026-08-20/21 `Actual Input Range: 0.0 to 0.0` must not substitute for the named KL input cases
-- formal August Monthly/A6 closure remains open before the natural month ends
+At the historical calibration cutoff used by the August reconciliation:
 
-Current stage conclusion:
+- Daily artifact paths for the reviewed August window were currently present at that cutoff
+- W31–W34 Weekly artifacts were present at that cutoff
+- current path coverage did not erase missing/not-computed evidence inside those records
+- the 2026-08-19 record contained a stored chronology conflict between check time and cited source release time
+- the 2026-08-20/21 `Actual Input Range: 0.0 to 0.0` wording did not substitute for named KL input cases
+- formal August Monthly/A6 closure was still open at the recorded pre-month-end cutoff
+
+The corresponding historical stage interpretation was:
 
 `PATH_COVERAGE_COMPLETE_WITH_BOUNDED_EVIDENCE_AND_MONTH_OPEN`
+
+That label belongs to its recorded cutoff only. Current August closure, current weekly state, or later September interpretation must be recovered from the most recent retained current/historical record with its own date and evidence; this methodology does not infer those later states.
 
 ## Outputs
 
@@ -108,3 +112,5 @@ Current stage conclusion:
 ## Evidence boundary
 
 This method reconciles documentary history. It does not recreate missing execution, manufacture absent metrics, or alter `CODE/**` behavior.
+
+A historical example inside this methodology is not a live status dashboard. Later current state must be established from later evidence rather than from the example's cutoff label.
