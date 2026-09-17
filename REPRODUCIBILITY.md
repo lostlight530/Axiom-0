@@ -12,6 +12,24 @@ The repository currently has no GitHub Actions workflow that compiles or tests t
 
 Historical Jules entry paths remain compatibility surfaces, but a path being invoked does not establish that its contract is current. Retain the contract identity emitted by `scan_consistency.py` with each run. `test_100.sh` repeats a bounded fixture; it checks stable canonical state, not byte-identical wall-clock events or model determinism.
 
+## Archived software publication and exact revision identity
+
+The repository has a public Zenodo software publication identified by DOI `10.5281/zenodo.22791103` and publication date 2026-09-16.
+
+That DOI is a stable identifier for the archived software publication. It is not, by itself, a substitute for the exact Git commit, interpreter, environment, fixture, command, and tolerance needed to reproduce a revision-specific result.
+
+Keep these identities distinct:
+
+```text
+Zenodo publication identity != current main revision
+Git commit identity != successful execution
+successful execution != scientific validity
+archive presence != reproduction
+later main state != archived publication contents
+```
+
+When a result depends on exact implementation state, cite or record the Git revision in addition to the DOI. Do not infer an exact archive-to-commit mapping unless that mapping is explicitly retained and verified by the publication or repository metadata.
+
 ## Interpreting failure
 
 First reproduce at the failing commit. Separate environment drift, invalid fixture, flaky external dependency, contract regression, and an outdated expectation. This reference code performs no network calls; a network-dependent extension must capture service/model version and retry/budget policy separately.
