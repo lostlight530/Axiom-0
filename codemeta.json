@@ -4,6 +4,8 @@
   "name": "Axiom-0",
   "description": "A dependency-free Python reference implementation for explicit data contracts, canonicalization, measurable state transitions, validation, and reproducible repository checks.",
   "codeRepository": "https://github.com/lostlight530/Axiom-0",
+  "identifier": "https://doi.org/10.5281/zenodo.22791103",
+  "datePublished": "2026-09-16",
   "license": "https://spdx.org/licenses/MIT.html",
   "author": {
     "@type": "Person",

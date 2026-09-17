@@ -1,55 +1,55 @@
-## Outcome and exact scope
+## Summary
 
-- Base `main` SHA:
-- Head SHA:
-- Owning surface / logical period:
-- Overlapping PR/branch check:
+What problem does this change address, and what changed?
 
-## Change classification
-- [ ] implementation repair
-- [ ] maintenance / governance repair
-- [ ] automation contract / schedule repair
-- [ ] evidence / documentation correction
-- [ ] other bounded repository change
+## Change type
 
-## Evidence classification
-- [ ] repository observation
-- [ ] revision-matched execution / runner evidence
-- [ ] automation/scheduler execution evidence
-- [ ] primary-source support
-- [ ] proposal/hypothesis explicitly labelled
-- [ ] unknown / unresolved state retained where evidence is insufficient
+- [ ] implementation / bug fix
+- [ ] tests / validation
+- [ ] specification / ADR / methodology
+- [ ] research / evidence correction
+- [ ] automation contract / schema
+- [ ] repository infrastructure / metadata
+- [ ] maintenance / governance
 
-## Contract impact
+## Affected surfaces
 
-Inputs, outputs, failure behavior, compatibility, machine-readable contracts, and directly synchronized projections.
+List the implementation, tests, contracts, documentation, or metadata affected. Note related surfaces intentionally left unchanged.
 
-## Changed and deliberately unchanged boundaries
+## Contract and evidence impact
 
-## Verification actually executed
+Describe changes to inputs, outputs, errors, compatibility, numerical semantics, evidence interpretation, or machine-readable contracts.
 
-List exact commands, scanners, schema checks, schedulers, or workflows and their observed results. Do not treat contract review as execution.
+For research/evidence changes, distinguish source authority, local implementation, observed execution, and inference.
 
-## Verification not executed
+## Verification performed
 
-Use `NOT_EXECUTED` for checks that were not run and `EXECUTION_NOT_OBSERVED` when a claimed external/scheduled run cannot be recovered.
+List exact commands/checks actually run and their observed results.
 
-## Concurrency and delivery
-- [ ] Fresh `main` and open PR/branch state were rechecked before delivery
-- [ ] Aggregate `main...branch` diff was reviewed
-- [ ] No activity-only change was created where `NO_CHANGE_REQUIRED` was appropriate
-- [ ] No direct `main` write, force-push, or auto-merge is requested by this PR
+## Known limits / verification not performed
 
-## Security, privacy, permissions, and retention
+List relevant commands, environments, external schedulers, or evidence checks not exercised. Do not present a defined checker or schedule as executed evidence.
 
-## Historical / evidence boundary
-- [ ] Historical point-in-time records were not silently rewritten
-- [ ] Failure, missing, rejected, provisional, blocked, and unknown states were preserved
-- [ ] Private Jules prompts / hidden memory / credentials were not exposed
-- [ ] Schedule or workflow presence was not presented as execution evidence
+## ADR / methodology / historical impact
+
+State whether an architectural decision, methodology, reproducibility rule, or historical interpretation changes. Preserve point-in-time records when a forward correction is sufficient.
+
+## Security and privacy
+
+Describe security, authorization, dependency, public-exposure, or sensitive-data impact. Follow `SECURITY.md` for sensitive reports.
+
+## Publication / metadata impact
+
+State whether README, citation metadata, release metadata, or other public discovery surfaces must remain synchronized.
 
 ## Rollback
 
-## Maintainer review
+Describe the smallest safe rollback.
 
-Final doctrine and merge authority remains with the maintainer.
+## Review checklist
+
+- [ ] The diff is limited to the stated purpose.
+- [ ] Tests/checks described as passing were actually executed.
+- [ ] Reference-fixture results are not generalized beyond their tested scope.
+- [ ] Historical evidence was not silently rewritten to match later state.
+- [ ] No credentials, private data, caches, or unrelated generated/local state is included.
