@@ -4,12 +4,22 @@
 - **ISO Week:** 2026-W37
 - **Dates Covered:** 2026-09-07 to 2026-09-13
 
+> **Maintenance correction — 2026-09-17**
+>
+> - Original Weekly execution state: `PARTIAL`; at generation time 2026-09-13 was recorded as `Not Yet Due`.
+> - Current repository state: `RESEARCH/daily/2026-09-13-pipeline-manifest.md` is now present on main.
+> - Current W37 Daily path coverage: `7/7`.
+> - Current not-yet-due dates: `NONE`.
+> - Weekly execution replayed for this correction: `NO`.
+> - Current disposition: `NATURAL_WEEK_ENDED / CURRENT_DAILY_PATH_COVERAGE_COMPLETE / HISTORICAL_WEEKLY_EXECUTION_PARTIAL_PRESERVED`.
+> - This correction updates current coverage only. It does not turn the original partial Weekly execution into a historical final success.
+
 ## 缺失 Daily Manifest
-- **Present:** 2026-09-07, 2026-09-08, 2026-09-09, 2026-09-10, 2026-09-11, 2026-09-12
+- **Present:** 2026-09-07, 2026-09-08, 2026-09-09, 2026-09-10, 2026-09-11, 2026-09-12, 2026-09-13
 - **Missing:** None
 - **Failed:** None
 - **Partial:** None
-- **Not Yet Due:** 2026-09-13
+- **Not Yet Due:** None
 
 ## Top 5 Hard Signals
 1. **PEP 8 – Style Guide for Python Code**
@@ -77,8 +87,9 @@
 
 ## PR 合同
 - **Daily 日期范围:** 2026-09-07 to 2026-09-13
+- **当前 Daily 路径覆盖:** 7/7
 - **缺失文件:** 无
-- **外部来源:** 3 (PEP-0008, PEP-0703, Python 3.12 Release Notes) verified
+- **外部来源:** 3 (PEP-0008, PEP-0703, Python 3.12 Release Notes) verified at original Weekly execution scope
 - **Hard Signals:**
 1. PEP 8 – Style Guide for Python Code
    - Source: https://peps.python.org/pep-0008/
@@ -111,4 +122,5 @@
 - **测试命令:** 无执行状态改变测试
 - **创建文件:** RESEARCH/weekly/2026-W37-weekly-manifest.md
 - **受保护路径声明:** 未修改任何保护路径
-- **周度成功或失败状态:** PARTIAL
+- **原始周度成功或失败状态:** PARTIAL
+- **当前处置:** Daily 路径覆盖已完整；Weekly 未重放，原始 PARTIAL 状态保留
