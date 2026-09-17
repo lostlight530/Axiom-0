@@ -1,7 +1,7 @@
 # Axiom-0 Architecture Decision Index
 
 Status: architecture-decision navigation and authority map  
-Current calibration: 2026-08-27
+Current calibration: 2026-09-17
 
 `ADR/**` records durable repository decisions. ADR numbering is an identifier/order convention; it is not a supersession chain unless an ADR explicitly says so.
 
@@ -9,15 +9,17 @@ Current calibration: 2026-08-27
 
 Axiom has distinct public layers:
 
-- `SPECIFICATION.md` — current behavioral and Daily/Weekly/Monthly evidence contract
-- `CODE/**` — executable reference implementation
-- `ADR/**` — durable architectural decisions and capability boundaries
-- `METHODOLOGY/**` — procedures for measuring/interpreting repository behavior and research evidence
-- `EVIDENCE_BASELINE.md` — external-source and evidence-semantics boundary
-- `RESEARCH/**` — historical Daily/Weekly/Monthly evidence and reconciliations
-- `GOVERNANCE/**` — design/planning records
-- `AUTOMATION/**` — operational metadata, not semantic authority
-- presentation/navigation files — discovery surfaces, not runtime authority
+- `CODE/**` — executable reference implementation; implementation behavior is established here and by revision-matched execution evidence.
+- `SPECIFICATION.md` — current engineering specification and public behavioral boundary for the reference implementation.
+- `ADR/**` — durable architectural decisions and capability/non-capability boundaries.
+- `METHODOLOGY/**` — procedures for measuring, interpreting, or reconciling repository and evidence surfaces.
+- `EVIDENCE_BASELINE.md` — a dated external-source/evidence calibration; its 2026-08-27 state remains point-in-time evidence rather than a live status dashboard.
+- `REPRODUCIBILITY.md` — current requirements for revision, environment, command, fixture, result, and untested-boundary provenance.
+- `RESEARCH/**` and dated historical/audit material — point-in-time research and reconciliation evidence; later existence does not rewrite earlier execution state.
+- `GOVERNANCE/**` — current public maintenance/review contracts and recovery boundaries; they govern maintenance work but do not create runtime capability.
+- `AUTOMATION/**` and `schemas/**` — declared operational/schedule contracts and machine-readable structure; declaration or schema validity is not scheduler execution.
+- `CITATION.cff`, `codemeta.json`, and `RELEASE_POLICY.md` — scholarly publication/release identity; DOI presence is not runtime or scientific validation.
+- presentation/navigation files — discovery surfaces, not runtime authority.
 
 A change in one layer does not silently change another.
 
@@ -40,24 +42,32 @@ A change in one layer does not silently change another.
 | [ADR-013](./ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md) | Every verification claim is limited to the exact evidence surface that produced it | scanners, reference code, retained research evidence |
 | [ADR-014](./ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md) | Code, contracts, methods, decisions, research, operational metadata, and presentation have different authority | repository layout |
 | [ADR-015](./ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md) | Reference core is intentionally incomplete as a production service | `CODE/contracts.py`, `CODE/liquid_morphing.py`, `CODE/nexus_core.py` |
-| [ADR-016](./ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md) | Logical date, execution, source time, generation/delivery, aggregation visibility, and current presence are distinct facts | `RESEARCH/**` historical evidence lifecycle |
+| [ADR-016](./ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md) | Logical date, execution, source time, generation/delivery, aggregation visibility, and current presence are distinct facts | historical/periodic evidence lifecycle |
 
 ## Cross-layer rules
 
 1. `CODE/**` defines implemented behavior; filenames and research metaphors do not add capabilities.
-2. `SPECIFICATION.md` describes behavior and current evidence SOP; it does not create missing runtime features.
+2. `SPECIFICATION.md` describes supported behavior and boundaries; it does not create missing runtime features.
 3. ADRs explain durable decisions; a non-implemented boundary ADR must say that the capability is external/reference-only.
 4. Methodology explains how to measure or interpret specific repository/evidence surfaces; it does not become runtime policy.
 5. Historical research remains point-in-time evidence. Later reconciliation can change current interpretation without rewriting original execution state.
 6. External protocols/papers/SDKs remain reference material unless a corresponding implementation surface exists in this repository.
 7. Indexes are derived navigation and must not be treated as stronger authority than the addressed file.
 8. `scan_consistency.py` validates current index/document structural agreement only; a pass is not semantic validation.
+9. An archived software DOI identifies a publication object; it does not by itself identify every later `main` revision or prove execution/reproduction.
 
-## Related navigation
+## Current navigation
 
 - [Engineering specification](../SPECIFICATION.md)
 - [Methodology index](../METHODOLOGY/INDEX.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [Reproducibility](../REPRODUCIBILITY.md)
+- [Release policy](../RELEASE_POLICY.md)
+- [AI use disclosure](../AI_USE_DISCLOSURE.md)
+
+## Historical calibration references
+
+The dated audits below remain useful for their own cutoffs but are not current ADR status:
+
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
-- [AI use disclosure](../AI_USE_DISCLOSURE.md)
