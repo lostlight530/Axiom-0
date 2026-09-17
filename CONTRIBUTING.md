@@ -1,25 +1,60 @@
 # Contributing
 
-Axiom accepts small, reviewable changes that make contracts, evidence, and execution behavior more precise.
+Axiom accepts bounded, reviewable changes that make contracts, evidence, automation, and execution behavior more precise without silently expanding claim strength.
 
-## Jules automation boundary
+## Authority and maintenance boundary
 
-This contribution guide governs human and independent-maintainer changes to the repository. It is outside the existing Jules scheduled automation stream and is not a Jules task prompt.
+Before changing anything, recover current repository truth from latest merged `main`. Identify the owning implementation or contract, relevant open pull requests, active maintenance branches, and the exact base revision used for the work.
 
-Do not assume Jules Daily/Weekly/Monthly tasks consume or enforce this file. Existing Jules automation remains governed by its own task prompts, repository memory, and any explicit Jules instruction surface. This maintenance intentionally does not create or modify `AGENTS.md`, Jules prompts, or Jules memory.
+Repository maintenance is governed by `GOVERNANCE/MAINTENANCE.md`. Independent review semantics live in `GOVERNANCE/INDEPENDENT_REVIEW.md`. Memoryless Independent GPT recovery/delivery is governed by `GOVERNANCE/independent-gpt/README.md`. Repository-owned schedule semantics live in `AUTOMATION/CONTRACT.md` and `schemas/schedule.schema.json`.
 
-The rules below may be used to review or correct Jules-generated artifacts after generation, but that post-hoc audit does not mean the automation itself followed them.
+Private Jules task prompts and repository memory remain producer-side controls and are not reconstructed or copied into public files unless the maintainer explicitly publishes them. This repository currently has no public `AGENTS.md`; do not infer one from private automation, prior chats, or model memory.
 
-## Before changing code
+A maintenance/review task may read research, implementation, evidence, ADR, methodology, automation artifacts, and historical records when needed to establish repository truth. Those surfaces are not automatically edit targets.
+
+## Change ownership
+
+For any proposed change:
+
+1. identify the owning file or implementation surface;
+2. distinguish current state from historical point-in-time evidence;
+3. preserve failure, unknown, missing, rejected, provisional, and blocked states;
+4. avoid parallel fixes when another live PR/branch owns the same surface or logical period;
+5. keep the aggregate diff bounded to the justified repair.
+
+Do not create activity-only commits. When no confirmed maintenance defect exists, the correct maintenance outcome is `NO_CHANGE_REQUIRED`.
+
+## Jules, Independent Review, and Independent GPT
+
+Jules-produced artifacts are repository inputs, not self-authenticating conclusions. Independent Review may calibrate interpretation. Independent GPT may recover state and prepare bounded maintenance repairs. Neither proves what Jules privately consumed or intended.
+
+Keep these planes distinct:
+
+```text
+Jules producer execution != Independent Review
+Independent Review != Independent GPT maintenance
+Independent GPT != GitHub Actions
+repository schedule contract != scheduler execution
+workflow file exists != workflow ran
+current path presence != earlier execution
+later success != earlier success
+correction != history rewrite
+```
+
+No public contribution should disclose private prompts, credentials, hidden memory, or unrelated operator context.
+
+## Before changing executable behavior
 
 1. Identify the affected ADR or methodology and its explicit boundary.
 2. Define inputs, outputs, error behavior, and compatibility.
 3. Add or update a regression test before changing a critical path.
-4. Keep README, `FRONTEND/**`, `docs/**`, `RESEARCH/**`, Jules indexes, and `LICENSE` outside the change unless separately approved.
+4. Preserve separately owned paths unless the change explicitly owns them.
+
+The project intentionally has no runtime third-party Python dependency. Do not add one without documenting ownership, threat surface, alternatives, and rollback.
 
 ## Local verification
 
-Use Python 3.12 or 3.14 and run the checks relevant to the changed executable path:
+Use the repository-supported Python environment and run checks relevant to the changed surface. Current executable checks include:
 
 ```text
 python -m unittest discover -s tests -v
@@ -28,51 +63,50 @@ python scan_consistency.py
 python scan_kl_divergence.py
 ```
 
-If a documentation-only or evidence-only change intentionally does not execute runtime tests, say so explicitly. An unrun check must never be reported as passed.
+Run only checks supported by the actual environment. Record exact commands and outcomes. An unrun check is `NOT_EXECUTED`; documentation inspection is not a substitute for checker execution.
 
-The project intentionally has no runtime third-party Python dependency. Do not add a dependency without documenting ownership, threat surface, alternatives, and rollback.
+If an automation contract/sample changes, separately validate the relevant machine-readable schema when the environment supports it. A valid schedule instance is not evidence that a scheduler executed it.
 
 ## Claims and generated content
 
-State whether material is observed, externally supported, proposed, hypothetical, contested, missing, or not computed. Cite primary sources with retrieval/check dates when a primary source exists. AI-assisted contributions must follow `AI_USE_DISCLOSURE.md`; the contributor remains responsible for every line and verification result.
+State whether material is observed, externally supported, proposed, hypothetical, contested, missing, or not computed. Cite primary sources with retrieval/check dates when a primary source exists. AI-assisted contributions follow `AI_USE_DISCLOSURE.md`; the contributor remains responsible for every line and verification result.
 
-Generated or retrieved material does not inherit authority from the tool that produced it. A successful fetch, parser, model response, or ingestion step is not semantic validation.
+Generated or retrieved material does not inherit authority from the tool that produced it. A successful fetch, parser, model response, scheduler acknowledgement, or ingestion step is not semantic validation.
 
-## Research evidence rules
+## Research evidence boundaries
 
-For research and audit artifacts:
+When research or audit artifacts are read as evidence:
 
-- distinguish source authority from claim status
-- distinguish publication/creation dates from update or last-modified timestamps
-- verify explicit source versions against version-specific dates
-- record `MISSING_DATA`, `NOT_COMPUTED`, unresolved items, and rejected evidence rather than filling gaps
-- preserve an earlier run's error even if a later run succeeds
-- scope numeric and test results to the actual harness and input range
-- mark repeated sources as revalidation, control signals, new claims, or duplicates instead of treating every recurrence as a novel hard signal
+- distinguish source authority from claim status;
+- distinguish publication/creation dates from update/last-modified timestamps;
+- verify explicit source versions against version-specific dates;
+- retain `MISSING_DATA`, `NOT_COMPUTED`, unresolved items, and rejected evidence;
+- preserve an earlier run's failure even if a later run succeeds;
+- scope numeric/test results to the actual harness and inputs;
+- mark repeated sources as revalidation, control signals, new claims, or duplicates rather than treating recurrence as novel independent evidence.
 
-### Daily → Weekly inheritance
+A Weekly artifact may aggregate or downgrade Daily evidence but must not invent a Daily observation absent from persisted Daily artifacts. `Missing Daily files: NONE` and `Missing evidence: NONE` are different statements.
 
-A Weekly artifact may aggregate or downgrade Daily evidence. It may not invent a Daily observation that is absent from the persisted Daily artifacts.
+## Historical correction
 
-If the Weekly task obtains independent new external evidence, record it separately with source, check time, and status. Do not place it in the Daily-derived lifecycle table as though it had existed earlier.
+Historical research and archived audits are point-in-time evidence. Do not silently rewrite them merely to make the archive appear consistent.
 
-`Missing Daily files: NONE` and `Missing evidence: NONE` are different statements.
-
-### Correction policy
-
-Do not silently rewrite historical execution records merely to make the archive appear consistent. When an earlier record is materially wrong but remains useful as execution history, add an explicit reconciliation/erratum that names the affected field, corrected evidence, scope, and precedence.
-
-A silent rewrite is appropriate only when the artifact is not intended as historical evidence and the change does not falsify what was observed at the time.
+A maintenance correction normally changes the current owning maintenance/control source or an explicit successor. If a historical artifact is itself being corrected under a separate authorized task, preserve the original meaning/recoverability and state the correction boundary explicitly.
 
 ## Pull requests
 
-Use a feature branch and the template. Include exact commands and results when commands were run, security/privacy impact, unresolved uncertainty, and a reversible rollback where applicable. A failing or unrun required check prevents completion claims.
+A repair PR must state:
 
-Research-only pull requests should additionally state:
+- exact base `main` revision and current head;
+- owning maintenance/implementation scope;
+- overlapping PR/branch check;
+- changed files and deliberately unchanged boundaries;
+- commands/checkers/schedulers/workflows actually executed and outcomes;
+- checks not executed;
+- security/privacy/retention impact when applicable;
+- rollback boundary;
+- unresolved evidence or coordination state.
 
-- evidence window
-- primary sources checked
-- whether historical records were rewritten or preserved
-- what claim strength changed
-- what remains unresolved
-- whether the change affects Jules automation instructions; default is `NO` unless a Jules instruction surface is explicitly modified
+Before delivery, refresh current `main`, recheck overlap, inspect the aggregate `main...branch` diff, open one Draft PR, and stop for maintainer review unless a different repository-native workflow explicitly applies.
+
+Do not push directly to `main`, force-push history, auto-merge, or claim universal health from a local check.
