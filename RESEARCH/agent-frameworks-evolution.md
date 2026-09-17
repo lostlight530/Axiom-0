@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `EXTENSION / LEGACY RESEARCH`
+> - **Role:** Retained non-periodic research narrative for **Agent Frameworks Evolution**
+> - **Authority:** Contextual research authority only; not current implementation authority
+> - **Current meaning:** Read this document as point-in-time research and hypothesis material. Any mapping from external systems to Axiom must be rechecked against current `CODE/**`, `SPECIFICATION.md`, ADRs, and Methodology before being used as a current repository claim
+> - **Evidence / implementation boundary:** Strong, speculative, comparative, or externally sourced statements in the retained body do not become current capability facts by repetition. External claims not revalidated in the current evidence chain remain unverified for present use
+> - **Cross-document relation:** Current implementation and method surfaces outrank this research narrative; explicit later corrections/reconciliations control current interpretation without erasing the original research text
+> - **Update trigger:** Do not modernize merely for style. Edit only for an explicit factual correction, a clearly marked current interpretation boundary, or a deliberate reissue of the research object
+> - **Preservation rule:** The subject body remains intact as the owning document. This pass organizes current interpretation and corrects only confirmed present-tense authority drift; dated evidence, historical examples, and original research language retain their own time boundary
+
 # 行业调研：主流智能体框架演进与 Axiom-0 映射 / Survey: Mainstream Agent Frameworks Evolution and Axiom-0 Mapping
 
 ---

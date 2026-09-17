@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `METHOD / PROVENANCE CONTRACT`
+> - **Role:** Current reproducibility and revision-identity contract for Axiom
+> - **Authority:** Repository-native authority for distinguishing publication identity, Git revision, environment, input, execution, and reproduction evidence
+> - **Current meaning:** Use this file to decide what can be reconstructed or reproduced and which identities must remain separate
+> - **Evidence / implementation boundary:** DOI, archive presence, commit identity, configuration, or checker definition cannot self-award execution or reproduction; stronger reproduction claims require an actual separate run and declared comparison
+> - **Cross-document relation:** Specification bounds behavior; dated evidence records observations; release/publication metadata identifies archives but does not upgrade validation
+> - **Update trigger:** Update when reproducibility vocabulary, required run identity, archive/revision mapping, or execution-evidence requirements change
+> - **Preservation rule:** The subject body remains intact as the owning document. This pass organizes current interpretation and corrects only confirmed present-tense authority drift; dated evidence, historical examples, and original research language retain their own time boundary
+
 # Reproducibility
 
 A result is reproducible only within its recorded input, revision, environment, configuration, and tolerance.
