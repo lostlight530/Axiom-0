@@ -15,4 +15,20 @@ Evidence types are independent: KL evidence does not prove document topology; to
 
 KL values must include their input identity and unit. If KL was not computed, record a missing state instead of a number. Every consistency run must retain the `axiom_document_topology` JSON contract evidence emitted by `scan_consistency.py`.
 
-Weekly A5 may inherit, aggregate, or downgrade Daily evidence; it cannot promote missing or failed evidence. Monthly A6 closes only after the natural month ends and its evidence is retained. See the [August 1–27 ledger](../../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) and [maintenance contract](../../GOVERNANCE/MAINTENANCE.md).
+## Period aggregation boundary
+
+Weekly A5 may inherit, aggregate, or downgrade Daily evidence; it cannot promote missing or failed evidence. The state of a Weekly artifact is bound to the Daily inputs that were actually available when that Weekly was generated.
+
+Keep separate:
+
+- the natural week lifecycle;
+- Daily availability at Weekly execution time;
+- current Daily path coverage;
+- the Weekly artifact's original status;
+- any later current disposition.
+
+A later-arriving Daily may improve current coverage without turning an earlier `PARTIAL`, `NOT_YET_DUE`, or provisional Weekly execution into an original final success. When the owning September Weekly is still an active target, correct its current coverage state in that file with an explicit dated maintenance note while preserving the original execution state and Git history.
+
+Monthly A6 closes only after the natural month ends and its evidence is retained. Natural month end, current path coverage, aggregate generation, and final month seal remain separate states.
+
+See the [maintenance contract](../../GOVERNANCE/MAINTENANCE.md), [engineering specification](../../SPECIFICATION.md), and [historical evidence reconciliation method](../../METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md).
