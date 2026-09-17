@@ -50,13 +50,16 @@ npm run lint
 npm run build
 ```
 
-## 6. 规范、证据、安全与复现 / Specification, evidence, security, and reproducibility
+## 6. 规范、决策、方法、证据、安全与复现 / Specification, decisions, methodology, evidence, security, and reproducibility
 
 - [工程规范 / Engineering specification](SPECIFICATION.md)：实现接口、错误行为与仓库兼容边界。 / Implemented interfaces, error behavior, and repository compatibility boundaries.
-- [证据基线 / Evidence baseline](EVIDENCE_BASELINE.md)：外部资料、检索日期与本地结论的适用范围。 / External sources, retrieval dates, and the scope of local conclusions.
+- [架构决策索引 / ADR index](ADR/INDEX.md)：长期架构决策、非能力边界与实现锚点。 / Durable architecture decisions, non-capability boundaries, and implementation anchors.
+- [方法论索引 / Methodology index](METHODOLOGY/INDEX.md)：测量、解释与证据协调方法及其实现关系。 / Measurement, interpretation, and evidence-reconciliation procedures with implementation relations.
+- [证据基线 / Evidence baseline](EVIDENCE_BASELINE.md)：外部资料、检索日期与本地结论的适用范围；它是有日期边界的校准，不是当前周期状态页。 / External sources, retrieval dates, and the scope of local conclusions; it is a dated calibration, not a live period-status dashboard.
 - [复现要求 / Reproducibility](REPRODUCIBILITY.md)：提交、环境、命令、样例摘要和未测试边界的最小记录。 / Minimum records for revisions, environments, commands, fixture digests, and untested boundaries.
+- [发布策略 / Release policy](RELEASE_POLICY.md)：软件出版、归档身份与后续 `main` 演化的边界。 / Software publication, archival identity, and later-`main` boundaries.
 - [安全策略 / Security policy](SECURITY.md)：私密报告流程、受支持代码与调用方责任。 / Private reporting, supported code, and caller responsibilities.
-- [长期维护契约 / Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md)：证据继承、失败关闭、历史批注与责任边界。 / Evidence inheritance, fail-closed behavior, historical calibration, and ownership boundaries.
+- [长期维护契约 / Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md)：当前维护与历史保全的公共规则；它不定义运行时能力。 / Public maintenance and historical-preservation rules; it does not define runtime capability.
 
 ## 7. 限制 / Limitations
 
