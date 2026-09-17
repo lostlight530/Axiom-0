@@ -1,7 +1,7 @@
 # Axiom-0 Engineering Specification
 
-- Version: 2026.08-r2
-- Calibration: 2026-08-27
+- Version: 2026.09-r1
+- Calibration: 2026-09-17
 - Status: implemented reference contract
 - Authority: this file describes current repository behavior; ADRs explain durable decisions; retained evidence supports revision-specific claims
 
@@ -154,6 +154,7 @@ A Daily manifest may assert only what direct retained evidence supports.
 1. **A1 source observation**
    - distinguish check time, publication/version time, source authority, and exact supported proposition
    - reachability is not claim truth
+   - missing publisher, publication time, or supported proposition remains `MISSING_DATA`; later repository-wide success does not fill the field
 2. **A2 numerical/structural audit**
    - retain each command result separately
    - KL success is fixture/input scoped
@@ -178,18 +179,45 @@ It must not:
 - erase Daily failure/error states
 - upgrade repeated citations into independent corroboration
 - treat current file coverage as historical execution coverage
+- convert a point-in-time `NOT_YET_DUE` input into an original-input success after that Daily later appears
 
-A week that has not completed has no inferred final Weekly result.
+For every weekly period keep separate:
+
+- natural week lifecycle state
+- expected Daily set
+- Daily availability at weekly execution time
+- current Daily path coverage
+- weekly generation time/status
+- final weekly seal state
+
+A natural week ending does not retroactively promote an earlier partial Weekly.
 
 ### Monthly/A6
 
 A partial-month stage audit may reconcile evidence to a cutoff. It must not create future-day evidence or declare formal monthly closure before the natural monthly lifecycle has actual retained evidence.
 
-Formal August status at 2026-08-27: `OPEN`.
+For every monthly period keep separate:
+
+- natural month lifecycle state
+- expected Daily/Weekly set
+- input availability at A6 execution time
+- current path coverage
+- A6 generation time/status
+- final monthly seal state
+
+The retained `RESEARCH/monthly/2026-08-monthly-manifest.md` is explicitly a through-day-30 provisional artifact. The natural month later ended, but the historical artifact remains provisional. It is not silently converted into a final seal.
+
+### Current period calibration through 2026-09-17
+
+- Daily evidence is present through 2026-09-17 on current main.
+- `RESEARCH/weekly/2026-W37-weekly-manifest.md` recorded 2026-09-13 as `Not Yet Due` and ended `PARTIAL`.
+- `RESEARCH/daily/2026-09-13-pipeline-manifest.md` is now present.
+- Therefore W37 has ended naturally and current Daily path coverage advanced after the historical Weekly execution, but that Weekly remains a partial point-in-time record.
+- August ended naturally, while its retained through-day-30 monthly artifact remains provisional rather than becoming a retroactive final seal.
 
 ## Historical evidence and correction semantics
 
-Historical Daily and Weekly records remain point-in-time evidence.
+Historical Daily, Weekly, and Monthly records remain point-in-time evidence.
 
 Later reconciliation may record:
 
@@ -198,11 +226,15 @@ Later reconciliation may record:
 - `INVALID_INPUT_PROVENANCE_LABEL`
 - `MISSING_DATA`
 - `NOT_COMPUTED`
+- `NATURAL_PERIOD_ENDED`
+- `FINAL_PERIOD_SEAL_NOT_ESTABLISHED`
 - a narrowed run-local interpretation
 
 A repaired current validator does not turn a historical failed validator execution into a historical success.
 
-The current August stage authority is `RESEARCH/monthly/2026-08-through-27-stage-audit.md`; the earlier through-23 stage audit remains the prior cutoff record.
+A later-arriving Daily does not turn an earlier partial Weekly into an original final Weekly. A natural month ending does not turn a pre-end provisional A6 into a final month seal.
+
+Current reconciliation procedure is defined by `METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md`.
 
 ## Error and ownership boundary
 
@@ -217,8 +249,8 @@ The library does not establish authentication, authorization, isolation, secret 
 - source-pattern scan → explicit patterns only
 - scope guard → path rules only
 - research-record validator → encoded record structure only
-- Daily/Weekly artifacts → point-in-time retained evidence subject to provenance reconciliation
+- Daily/Weekly/Monthly artifacts → point-in-time retained evidence subject to provenance and period-lifecycle reconciliation
 
-File presence alone is not execution evidence. Later success does not erase earlier failure, missing fields, blocked states, or chronology conflicts.
+File presence alone is not execution evidence. Later success does not erase earlier failure, missing fields, blocked states, `NOT_YET_DUE`, provisional aggregation, or chronology conflicts.
 
 Python-version compatibility is revision/environment-specific and is asserted only when the relevant executable behavior was actually observed and retained.
