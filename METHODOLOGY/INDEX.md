@@ -1,7 +1,7 @@
 # Axiom-0 Methodology Index
 
 Status: procedure and implementation-boundary map  
-Current calibration: 2026-08-27
+Current calibration: 2026-09-17
 
 `METHODOLOGY/**` describes how a concrete repository property is measured, interpreted, or reconciled. A method does not create a runtime capability merely by existing.
 
@@ -23,7 +23,7 @@ Current calibration: 2026-08-27
 | [METH-012](./METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) | Distinguish observed metrics from resource enforcement | enforcement `NOT_IMPLEMENTED` |
 | [METH-013](./METH-013-STRICT-DATA-DEDUPLICATION.md) | Exact canonical-content identity; no semantic auto-dedup | digest implemented, dedup engine `NOT_IMPLEMENTED` |
 | [METH-014](./METH-014-GROUNDEDNESS-RULE.md) | Claim/source/implementation groundedness review | documentary/evidence |
-| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile Daily/Weekly history without retroactivity | `RESEARCH/**` evidence lifecycle |
+| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile Daily/Weekly/Monthly history, natural-period closure, and current interpretation without retroactivity | `RESEARCH/**` evidence lifecycle |
 
 ## Method contract
 
@@ -44,7 +44,14 @@ If no executable surface exists, the method must say so rather than inventing an
 - Daily records preserve point-in-time source, numerical, structural, execution, and topology evidence.
 - Weekly synthesis may aggregate or downgrade Daily evidence but cannot promote missing or failed evidence.
 - Monthly/stage reconciliation records the strongest current interpretation to a declared cutoff without backdating later evidence.
-- At the 2026-08-27 cutoff W35 and the natural August month are still open; no final W35/month result is inferred.
+- Natural-period end, input/path coverage, aggregate generation, and final period seal are separate states.
+- An aggregate created while a required date is `NOT_YET_DUE` or otherwise unavailable remains a historical partial/provisional record after that input later appears.
+- Later input arrival updates current interpretation; it does not rewrite the earlier aggregate into a final result.
+
+Current examples:
+
+- August's retained through-day-30 monthly artifact remains provisional even though the natural month has ended.
+- W37's retained weekly artifact remains `PARTIAL` because it was generated before the 2026-09-13 Daily became part of its available input set; current main now contains that Daily, but the earlier Weekly is not silently promoted.
 
 ## Authority relationship
 
@@ -62,5 +69,7 @@ A methodology cannot silently change a runtime constant, promote research to imp
 - [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
-- [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
-- [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
+- [Historical evidence reconciliation](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md)
+- [August through-day-30 provisional monthly artifact](../RESEARCH/monthly/2026-08-monthly-manifest.md)
+- [W37 partial weekly artifact](../RESEARCH/weekly/2026-W37-weekly-manifest.md)
+- [2026-09-13 Daily artifact](../RESEARCH/daily/2026-09-13-pipeline-manifest.md)
