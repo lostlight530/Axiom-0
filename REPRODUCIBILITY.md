@@ -1,13 +1,13 @@
 > [!NOTE]
 > **Current architecture interpretation — 2026-09-18**
 > - **Subject class:** `METHOD / PROVENANCE CONTRACT`
-> - **Role:** Current reproducibility and revision-identity contract for Axiom
-> - **Authority:** Repository-native authority for distinguishing publication identity, Git revision, environment, input, execution, and reproduction evidence
-> - **Current meaning:** Use this file to decide what can be reconstructed or reproduced and which identities must remain separate
-> - **Evidence / implementation boundary:** DOI, archive presence, commit identity, configuration, or checker definition cannot self-award execution or reproduction; stronger reproduction claims require an actual separate run and declared comparison
-> - **Cross-document relation:** Specification bounds behavior; dated evidence records observations; release/publication metadata identifies archives but does not upgrade validation
-> - **Update trigger:** Update when reproducibility vocabulary, required run identity, archive/revision mapping, or execution-evidence requirements change
-> - **Preservation rule:** The subject body remains intact as the owning document. This pass organizes current interpretation and corrects only confirmed present-tense authority drift; dated evidence, historical examples, and original research language retain their own time boundary
+> - **Role:** Current reproducibility contract: **Reproducibility**
+> - **Authority:** Repository-native authority for separating publication identity, Git revision, environment, input, execution and actual reproduction evidence
+> - **Current meaning:** Reproducibility is revision- and execution-bound. Archive/DOI identity, code identity and a declared procedure are distinct from an observed rerun and comparison
+> - **Evidence / implementation boundary:** DOI, archive presence, commit identity, configuration, checker definition or later success cannot self-award historical execution or independent reproduction
+> - **Cross-document relation:** Specification owns behavior; Methodology owns procedures; dated evidence owns observed runs; release metadata owns publication identity without upgrading validation
+> - **Update trigger:** Update when run identity, comparison criteria, environment requirements or archive/revision semantics materially change
+> - **Preservation rule:** Historical execution states remain historical even when later revisions become more reproducible
 
 # Reproducibility
 

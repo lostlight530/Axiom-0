@@ -1,13 +1,13 @@
 > [!NOTE]
 > **Current architecture interpretation — 2026-09-18**
 > - **Subject class:** `DEFINITION / IMPLEMENTATION CONTRACT`
-> - **Role:** Primary current specification for the bounded Axiom reference implementation and its public semantics
-> - **Authority:** Highest repository-native prose authority for current implementation semantics, below current code/machine behavior when direct observation disagrees
-> - **Current meaning:** Use this file to interpret what the repository currently implements, what remains conceptual, and how named surfaces map to actual mechanics
-> - **Evidence / implementation boundary:** Specification text does not prove that a run occurred, an external claim is true, or a historical artifact consumed the current implementation
-> - **Cross-document relation:** Current `CODE/**` is implementation truth; ADRs explain decisions; Methodology defines procedures; Reproducibility defines revision/run identity; Research remains lower-authority context
-> - **Update trigger:** Update when current implementation or machine contracts change materially, or when prose no longer describes current behavior accurately
-> - **Preservation rule:** The subject body remains intact as the owning document. This pass organizes current interpretation and corrects only confirmed present-tense authority drift; dated evidence, historical examples, and original research language retain their own time boundary
+> - **Role:** Current implementation specification: **Axiom-0 Engineering Specification**
+> - **Authority:** Highest repository-native prose authority for current Axiom implementation semantics, subordinate only to directly observed current code/machine behavior when a conflict exists
+> - **Current meaning:** This file owns the present mapping from project vocabulary to implemented reference mechanics and explicit non-capabilities. Use it to recover what is implemented, bounded, conceptual or absent
+> - **Evidence / implementation boundary:** Specification presence does not prove a run occurred, an external claim is true, or a historical artifact consumed the current implementation
+> - **Cross-document relation:** Current `CODE/**` is implementation truth; ADRs explain decisions; Methodology defines procedures; Reproducibility defines revision/run identity; Research is contextual and lower-authority for implementation facts
+> - **Update trigger:** Update whenever implementation or machine contracts materially change, or when prose no longer accurately describes current behavior
+> - **Preservation rule:** Existing specification history remains in this file; corrections move current interpretation forward without manufacturing earlier execution
 
 # Axiom-0 Engineering Specification
 
