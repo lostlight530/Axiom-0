@@ -90,3 +90,12 @@
 
 ## 验证
 - Manifest validated using `python3 validate_research_record.py RESEARCH/daily/2026-09-17-pipeline-manifest.md`.
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** OBSERVED_STATE_EVIDENCE_BOUNDARY
+- **Original Daily Execution Preserved:** YES
+- The JSON documentation, PEP 8 and PEP 484 entries all retain `Supported Facts: MISSING_DATA`.
+- Their `Hypothesis State: OBSERVED` therefore proves only that the sources were visited/recorded, not that a specific content claim was established.
+- Downstream Weekly/Monthly synthesis must preserve that distinction rather than treating `OBSERVED` as a content-verification status.
+- **Aggregation Rule:** `SOURCE_VISITED != CLAIM_VERIFIED`.

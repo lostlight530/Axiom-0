@@ -89,3 +89,13 @@ MISSING_DATA
 
 ## 验证
 MISSING_DATA
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** SOURCE_SCOPE_CALIBRATION
+- **Original Daily Execution Preserved:** YES
+- **PEP 703 Current Scope:** The original shorthand `CPython global interpreter lock is optional` is too broad if read as a statement about the default CPython distribution. PEP 703 adds a free-threaded / `--disable-gil` build configuration; the GIL remains the default for standard CPython builds and python.org downloads in the PEP specification.
+- **Current Source:** https://peps.python.org/pep-0703/
+- **Aggregation Rule:** `OPTIONAL_FREE_THREADED_BUILD != GIL_DISABLED_BY_DEFAULT`.
+- **PEP 8 Note:** the original Supported Facts line is incomplete prose and should not be promoted as a precise normative claim beyond the source's general coding-style/readability subject.
+- **Historical Rewrite:** NO

@@ -93,3 +93,13 @@ PATCH_INDEX.md
 python3 validate_research_record.py RESEARCH/daily/2026-09-08-pipeline-manifest.md
 git status
 git diff
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** SOURCE_SCOPE_AND_OBSERVED_STATE_CALIBRATION
+- **Original Daily Execution Preserved:** YES
+- **PEP 703:** interpret the original `CPython global interpreter lock is optional` only as the availability of a free-threaded / `--disable-gil` build mode, not as a claim that the GIL is disabled by default.
+- **Current Source:** https://peps.python.org/pep-0703/
+- **PEP 683 / PEP 684:** because `Supported Facts: MISSING_DATA`, `Status: OBSERVED` means the named source/page was observed; it does not establish a content-level hard signal from those two entries.
+- **Aggregation Rule:** `SOURCE_OBSERVED + SUPPORTED_FACT_MISSING != CONTENT_CLAIM_VERIFIED`.
+- **Historical Rewrite:** NO

@@ -112,3 +112,53 @@
 - **创建文件:** RESEARCH/weekly/2026-W37-weekly-manifest.md
 - **受保护路径声明:** 未修改任何保护路径
 - **周度成功或失败状态:** PARTIAL
+
+## CURRENT_CLOSURE_RECONCILIATION_2026-09-19
+
+- **Reconciliation Type:** NATURAL_WEEK_CLOSURE_WITH_EVIDENCE_CALIBRATION
+- **Original A5 Execution Preserved:** YES
+- **Original Weekly State:** `PARTIAL` remains correct for the 2026-09-13 execution snapshot because the same-day Daily was still marked `Not Yet Due`.
+- **Current Natural-Week State:** W37 is now closed.
+- **Current Daily Path Coverage:** 7 / 7 current Daily manifests present for 2026-09-07 through 2026-09-13.
+- **Current Closure Status:** COMPLETE_PATH_COVERAGE_WITH_EVIDENCE_GAPS
+- **Replay Claim:** NO — this section is a later closure reconciliation, not a Jules replay of the original A5 run.
+
+### Evidence corrections carried into closure
+
+1. **PEP 703 scope**
+   - Current official PEP source: https://peps.python.org/pep-0703/
+   - Current interpretation: PEP 703 provides a free-threaded / `--disable-gil` build configuration. The GIL remains the default for standard CPython builds/python.org downloads in the PEP specification.
+   - The original Weekly wording `CPython global interpreter lock is optional` is too broad if read as a default-runtime statement.
+   - Rule: `OPTIONAL_FREE_THREADED_BUILD != GIL_DISABLED_BY_DEFAULT`.
+
+2. **OBSERVED with missing supported facts**
+   - 2026-09-09 records PEP 703/683/684 as `OBSERVED` while all three Supported Facts are `MISSING_DATA`.
+   - 2026-09-12 records PEP 8/20/257 as `OBSERVED` while all Supported Facts are `MISSING_DATA`.
+   - These dates contribute source-presence/history only, not content-level hard-signal support.
+
+3. **Same-source repetition**
+   - Repeated PEP pages across adjacent Daily manifests are one source lineage each and do not create independent corroboration by repetition.
+
+4. **A3 execution evidence**
+   - Daily A3 repeated-run success remains bounded to the recorded harness and recorded inputs.
+   - Missing average execution time, uncovered conditions, and early-week SHA256 values remain missing; later values do not backfill earlier execution evidence.
+
+### Current closure hard-signal set
+
+The current closure should prefer explicit source-supported facts already present in the W37 Daily set:
+
+- 2026-09-07: Python 3.12 release date — explicit supported fact.
+- 2026-09-07 / 2026-09-08: PEP 703 — retained only with the corrected build-configuration scope above.
+- 2026-09-13: PEP 8 — `Use 4 spaces per indentation level.`
+- 2026-09-13: PEP 20 — `Readability counts.`
+- 2026-09-13: PEP 257 — triple-double-quote docstring convention as recorded by the source-specific Daily.
+
+Entries whose only content is a title or whose Supported Fact is `MISSING_DATA` are not promoted here as current hard signals.
+
+### Current closure boundaries
+
+- `CURRENT_PATH_COMPLETE != ORIGINAL_A5_COMPLETE_EXECUTION`.
+- `OBSERVED != CONTENT_VERIFIED` when Supported Fact is missing.
+- `LATER_SHA_OR_INPUT_DETAIL != EARLIER_EXECUTION_PROVENANCE`.
+- `100/100_RECORDED_HARNESS_SUCCESS != UNIVERSAL_CORRECTNESS`.
+- September A6 final remains NOT_DUE until the natural month closes.
