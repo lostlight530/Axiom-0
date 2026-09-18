@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `EXTENSION / LEGACY RESEARCH`
+> - **Role:** Retained research object: **行业调研：大语言模型的固有痛点剖析与 Axiom-0 映射 / Survey: Inherent Limitations of LLMs and Axiom-0 Mapping**
+> - **Authority:** Contextual research authority only; not current Axiom implementation authority
+> - **Current meaning:** Preserve this document as point-in-time research/hypothesis material. Any mapping from external systems to Axiom must be rechecked against current `CODE/**`, `SPECIFICATION.md`, ADRs and Methodology before being used as a present repository fact
+> - **Evidence / implementation boundary:** Strong, speculative, comparative or externally sourced statements do not become current capability facts by repetition. External claims not revalidated in the current evidence chain remain unverified for present use
+> - **Cross-document relation:** Current implementation/method surfaces outrank this research narrative; later corrections narrow current interpretation without deleting the original research text
+> - **Update trigger:** Do not modernize for style. Edit only for explicit factual correction, a marked current-interpretation boundary or a deliberate reissue of the research object
+> - **Preservation rule:** Original research prose stays in place as dated intellectual history; current authority is supplied by the higher-order implementation/method surfaces
+
 # 行业调研：大语言模型的固有痛点剖析与 Axiom-0 映射 / Survey: Inherent Limitations of LLMs and Axiom-0 Mapping
 
 ---

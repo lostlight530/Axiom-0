@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `DEFINITION / IMPLEMENTATION CONTRACT`
+> - **Role:** Current implementation specification: **Axiom-0 Engineering Specification**
+> - **Authority:** Highest repository-native prose authority for current Axiom implementation semantics, subordinate only to directly observed current code/machine behavior when a conflict exists
+> - **Current meaning:** This file owns the present mapping from project vocabulary to implemented reference mechanics and explicit non-capabilities. Use it to recover what is implemented, bounded, conceptual or absent
+> - **Evidence / implementation boundary:** Specification presence does not prove a run occurred, an external claim is true, or a historical artifact consumed the current implementation
+> - **Cross-document relation:** Current `CODE/**` is implementation truth; ADRs explain decisions; Methodology defines procedures; Reproducibility defines revision/run identity; Research is contextual and lower-authority for implementation facts
+> - **Update trigger:** Update whenever implementation or machine contracts materially change, or when prose no longer accurately describes current behavior
+> - **Preservation rule:** Existing specification history remains in this file; corrections move current interpretation forward without manufacturing earlier execution
+
 # Axiom-0 Engineering Specification
 
 - Version: 2026.08-r2

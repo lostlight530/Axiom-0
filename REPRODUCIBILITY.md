@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `METHOD / PROVENANCE CONTRACT`
+> - **Role:** Current reproducibility contract: **Reproducibility**
+> - **Authority:** Repository-native authority for separating publication identity, Git revision, environment, input, execution and actual reproduction evidence
+> - **Current meaning:** Reproducibility is revision- and execution-bound. Archive/DOI identity, code identity and a declared procedure are distinct from an observed rerun and comparison
+> - **Evidence / implementation boundary:** DOI, archive presence, commit identity, configuration, checker definition or later success cannot self-award historical execution or independent reproduction
+> - **Cross-document relation:** Specification owns behavior; Methodology owns procedures; dated evidence owns observed runs; release metadata owns publication identity without upgrading validation
+> - **Update trigger:** Update when run identity, comparison criteria, environment requirements or archive/revision semantics materially change
+> - **Preservation rule:** Historical execution states remain historical even when later revisions become more reproducible
+
 # Reproducibility
 
 A result is reproducible only within its recorded input, revision, environment, configuration, and tolerance.
