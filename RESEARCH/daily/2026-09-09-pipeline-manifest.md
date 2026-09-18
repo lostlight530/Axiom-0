@@ -92,3 +92,12 @@ PATCH_INDEX.md
 python3 validate_research_record.py RESEARCH/daily/2026-09-09-pipeline-manifest.md
 git status
 git diff
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** OBSERVED_STATE_EVIDENCE_BOUNDARY
+- **Original Daily Execution Preserved:** YES
+- All three A1 entries have `Supported Facts: MISSING_DATA`.
+- Therefore `Status: OBSERVED` records source/title observation only for this date and must not be promoted as a content-level hard signal in Weekly/Monthly synthesis.
+- Repeating the same PEP 703/683/684 source set from 2026-09-08 also does not create independent evidence.
+- **Aggregation Rule:** `OBSERVED_SOURCE != SUPPORTED_FACT`; `REPEATED_SOURCE_SET != NEW_INDEPENDENT_SIGNAL`.

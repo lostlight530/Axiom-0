@@ -86,3 +86,12 @@
 
 ## 验证
 - **Validation Status:** PASSED
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** OBSERVED_STATE_EVIDENCE_BOUNDARY
+- **Original Daily Execution Preserved:** YES
+- A1 explicitly records `Supported Fact: MISSING_DATA` for PEP 8, PEP 20 and PEP 257.
+- The corresponding `Hypothesis Status: OBSERVED` must therefore be read as source observation, not as verified support for a substantive claim.
+- These entries are ineligible to become Weekly hard signals unless a later record supplies an explicit supported fact from the source.
+- **Aggregation Rule:** `MISSING_SUPPORTED_FACT != HARD_SIGNAL`.
