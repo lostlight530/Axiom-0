@@ -83,3 +83,12 @@
 - **创建文件:** RESEARCH/weekly/2026-W36-weekly-manifest.md
 - **受保护路径声明:** 未修改任何保护路径
 - **周度成功或失败状态:** SUCCESS
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: WEEKLY_SUCCESS_BOUNDED
+Origin Continuity: PRESERVED
+
+- W36 may remain `SUCCESS` for its recorded window and inputs, but hard-signal use must prefer explicit proposition-level supported facts over source titles or generic `OBSERVED` labels.
+- Daily missing fields remain missing after weekly compression; Weekly does not upgrade their evidence level.
+- Weekly `D_KL: 0.0` remains fixture-derived and is not a global entropy claim.

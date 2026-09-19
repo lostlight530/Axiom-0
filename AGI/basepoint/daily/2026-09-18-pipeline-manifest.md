@@ -107,3 +107,12 @@ Verified via `git diff --name-only`
 
 ## 验证
 Verified using validate_research_record.py
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: PROPOSITION_LEVEL_SOURCE_FACTS
+Origin Continuity: PRESERVED
+
+- The recorded PEP 8/20/257 quotations are explicit proposition-level source facts and may be retained at that scope.
+- A3 `100/100` remains the specified repeat harness only and does not establish universal correctness or untested-condition coverage.
+- Missing timing/stderr detail remains missing.

@@ -98,3 +98,12 @@ PATCH_INDEX.md
 
 ## 验证
 Passed.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: BOUNDED_SOURCE_AND_EXECUTION
+Origin Continuity: PRESERVED
+
+- The PEP 8/20/257 source statements may be retained only at their explicit stated scope.
+- `D_KL = 0.0` and A3 repeat-harness success are bounded fixture results, not system-wide guarantees.
+- Missing stderr, ranges, timing and other provenance remain unknown.

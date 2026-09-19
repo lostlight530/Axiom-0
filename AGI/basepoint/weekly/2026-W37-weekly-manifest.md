@@ -162,3 +162,12 @@ Entries whose only content is a title or whose Supported Fact is `MISSING_DATA` 
 - `LATER_SHA_OR_INPUT_DETAIL != EARLIER_EXECUTION_PROVENANCE`.
 - `100/100_RECORDED_HARNESS_SUCCESS != UNIVERSAL_CORRECTNESS`.
 - September A6 final remains NOT_DUE until the natural month closes.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: CURRENT_CLOSURE_WITH_EVIDENCE_GAPS
+Origin Continuity: PRESERVED
+
+- The existing closure reconciliation remains controlling: original A5 `PARTIAL` is historically correct for its execution snapshot.
+- Current 7/7 path coverage supports only `COMPLETE_PATH_COVERAGE_WITH_EVIDENCE_GAPS`, not a retroactive complete Jules execution.
+- Missing supported facts, repeated sources, later provenance details and bounded `100/100` results remain bounded; September A6 is still not due.
