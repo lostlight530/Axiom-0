@@ -101,3 +101,14 @@ Origin Continuity: PRESERVED
 - Only proposition-level facts actually present in the source fields may be promoted; status labels alone do not establish content.
 - `D_KL = 0.0` and repeat-harness success remain fixture-scoped.
 - Missing stderr, failed-index, timing, SHA and range data remain unknown.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: EXPLICIT_FACTS_ONLY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Only explicit proposition-level source facts are usable; missing fields remain missing and are not reconstructed from later runs.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

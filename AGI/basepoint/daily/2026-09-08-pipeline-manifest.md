@@ -112,3 +112,14 @@ Origin Continuity: PRESERVED
 - The existing note remains controlling: PEP 683/684 with missing supported facts are source observations, not content-level hard signals.
 - PEP 703 is limited to optional free-threaded build configuration, not default-GIL removal.
 - Same source lineage repetition does not add independent evidence.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: OBSERVED_STATE_CALIBRATED
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

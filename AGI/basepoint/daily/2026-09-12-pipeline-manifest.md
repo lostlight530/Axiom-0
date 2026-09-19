@@ -104,3 +104,14 @@ Origin Continuity: PRESERVED
 - The existing note remains controlling: PEP 8/20/257 have `Supported Fact: MISSING_DATA` and cannot become Weekly hard signals from `OBSERVED` alone.
 - Source observation and content verification remain separate states.
 - A3/A2 success remains fixture/harness scoped.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: MISSING_SUPPORTED_FACT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

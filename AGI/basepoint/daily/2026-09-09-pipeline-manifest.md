@@ -110,3 +110,14 @@ Origin Continuity: PRESERVED
 - All three A1 entries lack supported facts; `OBSERVED` is source/title observation only.
 - The repeated PEP source set does not create a new independent signal.
 - Downstream use must keep `OBSERVED_SOURCE != SUPPORTED_FACT`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SOURCE_OBSERVED_ONLY
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.
