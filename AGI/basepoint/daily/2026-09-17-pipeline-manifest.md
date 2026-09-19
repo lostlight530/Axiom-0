@@ -108,3 +108,14 @@ Origin Continuity: PRESERVED
 - The existing note remains controlling: all three A1 entries have missing supported facts.
 - `Hypothesis State: OBSERVED` records source visitation/registration, not a substantive verified claim.
 - Downstream use must preserve `SOURCE_VISITED != CLAIM_VERIFIED`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SOURCE_VISITED_NOT_CLAIM_VERIFIED
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

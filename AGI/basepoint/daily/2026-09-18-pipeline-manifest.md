@@ -116,3 +116,14 @@ Origin Continuity: PRESERVED
 - The recorded PEP 8/20/257 quotations are explicit proposition-level source facts and may be retained at that scope.
 - A3 `100/100` remains the specified repeat harness only and does not establish universal correctness or untested-condition coverage.
 - Missing timing/stderr detail remains missing.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: PROPOSITION_LEVEL_SOURCE_FACTS
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Only explicit proposition-level source facts are usable; missing fields remain missing and are not reconstructed from later runs.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

@@ -95,3 +95,14 @@ Origin Continuity: PRESERVED
 - Entries such as `PEP 8 – Style Guide for Python Code`, `PEP 484 – Type Hints`, and `PEP 3107 – Function Annotations` function primarily as source/topic identity, not substantive proposition-level evidence.
 - Title-level source identity should not be promoted as a Weekly hard signal without an explicit supported proposition.
 - Execution results remain bounded to the recorded fixtures/harness.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: TITLE_ONLY_FACT_LIMIT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.
