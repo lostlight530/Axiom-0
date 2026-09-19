@@ -29,6 +29,8 @@ const translations = {
     methodUsage: "Traffic metrics: clones, accumulated unique counts and repository views. C/V is combined clones divided by combined views, not an average of repository ratios.",
     methodSnapshot: "Final traffic snapshot through 2026-08-31; no polling or future append. Earlier operational snapshots are not part of this final display.",
     methodDedup: "Per repository: sum a reporting interval of up to two weeks, then floor counts ≥ 10 to tens; preserve single digits. Apply the same rule to clones, unique counts and views. Unique-count sums are not globally distinct people. C/V is undefined when views = 0.",
+    repositoryBridgeTitle: "Current Repository",
+    repositoryBridgeDesc: "This dashboard preserves the sealed traffic exhibit Current implementation contracts methodology and reproducibility guidance follow repository current main",
   },
   zh: {
     trafficTab: "流量",
@@ -54,6 +56,8 @@ const translations = {
     methodUsage: "流量指标：clones、unique 计数累计、仓库 views；C/V 为合计 clones 除以合计 views，不是各仓比值的平均",
     methodSnapshot: "截至 2026-08-31 的最终流量快照；不轮询、不追加未来数据；旧运行快照不纳入本页最终展示",
     methodDedup: "各仓先汇总不超过两周的统计区间，再将 ≥10 的计数向下取整到十位，个位数保留；clones、uniques、views 采用同一规则；uniques 累计不代表全局独立人数；views=0 时 C/V 未定义",
+    repositoryBridgeTitle: "当前仓库",
+    repositoryBridgeDesc: "本仪表盘保留封档流量展示 当前实现 契约 方法与复现说明以仓库 current main 为准",
   }
 };
 
@@ -408,6 +412,23 @@ export default function RepoTrafficVisualizationDashboard() {
             </Card>
           </section>
         )}
+
+
+        <section className="mt-8">
+          <Card className="telemetry-surface rounded-2xl border-slate-800 bg-slate-900/40">
+            <CardContent className="p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+              <div className="max-w-2xl">
+                <p className="text-[10px] font-mono uppercase tracking-[0.18em] text-cyan-400 mb-2">{t.repositoryBridgeTitle}</p>
+                <p className="text-sm text-slate-400 leading-relaxed">{t.repositoryBridgeDesc}</p>
+              </div>
+              <div className="flex flex-wrap gap-2 font-mono text-xs">
+                <a href="https://github.com/lostlight530/Axiom-0" target="_blank" rel="noreferrer" className="px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-cyan-500/50 hover:text-cyan-300 transition">GitHub ↗</a>
+                <a href="https://github.com/lostlight530/Axiom-0/blob/main/README.md" target="_blank" rel="noreferrer" className="px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-cyan-500/50 hover:text-cyan-300 transition">README ↗</a>
+                <a href="https://github.com/lostlight530/Axiom-0/blob/main/SPECIFICATION.md" target="_blank" rel="noreferrer" className="px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-cyan-500/50 hover:text-cyan-300 transition">Specification ↗</a>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         <footer className="mt-10 border-t border-slate-800 pt-6 pb-6 text-center">
           <p className="text-[11px] text-slate-500 font-mono tracking-widest">
