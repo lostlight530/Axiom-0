@@ -78,3 +78,14 @@ No out-of-bounds modifications detected.
 
 ## 验证
 Manifest structure validated using `validate_research_record.py`
+
+## Maintenance Annotation — 2026-09-19
+- Review Class: BOUNDED_EXECUTION_CALIBRATION
+- Original Jules Evidence Preserved: YES
+- Source-Family Boundary: PEP 8, PEP 20, and PEP 484 are distinct documents within the same Python PEP publication ecosystem; their count is not treated as three independent corroborations of one claim
+- A2 Boundary: D_KL=0.0 applies only to the recorded identity / renormalized-identity inputs and does not imply universal zero divergence
+- A3 Boundary: 100/100 applies only to the specified executions of the recorded test object and environment
+- Uncovered Conditions: MISSING_DATA remains unresolved and is not inferred from test success
+- A4 Boundary: index alignment records artifact discoverability, not scientific validity
+- Runner Evidence: commands and validator outcomes remain Jules-reported execution evidence for this run; no GitHub workflow/status-run evidence was observed at the audited PR head
+- Scientific Validity: NOT_CLAIMED
