@@ -171,3 +171,14 @@ Origin Continuity: PRESERVED
 - The existing closure reconciliation remains controlling: original A5 `PARTIAL` is historically correct for its execution snapshot.
 - Current 7/7 path coverage supports only `COMPLETE_PATH_COVERAGE_WITH_EVIDENCE_GAPS`, not a retroactive complete Jules execution.
 - Missing supported facts, repeated sources, later provenance details and bounded `100/100` results remain bounded; September A6 is still not due.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: CURRENT_CLOSURE_WITH_EVIDENCE_GAPS
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Current path closure remains separate from the original weekly execution state; evidence gaps stay visible.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

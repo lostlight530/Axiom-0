@@ -108,3 +108,14 @@ Origin Continuity: PRESERVED
 - The existing PEP 703 calibration is controlling: optional free-threaded/`--disable-gil` build support does not mean the GIL is disabled by default.
 - The incomplete PEP 8 prose is not promoted as a precise normative claim.
 - Missing A2/A3 provenance fields remain missing.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: PEP703_SCOPE_CALIBRATED
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- PEP 703 remains bounded to the optional free-threaded build configuration; default-build behavior is not promoted beyond the PEP text.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

@@ -92,3 +92,14 @@ Origin Continuity: PRESERVED
 - W36 may remain `SUCCESS` for its recorded window and inputs, but hard-signal use must prefer explicit proposition-level supported facts over source titles or generic `OBSERVED` labels.
 - Daily missing fields remain missing after weekly compression; Weekly does not upgrade their evidence level.
 - Weekly `D_KL: 0.0` remains fixture-derived and is not a global entropy claim.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: WEEKLY_SUCCESS_BOUNDED
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Weekly success remains bounded to the inputs actually available at that execution point.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

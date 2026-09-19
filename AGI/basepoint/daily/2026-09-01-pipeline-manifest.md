@@ -114,3 +114,14 @@ Origin Continuity: PRESERVED
 - Source observations and A3/A2 results remain valid only at the exact facts/fixtures recorded.
 - `D_KL = 0.0` is an identity-fixture result, not a system-wide zero-entropy conclusion.
 - `100/100` applies to the specified repeat harness only; uncovered conditions and missing timing remain unknown.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: BOUNDED_EXECUTION_RECORD
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recorded execution and test results remain bounded to the stated harness, inputs, environment, and observed fields; they do not imply universal correctness.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

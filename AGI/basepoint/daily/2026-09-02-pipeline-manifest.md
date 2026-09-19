@@ -160,3 +160,14 @@ Origin Continuity: PRESERVED
 - The JSON/JCS/RFC facts are explicit source-supported statements and may be retained at their stated scope.
 - The local Python execution does not establish Python 3.14 runtime compatibility, as the file already notes.
 - Repeat-harness success and KL identity fixtures remain bounded execution evidence.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: BOUNDED_EXECUTION_RECORD
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recorded execution and test results remain bounded to the stated harness, inputs, environment, and observed fields; they do not imply universal correctness.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.
