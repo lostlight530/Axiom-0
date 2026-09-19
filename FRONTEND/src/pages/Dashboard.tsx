@@ -194,7 +194,7 @@ const CustomChartTooltip: React.FC<any> = ({ active, payload, label }: { active?
 };
 
 const MetricCard: React.FC<{ title: string; value: string; subtitle: string; icon: React.ElementType }> = React.memo(({ title, value, subtitle, icon: Icon }) => (
-  <Card className="rounded-2xl shadow-none border-slate-800 bg-slate-950/50 backdrop-blur-sm transition-all hover:border-cyan-500/30 hover:bg-slate-900/80 group">
+  <Card className="metric-instrument rounded-2xl shadow-none border-slate-800 bg-slate-950/50 backdrop-blur-sm transition-all hover:border-cyan-500/30 hover:bg-slate-900/80 group">
     <CardContent className="p-6">
       <div className="flex items-start justify-between gap-4">
         <div className="space-y-2">
@@ -254,9 +254,9 @@ export default function RepoTrafficVisualizationDashboard() {
   const [mainTab, setMainTab] = useState<string>("traffic");
 
   return (
-    <div className="min-h-screen bg-slate-950 font-sans text-slate-300 selection:bg-cyan-900 selection:text-cyan-50 p-4 md:p-8">
+    <div className="instrument-shell min-h-screen bg-slate-950 font-sans text-slate-300 selection:bg-cyan-900 selection:text-cyan-50 p-4 md:p-8">
       <div className="max-w-[1400px] mx-auto">
-        <header className="mb-6 space-y-4">
+        <header className="instrument-header mb-6 space-y-4">
           {/* Axiom-0 identity */}
           <div className="flex items-center gap-2 text-xs font-mono tracking-[0.2em] text-slate-500 uppercase">
             <span className="text-cyan-500">Axiom-0</span>
@@ -318,7 +318,7 @@ export default function RepoTrafficVisualizationDashboard() {
           </p>
 
           <section className="mb-8">
-            <Card className="rounded-2xl shadow-2xl border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden">
+            <Card className="telemetry-surface rounded-2xl shadow-2xl border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden">
               <CardHeader className="border-b border-slate-800/50 p-6 bg-slate-900/30">
                 <CardTitle className="text-white font-mono flex items-center gap-2">
                   <Activity className="h-5 w-5 text-emerald-400" />{t.dashboardTitle}
@@ -396,7 +396,7 @@ export default function RepoTrafficVisualizationDashboard() {
         {/* ===== METHOD ===== */}
         {mainTab === "method" && (
           <section className="space-y-4 mt-6">
-            <Card className="rounded-2xl border-slate-800 bg-slate-900/50">
+            <Card className="telemetry-surface rounded-2xl border-slate-800 bg-slate-900/50">
               <CardHeader><CardTitle className="text-white font-mono flex items-center gap-2"><Info className="h-5 w-5 text-purple-400" />{t.methodTitle}</CardTitle></CardHeader>
               <CardContent className="space-y-4 font-mono text-sm text-slate-300 leading-relaxed">
                 <div className="border-l-2 border-purple-500/30 pl-4 py-1"><p className="text-slate-400 text-xs mb-1">Observation Window</p><p>{t.methodLastYear}</p><p className="text-cyan-400 mt-1">{t.methodWindow}</p></div>
