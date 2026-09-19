@@ -113,3 +113,14 @@ Origin Continuity: PRESERVED
 - Several A1 `Supported Facts` are broad topic labels rather than precise substantive claims; downstream hard-signal use should prefer explicit proposition-level facts.
 - `D_KL = 0.0` and `100/100` remain bounded to the recorded fixtures/harness.
 - Missing SHA, timing and uncovered-condition detail must remain unknown.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: LOW_SPECIFICITY_SOURCE_FACTS
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

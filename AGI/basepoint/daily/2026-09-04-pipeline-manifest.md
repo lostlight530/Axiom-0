@@ -107,3 +107,14 @@ Origin Continuity: PRESERVED
 - Explicit source-supported Python/PEP facts may be retained, while `MISSING_DATA` fields stay missing.
 - Observed source state does not fill unsupported inferences, exception stacks, ranges or failed-index details that were not recorded.
 - A3 success remains harness-scoped.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SOURCE_FACTS_WITH_MISSING_FIELDS
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Only explicit proposition-level source facts are usable; missing fields remain missing and are not reconstructed from later runs.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

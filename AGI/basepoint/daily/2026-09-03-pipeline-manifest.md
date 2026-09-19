@@ -111,3 +111,14 @@ Origin Continuity: PRESERVED
 - Release/version facts may be retained as source-supported observations.
 - `100/100` remains the recorded repeat fixture only; random, adversarial and other uncovered inputs remain outside the evidence surface.
 - Missing timing stays `NOT_COMPUTED` and is not reconstructed later.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: SOURCE_FACTS_WITH_BOUNDED_TESTS
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Recorded execution and test results remain bounded to the stated harness, inputs, environment, and observed fields; they do not imply universal correctness.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.

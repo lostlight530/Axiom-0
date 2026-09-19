@@ -113,3 +113,14 @@ Origin Continuity: PRESERVED
 - All recorded A1 source entries have `Supported Facts: MISSING_DATA`; `OBSERVED` therefore proves source/title observation only.
 - These entries are ineligible as substantive Weekly hard signals without a later explicit supported fact.
 - Execution/test fields remain bounded to what was actually recorded.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Prior Basepoint State: OBSERVED_WITHOUT_SUPPORTED_FACT
+Reference Continuity: PRESERVED
+
+- The prior Basepoint state remains controlling for this frozen copy.
+- Source visibility or title-level observation is not promoted to a supported substantive claim when the supported fact is missing or underspecified.
+- No missing source fact, test scope, or execution provenance is upgraded by this checkpoint.
