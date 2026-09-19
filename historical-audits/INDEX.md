@@ -34,3 +34,10 @@ Not archived here:
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `RESEARCH/monthly/2026-09-10-ten-day-cadence-reconciliation.md` |
 
 The old paths remain recoverable through Git history. The archive is historical storage and does not supersede current repository authority or the current maintenance record.
+
+
+## Successor maintenance records
+
+- `05-maintenance-and-reconciliation/2026-09-19--sep-19--maintenance-reconciliation.md` — 2026-09-19 bounded Daily pipeline reconciliation
+
+As of 2026-09-19 this is the latest completed independent periodic-maintenance record in the archive. Current implementation, specification, evidence baseline, methodology, and the 2026-09-18 current research reconciliation remain higher authority for present interpretation.
