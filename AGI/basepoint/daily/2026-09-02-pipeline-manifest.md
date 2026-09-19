@@ -151,3 +151,12 @@ Counts are derived by the scanner from the canonical indexes. A structural pass 
 ## 验证与交付
 
 Local execution evidence is bounded to this baseline and environment. Review and merge remain maintainer decisions. Reverting this PR's commit removes the new record and its two links without rewriting earlier evidence or changing executable behavior.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: BOUNDED_EXECUTION_RECORD
+Origin Continuity: PRESERVED
+
+- The JSON/JCS/RFC facts are explicit source-supported statements and may be retained at their stated scope.
+- The local Python execution does not establish Python 3.14 runtime compatibility, as the file already notes.
+- Repeat-harness success and KL identity fixtures remain bounded execution evidence.

@@ -92,3 +92,12 @@
 
 ## 验证
 - Verified file states post-modification via reading tools and git status.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EXPLICIT_FACTS_ONLY
+Origin Continuity: PRESERVED
+
+- Only explicit supported propositions in the A1 record may contribute as content evidence; `OBSERVED` itself is not a hard signal.
+- Execution success remains bounded to the recorded KL/consistency fixtures and repeat harness.
+- Unrecorded timing, failure-index and other provenance fields are not backfilled.

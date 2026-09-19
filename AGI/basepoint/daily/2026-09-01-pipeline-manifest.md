@@ -105,3 +105,12 @@ PATCH_INDEX.md
 
 ## 验证
 git diff and git status checks passed.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: BOUNDED_EXECUTION_RECORD
+Origin Continuity: PRESERVED
+
+- Source observations and A3/A2 results remain valid only at the exact facts/fixtures recorded.
+- `D_KL = 0.0` is an identity-fixture result, not a system-wide zero-entropy conclusion.
+- `100/100` applies to the specified repeat harness only; uncovered conditions and missing timing remain unknown.

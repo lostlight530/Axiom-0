@@ -101,3 +101,12 @@ git diff
 - Therefore `Status: OBSERVED` records source/title observation only for this date and must not be promoted as a content-level hard signal in Weekly/Monthly synthesis.
 - Repeating the same PEP 703/683/684 source set from 2026-09-08 also does not create independent evidence.
 - **Aggregation Rule:** `OBSERVED_SOURCE != SUPPORTED_FACT`; `REPEATED_SOURCE_SET != NEW_INDEPENDENT_SIGNAL`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SOURCE_OBSERVED_ONLY
+Origin Continuity: PRESERVED
+
+- All three A1 entries lack supported facts; `OBSERVED` is source/title observation only.
+- The repeated PEP source set does not create a new independent signal.
+- Downstream use must keep `OBSERVED_SOURCE != SUPPORTED_FACT`.

@@ -98,3 +98,12 @@
 
 ## 验证
 - Verified file changes via git diff and git status.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SOURCE_FACTS_WITH_MISSING_FIELDS
+Origin Continuity: PRESERVED
+
+- Explicit source-supported Python/PEP facts may be retained, while `MISSING_DATA` fields stay missing.
+- Observed source state does not fill unsupported inferences, exception stacks, ranges or failed-index details that were not recorded.
+- A3 success remains harness-scoped.

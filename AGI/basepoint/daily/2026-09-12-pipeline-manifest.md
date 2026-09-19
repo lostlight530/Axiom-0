@@ -95,3 +95,12 @@
 - The corresponding `Hypothesis Status: OBSERVED` must therefore be read as source observation, not as verified support for a substantive claim.
 - These entries are ineligible to become Weekly hard signals unless a later record supplies an explicit supported fact from the source.
 - **Aggregation Rule:** `MISSING_SUPPORTED_FACT != HARD_SIGNAL`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: MISSING_SUPPORTED_FACT
+Origin Continuity: PRESERVED
+
+- The existing note remains controlling: PEP 8/20/257 have `Supported Fact: MISSING_DATA` and cannot become Weekly hard signals from `OBSERVED` alone.
+- Source observation and content verification remain separate states.
+- A3/A2 success remains fixture/harness scoped.

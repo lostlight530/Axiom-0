@@ -99,3 +99,12 @@ MISSING_DATA
 - **Aggregation Rule:** `OPTIONAL_FREE_THREADED_BUILD != GIL_DISABLED_BY_DEFAULT`.
 - **PEP 8 Note:** the original Supported Facts line is incomplete prose and should not be promoted as a precise normative claim beyond the source's general coding-style/readability subject.
 - **Historical Rewrite:** NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: PEP703_SCOPE_CALIBRATED
+Origin Continuity: PRESERVED
+
+- The existing PEP 703 calibration is controlling: optional free-threaded/`--disable-gil` build support does not mean the GIL is disabled by default.
+- The incomplete PEP 8 prose is not promoted as a precise normative claim.
+- Missing A2/A3 provenance fields remain missing.
