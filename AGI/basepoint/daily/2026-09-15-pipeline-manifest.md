@@ -111,3 +111,12 @@ bash test_100.sh
 ## 验证
 - Validation script `validate_research_record.py` executed successfully.
 - Code compliance checked via `python3 code_compliance.py`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: BOUNDED_SOURCE_AND_EXECUTION
+Origin Continuity: PRESERVED
+
+- The source observations may be retained at their explicit stated scope; broad topic summaries should not be expanded beyond the source record.
+- `100/100` remains the specified repeat harness and does not establish untested-condition coverage.
+- Missing timing and uncovered-condition detail remain unknown.

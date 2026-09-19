@@ -86,3 +86,12 @@ repository structural consistency: passed within documented scope
 
 ## 验证
 - validate_research_record.py passed
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: TITLE_ONLY_FACT_LIMIT
+Origin Continuity: PRESERVED
+
+- Entries such as `PEP 8 – Style Guide for Python Code`, `PEP 484 – Type Hints`, and `PEP 3107 – Function Annotations` function primarily as source/topic identity, not substantive proposition-level evidence.
+- Title-level source identity should not be promoted as a Weekly hard signal without an explicit supported proposition.
+- Execution results remain bounded to the recorded fixtures/harness.

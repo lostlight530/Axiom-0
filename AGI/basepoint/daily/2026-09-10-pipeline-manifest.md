@@ -92,3 +92,12 @@
 
 ## 验证
 - Verified file states post-modification via reading tools and git status.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EXPLICIT_FACTS_ONLY
+Origin Continuity: PRESERVED
+
+- Only proposition-level facts actually present in the source fields may be promoted; status labels alone do not establish content.
+- `D_KL = 0.0` and repeat-harness success remain fixture-scoped.
+- Missing stderr, failed-index, timing, SHA and range data remain unknown.

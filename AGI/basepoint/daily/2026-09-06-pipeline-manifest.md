@@ -104,3 +104,12 @@
 
 ## 验证
 - All checks verified.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: OBSERVED_WITHOUT_SUPPORTED_FACT
+Origin Continuity: PRESERVED
+
+- All recorded A1 source entries have `Supported Facts: MISSING_DATA`; `OBSERVED` therefore proves source/title observation only.
+- These entries are ineligible as substantive Weekly hard signals without a later explicit supported fact.
+- Execution/test fields remain bounded to what was actually recorded.

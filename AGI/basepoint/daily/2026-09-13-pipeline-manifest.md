@@ -85,3 +85,12 @@
 
 ## 验证
 - All tests passing.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: PROPOSITION_LEVEL_SOURCE_FACTS
+Origin Continuity: PRESERVED
+
+- The recorded PEP 8/20/257 propositions are explicit source-supported facts and may be retained at that narrow scope.
+- `100/100` remains the specified repeat harness, not universal correctness.
+- Missing failure-index, stderr and timing detail remain missing.

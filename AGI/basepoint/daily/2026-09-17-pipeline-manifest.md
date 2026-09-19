@@ -99,3 +99,12 @@
 - Their `Hypothesis State: OBSERVED` therefore proves only that the sources were visited/recorded, not that a specific content claim was established.
 - Downstream Weekly/Monthly synthesis must preserve that distinction rather than treating `OBSERVED` as a content-verification status.
 - **Aggregation Rule:** `SOURCE_VISITED != CLAIM_VERIFIED`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SOURCE_VISITED_NOT_CLAIM_VERIFIED
+Origin Continuity: PRESERVED
+
+- The existing note remains controlling: all three A1 entries have missing supported facts.
+- `Hypothesis State: OBSERVED` records source visitation/registration, not a substantive verified claim.
+- Downstream use must preserve `SOURCE_VISITED != CLAIM_VERIFIED`.

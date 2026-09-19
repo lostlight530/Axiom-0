@@ -104,3 +104,12 @@
 
 ## 验证
 - All checks verified.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: LOW_SPECIFICITY_SOURCE_FACTS
+Origin Continuity: PRESERVED
+
+- Several A1 `Supported Facts` are broad topic labels rather than precise substantive claims; downstream hard-signal use should prefer explicit proposition-level facts.
+- `D_KL = 0.0` and `100/100` remain bounded to the recorded fixtures/harness.
+- Missing SHA, timing and uncovered-condition detail must remain unknown.

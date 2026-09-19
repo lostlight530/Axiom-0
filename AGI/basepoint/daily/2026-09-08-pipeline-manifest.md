@@ -103,3 +103,12 @@ git diff
 - **PEP 683 / PEP 684:** because `Supported Facts: MISSING_DATA`, `Status: OBSERVED` means the named source/page was observed; it does not establish a content-level hard signal from those two entries.
 - **Aggregation Rule:** `SOURCE_OBSERVED + SUPPORTED_FACT_MISSING != CONTENT_CLAIM_VERIFIED`.
 - **Historical Rewrite:** NO
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: OBSERVED_STATE_CALIBRATED
+Origin Continuity: PRESERVED
+
+- The existing note remains controlling: PEP 683/684 with missing supported facts are source observations, not content-level hard signals.
+- PEP 703 is limited to optional free-threaded build configuration, not default-GIL removal.
+- Same source lineage repetition does not add independent evidence.

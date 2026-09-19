@@ -102,3 +102,12 @@ Only this manifest, INDEX.md, and PATCH_INDEX.md are modified.
 
 ## 验证
 Verified file modifications with git diff, git status, and python3 validate_research_record.py.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SOURCE_FACTS_WITH_BOUNDED_TESTS
+Origin Continuity: PRESERVED
+
+- Release/version facts may be retained as source-supported observations.
+- `100/100` remains the recorded repeat fixture only; random, adversarial and other uncovered inputs remain outside the evidence surface.
+- Missing timing stays `NOT_COMPUTED` and is not reconstructed later.
