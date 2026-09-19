@@ -35,3 +35,145 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* 2026 visual refresh: frozen scientific telemetry instrument */
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    min-width: 320px;
+    background:
+      radial-gradient(circle at 14% -8%, rgba(6, 182, 212, 0.13), transparent 30rem),
+      radial-gradient(circle at 92% 4%, rgba(99, 102, 241, 0.09), transparent 34rem),
+      #020617;
+  }
+}
+
+@layer components {
+  .instrument-shell {
+    position: relative;
+    isolation: isolate;
+    background:
+      linear-gradient(rgba(15, 23, 42, 0.24) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.24) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .instrument-shell::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(2, 6, 23, 0.08), rgba(2, 6, 23, 0.76)),
+      radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.06), transparent 36rem);
+  }
+
+  .instrument-shell::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    z-index: 40;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.82), rgba(129, 140, 248, 0.7), transparent);
+    box-shadow: 0 0 22px rgba(34, 211, 238, 0.24);
+  }
+
+  .instrument-header {
+    position: relative;
+    padding: 1.1rem 1.25rem 1.25rem;
+    border: 1px solid rgba(51, 65, 85, 0.72);
+    border-radius: 1.25rem;
+    background:
+      linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(2, 6, 23, 0.44));
+    box-shadow: inset 0 1px rgba(255,255,255,0.025), 0 24px 70px rgba(0,0,0,0.18);
+    backdrop-filter: blur(18px);
+  }
+
+  .instrument-header::before {
+    content: "FROZEN INSTRUMENT";
+    position: absolute;
+    top: 0.55rem;
+    right: 0.8rem;
+    font: 600 9px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    letter-spacing: 0.18em;
+    color: rgba(103, 232, 249, 0.34);
+    pointer-events: none;
+  }
+
+  .metric-instrument,
+  .telemetry-surface {
+    position: relative;
+    overflow: hidden;
+    animation: instrumentEnter 520ms cubic-bezier(.2,.7,.2,1) both;
+  }
+
+  .metric-instrument::before,
+  .telemetry-surface::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    background: linear-gradient(112deg, transparent 22%, rgba(34, 211, 238, 0.045) 48%, transparent 74%);
+    transform: translateX(-46%);
+    transition: opacity 240ms ease, transform 520ms ease;
+  }
+
+  .metric-instrument:hover::before,
+  .telemetry-surface:hover::before {
+    opacity: 1;
+    transform: translateX(46%);
+  }
+
+  .metric-instrument {
+    border-color: rgba(51, 65, 85, 0.82);
+  }
+
+  .metric-instrument:hover {
+    border-color: rgba(34, 211, 238, 0.34);
+    box-shadow: 0 18px 46px rgba(8, 145, 178, 0.08);
+  }
+
+  .telemetry-surface {
+    box-shadow: inset 0 1px rgba(255,255,255,0.025), 0 28px 80px rgba(0,0,0,0.2);
+  }
+
+  .recharts-wrapper {
+    transition: filter 220ms ease;
+  }
+
+  .telemetry-surface:hover .recharts-wrapper {
+    filter: drop-shadow(0 0 14px rgba(34, 211, 238, 0.05));
+  }
+
+  @keyframes instrumentEnter {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 640px) {
+    .instrument-header::before { display: none; }
+    .instrument-header { padding: 1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .metric-instrument,
+    .telemetry-surface {
+      animation: none !important;
+    }
+
+    .metric-instrument::before,
+    .telemetry-surface::before,
+    .recharts-wrapper {
+      transition: none !important;
+    }
+  }
+}
