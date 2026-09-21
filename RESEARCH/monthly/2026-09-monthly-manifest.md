@@ -359,10 +359,10 @@ Current monthly use:
 
 ## DAILY COVERAGE SUMMARY
 
-Current Daily paths due through 2026-09-20:
+Current retained Daily paths through 2026-09-21:
 
 ~~~text
-20 / 20 PRESENT
+21 / 21 PRESENT THROUGH 2026-09-21
 ~~~
 
 Producer/execution homogeneity:
@@ -620,12 +620,13 @@ Missing metrics:
 ## MONTH STATUS
 
 ~~~text
-Coverage Window = 2026-09-01..2026-09-20
-Current Due Daily Paths = 20 / 20
+Coverage Window = 2026-09-01..2026-09-21
+Current Retained Daily Paths = 21 / 21 THROUGH 2026-09-21
 Month Closure Status = OPEN
 Report Status = PROVISIONAL
 Natural Month Final = NOT_DUE
-2026-09-21..2026-09-30 = NOT_YET_DUE
+2026-09-22 = NOT_CLASSIFIED_BY_THIS_RECONCILIATION
+2026-09-23..2026-09-30 = NOT_YET_DUE
 ~~~
 
 No September final protocol seal is claimed
