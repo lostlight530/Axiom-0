@@ -758,3 +758,31 @@ Final A6 = NOT_DUE
 
 It does not replay earlier commands, fill missing runner fields, or convert bounded checks into universal correctness
 
+
+
+## NIGHTLY_FULL_REVIEW_2026-09-22
+
+Review scope: every September Daily A1→A4 manifest from 2026-09-01 through 2026-09-22, W36/W37/W38 A5, W39 current open state, and this A6 month-to-date owner.
+
+The nightly file-by-file pass preserves the following month-wide evidence boundaries:
+
+- repeated PEP documents within one publication ecosystem do not become independent corroboration by count;
+- OBSERVED with missing Supported Fact remains source observation, not a verified content claim;
+- D_KL = 0.0 remains limited to the recorded identity/renormalized-identity cases;
+- 100/100 remains bounded to the recorded harness/object/environment and does not fill NOT_COMPUTED timing or MISSING_DATA uncovered conditions;
+- index alignment proves discoverability/topology only, not scientific validity;
+- W37 and W38 later path completion does not rewrite their earlier partial/not-yet-due execution snapshots.
+
+Current period state:
+
+```text
+DAILY_CURRENT_PATHS_THROUGH_2026_09_22 = 22/22
+W36 = CLOSED HISTORICAL WEEK
+W37 = CLOSED WITH LATER CURRENT-PATH RECONCILIATION
+W38 = CLOSED WITH ORIGINAL PARTIAL SNAPSHOT PRESERVED
+W39 = IN_PROGRESS
+SEPTEMBER = OPEN
+A6_FINAL = NOT_DUE
+```
+
+No Daily or Weekly is replayed by this section. No maintenance or audit sidecar is created.
