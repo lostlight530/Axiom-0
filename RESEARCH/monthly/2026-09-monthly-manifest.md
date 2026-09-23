@@ -786,3 +786,12 @@ A6_FINAL = NOT_DUE
 ```
 
 No Daily or Weekly is replayed by this section. No maintenance or audit sidecar is created.
+
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
+
+### A1 / N-1 cutoff — 2026-09-22
+
+- Review scope: every retained September Daily A1→A4 manifest through 2026-09-22, W36/W37/W38 A5, W39 open state, INDEX/PATCH_INDEX routing, and the month-to-date A6 owner.
+- Preserve producer heterogeneity, failed/partial historical states, missing runner fields, source-independence limits, and bounded D_KL / 100-of-100 semantics.
+- Index alignment remains discoverability/topology evidence only; it does not establish scientific validity or universal correctness.
+- September remains OPEN and final A6 remains NOT_DUE.
