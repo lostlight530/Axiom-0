@@ -787,6 +787,44 @@ A6_FINAL = NOT_DUE
 
 No Daily or Weekly is replayed by this section. No maintenance or audit sidecar is created.
 
+
+## CURRENT_EXTENSION_RESULT_2026-09-23
+
+Maintenance type: A2 current-state reconciliation.
+
+The retained 2026-09-23 Daily manifest is now present on current main after PR #288.
+
+Current month-to-date state:
+
+```text
+Coverage Window = 2026-09-01..2026-09-23
+Current Retained Daily Paths = 23 / 23 through 2026-09-23
+W39 = IN_PROGRESS
+September Month = OPEN
+Final A6 = NOT_DUE
+```
+
+The 2026-09-23 Daily records bounded A1 source inspection, A2 algebra/consistency checks, A3 specified repeated execution, and A4 index alignment.
+
+Those results remain bounded exactly as in the owning Daily:
+
+```text
+SOURCE_ROWS
+!= INDEPENDENT_PUBLISHER_LINEAGES
+
+D_KL_0_ON_RECORDED_CASES
+!= UNIVERSAL_ZERO_DIVERGENCE
+
+100_OF_100_SPECIFIED_RUNS
+!= ALL_CONDITIONS_COVERED
+!= UNIVERSAL_CORRECTNESS
+
+INDEX_ALIGNMENT
+!= SCIENTIFIC_VALIDITY
+```
+
+No command is replayed by this A2 reconciliation. Missing stderr, timing, exception, or uncovered-condition fields from any earlier Daily remain historical MISSING_DATA / NOT_COMPUTED where recorded.
+
 ## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
 
 ### A1 / N-1 cutoff — 2026-09-22
@@ -795,3 +833,10 @@ No Daily or Weekly is replayed by this section. No maintenance or audit sidecar 
 - Preserve producer heterogeneity, failed/partial historical states, missing runner fields, source-independence limits, and bounded D_KL / 100-of-100 semantics.
 - Index alignment remains discoverability/topology evidence only; it does not establish scientific validity or universal correctness.
 - September remains OPEN and final A6 remains NOT_DUE.
+
+### A2 / N cutoff — 2026-09-23
+
+- Current month-to-date coverage extends through the retained 2026-09-23 Daily and current routing surfaces.
+- Later Daily presence does not replay earlier commands, fill missing runner evidence, or upgrade bounded checks into universal correctness.
+- W39 remains IN_PROGRESS; September remains OPEN; natural-month finalization remains NOT_DUE.
+- This current extension is additive to A1 and does not replace the 2026-09-22 artifact calibration.
