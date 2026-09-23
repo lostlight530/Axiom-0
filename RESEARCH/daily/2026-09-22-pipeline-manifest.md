@@ -106,45 +106,23 @@ PATCH_INDEX.md
 Pipeline execution completed within boundaries.
 
 
-## Maintenance calibration — 2026-09-23
+## Dual-view maintenance annotation — 2026-09-23
 
-This n-1 repair preserves the original 2026-09-22 A1→A4 Daily pipeline execution and adds only current bounded interpretation.
+### View 1 — N-1 / 2026-09-22 pipeline calibration
 
-### A1 source independence
+- Three PEP rows remain one publication ecosystem for independence accounting.
+- `D_KL = 0.0` remains scoped to the named cases.
+- `100/100` remains scoped to the recorded harness/object/environment.
+- Missing stderr/timing/uncovered-condition fields remain missing.
 
-The three inspected PEP documents are distinct source objects inside one Python PEP publication ecosystem.
+### View 2 — N / 2026-09-23 current interpretation
 
-```text
-THREE_SOURCE_ROWS
-!= THREE_INDEPENDENT_PUBLISHER_LINEAGES
-```
-
-Their supported-fact fields remain paper/specification facts only and do not establish Axiom runtime adoption.
-
-### A2 bounded algebra/consistency evidence
-
-`D_KL = 0.0` is evidence for the named identity and renormalized-identity cases recorded by the command output.
+The later 2026-09-23 Daily and month-to-date owner do not upgrade the 9/22 run into broader correctness. Current index/monthly completeness is derived state, not additional 9/22 execution evidence.
 
 ```text
-D_KL_0_ON_RECORDED_CASES
-!= UNIVERSAL_ZERO_DIVERGENCE
-```
-
-The consistency result remains explicitly limited to the documented topology contract. Missing stderr/exception evidence remains `MISSING_DATA`.
-
-### A3 bounded execution evidence
-
-`100 / 100` applies to the recorded object, harness, environment, and invocation only.
-Average execution time remains `NOT_COMPUTED`; uncovered conditions remain `MISSING_DATA`.
-
-```text
-100_OF_100_SPECIFIED_RUNS
-!= ALL_CONDITIONS_COVERED
+N_MINUS_1_EXECUTION_EVIDENCE
++
+N_CURRENT_INTERPRETATION
 != UNIVERSAL_CORRECTNESS
+!= RETROACTIVE_EXECUTION
 ```
-
-### A4 discoverability boundary
-
-Index alignment proves path/status discoverability only. It does not upgrade scientific validity or runner coverage.
-
-No command is replayed by this maintenance calibration and no missing runner field is synthesized.
