@@ -172,3 +172,8 @@
 - [August 30-day provisional monthly manifest](RESEARCH/monthly/2026-08-monthly-manifest.md)
 - [August evidence audit through day 30](historical-audits/03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md)
 - [August evidence audit through day 27](historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) — historical stage authority
+
+
+### 2026-09-22 maintenance calibration
+
+The retained 2026-09-22 Daily manifest is discoverable above. Its status is bounded to the evidence recorded in that artifact: source rows do not equal independent publisher lineages, `D_KL = 0` is case-scoped, and `100/100` is harness-scoped. Index presence does not upgrade those boundaries.
