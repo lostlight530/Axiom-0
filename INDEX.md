@@ -164,6 +164,7 @@
 - [2026-09-20 Pipeline Manifest](RESEARCH/daily/2026-09-20-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-21 Pipeline Manifest](RESEARCH/daily/2026-09-21-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-22 Pipeline Manifest](RESEARCH/daily/2026-09-22-pipeline-manifest.md) - Status: SUCCESS
+- [2026-09-23 Pipeline Manifest](RESEARCH/daily/2026-09-23-pipeline-manifest.md) - Axiom-0 Daily Pipeline Manifest - Status: SUCCESS
 
 ## August 2026 controlled evidence authority
 
