@@ -104,3 +104,47 @@ PATCH_INDEX.md
 
 ## 验证
 Pipeline execution completed within boundaries.
+
+
+## Maintenance calibration — 2026-09-23
+
+This n-1 repair preserves the original 2026-09-22 A1→A4 Daily pipeline execution and adds only current bounded interpretation.
+
+### A1 source independence
+
+The three inspected PEP documents are distinct source objects inside one Python PEP publication ecosystem.
+
+```text
+THREE_SOURCE_ROWS
+!= THREE_INDEPENDENT_PUBLISHER_LINEAGES
+```
+
+Their supported-fact fields remain paper/specification facts only and do not establish Axiom runtime adoption.
+
+### A2 bounded algebra/consistency evidence
+
+`D_KL = 0.0` is evidence for the named identity and renormalized-identity cases recorded by the command output.
+
+```text
+D_KL_0_ON_RECORDED_CASES
+!= UNIVERSAL_ZERO_DIVERGENCE
+```
+
+The consistency result remains explicitly limited to the documented topology contract. Missing stderr/exception evidence remains `MISSING_DATA`.
+
+### A3 bounded execution evidence
+
+`100 / 100` applies to the recorded object, harness, environment, and invocation only.
+Average execution time remains `NOT_COMPUTED`; uncovered conditions remain `MISSING_DATA`.
+
+```text
+100_OF_100_SPECIFIED_RUNS
+!= ALL_CONDITIONS_COVERED
+!= UNIVERSAL_CORRECTNESS
+```
+
+### A4 discoverability boundary
+
+Index alignment proves path/status discoverability only. It does not upgrade scientific validity or runner coverage.
+
+No command is replayed by this maintenance calibration and no missing runner field is synthesized.
