@@ -68,3 +68,23 @@ Current file presence, a later successful check, or a new publication does not p
 Repository publication metadata, DOI presence, model-generated summaries, and repeated citation are not independent scientific corroboration for a research proposition.
 
 When a current factual claim matters, retain the exact source/revision/time/result/limitation required to support that claim rather than inheriting authority from a legacy survey label such as `[REAL]` or `[SPECULATIVE]`.
+
+
+## Current periodic-evidence pointer — 2026-09-23
+
+The September periodic research surface now retains Daily pipeline manifests through 2026-09-23. The canonical month-to-date owner is RESEARCH/monthly/2026-09-monthly-manifest.md.
+
+This navigation update preserves the authority split:
+
+```text
+RESEARCH_DAILY_PRESENT
+!= EXECUTABLE_AUTHORITY
+
+MONTH_TO_DATE_SYNTHESIS
+!= NATURAL_MONTH_FINAL
+
+LATER_RESEARCH_INTERPRETATION
+!= EARLIER_RUN_EVIDENCE
+```
+
+Current executable behavior remains owned by CODE/** plus the active specification / ADR / methodology contracts.
