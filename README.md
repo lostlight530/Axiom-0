@@ -66,3 +66,23 @@ npm run build
 **[CN]** 通过样例和检查不能证明语义真值、模型或智能体对齐、性能、通用正确性或生产安全。规范化摘要证明字节级契约，不证明语义等价；KL 散度描述声明分布之间的差异，不判断事实真伪；阈值属于调用方策略。身份、授权、隔离、网络策略、配额、密钥管理、持久幂等和事件响应必须由集成方提供并单独验证。
 
 **[EN]** Passing fixtures and checks do not establish semantic truth, model or agent alignment, performance, general correctness, or production safety. Canonical digests establish a byte-level contract, not semantic equivalence; KL divergence describes differences between declared distributions, not factual truth; thresholds are caller policy. Integrators must provide and separately verify identity, authorization, isolation, network policy, quotas, secret management, durable idempotency, and incident response.
+
+
+## Current periodic evidence note — 2026-09-23
+
+Research artifacts under RESEARCH/** currently include September Daily pipeline evidence through 2026-09-23 and an open month-to-date A6 manifest.
+
+These artifacts are evidence/history surfaces, not additional implemented capability.
+
+```text
+PERIODIC_RESEARCH_PRESENT
+!= NEW_RUNTIME_CAPABILITY
+
+MONTH_TO_DATE_A6
+!= FINAL_PROTOCOL_SEAL
+
+BOUNDED_RUN_RESULT
+!= UNIVERSAL_CORRECTNESS
+```
+
+The implemented-capability table above remains governed by current source and executable contracts.
