@@ -174,6 +174,9 @@
 - [August evidence audit through day 27](historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) — historical stage authority
 
 
-### 2026-09-22 maintenance calibration
+### 2026-09-23 dual-view annotation for the 2026-09-22 entry
 
-The retained 2026-09-22 Daily manifest is discoverable above. Its status is bounded to the evidence recorded in that artifact: source rows do not equal independent publisher lineages, `D_KL = 0` is case-scoped, and `100/100` is harness-scoped. Index presence does not upgrade those boundaries.
+**N-1 view:** the 2026-09-22 manifest remains bounded to its recorded source/check/test evidence.  
+**N view:** later 2026-09-23 repository progress does not add execution evidence to the 2026-09-22 manifest.
+
+Index discoverability is navigation only; it does not upgrade source independence, checker scope, or scientific validity.
