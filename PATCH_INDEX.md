@@ -173,3 +173,8 @@
 - [August 30-day provisional monthly manifest](RESEARCH/monthly/2026-08-monthly-manifest.md)
 - [August evidence audit through day 30](historical-audits/03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md)
 - [August evidence audit through day 27](historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) — historical stage authority
+
+
+### 2026-09-22 maintenance calibration
+
+The 2026-09-22 manifest remains the owning Daily execution record. This patch index provides navigation only and does not convert source count into source independence, bounded checker output into universal correctness, or path presence into additional execution evidence.
