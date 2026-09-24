@@ -181,3 +181,9 @@
 **N view:** later 2026-09-23 repository progress does not add execution evidence to the 2026-09-22 manifest.
 
 Index discoverability is navigation only; it does not upgrade source independence, checker scope, or scientific validity.
+### 2026-09-24 A1 annotation for the 2026-09-23 full-period cutoff
+
+**N-1 view:** all September Daily A1→A4 manifests through 2026-09-23, all due Weekly A5 surfaces, W39 open state, and the month-to-date A6 owner were re-read as one continuous evidence history.  
+**Current view:** later 2026-09-24 pipeline evidence does not add execution evidence to any earlier Daily.
+
+Index discoverability remains navigation only; it does not upgrade source independence, bounded scanner output, execution coverage, or scientific validity.
