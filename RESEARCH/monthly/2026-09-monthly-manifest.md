@@ -840,3 +840,12 @@ No command is replayed by this A2 reconciliation. Missing stderr, timing, except
 - Later Daily presence does not replay earlier commands, fill missing runner evidence, or upgrade bounded checks into universal correctness.
 - W39 remains IN_PROGRESS; September remains OPEN; natural-month finalization remains NOT_DUE.
 - This current extension is additive to A1 and does not replace the 2026-09-22 artifact calibration.
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-24
+
+### A1 / N-1 cutoff — full September review through 2026-09-23
+
+- Review scope: every retained September Daily A1→A4 manifest from 2026-09-01 through 2026-09-23, W36/W37/W38 A5, W39 open state, INDEX/PATCH_INDEX routing, and the month-to-date A6 owner.
+- Preserve producer heterogeneity, failed/partial historical states, missing runner fields, source-independence limits, and bounded D_KL / repeated-execution semantics.
+- Index alignment remains navigation/topology evidence only.
+- Later successful checks never fill earlier missing execution evidence.
+- September remains OPEN and final A6 remains NOT_DUE.

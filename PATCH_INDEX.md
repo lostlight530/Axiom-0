@@ -182,3 +182,9 @@
 **N view:** later current-state/monthly synchronization does not become additional 2026-09-22 run evidence.
 
 This patch index remains a navigation surface only.
+### 2026-09-24 A1 annotation for the 2026-09-23 full-period cutoff
+
+**N-1 view:** the owning Daily manifests remain the execution records for September through 2026-09-23.  
+**Current view:** later current-state/monthly synchronization and the 2026-09-24 Daily do not become additional execution evidence for earlier dates.
+
+This patch index remains a navigation surface only.
