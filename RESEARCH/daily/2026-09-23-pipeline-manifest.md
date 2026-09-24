@@ -104,3 +104,24 @@ Verified with `git status` and `git diff --name-only`.
 
 ## 验证
 Pipeline execution validated against `validate_research_record.py` and returned successfully.
+## Dual-view maintenance annotation — 2026-09-24
+
+### View 1 — A1 / N-1 full-period calibration through 2026-09-23
+
+- Review scope: every September Daily A1→A4 manifest from 2026-09-01 through 2026-09-23, W36/W37/W38 A5, W39 open state, INDEX/PATCH_INDEX routing, and the month-to-date A6 owner.
+- Source rows remain bounded to their recorded publisher/revision identity; one publication ecosystem is not multiple independent publisher lineages.
+- `D_KL = 0.0` remains scoped to the recorded cases.
+- `100/100` remains scoped to the specified harness/object/environment and does not fill missing stderr/timing/uncovered-condition evidence.
+- A4 index alignment is topology/discoverability evidence, not scientific validity.
+
+### View 2 — current interpretation at the 2026-09-24 review cut
+
+The 2026-09-24 Daily extends current September coverage only. It does not replay or broaden the 2026-09-23 execution.
+
+```text
+BOUNDED_2026_09_23_RUN
++
+LATER_CURRENT_REPOSITORY_STATE
+!= UNIVERSAL_CORRECTNESS
+!= RETROACTIVE_EXECUTION
+```
