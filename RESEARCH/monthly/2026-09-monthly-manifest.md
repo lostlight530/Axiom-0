@@ -849,3 +849,24 @@ No command is replayed by this A2 reconciliation. Missing stderr, timing, except
 - Index alignment remains navigation/topology evidence only.
 - Later successful checks never fill earlier missing execution evidence.
 - September remains OPEN and final A6 remains NOT_DUE.
+### A2 / N cutoff — 2026-09-24 current-state reconciliation
+
+The A1 full-period review through 2026-09-23 remains intact. Current month-to-date state now includes the retained 2026-09-24 Daily A1→A4 manifest.
+
+Current bounded interpretation:
+- 2026-09-24 source rows remain source-specific historical/standards evidence; publisher/source identity is not multiplied by row count.
+- `D_KL = 0.0` remains scoped to the current scanner's recorded cases and semantics.
+- A3 remains `100 / 100 specified executions passed`; average execution time remains `NOT_COMPUTED` and uncovered conditions remain `MISSING_DATA`.
+- A4 INDEX/PATCH_INDEX alignment remains routing/topology evidence, not scientific validity.
+- No earlier Daily is replayed and no earlier missing runner evidence is filled.
+- W39 remains IN_PROGRESS.
+- September remains OPEN.
+- final A6 remains NOT_DUE.
+
+```text
+CURRENT_2026_09_24_DAILY
++
+A1_FULL_HISTORY_THROUGH_2026_09_23
+!= UNIVERSAL_CORRECTNESS
+!= NATURAL_MONTH_FINAL
+```
