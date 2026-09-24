@@ -86,3 +86,19 @@ BOUNDED_RUN_RESULT
 ```
 
 The implemented-capability table above remains governed by current source and executable contracts.
+## Current periodic evidence note — 2026-09-24
+
+The merged A1 review preserves the complete September evidence history through 2026-09-23. Current main now also retains the 2026-09-24 A1→A4 Daily pipeline manifest.
+
+```text
+CURRENT_DAILY_PRESENT
+!= NEW_RUNTIME_CAPABILITY
+D_KL_0_ON_RECORDED_CASES
+!= UNIVERSAL_ZERO_DIVERGENCE
+100_OF_100_SPECIFIED_RUNS
+!= UNIVERSAL_CORRECTNESS
+INDEX_ALIGNMENT
+!= SCIENTIFIC_VALIDITY
+```
+
+Current executable behavior remains owned by implementation and active specification/methodology contracts, not by the existence of periodic research artifacts.
