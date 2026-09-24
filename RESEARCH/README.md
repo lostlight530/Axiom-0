@@ -88,3 +88,19 @@ LATER_RESEARCH_INTERPRETATION
 ```
 
 Current executable behavior remains owned by CODE/** plus the active specification / ADR / methodology contracts.
+## Current periodic-evidence pointer — 2026-09-24
+
+The September periodic research surface now retains Daily pipeline manifests through 2026-09-24 on current main, with the merged A1 full-history annotation through 2026-09-23 preserved.
+
+The 2026-09-24 Daily remains bounded to its recorded source inspection, algebra/consistency scan, specified repeated execution, and index-alignment evidence.
+
+```text
+RESEARCH_DAILY_PRESENT
+!= EXECUTABLE_AUTHORITY
+BOUNDED_TEST_RESULT
+!= ALL_CONDITIONS_COVERED
+MONTH_TO_DATE_SYNTHESIS
+!= NATURAL_MONTH_FINAL
+```
+
+No earlier command is replayed by this navigation update.
