@@ -125,3 +125,22 @@ LATER_CURRENT_REPOSITORY_STATE
 != UNIVERSAL_CORRECTNESS
 != RETROACTIVE_EXECUTION
 ```
+
+## 中秋加班维护补充 — A1 / 2026-09-24
+
+本段是后续维护注释, 原始 2026-09-23 Daily 的命令、测试和执行结论保持原样.
+
+以 2026-09-24 为 N 日的中秋加班维护重新查看 9 月 1 日至 9 月 23 日全部 Plasma Daily A1–A4、已到期 A5、开放 W39、INDEX/PATCH_INDEX 与月内 A6 关系. 本轮特别检查执行证据有没有被后来的文档完整性扩大解释.
+
+本文件中的 `D_KL = 0.0`、100 次运行和 validator 成功继续只证明当时记录的对象、命令和边界. 后来的索引完整、月度整理或 Stage/研究扩展不能把这些局部结果升级为 universal correctness. 当前文件可以增加关系说明, 但不会重写当时的 command、exit state、未覆盖条件或 producer provenance.
+
+中秋期间继续做维护的价值在于把多日执行放进正确时间线, 而不是制造额外 PASS. 因此本轮增加的是证据边界和前向解释, 不是新的实验次数.
+
+```text
+RECORDED_EXECUTION
++
+LATER_MAINTENANCE_CONTEXT
+!= NEW_EXECUTION
+!= UNTESTED_CONDITION_COVERAGE
+!= UNIVERSAL_ZERO_ENTROPY
+```
