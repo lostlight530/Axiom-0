@@ -889,3 +889,25 @@ PLASMA_RELATIONAL_CUT_2026_09_24
 MONTH_OPEN
 != FINAL_PROTOCOL_SEAL
 ```
+
+
+## 2026-09-25 A1 — September full-coverage maintenance through 2026-09-24
+
+Base revision: `e595a18247d48610e0e495f31541375ac54f3f30`. Cutoff: 2026-09-24 Asia/Shanghai.
+
+Coverage decision summary:
+- Every retained September Daily A1→A4 manifest through 2026-09-24, due Weekly A5 surfaces, INDEX/PATCH_INDEX routing, and the month-to-date A6 owner were re-read against current main.
+- 2026-09-01..2026-09-23 retain their existing per-run evidence boundaries and prior maintenance decisions. No later success fills earlier missing runner fields or failed/partial states.
+- 2026-09-24 is `APPEND_RELATION`: the Daily remains bounded source/scanner/execution/index evidence. `D_KL = 0.0` remains case-scoped; `100/100` remains specified-run evidence; average timing and uncovered conditions remain uncomputed/missing where recorded.
+- W39 remains `NOT_DUE` for closure. September remains OPEN and final A6 remains `NOT_DUE`.
+
+```text
+TASK
+!= EXECUTION
+!= ARTIFACT
+!= DELIVERY
+!= MERGE
+!= CURRENT_PATH
+BOUNDED_RUN_RESULT
+!= UNIVERSAL_CORRECTNESS
+```
