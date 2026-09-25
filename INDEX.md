@@ -187,3 +187,5 @@ Index discoverability is navigation only; it does not upgrade source independenc
 **Current view:** later 2026-09-24 pipeline evidence does not add execution evidence to any earlier Daily.
 
 Index discoverability remains navigation only; it does not upgrade source independence, bounded scanner output, execution coverage, or scientific validity.
+
+- [2026-09-25 Pipeline Manifest](RESEARCH/daily/2026-09-25-pipeline-manifest.md) - Status: SUCCESS
