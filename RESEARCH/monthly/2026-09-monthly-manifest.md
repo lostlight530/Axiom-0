@@ -911,3 +911,26 @@ TASK
 BOUNDED_RUN_RESULT
 != UNIVERSAL_CORRECTNESS
 ```
+
+
+## 2026-09-25 A2 — current September relational version
+
+Base revision after merged A1: `2604d4ed46cacccdf9f8959ff7e25449c834abbb`. N-day review date: 2026-09-25.
+
+Current month evolution:
+- The merged A1 cutoff through 2026-09-24 remains intact.
+- Current main does not expose a retained 2026-09-25 Plasma Daily manifest at this review cut. This is a repository-visible current-path fact only; it is not classified as `TASK_NOT_EXECUTED` without execution evidence.
+- The latest retained native Daily remains 2026-09-24 with bounded source/scanner/execution/index evidence.
+- No new Weekly A5 or Monthly A6 closure is due from current repository evidence. W39 remains IN_PROGRESS and September remains OPEN.
+- No earlier command is replayed, no missing runner evidence is filled, and no bounded result is upgraded.
+
+A2 evolution: `NO_MATERIAL_CHANGE` to the Plasma month interpretation at this cut.
+
+```text
+CURRENT_PATH_NOT_OBSERVED_FOR_2026_09_25
+!= TASK_NOT_EXECUTED
+NO_NEW_DAILY_EVIDENCE
+!= MISSING_EXECUTION_PROOF
+MONTH_OPEN
+!= FINAL_A6
+```
