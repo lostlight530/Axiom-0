@@ -870,3 +870,22 @@ A1_FULL_HISTORY_THROUGH_2026_09_23
 != UNIVERSAL_CORRECTNESS
 != NATURAL_MONTH_FINAL
 ```
+
+## 中秋加班维护补充 — A2 / N = 2026-09-24
+
+本段是在 A1 已合并之后建立的 2026-09-24 月内关系版本. 它只解释截至该逻辑切点的 Plasma Daily/Weekly/Monthly 关系, 不把后来发生的运行或维护提前写入.
+
+9 月 24 日 A1→A4 Daily 被纳入当前月度关系, 但所有执行证据继续保持 bounded semantics. `D_KL = 0.0` 不扩展为 universal zero entropy, `100/100` 不补齐 average timing、stderr 或未覆盖条件. A4 的索引对齐仍然只是 topology/discoverability evidence.
+
+A1 对 9 月 1 日至 9 月 23 日保留的失败、缺失、producer heterogeneity 与 source-independence 限制继续有效. W39 仍在进行, September 仍为 OPEN, final A6 在 N 日不成立.
+
+```text
+SEPTEMBER_HISTORY_THROUGH_2026_09_23
++
+DAILY_2026_09_24
+=
+PLASMA_RELATIONAL_CUT_2026_09_24
+
+MONTH_OPEN
+!= FINAL_PROTOCOL_SEAL
+```
