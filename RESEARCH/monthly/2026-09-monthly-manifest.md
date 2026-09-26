@@ -1231,3 +1231,50 @@ MONTH_OPEN
 - New month-final/durable-governance credit: NONE.
 - Current September relation: UPDATED_THROUGH_LOGICAL_2026-09-25.
 - Successor maintenance status: COMPLETE_FOR_A2.
+
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-26
+
+- Logical maintenance date: 2026-09-26
+- Cutoff: 2026-09-25
+- Exact base main: `ff9b44c10b5feccc963d43e4f181c2f287c60697`
+- Scope: Plasma A1-A4 Daily evidence, due A5/A6 relationships, indexes and September owner.
+- No execution is replayed by this maintenance pass.
+
+### Coverage decisions
+- 2026-09-01: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-02: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-03: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-04: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-05: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-06: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-07: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-08: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-09: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-10: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-11: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-12: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-13: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-14: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-15: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-16: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-17: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-18: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-19: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-20: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-21: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-22: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-23: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-24: REVIEWED / RETAIN_EXISTING_DECISION
+- 2026-09-25: REVIEWED / RETAIN_FORWARD_RECONCILIATION / NO_FOLLOW_UP. The later-arriving 9/25 Plasma record is already integrated without rewriting the earlier absence cut.
+
+### Evidence boundary
+- D_KL and scanner results remain command/input scoped.
+- 100/100 remains bounded to specified executions and does not fill timing, input-range, or uncovered-condition gaps.
+- W39 and September remain OPEN; natural-month close is NOT_DUE.
+
+### A1 disposition
+- Coverage through 2026-09-25: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- New runtime/scientific-validation/source-independence credit: NONE.
+- Next: merge A1, fresh-read main, compile 2026-09-26 A2.
