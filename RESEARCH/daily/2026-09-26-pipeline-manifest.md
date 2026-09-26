@@ -1,5 +1,6 @@
 ## ZECP Metadata
 **Date (UTC):** 2026-09-26
+**Evidence Completeness:** PARTIAL_WITH_EXPLICIT_MISSING_DATA
 
 ## 联网状态
 - **Connected:** True
@@ -14,7 +15,7 @@
   - **URL:** https://peps.python.org/pep-0008/
   - **Publish Time:** 05-Jul-2001
   - **Check Time:** 2026-09-26
-  - **Supported Facts:** MISSING_DATA
+  - **Supported Facts:** The source identifies PEP 8 as "Style Guide for Python Code".
   - **Unsupported Inference:** None
   - **Hypothesis State:** OBSERVED
 
@@ -25,7 +26,7 @@
   - **URL:** https://peps.python.org/pep-0020/
   - **Publish Time:** 19-Aug-2004
   - **Check Time:** 2026-09-26
-  - **Supported Facts:** MISSING_DATA
+  - **Supported Facts:** The source identifies PEP 20 as "The Zen of Python".
   - **Unsupported Inference:** None
   - **Hypothesis State:** OBSERVED
 
@@ -37,7 +38,7 @@
   - **URL:** https://peps.python.org/pep-0257/
   - **Publish Time:** 29-May-2001
   - **Check Time:** 2026-09-26
-  - **Supported Facts:** MISSING_DATA
+  - **Supported Facts:** The source identifies PEP 257 as "Docstring Conventions".
   - **Unsupported Inference:** None
   - **Hypothesis State:** OBSERVED
 
@@ -91,7 +92,10 @@ repository structural consistency: passed within documented scope
 - **Status Consistency:** True
 
 ## 缺失数据
-MISSING_DATA
+- A2 Command 1 Actual Input Range: MISSING_DATA
+- A2 Command 2 Actual Input Range: MISSING_DATA
+- A3 Average Execution Time: NOT_COMPUTED
+- A3 Uncovered Conditions: MISSING_DATA
 
 ## 失败状态
 None
@@ -108,4 +112,13 @@ PYTHONPATH=. python3 tests/entrypoints.py repeat --count 100
 - Modified: PATCH_INDEX.md
 
 ## 验证
-A1, A2, A3, A4 checks completed and validated.
+Retained Jules evidence reports completion of A1-A4. A2 remains command-scoped, A3 remains limited to the specified 100 executions, and the missing fields above remain unresolved.
+
+## External Independent Reconciliation — 2026-09-26
+- Correction class: EVIDENCE_FIELD_REPAIR
+- Original PR-head state had `Supported Facts: MISSING_DATA` for all three A1 sources.
+- The source-supported proposition fields are now populated with only the minimal propositions directly identified by each source title.
+- No A2 or A3 execution result was upgraded or re-run by this reconciliation.
+- `D_KL = 0.0` remains fixture/input scoped and does not establish repository-wide zero entropy.
+- `100 / 100 specified executions passed` remains bounded execution evidence and does not establish uncovered-condition coverage.
+- Historical/public main was not rewritten; this correction occurred before PR merge.
