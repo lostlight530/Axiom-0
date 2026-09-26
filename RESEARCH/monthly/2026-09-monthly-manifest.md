@@ -1278,3 +1278,28 @@ MONTH_OPEN
 - Historical rewrite required: NO.
 - New runtime/scientific-validation/source-independence credit: NONE.
 - Next: merge A1, fresh-read main, compile 2026-09-26 A2.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-09-26
+
+- Logical maintenance date: 2026-09-26
+- Exact A1-merged base main: `73516d774fa3340c1547508b8351da55198a8acc`
+- Current-month relation window: 2026-09-01 through 2026-09-26
+- A1 coverage through 2026-09-25: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Plasma
+- The 2026-09-26 Daily manifest is present on current main.
+- A1 source records now contain minimal directly supported propositions; source-fact fields are no longer all MISSING_DATA.
+- A2 scanner evidence remains command/input scoped; D_KL=0 is fixture/input scoped, not repository-wide zero entropy.
+- A3 reports 100/100 specified executions, while average execution time remains NOT_COMPUTED and uncovered conditions remain MISSING_DATA.
+- A4 index alignment proves navigation/index consistency only.
+
+### Relation boundary
+- bounded execution result != universal stability or scientific validity.
+- missing fields remain first-class evidence gaps.
+- W39 and September remain OPEN; natural-month close is NOT_DUE.
+
+### A2 disposition
+- 2026-09-26 Plasma relation: INTEGRATED_WITH_EVIDENCE_FIELD_BOUNDARY.
+- Historical rewrite: NO.
+- Current September relation: UPDATED_THROUGH_2026-09-26.
