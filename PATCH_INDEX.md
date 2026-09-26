@@ -188,3 +188,5 @@ This patch index remains a navigation surface only.
 **Current view:** later current-state/monthly synchronization and the 2026-09-24 Daily do not become additional execution evidence for earlier dates.
 
 This patch index remains a navigation surface only.
+
+- [2026-09-25 Pipeline Manifest](RESEARCH/daily/2026-09-25-pipeline-manifest.md) - Status: SUCCESS
