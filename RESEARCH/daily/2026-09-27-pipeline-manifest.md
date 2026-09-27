@@ -7,31 +7,43 @@
 
 ## A1 Digital Archaeology
 - **Title:** PEP 20 – The Zen of Python
-- **Publisher:** Tim Peters <tim.peters at gmail.com>
+- **Publisher:** Python Enhancement Proposals (peps.python.org)
+- **Authors:** Tim Peters <tim.peters at gmail.com>
 - **URL:** https://peps.python.org/pep-0020/
-- **Publish Date:** 19-Aug-2004
+- **Source Header Date:** Created 19-Aug-2004
+- **Date Semantics:** The PEP page exposes a Created date; no separate publication timestamp is claimed here.
 - **Check Date:** 2026-09-27
 - **Supported Facts:** Beautiful is better than ugly.
 - **Unsupported Inference:** None
 - **Hypothesis Status:** OBSERVED
 
 - **Title:** PEP 484 – Type Hints
-- **Publisher:** Guido van Rossum <guido at python.org>, Jukka Lehtosalo <jukka.lehtosalo at iki.fi>, Łukasz Langa <lukasz at python.org>
+- **Publisher:** Python Enhancement Proposals (peps.python.org)
+- **Authors:** Guido van Rossum <guido at python.org>, Jukka Lehtosalo <jukka.lehtosalo at iki.fi>, Łukasz Langa <lukasz at python.org>
 - **URL:** https://peps.python.org/pep-0484/
-- **Publish Date:** 29-Sep-2014
+- **Source Header Date:** Created 29-Sep-2014
+- **Date Semantics:** The PEP page exposes a Created date; no separate publication timestamp is claimed here.
 - **Check Date:** 2026-09-27
 - **Supported Facts:** Any function without annotations should be treated as having the most general type possible, or ignored, by any type checker.
 - **Unsupported Inference:** None
 - **Hypothesis Status:** OBSERVED
 
 - **Title:** PEP 498 – Literal String Interpolation
-- **Publisher:** Eric V. Smith <eric at trueblade.com>
+- **Publisher:** Python Enhancement Proposals (peps.python.org)
+- **Authors:** Eric V. Smith <eric at trueblade.com>
 - **URL:** https://peps.python.org/pep-0498/
-- **Publish Date:** 01-Aug-2015
+- **Source Header Date:** Created 01-Aug-2015
+- **Date Semantics:** The PEP page exposes a Created date; no separate publication timestamp is claimed here.
 - **Check Date:** 2026-09-27
 - **Supported Facts:** F-strings provide a concise, readable way to include the value of Python expressions inside strings.
 - **Unsupported Inference:** None
 - **Hypothesis Status:** OBSERVED
+
+## A1 Evidence Boundary
+- Supported Facts are direct source propositions only.
+- Source Header Date is not silently promoted into a distinct publication timestamp.
+- Source author identity is separated from publisher/site identity.
+- Hypothesis Status OBSERVED applies only to the retained source facts, not to repository-wide architectural conclusions.
 
 ## A2 Algebraic Audit
 - **KL Divergence Exit Code:** 0
