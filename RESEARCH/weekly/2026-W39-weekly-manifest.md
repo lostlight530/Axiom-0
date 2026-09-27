@@ -4,11 +4,11 @@
 2026-09-21 to 2026-09-27 (ISO Week 39)
 
 ## 缺失 Daily Manifest
-- **Present:** 2026-09-21, 2026-09-22, 2026-09-23, 2026-09-24, 2026-09-25, 2026-09-26
+- **Present:** 2026-09-21, 2026-09-22, 2026-09-23, 2026-09-24, 2026-09-25, 2026-09-26, 2026-09-27
 - **Missing:** None
 - **Failed:** None
-- **Partial:** 2026-09-26
-- **Not Yet Due:** 2026-09-27 (NOT_YET_AVAILABLE_DUE_TO_SCHEDULE_ORDER)
+- **Partial:** 2026-09-26, 2026-09-27
+- **Not Yet Due:** None
 
 ## Top 5 Hard Signals
 - **Signal 1:**
@@ -69,8 +69,9 @@
 None identified. Time anchors and cross-references are structurally intact.
 
 ## 未决问题
-- 2026-09-27 is NOT_YET_AVAILABLE_DUE_TO_SCHEDULE_ORDER.
 - 2026-09-26 has explicitly missing data: A2 Command 1 Actual Input Range: MISSING_DATA, A2 Command 2 Actual Input Range: MISSING_DATA, A3 Average Execution Time: NOT_COMPUTED, A3 Uncovered Conditions: MISSING_DATA.
+- 2026-09-27 is present on the reviewed PR base and remains partial: A2 Standard Error / Exception Stack / Actual Input Range are MISSING_DATA; A3 Standard Error and Uncovered Conditions are MISSING_DATA; A3 Average Execution Time is NOT_COMPUTED.
+- Current-path presence of 2026-09-27 is a base-state fact for this repaired weekly review; it does not rewrite any earlier schedule-time state.
 
 ## 禁止区域未修改声明
 - **Protected Paths**: PROTECTED_PATHS_UNMODIFIED. Unmodified.
@@ -78,7 +79,7 @@ None identified. Time anchors and cross-references are structurally intact.
 ## PR 合同
 - 标题: [A5] 规范审查 2026-W39
 - Daily 日期范围: 2026-09-21 to 2026-09-27
-- 缺失文件: 2026-09-27-pipeline-manifest.md is not yet due
+- 缺失文件: None; 2026-09-27-pipeline-manifest.md is present on the reviewed PR base
 - 外部来源: Verified 5 sources (PEP 8, 695, 696, 701, 3333).
 - Hard Signals: Included 5 hard signals.
 - 假设状态变化: Extracted states correctly.
@@ -87,4 +88,4 @@ None identified. Time anchors and cross-references are structurally intact.
 - 测试命令: PYTHONPATH=. python3 tests/entrypoints.py repeat --count 100
 - 创建文件: RESEARCH/weekly/2026-W39-weekly-manifest.md
 - 受保护路径声明: Included.
-- 周度成功或失败状态: PROVISIONAL/OPEN due to not yet due 2026-09-27 manifest and missing data fields in 2026-09-26.
+- 周度成功或失败状态: PROVISIONAL/OPEN because explicit evidence fields remain MISSING_DATA / NOT_COMPUTED in 2026-09-26 and 2026-09-27; not because 2026-09-27 is absent.
