@@ -1303,3 +1303,28 @@ MONTH_OPEN
 - 2026-09-26 Plasma relation: INTEGRATED_WITH_EVIDENCE_FIELD_BOUNDARY.
 - Historical rewrite: NO.
 - Current September relation: UPDATED_THROUGH_2026-09-26.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-27
+
+- Logical maintenance date: 2026-09-27
+- Cutoff: 2026-09-26
+- Exact base main: `6d662b52f58b4b7cacaade4fc09e3580ae484fce`
+- Scope: Plasma Daily A1-A4 evidence, due weekly relations, indexes and September owner; 2026-09-27 Daily/A5 are reserved for A2.
+- 2026-09-01 through 2026-09-25 retained decisions remain intact.
+
+### Coverage decisions
+- 2026-09-01 through 2026-09-25: REVIEWED / RETAIN_EXISTING_DECISIONS
+- 2026-09-26 Daily manifest: REVIEWED / PARTIAL_EVIDENCE_FIELDS_PRESERVED / NO_FOLLOW_UP
+- D_KL values remain exact-input/command scoped.
+- 100/100 remains bounded to specified executions; MISSING_DATA and NOT_COMPUTED fields remain unknown rather than inferred.
+
+### Boundary
+- current path != historical execution credit.
+- later success != earlier success.
+- test repetition != untested-condition coverage.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- 2026-09-26 Plasma: NO_FOLLOW_UP.
+- Historical rewrite required: NO.
+- New runtime/scientific-validation/source-independence credit: NONE.
