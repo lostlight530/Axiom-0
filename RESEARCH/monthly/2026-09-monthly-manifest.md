@@ -1328,3 +1328,29 @@ MONTH_OPEN
 - 2026-09-26 Plasma: NO_FOLLOW_UP.
 - Historical rewrite required: NO.
 - New runtime/scientific-validation/source-independence credit: NONE.
+
+## A2_CURRENT_MONTH_RELATION_2026-09-27
+
+- Logical maintenance date: 2026-09-27
+- Exact A1-merged base main: `fd3dde84337413e0e2242c7f6484a0902cc56fb5`
+- Current-month relation window: 2026-09-01 through 2026-09-27
+- A1 coverage through 2026-09-26: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Plasma
+- 2026-09-27 Daily A1-A4 manifest is present. PEP header dates remain typed as Created dates rather than silently promoted to publication timestamps.
+- A2 command evidence retains MISSING_DATA for stderr, exception stack and actual input range.
+- D_KL = 0 remains scoped to the recorded inputs/command; A3 100/100 remains scoped to specified executions and does not fill uncovered conditions or average-time gaps.
+- W39 A5 is present from a current-main rebuild. Daily coverage is 7/7 present; 2026-09-26 and 2026-09-27 retain explicit MISSING_DATA / NOT_COMPUTED fields, so the weekly artifact remains PROVISIONAL/OPEN for evidence completeness rather than because 9/27 is absent.
+- Protected paths remain unchanged in the recorded native artifacts.
+
+### Relation boundary
+- 7/7 path presence != complete evidence fields.
+- D_KL = 0 != universal zero entropy.
+- 100/100 specified executions != untested-condition coverage.
+- weekly current-main repair != rewrite of earlier schedule-time observations.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A2 disposition
+- 2026-09-27 Plasma relation: DAILY_PLUS_A5_INTEGRATED_WITH_EXPLICIT_GAPS.
+- New runtime/scientific-validation/source-independence credit: NONE.
+- Historical rewrite: NO.
