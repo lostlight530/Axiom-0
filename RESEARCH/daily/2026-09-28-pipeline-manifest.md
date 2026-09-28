@@ -9,7 +9,8 @@
 - **Publisher:** Python Software Foundation
 - **Title:** PEP 701 – Syntactic formalization of f-strings
 - **URL:** https://peps.python.org/pep-0701/
-- **Publication Date:** 15-Nov-2022
+- **Source Header Date:** Created 15-Nov-2022
+- **Date Semantics:** The PEP page exposes a `Created` date; no separate publication timestamp is claimed here.
 - **Verification Date:** 2026-09-28
 - **Supported Facts:** Formalized grammar for f-strings that can be integrated into the parser directly.
 - **Unsupported Inference:** None
@@ -18,7 +19,8 @@
 - **Publisher:** Python Software Foundation
 - **Title:** PEP 684 – A Per-Interpreter GIL
 - **URL:** https://peps.python.org/pep-0684/
-- **Publication Date:** 08-Mar-2022
+- **Source Header Date:** Created 08-Mar-2022
+- **Date Semantics:** The PEP page exposes a `Created` date; no separate publication timestamp is claimed here.
 - **Verification Date:** 2026-09-28
 - **Supported Facts:** Introduces a per-interpreter GIL, so that sub-interpreters may now be created with a unique GIL per interpreter.
 - **Unsupported Inference:** None
@@ -27,7 +29,8 @@
 - **Publisher:** Python Software Foundation
 - **Title:** PEP 695 – Type Parameter Syntax
 - **URL:** https://peps.python.org/pep-0695/
-- **Publication Date:** 15-Jun-2022
+- **Source Header Date:** Created 15-Jun-2022
+- **Date Semantics:** The PEP page exposes a `Created` date; no separate publication timestamp is claimed here.
 - **Verification Date:** 2026-09-28
 - **Supported Facts:** Specifies an improved syntax for specifying type parameters within a generic class, function, or type alias.
 - **Unsupported Inference:** None
@@ -55,9 +58,9 @@
 - **Standard Output:** `{"case":"repeat","status":"passed"}\n`
 - **Standard Error:** ``
 - **Execution Environment:** Linux devbox 6.8.0 #1 SMP PREEMPT_DYNAMIC Fri Feb 20 20:38:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux, Python 3.12.13
-- **Average Execution Time:** None
+- **Average Execution Time:** NOT_COMPUTED
 - **SHA256:** 54a405488319933a8293a93646bf967dde6942968204bfa8e611ba808b793457
-- **Uncovered Conditions:** None
+- **Uncovered Conditions:** MISSING_DATA
 - **Result:** 100 / 100 specified executions passed
 
 ## A4 Topology and Index Alignment
@@ -67,7 +70,7 @@
 MISSING_DATA fields correctly populated where external data or specific metrics were not extracted in the pipeline logs.
 
 ## 失败状态
-No errors observed. Pipeline Status: SUCCESS.
+No command failure was observed in the recorded A2/A3 commands. Pipeline Status: SUCCESS within the recorded scope; MISSING_DATA / NOT_COMPUTED fields remain explicit.
 
 ## 越界检查
 No files outside RESEARCH, INDEX.md, or PATCH_INDEX.md were created or permanently modified.
