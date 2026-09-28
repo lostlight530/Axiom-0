@@ -1380,3 +1380,29 @@ MONTH_OPEN
 - Historical rewrite required: NO.
 - 2026-09-28 Daily consumed by A1: NO.
 - New runtime/scientific-validation/source-independence credit: NONE.
+## A2_CURRENT_MONTH_RELATION_2026-09-28
+
+- Logical maintenance date: 2026-09-28
+- Exact A1-merged base main: `0efdb2782e30ecc66cb9b31099bc558c132f2f7b`
+- Current-month relation window: 2026-09-01 through 2026-09-28
+- A1 coverage through 2026-09-27: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Plasma
+- 2026-09-28 Daily A1-A4 is present.
+- PEP 701, PEP 684 and PEP 695 dates are retained as PEP-page Created header dates, not silently promoted to distinct publication timestamps.
+- A2 scanner/consistency exit codes are 0 within recorded scope; D_KL = 0 remains exact-input/command scoped.
+- A3 records 100/100 specified executions passed. Average execution time is NOT_COMPUTED; uncovered conditions remain MISSING_DATA; 100/100 does not fill either gap.
+- Pipeline SUCCESS applies to the recorded commands and scope only.
+
+### Current-cut boundary
+- Created date != separately verified publication date.
+- D_KL = 0 != universal zero entropy.
+- 100/100 specified executions != untested-condition coverage.
+- MISSING_DATA / NOT_COMPUTED remain first-class evidence states.
+- Any other 2026-09-28 periodic Plasma task not present at this review cut is NOT_YET_OBSERVED_AT_THIS_CHECK, not missing/failed.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A2 disposition
+- 2026-09-28 Plasma relation: DAILY_INTEGRATED_WITH_DATE_SEMANTICS_AND_EXPLICIT_GAPS.
+- Historical rewrite: NO.
+- New runtime/scientific-validation/source-independence credit: NONE.
