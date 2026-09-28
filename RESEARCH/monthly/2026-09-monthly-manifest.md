@@ -1354,3 +1354,29 @@ MONTH_OPEN
 - 2026-09-27 Plasma relation: DAILY_PLUS_A5_INTEGRATED_WITH_EXPLICIT_GAPS.
 - New runtime/scientific-validation/source-independence credit: NONE.
 - Historical rewrite: NO.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-28
+
+- Logical maintenance date: 2026-09-28
+- Cutoff: 2026-09-27
+- Exact base main: `fd1884aac2928cdbd49c9c5d3538a8cbdc8a081b`
+- 2026-09-28 Daily A1-A4 is already visible on current main but intentionally excluded from A1 and reserved for A2.
+
+### Coverage decisions
+- 2026-09-01 through 2026-09-26: REVIEWED / RETAIN_MERGED_OWNER_DECISIONS.
+- 2026-09-27 Daily A1-A4: REVIEWED / RETAIN_SCOPE_BOUNDED_EXECUTION_EVIDENCE.
+- W39 A5 current-main reconciliation: REVIEWED / RETAIN_7_OF_7_PATH_PRESENCE_WITH_EXPLICIT_MISSING_DATA_NOT_COMPUTED_FIELDS.
+- No D_KL or 100/100 result is widened beyond its recorded inputs/commands.
+
+### Boundary
+- path presence != complete evidence fields.
+- D_KL = 0 != universal zero entropy.
+- 100/100 specified executions != untested-condition coverage.
+- current 2026-09-28 path presence != A1 evidence eligibility.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- Coverage through N-1 = 2026-09-27: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- 2026-09-28 Daily consumed by A1: NO.
+- New runtime/scientific-validation/source-independence credit: NONE.
