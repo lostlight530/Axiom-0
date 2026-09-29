@@ -1406,3 +1406,29 @@ MONTH_OPEN
 - 2026-09-28 Plasma relation: DAILY_INTEGRATED_WITH_DATE_SEMANTICS_AND_EXPLICIT_GAPS.
 - Historical rewrite: NO.
 - New runtime/scientific-validation/source-independence credit: NONE.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-29
+
+- Logical maintenance date: 2026-09-29
+- Cutoff: 2026-09-28
+- Exact base main: `441437f39cf322a48be33d8a1a27b9f9b4c44ae3`
+- 2026-09-29 Daily A1-A4 is visible on current main but intentionally excluded from A1 and reserved for A2.
+
+### Coverage decisions
+- Through 2026-09-27: REVIEWED / RETAIN_EXISTING_OWNER_DECISIONS.
+- 2026-09-28 Daily A1-A4: REVIEWED / RETAIN_SCOPE_BOUNDED_EXECUTION_EVIDENCE.
+- PEP page dates remain Created-header semantics from the 2026-09-28 correction relation.
+- D_KL = 0 and 100/100 specified executions remain exact-input/command scoped; MISSING_DATA / NOT_COMPUTED remain first-class states where recorded.
+
+### Boundary
+- Created date != separately verified publication date.
+- D_KL = 0 != universal zero entropy.
+- 100/100 specified executions != untested-condition coverage.
+- current 2026-09-29 path presence != A1 evidence eligibility.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- Coverage through N-1 = 2026-09-28: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- 2026-09-29 Daily consumed by A1: NO.
+- New runtime/scientific-validation/source-independence credit: NONE.
