@@ -1432,3 +1432,32 @@ MONTH_OPEN
 - Historical rewrite required: NO.
 - 2026-09-29 Daily consumed by A1: NO.
 - New runtime/scientific-validation/source-independence credit: NONE.
+
+## A2_CURRENT_MONTH_RELATION_2026-09-29
+
+- Logical maintenance date: 2026-09-29
+- Exact A1-merged base main: `9b4d9fcb97423b72313a3a3345027a6cd3c16e32`
+- Current-month relation window: 2026-09-01 through 2026-09-29.
+- A1 coverage through 2026-09-28: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — Plasma
+- 2026-09-29 Daily A1-A4 is present.
+- A1 source objects are PEP 701, PEP 695 and PEP 692. The native Daily labels their header dates as `Publish Date`; the established repository correction from 2026-09-28 remains controlling: these PEP-page date values are treated as source-header `Created` dates unless a distinct publication timestamp is separately verified.
+- The native `Publisher` fields contain author identities. They are retained as source-header author identity, not used as independent publisher-lineage evidence.
+- A2 scanner and topology/consistency commands report exit code 0 within their recorded scope; D_KL = 0 remains exact-input/command scoped.
+- A3 reports 100/100 specified executions passed and an average execution time of 0.00453s for the recorded run.
+- `Actual Input Range: None`, `Uncovered Conditions: None` and the top-level `缺失数据 None` do not establish complete coverage. Where no explicit range/coverage inventory is retained, the governing relation is MISSING_DATA / NOT_ESTABLISHED rather than proof that no gap exists.
+
+### Forward correction
+- PEP_HEADER_CREATED_DATE != SEPARATELY_VERIFIED_PUBLICATION_TIMESTAMP.
+- AUTHOR_HEADER_IDENTITY != PUBLISHER_LINEAGE.
+- D_KL = 0 != UNIVERSAL_ZERO_ENTROPY.
+- 100/100_SPECIFIED_EXECUTIONS != UNTESTED_CONDITION_COVERAGE.
+- NONE_LABEL != PROOF_OF_NO_MISSING_DATA.
+- The merged native Daily remains immutable point-in-time evidence; this relation corrects interpretation forward.
+
+### A2 disposition
+- 2026-09-29 Plasma relation: DAILY_INTEGRATED_WITH_DATE_IDENTITY_AND_COVERAGE_CORRECTION.
+- Historical rewrite: NO.
+- New runtime/scientific-validation/source-independence credit: NONE.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
