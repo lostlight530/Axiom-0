@@ -194,3 +194,4 @@ This patch index remains a navigation surface only.
 - [2026-09-27 Pipeline Manifest](RESEARCH/daily/2026-09-27-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-28 Pipeline Manifest](RESEARCH/daily/2026-09-28-pipeline-manifest.md) - Status: SUCCESS
 - [2026-09-29 Pipeline Manifest](RESEARCH/daily/2026-09-29-pipeline-manifest.md) - Status: SUCCESS
+- [2026-09-30 Pipeline Manifest](RESEARCH/daily/2026-09-30-pipeline-manifest.md) - Status: SUCCESS
