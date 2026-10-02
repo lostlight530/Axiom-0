@@ -79,3 +79,46 @@ INDEX_ALIGNMENT_PASS
 - Historical rewrite: NO
 - Extra audit executed: NO
 - New runtime/test/hypothesis/scientific-validation credit beyond PR #322: NONE
+
+
+## A1_FULL_COVERAGE_2026-10-02
+
+- Logical maintenance date: 2026-10-02
+- Exact base main: `f9a0d50efe518a586218d627de250493462e3b7f`
+- Coverage window: 2026-10-01
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- A1 rule: REVIEWED != MODIFIED
+- Extra audit executed: NO
+- Test/scanner replay: NOT_PERFORMED
+- Historical rewrite: NO
+
+### Coverage decisions
+
+| In-scope October-1 surface | Decision | Preserved boundary |
+| --- | --- | --- |
+| `RESEARCH/daily/2026-10-01-pipeline-manifest.md` | REVIEWED / NO_FOLLOW_UP | native recorded source/scanner/test claims remain scoped to the recorded run |
+| `INDEX.md` and `PATCH_INDEX.md` updates associated with the native Daily | REVIEWED / NO_FOLLOW_UP | topology/index alignment is routing evidence, not universal repository correctness |
+| October monthly relational owner through the 2026-10-01 A2 section | REVIEWED / NO_FOLLOW_UP | month-to-date owner is not a natural-month A6 final |
+| 2026-10-01 external Independent-GPT review and source-scope correction | REVIEWED / NO_FOLLOW_UP | audit/correction plane remains separate from native Plasma execution |
+
+### A1 disposition
+
+- Coverage completeness: COMPLETE_FOR_2026-10-01
+- Decision completeness: COMPLETE_FOR_2026-10-01
+- Original Daily mutation required: NO
+- W40 A5 final: NOT_DUE
+- October A6 natural-month final: NOT_DUE
+- New execution/test/scientific-validation credit: NONE
+
+```text
+D_KL_0_WITHIN_RECORDED_SCOPE
+!= UNIVERSAL_ZERO_ENTROPY
+
+INDEX_ALIGNMENT
+!= UNIVERSAL_CORRECTNESS
+
+AUDIT_REVIEW
+!= NATIVE_EXECUTION
+```
+
+A1 result: VERIFIED_FULL_COVERAGE_THROUGH_2026-10-01.
