@@ -226,3 +226,45 @@ MISSING_DATA
 - 2026-10-02 Plasma Daily relation: INTEGRATED
 - New execution/test/scientific-validation credit created by this successor: NONE
 - Durable protocol closure: NOT_AUTHORIZED
+
+
+## A1_FULL_COVERAGE_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact base main: `ed3f2f97b6b93d5434082bbe3a0d96aeb801480c`
+- Coverage window: 2026-10-01 through 2026-10-02
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- Historical rewrite: NO
+- Extra audit executed: NO
+- Test/scanner replay by maintenance: NOT_PERFORMED
+
+### Coverage decisions
+
+| Surface | Decision | Boundary |
+| --- | --- | --- |
+| `RESEARCH/daily/2026-10-01-pipeline-manifest.md` | REVIEWED / NO_FOLLOW_UP | recorded D_KL/tests remain scoped |
+| `RESEARCH/daily/2026-10-02-pipeline-manifest.md` | REVIEWED / NO_FOLLOW_UP | late delivery retained; 100/100 specified executions != universal coverage |
+| `INDEX.md` | REVIEWED / NO_FOLLOW_UP | current index relation retained |
+| `PATCH_INDEX.md` | REVIEWED / NO_FOLLOW_UP | current patch-index relation retained |
+| predecessor A2 + 2026-10-02 successor reconciliation in this monthly owner | REVIEWED / RETAIN | later delivery does not rewrite earlier no-path observation |
+| W40 A5 / October A6 final | NOT_DUE | current week/month remain open |
+
+### A1 disposition
+
+- Coverage completeness: COMPLETE_THROUGH_2026-10-02_AT_THIS_CHECK
+- Decision completeness: COMPLETE_THROUGH_2026-10-02_AT_THIS_CHECK
+- Current 2026-10-02 native Plasma delivery: INCLUDED
+- Earlier A2 point-in-time no-path statement: PRESERVED
+- New execution/test/hypothesis/scientific-validation credit: NONE
+- Durable protocol closure: NOT_AUTHORIZED
+
+```text
+LATER_NATIVE_DELIVERY
+!= EARLIER_PATH_AVAILABILITY
+
+100_OF_100_SPECIFIED_EXECUTIONS
+!= UNIVERSAL_BEHAVIOR_COVERAGE
+
+MISSING_DATA
+!= INFERRED_SUCCESS
+```
