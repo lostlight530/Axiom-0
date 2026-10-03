@@ -360,3 +360,59 @@ A1_N_MINUS_1_CUTOFF
 - W40 settlement: NOT_DUE
 - October natural-month final: NOT_DUE
 - A2 dependency: MUST_FRESH_READ_THIS_A1_MERGED_MAIN_AND_CONSUME_LATE_NATIVE_INPUT
+
+
+## A2_SUCCESSOR_CURRENT_MONTH_RELATION_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact successor A1-merged base main: `9806352eb1db25273a0679aacc7358d1740bc440`
+- Current month relation window: 2026-10-01 through 2026-10-03
+- Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- Predecessor early A2 no-path observation: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Later native input now present: `RESEARCH/daily/2026-10-03-pipeline-manifest.md`
+- `INDEX.md` and `PATCH_INDEX.md` now retain the 2026-10-03 native path.
+- Historical rewrite: NO
+- Scanner/test/runtime replay by this maintenance pass: NOT_PERFORMED
+
+### Late native evidence now visible
+
+- A2 bounded audit records D_KL = 0.0 and successful command exits within its documented scope.
+- A3 records 100 / 100 specified executions passed. This does not establish universal behavior coverage.
+- Exception Stack: MISSING_DATA.
+- Actual Input Range: MISSING_DATA.
+- Standard Error: MISSING_DATA.
+- Average Execution Time: NOT_COMPUTED.
+- Uncovered Conditions: MISSING_DATA.
+
+### Current semantic reconciliation
+
+- The same native manifest later contains `## 缺失数据` followed by `None`.
+- This conflicts with the explicit field-level MISSING_DATA / NOT_COMPUTED observations above.
+- Current interpretation: CURRENT_ARTIFACT_SEMANTIC_INCONSISTENCY_RECORDED.
+- The original native body is preserved. This A2 does not rewrite task-time execution evidence into a cleaner historical story.
+
+```text
+EARLIER_A2_PATH_NOT_OBSERVED
++
+LATER_NATIVE_DELIVERY_PRESENT
+=
+CURRENT_RELATION_UPDATED
+
+FIELD_LEVEL_MISSING_DATA
+!= SUMMARY_NONE
+
+100_OF_100_SPECIFIED_EXECUTIONS
+!= UNIVERSAL_BEHAVIOR_COVERAGE
+
+CORRECTION
+!= HISTORY_REWRITE
+```
+
+### Successor A2 disposition
+
+- October version state: OPEN
+- Relationship continuity: UPDATED_WITH_2026_10_03_LATE_NATIVE_DELIVERY
+- Native manifest semantic inconsistency: OPEN / EXPLICITLY_RECORDED
+- W40 A5 settlement: NOT_DUE
+- October A6 final seal: NOT_DUE
+- New runtime/test/hypothesis/scientific-validation credit from maintenance: NONE
