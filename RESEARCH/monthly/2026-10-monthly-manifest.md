@@ -575,3 +575,150 @@ N_DAY_2026_10_04_EXCLUDED
 =
 A1_COMPLETE_FOR_2026_10_04
 ```
+
+## A2 CURRENT MONTH RELATION — 2026-10-04
+
+- Repository: `lostlight530/Axiom-0`
+- Plane: `A2 / CURRENT_MONTH_RELATIONAL_VERSION`
+- Logical maintenance date: `2026-10-04`
+- Exact A1-merged base main: `3485ab33f69d3a3dbdfee6ab29f57467317a1424`
+- Required predecessor A1: PR #338 / MERGED
+- Fresh-read after A1 merge: YES
+- Current relation window: 2026-10-01..2026-10-04
+- Owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- System: Axiom / Plasma
+- Historical rewrite: NO
+- Native replay: NO
+- Extra scanner/test/runtime execution: NOT_PERFORMED
+- Duplicate native credit: NONE
+
+### A1 dependency
+- A1 #338 is present on this base.
+- A1 covers 2026-10-01..2026-10-03.
+- A2 consumes 2026-10-04 N-day input.
+- Prior A2 records remain point-in-time history.
+- Later current state does not rewrite prior task-time state.
+
+### Inherited 2026-10-01 relation
+- Plasma 10/1 Daily relation retained.
+- Fixture-scoped D_KL remains scoped.
+- Specified-execution success remains bounded.
+- Field-level missingness remains visible.
+- No scientific-validation credit added.
+
+### Inherited 2026-10-02 relation
+- Early A1/A2 chronology retained.
+- D30 #327 remains retrospective audit evidence.
+- Late Daily #328 chronology remains explicit.
+- Successor A2 #329 remains point-in-time reconciliation.
+- Later Daily presence does not establish earlier A2 availability.
+
+### Inherited 2026-10-03 relation
+- Early A1/A2 chronology retained.
+- Later Daily #332 chronology retained.
+- Successor A1/A2 #333/#334 retained.
+- Field-level MISSING_DATA remains explicit.
+- Summary None does not erase field-level missingness.
+
+### 2026-10-04 native relation consumed
+- Plasma Daily #336 is merged.
+- Daily status is SUCCESS within the declared scope.
+- Network status is ONLINE in the Daily artifact.
+- Original W40 A5 Draft #335 is closed unmerged.
+- Original #335 schedule-order cut remains delivery history.
+- Rebuilt W40 A5 #337 is merged from post-Daily main.
+- W40 now has seven repository-visible Daily manifests.
+- Weekly D_KL retains seven fixture-scoped 0.0 values.
+- Seven 0.0 values do not establish global convergence.
+- W40 A5 is current and merged.
+- October natural-month A6 final remains NOT_DUE.
+
+### Current relational synthesis
+- Plasma Daily producer state is current through 2026-10-04.
+- W40 A5 current owner is merged.
+- Earlier #335 timing remains historical and is not rewritten.
+- Current #337 does not retroactively make #335 input available.
+- Daily field-level missingness remains visible across October history.
+- 100/100 specified execution observations remain scope-bounded.
+- October A6 final seal remains not due.
+- No protected core path change is created by this A2.
+- No runtime/test credit is added by maintenance.
+
+### Relation matrix
+| Surface | A2 state | Boundary |
+| --- | --- | --- |
+| 2026-10-01 | RETAINED | point-in-time history |
+| 2026-10-02 | RETAINED | late-delivery chronology preserved |
+| 2026-10-03 | RETAINED | successor chronology preserved |
+| 2026-10-04 | CONSUMED | Daily + W40 A5 relation |
+| Rolling October owner | OPEN / CURRENT | not natural-month final |
+| Prior A1 | CONSUMED | N-1 foundation |
+| Prior A2 | PRESERVED | no overwrite |
+| D30 | SEPARATE | retrospective audit plane |
+| A6 final | NOT_DUE | natural-month boundary not closed |
+
+### Evidence invariants
+- LATER_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE.
+- CURRENT_PATH_COMPLETE != HISTORICAL_EXECUTION_COMPLETE.
+- LATER_SUCCESS != EARLIER_SUCCESS.
+- CURRENT_REPOSITORY_STATE != TASK_TIME_STATE.
+- MERGED_ARTIFACT != SUCCESSFUL_EXECUTION.
+- MERGED_MONTHLY_ARTIFACT != NATURAL_MONTH_CLOSE.
+- DUE_DATE != EXECUTION.
+- SCHEDULED != EXECUTED.
+- SAME_DATE != SAME_STATE.
+- SOURCE_CODE != EXECUTED_BEHAVIOR.
+- TEST_SOURCE != TEST_EXECUTION.
+- NATIVE_TASK_DELIVERY != A1_MAINTENANCE.
+- A1_MAINTENANCE != A2_RELATIONAL_VERSION.
+- A2_RELATIONAL_VERSION != PERIODIC_AUDIT.
+- PERIODIC_AUDIT != DURABLE_GOVERNANCE.
+
+### Repository-specific boundaries
+- D_KL_0_WITHIN_FIXTURE != GLOBAL_CONVERGENCE.
+- 100_OF_100_SPECIFIED_EXECUTIONS != UNIVERSAL_BEHAVIOR_COVERAGE.
+- FIELD_LEVEL_MISSING_DATA != SUMMARY_NONE.
+- CURRENT_A5_SUCCESS != EARLIER_A5_INPUT_AVAILABLE.
+- PROVISIONAL_MONTHLY_AUDIT != NATURAL_MONTH_FINAL.
+- A5 current-week contract differs from previous-week contracts in other repositories.
+- A6 final requires natural coverage closure and complete inputs.
+
+### Validation checklist
+- A1 merged before A2 branch: YES.
+- Fresh post-A1 base used: YES.
+- 2026-10-01 relation preserved: YES.
+- 2026-10-02 relation preserved: YES.
+- 2026-10-03 relation preserved: YES.
+- 2026-10-04 native relation consumed: YES.
+- Earlier schedule-order state rewritten: NO.
+- Closed-unmerged #335 promoted: NO.
+- Duplicate native credit: NO.
+- Duplicate test credit: NO.
+- Runtime execution invented: NO.
+- Scanner execution invented: NO.
+- Missing data normalized away: NO.
+- Weekly lifecycle rewritten: NO.
+- Natural-month final manufactured: NO.
+- Periodic audit manufactured: NO.
+- Durable governance promoted: NO.
+- Parallel monthly owner created: NO.
+
+### A2 disposition
+- Current October relation: CURRENT_THROUGH_2026-10-04.
+- October version state: OPEN.
+- W40 A5: MERGED / CURRENT.
+- October A6 final: NOT_DUE.
+- Historical chronology: PRESERVED.
+- Native producer credit: RETAINED_WITHOUT_DUPLICATION.
+- Field-level missingness: PRESERVED.
+- New maintenance research credit: NONE.
+- New runtime credit: NONE.
+- New audit credit: NONE.
+- New governance credit: NONE.
+- Next A1 must fresh-read this merged main.
+
+```text
+MERGED_A1 + FRESH_MAIN_READ + 2026_10_04_NATIVE_INPUT
+= CURRENT_MONTH_RELATION_THROUGH_2026_10_04
+CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
+```
