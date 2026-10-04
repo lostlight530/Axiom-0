@@ -1,5 +1,5 @@
 > [!NOTE]
-> **Current architecture interpretation — 2026-09-18**
+> **Current architecture interpretation — 2026-10-04**
 > - **Subject class:** `METHOD`
 > - **Role:** Current methodology: **Historical evidence reconciliation**
 > - **Authority:** Repository-native method authority for the procedure, assumptions, thresholds, evidence treatment and limitations expressed by this file
@@ -11,7 +11,7 @@
 
 # Historical evidence reconciliation
 
-- Method version: 2026-09-18
+- Method version: 2026-10-04
 - Governing decision: ADR-016
 - Scope: `RESEARCH/**`, periodic aggregation, source chronology, and current interpretation
 
@@ -22,6 +22,8 @@ Reconstruct the strongest supportable interpretation of repository research hist
 ## Inputs
 
 - expected logical date or ISO period
+- exact base revision used by the run
+- exact branch/ref identity used by the run
 - current repository paths
 - original artifact status/evidence fields
 - commit/merge history when available and material
@@ -36,6 +38,9 @@ Reconstruct the strongest supportable interpretation of repository research hist
 3. Read original status/evidence fields before interpreting later files.
 4. Keep distinct:
    - logical date/period
+   - exact base revision
+   - branch/ref identity
+   - sibling-branch visibility versus visibility from the observed branch/ref
    - execution/check time
    - source event/publication time
    - generation evidence
@@ -45,15 +50,19 @@ Reconstruct the strongest supportable interpretation of repository research hist
    - substantive evidence completeness
 5. Preserve `MISSING_DATA`, `NOT_COMPUTED`, blocked states, rejected observations, and unresolved hypotheses.
 6. Check temporal causality for material observations. If the recorded source event occurs after the persisted observation/check time, use `TEMPORAL_PROVENANCE_CONFLICT` until stronger history resolves it.
-7. If later evidence resolves only one dimension, update only that dimension.
-8. When a historical claim is materially over-strong, narrow current interpretation using stronger evidence rather than pretending the stronger evidence existed at the original run time.
-9. Use reconciliation/errata when silent editing would erase meaningful provenance.
-10. State what remains historical fact, what current interpretation supersedes, and what remains unresolved.
-11. For an incomplete natural month, keep the stage provisional; never synthesize future dates to produce a final seal.
+7. If an input exists only on a sibling branch, record it as unavailable to the observed branch/ref unless the run explicitly fetched that sibling state.
+8. If later evidence resolves only one dimension, update only that dimension.
+9. When a historical claim is materially over-strong, narrow current interpretation using stronger evidence rather than pretending the stronger evidence existed at the original run time.
+10. Use reconciliation/errata when silent editing would erase meaningful provenance.
+11. State what remains historical fact, what current interpretation supersedes, and what remains unresolved.
+12. For an incomplete natural month, keep the stage provisional; never synthesize future dates to produce a final seal.
 
 ## Delivery-state vocabulary
 
 - `AVAILABLE_AT_SNAPSHOT`
+- `BRANCH_VISIBLE_AT_SNAPSHOT`
+- `SIBLING_BRANCH_PRESENT_BUT_NOT_VISIBLE`
+- `EVENTUALLY_VISIBLE_ON_MAIN`
 - `LATE_AVAILABLE_AFTER_SNAPSHOT`
 - `BLOCKED_AT_EXECUTION`
 - `GENERATED_BUT_NOT_DELIVERED`
@@ -125,3 +134,22 @@ That label belongs to its recorded cutoff only. Current August closure, current 
 This method reconciles documentary history. It does not recreate missing execution, manufacture absent metrics, or alter `CODE/**` behavior.
 
 A historical example inside this methodology is not a live status dashboard. Later current state must be established from later evidence rather than from the example's cutoff label.
+
+
+## 2026-10-04 branch-snapshot reference case
+
+The W40 Daily/Weekly sequence is the current reference case for branch-relative evidence availability.
+
+1. Record the Weekly run's base revision and branch/ref.
+2. Record the Daily branch separately even when it shares the same base revision.
+3. Do not treat sibling-branch content as Weekly input unless that content was actually visible from the Weekly run's observed state.
+4. Preserve the early Weekly disposition as a point-in-time record.
+5. After the Daily merges, rebuild or reconcile the Weekly from fresh current `main` when the contract requires the new input.
+6. Preserve both states:
+
+```text
+EARLY_WEEKLY_SNAPSHOT = INPUT_NOT_VISIBLE_AT_THAT_CUT
+LATER_WEEKLY_SUCCESSOR = INPUT_VISIBLE_ON_POST_DAILY_MAIN
+```
+
+Neither state erases the other. This procedure is documentary reconciliation; it does not replay the original task or manufacture missing execution.

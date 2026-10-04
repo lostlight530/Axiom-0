@@ -22,7 +22,7 @@ KL, structural, execution, index, document, automation, and runner evidence are 
 
 ## Task identity and concurrency
 
-A maintenance run is identified by repository, task/surface, logical period when applicable, producer, exact base `main` revision, and run identifier when one exists.
+A maintenance run is identified by repository, task/surface, logical period when applicable, producer, exact base `main` revision, exact observed branch/ref when branch-relative availability matters, and run identifier when one exists.
 
 Before any write:
 
@@ -95,3 +95,34 @@ For a justified repair:
 Do not push directly to `main`, rewrite history, force-push, auto-merge, or claim PASS for an unexecuted check.
 
 Done requires aligned maintenance links/indexes, preserved negative evidence, a clean aggregate diff against current `main`, explicit executed/unexecuted validation, and no hidden scope expansion.
+
+
+## Revision / branch snapshot discipline — 2026-10-04 special calibration
+
+When task correctness depends on whether an upstream artifact was available at execution time, retain all of the following when material:
+
+- base revision;
+- observed branch/ref identity;
+- upstream task/period identity;
+- whether the upstream path was visible on that observed branch/ref;
+- whether it existed only on a sibling branch;
+- later merge/current-main visibility;
+- successor/reconciliation identity.
+
+Do not collapse:
+
+```text
+SAME_BASE_REVISION
+!= SAME_BRANCH_STATE
+
+OPEN_PR_EXISTS
+!= INPUT_VISIBLE_TO_SIBLING_RUN
+
+LATER_MERGED_PATH
+!= EARLIER_INPUT_AVAILABLE
+
+SUCCESSOR_REBUILD
+!= ORIGINAL_RUN_SUCCESS
+```
+
+This rule governs maintenance/evidence interpretation only. It does not require new runtime code, new scheduler behavior, or history rewriting.

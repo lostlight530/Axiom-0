@@ -1,5 +1,5 @@
 > [!NOTE]
-> **Current architecture interpretation — 2026-09-18**
+> **Current architecture interpretation — 2026-10-04**
 > - **Subject class:** `DECISION`
 > - **Role:** Current architecture decision: **Temporal evidence availability is multi-dimensional**
 > - **Authority:** Current repository-native design rationale and constraint for the architecture surface expressed by this decision
@@ -37,15 +37,22 @@ When the dimensions materially differ, Axiom evidence records keep these states 
 2. `EXECUTION_STATE`
 3. `GENERATION_EVIDENCE`
 4. `DELIVERY_OR_COMMIT_STATE`
-5. `AGGREGATION_SNAPSHOT_VISIBILITY`
-6. `CURRENT_REPOSITORY_PRESENCE`
-7. `SUBSTANTIVE_EVIDENCE_COMPLETENESS`
+5. `BASE_REVISION`
+6. `BRANCH_OR_REF_IDENTITY`
+7. `AGGREGATION_SNAPSHOT_VISIBILITY`
+8. `BRANCH_SNAPSHOT_VISIBILITY`
+9. `EVENTUAL_MAIN_VISIBILITY`
+10. `CURRENT_REPOSITORY_PRESENCE`
+11. `SUBSTANTIVE_EVIDENCE_COMPLETENESS`
 
 A later repository state does not retroactively rewrite an earlier execution-state fact.
 
 Therefore:
 
 - `CURRENT_REPOSITORY_PRESENCE = PRESENT` does not imply `AVAILABLE_AT_ORIGINAL_SNAPSHOT`
+- visibility on a sibling branch does not imply visibility from the branch/ref actually used by an aggregation run
+- `EVENTUAL_MAIN_VISIBILITY = PRESENT` does not retroactively change `BRANCH_SNAPSHOT_VISIBILITY` at the earlier cut
+- two branches sharing the same base revision remain separate evidence snapshots after they diverge
 - current path presence does not imply original execution success
 - path completeness does not imply evidence completeness
 - `MISSING_AT_SNAPSHOT` does not imply `NEVER_GENERATED` unless generation history independently supports that conclusion
@@ -93,3 +100,33 @@ Repository history becomes more explicit, but delivery order, path presence, exe
 ## Evidence boundary
 
 This ADR governs evidence interpretation only. It does not alter `CODE/**` behavior or create an implementation capability.
+
+## 2026-10-04 special calibration — branch-relative visibility
+
+The 2026-10-04 W40 Plasma sequence supplied a concrete repository-native calibration for this decision.
+
+- Weekly Draft PR `#335` and Daily PR `#336` were created from the same then-current base revision.
+- The Weekly branch could not consume Daily content that existed only on the sibling Daily branch.
+- The Weekly record therefore retained a schedule-order / availability boundary at its own snapshot.
+- Daily PR `#336` later merged to `main`.
+- Weekly PR `#335` remained closed-unmerged delivery history.
+- Weekly PR `#337` was rebuilt from the post-Daily current `main` and then merged.
+- The later successful current Weekly does not make the earlier Weekly branch snapshot retroactively complete.
+
+The durable interpretation is:
+
+```text
+SAME_BASE_REVISION
+!= SAME_BRANCH_SNAPSHOT
+
+SIBLING_BRANCH_PATH_PRESENT
+!= INPUT_VISIBLE_TO_THIS_RUN
+
+LATER_MAIN_VISIBILITY
+!= EARLIER_BRANCH_VISIBILITY
+
+CURRENT_SUCCESSOR_SUCCESS
+!= EARLIER_DRAFT_INPUT_AVAILABLE
+```
+
+This calibration strengthens the existing temporal-evidence decision; it does not create a new runtime capability or rewrite PR `#335`.

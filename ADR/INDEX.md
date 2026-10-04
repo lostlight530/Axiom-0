@@ -1,7 +1,7 @@
 # Axiom-0 Architecture Decision Index
 
 Status: architecture-decision navigation and authority map  
-Current calibration: 2026-09-17
+Current calibration: 2026-10-04
 
 `ADR/**` records durable repository decisions. ADR numbering is an identifier/order convention; it is not a supersession chain unless an ADR explicitly says so.
 
@@ -71,3 +71,14 @@ The dated audits below remain useful for their own cutoffs but are not current A
 
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
+
+
+## 2026-10-04 special calibration
+
+ADR-016 now explicitly includes base-revision, branch/ref, branch-snapshot visibility and eventual-main visibility as separate evidence dimensions. The change is a clarification of the accepted temporal-evidence decision, not a new architectural capability.
+
+```text
+same base != same branch snapshot
+sibling branch presence != observed-input availability
+later main presence != earlier branch visibility
+```
