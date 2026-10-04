@@ -1,7 +1,7 @@
 # Axiom-0 Methodology Index
 
 Status: procedure and implementation-boundary map  
-Current calibration: 2026-09-17
+Current calibration: 2026-10-04
 
 `METHODOLOGY/**` describes how a concrete repository property is measured, interpreted, or reconciled. A method does not create a runtime capability merely by existing.
 
@@ -23,7 +23,7 @@ Current calibration: 2026-09-17
 | [METH-012](./METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md) | Distinguish observed metrics from resource enforcement | enforcement `NOT_IMPLEMENTED` |
 | [METH-013](./METH-013-STRICT-DATA-DEDUPLICATION.md) | Exact canonical-content identity; no semantic auto-dedup | digest implemented, dedup engine `NOT_IMPLEMENTED` |
 | [METH-014](./METH-014-GROUNDEDNESS-RULE.md) | Claim/source/implementation groundedness review | documentary/evidence |
-| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile historical/periodic evidence without retroactivity | retained evidence lifecycle |
+| [METH-015](./METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md) | Reconcile historical/periodic evidence and branch-snapshot visibility without retroactivity | retained evidence lifecycle |
 
 ## Method contract
 
@@ -74,3 +74,13 @@ A methodology cannot silently change a runtime constant, promote research to imp
 
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
+
+
+## 2026-10-04 special calibration
+
+METH-015 now treats exact base revision and exact branch/ref identity as first-class reconciliation inputs. A sibling branch may contain a path that was not available to the run being reconstructed.
+
+```text
+BRANCH_SNAPSHOT_VISIBILITY
+!= EVENTUAL_MAIN_VISIBILITY
+```
