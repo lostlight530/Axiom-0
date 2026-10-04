@@ -1,5 +1,9 @@
 # Contributing
 
+## Open research contributions
+
+For research-method or positioning changes, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Implementation, Specification, Methodology, ADR, evidence, and historical contracts remain authoritative for their own surfaces.
+
 Axiom-0 welcomes bounded, reviewable contributions to its reference implementation, tests, specification, ADRs, methodology, evidence documentation, and repository infrastructure.
 
 ## Start from the owning contract
