@@ -877,3 +877,156 @@ OCTOBER_1_TO_4_FULL_COVERAGE
 + N_DAY_2026_10_05_EXCLUDED
 = A1_COMPLETE_FOR_2026_10_05
 ```
+
+## A2 CURRENT MONTH RELATION — 2026-10-05 — PLASMA
+
+- Repository: `lostlight530/Axiom-0`
+- Plane: `A2 / CURRENT_MONTH_RELATIONAL_VERSION`
+- Logical maintenance date: `2026-10-05`
+- Exact A1-merged base main: `5fb8e3530a39f49ef8de794e122c4e06c24a2246`
+- Required predecessor A1: PR #343 / MERGED
+- Fresh-read after A1 merge: YES
+- Current month relation window: `2026-10-01..2026-10-05`
+- Owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- Native system: Axiom / Plasma
+- Historical rewrite: NO
+- Native task replay: NO
+- Runtime/network/test execution by maintenance: NOT_PERFORMED
+- Duplicate native credit: NONE
+
+### 1. A1 dependency consumption
+- A1 #343 is present on this base.
+- A1 supplies complete MonthStart→2026-10-04 coverage.
+- A2 does not rerun A1.
+- A2 consumes 2026-10-05 native/current repository state.
+- Prior A1/A2/Special records remain point-in-time history.
+- Open Research framework relation from A1 remains part of the current repository model.
+
+### 2. Inherited 2026-10-01 relation
+- 10/1 scoped D_KL relation retained.
+- New A2 credit from inheritance: NONE.
+
+### 3. Inherited 2026-10-02 relation
+- 10/2 late-delivery/D30 chronology retained.
+- New A2 credit from inheritance: NONE.
+
+### 4. Inherited 2026-10-03 relation
+- 10/3 field-level missingness relation retained.
+- New A2 credit from inheritance: NONE.
+
+### 5. Inherited 2026-10-04 relation
+- 10/4 Daily #336, W40 A5 #337 and #340 branch-snapshot governance retained.
+- Closed-unmerged #335 remains history only.
+- Open Research framework merged on 10/4 remains current repository guidance.
+- New A2 credit from inheritance: NONE.
+
+### 6. 2026-10-05 native/current relation consumed
+- Plasma Daily A1/A2/A3/A4 PR #342 is merged for 2026-10-05.
+- Current main therefore contains today's combined Daily manifest.
+- No Weekly A5 transition is inferred solely from today's Daily.
+- ADR-016/METH-015 remain durable evidence-governance owners.
+- Same-base/sibling-branch distinctions remain controlling for historical availability.
+- No scanner/test execution is added by A2.
+
+### 7. Open Research / scholarly-submission current relation
+- OPEN_RESEARCH.md: CURRENT / PRESENT.
+- RESEARCH_TEMPLATE.md: CURRENT / PRESENT.
+- README entry point: CURRENT / PRESENT.
+- CONTRIBUTING routing: CURRENT / PRESENT.
+- Repository-native method/evidence/implementation contracts remain stronger.
+- Prospective template does not retrofit historical records.
+- Scholarly metadata remains downstream of repository truth.
+- External classifier output remains non-authoritative.
+- Publication does not equal validation.
+- Citation does not equal reproduction.
+- Metadata consistency does not equal scientific correctness.
+- Repository identity is not changed for classifier convenience.
+- Submission-oriented metadata cannot erase unknown/negative evidence.
+- Open Research itself creates no native execution credit.
+- Open Research itself creates no independent source credit.
+
+### 8. Current relational synthesis
+- Plasma Daily producer state is current through 2026-10-05.
+- W40 A5 remains current from #337.
+- Field-level missingness is not normalized away.
+- Open Research is current below Specification/ADR/Methodology/native task contracts.
+- October A6 natural-month final remains not due.
+
+### 9. Relation matrix
+| Surface | Current A2 state | Boundary |
+| --- | --- | --- |
+| 2026-10-01 | RETAINED | point-in-time history |
+| 2026-10-02 | RETAINED | audit/late-delivery chronology preserved |
+| 2026-10-03 | RETAINED | successor/history preserved |
+| 2026-10-04 | RETAINED | A1-covered relation including Open Research |
+| 2026-10-05 | CONSUMED_BY_THIS_A2 | native/current N-day relation |
+| OPEN_RESEARCH.md | CURRENT | guide below native authority |
+| RESEARCH_TEMPLATE.md | CURRENT | prospective template |
+| Rolling October owner | OPEN / CURRENT_THROUGH_2026-10-05 | not natural-month final |
+| Prior A1 | CONSUMED | full-coverage foundation |
+| Prior A2/Special | PRESERVED | no overwrite |
+
+### 10. Evidence invariants
+- LATER_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE.
+- CURRENT_PATH_COMPLETE != HISTORICAL_EXECUTION_COMPLETE.
+- LATER_SUCCESS != EARLIER_SUCCESS.
+- CURRENT_REPOSITORY_STATE != TASK_TIME_STATE.
+- SAME_DATE != SAME_STATE.
+- SOURCE_CODE != EXECUTED_BEHAVIOR.
+- TEST_SOURCE != TEST_EXECUTION.
+- PUBLICATION != VALIDATION.
+- CITATION != REPRODUCTION.
+- EXTERNAL_CLASSIFICATION != REPOSITORY_IDENTITY.
+- OPEN_RESEARCH_GUIDE != NATIVE_METHOD_CONTRACT.
+- RESEARCH_TEMPLATE != HISTORICAL_RECORD_REWRITE.
+- NATIVE_TASK_DELIVERY != A1_MAINTENANCE.
+- A1_MAINTENANCE != A2_RELATIONAL_VERSION.
+- A2_RELATIONAL_VERSION != PERIODIC_AUDIT.
+- PERIODIC_AUDIT != DURABLE_GOVERNANCE.
+
+### 11. Repository-specific boundaries
+- D_KL_0_WITHIN_FIXTURE != GLOBAL_CONVERGENCE.
+- FIELD_LEVEL_MISSING_DATA != SUMMARY_NONE.
+- SAME_BASE_REVISION != SAME_BRANCH_SNAPSHOT.
+- CURRENT_SUCCESSOR_SUCCESS != EARLIER_DRAFT_INPUT_AVAILABLE.
+
+### 12. Validation checklist
+- A1 merged before A2 branch: YES.
+- A2 base equals fresh post-A1 main: YES.
+- 10/1 inherited relation preserved: YES.
+- 10/2 inherited relation preserved: YES.
+- 10/3 inherited relation preserved: YES.
+- 10/4 inherited/Open Research relation preserved: YES.
+- 10/5 current state consumed: YES.
+- Earlier blocked/degraded state rewritten: NO.
+- Closed-unmerged history promoted: NO.
+- Duplicate native credit: NO.
+- Duplicate research/execution-window credit: NO.
+- Runtime execution invented: NO.
+- Test execution invented: NO.
+- Publication/reproduction credit invented: NO.
+- Scientific-validity promotion invented: NO.
+- Natural-month final manufactured: NO.
+- Periodic audit manufactured: NO.
+- Durable governance promoted by A2: NO.
+- Parallel monthly owner created: NO.
+
+### 13. A2 disposition
+- Current October relation: `CURRENT_THROUGH_2026-10-05`.
+- October version state: `OPEN`.
+- Open Research framework: `CURRENT / BOUNDED_BY_NATIVE_AUTHORITY`.
+- Scholarly submission relation: `CURRENT / NO_VALIDATION_PROMOTION`.
+- Natural-month final: `NOT_DUE`.
+- Historical chronology: `PRESERVED`.
+- Native producer credit: `RETAINED_WITHOUT_DUPLICATION`.
+- New maintenance research/runtime/publication credit: `NONE`.
+- Successor dependency: `FUTURE_A1_MUST_FRESH_READ_THIS_MERGED_MAIN`.
+
+```text
+MERGED_A1
++ FRESH_MAIN_READ
++ 2026_10_05_NATIVE_CURRENT_INPUT
++ OPEN_RESEARCH_CURRENT_RELATION
+= CURRENT_MONTH_RELATION_THROUGH_2026_10_05
+CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
+```
