@@ -1030,3 +1030,177 @@ MERGED_A1
 = CURRENT_MONTH_RELATION_THROUGH_2026_10_05
 CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
 ```
+
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-06 — PLASMA
+
+- Repository: `lostlight530/Axiom-0`
+- Plane: `A1 / FULL-COVERAGE MAINTENANCE`
+- Logical maintenance date: `2026-10-06`
+- Exact base main: `2fc0482a39a9c6d472716560b4f64fec226fef9f`
+- Coverage window: `2026-10-01..2026-10-05`
+- N-day boundary: `2026-10-06`
+- Owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- Native system: Plasma
+- Historical rewrite: NO
+- Native replay: NO
+- Scanner/test execution by maintenance: NOT_PERFORMED
+- Natural-month A6 final: NOT_DUE
+- New maintenance execution credit: NONE
+
+### 1. Fresh-start gate
+- Current main was re-read before branch creation.
+- Open PR overlap was checked before this write and no conflicting open PR was present.
+- The branch starts from the exact main revision recorded above.
+- Current implementation and current repository artifacts outrank earlier maintenance narration.
+- Prior A1/A2 blocks remain point-in-time maintenance records.
+- Daily A1–A4 producer artifacts remain separate from Weekly A5 and Monthly A6.
+- Task existence, execution, artifact, delivery, merge, and current path remain distinct axes.
+- Existing October monthly owner is continued rather than replaced.
+
+### 2. Coverage denominator
+- 01. 2026-10-01 combined Plasma Daily A1–A4 relation reviewed.
+- 02. 2026-10-01 scoped D_KL result reviewed within its stated fixture boundary.
+- 03. 2026-10-02 Daily relation and late-delivery chronology reviewed.
+- 04. 2026-10-02 D30 retrospective relation reviewed as non-native audit evidence.
+- 05. 2026-10-03 Daily relation reviewed.
+- 06. 2026-10-03 field-level missingness semantics reviewed.
+- 07. 2026-10-04 Daily relation reviewed.
+- 08. 2026-10-04 W40 A5 specification-audit relation reviewed.
+- 09. 2026-10-04 branch-snapshot / sibling-branch chronology reviewed.
+- 10. 2026-10-04 Open Research / template relation reviewed below native authority.
+- 11. 2026-10-05 combined Plasma Daily A1–A4 PR #342 relation reviewed.
+- 12. Rolling October monthly manifest reviewed as current maintenance owner.
+- 13. A6 natural-month closure requirement reviewed and remains not due.
+- 14. Closed-unmerged historical delivery remains distinct from current successor success.
+- 15. Negative and missing-field evidence reviewed for preservation.
+
+### 3. 2026-10-01 decision
+- Decision: `NO_FOLLOW_UP / RETAIN`.
+- Scoped D_KL evidence remains bounded to the tested fixture and assumptions.
+- D_KL equal to zero inside a fixture is not promoted to global convergence.
+- Daily stage execution evidence remains producer-owned.
+- No later maintenance relation creates additional scanner or test credit.
+- Coverage for 2026-10-01 is complete.
+
+### 4. 2026-10-02 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CHRONOLOGY`.
+- Late delivery remains distinct from task-time availability.
+- D30 retrospective maintenance remains separate from Daily producer execution.
+- Later repository completeness does not rewrite earlier availability.
+- No audit-to-native execution credit transfer is allowed.
+- Coverage for 2026-10-02 is complete.
+
+### 5. 2026-10-03 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_MISSINGNESS`.
+- Field-level missing data remains explicit.
+- Summary-level NONE is not substituted for field-level unknown or missing values.
+- Missing evidence is not normalized away to make the manifest look complete.
+- Current successor artifacts do not rewrite predecessor evidence gaps.
+- Coverage for 2026-10-03 is complete.
+
+### 6. 2026-10-04 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_RELATIONS`.
+- Daily A1–A4 and W40 A5 remain separate task identities.
+- Same base revision does not imply the same branch snapshot.
+- Closed-unmerged history remains historical and is not promoted by later successor success.
+- Open Research remains subordinate to Specification, ADR, Methodology, and native task contracts.
+- Coverage for 2026-10-04 is complete.
+
+### 7. 2026-10-05 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CURRENT_RELATION`.
+- Plasma Daily PR #342 remains the producer-owned A1/A2/A3/A4 delivery for 2026-10-05.
+- No Weekly A5 transition is inferred solely from Daily presence.
+- ADR-016 / METH-015 evidence-governance boundaries remain controlling where applicable.
+- No scanner or test run is added by this maintenance pass.
+- The prior 2026-10-05 A2 relation remains the latest pre-N relational state.
+- No correction-in-place is justified by current evidence.
+- Coverage for 2026-10-05 is complete.
+
+### 8. Artifact-class matrix
+| Surface | A1 decision | Boundary |
+| --- | --- | --- |
+| Plasma Daily A1–A4 10/1–10/5 | REVIEWED | producer-owned execution evidence |
+| W40 A5 / specification audit | REVIEWED | separate weekly identity |
+| October monthly manifest | APPEND_RELATION | current maintenance owner |
+| D30 / retrospective material | REVIEWED_IF_PRESENT | separate audit plane |
+| Prior A1/A2 blocks | RETAIN | point-in-time maintenance |
+| Open Research / template | RETAIN | subordinate and prospective |
+| ADR / Methodology | RETAIN | durable contract authority |
+| Missing / unknown fields | PRESERVE | no normalization to success |
+| Closed-unmerged history | PRESERVE | not current success |
+| 2026-10-06 Daily | BOUNDARY_ONLY | excluded from A1 consumption |
+
+### 9. N-day exclusion boundary
+- Plasma combined Daily PR #345 is merged for 2026-10-06.
+- PR #345 is visible on current main at this A1 start.
+- It belongs to the N-day producer layer.
+- It is not consumed into the 10/1–10/5 A1 denominator.
+- It is reserved for A2 after this A1 merges and main is fresh-read.
+- A1 does not infer new A5 or A6 state from the 10/6 Daily.
+- A1 does not duplicate command, scanner, test, or execution evidence from PR #345.
+
+### 10. Permanent evidence invariants
+- `TASK_EXISTS != TASK_EXECUTED`
+- `TASK_EXECUTED != ARTIFACT_DELIVERED`
+- `ARTIFACT_DELIVERED != MERGED`
+- `MERGED != CURRENT_PATH_PRESENT`
+- `CURRENT_PATH_PRESENT != ORIGINAL_EXECUTION_SUCCESS`
+- `LATER_SUCCESS != EARLIER_SUCCESS`
+- `LATER_DELIVERY != EARLIER_AVAILABILITY`
+- `CURRENT_COMPLETENESS != HISTORICAL_COMPLETENESS`
+- `SAME_BASE_REVISION != SAME_BRANCH_SNAPSHOT`
+- `SOURCE_CODE != EXECUTED_BEHAVIOR`
+- `TEST_SOURCE != TEST_EXECUTION`
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`
+- `A2_RELATIONAL_VERSION != PERIODIC_AUDIT`
+- `PERIODIC_AUDIT != DURABLE_GOVERNANCE`
+
+### 11. Repository-specific invariants
+- `D_KL_0_WITHIN_FIXTURE != GLOBAL_CONVERGENCE`
+- `FIELD_LEVEL_MISSING_DATA != SUMMARY_NONE`
+- `CURRENT_SUCCESSOR_SUCCESS != EARLIER_DRAFT_INPUT_AVAILABLE`
+- `DAILY_A1_A4 != WEEKLY_A5 != MONTHLY_A6`
+- `PASS != NUMERIC_EVIDENCE`
+- `100_PERCENT_TESTS != UNTESTED_CONDITION_COVERAGE`
+- `A6_FINAL != PREMATURE_MONTHLY_SEAL`
+
+### 12. Decision completeness
+- 2026-10-01: REVIEWED.
+- 2026-10-02: REVIEWED.
+- 2026-10-03: REVIEWED.
+- 2026-10-04: REVIEWED.
+- 2026-10-05: REVIEWED.
+- MonthStart→N-1 coverage: COMPLETE.
+- N-day 2026-10-06 consumed by A1: NO.
+- Historical failure or missingness rewritten: NO.
+- Closed-unmerged delivery promoted: NO.
+- D_KL scope generalized: NO.
+- Missing field normalized away: NO.
+- Scanner execution invented: NO.
+- Test execution invented: NO.
+- Weekly A5 fabricated: NO.
+- Monthly A6 final fabricated: NO.
+- Duplicate native execution credit: NO.
+- Parallel owner created: NO.
+- A2 allowed before A1 merge: NO.
+
+### 13. A1 disposition
+- Coverage completeness: `COMPLETE_THROUGH_2026-10-05_AT_THIS_CHECK`.
+- Decision completeness: `COMPLETE_THROUGH_2026-10-05_AT_THIS_CHECK`.
+- October state: `OPEN`.
+- Historical chronology: `PRESERVED`.
+- Missingness semantics: `PRESERVED`.
+- Required correction-in-place: `NONE_IDENTIFIED`.
+- Required conflict record: `NONE_IDENTIFIED`.
+- Required supersession: `NONE_IDENTIFIED`.
+- New maintenance execution/research/publication credit: `NONE`.
+- A2 dependency: `MUST_MERGE_THIS_A1_THEN_FRESH_READ_CURRENT_MAIN`.
+
+```text
+OCTOBER_1_TO_5_FULL_COVERAGE
++ PLASMA_TASK_IDENTITY_PRESERVED
++ MISSINGNESS_PRESERVED
++ N_DAY_2026_10_06_EXCLUDED
+= A1_COMPLETE_FOR_2026_10_06
+```
