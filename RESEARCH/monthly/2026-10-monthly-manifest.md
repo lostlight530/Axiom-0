@@ -1384,3 +1384,180 @@ MERGED_A1
 = CURRENT_MONTH_RELATION_THROUGH_2026_10_06
 CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
 ```
+
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-07 — PLASMA
+
+- Repository: `lostlight530/Axiom-0`
+- Plane: `A1 / FULL-COVERAGE MAINTENANCE`
+- Logical maintenance date: `2026-10-07`
+- Exact base main: `c7bc5f712f37534dec5748011be6875af61d1a8f`
+- Coverage window: `2026-10-01..2026-10-06`
+- N-day boundary: `2026-10-07`
+- Owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- Native system: Plasma
+- Historical rewrite: NO
+- Native replay: NO
+- Extra scanner/test execution by maintenance: NOT_PERFORMED
+- Natural-month A6 final: NOT_DUE
+- New maintenance execution credit: NONE
+
+### 1. Fresh-start gate
+- Current main was re-read after the 2026-10-07 producer PR merged.
+- Open PR overlap was checked before branch creation.
+- No conflicting open PR touched the October monthly owner.
+- The branch starts from the exact current main recorded above.
+- Daily A1–A4, Weekly A5, and Monthly A6 remain distinct task identities.
+- Current path presence is not used as a historical execution ledger.
+- Field-level MISSING_DATA remains explicit rather than normalized.
+- Closed-unmerged historical delivery remains distinct from later successor success.
+- The existing October monthly manifest remains the single owner.
+
+### 2. Coverage denominator
+- 2026-10-01 Daily A1–A4 relation reviewed.
+- 2026-10-01 scoped D_KL relation reviewed.
+- 2026-10-02 Daily/late-delivery relation reviewed.
+- 2026-10-02 D30 retrospective relation reviewed.
+- 2026-10-03 field-level missingness relation reviewed.
+- 2026-10-04 Daily A1–A4 relation reviewed.
+- 2026-10-04 W40 A5 relation reviewed.
+- 2026-10-04 branch-snapshot chronology reviewed.
+- 2026-10-04 Open Research relation reviewed.
+- 2026-10-05 Daily A1–A4 relation reviewed.
+- 2026-10-06 Daily A1–A4 producer evidence reviewed.
+- 2026-10-06 source metadata missingness reviewed.
+- 2026-10-06 A2 within-scope PASS semantics reviewed.
+- 2026-10-06 A3 100/100 specified-execution boundary reviewed.
+- Rolling October A6 owner reviewed as maintenance owner, not natural-month final.
+
+### 3. 2026-10-01 decision
+- Decision: `NO_FOLLOW_UP / RETAIN`.
+- D_KL zero remains scoped to the tested fixture.
+- Scoped convergence evidence is not promoted to global convergence.
+- No new scanner/test credit is created by inheritance.
+- Coverage for 2026-10-01 remains complete.
+
+### 4. 2026-10-02 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CHRONOLOGY`.
+- Late delivery remains distinct from task-time availability.
+- D30 remains a separate retrospective/audit plane.
+- Audit coverage does not become native Daily execution.
+- Coverage for 2026-10-02 remains complete.
+
+### 5. 2026-10-03 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_MISSINGNESS`.
+- Field-level missing data remains explicit.
+- SUMMARY_NONE is not substituted for unknown or missing fields.
+- Later current completeness does not rewrite predecessor gaps.
+- Coverage for 2026-10-03 remains complete.
+
+### 6. 2026-10-04 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_RELATIONS`.
+- Daily A1–A4 and Weekly A5 remain separate task identities.
+- Same base revision does not imply the same branch snapshot.
+- Closed-unmerged history remains history only.
+- Open Research remains below Specification, ADR, Methodology, and native task authority.
+- Coverage for 2026-10-04 remains complete.
+
+### 7. 2026-10-05 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CURRENT_RELATION`.
+- Daily A1–A4 producer evidence remains retained.
+- No Weekly A5 transition is inferred from Daily presence.
+- The predecessor A2 relation remains point-in-time history.
+- No current evidence requires correction-in-place.
+- Coverage for 2026-10-05 remains complete.
+
+### 8. 2026-10-06 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_PASS_WITH_SCOPE`.
+- PEP 8, RFC 3339, and PEP 20 observations remain producer-owned.
+- RFC 3339 and PEP 20 publication dates remain MISSING_DATA where recorded.
+- KL scan exit code 0 remains a within-fixture result.
+- Structural consistency remains `PASS_WITHIN_SCOPE`.
+- Actual Input Range remains MISSING_DATA.
+- A3 reports 100 / 100 specified executions passed.
+- Uncovered Conditions remain MISSING_DATA.
+- 100/100 specified does not establish universal runtime correctness.
+- A4 topology/index alignment PASS remains limited to the checked scope.
+- No Monthly A6 final is inferred.
+- No maintenance scanner/test execution is added.
+- Coverage for 2026-10-06 remains complete.
+
+### 9. Artifact-class matrix
+| Surface | A1 decision | Boundary |
+| --- | --- | --- |
+| Daily A1–A4 10/1–10/6 | REVIEWED | producer execution evidence |
+| Weekly A5 | REVIEWED_IF_DUE | separate task identity |
+| October A6 owner | APPEND_RELATION | maintenance owner, not final |
+| D30 / retrospective | REVIEWED_IF_PRESENT | separate audit plane |
+| ADR / Methodology | RETAIN | durable contract authority |
+| MISSING_DATA fields | PRESERVE | no normalization |
+| Closed-unmerged history | PRESERVE | not current success |
+| Prior A1/A2 | RETAIN | point-in-time maintenance |
+| Open Research / template | RETAIN | subordinate/prospective |
+| 2026-10-07 Daily | BOUNDARY_ONLY | excluded from A1 |
+
+### 10. 2026-10-07 N-day exclusion boundary
+- Plasma PR #348 is merged on current main.
+- The producer Daily contains A1 Digital Archaeology, A2 Algebraic Audit, A3 Sandbox Stress Test, and A4 Topology alignment.
+- A2 Audit Status is `CONSISTENCY_CHECK_PASS_WITHIN_SCOPE`.
+- D_KL is 0.0 under the recorded fixture.
+- Actual Input Range remains MISSING_DATA.
+- A3 reports 100 executions and 100 successes.
+- Execution Environment is `NOT_VERIFIED`.
+- Uncovered Conditions remain MISSING_DATA.
+- A4 reports ALIGNED under its recorded topology/index checks.
+- These N-day facts establish current-main context only.
+- They are not consumed into the 10/1→10/6 A1 conclusion.
+- A2 may consume them only after this A1 merges and main is freshly re-read.
+- A1 creates no N-day scanner/test/runtime credit.
+
+### 11. Evidence invariants
+- `DAILY_A1_A4 != WEEKLY_A5 != MONTHLY_A6`
+- `D_KL_0_WITHIN_FIXTURE != GLOBAL_CONVERGENCE`
+- `CONSISTENCY_PASS_WITHIN_SCOPE != UNIVERSAL_CORRECTNESS`
+- `100_OF_100_SPECIFIED != UNTESTED_CONDITION_COVERAGE`
+- `MISSING_DATA != NONE`
+- `FIELD_LEVEL_MISSING_DATA != SUMMARY_NONE`
+- `SOURCE_OBSERVED != SOURCE_METADATA_COMPLETE`
+- `SAME_BASE_REVISION != SAME_BRANCH_SNAPSHOT`
+- `CURRENT_SUCCESSOR_SUCCESS != EARLIER_DRAFT_INPUT_AVAILABLE`
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`
+- `CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL`
+
+### 12. Decision completeness
+- 2026-10-01: REVIEWED.
+- 2026-10-02: REVIEWED.
+- 2026-10-03: REVIEWED.
+- 2026-10-04: REVIEWED.
+- 2026-10-05: REVIEWED.
+- 2026-10-06: REVIEWED.
+- MonthStart→N-1 coverage: COMPLETE.
+- D_KL generalized beyond fixture: NO.
+- Missing data fabricated: NO.
+- 100/100 generalized to universal correctness: NO.
+- Closed-unmerged history promoted: NO.
+- Weekly A5 fabricated: NO.
+- Monthly A6 final fabricated: NO.
+- Duplicate execution/test credit: NO.
+- Parallel owner created: NO.
+- 2026-10-07 consumed by A1: NO.
+- A2 allowed before this A1 merge: NO.
+
+### 13. A1 disposition
+- Coverage completeness: `COMPLETE_THROUGH_2026-10-06_AT_THIS_CHECK`.
+- Decision completeness: `COMPLETE_THROUGH_2026-10-06_AT_THIS_CHECK`.
+- October state: `OPEN`.
+- Missingness semantics: `PRESERVED`.
+- Historical chronology: `PRESERVED`.
+- Required correction-in-place: `NONE_IDENTIFIED`.
+- Required conflict record: `NONE_IDENTIFIED`.
+- New maintenance execution/test/publication credit: `NONE`.
+- A2 dependency: `MUST_MERGE_THIS_A1_THEN_FRESH_READ_CURRENT_MAIN`.
+
+```text
+OCTOBER_1_TO_6_FULL_COVERAGE
++ PASS_SCOPE_PRESERVED
++ MISSING_DATA_PRESERVED
++ N_DAY_2026_10_07_EXCLUDED
+= A1_COMPLETE_FOR_2026_10_07
+```
