@@ -1561,3 +1561,156 @@ OCTOBER_1_TO_6_FULL_COVERAGE
 + N_DAY_2026_10_07_EXCLUDED
 = A1_COMPLETE_FOR_2026_10_07
 ```
+
+
+## A2 CURRENT MONTH RELATION — 2026-10-07 — PLASMA
+
+- Repository: `lostlight530/Axiom-0`
+- Plane: `A2 / CURRENT_MONTH_RELATIONAL_VERSION`
+- Logical maintenance date: `2026-10-07`
+- Exact A1-merged base main: `b28632d3a7373aa490b40d704211ed92c5afbc51`
+- Required predecessor A1: PR #349 / MERGED
+- Fresh-read after A1 merge: YES
+- Current month relation window: `2026-10-01..2026-10-07`
+- Owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- Historical rewrite: NO
+- Native replay: NO
+- Extra scanner/test execution by maintenance: NOT_PERFORMED
+- Duplicate native execution credit: NONE
+- Natural-month A6 final: NOT_DUE
+
+### 1. A1 dependency consumption
+- A1 #349 is present on this exact base.
+- A1 supplies complete 10/1→10/6 coverage.
+- A2 consumes the 2026-10-07 producer manifest only after fresh-read main.
+- Daily A1–A4, Weekly A5, and Monthly A6 remain distinct task identities.
+- Prior Daily/Weekly/A1/A2 records remain point-in-time history.
+- Missing data remains explicit.
+
+### 2. Inherited 10/1→10/6 relation
+- Scoped D_KL boundaries remain retained.
+- Late-delivery and D30 chronology remain retained.
+- Field-level MISSING_DATA remains preserved.
+- Same-base/sibling-branch boundaries remain preserved.
+- 10/6 `PASS_WITHIN_SCOPE` and 100/100 specified-execution limits remain preserved.
+- No inherited state creates new scanner/test credit.
+
+### 3. 2026-10-07 A1 Digital Archaeology relation
+- Producer PR #348 is merged.
+- Network Status is ONLINE.
+- PEP 8 is recorded with its checked title/publisher/date.
+- PEP 20 is recorded with Publish Date 19-Aug-2004.
+- PEP 257 is recorded with Publish Date 29-May-2001.
+- Each source is marked OBSERVED within the producer artifact.
+- Source observation does not imply repository implementation change.
+- A2 does not add any external-source verification beyond producer evidence.
+
+### 4. 2026-10-07 A2 Algebraic Audit relation
+- Audit Status is `CONSISTENCY_CHECK_PASS_WITHIN_SCOPE`.
+- KL scan exit code is 0.
+- D_KL is 0.0 under the recorded fixture.
+- Actual Input Range remains `MISSING_DATA`.
+- KL Standard Error remains `MISSING_DATA`.
+- KL Exception Stack remains `MISSING_DATA`.
+- Consistency scan exit code is 0.
+- Consistency Standard Error remains `MISSING_DATA`.
+- Consistency Exception Stack remains `MISSING_DATA`.
+- ADR count is 16.
+- Methodology count is 15.
+- A2 preserves within-scope semantics and does not generalize to universal correctness.
+
+### 5. 2026-10-07 A3 Sandbox relation
+- Test object is `CODE/nexus_core.py`.
+- Producer records 100 executions.
+- Success Count is 100.
+- Failure Count is 0.
+- Test Result is `100 / 100 specified executions passed`.
+- Average Execution Time is recorded as approximately 0.141499 seconds.
+- SHA256 is retained from the producer artifact.
+- Execution Environment is `NOT_VERIFIED`.
+- Standard Error remains `MISSING_DATA`.
+- Uncovered Conditions remain `MISSING_DATA`.
+- A2 does not infer untested-condition coverage.
+- A2 does not invent environment verification.
+- Maintenance performs no additional runtime execution.
+
+### 6. 2026-10-07 A4 topology relation
+- INDEX alignment is ALIGNED.
+- INDEX.md and PATCH_INDEX.md were updated by the producer PR.
+- Date Match is confirmed in the producer artifact.
+- Future Dates: none detected.
+- Duplicate Entries: none found.
+- Broken Links: none.
+- Protected Paths are recorded as unmodified.
+- This remains checked-topology evidence rather than Monthly A6 closure.
+
+### 7. Current relation matrix
+| Surface | A2 state | Boundary |
+| --- | --- | --- |
+| 10/1–10/4 | RETAINED | point-in-time history |
+| 10/5 | RETAINED | predecessor relation |
+| 10/6 | RETAINED_WITH_LIMITS | PASS scope + missing data |
+| 10/7 A1 | CONSUMED | observed sources |
+| 10/7 A2 | CONSUMED_PASS_WITHIN_SCOPE | no universal promotion |
+| 10/7 A3 | CONSUMED_100_OF_100_SPECIFIED | env/uncovered unknown |
+| 10/7 A4 | CONSUMED_ALIGNED | topology only |
+| October owner | OPEN / CURRENT_THROUGH_2026-10-07 | A6 final not due |
+
+### 8. Cross-day continuity
+- 10/6 and 10/7 both report 100/100 specified executions.
+- Repetition does not create coverage of untested conditions.
+- Repetition does not convert `MISSING_DATA` into known values.
+- 10/7 environment NOT_VERIFIED remains explicit even though execution output exists.
+- Consistency PASS remains within documented scope.
+- Current success does not rewrite earlier missingness.
+
+### 9. Evidence invariants
+- `DAILY_A1_A4 != WEEKLY_A5 != MONTHLY_A6`.
+- `D_KL_0_WITHIN_FIXTURE != GLOBAL_CONVERGENCE`.
+- `CONSISTENCY_PASS_WITHIN_SCOPE != UNIVERSAL_CORRECTNESS`.
+- `100_OF_100_SPECIFIED != UNTESTED_CONDITION_COVERAGE`.
+- `EXECUTION_OUTPUT_PRESENT != EXECUTION_ENVIRONMENT_VERIFIED`.
+- `MISSING_DATA != NONE`.
+- `FIELD_LEVEL_MISSING_DATA != SUMMARY_NONE`.
+- `SOURCE_OBSERVED != SOURCE_METADATA_OR_IMPLEMENTATION_COMPLETE`.
+- `CURRENT_SUCCESSOR_SUCCESS != EARLIER_DRAFT_INPUT_AVAILABLE`.
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`.
+- `CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL`.
+
+### 10. Validation checklist
+- A1 #349 merged before A2 branch: YES.
+- Fresh post-A1 main used: YES.
+- 10/1→10/6 relation retained: YES.
+- 10/7 A1–A4 manifest consumed: YES.
+- Actual Input Range fabricated: NO.
+- Standard Error fabricated: NO.
+- Exception Stack fabricated: NO.
+- Execution Environment promoted from NOT_VERIFIED: NO.
+- Uncovered Conditions fabricated: NO.
+- D_KL generalized beyond fixture: NO.
+- 100/100 generalized to universal correctness: NO.
+- A4 topology promoted to A6 final: NO.
+- Additional scanner/test execution invented: NO.
+- Duplicate execution credit created: NO.
+- Natural-month A6 final manufactured: NO.
+- Parallel owner created: NO.
+
+### 11. A2 disposition
+- Current October relation: `CURRENT_THROUGH_2026-10-07`.
+- October state: `OPEN`.
+- 10/7 Daily pipeline: `PASS_WITH_EXPLICIT_UNKNOWN_FIELDS`.
+- A2 algebraic audit: `PASS_WITHIN_SCOPE`.
+- A3 sandbox: `100_OF_100_SPECIFIED / ENVIRONMENT_NOT_VERIFIED / UNCOVERED_MISSING_DATA`.
+- A4 topology: `ALIGNED_WITHIN_CHECKED_SCOPE`.
+- Historical chronology: `PRESERVED`.
+- New maintenance execution/test/publication credit: `NONE`.
+- Next A1 must fresh-read this merged main.
+
+```text
+MERGED_A1
++ FRESH_MAIN_READ
++ 2026_10_07_A1_A4_PRODUCER_EVIDENCE
++ PASS_SCOPE_PRESERVED
++ UNKNOWN_FIELDS_PRESERVED
+= CURRENT_MONTH_RELATION_THROUGH_2026_10_07
+```
