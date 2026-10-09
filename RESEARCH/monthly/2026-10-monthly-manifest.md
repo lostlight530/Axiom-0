@@ -2240,3 +2240,118 @@ DUPLICATE_EVIDENCE_CREDIT
 - Exactly one existing monthly owner receives this append-only maintenance section.
 - A2 cannot start from pre-A1 base; fresh main read after ten merges is mandatory.
 - Disposition: N-1 relational owner coverage recorded, not a full independent daily runtime audit.
+
+
+## A2 CURRENT-MONTH RELATION — 2026-10-09
+
+- Owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`; repository: `lostlight530/Axiom-0`.
+- Date: 2026-10-09; window 2026-10-01..2026-10-09.
+- A1 #356 merged and read from exact post-A1 main `907d9ac07cc278f1d95af4308e7f8a25f3303d25`.
+- Today native: PR #355, Plasma A1/A2/A3/A4 pipeline; producer results are not replayed.
+- Month OPEN, A6 natural-month final NOT_DUE; single owner.
+- New maintenance test/source/research credit: NONE.
+
+### Historical MTD inheritance from merged A1 (10/01..10/08)
+
+- 2026-10-01: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-01: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-01: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-01: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-02: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-02: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-02: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-02: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-03: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-03: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-03: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-03: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-04: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-04: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-04: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-04: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-05: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-05: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-05: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-05: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-06: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-06: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-06: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-06: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-07: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-07: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-07: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-07: no new A3 execution window, source identity or producer credit from relational repetition.
+- 2026-10-08: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-08: prior KL/consistency scanner scope remains limited to the actual recorded cases.
+- 2026-10-08: prior missing input, stderr and uncovered-case states cannot become PASS.
+- 2026-10-08: no new A3 execution window, source identity or producer credit from relational repetition.
+
+### 2026-10-09 native evidence and bounded conclusions
+
+- Verification dimension 01: 10/09 native Plasma Daily was merged as PR #355, separate from this maintenance PR.
+- Verification dimension 02: Primary producer path RESEARCH/daily/2026-10-09-pipeline-manifest.md.
+- Verification dimension 03: Producer also updated INDEX.md and PATCH_INDEX.md within PR #355.
+- Verification dimension 04: A1 source 1 PEP 8: Python coding style guidance, attributed to Python Software Foundation.
+- Verification dimension 05: A1 source 2 PEP 484: type-hint specifications and supporting type-system conventions.
+- Verification dimension 06: A1 source 3 PEP 20: Zen of Python text by Tim Peters.
+- Verification dimension 07: All three official Python PEP URLs are one standardization lineage, not independent experiment replication.
+- Verification dimension 08: Native Daily lists check-time 2026-10-09T05:28:38+00:00 for source fields.
+- Verification dimension 09: Native Daily records PEP publication dates UNKNOWN rather than inventing dates.
+- Verification dimension 10: Native audit status CONSISTENCY_CHECK_PASS_WITHIN_SCOPE.
+- Verification dimension 11: scan_kl_divergence.py exited 0 for named contract cases.
+- Verification dimension 12: scan_consistency.py exited 0 for document topology scope.
+- Verification dimension 13: Native identity KL evidence lists two named observations: identity and renormalized_identity.
+- Verification dimension 14: Both named KL observations record d_kl 0.0 within tolerance.
+- Verification dimension 15: Zero D_KL on these cases does not establish zero divergence for other inputs.
+- Verification dimension 16: Document topology evidence records methodology_count 15 and adr_count 16.
+- Verification dimension 17: Topology index names METHODOLOGY/INDEX.md and ADR/INDEX.md.
+- Verification dimension 18: A3 execution command python3 -m tests.entrypoints repeat --count 100.
+- Verification dimension 19: A3 test object CODE/nexus_core.py with bounded specified test route.
+- Verification dimension 20: A3 native evidence reports 100 executions, 100 success, zero failure.
+- Verification dimension 21: A3 reports 0.1251956295967102 average execution time.
+- Verification dimension 22: A3 includes SHA256 for its tested object and runtime environment string.
+- Verification dimension 23: A3 environment records Linux devbox kernel 6.8.0, Python 3.12.13.
+- Verification dimension 24: An environment string does not imply cross-platform or independent runtime replication.
+- Verification dimension 25: A3 Uncovered Conditions MISSING_DATA, so universal reliability is not supported.
+- Verification dimension 26: A2 Actual Input Range MISSING_DATA; this is not an empty-set fact.
+- Verification dimension 27: A2 Exception Stack MISSING_DATA; this is not proof no exception ever occurred.
+- Verification dimension 28: A2 Standard Error MISSING_DATA; cannot infer blank stderr.
+- Verification dimension 29: A3 Standard Error MISSING_DATA; cannot assert independent stderr audit passed.
+- Verification dimension 30: Scanner exit codes concern documented checks, not all repository invariants.
+- Verification dimension 31: A4 topology and index updates are navigation state, not novel scientific derivation.
+- Verification dimension 32: Native path-scoped claim PROTECTED_PATHS_UNMODIFIED belongs to recorded native diff.
+- Verification dimension 33: Native record declares Verification Status PASS under its named scope.
+- Verification dimension 34: The Axiom CODE protected paths were not modified by this maintenance A2.
+- Verification dimension 35: The monthly manifest is still a provisional October owner, not natural-month A6 final.
+- Verification dimension 36: No extra PEP research source identity, hypothesis, scanner, benchmark, or runtime credit is generated by A2.
+- Verification dimension 37: 10/08 earlier Daily also reported scoped tests; cross-day repeat results are separate bounded windows.
+- Verification dimension 38: Prior day D_KL result cannot be silently combined into a global statistical rate.
+- Verification dimension 39: 1 month-to-date owner reused, not a second monthly authority.
+- Verification dimension 40: Source-publisher identity stays external; repository index does not reissue official PEP truth.
+- Verification dimension 41: Current 10/09 Daily is current state despite prior 10/08 A2 owner cutoff.
+- Verification dimension 42: Today's native PR #355 was merged onto post-10/08 Codex repair main.
+- Verification dimension 43: Codex #354 earlier adjusted repository-contract tests; not producer A3 runtime proof.
+- Verification dimension 44: Maintain clear source retrieval, scanner, repeat test, and index synchronization planes.
+- Verification dimension 45: A1 ten-repo maintenance PR #356 is the required immediate base dependency.
+- Verification dimension 46: Reconciled current relation through 2026-10-09 without changing historical dailies.
+- Verification dimension 47: A2 operation did not execute any of today's producer commands.
+- Verification dimension 48: Native file reports input-range coverage gap; a future audit would need exact tested-input manifest.
+- Verification dimension 49: Re-running existing report text would not create a new execution window.
+- Verification dimension 50: Evidence strength for test output: repository-native reported execution, not independently replayed here.
+- Verification dimension 51: Scientific/protocol credit remains limited to the native Daily producer and source scope.
+- Verification dimension 52: Change scope for this A2 is single canonical owner; INDEX and PATCH_INDEX untouched.
+- Verification dimension 53: Any later discrepancy must be appended as correction/reconciliation with new cut timestamp.
+- Verification dimension 54: All prior 10/01..10/08 D_KL and missingness statements remain historical.
+
+### Decision gates
+
+- Source check time, repository commit time and maintenance merge time are different clocks.
+- PEP primary sources support bounded normative facts, not Axiom global correctness.
+- Zero KL in identity controls is not global entropy or zero-divergence proof.
+- 100/100 specified executions are not an unknown-input failure-rate estimate.
+- Native checker PASS within scope is not independent audit PASS by this maintenance.
+- Unknown cases, std errors and environment portability remain scoped or unknown.
+- No hypothesis/result is silently promoted from index consistency to scientific validation.
+- No protected core, execution code, test, source registry or native Daily was changed.
+- Only October owner relation advances; historic A1/A2 sections remain auditable.
+- Disposition UPDATED_THROUGH_2026-10-09 / NO_ADDITIONAL_EXECUTION_CREDIT.
