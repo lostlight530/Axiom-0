@@ -31,7 +31,7 @@ The September 16 publication described above is the **initial archival snapshot*
 
 | Archived release | Published/release date | Immutable version DOI |
 | --- | --- | --- |
-| Initial open-research baseline | 2026-09-16 | See the canonical [Zenodo concept versions](https://zenodo.org/api/records/23137205/versions) for the exact initial version DOI |
+| `v2026.09-open-research-baseline` | 2026-09-16 | [`10.5281/zenodo.22791104`](https://doi.org/10.5281/zenodo.22791104) |
 | `v2026.09-natural-month-close` | 2026-09-30 | [`10.5281/zenodo.23068261`](https://doi.org/10.5281/zenodo.23068261) |
 | `v2026.10-open-research-production-framework` | 2026-10-04 | [`10.5281/zenodo.23137205`](https://doi.org/10.5281/zenodo.23137205) |
 
