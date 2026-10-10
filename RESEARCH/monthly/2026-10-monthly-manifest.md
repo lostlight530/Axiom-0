@@ -2539,3 +2539,131 @@ DUPLICATE_EVIDENCE_CREDIT
 - No forced weekly/monthly final, no verified-core upgrade, no source truth promotion.
 - No second owner or PR per date is generated; one existing monthly owner remains authoritative.
 - Ten-A1 merger barrier and fresh main read are mandatory before constructing N-day A2.
+
+
+## A2 CURRENT-MONTH RELATION — 2026-10-10
+
+- Axiom Plasma canonical owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`.
+- Exact fresh post-A1 main: `fb35f3cb032403c3b79076febdb1da20dc86662d`.
+- N-day 2026-10-10, window 2026-10-01..2026-10-10, inherited N-1 through 2026-10-09.
+- Producer Daily: PR #358 / `RESEARCH/daily/2026-10-10-pipeline-manifest.md`; index and patch index updated in the native PR.
+- Native source A1 PEP 8, PEP 484 and Python JSON documentation; missing publisher/time fields stay MISSING_DATA.
+- Native A2 scanner PASS_WITHIN_SCOPE; identity and renormalized identity comparisons, not general KL correctness.
+- Native A3 reports 100/100 specified runs; execution environment NOT_VERIFIED and uncovered conditions MISSING_DATA.
+- Native A4 records INDEX/PATCH_INDEX alignment; index synchronization not a scientific claim.
+- October monthly OPEN; scientific protocol final and extra runtime credit NOT_DUE/NOT_PERFORMED.
+
+### 10/01–10/09 inherited evidence ledger
+
+#### 2026-10-01 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-01 retained claim 1: Current month relation window: 2026-10-01
+- Prior-date fact 2: 2026-10-01 retained claim 2: Native Daily input: `RESEARCH/daily/2026-10-01-pipeline-manifest.md` / merged via PR #322
+- Prior-date fact 3: 2026-10-01 retained claim 3: Native index updates: `INDEX.md`, `PATCH_INDEX.md`
+- Prior-date fact 4: 2026-10-01 retained claim 4: A1 source set: PEP 484, PEP 20, PEP 526 as recorded by the native task
+- Prior-date fact 5: 2026-10-01 retained claim 5: A2 recorded D_KL: 0.0 within the named scanner/input scope
+- Scope hold: 2026-10-01 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-01 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-02 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-02 retained claim 1: Reconciliation type: FORWARD_ONLY_SUCCESSOR
+- Prior-date fact 2: 2026-10-02 retained claim 2: Predecessor A2 merge time: 2026-10-02T13:25:55Z
+- Prior-date fact 3: 2026-10-02 retained claim 3: Predecessor observation: NO_NEW_2026_10_02_NATIVE_PATH_OBSERVED_AT_THIS_CHECK
+- Prior-date fact 4: 2026-10-02 retained claim 4: Native Plasma Daily merge time: 2026-10-02T14:27:08Z
+- Prior-date fact 5: 2026-10-02 retained claim 5: Native Daily path now retained: `RESEARCH/daily/2026-10-02-pipeline-manifest.md`
+- Scope hold: 2026-10-02 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-02 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-03 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-03 retained claim 1: Current month relation window: 2026-10-01 through 2026-10-03
+- Prior-date fact 2: 2026-10-03 retained claim 2: Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- Prior-date fact 3: 2026-10-03 retained claim 3: Predecessor early A2 no-path observation: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Prior-date fact 4: 2026-10-03 retained claim 4: Later native input now present: `RESEARCH/daily/2026-10-03-pipeline-manifest.md`
+- Prior-date fact 5: 2026-10-03 retained claim 5: `INDEX.md` and `PATCH_INDEX.md` now retain the 2026-10-03 native path.
+- Scope hold: 2026-10-03 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-03 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-04 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-04 retained claim 1: Required predecessor A1: PR #338 / MERGED
+- Prior-date fact 2: 2026-10-04 retained claim 2: Extra scanner/test/runtime execution: NOT_PERFORMED
+- Prior-date fact 3: 2026-10-04 retained claim 3: Prior A2 records remain point-in-time history.
+- Prior-date fact 4: 2026-10-04 retained claim 4: Later current state does not rewrite prior task-time state.
+- Prior-date fact 5: 2026-10-04 retained claim 5: Specified-execution success remains bounded.
+- Scope hold: 2026-10-04 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-04 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-05 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-05 retained claim 1: Required predecessor A1: PR #343 / MERGED
+- Prior-date fact 2: 2026-10-05 retained claim 2: Current month relation window: `2026-10-01..2026-10-05`
+- Prior-date fact 3: 2026-10-05 retained claim 3: Runtime/network/test execution by maintenance: NOT_PERFORMED
+- Prior-date fact 4: 2026-10-05 retained claim 4: A1 supplies complete MonthStart→2026-10-04 coverage.
+- Prior-date fact 5: 2026-10-05 retained claim 5: A2 consumes 2026-10-05 native/current repository state.
+- Scope hold: 2026-10-05 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-05 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-06 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-06 retained claim 1: Required predecessor A1: PR #346 / MERGED
+- Prior-date fact 2: 2026-10-06 retained claim 2: Current month relation window: `2026-10-01..2026-10-06`
+- Prior-date fact 3: 2026-10-06 retained claim 3: Extra scanner/test execution by maintenance: NOT_PERFORMED
+- Prior-date fact 4: 2026-10-06 retained claim 4: Duplicate native execution credit: NONE
+- Prior-date fact 5: 2026-10-06 retained claim 5: October A6 natural-month final: NOT_DUE
+- Scope hold: 2026-10-06 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-06 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-07 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-07 retained claim 1: Required predecessor A1: PR #349 / MERGED
+- Prior-date fact 2: 2026-10-07 retained claim 2: Current month relation window: `2026-10-01..2026-10-07`
+- Prior-date fact 3: 2026-10-07 retained claim 3: Extra scanner/test execution by maintenance: NOT_PERFORMED
+- Prior-date fact 4: 2026-10-07 retained claim 4: Duplicate native execution credit: NONE
+- Prior-date fact 5: 2026-10-07 retained claim 5: A1 #349 is present on this exact base.
+- Scope hold: 2026-10-07 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-07 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-08 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-08 retained claim 1: Existing owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- Prior-date fact 2: 2026-10-08 retained claim 2: A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- Prior-date fact 3: 2026-10-08 retained claim 3: A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- Prior-date fact 4: 2026-10-08 retained claim 4: Extra external research by maintenance: `NOT_PERFORMED`
+- Prior-date fact 5: 2026-10-08 retained claim 5: Extra runtime/test execution by maintenance: `NOT_PERFORMED`
+- Scope hold: 2026-10-08 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-08 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+#### 2026-10-09 historical A1 evidence inherited
+- Prior-date fact 1: 2026-10-09 retained claim 1: Date: 2026-10-09; window 2026-10-01..2026-10-09.
+- Prior-date fact 2: 2026-10-09 retained claim 2: A1 #356 merged and read from exact post-A1 main `907d9ac07cc278f1d95af4308e7f8a25f3303d25`.
+- Prior-date fact 3: 2026-10-09 retained claim 3: Today native: PR #355, Plasma A1/A2/A3/A4 pipeline; producer results are not replayed.
+- Prior-date fact 4: 2026-10-09 retained claim 4: Month OPEN, A6 natural-month final NOT_DUE; single owner.
+- Prior-date fact 5: 2026-10-09 retained claim 5: New maintenance test/source/research credit: NONE.
+- Scope hold: 2026-10-09 native scanner/test results retain their own original execution window, no A2 re-run.
+- Temporal hold: 2026-10-09 older MISSING_DATA and corrections are not overwritten by 10/10 native state.
+
+### Native 10/10 audit / distinct producer facts
+- Source-record fact 1: - **Title:** PEP 8 – Style Guide for Python Code | peps.python.org
+- Source-record fact 2: - **Publisher:** Guido van Rossum <guido at python.org>, Barry Warsaw <barry at python.org>, Alyssa Coghlan <ncoghlan at gmail.com>
+- Source-record fact 3: - **URL:** https://peps.python.org/pep-0008/
+- Source-record fact 4: - **Supported Facts:** This document gives coding conventions for the Python code comprising the standard library in the main Python distribution.
+- Source-record fact 5: - **Title:** PEP 484 – Type Hints | peps.python.org
+- Source-record fact 6: - **Publisher:** Guido van Rossum <guido at python.org>, Jukka Lehtosalo <jukka.lehtosalo at iki.fi>, Łukasz Langa <lukasz at python.org>
+- Source-record fact 7: - **URL:** https://peps.python.org/pep-0484/
+- Source-record fact 8: - **Supported Facts:** This PEP introduces a provisional module to provide these standard definitions and tools, along with some conventions for situations where annotations are not available.
+- Source-record fact 9: - **Title:** json — JSON encoder and decoder &#8212; Python 3.15.0 documentation
+- Source-record fact 10: - **URL:** https://docs.python.org/3/library/json.html
+- Source-record fact 11: - **Supported Facts:** JSON (JavaScript Object Notation) , specified by RFC 7159
+- Source-record fact 12: - **Audit Status:** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- Source-record fact 13: KL_EVIDENCE={"contract": "kl_divergence", "failures": [], "observations": [{"case": "identity", "d_kl": 0.0, "expected": 0.0, "within_tolerance": true}, {"case": "renormalized_identity", "d_kl": 0.0, "expected": 0.0, "within_tolerance": true}], "status": "passed", "support_mismatch": "infinity"}
+- Source-record fact 14: AXIOM_CONSISTENCY_EVIDENCE={"adr_count": 16, "adr_index": "ADR/INDEX.md", "contract": "axiom_document_topology", "contract_version": "2026-08-28", "failures": [], "methodology_count": 15, "methodology_index": "METHODOLOGY/INDEX.md", "status": "passed"}
+- Source-record fact 15: repository structural consistency: passed within documented scope
+- Source-record fact 16: - **Test Result:** 100 / 100 specified executions passed (A3_EXECUTION_EVIDENCE_RETAINED)
+- Source-record fact 17: - **Execution Command:** `python3 CODE/nexus_core.py`
+- Source-record fact 18: - **SHA256:** 54a405488319933a8293a93646bf967dde6942968204bfa8e611ba808b793457
+- Source-record fact 19: - **Validation Status:** Alignment successful
+- Source-record fact 20: - **Protected Paths**: PROTECTED_PATHS_UNMODIFIED. Unmodified.
+- Source-record fact 21: RESEARCH/daily/2026-10-10-pipeline-manifest.md
+
+### Verification and generalization limits
+- PEP 8 and PEP 484 primary sources establish normative text in the cited scope, not proof of implementation conformance.
+- Python JSON documentation header identifies JSON RFC 7159; publisher and original publish date are explicitly MISSING_DATA.
+- A2 actual input range MISSING_DATA prevents declaring tested domain complete.
+- A2 exception stack and stderr MISSING_DATA do not mean observed empty output.
+- A2 D_KL=0.0 applies to identity and renormalized-identity contract cases, not arbitrary model inputs.
+- A2 scanner repository topology 16 ADR and 15 methodology records is an inspected source state, not project theorem validity.
+- A3 100 specified invocations succeeded per native record, not independently replayed by this maintenance.
+- A3 execution environment NOT_VERIFIED prevents portability inference; SHA256 remains the only claimed code object identity.
+- A3 uncovered conditions MISSING_DATA cannot be interpreted as zero uncovered cases.
+- A4 native indexes align within their recorded scanner contract; protected path gate is bounded to native diff.
+- Producer source publisher, H1/experiment, scanner, A3 execution, A4 index paths are distinct evidence planes.
+- No new hypothesis, independent PEP confirmation, test run, experiment window or source registration from this A2.
+- Original October owner appended only; no CODE, tests, PEP text or historical Daily changed.
+- October natural-month final remains OPEN / NOT_DUE; no fabricated universal reliability claim.
+- Current relation UPDATED_THROUGH_2026_10_10_WITH_SPECIFIED_TEST_SCOPE_AND_MISSINGNESS_RETAINED.
