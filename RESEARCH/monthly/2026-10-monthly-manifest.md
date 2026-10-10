@@ -2355,3 +2355,187 @@ DUPLICATE_EVIDENCE_CREDIT
 - No protected core, execution code, test, source registry or native Daily was changed.
 - Only October owner relation advances; historic A1/A2 sections remain auditable.
 - Disposition UPDATED_THROUGH_2026-10-09 / NO_ADDITIONAL_EXECUTION_CREDIT.
+
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-10
+
+- System: Plasma; canonical owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`.
+- Logical date 2026-10-10; review interval MonthStart→N-1 is 2026-10-01..2026-10-09.
+- Review source: current-main archived month-owner A2 date checkpoints, with each claim kept at its recorded evidence tier.
+- This appends a dated review; it does not rewrite earlier Daily, paper, checker, log, index or original execution history.
+- Owner remains OPEN; natural-month final NOT_DUE; A1 performs no test/research runtime replay.
+- Native new 2026-10-10 producer objects deliberately excluded until second maintenance round.
+- Missing measured scope or provenance is retained as missing rather than interpolated from current sources.
+
+### Evidence-derived per-day review
+
+#### 2026-10-01: source checkpoint A2_CURRENT_MONTH_RELATION_2026-10-01
+- 2026-10-01 retained claim 1: Current month relation window: 2026-10-01
+- 2026-10-01 retained claim 2: Native Daily input: `RESEARCH/daily/2026-10-01-pipeline-manifest.md` / merged via PR #322
+- 2026-10-01 retained claim 3: Native index updates: `INDEX.md`, `PATCH_INDEX.md`
+- 2026-10-01 retained claim 4: A1 source set: PEP 484, PEP 20, PEP 526 as recorded by the native task
+- 2026-10-01 retained claim 5: A2 recorded D_KL: 0.0 within the named scanner/input scope
+- 2026-10-01 retained claim 6: A3 recorded result: 100 / 100 specified executions passed
+- 2026-10-01 retained claim 7: A4 recorded index/topology alignment: PASS within the native checks
+- 2026-10-01 retained claim 8: New runtime/test/hypothesis/scientific-validation credit beyond PR #322: NONE
+- Review result: facts attached to 2026-10-01 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-01 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_01 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-02: source checkpoint A2_SUCCESSOR_RECONCILIATION_2026-10-02_LATE_NATIVE_DELIVERY
+- 2026-10-02 retained claim 1: Reconciliation type: FORWARD_ONLY_SUCCESSOR
+- 2026-10-02 retained claim 2: Predecessor A2 merge time: 2026-10-02T13:25:55Z
+- 2026-10-02 retained claim 3: Predecessor observation: NO_NEW_2026_10_02_NATIVE_PATH_OBSERVED_AT_THIS_CHECK
+- 2026-10-02 retained claim 4: Native Plasma Daily merge time: 2026-10-02T14:27:08Z
+- 2026-10-02 retained claim 5: Native Daily path now retained: `RESEARCH/daily/2026-10-02-pipeline-manifest.md`
+- 2026-10-02 retained claim 6: Native index relation now retained: `INDEX.md`, `PATCH_INDEX.md`
+- 2026-10-02 retained claim 7: Earlier A2 observation: HISTORICALLY_VALID
+- 2026-10-02 retained claim 8: Current October relation: UPDATED_WITH_LATE_NATIVE_DELIVERY
+- 2026-10-02 retained claim 9: 2026-10-02 Plasma Daily relation: INTEGRATED
+- 2026-10-02 retained claim 10: New execution/test/scientific-validation credit created by this successor: NONE
+- 2026-10-02 retained claim 11: Durable protocol closure: NOT_AUTHORIZED
+- Review result: facts attached to 2026-10-02 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-02 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_02 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-03: source checkpoint A2_SUCCESSOR_CURRENT_MONTH_RELATION_2026-10-03
+- 2026-10-03 retained claim 1: Current month relation window: 2026-10-01 through 2026-10-03
+- 2026-10-03 retained claim 2: Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- 2026-10-03 retained claim 3: Predecessor early A2 no-path observation: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- 2026-10-03 retained claim 4: Later native input now present: `RESEARCH/daily/2026-10-03-pipeline-manifest.md`
+- 2026-10-03 retained claim 5: `INDEX.md` and `PATCH_INDEX.md` now retain the 2026-10-03 native path.
+- 2026-10-03 retained claim 6: Scanner/test/runtime replay by this maintenance pass: NOT_PERFORMED
+- 2026-10-03 retained claim 7: Current interpretation: CURRENT_ARTIFACT_SEMANTIC_INCONSISTENCY_RECORDED.
+- 2026-10-03 retained claim 8: The original native body is preserved. This A2 does not rewrite task-time execution evidence into a cleaner historical story.
+- 2026-10-03 retained claim 9: Relationship continuity: UPDATED_WITH_2026_10_03_LATE_NATIVE_DELIVERY
+- 2026-10-03 retained claim 10: Native manifest semantic inconsistency: OPEN / EXPLICITLY_RECORDED
+- 2026-10-03 retained claim 11: New runtime/test/hypothesis/scientific-validation credit from maintenance: NONE
+- Review result: facts attached to 2026-10-03 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-03 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_03 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-04: source checkpoint A2 CURRENT MONTH RELATION — 2026-10-04
+- 2026-10-04 retained claim 1: Required predecessor A1: PR #338 / MERGED
+- 2026-10-04 retained claim 2: Extra scanner/test/runtime execution: NOT_PERFORMED
+- 2026-10-04 retained claim 3: Prior A2 records remain point-in-time history.
+- 2026-10-04 retained claim 4: Later current state does not rewrite prior task-time state.
+- 2026-10-04 retained claim 5: Specified-execution success remains bounded.
+- 2026-10-04 retained claim 6: Field-level missingness remains visible.
+- 2026-10-04 retained claim 7: Natural-month final manufactured: NO.
+- 2026-10-04 retained claim 8: Current October relation: CURRENT_THROUGH_2026-10-04.
+- 2026-10-04 retained claim 9: Native producer credit: RETAINED_WITHOUT_DUPLICATION.
+- 2026-10-04 retained claim 10: New maintenance research credit: NONE.
+- 2026-10-04 retained claim 11: Next A1 must fresh-read this merged main.
+- Review result: facts attached to 2026-10-04 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-04 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_04 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-05: source checkpoint A2 CURRENT MONTH RELATION — 2026-10-05 — PLASMA
+- 2026-10-05 retained claim 1: Required predecessor A1: PR #343 / MERGED
+- 2026-10-05 retained claim 2: Current month relation window: `2026-10-01..2026-10-05`
+- 2026-10-05 retained claim 3: Runtime/network/test execution by maintenance: NOT_PERFORMED
+- 2026-10-05 retained claim 4: A1 supplies complete MonthStart→2026-10-04 coverage.
+- 2026-10-05 retained claim 5: A2 consumes 2026-10-05 native/current repository state.
+- 2026-10-05 retained claim 6: Prior A1/A2/Special records remain point-in-time history.
+- 2026-10-05 retained claim 7: Open Research framework: `CURRENT / BOUNDED_BY_NATIVE_AUTHORITY`.
+- 2026-10-05 retained claim 8: Scholarly submission relation: `CURRENT / NO_VALIDATION_PROMOTION`.
+- 2026-10-05 retained claim 9: Native producer credit: `RETAINED_WITHOUT_DUPLICATION`.
+- 2026-10-05 retained claim 10: New maintenance research/runtime/publication credit: `NONE`.
+- 2026-10-05 retained claim 11: Successor dependency: `FUTURE_A1_MUST_FRESH_READ_THIS_MERGED_MAIN`.
+- Review result: facts attached to 2026-10-05 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-05 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_05 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-06: source checkpoint A2 CURRENT MONTH RELATION — 2026-10-06 — PLASMA
+- 2026-10-06 retained claim 1: Required predecessor A1: PR #346 / MERGED
+- 2026-10-06 retained claim 2: Current month relation window: `2026-10-01..2026-10-06`
+- 2026-10-06 retained claim 3: Extra scanner/test execution by maintenance: NOT_PERFORMED
+- 2026-10-06 retained claim 4: Duplicate native execution credit: NONE
+- 2026-10-06 retained claim 5: October A6 natural-month final: NOT_DUE
+- 2026-10-06 retained claim 6: A1 #346 is present on this exact base.
+- 2026-10-06 retained claim 7: A3 sandbox: `100_OF_100_SPECIFIED / UNCOVERED_CONDITIONS_MISSING_DATA`.
+- 2026-10-06 retained claim 8: A4 topology: `PASS_WITHIN_CHECKED_SCOPE`.
+- 2026-10-06 retained claim 9: Native execution credit: `RETAINED_WITHOUT_DUPLICATION`.
+- 2026-10-06 retained claim 10: New maintenance execution/test/publication credit: `NONE`.
+- 2026-10-06 retained claim 11: Successor dependency: `FUTURE_A1_MUST_FRESH_READ_THIS_MERGED_MAIN`.
+- Review result: facts attached to 2026-10-06 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-06 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_06 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-07: source checkpoint A2 CURRENT MONTH RELATION — 2026-10-07 — PLASMA
+- 2026-10-07 retained claim 1: Required predecessor A1: PR #349 / MERGED
+- 2026-10-07 retained claim 2: Current month relation window: `2026-10-01..2026-10-07`
+- 2026-10-07 retained claim 3: Extra scanner/test execution by maintenance: NOT_PERFORMED
+- 2026-10-07 retained claim 4: Duplicate native execution credit: NONE
+- 2026-10-07 retained claim 5: A1 #349 is present on this exact base.
+- 2026-10-07 retained claim 6: A1 supplies complete 10/1→10/6 coverage.
+- 2026-10-07 retained claim 7: A2 algebraic audit: `PASS_WITHIN_SCOPE`.
+- 2026-10-07 retained claim 8: A3 sandbox: `100_OF_100_SPECIFIED / ENVIRONMENT_NOT_VERIFIED / UNCOVERED_MISSING_DATA`.
+- 2026-10-07 retained claim 9: A4 topology: `ALIGNED_WITHIN_CHECKED_SCOPE`.
+- 2026-10-07 retained claim 10: New maintenance execution/test/publication credit: `NONE`.
+- 2026-10-07 retained claim 11: Next A1 must fresh-read this merged main.
+- Review result: facts attached to 2026-10-07 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-07 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_07 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-08: source checkpoint A2 CURRENT-MONTH RELATION — 2026-10-08
+- 2026-10-08 retained claim 1: Existing owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- 2026-10-08 retained claim 2: A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- 2026-10-08 retained claim 3: A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- 2026-10-08 retained claim 4: Extra external research by maintenance: `NOT_PERFORMED`
+- 2026-10-08 retained claim 5: Extra runtime/test execution by maintenance: `NOT_PERFORMED`
+- 2026-10-08 retained claim 6: New independent-source credit by maintenance: `NONE`
+- 2026-10-08 retained claim 7: Natural-month closure: `OPEN / NOT_DUE`.
+- 2026-10-08 retained claim 8: Unresolved maintenance defect: `NONE_IDENTIFIED_IN_THIS_PASS`.
+- 2026-10-08 retained claim 9: Preserve this A2 as the 2026-10-08 current-relation timepoint.
+- 2026-10-08 retained claim 10: Future maintenance must begin from then-current main rather than this cached SHA.
+- 2026-10-08 retained claim 11: Future corrections must reconcile forward without erasing this record.
+- Review result: facts attached to 2026-10-08 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-08 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_08 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+#### 2026-10-09: source checkpoint A2 CURRENT-MONTH RELATION — 2026-10-09
+- 2026-10-09 retained claim 1: Date: 2026-10-09; window 2026-10-01..2026-10-09.
+- 2026-10-09 retained claim 2: A1 #356 merged and read from exact post-A1 main `907d9ac07cc278f1d95af4308e7f8a25f3303d25`.
+- 2026-10-09 retained claim 3: Today native: PR #355, Plasma A1/A2/A3/A4 pipeline; producer results are not replayed.
+- 2026-10-09 retained claim 4: Month OPEN, A6 natural-month final NOT_DUE; single owner.
+- 2026-10-09 retained claim 5: New maintenance test/source/research credit: NONE.
+- 2026-10-09 retained claim 6: 2026-10-01: inherited checkpoint from merged N-1 A1 #356; preserve Daily identity and source check time.
+- 2026-10-09 retained claim 7: Unknown cases, std errors and environment portability remain scoped or unknown.
+- 2026-10-09 retained claim 8: No hypothesis/result is silently promoted from index consistency to scientific validation.
+- 2026-10-09 retained claim 9: No protected core, execution code, test, source registry or native Daily was changed.
+- 2026-10-09 retained claim 10: Only October owner relation advances; historic A1/A2 sections remain auditable.
+- 2026-10-09 retained claim 11: Disposition UPDATED_THROUGH_2026-10-09 / NO_ADDITIONAL_EXECUTION_CREDIT.
+- Review result: facts attached to 2026-10-09 remain separate from any later appended owner's interpretation.
+- Execution boundary: this review did not re-run the original 2026-10-09 producer, tests, graph or source extractor.
+- Source boundary: documentary restatement does not create independent research replication or new runtime credit.
+- Temporal boundary: current path presence does not upgrade earlier missing-task provenance.
+- Outcome: RETAIN_2026_10_09 / CORRECTION_FORWARD_ONLY / NO_DUPLICATE_CREDIT.
+
+### Evidence safeguards and reconciliation
+
+- Domain scope 1: D_KL=0 for named identity cases is not universal divergence zero.
+- Domain scope 2: 100/100 specified executions have an explicit limited denominator.
+- Domain scope 3: MISSING_DATA stderr/input-range/conditions are not observed passes.
+- Domain scope 4: Index and PATCH_INDEX alignment is not independent scientific correctness.
+- 2026-10-09 already has its own merged owner relation; N-1 A1 includes it only as historical evidence, not new native execution.
+- Full window review preserves recorded failures, rejected signals, limitations, unverified semantics, and source ID chronology.
+- No forced weekly/monthly final, no verified-core upgrade, no source truth promotion.
+- No second owner or PR per date is generated; one existing monthly owner remains authoritative.
+- Ten-A1 merger barrier and fresh main read are mandatory before constructing N-day A2.
