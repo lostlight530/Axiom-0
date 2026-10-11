@@ -2887,3 +2887,194 @@ DUPLICATE_EVIDENCE_CREDIT
 - Merge prerequisite for A2: YES
 - A2 may consume 2026-10-11 current-main state only after this A1 merge
 - A1 status: READY_FOR_MAINTAINER_REVIEW
+
+## A2 CURRENT-MONTH RELATION — 2026-10-11
+- Repository: `lostlight530/Axiom-0`
+- Domain: Plasma
+- Exact owner: `RESEARCH/monthly/2026-10-monthly-manifest.md`
+- Logical N: 2026-10-11 Asia/Shanghai
+- Relation window: 2026-10-01..2026-10-11
+- Fresh post-A1 base: `241dc208461c940cbda1cd92b863f2e340533b4d`
+- Required predecessor A1: #365 / MERGED / CONSUMED
+- Open PR state at A2 branch cut: 0 observed
+- Producer role: HUMAN_AUTHORIZED_GOVERNANCE_RELATION
+- Historical rewrite: NO
+- Extra external research by A2: NOT_PERFORMED
+- Extra test/runtime execution by A2: NOT_PERFORMED
+- New independent-source credit by A2: NONE
+- Month closure: OPEN
+- Natural-month final: NOT_DUE
+
+### Dependency and relation contract
+- A2 starts from current main only after A1 merge
+- A1 MonthStart→N-1 coverage is consumed as prerequisite
+- N-day Daily/Weekly artifacts are consumed only when present on this exact base
+- Stale-base history is preserved rather than silently corrected in place
+- Test/scan results retain their exact stated scope and denominator
+- Missing fields remain missing unless independently established
+- Maintenance owner update creates no new Daily, Weekly, benchmark, or execution window
+- Negative/partial/unknown states remain valid evidence
+- Future corrections append a new timepoint
+
+#### 2026-10-01 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-02 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-03 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-04 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-05 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-06 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-07 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-08 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-09 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+#### 2026-10-10 inherited A1 relation
+- A1 coverage source: merged predecessor #365
+- Dated owner checkpoint: CONSUMED
+- Historical producer provenance: PRESERVED
+- Historical test/source/missing-data limits: PRESERVED
+- Re-execution by A2: NOT_PERFORMED
+- New independent-source credit: NONE
+- New research/window credit: NONE
+- Later 10/11 Daily/A5 state used to rewrite this date: NO
+- Relation decision: RETAIN_AS_POINT_IN_TIME_HISTORY
+
+### 2026-10-11 current-main integration
+- Current fact 01: Daily PR #362 is merged and adds the 2026-10-11 pipeline manifest plus INDEX and PATCH_INDEX updates
+- Current fact 02: The 10/11 Daily records three external sources as OBSERVED while retaining missing publication dates where not established
+- Current fact 03: A2 consistency check is PASS_WITHIN_SCOPE with exit code 0; stderr, exception stack, and actual input range remain MISSING_DATA where recorded
+- Current fact 04: A3 reports 100/100 specified executions passed; uncovered conditions remain MISSING_DATA and are not inferred from the pass count
+- Current fact 05: A4 index alignment is 100% within inspected scope and does not establish universal semantic correctness
+- Current fact 06: Original W41 A5 PR #363 is closed unmerged and retained as a stale-base snapshot that labeled 10/11 Not Yet Due
+- Current fact 07: Recovered W41 A5 PR #364 is merged from refreshed main and records current-main 7/7 Daily coverage
+- Current fact 08: The #364 recovery corrects MAIN_VISIBLE_INPUT state without claiming #363 actually read the 10/11 Daily artifact
+- Current fact 09: Weekly D_KL 0.0 remains bounded to recorded checked identity cases and is not universal zero-entropy evidence
+- Current fact 10: October monthly manifest remains OPEN; no natural-month final protocol seal is formed
+- Current-day disposition: INTEGRATED_WITH_EXECUTION_VISIBILITY_BOUNDARIES
+- A2-created Daily manifests: 0
+- A2-created weekly audits: 0
+- A2-executed tests/scans: 0
+- Historical #363 rewritten: NO
+
+### Evidence boundaries rechecked
+- Boundary 01: task executed != artifact present
+- Boundary 02: artifact present != PR delivered
+- Boundary 03: PR delivered != merged
+- Boundary 04: merged != earlier availability
+- Boundary 05: current path != producer identity
+- Boundary 06: exit code 0 != universal correctness
+- Boundary 07: 100/100 specified executions != untested-condition coverage
+- Boundary 08: D_KL 0 in checked cases != universal zero entropy
+- Boundary 09: index alignment != semantic correctness
+- Boundary 10: missing data remains missing
+- Boundary 11: Not Yet Due != already-executed-but-unmerged
+- Boundary 12: stale-base snapshot != current-main state
+- Boundary 13: recovery audit != original audit execution
+- Boundary 14: daily observation != hypothesis promotion
+- Boundary 15: weekly compression != independent experiment
+- Boundary 16: same source recurrence != independent support
+- Boundary 17: maintenance A2 != producer A1-A5
+- Boundary 18: current monthly owner != natural-month final
+- Boundary 19: historical #363 remains historical
+- Boundary 20: correction moves forward without rewriting task-time facts
+
+### A2 relation summary
+- Relation-through: 2026-10-11
+- A1 coverage prerequisite: SATISFIED
+- 10/11 Daily present on exact base: YES
+- Recovered W41 A5 present on exact base: YES
+- New research credit from maintenance: NONE
+- New source-independence credit from maintenance: NONE
+- Missing-data fabrication: NO
+- Historical facts rewritten: 0
+- Month final formed: NO
+- Current owner status: UPDATED_THROUGH_2026_10_11_WITH_EXECUTION_VISIBILITY_RECONCILIATION
+- Future A1 must fresh-read this merged main
+- A2 status: READY_FOR_MAINTAINER_REVIEW
