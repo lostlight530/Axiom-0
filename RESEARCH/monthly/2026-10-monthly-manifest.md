@@ -3078,3 +3078,182 @@ DUPLICATE_EVIDENCE_CREDIT
 - Current owner status: UPDATED_THROUGH_2026_10_11_WITH_EXECUTION_VISIBILITY_RECONCILIATION
 - Future A1 must fresh-read this merged main
 - A2 status: READY_FOR_MAINTAINER_REVIEW
+
+## A1 FULL OCTOBER MAINTENANCE — 2026-10-12
+- Repository: lostlight530/Axiom-0
+- Domain: Plasma / Axiom
+- Canonical owner: RESEARCH/monthly/2026-10-monthly-manifest.md
+- Logical date: 2026-10-12 Asia/Shanghai
+- Coverage window: 2026-10-01..2026-10-11
+- Cutoff: N-1 = 2026-10-11
+- Exact base main: f89d99a7f8f73b18296a8c59c8e4b91af3333df9
+- Producer replay: NOT_PERFORMED
+- External research replay: NOT_PERFORMED
+- Historical rewrite: NO
+- Month state: OPEN
+- Natural-month final: NOT_DUE
+- A2 prerequisite: A1_MERGED_THEN_FRESH_MAIN
+
+### October daily / weekly / monthly reconciliation
+
+#### 2026-10-01
+- Point-in-time date: 2026-10-01
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-02
+- Point-in-time date: 2026-10-02
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-03
+- Point-in-time date: 2026-10-03
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-04
+- Point-in-time date: 2026-10-04
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-05
+- Point-in-time date: 2026-10-05
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-06
+- Point-in-time date: 2026-10-06
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-07
+- Point-in-time date: 2026-10-07
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-08
+- Point-in-time date: 2026-10-08
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-09
+- Point-in-time date: 2026-10-09
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-10
+- Point-in-time date: 2026-10-10
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+#### 2026-10-11
+- Point-in-time date: 2026-10-11
+- Daily producer/history objects: REVIEWED_AS_RETAINED_STATE
+- Later current-main visibility used as original execution proof: NO
+- Negative/blocked/degraded/unknown states: PRESERVED
+- Weekly relation: RETAINED_WITHOUT_BACKDATING
+- Monthly owner state: OPEN / NOT_FINAL
+- New independent-source credit from A1: NONE
+- Runtime/test replay by A1: NOT_PERFORMED
+- Decision: NO_HISTORICAL_REWRITE
+
+### Repository-specific adjudication
+- F01: 2026-10-12 native PR #367 merged with Daily Pipeline Manifest plus INDEX and PATCH_INDEX navigation updates.
+- F02: PR #367 records KL contract exit code 0 and structural consistency exit code 0 within the executed documented scope.
+- F03: PR #367 also records MISSING_DATA for KL error text, exception stack, actual input range, stdout/stderr and uncovered conditions; these remain missing, not inferred.
+- F04: 100/100 CODE/nexus_core.py executions are retained as the exact executed stress-test claim, not generalized runtime correctness.
+- F05: Average execution time is a run observation for the stated environment, not a benchmark guarantee.
+- F06: PEP 8, PEP 20 and Linux 6.8 source checks are documentary observations, not evidence of October release novelty.
+- F07: INDEX discoverability is navigation only and does not upgrade source independence.
+- F08: October monthly manifest remains OPEN.
+- F09: No A1 rerun of KL, consistency, or stress tests is performed.
+- F10: No missing field is silently filled from model knowledge.
+- F11: No historical daily manifest is rewritten.
+- F12: A2 must fresh-read the A1-merged main before extending relation through 2026-10-12.
+
+### Cross-layer evidence boundaries
+- Daily artifact != weekly synthesis.
+- Weekly synthesis != monthly final.
+- Current path != historical task-time availability.
+- Merge success != runtime scientific validation.
+- Publisher statement != independent corroboration.
+- Same-source recheck != new source independence.
+- Documentary consistency != implementation correctness.
+- Test pass within stated suite != exhaustive system correctness.
+- Missing data remains missing unless a later artifact explicitly supplies it.
+- Correction moves forward; original record remains inspectable.
+- Archive preservation != original workflow execution.
+- Navigation/index update != evidence upgrade.
+- Conceptual mapping != deployed mechanism.
+- A1 governance review != native producer rerun.
+- October month remains open at the 2026-10-11 cutoff.
+
+### A1 disposition
+- Reviewed October dates: 11
+- Coverage denominator: 2026-10-01..2026-10-11
+- Historical artifacts rewritten: 0
+- Native producer runs replayed: 0
+- Independent source credits added: 0
+- Runtime validations newly claimed: 0
+- Forward corrections already merged before A1: retained in current main
+- Overall: COVERAGE_COMPLETE / HISTORY_PRESERVED / READY_FOR_A2_AFTER_MERGE
