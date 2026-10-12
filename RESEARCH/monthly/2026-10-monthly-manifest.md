@@ -3257,3 +3257,185 @@ DUPLICATE_EVIDENCE_CREDIT
 - Runtime validations newly claimed: 0
 - Forward corrections already merged before A1: retained in current main
 - Overall: COVERAGE_COMPLETE / HISTORY_PRESERVED / READY_FOR_A2_AFTER_MERGE
+
+## A2 CURRENT-MAIN OCTOBER MAINTENANCE — 2026-10-12
+- Repository: lostlight530/Axiom-0
+- Domain: Plasma / Axiom
+- Canonical owner: RESEARCH/monthly/2026-10-monthly-manifest.md
+- Logical date: 2026-10-12 Asia/Shanghai
+- Coverage window: 2026-10-01..2026-10-12
+- Relation-through: N = 2026-10-12
+- Fresh A1-merged base main: c72b959f92f881e7821aa85c61783f23c773326a
+- A1 consumed: YES
+- Native 2026-10-12 artifacts consumed: YES_WHERE_PRESENT
+- Producer replay by A2: NOT_PERFORMED
+- Historical rewrite: NO
+- Month state: OPEN
+- Natural-month final: NOT_DUE
+
+### Full October relation review
+
+#### 2026-10-01
+- Relation date: 2026-10-01
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-02
+- Relation date: 2026-10-02
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-03
+- Relation date: 2026-10-03
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-04
+- Relation date: 2026-10-04
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-05
+- Relation date: 2026-10-05
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-06
+- Relation date: 2026-10-06
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-07
+- Relation date: 2026-10-07
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-08
+- Relation date: 2026-10-08
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-09
+- Relation date: 2026-10-09
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-10
+- Relation date: 2026-10-10
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-11
+- Relation date: 2026-10-11
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+#### 2026-10-12
+- Relation date: 2026-10-12
+- Historical producer record: RETAINED
+- Current-main path used as task-time proof: NO
+- Later success used to overwrite prior negative state: NO
+- Daily -> Weekly promotion without explicit evidence: NO
+- Weekly -> Monthly final promotion: NO
+- Independent-source credit created by A2: NONE
+- Runtime replay by A2: NOT_PERFORMED
+- Decision: RELATION_REVIEWED / NO_BACKDATE
+
+### 2026-10-12 native/current-main adjudication
+- N1: 10/12 native PR #367 merged: Daily Pipeline Manifest plus INDEX and PATCH_INDEX updates.
+- N2: KL contract exit code 0 and structural consistency exit code 0 are retained within their executed scope.
+- N3: MISSING_DATA fields remain missing; A2 does not reinterpret them as pass/fail evidence.
+- N4: 100/100 nexus_core executions remain exactly that executed claim, not exhaustive correctness.
+- N5: A1 PR #368 merged and audited 10/01..10/11 without rewriting prior daily manifests.
+- N6: October monthly manifest remains OPEN and natural-month final remains NOT_DUE.
+
+### Daily / Weekly / Monthly correction rules applied
+- Daily records remain producer-time evidence and are not rewritten by relation maintenance.
+- Weekly summaries may consume prior Daily evidence but cannot manufacture missing producer execution.
+- Monthly owners may record reconciliation and correction while month is OPEN.
+- Natural-month finalization is not due on 2026-10-12.
+- Later visibility does not change earlier task-time evidence.
+- Same-source repetition does not create independence.
+- Missing data remains missing unless explicitly supplied.
+- Test success remains bounded to the executed suite/object.
+- Current success does not erase earlier negative or unknown states.
+- Correction must be forward, inspectable, and scoped.
+- A2 is governance relation maintenance, not producer rerun.
+- No hidden runtime, benchmark, deployment, or conformance credit is added.
+
+### A2 evidence ledger
+- 2026-10-01..2026-10-11: consumed from A1-merged current main.
+- 2026-10-12: consumed from current main native/correction artifacts where present.
+- Historical rewrite count: 0.
+- Native runs replayed by A2: 0.
+- Independent sources newly credited by A2: 0.
+- Runtime validations newly claimed by A2: 0.
+- Monthly final seal: 0.
+- Relation-through advanced to: 2026-10-12.
+- Status: A2_RELATION_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED
