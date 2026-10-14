@@ -45,3 +45,11 @@ GOVERNANCE_CANDIDATE: require fixture SHA, exact runner command, environment and
 CURRENT_RESULT: D14_CANDIDATE_ONLY / MONTH_OPEN / NO_NATIVE_REPLAY
 NEXT_AUDIT_DEPENDENCY: 2026-10-30 D30; natural monthly close not due
 SOURCE_CREDIT_ADDED: 0; RUNTIME_CREDIT_ADDED: 0; HISTORICAL_REWRITES: 0
+## Dual-view D14 reconciliation — 2026-10-14
+- Earlier D14 record: PR #379, historical-audits/2026-10/2026-10-14-d14-pattern-formation-audit.md, MERGED
+- This D14 follow-up view: PR #380, historical-audits/2026-10/2026-10-14-d14-pattern-formation.md, MERGED
+- Both records share the same D14 logical cutoff and inherited A1 #377 / A2 #378 source lineage
+- Independent periodic audit credit for 2026-10-14: ONE, not two separate audit events or research execution windows
+- #379 and #380 are complementary dated documentary audit views, not independent scientific confirmation
+- Original records retained; no file deletion, no evidence replacement or original producer rewrite
+- Revisit this dual-view provenance at D30 rather than treating duplicated audit text as additional support
