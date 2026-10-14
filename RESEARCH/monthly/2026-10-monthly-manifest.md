@@ -4186,3 +4186,229 @@ DUPLICATE_EVIDENCE_CREDIT
 - Monthly final seal: 0
 - Relation-through: 2026-10-13
 - Status: FINAL_A2_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED
+
+## 2026-10-14 A1 | Plasma month-to-N-minus-one artifact evidence audit
+- Repository: lostlight530/Axiom-0
+- Authority base main: b261f5d9ea64b1b03930f2abddfad76b37e23da3
+- Logical coverage: 2026-10-01 through 2026-10-13
+- Producer units: 13 Daily A1-A4 combined manifests; 2 derived weekly A5 audits
+- Every listed source file was fetched as full text at the immutable base revision
+- Exit codes, scalar witnesses and test counts are reported observations, not re-executed by this maintainer
+- Source identity, hypothesis state, numeric evidence, runtime environment and out-of-scope fields remain distinct
+- Unobserved stderr, digest, coverage or environment fields stay UNKNOWN rather than inferred from passing checks
+- Weekly audits inherit primary Daily evidence and add zero independent execution windows
+- Monthly final A6: NOT_DUE; the October monthly owner is OPEN
+- Native 2026-10-14 #376 excluded from A1 N−1, reserved for A2 relation
+- No historical producer files, weekly files or research evidence are modified by this review
+
+### RESEARCH/daily/2026-10-01-pipeline-manifest.md
+- Verified main blob: `66d3329bb25eb2364bdd7e436372e59f96d22b9c`
+- Logical date: ** 2026-10-01
+- Network evidence state: ** ONLINE
+- First source title: ** PEP 484 – Type Hints
+- Source classification: ** OBSERVED
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Execution environment: **
+- Index update flag: ** YES
+- Source section heading: ZECP Metadata
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-02-pipeline-manifest.md
+- Verified main blob: `60392958d7c2bb03752d3739d5d3e361fb41dda7`
+- Logical date: ** 2026-10-02
+- Network evidence state: ** ONLINE
+- First source title: PEP 484 \342\200\223 Type Hints
+- Source classification: SUPPORTED_ONCE
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: 0.0
+- Source section heading: ZECP Metadata
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-03-pipeline-manifest.md
+- Verified main blob: `486b29fea3e4ea2eab4fb8c231b85a456760ee1f`
+- Logical date: ** 2026-10-03
+- Network evidence state: ** ONLINE
+- First source title: ** PEP 8 \342\200\223 Style Guide for Python Code | peps.python.org
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Source section heading: Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-04-pipeline-manifest.md
+- Verified main blob: `0890670136f7b90edc2d04501b7005f4c50b54e7`
+- Logical date: ** 2026-10-04
+- Network evidence state: ** ONLINE
+- First source title: ** PEP 8 \342\200\223 Style Guide for Python Code
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Execution environment: **
+- Index update flag: ** True
+- Source section heading: Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-05-pipeline-manifest.md
+- Verified main blob: `c12a0db9b1ba8a9a22f549930dccc983f959794b`
+- Logical date: ** 2026-10-05
+- Network evidence state: ** ONLINE
+- First source title: ** What\\342\\200\\231s New In Python 3.12
+- Source classification: ** OBSERVED
+- D_KL observation: ** MISSING_DATA
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Execution environment: **
+- Source section heading: Axiom-0 Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-06-pipeline-manifest.md
+- Verified main blob: `299c8cdc1bee45129c02e0617c3038b1b0e31c45`
+- Logical date: ** 2026-10-06
+- Network evidence state: ** ONLINE
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Source section heading: Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-07-pipeline-manifest.md
+- Verified main blob: `7b4c53f90728d0509c0ce178bc6346caea269b9a`
+- Logical date: ** 2026-10-07
+- Network evidence state: ** ONLINE
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Source section heading: ZECP Metadata
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-08-pipeline-manifest.md
+- Verified main blob: `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9`
+- Logical date: ** 2026-10-08
+- Network evidence state: ** ONLINE
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Source section heading: ZECP Metadata
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-09-pipeline-manifest.md
+- Verified main blob: `3a79d927d5016f01e5a3ad70942f82d027048294`
+- Logical date: ** 2026-10-09
+- Network evidence state: ** ONLINE
+- First source title: ** PEP 8 – Style Guide for Python Code
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Index update flag: ** True
+- Source section heading: Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-10-pipeline-manifest.md
+- Verified main blob: `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e`
+- Logical date: ** 2026-10-10
+- Network evidence state: ** ONLINE
+- First source title: ** PEP 8 – Style Guide for Python Code | peps.python.org
+- Source classification: ** OBSERVED
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Source section heading: 2026-10-10 Plasma Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-11-pipeline-manifest.md
+- Verified main blob: `6ea47cf72236f28aa7305ddcfd77c84399df00e0`
+- Logical date: ** 2026-10-11
+- Network evidence state: ** ONLINE
+- First source title: ** Python 3 Official Documentation
+- Source classification: ** OBSERVED
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- Execution environment: ** Linux devbox 6.8.0 #1 SMP PREEMPT_DYNAMIC Fri Feb 20 20:38:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux, Python 3.12.13
+- Index update flag: ** True
+- Source section heading: Axiom-0 Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-12-pipeline-manifest.md
+- Verified main blob: `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8`
+- Logical date: ** 2026-10-12
+- Network evidence state: ** ONLINE
+- First source title: ** PEP 8 – Style Guide for Python Code | peps.python.org
+- Source classification: ** OBSERVED
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- D_KL observation: ** 0.0
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Execution environment: ** Linux devbox 6.8.0 #1 SMP PREEMPT_DYNAMIC Fri Feb 20 20:38:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux, Python 3.12.13
+- Index update flag: ** SUCCESS
+- Source section heading: Daily Pipeline Manifest
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/daily/2026-10-13-pipeline-manifest.md
+- Verified main blob: `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa`
+- Logical date: ** 2026-10-13
+- Network evidence state: ** ONLINE
+- First source title: ** The Python Language Reference - Execution model
+- Source classification: ** SUPPORTED_ONCE
+- A2 audit decision: ** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- Divergence checker exit: ** 0
+- Topology checker exit: ** 0
+- D_KL observation: ** 0.0
+- A3 target: ** CODE/nexus_core.py
+- A3 attempt count: ** 100
+- A3 successful attempts: ** 100
+- A3 failed attempts: ** 0
+- Execution environment: ** Linux devbox 6.8.0 #1 SMP PREEMPT_DYNAMIC Fri Feb 20 20:38:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+- Index update flag: ** YES
+- Source section heading: ZECP Metadata
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/weekly/2026-W40-weekly-manifest.md
+- Verified main blob: `9ec5f90f6c0e75fbd0856f4768758684fe4c857f`
+- Source section heading: [A5] 规范审查 2026-W40
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### RESEARCH/weekly/2026-W41-weekly-manifest.md
+- Verified main blob: `c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277`
+- Weekly coverage ratio: 7 / 7 current-main Daily manifests present.
+- Producer task status: SUCCESS_WITH_RECONCILIATION
+- Source section heading: 2026-W41 Weekly Specification Audit Manifest — Recovery
+- Explicit MISSING_DATA appears; absent execution fields remain unknown
+- Decision: preserve original producer record, no maintainer rerun or success promotion
+
+### A1 disposition
+- Producer artifact units examined: 15
+- Artifact-level field evidence presented: source identity, checked scope, current stored blob and explicit unknowns
+- Producer rerun: NOT_PERFORMED
+- Durable doctrine or hypothesis promotion: NONE
+- Original historical evidence rewritten: NO
+- Next dependency: merge this A1; fresh-read the resulting main before A2
