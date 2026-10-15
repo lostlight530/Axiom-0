@@ -104,3 +104,7 @@ INDEX_ALIGNMENT
 ```
 
 Current executable behavior remains owned by implementation and active specification/methodology contracts, not by the existence of periodic research artifacts.
+
+## Archived checkpoint — 2026-10-14
+
+[v2026.10-fourteen-day-evidence-checkpoint](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.10-fourteen-day-evidence-checkpoint) is archived as [10.5281/zenodo.23365534](https://doi.org/10.5281/zenodo.23365534). For the software-family concept DOI, earlier versions and exact-checkpoint citation, see [Release and Archival Policy](RELEASE_POLICY.md).
