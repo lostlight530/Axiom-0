@@ -4567,3 +4567,165 @@ DUPLICATE_EVIDENCE_CREDIT
 - No rerun or independent-source credit
 - Scanner pass is scoped, not a universal correctness guarantee
 - Requires GitHub merge and fresh main verification
+
+## A1 2026-10-15 | Plasma A1–A4 October 1–14 manifest-by-manifest reconciliation
+- Current main base: 900e1c62ab0d5f79fecca4da98a0c791469a237c; previous monthly owner blob: 6947b51b53dacfc5c410beb6d999d1d811fc00ab.
+- Original A1–A4 production is retained as one native per-date manifest (not four newly rerun pipelines).
+- October 15 producer manifest excluded from A1 and reserved for post-merge A2.
+- Source metadata checked against native daily manifests; execution and scientific evidence remain producer-reported, not rerun by maintainer.
+- October 5 missing metrics must not be normalized into a 100/100 success day.
+- The A3 reported 100/100 on other dates is a scope-bounded reported experiment outcome, not universal system correctness.
+- Distinguish A2 KL scanner witness 0.0 from any claim of globally zero entropy or independent correctness.
+- W40/W41 weekly relation remains inherited source work; this pass does not manufacture a new weekly test.
+- October monthly report is OPEN; no month-final or Stage promotion.
+
+### 2026-10-01 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-01-pipeline-manifest.md` is present at git blob 66d3329bb25eb2364bdd7e436372e59f96d22b9c on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-01 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-01 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-01 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-02 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-02-pipeline-manifest.md` is present at git blob 60392958d7c2bb03752d3739d5d3e361fb41dda7 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-02 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-02 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-02 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-03 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-03-pipeline-manifest.md` is present at git blob 486b29fea3e4ea2eab4fb8c231b85a456760ee1f on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-03 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-03 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-03 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-04 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-04-pipeline-manifest.md` is present at git blob 0890670136f7b90edc2d04501b7005f4c50b54e7 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-04 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-04 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-04 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-05 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-05-pipeline-manifest.md` is present at git blob c12a0db9b1ba8a9a22f549930dccc983f959794b on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: the source records MISSING_DATA; do not substitute adjacent dates' 0.0.
+- A3 native execution evidence: the usual Test Result line is absent; outcome remains MISSING_DATA.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-05 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-05 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-05 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-06 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-06-pipeline-manifest.md` is present at git blob 299c8cdc1bee45129c02e0617c3038b1b0e31c45 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-06 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-06 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-06 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-07 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-07-pipeline-manifest.md` is present at git blob 7b4c53f90728d0509c0ce178bc6346caea269b9a on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-07 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-07 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-07 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-08 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-08-pipeline-manifest.md` is present at git blob 5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: source contains a KL_EVIDENCE contract witness, scoped to scanner test cases.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-08 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-08 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-08 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-09 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-09-pipeline-manifest.md` is present at git blob 3a79d927d5016f01e5a3ad70942f82d027048294 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: original record reports D_KL 0.0 within scanner contract, not universal semantic identity.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-09 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-09 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-09 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-10 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-10-pipeline-manifest.md` is present at git blob e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: original record reports D_KL 0.0 within scanner contract, not universal semantic identity.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-10 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-10 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-10 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-11 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-11-pipeline-manifest.md` is present at git blob 6ea47cf72236f28aa7305ddcfd77c84399df00e0 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: original record reports D_KL 0.0 within scanner contract, not universal semantic identity.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-11 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-11 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-11 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-12 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-12-pipeline-manifest.md` is present at git blob 6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: original record reports D_KL 0.0 within scanner contract, not universal semantic identity.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-12 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-12 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-12 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-13 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-13-pipeline-manifest.md` is present at git blob 7980eaead91dc998e16a1ce5e399a17f4d7d5dfa on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: original record reports D_KL 0.0 within scanner contract, not universal semantic identity.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-13 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-13 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-13 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### 2026-10-14 — A1/A2/A3/A4 native source gate
+- Original daily manifest `RESEARCH/daily/2026-10-14-pipeline-manifest.md` is present at git blob 1c206376250ce9f7c21f9f99ac25938e3f1d9596 on A1 main; not a new independent run.
+- A1 external-source provenance remains the originally recorded per-date object; this maintenance does not certify remote publication timestamps.
+- A2 KL witness: original record reports D_KL 0.0 within scanner contract, not universal semantic identity.
+- A3 native execution evidence: source records 100/100 specified executions passed; result is producer-reported.
+- A4 current-source identity: the per-date manifest includes topology/index alignment material; index placement does not prove end-to-end program conformance.
+- 2026-10-14 relation: one dated producer manifest joins archaeology, coherence witness, sandbox evidence, and topology boundary; do not count four extra Daily events.
+- 2026-10-14 preservation: owner maintenance only; original producer manifest, its source claims, test outputs and missing fields remain unmodified.
+- 2026-10-14 promotion gate: scanner/test evidence cannot independently authorize a durable doctrine, external deployment claim, or a completed October Monthly.
+
+### Source-to-month coverage and decisions
+- 14/14 logical dates have original manifest blob references within October 1–14.
+- One distinct 2026-10-05 diagnostic gap stays explicitly MISSING_DATA, not a zero or PASS.
+- A3 reported pass is attributed only to per-date native producer and its specified test sample.
+- A4 index changes are judged only within the producer's reported inspected scope.
+- Month A1 inherits October 14 previous checkpoint without erasing earlier finite deviations and gaps.
+- No native manifest, weekly artifact, index or stage template was rewritten by this A1.
+- Day 15 requires A1 merge across all ten repos and fresh-main read before A2.
+- Verification: this PR needs diff validation, merge confirmation, and main owner blob recheck.
+
