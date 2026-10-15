@@ -4729,3 +4729,186 @@ DUPLICATE_EVIDENCE_CREDIT
 - Day 15 requires A1 merge across all ten repos and fresh-main read before A2.
 - Verification: this PR needs diff validation, merge confirmation, and main owner blob recheck.
 
+## A2 2026-10-15 | Plasma A1–A6 October 1–15 daily-to-weekly-to-monthly evidence relation
+- Post-ten-A1 main c166b459b4865d974975e3d4c68a42a66ee0adc6; inherited merged A1 #384 owner blob 4f969aff9cede4cf41f7cd6907366487bafb9e7c.
+- Original Plasma Daily groups A1 archaeology, A2 coherence scan, A3 specified stress runs and A4 index topology in one dated native manifest.
+- New October 15 native PR #383 merged on main; original daily manifest blob deb515b422773cfb232abf126e6d4a0fc9efa727.
+- October 15 KL D_KL reported 0.0, A3 100/100 specified runs reported, topology `CONSISTENCY_CHECK_PASS_WITHIN_SCOPE`.
+- A3 execution environment marked NOT_VERIFIED; test count and KL witness remain bounded and producer-reported, not independent experimental recreation.
+- Historical October 5 incomplete A3 field and missing D_KL remain MISSING_DATA and cannot inherit later successes.
+- Weekly A5 W40 and W41 are separate native weekly summaries; W42 final weekly report not due on October 15.
+- Monthly A6 owner is a rolling OPEN relation, not end-of-month final.
+- No Plasma scanner, tests, code, release or index files executed or changed in this independent A2.
+
+### 2026-10-01 | W40 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-01-pipeline-manifest.md`; fresh-main source blob `66d3329bb25eb2364bdd7e436372e59f96d22b9c`.
+- Native A1/A2 source/coherence: source KL_EVIDENCE contract and bounded A3 test report; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-01 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-01 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-01 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-02 | W40 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-02-pipeline-manifest.md`; fresh-main source blob `60392958d7c2bb03752d3739d5d3e361fb41dda7`.
+- Native A1/A2 source/coherence: source KL_EVIDENCE contract and bounded A3 test report; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-02 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-02 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-02 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-03 | W40 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-03-pipeline-manifest.md`; fresh-main source blob `486b29fea3e4ea2eab4fb8c231b85a456760ee1f`.
+- Native A1/A2 source/coherence: source KL_EVIDENCE contract and bounded A3 test report; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-03 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-03 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-03 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-04 | W40 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-04-pipeline-manifest.md`; fresh-main source blob `0890670136f7b90edc2d04501b7005f4c50b54e7`.
+- Native A1/A2 source/coherence: source KL_EVIDENCE contract and bounded A3 test report; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-04 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-04 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-04 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-05 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-05-pipeline-manifest.md`; fresh-main source blob `c12a0db9b1ba8a9a22f549930dccc983f959794b`.
+- Native A1/A2 source/coherence: MISSING_DATA KL and A3 result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: incomplete/MISSING_DATA; do not record 100/100 success for this date.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-05 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-05 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-05 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-06 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-06-pipeline-manifest.md`; fresh-main source blob `299c8cdc1bee45129c02e0617c3038b1b0e31c45`.
+- Native A1/A2 source/coherence: source KL_EVIDENCE contract and bounded A3 test report; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-06 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-06 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-06 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-07 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-07-pipeline-manifest.md`; fresh-main source blob `7b4c53f90728d0509c0ce178bc6346caea269b9a`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-07 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-07 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-07 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-08 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-08-pipeline-manifest.md`; fresh-main source blob `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-08 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-08 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-08 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-09 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-09-pipeline-manifest.md`; fresh-main source blob `3a79d927d5016f01e5a3ad70942f82d027048294`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-09 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-09 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-09 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-10 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-10-pipeline-manifest.md`; fresh-main source blob `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-10 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-10 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-10 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-11 | W41 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-11-pipeline-manifest.md`; fresh-main source blob `6ea47cf72236f28aa7305ddcfd77c84399df00e0`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: existing native weekly A5 source is separate from daily test runs.
+- 2026-10-11 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-11 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-11 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-12 | W42 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-12-pipeline-manifest.md`; fresh-main source blob `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: week remains open and final weekly A5 NOT_DUE.
+- 2026-10-12 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-12 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-12 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-13 | W42 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-13-pipeline-manifest.md`; fresh-main source blob `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: week remains open and final weekly A5 NOT_DUE.
+- 2026-10-13 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-13 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-13 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-14 | W42 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-14-pipeline-manifest.md`; fresh-main source blob `1c206376250ce9f7c21f9f99ac25938e3f1d9596`.
+- Native A1/A2 source/coherence: reported D_KL 0.0; A3 specified bounded test result; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: historical producer index relation, not independent verified repository semantic correctness.
+- Weekly A5 relation: week remains open and final weekly A5 NOT_DUE.
+- 2026-10-14 evidence-state inheritance: full N−1 source identity retained from merged A1 #384.
+- 2026-10-14 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-14 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### 2026-10-15 | W42 native A1–A4 → A5 → monthly A6
+- Original producer manifest `RESEARCH/daily/2026-10-15-pipeline-manifest.md`; fresh-main source blob `deb515b422773cfb232abf126e6d4a0fc9efa727`.
+- Native A1/A2 source/coherence: KL 0.0; 100/100 specified executions; A4 within-scope consistency; publication metadata and KL witness are separate evidence identities.
+- Native A3 stress result: original producer reports specified bounded executions; no independently executed A2 maintenance tests.
+- A4 current topology gate: producer records CONSISTENCY_CHECK_PASS_WITHIN_SCOPE.
+- Weekly A5 relation: week remains open and final weekly A5 NOT_DUE.
+- 2026-10-15 evidence-state inheritance: added from native PR #383 after merged A1.
+- 2026-10-15 source independence: repeated native test line isn't a new public benchmark or generalized entropy guarantee.
+- 2026-10-15 original status: historic field gaps remain at source date; maintenance does not rewrite native manifest.
+
+### W40 native weekly A5 settlement
+- Original `RESEARCH/weekly/2026-W40-weekly-manifest.md` exists at blob `9ec5f90f6c0e75fbd0856f4768758684fe4c857f`.
+- A5 source aggregates its completed native daily window; it is not 7 fresh Plasma stress tests.
+- Weekly result is inherited without altering original file or re-executing scanner.
+- W40 does not erase Oct5 missing evidence or reinterpret A3 execution environment as verified.
+
+### W41 native weekly A5 settlement
+- Original `RESEARCH/weekly/2026-W41-weekly-manifest.md` exists at blob `c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277`.
+- A5 source aggregates its completed native daily window; it is not 7 fresh Plasma stress tests.
+- Weekly result is inherited without altering original file or re-executing scanner.
+- W41 does not erase Oct5 missing evidence or reinterpret A3 execution environment as verified.
+
+### Month A6 and final evidence disposition
+- 15 of 15 original daily Plasma manifest paths verified present on post-A1 main, each source blob retained.
+- October 15 original native Daily is admitted to the month after the A1 October 1–14 relation.
+- The October 5 incomplete source cannot be repaired merely with metadata from later dates.
+- W42 (October 12–18) and October monthly final are NOT_DUE.
+- Current monthly owner is OPEN; no new stage or external benchmark validation claimed.
+- This A2 PR does not modify native daily, weekly A5, index, algorithm, tests or open-source governance documents.
+- Source identity, execution evidence and scientific reproducibility remain three different evidence layers.
+- A2 completion must be GitHub-merged then final fresh-read source/owner/current head verified.
+
