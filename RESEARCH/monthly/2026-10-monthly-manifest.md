@@ -4912,3 +4912,159 @@ DUPLICATE_EVIDENCE_CREDIT
 - Source identity, execution evidence and scientific reproducibility remain three different evidence layers.
 - A2 completion must be GitHub-merged then final fresh-read source/owner/current head verified.
 
+## 2026-10-16 A1 | Ordinary Plasma October 01–15 native pipeline review
+
+- Authoritative source main at review: `49ccb4336e5add8e41a8c31733e5eb375f081979`; review cutoff exactly Oct15, day16 reserved for successor A2
+- Reviewed fifteen date-addressed native manifests and their algorithm/source/audit/stress boundaries from current repository
+- Original runner assertions remain producer-reported facts, no independent Python benchmark or adversarial run repeated by maintainer
+- Plasma A1-A4 combined Daily has one scheduler slot, not four separate Daily PRs
+- The October 5 D_KL witness is MISSING_DATA; keeping that lack is required, not an invitation to fill from later days
+- Current-month owner OPEN; W42 last day 18, natural weekly conclusion not due; current October month final not due
+- Native date-specific statements, Git file identities and scope judgments:
+### 2026-10-01 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-01-pipeline-manifest.md`
+- Source object content blob: `66d3329bb25eb2364bdd7e436372e59f96d22b9c`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: A1 Python type-hint source records are publication facts distinct from program runtime
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-02 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-02-pipeline-manifest.md`
+- Source object content blob: `60392958d7c2bb03752d3739d5d3e361fb41dda7`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: A2 KL zero is bounded to identity/scan sample, not generic entropy consistency
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-03 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-03-pipeline-manifest.md`
+- Source object content blob: `486b29fea3e4ea2eab4fb8c231b85a456760ee1f`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: Structure and specified runs only; no independent science replication
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-04 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-04-pipeline-manifest.md`
+- Source object content blob: `0890670136f7b90edc2d04501b7005f4c50b54e7`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: Published source identity is distinct from A3 runner state
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-05 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-05-pipeline-manifest.md`
+- Source object content blob: `c12a0db9b1ba8a9a22f549930dccc983f959794b`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL MISSING_DATA / exact source gap remains
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: D_KL is MISSING_DATA despite claimed successful A3 executions; cannot infer algebraic audit success
+- A1 result: UNKNOWN_PRESERVE_MISSING_ALGEBRA_WITNESS
+### 2026-10-06 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-06-pipeline-manifest.md`
+- Source object content blob: `299c8cdc1bee45129c02e0617c3038b1b0e31c45`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: Bounded within-scope check, external source publication and local contract separate
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-07 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-07-pipeline-manifest.md`
+- Source object content blob: `7b4c53f90728d0509c0ce178bc6346caea269b9a`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: 100/100 specified tests do not ensure untested adversarial conditions
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-08 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-08-pipeline-manifest.md`
+- Source object content blob: `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: ZECP strict schema declaration is producer assertion, not externally executed maintainer validation
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-09 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-09-pipeline-manifest.md`
+- Source object content blob: `3a79d927d5016f01e5a3ad70942f82d027048294`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: A3 specific bounded sample can pass while user-world agent effects remain unknown
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-10 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-10-pipeline-manifest.md`
+- Source object content blob: `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: Topology checks are within documented test scope, not scientific correctness proof
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-11 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-11-pipeline-manifest.md`
+- Source object content blob: `6ea47cf72236f28aa7305ddcfd77c84399df00e0`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: specified result requires source-specific context; do not infer without retained field
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: A3 100/100 metadata not unambiguously visible in extracted normalized Test Result field; inspect exact source before claim
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-12 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-12-pipeline-manifest.md`
+- Source object content blob: `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: Preserve original source exception semantics and algorithmic assumptions
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-13 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-13-pipeline-manifest.md`
+- Source object content blob: `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: specified result requires source-specific context; do not infer without retained field
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: A3 source file lacks conventional Test Result field in extracted variant; execution count cannot be assumed without separate check
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-14 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-14-pipeline-manifest.md`
+- Source object content blob: `1c206376250ce9f7c21f9f99ac25938e3f1d9596`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: D_KL presented as code literal 0.0; no additional KL identities inferred
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+### 2026-10-15 | Plasma A1→A4 combined original Daily
+- Native manifest path: `RESEARCH/daily/2026-10-15-pipeline-manifest.md`
+- Source object content blob: `deb515b422773cfb232abf126e6d4a0fc9efa727`
+- Original network state: ONLINE as reported by producer, not independent revalidation
+- Native A2 algebra evidence: D_KL 0.0 or formatting-equivalent value in source, bounded sample only
+- Native A3 evidence: producer records 100/100 specified bounded executions; not full program reliability
+- A4/topology source: producer-reported structural scope, not external science or benchmark reproducibility
+- Actual issue/boundary judgment: Cited PEP 8, 20, 257 source checks, not evidence of newly published 2026 papers
+- A1 result: NO_FOLLOW_UP original source; no change to run-time evidence
+
+### Native week and month continuity
+- Retained original native weekly `RESEARCH/weekly/2026-W40-weekly-manifest.md` at Git blob `9ec5f90f6c0e75fbd0856f4768758684fe4c857f`; separate A5 weekly producer, no rerun
+- Retained original native weekly `RESEARCH/weekly/2026-W41-weekly-manifest.md` at Git blob `c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277`; separate A5 weekly producer, no rerun
+- A5 weekly manifests use their own source periods, do not count as seven independent freshly re-executed stress suites
+- A6 monthly owner is a rolling relational artifact, not a fresh daily pipeline run
+- Original 2026-10-05 missing algebra witness must survive current-month refresh, even when latest manifest D_KL=0.0
+- A3 success count 100/100 has a denominator of specified bounded execution iterations, not whole-system reliability
+- Repo source line-check validity, external source truth and independent benchmark execution are different authority levels
+- No native manifest, CODE, INDEX/PATCH_INDEX, scanner or original weekly file changed in A1
+- Next A2 gate: all ten merged A1 and fresh main; add native Oct16 actual Plasma result separately
+- A1 result: OCT1_TO15_COVERED / OCT05_KL_MISSING_PRESERVED / W42_OPEN / MONTH_OPEN
