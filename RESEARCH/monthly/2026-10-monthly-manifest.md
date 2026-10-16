@@ -5068,3 +5068,172 @@ DUPLICATE_EVIDENCE_CREDIT
 - No native manifest, CODE, INDEX/PATCH_INDEX, scanner or original weekly file changed in A1
 - Next A2 gate: all ten merged A1 and fresh main; add native Oct16 actual Plasma result separately
 - A1 result: OCT1_TO15_COVERED / OCT05_KL_MISSING_PRESERVED / W42_OPEN / MONTH_OPEN
+
+## A2 2026-10-16 | Axiom-0 October 2026 complete relational pipeline version
+
+- Merged A1 #388 fresh main `f22e44ab82d81313e6340d28d1a3dd9619992927`; MONTH_VERSION 2026-10 under original A6 monthly manifest, OPEN/PROVISIONAL
+- Original Oct1..16 combined A1/A2/A3/A4 pipeline manifests are sixteen date-level native deliveries, not sixty-four independent jobs
+- The A2 maintenance plane is unrelated to in-repository producer stage A2 algebraic audit; they must not share execution credits
+- Current Oct16 native manifest added as new input while October 1–15 source/audit/test relations are reconsidered as one monthly state
+- Source publisher docs and release-history refs are upstream citations, not proof that every local code path satisfies their semantics
+- Reported native D_KL=0.0 is for named fixture/input range; original Oct5 D_KL remains MISSING_DATA and is not repaired by later zero measurements
+- A3 specified result 100/100 is bounded producer execution evidence, not independent rerun by maintenance and not full condition coverage
+- Original A4 topology checks are record-scoped and do not establish unchanged entire repository, scientific accuracy, or unbounded robustness
+- Existing W40/W41 A5 reports are native weekly sources, current W42 Oct12–18 not final due
+- All Daily native file identities and their source-to-week/month relationships follow:
+### 2026-10-01 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-01-pipeline-manifest.md`, SHA `66d3329bb25eb2364bdd7e436372e59f96d22b9c`
+- A1 archaeology topic: PEP484 type hints / PEP20 Zen / PEP526 annotations
+- Source authority boundary: Source docs are normative or descriptive references, not runtime scientific results
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W40 cross-month period
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-02 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-02-pipeline-manifest.md`, SHA `60392958d7c2bb03752d3739d5d3e361fb41dda7`
+- A1 archaeology topic: PEP484 and PEP483 type theory plus Python ast
+- Source authority boundary: Type theory/AST documentation is source identity, not deployed scanner correctness
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W40 cross-month period
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-03 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-03-pipeline-manifest.md`, SHA `486b29fea3e4ea2eab4fb8c231b85a456760ee1f`
+- A1 archaeology topic: PEP8, PEP20, PEP257 style and docstrings
+- Source authority boundary: Style guidance source checks distinct from A2 algebraic fixture
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W40 cross-month period
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-04 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-04-pipeline-manifest.md`, SHA `0890670136f7b90edc2d04501b7005f4c50b54e7`
+- A1 archaeology topic: PEP8/20/484 reuse across source lineages
+- Source authority boundary: Repeated publisher documentation is not independent new science
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W40 cross-month period
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-05 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-05-pipeline-manifest.md`, SHA `c12a0db9b1ba8a9a22f549930dccc983f959794b`
+- A1 archaeology topic: Python3.12/3.13 changes plus PEP695
+- Source authority boundary: Original D_KL MISSING_DATA despite A3 100/100; cannot backfill value
+- Native A2 KL metric: MISSING_DATA, original lack preserved
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: FIELD_LEVEL_DATA_GAP_OPEN
+### 2026-10-06 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-06-pipeline-manifest.md`, SHA `299c8cdc1bee45129c02e0617c3038b1b0e31c45`
+- A1 archaeology topic: Python/Pipeline bounded original source
+- Source authority boundary: No new independent source-inference in bounded A1 archaeology
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-07 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-07-pipeline-manifest.md`, SHA `7b4c53f90728d0509c0ce178bc6346caea269b9a`
+- A1 archaeology topic: PEP8/20/257 source audit
+- Source authority boundary: Document identity and executable test suite sample distinct
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-08 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-08-pipeline-manifest.md`, SHA `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9`
+- A1 archaeology topic: PEP257/8/20 source audit
+- Source authority boundary: Strict ZECP metadata is producer-reported declaration
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-09 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-09-pipeline-manifest.md`, SHA `3a79d927d5016f01e5a3ad70942f82d027048294`
+- A1 archaeology topic: PEP8, PEP484 and PEP20
+- Source authority boundary: Source stability does not establish all code-path coverage
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-10 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-10-pipeline-manifest.md`, SHA `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e`
+- A1 archaeology topic: PEP8, PEP484 and Python json docs
+- Source authority boundary: Versioned Python library semantics not universally identical across runtimes
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-11 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-11-pipeline-manifest.md`, SHA `6ea47cf72236f28aa7305ddcfd77c84399df00e0`
+- A1 archaeology topic: Python 3 documentation, Linux kernel releases, Attention paper
+- Source authority boundary: Three heterogeneous publisher objects do not validate one execution claim jointly
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W41 original audit with HUMAN_AUTHORIZED_RECOVERY
+- A2 evolution: SOURCE_HETEROGENEITY_SCOPE_RETAINED
+### 2026-10-12 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-12-pipeline-manifest.md`, SHA `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8`
+- A1 archaeology topic: PEP8/20 and Linux kernel v6.8 release
+- Source authority boundary: Separate standards and kernel release timestamps from local pipeline test date
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W42 partial week, natural weekly final not due
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-13 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-13-pipeline-manifest.md`, SHA `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa`
+- A1 archaeology topic: Python execution model, json and math library
+- Source authority boundary: Language-reference semantics and A3 fixture success are independent classes
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W42 partial week, natural weekly final not due
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-14 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-14-pipeline-manifest.md`, SHA `1c206376250ce9f7c21f9f99ac25938e3f1d9596`
+- A1 archaeology topic: PEP8, Python json, RFC8259
+- Source authority boundary: JSON specification and Python implementation names require separate version context
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W42 partial week, natural weekly final not due
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-15 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-15-pipeline-manifest.md`, SHA `deb515b422773cfb232abf126e6d4a0fc9efa727`
+- A1 archaeology topic: PEP8, PEP20, Python 3.12 notes
+- Source authority boundary: Python documentation listing not evidence of a new Oct15 upstream publication
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W42 partial week, natural weekly final not due
+- A2 evolution: ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS
+### 2026-10-16 | A1–A4 combined native pipeline
+- Original single pipeline Daily `RESEARCH/daily/2026-10-16-pipeline-manifest.md`, SHA `ea513361dfad06cbd937e74393d634c345d90a03`
+- A1 archaeology topic: PEP8/20/257 original native, Oct16
+- Source authority boundary: A2 D_KL0 within scope, A3 100/100 specified tests, uncovered conditions MISSING_DATA
+- Native A2 KL metric: 0.0 reported within specified identity-case scan scope, not global convergence
+- Native A3 evidence: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- Structural A4 relation: project topology and patch/index consistency are checks within the recorded scope, not proof of scientific validity
+- Weekly membership: W42 partial week, natural weekly final not due
+- A2 evolution: CURRENT_OCT16_NATIVE_ADMITTED
+
+### Current month index, weekly recovery and negative evidence
+- W40 A5 source `RESEARCH/weekly/2026-W40-weekly-manifest.md` Git blob `9ec5f90f6c0e75fbd0856f4768758684fe4c857f`, historical cross-month producer audit scope
+- W41 A5 source `RESEARCH/weekly/2026-W41-weekly-manifest.md` Git blob `c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277`, specifically records HUMAN_AUTHORIZED_RECOVERY and historical PR #363 NOT_MERGED; must not imply that old PR merged
+- Top-level `INDEX.md` Git blob `a7433d242ed695d24c41877b30337cfa1dbc0f68`, `PATCH_INDEX.md` Git blob `771eda9fd04734ea077c8be64ad043ca0c2eca52 `; source identities do not by themselves prove current index links all pass
+- Oct5 D_KL field remains missing even though A3 reported 100/100; these are independent fields and must not be normalized to a single PASS
+- Native source fields often contain MISSING_DATA for source publication date, standard error, uncovered conditions and exception stack; absence is not audited zero
+- Research papers, Python PEPs and Linux release docs are not three independently confirming runtime safety tests
+- Current Oct16 exact manifest reports pipeline/audit CONSISTENCY_CHECK_PASS_WITHIN_SCOPE; no independent repair or scientific reproduction executed here
+- W42 A5 and natural Oct A6 final are NOT_DUE as of Oct16; status OPEN must survive A2 merge
+- Original Daily manifests, weekly reports and index bytes unchanged by A2; only canonical monthly owner updated append-only
+- A2 status: MONTH_VERSION_2026_10_OPEN / 16_NATIVE_DAILIES / OCT05_KL_MISSING_PRESERVED / W41_RECOVERY_ATTRIBUTION_RETAINED
