@@ -5370,3 +5370,145 @@ DUPLICATE_EVIDENCE_CREDIT
 - Directly executed by this A1: GitHub tree and canonical record audit; full Python checker, network research rerun and topology replay NOT_EXECUTED
 - A2 gate: ten merged A1 + fresh main, then incorporate October 17 native manifest without changing this cutoff
 - Current state MONTH_OPEN / SIXTEEN_NATIVE_DATE_IDENTITIES / NO_NEW_RUNTIME_PASS
+
+## 2026-10-17 A2 | Plasma current October 1–17 combined A1–A4 protocol relation
+
+- Exact fresh post-A1 #391 main `f5a81fc0a331253631730df595449ad6ea844f86`; one existing October A6 month identity, still OPEN
+- Oct17 one native A1–A4 combined pipeline PR #390 is one scheduled producer execution, not four PRs or four independent tests
+- Oct17 producer claims KL identity-case 0.0, 100/100 specified A3 tests and index linkage, only within recorded fixture and code revision; maintainer has not independently rerun them
+- Oct05 original KL witness is MISSING_DATA and cannot be replaced with other days' numerical 0.0
+- W41 A5 current file is human-authorized recovery from original missing/NOT_MERGED PR; later path does not prove original weekly delivery
+- W42 Oct12–18 not naturally complete; October A6 final NOT_DUE; no legitimate stage final promotion
+- Source version, observed command, execution environment, exit code, uncovered assertions and merged PR state remain separate evidence units
+
+### Source-to-scanner-to-test-to-index monthly relation
+#### 2026-10-01 | PEP source and bounded scan
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-01-pipeline-manifest.md` · Git blob `66d3329bb25eb2364bdd7e436372e59f96d22b9c`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W40 original; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-02 | Python source identity
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-02-pipeline-manifest.md` · Git blob `60392958d7c2bb03752d3739d5d3e361fb41dda7`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W40 original; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-03 | stdlib/version authority
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-03-pipeline-manifest.md` · Git blob `486b29fea3e4ea2eab4fb8c231b85a456760ee1f`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W40 original; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-04 | source-version precision
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-04-pipeline-manifest.md` · Git blob `0890670136f7b90edc2d04501b7005f4c50b54e7`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W40 original; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-05 | D_KL missing witness with 100/100 A3
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-05-pipeline-manifest.md` · Git blob `c12a0db9b1ba8a9a22f549930dccc983f959794b`
+- Algebra metric admission: `ORIGINAL_MISSING_DATA`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `MISSING_KL_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-06 | separate scanner and execution denominator
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-06-pipeline-manifest.md` · Git blob `299c8cdc1bee45129c02e0617c3038b1b0e31c45`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-07 | combinatorial test scope not universal proof
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-07-pipeline-manifest.md` · Git blob `7b4c53f90728d0509c0ce178bc6346caea269b9a`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-08 | current code revision and old manifest are different
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-08-pipeline-manifest.md` · Git blob `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-09 | bounded consistency check
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-09-pipeline-manifest.md` · Git blob `3a79d927d5016f01e5a3ad70942f82d027048294`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-10 | source/benchmark version cannot be assumed constant
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-10-pipeline-manifest.md` · Git blob `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-11 | runtime test pass is not topology integrity
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-11-pipeline-manifest.md` · Git blob `6ea47cf72236f28aa7305ddcfd77c84399df00e0`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W41 human-recovery attribution where applicable; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-12 | theoretical input missingness persists
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-12-pipeline-manifest.md` · Git blob `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W42 still collecting Daily; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-13 | recorded test horizon distinct from formal proof
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-13-pipeline-manifest.md` · Git blob `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W42 still collecting Daily; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-14 | index/cross-reference consistency not extra execution
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-14-pipeline-manifest.md` · Git blob `1c206376250ce9f7c21f9f99ac25938e3f1d9596`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W42 still collecting Daily; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-15 | input source evidence and phase transition
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-15-pipeline-manifest.md` · Git blob `deb515b422773cfb232abf126e6d4a0fc9efa727`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W42 still collecting Daily; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-16 | PEP8/20/257 provenance and bounded runtime
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-16-pipeline-manifest.md` · Git blob `ea513361dfad06cbd937e74393d634c345d90a03`
+- Algebra metric admission: `PRODUCER_SCOPED_EVIDENCE`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W42 still collecting Daily; source chronological gaps not corrected by new links
+- A2 interpretation: `PRIOR_DATED_BOUNDED_TEST_RETAINED` for this date; no new independent experiment credit
+#### 2026-10-17 | PEP 20/8 and urllib source review; KL scan 0.0 and selected 100/100 producer run
+- Single native A1→A2→A3→A4 source `RESEARCH/daily/2026-10-17-pipeline-manifest.md` · Git blob `9e6f63b7468d9fc385e25152e961d83f8c8536db`
+- Algebra metric admission: `PRODUCER_REPORTED_ZERO_SCOPED`; KL identity-case result never implies zero entropy for all states
+- Execution relation: A3 specified denominator and observed exit codes are bounded producer assertions, not independent maintainer run
+- Structural relation: A4 INDEX/PATCH_INDEX are navigation and current canonical paths, not replacement test logs
+- Weekly relation: W42 still collecting Daily; source chronological gaps not corrected by new links
+- A2 interpretation: `LATEST_NATIVE_17_ADMITTED_WITH_LIMITS` for this date; no new independent experiment credit
+
+### Protocol judgment and November handoff gates
+- Source archaeology may establish fact/edition but no formal proof that current runtime implements an external protocol standard
+- A2 scanner and A3 100 executions are two different checks; a 100/100 result has denominator 100 selected invocations only
+- A4 topology consistency does not extend unchanged to all external software sources or scientific properties
+- Original Oct05 missing KL remains specifically unresolved, does not invalidate the separate bounded A3 successes
+- W41 retrospective recovery is legitimate current retention with false historical-original-success forbidden
+- Oct17 official PEP/urllib docs are sources, not three independent production stress-test systems
+- Native manifests and weekly source files unchanged; existing A6 owner receives all 17 date-to-week-to-month relationships
+- Full Python tests, source recertification, and independent checker replay NOT_EXECUTED by this A2 maintainer
+- Current outcome OPEN_OCTOBER_17_DAILY_PIPELINES / OCT05_MISSING_KL / W42_NOT_DUE / NO_NEW_INDEPENDENT_RUNTIME_CREDIT
