@@ -210,3 +210,4 @@ Index discoverability remains navigation only; it does not upgrade source indepe
 - [2026-10-14 Pipeline Manifest](RESEARCH/daily/2026-10-14-pipeline-manifest.md) - Status: SUCCESS
 - [2026-10-15 Pipeline Manifest](RESEARCH/daily/2026-10-15-pipeline-manifest.md) - Status: SUCCESS
 - [2026-10-16 Pipeline Manifest](RESEARCH/daily/2026-10-16-pipeline-manifest.md) - Status: SUCCESS
+- [2026-10-17 Pipeline Manifest](RESEARCH/daily/2026-10-17-pipeline-manifest.md) - Status: SUCCESS
