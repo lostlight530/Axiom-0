@@ -5237,3 +5237,136 @@ DUPLICATE_EVIDENCE_CREDIT
 - W42 A5 and natural Oct A6 final are NOT_DUE as of Oct16; status OPEN must survive A2 merge
 - Original Daily manifests, weekly reports and index bytes unchanged by A2; only canonical monthly owner updated append-only
 - A2 status: MONTH_VERSION_2026_10_OPEN / 16_NATIVE_DAILIES / OCT05_KL_MISSING_PRESERVED / W41_RECOVERY_ATTRIBUTION_RETAINED
+
+## 2026-10-17 A1 | Plasma complete sixteen-date original task/source audit
+
+- Current remote main 703f83bd96d383a22e6842cb0e2f42f7879df977; A1 exact cutoff October 01–16; October 17 daily PR #390 is successor A2 input
+- Audit inputs: existing merged October 16 evidence assessment, each date's Git blob, original producer/source/status and current topology
+- Daily A1/A2/A3/A4 are four science/protocol steps within ONE native daily scheduler delivery, not four unrelated PRs
+- Verification: original A2 scanner field and A3 reported execution count are different acceptance predicates; absent D_KL is not zero
+- Oct05 missing KL evidence is permanent negative, even when A3 has bounded 100/100 in the same dated manifest
+- Historical W41 weekly A5 recovery has provenance HUMAN_AUTHORIZED_RECOVERY; the earlier unmerged PR remains NOT_MERGED
+- W42 natural weekly final not due, October A6 remains OPEN / NOT_DUE; no scientific or normative claim promoted
+
+### Dated original native tuple and decision
+#### 2026-10-01 | PEP484 type hints / PEP20 Zen / PEP526 annotations
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-01-pipeline-manifest.md`, Git blob `66d3329bb25eb2364bdd7e436372e59f96d22b9c`
+- Original source/claim boundary: Source docs are normative or descriptive references, not runtime scientific results
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-02 | PEP484 and PEP483 type theory plus Python ast
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-02-pipeline-manifest.md`, Git blob `60392958d7c2bb03752d3739d5d3e361fb41dda7`
+- Original source/claim boundary: Type theory/AST documentation is source identity, not deployed scanner correctness
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-03 | PEP8, PEP20, PEP257 style and docstrings
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-03-pipeline-manifest.md`, Git blob `486b29fea3e4ea2eab4fb8c231b85a456760ee1f`
+- Original source/claim boundary: Style guidance source checks distinct from A2 algebraic fixture
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-04 | PEP8/20/484 reuse across source lineages
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-04-pipeline-manifest.md`, Git blob `0890670136f7b90edc2d04501b7005f4c50b54e7`
+- Original source/claim boundary: Repeated publisher documentation is not independent new science
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-05 | Python3.12/3.13 changes plus PEP695
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-05-pipeline-manifest.md`, Git blob `c12a0db9b1ba8a9a22f549930dccc983f959794b`
+- Original source/claim boundary: Original D_KL MISSING_DATA despite A3 100/100; cannot backfill value
+- Algebra check admissibility: MISSING_DATA, original lack preserved
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `FIELD_LEVEL_DATA_GAP_OPEN`
+- A1 decision: `MISSING_KL_PRESERVED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-06 | Python/Pipeline bounded original source
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-06-pipeline-manifest.md`, Git blob `299c8cdc1bee45129c02e0617c3038b1b0e31c45`
+- Original source/claim boundary: No new independent source-inference in bounded A1 archaeology
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-07 | PEP8/20/257 source audit
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-07-pipeline-manifest.md`, Git blob `7b4c53f90728d0509c0ce178bc6346caea269b9a`
+- Original source/claim boundary: Document identity and executable test suite sample distinct
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-08 | PEP257/8/20 source audit
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-08-pipeline-manifest.md`, Git blob `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9`
+- Original source/claim boundary: Strict ZECP metadata is producer-reported declaration
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-09 | PEP8, PEP484 and PEP20
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-09-pipeline-manifest.md`, Git blob `3a79d927d5016f01e5a3ad70942f82d027048294`
+- Original source/claim boundary: Source stability does not establish all code-path coverage
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-10 | PEP8, PEP484 and Python json docs
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-10-pipeline-manifest.md`, Git blob `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e`
+- Original source/claim boundary: Versioned Python library semantics not universally identical across runtimes
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-11 | Python 3 documentation, Linux kernel releases, Attention paper
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-11-pipeline-manifest.md`, Git blob `6ea47cf72236f28aa7305ddcfd77c84399df00e0`
+- Original source/claim boundary: Three heterogeneous publisher objects do not validate one execution claim jointly
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `SOURCE_HETEROGENEITY_SCOPE_RETAINED`
+- A1 decision: `ORIGINAL_EVIDENCE_BOUNDED`, source tests and native producer date are not additional independent experiments
+#### 2026-10-12 | PEP8/20 and Linux kernel v6.8 release
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-12-pipeline-manifest.md`, Git blob `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8`
+- Original source/claim boundary: Separate standards and kernel release timestamps from local pipeline test date
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_SOURCE_WITHIN_SCOPE`, source tests and native producer date are not additional independent experiments
+#### 2026-10-13 | Python execution model, json and math library
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-13-pipeline-manifest.md`, Git blob `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa`
+- Original source/claim boundary: Language-reference semantics and A3 fixture success are independent classes
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_SOURCE_WITHIN_SCOPE`, source tests and native producer date are not additional independent experiments
+#### 2026-10-14 | PEP8, Python json, RFC8259
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-14-pipeline-manifest.md`, Git blob `1c206376250ce9f7c21f9f99ac25938e3f1d9596`
+- Original source/claim boundary: JSON specification and Python implementation names require separate version context
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_SOURCE_WITHIN_SCOPE`, source tests and native producer date are not additional independent experiments
+#### 2026-10-15 | PEP8, PEP20, Python 3.12 notes
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-15-pipeline-manifest.md`, Git blob `deb515b422773cfb232abf126e6d4a0fc9efa727`
+- Original source/claim boundary: Python documentation listing not evidence of a new Oct15 upstream publication
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `ORIGINAL_PRODUCER_CLAIMS_CARRIED_WITH_LIMITS`
+- A1 decision: `ORIGINAL_SOURCE_WITHIN_SCOPE`, source tests and native producer date are not additional independent experiments
+#### 2026-10-16 | PEP8/20/257 original native, Oct16
+- Native A1–A4 combined artifact: `RESEARCH/daily/2026-10-16-pipeline-manifest.md`, Git blob `ea513361dfad06cbd937e74393d634c345d90a03`
+- Original source/claim boundary: A2 D_KL0 within scope, A3 100/100 specified tests, uncovered conditions MISSING_DATA
+- Algebra check admissibility: 0.0 reported within specified identity-case scan scope, not global convergence
+- Bounded A3 experimental scope: original daily reports 100/100 specified bounded executions; denominator is only selected tests, not all relevant behavior
+- A4 topology/index is structure only; latest native current-day outcome `CURRENT_OCT16_NATIVE_ADMITTED`
+- A1 decision: `ORIGINAL_SOURCE_WITHIN_SCOPE`, source tests and native producer date are not additional independent experiments
+
+### Week, month and PR integrity judgment
+- W40 and W41 original A5 weekly manifests remain two historical audits, W41 recovery provenance must never be normalized into original automation
+- Current INDEX and PATCH_INDEX are routing tables, not test runner receipts; no reparsing external benchmark was performed
+- Missing source-version, uncovered condition and 2026-10-05 KL fields remain missing instead of fabricated negative or universal zero
+- Historical Daily and source blobs remain unchanged; append only October monthly owner coverage decisions
+- Directly executed by this A1: GitHub tree and canonical record audit; full Python checker, network research rerun and topology replay NOT_EXECUTED
+- A2 gate: ten merged A1 + fresh main, then incorporate October 17 native manifest without changing this cutoff
+- Current state MONTH_OPEN / SIXTEEN_NATIVE_DATE_IDENTITIES / NO_NEW_RUNTIME_PASS
