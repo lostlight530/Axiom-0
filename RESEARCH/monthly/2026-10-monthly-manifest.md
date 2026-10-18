@@ -5512,3 +5512,137 @@ DUPLICATE_EVIDENCE_CREDIT
 - Native manifests and weekly source files unchanged; existing A6 owner receives all 17 date-to-week-to-month relationships
 - Full Python tests, source recertification, and independent checker replay NOT_EXECUTED by this A2 maintainer
 - Current outcome OPEN_OCTOBER_17_DAILY_PIPELINES / OCT05_MISSING_KL / W42_NOT_DUE / NO_NEW_INDEPENDENT_RUNTIME_CREDIT
+
+## 2026-10-18 A1 | full October 01–17 original source, contract and PR decision review
+- Stage: independent maintenance A1, cutoff=2026-10-17 Asia/Shanghai; exact current-main SHA=2f818c3d27bee8e2a9cf6b106c3e56828205ef73
+- Original canonical monthly owner blob=5037c4e186803d1bdbd280a31207ef5243f1d2f7; this pass appends only, without rewriting earlier dated findings
+- Evidence grain: source date, task slot, repository blob, producer-reported stdout, PR merge and external theorem/runtime are different
+- PREVIOUS_MONTH_A1_A2 retained as historical source; this new A1 does not issue independent research credit
+- October 18 already-merged native files are intentionally excluded from A1 before second-round admission
+### Seventeen native logical dates and completeness (file identity, not proven execution)
+- 2026-10-01: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-02: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-03: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-04: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-05: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-06: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-07: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-08: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-09: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-10: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-11: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-12: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-13: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-14: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-15: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-16: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+- 2026-10-17: expected 1 exact owner paths; present 1; missing NONE; current presence != original execution proof
+### Artifact-by-artifact current main blob and inherited-owner trace
+- `RESEARCH/daily/2026-10-01-pipeline-manifest.md` | blob=66d3329bb25eb2364bdd7e436372e59f96d22b9c | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-02-pipeline-manifest.md` | blob=60392958d7c2bb03752d3739d5d3e361fb41dda7 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-03-pipeline-manifest.md` | blob=486b29fea3e4ea2eab4fb8c231b85a456760ee1f | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-04-pipeline-manifest.md` | blob=0890670136f7b90edc2d04501b7005f4c50b54e7 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-05-pipeline-manifest.md` | blob=c12a0db9b1ba8a9a22f549930dccc983f959794b | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-06-pipeline-manifest.md` | blob=299c8cdc1bee45129c02e0617c3038b1b0e31c45 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-07-pipeline-manifest.md` | blob=7b4c53f90728d0509c0ce178bc6346caea269b9a | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-08-pipeline-manifest.md` | blob=5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-09-pipeline-manifest.md` | blob=3a79d927d5016f01e5a3ad70942f82d027048294 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-10-pipeline-manifest.md` | blob=e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-11-pipeline-manifest.md` | blob=6ea47cf72236f28aa7305ddcfd77c84399df00e0 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-12-pipeline-manifest.md` | blob=6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-13-pipeline-manifest.md` | blob=7980eaead91dc998e16a1ce5e399a17f4d7d5dfa | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-14-pipeline-manifest.md` | blob=1c206376250ce9f7c21f9f99ac25938e3f1d9596 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-15-pipeline-manifest.md` | blob=deb515b422773cfb232abf126e6d4a0fc9efa727 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-16-pipeline-manifest.md` | blob=ea513361dfad06cbd937e74393d634c345d90a03 | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-17-pipeline-manifest.md` | blob=9e6f63b7468d9fc385e25152e961d83f8c8536db | PLASMA A1→A4: sources, scanner, bounded tests, structural index in one combined scheduled slot | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/monthly/2026-10-monthly-manifest.md` | blob=5037c4e186803d1bdbd280a31207ef5243f1d2f7 | MONTH OWNER: derived current relation, not additional execution | predecessor-month-owner blob=NOT_ANCHORED_IN_PRIOR_VERSION | decision APPEND_RELATION_ONLY; historical text unchanged
+- `RESEARCH/weekly/2026-W40-weekly-manifest.md` | blob=9ec5f90f6c0e75fbd0856f4768758684fe4c857f | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/weekly/2026-W41-weekly-manifest.md` | blob=c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277 | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/weekly/2026-W42-weekly-manifest.md` | blob=729880be91ec67da57d8d332ae8a28fe3ab09f69 | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=NOT_ANCHORED_IN_PRIOR_VERSION | decision APPEND_RELATION_ONLY; historical text unchanged
+### Original GitHub PR identity census (UTC PR creation clock; includes multiple workload families)
+- PR #322 | created=2026-10-01T08:52:31Z | merged=2026-10-01T08:55:33Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-01
+- PR #323 | created=2026-10-01T13:24:41Z | merged=2026-10-01T13:24:45Z | MAINT_OR_REPAIR | A1: initialize October relational owner — Plasma
+- PR #324 | created=2026-10-01T13:24:54Z | merged=2026-10-01T13:24:58Z | MAINT_OR_REPAIR | A2: integrate October 1 Plasma task state
+- PR #325 | created=2026-10-02T13:14:57Z | merged=2026-10-02T13:15:13Z | MAINT_OR_REPAIR | October A1: full Plasma review through 2026-10-01
+- PR #326 | created=2026-10-02T13:25:38Z | merged=2026-10-02T13:25:55Z | MAINT_OR_REPAIR | October A2: reconcile Plasma through 2026-10-02
+- PR #327 | created=2026-10-02T13:52:46Z | merged=2026-10-02T14:27:20Z | DAILY_NATIVE_OR_RESEARCH | September D30 Independent GPT audit — Axiom / Plasma
+- PR #328 | created=2026-10-02T14:25:36Z | merged=2026-10-02T14:27:08Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-02
+- PR #329 | created=2026-10-02T14:42:13Z | merged=2026-10-02T14:43:54Z | MAINT_OR_REPAIR | A2 successor: integrate late 2026-10-02 Plasma delivery
+- PR #330 | created=2026-10-03T04:45:32Z | merged=2026-10-03T04:45:35Z | MAINT_OR_REPAIR | October A1: full Plasma review through 2026-10-02
+- PR #331 | created=2026-10-03T04:47:05Z | merged=2026-10-03T04:47:09Z | MAINT_OR_REPAIR | October A2: reconcile Plasma through 2026-10-03
+- PR #332 | created=2026-10-03T08:31:06Z | merged=2026-10-03T12:36:39Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-03
+- PR #333 | created=2026-10-03T12:44:46Z | merged=2026-10-03T12:45:25Z | MAINT_OR_REPAIR | October A1 successor: recheck Plasma through 2026-10-02
+- PR #334 | created=2026-10-03T12:52:00Z | merged=2026-10-03T12:52:58Z | MAINT_OR_REPAIR | October A2 successor: reconcile late Plasma delivery
+- PR #335 | created=2026-10-04T06:15:59Z | merged=NOT_MERGED | WEEKLY_NATIVE | [A5] 规范审查 2026-W40
+- PR #336 | created=2026-10-04T06:17:48Z | merged=2026-10-04T08:43:43Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-04
+- PR #337 | created=2026-10-04T08:49:00Z | merged=2026-10-04T08:49:21Z | WEEKLY_NATIVE | [A5] 规范审查 2026-W40
+- PR #338 | created=2026-10-04T09:10:18Z | merged=2026-10-04T09:10:24Z | MAINT_OR_REPAIR | October A1: full Plasma review through 2026-10-03
+- PR #339 | created=2026-10-04T09:22:56Z | merged=2026-10-04T09:23:02Z | MAINT_OR_REPAIR | October A2: reconcile Plasma through 2026-10-04
+- PR #340 | created=2026-10-04T09:47:05Z | merged=2026-10-04T09:47:11Z | OTHER | special: close temporal evidence and branch-snapshot governance
+- PR #341 | created=2026-10-04T10:18:46Z | merged=2026-10-04T12:01:40Z | DAILY_NATIVE_OR_RESEARCH | docs: establish open research production framework
+- PR #342 | created=2026-10-05T05:25:38Z | merged=2026-10-05T05:26:30Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-05
+- PR #343 | created=2026-10-05T13:46:27Z | merged=2026-10-05T13:46:50Z | MAINT_OR_REPAIR | October A1: full Plasma + open-research review through 2026-10-04
+- PR #344 | created=2026-10-05T13:52:59Z | merged=2026-10-05T13:53:28Z | MAINT_OR_REPAIR | October A2: reconcile Plasma + open-research through 2026-10-05
+- PR #345 | created=2026-10-06T05:46:13Z | merged=2026-10-06T08:16:16Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-06
+- PR #346 | created=2026-10-06T08:35:43Z | merged=2026-10-06T08:43:20Z | MAINT_OR_REPAIR | October A1: full Plasma review through 2026-10-05
+- PR #347 | created=2026-10-06T08:47:15Z | merged=2026-10-06T08:53:45Z | MAINT_OR_REPAIR | October A2: reconcile Plasma through 2026-10-06
+- PR #348 | created=2026-10-07T05:26:07Z | merged=2026-10-07T06:11:02Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-07
+- PR #349 | created=2026-10-07T07:15:22Z | merged=2026-10-07T07:19:35Z | MAINT_OR_REPAIR | October A1: full Plasma review through 2026-10-06
+- PR #350 | created=2026-10-07T07:22:59Z | merged=2026-10-07T07:28:27Z | MAINT_OR_REPAIR | October A2: reconcile Plasma through 2026-10-07
+- PR #351 | created=2026-10-08T05:30:11Z | merged=2026-10-08T07:25:36Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-08
+- PR #352 | created=2026-10-08T07:30:02Z | merged=2026-10-08T07:36:02Z | MAINT_OR_REPAIR | October A1: full Plasma review through 2026-10-07
+- PR #353 | created=2026-10-08T07:39:25Z | merged=2026-10-08T07:46:11Z | MAINT_OR_REPAIR | October A2: reconcile Plasma through 2026-10-08
+- PR #354 | created=2026-10-08T15:11:00Z | merged=2026-10-08T15:28:34Z | OTHER | repair: align Axiom repository contracts — thanks to the new Codex cloud workflow
+- PR #355 | created=2026-10-09T05:34:04Z | merged=2026-10-09T07:56:05Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-09
+- PR #356 | created=2026-10-09T08:35:34Z | merged=2026-10-09T08:40:30Z | MAINT_OR_REPAIR | October A1: Plasma through October 8
+- PR #357 | created=2026-10-09T08:53:23Z | merged=2026-10-09T08:56:19Z | MAINT_OR_REPAIR | October A2: Plasma relation through 2026-10-09
+- PR #358 | created=2026-10-10T05:35:40Z | merged=2026-10-10T07:27:56Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-10
+- PR #359 | created=2026-10-10T08:52:31Z | merged=2026-10-10T08:54:23Z | MAINT_OR_REPAIR | October 10 A1: Plasma review through October 9
+- PR #360 | created=2026-10-10T09:04:03Z | merged=2026-10-10T09:06:06Z | MAINT_OR_REPAIR | October 10 A2: Plasma relation through October 10
+- PR #361 | created=2026-10-10T15:05:59Z | merged=2026-10-10T15:08:07Z | MAINT_OR_REPAIR | docs: reconcile concept DOI and three archived release identities
+- PR #362 | created=2026-10-11T05:28:15Z | merged=2026-10-11T07:36:40Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-11
+- PR #363 | created=2026-10-11T06:32:40Z | merged=NOT_MERGED | WEEKLY_NATIVE | [A5] 规范审查 2026-W41
+- PR #364 | created=2026-10-11T07:42:26Z | merged=2026-10-11T07:42:31Z | WEEKLY_NATIVE | [A5] recover W41 weekly audit after 2026-10-11 Daily merge
+- PR #365 | created=2026-10-11T07:52:17Z | merged=2026-10-11T07:53:52Z | MAINT_OR_REPAIR | October 11 A1: Plasma full review through October 10
+- PR #366 | created=2026-10-11T08:00:20Z | merged=2026-10-11T08:01:58Z | MAINT_OR_REPAIR | October 11 A2: Plasma relation through October 11
+- PR #367 | created=2026-10-12T05:28:04Z | merged=2026-10-12T10:40:34Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-12
+- PR #368 | created=2026-10-12T11:02:35Z | merged=2026-10-12T11:06:04Z | MAINT_OR_REPAIR | A1 2026-10-12: October maintenance through 2026-10-11
+- PR #369 | created=2026-10-12T11:08:02Z | merged=2026-10-12T11:10:54Z | MAINT_OR_REPAIR | A2 2026-10-12: October maintenance through 2026-10-12
+- PR #370 | created=2026-10-13T05:33:03Z | merged=2026-10-13T07:20:37Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-13
+- PR #371 | created=2026-10-13T08:15:52Z | merged=2026-10-13T08:19:06Z | MAINT_OR_REPAIR | A1 2026-10-13: October maintenance through 2026-10-12
+- PR #372 | created=2026-10-13T08:20:59Z | merged=2026-10-13T08:24:14Z | MAINT_OR_REPAIR | A2 2026-10-13: October maintenance through 2026-10-13
+- PR #373 | created=2026-10-13T08:30:24Z | merged=2026-10-13T08:32:30Z | OTHER | correct: complete 2026-10-13 Axiom evidence boundaries
+- PR #374 | created=2026-10-13T08:34:37Z | merged=2026-10-13T08:38:26Z | MAINT_OR_REPAIR | Final A1 2026-10-13: reconcile through 2026-10-12
+- PR #375 | created=2026-10-13T08:40:51Z | merged=2026-10-13T08:44:51Z | MAINT_OR_REPAIR | Final A2 2026-10-13: current month through 2026-10-13
+- PR #376 | created=2026-10-14T05:12:55Z | merged=2026-10-14T07:17:20Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-14
+- PR #377 | created=2026-10-14T07:51:33Z | merged=2026-10-14T07:53:26Z | MAINT_OR_REPAIR | A1 2026-10-14: Plasma evidence audit through Oct 13
+- PR #378 | created=2026-10-14T08:31:04Z | merged=2026-10-14T08:58:18Z | MAINT_OR_REPAIR | A2 2026-10-14 Plasma relation
+- PR #379 | created=2026-10-14T09:09:24Z | merged=2026-10-14T09:12:03Z | MAINT_OR_REPAIR | D14 2026-10-14: independent pattern formation audit
+- PR #380 | created=2026-10-14T09:10:26Z | merged=2026-10-14T09:16:39Z | MAINT_OR_REPAIR | D14 2026-10-14: Plasma pattern audit
+- PR #381 | created=2026-10-14T09:22:43Z | merged=2026-10-14T09:24:21Z | MAINT_OR_REPAIR | reconcile(d14): preserve dual views, single audit identity
+- PR #382 | created=2026-10-15T01:57:26Z | merged=2026-10-15T02:09:26Z | DAILY_NATIVE_OR_RESEARCH | docs(open-science): align archived checkpoint, citation and research reuse
+- PR #383 | created=2026-10-15T05:22:11Z | merged=2026-10-15T07:00:23Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-15
+- PR #384 | created=2026-10-15T10:23:17Z | merged=2026-10-15T10:47:20Z | MAINT_OR_REPAIR | A1 2026-10-15: Plasma A1–A4 October source and test scope reconciliation
+- PR #385 | created=2026-10-15T10:53:21Z | merged=2026-10-15T11:12:09Z | MAINT_OR_REPAIR | A2 2026-10-15: Plasma full October A1–A6 daily and weekly relation
+- PR #386 | created=2026-10-15T15:42:02Z | merged=2026-10-15T15:51:13Z | MAINT_OR_REPAIR | docs(open-science): strengthen research handoff through Windows maintenance
+- PR #387 | created=2026-10-16T05:14:15Z | merged=2026-10-16T09:02:39Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-16
+- PR #388 | created=2026-10-16T09:49:01Z | merged=2026-10-16T09:49:16Z | MAINT_OR_REPAIR | A1 Oct16 Plasma: 15 original Daily manifests, A5 week, KL boundary
+- PR #389 | created=2026-10-16T10:31:37Z | merged=2026-10-16T10:31:50Z | MAINT_OR_REPAIR | A2 Oct16 Plasma: all 16 Daily A1–A4 and A5 week/index relation
+- PR #390 | created=2026-10-17T05:09:35Z | merged=2026-10-17T05:15:43Z | DAILY_NATIVE_OR_RESEARCH | [A1/A2/A3/A4] Plasma 2026-10-17
+- PR #391 | created=2026-10-17T11:59:33Z | merged=2026-10-17T11:59:39Z | MAINT_OR_REPAIR | A1 Oct17 Plasma: 16 native combined pipeline manifests and negative evidence
+- PR #392 | created=2026-10-17T12:14:15Z | merged=2026-10-17T12:14:21Z | MAINT_OR_REPAIR | A2 Oct17 Plasma: unified seventeen native pipelines, W41 and missing KL boundary
+### Inherited scientific constraints, negative evidence and current A1 decision
+- A1 Digital Archaeology: publisher/edition/URL evidence is not executable protocol implementation
+- A2 Algebraic Consistency: reported D_KL=0 is a specified algebra/sample check, not universal null divergence
+- A3 100/100: a bounded local test denominator; the independent maintenance actor did not rerun those commands
+- A4 index/patch: link existence, source identity and actual runtime correctness must not be merged into one outcome
+- Existing Oct05 missing KL result is a retained negative input, not retrospectively solved by later successful scans
+- Combined Daily A1–A4 is one actual task scheduling slot, not four independent executions
+- W41 and W42 Weekly source windows have separate issue/settlement clocks; recent W42 is visible on current main but did not retroactively exist on Oct17
+- Monthly A6 remains OPEN until period-specific native final; the presence of an October monthly owner does not mean final settled
+- NO new protocol theorem, source independence, 100-run replication or code-proof credit from this A1
+- Original-path scope=21 current-main blobs; previous-owner direct blob anchors=19; missing expected native paths=0
+- GitHub PRs created during Oct01–Oct17 UTC=71; PR delivery count != independent source/research-window count
+- Historical native documents and established corrections modified: ZERO; only the October owner receives this dated evidence ledger
+- External paper verification, production runtime testing and full local test suite in this A1: NOT_EXECUTED
+- A1 state: COMPLETE_FOR_ENUMERATED_LOGICAL_DATE_PATHS / BOUNDED_SOURCE_TIME_AND_PR_REVIEW / MONTH_OPEN / NO_HISTORICAL_REWRITE
