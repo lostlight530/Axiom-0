@@ -5646,3 +5646,174 @@ DUPLICATE_EVIDENCE_CREDIT
 - Historical native documents and established corrections modified: ZERO; only the October owner receives this dated evidence ledger
 - External paper verification, production runtime testing and full local test suite in this A1: NOT_EXECUTED
 - A1 state: COMPLETE_FOR_ENUMERATED_LOGICAL_DATE_PATHS / BOUNDED_SOURCE_TIME_AND_PR_REVIEW / MONTH_OPEN / NO_HISTORICAL_REWRITE
+
+## 2026-10-18 A2 | Plasma entire October 01–18 source-scan-test-index relationship state
+- Exact A1 merged main 53e0877e0e7301ead4de556977271ddfb04bd89c; original month owner blob cbc491b38d0c9d6d8883c728e9b570f951738104
+- Current month is OPEN; original A1 daily review, prior corrections and source-clock failures remain historical
+- Plasma A1→A4 are four semantic stages in one combined Daily scheduler task, not four independent runs
+- Source archaeology, KL/consistency scan, 100 selected tests and INDEX/PATCH_INDEX each need distinct denominators and evidence
+- Weekly W42 producer settles on Oct18 separately from month-end A6; a Weekly report does not prove every native individual metric
+
+### 18-date protocol lineage and denominator continuity
+#### 2026-10-01 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-01-pipeline-manifest.md @ 66d3329bb25eb2364bdd7e436372e59f96d22b9c | 4286 bytes
+- A2 derived scan identity: must use the same 2026-10-01 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-01: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-01: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-01: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-02 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-02-pipeline-manifest.md @ 60392958d7c2bb03752d3739d5d3e361fb41dda7 | 4753 bytes
+- A2 derived scan identity: must use the same 2026-10-02 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-02: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-02: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-02: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-03 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-03-pipeline-manifest.md @ 486b29fea3e4ea2eab4fb8c231b85a456760ee1f | 4391 bytes
+- A2 derived scan identity: must use the same 2026-10-03 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-03: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-03: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-03: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-04 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-04-pipeline-manifest.md @ 0890670136f7b90edc2d04501b7005f4c50b54e7 | 4124 bytes
+- A2 derived scan identity: must use the same 2026-10-04 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-04: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-04: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-04: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-05 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-05-pipeline-manifest.md @ c12a0db9b1ba8a9a22f549930dccc983f959794b | 3691 bytes
+- A2 derived scan identity: must use the same 2026-10-05 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-05: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-05: ORIGINAL_OCT05_KL_GAP_RETAINED
+- Maintainer validation for 2026-10-05: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-06 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-06-pipeline-manifest.md @ 299c8cdc1bee45129c02e0617c3038b1b0e31c45 | 5135 bytes
+- A2 derived scan identity: must use the same 2026-10-06 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-06: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-06: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-06: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-07 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-07-pipeline-manifest.md @ 7b4c53f90728d0509c0ce178bc6346caea269b9a | 5325 bytes
+- A2 derived scan identity: must use the same 2026-10-07 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-07: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-07: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-07: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-08 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-08-pipeline-manifest.md @ 5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9 | 5295 bytes
+- A2 derived scan identity: must use the same 2026-10-08 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-08: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-08: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-08: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-09 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-09-pipeline-manifest.md @ 3a79d927d5016f01e5a3ad70942f82d027048294 | 3757 bytes
+- A2 derived scan identity: must use the same 2026-10-09 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-09: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-09: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-09: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-10 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-10-pipeline-manifest.md @ e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e | 4991 bytes
+- A2 derived scan identity: must use the same 2026-10-10 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-10: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-10: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-10: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-11 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-11-pipeline-manifest.md @ 6ea47cf72236f28aa7305ddcfd77c84399df00e0 | 4532 bytes
+- A2 derived scan identity: must use the same 2026-10-11 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-11: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-11: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-11: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-12 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-12-pipeline-manifest.md @ 6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8 | 3856 bytes
+- A2 derived scan identity: must use the same 2026-10-12 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-12: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-12: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-12: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-13 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-13-pipeline-manifest.md @ 7980eaead91dc998e16a1ce5e399a17f4d7d5dfa | 6710 bytes
+- A2 derived scan identity: must use the same 2026-10-13 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-13: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-13: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-13: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-14 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-14-pipeline-manifest.md @ 1c206376250ce9f7c21f9f99ac25938e3f1d9596 | 4476 bytes
+- A2 derived scan identity: must use the same 2026-10-14 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-14: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-14: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-14: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-15 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-15-pipeline-manifest.md @ deb515b422773cfb232abf126e6d4a0fc9efa727 | 4694 bytes
+- A2 derived scan identity: must use the same 2026-10-15 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-15: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-15: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-15: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-16 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-16-pipeline-manifest.md @ ea513361dfad06cbd937e74393d634c345d90a03 | 4743 bytes
+- A2 derived scan identity: must use the same 2026-10-16 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-16: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-16: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-16: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-17 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-17-pipeline-manifest.md @ 9e6f63b7468d9fc385e25152e961d83f8c8536db | 3947 bytes
+- A2 derived scan identity: must use the same 2026-10-17 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-17: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-17: PRIOR_MERGED_A1_LINEAGE_REUSED_WITH_NO_NEW_TESTS
+- Maintainer validation for 2026-10-17: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+#### 2026-10-18 | native combined A1–A4 source
+- A1 source object: RESEARCH/daily/2026-10-18-pipeline-manifest.md @ 8705e3151e3c560300d9a5e7e0b99c07866be67e | 4920 bytes
+- A2 derived scan identity: must use the same 2026-10-18 native source/revision; numeric KL values are scoped to their original equation/test-case
+- A3 selected test evidence: original reported pass numerator and denominator must be bound to the same local command/fixture/revision
+- A4 structural path evidence: original manifest, INDEX/PATCH_INDEX and protected paths are navigation/contract evidence, not scientific proof
+- Relation 2026-10-18: source → scanner → bounded test → index is an internal research pipeline, with separate exit/status semantics
+- Current transfer 2026-10-18: OCT18_NATIVE_W42_SOURCES_ADMITTED
+- Maintainer validation for 2026-10-18: Git SHA and source path checked; no command replay or independent mathematical convergence verification
+
+### Week alignment and historical correction
+- Weekly RESEARCH/weekly/2026-W40-weekly-manifest.md @ 9ec5f90f6c0e75fbd0856f4768758684fe4c857f / 4839 bytes: calendar coverage and native source denominator separately retained
+  - W42 settlement on Oct18 is current relation only; absent original Daily KL stays missing rather than a tested zero
+- Weekly RESEARCH/weekly/2026-W41-weekly-manifest.md @ c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277 / 6973 bytes: calendar coverage and native source denominator separately retained
+  - W42 settlement on Oct18 is current relation only; absent original Daily KL stays missing rather than a tested zero
+- Weekly RESEARCH/weekly/2026-W42-weekly-manifest.md @ 729880be91ec67da57d8d332ae8a28fe3ab09f69 / 4792 bytes: calendar coverage and native source denominator separately retained
+  - W42 settlement on Oct18 is current relation only; absent original Daily KL stays missing rather than a tested zero
+
+### Final A2 month-to-date interpretation
+- Original Daily objects: 18/18; 18th day is a new current source, not a replayed historical A1 experiment
+- Oct05 original KL absence is not repaired merely by new same-path snapshots or later weekly summary
+- W42 top five signals are selected from bounded native reports; counts of documents, experiments and independent external releases remain different
+- Source metadata cannot create protocol conformance or generalize 100 selected tests to all runtime paths
+- Existing A1 entry, historical indexes and native records are preserved, with no code, protected path or original audit mutation
+- October A6 is an OPEN relational owner; no final natural-month research status claimed
+- Tests, independent source revalidation and external execution on this A2 branch NOT_EXECUTED
+- A2 result: OCT1_TO_18_COMBINED_PIPELINE_LINEAGE / W42_SEPARATE / OCT05_KL_GAP_NOT_REWRITTEN / MONTH_OPEN
