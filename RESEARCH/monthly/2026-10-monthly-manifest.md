@@ -5983,3 +5983,151 @@ DUPLICATE_EVIDENCE_CREDIT
 - A1 bounded result: 18 dated Daily objects / 3 weekly objects / 38 supporting current-main artifacts; 21 exact previous-owner path/SHA links identified.
 - A2 must wait for all ten A1 successors merged and fresh-read of every main SHA.
 - Maintenance Provenance: INDEPENDENT_GPT_MAINTENANCE; canonical owner-level Record Provenance unchanged.
+
+
+
+## GPT6-A2-SUCCESSOR-2026-10-19 | N-day Plasma pipeline, weekly and contract audit
+- A2 current main SHA after A1 #398: `e6b89ea0a8041476e6808bae2584923bfb53480b`, A6 canonical owner preappend blob `908e42361c1e496105983c73318e4cd0f8c2fca4`.
+- Full October 01–19 inherited A1 historical daily/weekly/contract lineage, plus 2026-10-19 native PR #397 now merged.
+- GPT-6 reviewer does not claim to reproduce Jules-reported A3 100/100 runs; the corrected guard statement says exact PR native paths are protected and no unqualified scope_guard PASS is valid.
+- Git file custody and owner relations are not execution logs. All earlier blocked, missing D_KL and source-time boundary records remain historical facts.
+- Month Closure OPEN / PROVISIONAL; native A6 final NOT_DUE, derived maintenance does not produce a new runtime experiment.
+### Day-specific A1/A2/A3/A4 original manifest lineage
+- DATE 2026-10-01 | `RESEARCH/daily/2026-10-01-pipeline-manifest.md` @ 66d3329bb25eb2364bdd7e436372e59f96d22b9c (4286 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-01: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-02 | `RESEARCH/daily/2026-10-02-pipeline-manifest.md` @ 60392958d7c2bb03752d3739d5d3e361fb41dda7 (4753 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-02: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-03 | `RESEARCH/daily/2026-10-03-pipeline-manifest.md` @ 486b29fea3e4ea2eab4fb8c231b85a456760ee1f (4391 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-03: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-04 | `RESEARCH/daily/2026-10-04-pipeline-manifest.md` @ 0890670136f7b90edc2d04501b7005f4c50b54e7 (4124 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-04: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-05 | `RESEARCH/daily/2026-10-05-pipeline-manifest.md` @ c12a0db9b1ba8a9a22f549930dccc983f959794b (3691 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-05: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-06 | `RESEARCH/daily/2026-10-06-pipeline-manifest.md` @ 299c8cdc1bee45129c02e0617c3038b1b0e31c45 (5135 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-06: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-07 | `RESEARCH/daily/2026-10-07-pipeline-manifest.md` @ 7b4c53f90728d0509c0ce178bc6346caea269b9a (5325 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-07: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-08 | `RESEARCH/daily/2026-10-08-pipeline-manifest.md` @ 5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9 (5295 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-08: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-09 | `RESEARCH/daily/2026-10-09-pipeline-manifest.md` @ 3a79d927d5016f01e5a3ad70942f82d027048294 (3757 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-09: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-10 | `RESEARCH/daily/2026-10-10-pipeline-manifest.md` @ e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e (4991 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-10: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-11 | `RESEARCH/daily/2026-10-11-pipeline-manifest.md` @ 6ea47cf72236f28aa7305ddcfd77c84399df00e0 (4532 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-11: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-12 | `RESEARCH/daily/2026-10-12-pipeline-manifest.md` @ 6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8 (3856 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-12: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-13 | `RESEARCH/daily/2026-10-13-pipeline-manifest.md` @ 7980eaead91dc998e16a1ce5e399a17f4d7d5dfa (6710 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-13: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-14 | `RESEARCH/daily/2026-10-14-pipeline-manifest.md` @ 1c206376250ce9f7c21f9f99ac25938e3f1d9596 (4476 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-14: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-15 | `RESEARCH/daily/2026-10-15-pipeline-manifest.md` @ deb515b422773cfb232abf126e6d4a0fc9efa727 (4694 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-15: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-16 | `RESEARCH/daily/2026-10-16-pipeline-manifest.md` @ ea513361dfad06cbd937e74393d634c345d90a03 (4743 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-16: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-17 | `RESEARCH/daily/2026-10-17-pipeline-manifest.md` @ 9e6f63b7468d9fc385e25152e961d83f8c8536db (3947 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-17: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-18 | `RESEARCH/daily/2026-10-18-pipeline-manifest.md` @ 8705e3151e3c560300d9a5e7e0b99c07866be67e (4920 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-18: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; previous A1 input and prior monthly distinctions retained; no current reviewer replay.
+- DATE 2026-10-19 | `RESEARCH/daily/2026-10-19-pipeline-manifest.md` @ 10dee34ba441de1ef1a89213e9bd22835ab39fed (7022 bytes) | all four A1–A4 pipeline sections source-owned; current path does not prove 100/100 reproducible test results.
+- GATE 2026-10-19: A2 KL/consistency output, A3 sandbox denominator and A4 indexes each require separate original task-time evidence; native #397 corrected protected-scope statement after review; no current reviewer replay.
+### W40–W42 original weekly review identities
+- WEEKLY `RESEARCH/weekly/2026-W40-weekly-manifest.md` | blob=9ec5f90f6c0e75fbd0856f4768758684fe4c857f, bytes=4839; weekly original source path inherited from A1, not newly computed by A2.
+- HANDOFF 2026-W40-weekly-manifest.md: calendar week and selected original source objects must remain separable from actual D_KL support and independent 100-run stress-test evidence.
+- WEEKLY `RESEARCH/weekly/2026-W41-weekly-manifest.md` | blob=c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277, bytes=6973; weekly original source path inherited from A1, not newly computed by A2.
+- HANDOFF 2026-W41-weekly-manifest.md: calendar week and selected original source objects must remain separable from actual D_KL support and independent 100-run stress-test evidence.
+- WEEKLY `RESEARCH/weekly/2026-W42-weekly-manifest.md` | blob=729880be91ec67da57d8d332ae8a28fe3ab09f69, bytes=4792; weekly original source path inherited from A1, not newly computed by A2.
+- HANDOFF 2026-W42-weekly-manifest.md: calendar week and selected original source objects must remain separable from actual D_KL support and independent 100-run stress-test evidence.
+### Existing canonical contract and test context (historical identity, not runtime validation)
+- CONTRACT `ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md` @ 4d9ed24d2c785c4ce00c62a4e5275dc1e68b59f2 (3644 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md` @ 76f235ef82e7aacdf4eb83cdca97065dbf83cadf (3263 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md` @ 7fb6003d62c7b15f01d7c0246c62fda26c916ee0 (2884 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md` @ 6566710a6f16e35ff0366b9f560a9e229b5a7e50 (3209 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md` @ 00b243f8ac4762636a9975d7aeebfc58a2e70f6b (2856 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-006-MYTHIC-GENERATION-LANE.md` @ 563facad08b5fb38bb0e448d1d33108d181a3696 (3004 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md` @ 139e656040e8046bcfaa15fbb070a7abf8c394c0 (3243 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-008-RESEARCH-TO-ADR-DISTILLATION.md` @ 1a332bd22b9bb93ecb5e86cd90691ed442c0c3ca (3154 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-009-EVIDENCE-STATUS-LABELING.md` @ bd18a5871c06b5092b5e3ba349e63e495e12d726 (3380 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md` @ b867536218b02c5e5d53694c1d71a33b613783d1 (2960 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md` @ 416a7d8a5d8c52ee9b64558d32ef04256a52636a (3087 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md` @ 4a2ff092637a1b287776e74c3fe81d821a70a65e (3705 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md` @ 15f51736f582eb84c8b2eebea27ed6c5049c6357 (5308 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md` @ 8e73788a3c1678b387321c05a7fa6b4f4b3730b8 (4662 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md` @ 9f63cb72e98f031448050df19db896eded4ab2f8 (4751 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md` @ a6b350c0318dd4f7704869cdba84379f551edfe8 (6475 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `ADR/INDEX.md` @ 8027ea895c85e24e0b77b6579b40b85ef115649f (7364 bytes) | role=original ADR rule/evidence authority; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `CODE/__init__.py` @ 0d86ea8cd1611877827680a9030b7d56c2867445 (426 bytes) | role=Python reference implementation; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `CODE/contracts.py` @ 5ef0e0e6304482117c80d0d545e364c6beb95034 (2310 bytes) | role=Python reference implementation; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `CODE/liquid_morphing.py` @ f5e5410d9326eb6e55c18a9f16064811e8ff509e (4413 bytes) | role=Python reference implementation; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `CODE/nexus_core.py` @ 5e148ad4ce3576f6292977894e41ac0410c98414 (3320 bytes) | role=Python reference implementation; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/INDEX.md` @ 4fa0d778f8ce6c5b4aa2d96f111264e64de0c64d (5510 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-001-DAG-TOPOLOGY-CONSTRAINT.md` @ b67180936310d979a8aaaa23ae6b765846c81094 (3304 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-002-KL-DIVERGENCE-DEFENSE.md` @ 35fd43949916a3c0c483356f5b62555ba7261bbc (4367 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-003-ADR-DISTILLATION-PROTOCOL.md` @ b5721c977dfbf8978ef352258913b2e724e61539 (3589 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-004-MYTHIC-ARCHITECTURE-GENERATION.md` @ b1069c3b01afd57643b647a520151293f39ea084 (3024 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md` @ 9f58f910b7ddb0d9313db79d1509337967de0872 (2895 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-006-POST-PROCESSING-AND-DEHYDRATION.md` @ e874f3ce9e013d44bdb894dde423ee099611536d (2970 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md` @ 0d144c1befa598ad8c94554e98d2077705cb951a (3509 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md` @ c8c7cd1af7918ab73999a8a9942f0de9436adf92 (2934 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-009-TEMPORAL-ENTROPY-ANCHORING.md` @ 64ff3b4897301094f5067261a7ba2cf4a6509fe5 (3198 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md` @ 628e9c771d0881799223c2bbfc398dd6054758de (3431 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md` @ a284a9780585a31f6c4394506bb18be3195bdcd5 (3434 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md` @ 4d5fe47c8ce6c2fec63363b54d8b3110c535b9fa (3396 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-013-STRICT-DATA-DEDUPLICATION.md` @ 839dd41609a4a3bf339b9473af80fa19bdf3f21d (3096 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-014-GROUNDEDNESS-RULE.md` @ 7e26ada659ed46046080eda81d03ea7a137d9d82 (3234 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+- CONTRACT `METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md` @ 78307bfadca896ed2c0180b0a5813408a7551365 (8060 bytes) | role=original methodology/scientific claim boundary; consulted as repo-local history, not a new Oct19 native research delivery.
+### Contract-to-current-month lineage decisions
+- CONTROL `ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 4d9ed24d2c785c4ce0 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 76f235ef82e7aacdf4 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 7fb6003d62c7b15f01 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 6566710a6f16e35ff0 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 00b243f8ac4762636a remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-006-MYTHIC-GENERATION-LANE.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 563facad08b5fb38bb remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 139e656040e8046bcf remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-008-RESEARCH-TO-ADR-DISTILLATION.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 1a332bd22b9bb93ecb remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-009-EVIDENCE-STATUS-LABELING.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA bd18a5871c06b5092b remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA b867536218b02c5e5d remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 416a7d8a5d8c52ee9b remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 4a2ff092637a1b2877 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 15f51736f582eb84c8 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 8e73788a3c1678b387 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 9f63cb72e98f031448 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA a6b350c0318dd4f770 remains distinct from current A1/A2 monthly review.
+- CONTROL `ADR/INDEX.md`: ADR may constrain future experiment acceptance but cannot independently prove execution; original SHA 8027ea895c85e24e0b remains distinct from current A1/A2 monthly review.
+- CONTROL `CODE/__init__.py`: source-code presence cannot prove 100 subprocesses ran or hosted effects occurred; original SHA 0d86ea8cd161187782 remains distinct from current A1/A2 monthly review.
+- CONTROL `CODE/contracts.py`: source-code presence cannot prove 100 subprocesses ran or hosted effects occurred; original SHA 5ef0e0e6304482117c remains distinct from current A1/A2 monthly review.
+- CONTROL `CODE/liquid_morphing.py`: source-code presence cannot prove 100 subprocesses ran or hosted effects occurred; original SHA f5e5410d9326eb6e55 remains distinct from current A1/A2 monthly review.
+- CONTROL `CODE/nexus_core.py`: source-code presence cannot prove 100 subprocesses ran or hosted effects occurred; original SHA 5e148ad4ce3576f629 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/INDEX.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 4fa0d778f8ce6c5b4a remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-001-DAG-TOPOLOGY-CONSTRAINT.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA b67180936310d979a8 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-002-KL-DIVERGENCE-DEFENSE.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 35fd43949916a3c0c4 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-003-ADR-DISTILLATION-PROTOCOL.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA b5721c977dfbf8978e remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-004-MYTHIC-ARCHITECTURE-GENERATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA b1069c3b01afd57643 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 9f58f910b7ddb0d931 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-006-POST-PROCESSING-AND-DEHYDRATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA e874f3ce9e013d44bd remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 0d144c1befa598ad8c remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA c8c7cd1af7918ab739 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-009-TEMPORAL-ENTROPY-ANCHORING.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 64ff3b4897301094f5 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 628e9c771d08817992 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA a284a9780585a31f6c remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 4d5fe47c8ce6c2fec6 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-013-STRICT-DATA-DEDUPLICATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 839dd41609a4a3bf33 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-014-GROUNDEDNESS-RULE.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 7e26ada659ed460460 remains distinct from current A1/A2 monthly review.
+- CONTROL `METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md`: methodology controls claim scope; historical missing metrics stay unknown; original SHA 78307bfadca896ed2c remains distinct from current A1/A2 monthly review.
+### Original N-day native manifest field review
+- NATIVE19:   - **D_KL:** 0.0
+- NATIVE19:   - **D_KL:** NOT_COMPUTED
+- NATIVE19: - **Result:** CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- NATIVE19: - **Test Object:** CODE/nexus_core.py
+- NATIVE19: - **Executions:** 100
+- NATIVE19: - **Successes:** 100
+- NATIVE19: - **Failures:** 0
+- NATIVE19: - **Result:** 100 / 100 specified executions passed (A3_EXECUTION_EVIDENCE_RETAINED)
+- NATIVE19: - **Result:** Aligned within inspected scope and consistent across available inputs.
+- NATIVE19: - **Protected Paths**: CHANGED_WITH_NATIVE_DELIVERABLES (INDEX.md, PATCH_INDEX.md, RESEARCH/daily/2026-10-19-pipeline-manifest.md). PROTECTED_PATHS_UNMODIFIED is not applicable to these changed files; exact allowed-file scope approval and executed command are required.
+- 2026-10-19 #397 native changed INDEX, PATCH_INDEX and daily manifest; all three protected under unqualified scope_guard, so corrected native declaration must not become PASS without actual approved allowlist command evidence.
+- Source Sxx, current code/ADR and named test files are historical reference objects, not distinct independent research or same-day execution successes.
+- A2 source custody 19/19 current Daily, W40–W42 3 weekly + canonical contracted reference files; A1 18/18 inherited, N-day added once.
+- Natural month A6 OPEN, no unrelated file touched; checker, tests, external source revalidation NOT_EXECUTED by GPT reviewer.
+- A2 disposition: A1_INHERITED / OCT19_NATIVE_PR397_ADMITTED_WITH_CORRECTED_SCOPE / ORIGINAL_KL_GAPS_PRESERVED / NO_TEST_PASS_CLAIM.
+NATIVE_MODIFICATION_NOTE: append monthly A6 owner only; no original Jules A1–A4 daily, ADR, code, test or index rewritten.
