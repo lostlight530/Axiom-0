@@ -5817,3 +5817,169 @@ DUPLICATE_EVIDENCE_CREDIT
 - October A6 is an OPEN relational owner; no final natural-month research status claimed
 - Tests, independent source revalidation and external execution on this A2 branch NOT_EXECUTED
 - A2 result: OCT1_TO_18_COMBINED_PIPELINE_LINEAGE / W42_SEPARATE / OCT05_KL_GAP_NOT_REWRITTEN / MONTH_OPEN
+
+
+## 2026-10-19 A1 independent evidence successor | axiom 2026-10-01..18
+- Run ID: GPT6-A1-OCT19-AXIOM-640b4043dd0e
+- Producer: GPT-6 OpenAI cloud external independent reviewer. This is not original Jules research or tests.
+- Base main SHA: 640b4043dd0ee66646a1615ce5462ec75fa3e2b3; pre-append owner blob: c8bd4ebc7a9d76a56497fa359a7eba387ffb6202.
+- Cutoff: October 1–18 inclusive; October 19 native source objects reserved for A2.
+- Original A1 historical versions retained; this is a new source-time reconciliation after the Oct19 native PRs were merged.
+- Source denominator: 18 dated Daily artifacts, 3 W40–42 weekly artifacts, 38 contract/registry/index objects.
+- Verification: exact current-main git tree SHA + size and inherited owner path/SHA references; no native executable checker or runtime loop replay.
+- Current October month owner remains OPEN; original month-end final NOT_DUE.
+- This A1 neither modifies primary Jules artifacts nor creates an experiment, independent source-window or durable governance rule.
+
+### Exact current-main artifacts and independent source custody decisions
+- CONTRACT_OR_INDEX | `ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md` | git_blob=`4d9ed24d2c785c4ce00c62a4e5275dc1e68b59f2` | 3644 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md` | git_blob=`76f235ef82e7aacdf4eb83cdca97065dbf83cadf` | 3263 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md` | git_blob=`7fb6003d62c7b15f01d7c0246c62fda26c916ee0` | 2884 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md` | git_blob=`6566710a6f16e35ff0366b9f560a9e229b5a7e50` | 3209 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md` | git_blob=`00b243f8ac4762636a9975d7aeebfc58a2e70f6b` | 2856 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-006-MYTHIC-GENERATION-LANE.md` | git_blob=`563facad08b5fb38bb0e448d1d33108d181a3696` | 3004 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md` | git_blob=`139e656040e8046bcfaa15fbb070a7abf8c394c0` | 3243 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-008-RESEARCH-TO-ADR-DISTILLATION.md` | git_blob=`1a332bd22b9bb93ecb5e86cd90691ed442c0c3ca` | 3154 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-009-EVIDENCE-STATUS-LABELING.md` | git_blob=`bd18a5871c06b5092b5e3ba349e63e495e12d726` | 3380 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md` | git_blob=`b867536218b02c5e5d53694c1d71a33b613783d1` | 2960 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md` | git_blob=`416a7d8a5d8c52ee9b64558d32ef04256a52636a` | 3087 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md` | git_blob=`4a2ff092637a1b287776e74c3fe81d821a70a65e` | 3705 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md` | git_blob=`15f51736f582eb84c8b2eebea27ed6c5049c6357` | 5308 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md` | git_blob=`8e73788a3c1678b387321c05a7fa6b4f4b3730b8` | 4662 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md` | git_blob=`9f63cb72e98f031448050df19db896eded4ab2f8` | 4751 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md` | git_blob=`a6b350c0318dd4f7704869cdba84379f551edfe8` | 6475 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `ADR/INDEX.md` | git_blob=`8027ea895c85e24e0b77b6579b40b85ef115649f` | 7364 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `INDEX.md` | git_blob=`a8f38fc41bca66005a2cdf0fe38eaffa339790e3` | 21593 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/INDEX.md` | git_blob=`4fa0d778f8ce6c5b4aa2d96f111264e64de0c64d` | 5510 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-001-DAG-TOPOLOGY-CONSTRAINT.md` | git_blob=`b67180936310d979a8aaaa23ae6b765846c81094` | 3304 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-002-KL-DIVERGENCE-DEFENSE.md` | git_blob=`35fd43949916a3c0c483356f5b62555ba7261bbc` | 4367 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-003-ADR-DISTILLATION-PROTOCOL.md` | git_blob=`b5721c977dfbf8978ef352258913b2e724e61539` | 3589 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-004-MYTHIC-ARCHITECTURE-GENERATION.md` | git_blob=`b1069c3b01afd57643b647a520151293f39ea084` | 3024 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md` | git_blob=`9f58f910b7ddb0d9313db79d1509337967de0872` | 2895 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-006-POST-PROCESSING-AND-DEHYDRATION.md` | git_blob=`e874f3ce9e013d44bdb894dde423ee099611536d` | 2970 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md` | git_blob=`0d144c1befa598ad8c94554e98d2077705cb951a` | 3509 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md` | git_blob=`c8c7cd1af7918ab73999a8a9942f0de9436adf92` | 2934 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-009-TEMPORAL-ENTROPY-ANCHORING.md` | git_blob=`64ff3b4897301094f5067261a7ba2cf4a6509fe5` | 3198 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md` | git_blob=`628e9c771d0881799223c2bbfc398dd6054758de` | 3431 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md` | git_blob=`a284a9780585a31f6c4394506bb18be3195bdcd5` | 3434 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md` | git_blob=`4d5fe47c8ce6c2fec63363b54d8b3110c535b9fa` | 3396 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-013-STRICT-DATA-DEDUPLICATION.md` | git_blob=`839dd41609a4a3bf339b9473af80fa19bdf3f21d` | 3096 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-014-GROUNDEDNESS-RULE.md` | git_blob=`7e26ada659ed46046080eda81d03ea7a137d9d82` | 3234 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md` | git_blob=`78307bfadca896ed2c0180b0a5813408a7551365` | 8060 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `PATCH_INDEX.md` | git_blob=`6fa40e28bcf4dcfa35916facc0b29d1014698501` | 19742 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-01-pipeline-manifest.md` | git_blob=`66d3329bb25eb2364bdd7e436372e59f96d22b9c` | 4286 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-01-pipeline-manifest.md  is present at git blob 66d3329bb25eb2364bdd7e436372e59f96d22b9c on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-02-pipeline-manifest.md` | git_blob=`60392958d7c2bb03752d3739d5d3e361fb41dda7` | 4753 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-02-pipeline-manifest.md  is present at git blob 60392958d7c2bb03752d3739d5d3e361fb41dda7 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-03-pipeline-manifest.md` | git_blob=`486b29fea3e4ea2eab4fb8c231b85a456760ee1f` | 4391 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-03-pipeline-manifest.md  is present at git blob 486b29fea3e4ea2eab4fb8c231b85a456760ee1f on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-04-pipeline-manifest.md` | git_blob=`0890670136f7b90edc2d04501b7005f4c50b54e7` | 4124 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-04-pipeline-manifest.md  is present at git blob 0890670136f7b90edc2d04501b7005f4c50b54e7 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-05-pipeline-manifest.md` | git_blob=`c12a0db9b1ba8a9a22f549930dccc983f959794b` | 3691 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-05-pipeline-manifest.md  is present at git blob c12a0db9b1ba8a9a22f549930dccc983f959794b on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-06-pipeline-manifest.md` | git_blob=`299c8cdc1bee45129c02e0617c3038b1b0e31c45` | 5135 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-06-pipeline-manifest.md  is present at git blob 299c8cdc1bee45129c02e0617c3038b1b0e31c45 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-07-pipeline-manifest.md` | git_blob=`7b4c53f90728d0509c0ce178bc6346caea269b9a` | 5325 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-07-pipeline-manifest.md  is present at git blob 7b4c53f90728d0509c0ce178bc6346caea269b9a on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-08-pipeline-manifest.md` | git_blob=`5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9` | 5295 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-08-pipeline-manifest.md  is present at git blob 5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-09-pipeline-manifest.md` | git_blob=`3a79d927d5016f01e5a3ad70942f82d027048294` | 3757 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-09-pipeline-manifest.md  is present at git blob 3a79d927d5016f01e5a3ad70942f82d027048294 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-10-pipeline-manifest.md` | git_blob=`e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e` | 4991 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-10-pipeline-manifest.md  is present at git blob e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-11-pipeline-manifest.md` | git_blob=`6ea47cf72236f28aa7305ddcfd77c84399df00e0` | 4532 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-11-pipeline-manifest.md  is present at git blob 6ea47cf72236f28aa7305ddcfd77c84399df00e0 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-12-pipeline-manifest.md` | git_blob=`6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8` | 3856 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-12-pipeline-manifest.md  is present at git blob 6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-13-pipeline-manifest.md` | git_blob=`7980eaead91dc998e16a1ce5e399a17f4d7d5dfa` | 6710 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-13-pipeline-manifest.md  is present at git blob 7980eaead91dc998e16a1ce5e399a17f4d7d5dfa on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-14-pipeline-manifest.md` | git_blob=`1c206376250ce9f7c21f9f99ac25938e3f1d9596` | 4476 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original daily manifest  RESEARCH/daily/2026-10-14-pipeline-manifest.md  is present at git blob 1c206376250ce9f7c21f9f99ac25938e3f1d9596 on A1 main; not; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-15-pipeline-manifest.md` | git_blob=`deb515b422773cfb232abf126e6d4a0fc9efa727` | 4694 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original producer manifest  RESEARCH/daily/2026-10-15-pipeline-manifest.md ; fresh-main source blob  deb515b422773cfb232abf126e6d4a0fc9efa727 .; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-16-pipeline-manifest.md` | git_blob=`ea513361dfad06cbd937e74393d634c345d90a03` | 4743 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original single pipeline Daily  RESEARCH/daily/2026-10-16-pipeline-manifest.md , SHA  ea513361dfad06cbd937e74393d634c345d90a03; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-17-pipeline-manifest.md` | git_blob=`9e6f63b7468d9fc385e25152e961d83f8c8536db` | 3947 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Single native A1→A2→A3→A4 source  RESEARCH/daily/2026-10-17-pipeline-manifest.md  · Git blob  9e6f63b7468d9fc385e25152e961d83f8c8536db; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- PLASMA_A1_A4_DAILY | `RESEARCH/daily/2026-10-18-pipeline-manifest.md` | git_blob=`8705e3151e3c560300d9a5e7e0b99c07866be67e` | 4920 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - A1 source object: RESEARCH/daily/2026-10-18-pipeline-manifest.md @ 8705e3151e3c560300d9a5e7e0b99c07866be67e   4920 bytes; disposition=SOURCE_IDENTITY_RETAINED; relation=A1 source claim / A2 scope-limited KL / A3 bounded execution / A4 index are separate evidence.
+- A5_WEEKLY | `RESEARCH/weekly/2026-W40-weekly-manifest.md` | git_blob=`9ec5f90f6c0e75fbd0856f4768758684fe4c857f` | 4839 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original  RESEARCH/weekly/2026-W40-weekly-manifest.md  exists at blob  9ec5f90f6c0e75fbd0856f4768758684fe4c857f .; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly hypothesis lifecycle / source denominator retained.
+- A5_WEEKLY | `RESEARCH/weekly/2026-W41-weekly-manifest.md` | git_blob=`c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277` | 6973 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original  RESEARCH/weekly/2026-W41-weekly-manifest.md  exists at blob  c1ff1b9ff70a9f1dcb30c7d60eebcfe637878277 .; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly hypothesis lifecycle / source denominator retained.
+- A5_WEEKLY | `RESEARCH/weekly/2026-W42-weekly-manifest.md` | git_blob=`729880be91ec67da57d8d332ae8a28fe3ab09f69` | 4792 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: -  RESEARCH/weekly/2026-W42-weekly-manifest.md    blob=729880be91ec67da57d8d332ae8a28fe3ab09f69   WEEKLY: scoped settlement requires original daily source; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly hypothesis lifecycle / source denominator retained.
+- CONTRACT_OR_INDEX | `scan_consistency.py` | git_blob=`357d2ea4fb02facfa1f568ad31c9536bd1fb4656` | 4336 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `scan_kl_divergence.py` | git_blob=`4da500e9039f62ba1af5c149ebb8b17ea7d97ca1` | 2070 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+- CONTRACT_OR_INDEX | `validate_research_record.py` | git_blob=`6e4b977bda600b8a00123c2d6db1c36c07e86c20` | 8258 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository specification/index and test-runners constrain claims; not native experiment.
+
+### Distinct date/producer relation decisions
+- 2026-10-01: 2026-10-01-pipeline-manifest.md@66d3329bb25e; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-02: 2026-10-02-pipeline-manifest.md@60392958d7c2; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-03: 2026-10-03-pipeline-manifest.md@486b29fea3e4; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-04: 2026-10-04-pipeline-manifest.md@0890670136f7; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-05: 2026-10-05-pipeline-manifest.md@c12a0db9b1ba; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-06: 2026-10-06-pipeline-manifest.md@299c8cdc1bee; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-07: 2026-10-07-pipeline-manifest.md@7b4c53f90728; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-08: 2026-10-08-pipeline-manifest.md@5b4c51d0108b; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-09: 2026-10-09-pipeline-manifest.md@3a79d927d501; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-10: 2026-10-10-pipeline-manifest.md@e15e3383bc1b; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-11: 2026-10-11-pipeline-manifest.md@6ea47cf72236; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-12: 2026-10-12-pipeline-manifest.md@6cbb5bbdb55b; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-13: 2026-10-13-pipeline-manifest.md@7980eaead91d; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-14: 2026-10-14-pipeline-manifest.md@1c206376250c; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-15: 2026-10-15-pipeline-manifest.md@deb515b42277; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-16: 2026-10-16-pipeline-manifest.md@ea513361dfad; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-17: 2026-10-17-pipeline-manifest.md@9e6f63b7468d; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+- 2026-10-18: 2026-10-18-pipeline-manifest.md@8705e3151e3c; single manifest carries A1–A4 stages; reported 100 runs cannot certify unspecified paths; original evidence state retained.
+
+### Cross-window decision and forward handoff
+- Original Oct19 Axiom #397 manifested three protected deliverables; GPT-6 correction on its branch clarified that unqualified scope_guard cannot pass without exceptions, without claiming a rerun.
+- Original 2026-10-05 Daily KL gap remains uncomputed at task time; later weekly or index mentions do not create a tested KL=0.
+- W40–W42 original weekly revisions remain history; later monthly accumulation cannot assign fresh native execution credit.
+- No source-missing historical state may be upgraded by a current tree inventory.
+- The exact source owner/anchor, Git blob identity and agent execution plane remain independent evidence.
+- A1 source content was not all replayed through the native checker; any prior owner interpretations are inherited, not independently reproved.
+- All dated Daily files, original Weekly records, current indices and previously merged corrections remain byte-identical.
+- Natural-month closure and D7/D10/D14/D30 audits are independent; neither is completed by this source-custody census.
+- There is no host runtime, implementation proof or independent external theorem revalidation credited by this maintenance.
+- A1 bounded result: 18 dated Daily objects / 3 weekly objects / 38 supporting current-main artifacts; 21 exact previous-owner path/SHA links identified.
+- A2 must wait for all ten A1 successors merged and fresh-read of every main SHA.
+- Maintenance Provenance: INDEPENDENT_GPT_MAINTENANCE; canonical owner-level Record Provenance unchanged.
