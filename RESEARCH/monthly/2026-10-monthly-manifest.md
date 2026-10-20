@@ -6131,3 +6131,16 @@ DUPLICATE_EVIDENCE_CREDIT
 - Natural month A6 OPEN, no unrelated file touched; checker, tests, external source revalidation NOT_EXECUTED by GPT reviewer.
 - A2 disposition: A1_INHERITED / OCT19_NATIVE_PR397_ADMITTED_WITH_CORRECTED_SCOPE / ORIGINAL_KL_GAPS_PRESERVED / NO_TEST_PASS_CLAIM.
 NATIVE_MODIFICATION_NOTE: append monthly A6 owner only; no original Jules A1–A4 daily, ADR, code, test or index rewritten.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-20 — gated ten-repository successor
+
+- Source latest ten-A1 main: `8b5e3923de084e9e564b59b0c7e2215154d6dc29`
+- A1 custody: `historical-audits/2026-10/2026-10-20-a1-source-custody.md` blob `e1ef8615997b32c113ade5591d68a3c7e71e9b48`, nineteen 2026-10-01..19 original Jules Plasma documents
+- A2 current relation: `historical-audits/2026-10/2026-10-20-a2-month-relation.md`, twenty original primary Daily paths with SHA and missingness
+- Oct20 Jules original: `RESEARCH/daily/2026-10-20-pipeline-manifest.md` blob `b113dc0e7076690fe3e35fa26cee1379ef10b0b2`, 100/100 specified executions producer-reported, not independently rerun; A1+A2 built-in metadata not equal external ten-repo review phases
+- Oct20 PEP 8 + release metadata recorded, missing original source publication dates remain MISSING_DATA rather than substituted
+- Historical textual D_KL 10-04/05/14 schema-probe uncertainty retained; identity-case D_KL 0.0 does not prove out-of-fixture correctness
+- Month remains OPEN, October final NOT_DUE, no source/object identity promotion, no original Jules artifact rewrite
+- Python native checker, scope guard, KL evaluator, hundred-repeat and source re-verification NOT_EXECUTED by this A2 reviewer
+- Current result: A2_20_OF_20_SOURCE_CUSTODY / INHERITED_19 / NEW_1 / NO_NEW_EXPERIMENT_CREDIT
