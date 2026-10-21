@@ -67,3 +67,18 @@
 - **Protected Paths Unmodified:** INDEX.md, PATCH_INDEX.md, CODE/**, ADR/**, METHODOLOGY/** and old Daily records
 - **Created and Modified Files:** this Daily manifest only
 - **Verification Status:** REMOTE_SOURCE_READ_AND_ISOLATED_PURE_FUNCTION_CHECK / NATIVE_EXECUTION_NOT_EXECUTED
+
+## POST_HOC_CORRECTION_2026_10_21_KL — directly executed, byte-verified subcheck
+- **Correction Producer:** GPT-6, independent follow-on at 2026-10-21T06:50:36Z
+- **Why correction is needed:** Earlier draft's isolated check timestamp 06:41:13 UTC lacked an auditable command receipt; do not treat the earlier timestamp or interpretation as independently evidenced
+- **Current base main:** `6d5d59a93964c8ebc36813cfa9adc852dbc59a2f`
+- **Input fidelity:** recovered GitHub exact `CODE/contracts.py` blob `5ef0e0e6304482117c80d0d545e364c6beb95034` and `scan_kl_divergence.py` blob `4da500e9039f62ba1af5c149ebb8b17ea7d97ca1`; both matched local `git hash-object` before execution
+- **Runtime:** Python 3.13.5 in isolated working directory containing only those two source files, not a complete repository checkout
+- **Actually executed command:** `PYTHONDONTWRITEBYTECODE=1 python3 scan_kl_divergence.py`
+- **Observed stdout:** `KL contract: passed`; `KL_EVIDENCE={"contract":"kl_divergence","status":"passed","observations":[{"case":"identity","d_kl":0.0,"expected":0.0,"within_tolerance":true},{"case":"renormalized_identity","d_kl":0.0,"expected":0.0,"within_tolerance":true}],"support_mismatch":"infinity","failures":[]}` (fields reordered here for compactness; command emitted JSON with the same values)
+- **Observed exit code:** 0
+- **Meaning:** exactly the two native KL fixture observations and support-mismatch invariant passed against two byte-matching source files
+- **Not executed:** `python3 scan_consistency.py` over the complete ADR/METHODOLOGY tree; `python3 CODE/nexus_core.py` 100 runs; repository index and scope validators
+- **Stage disposition:** A2 KL_SUBCHECK_PASS, A2 document topology NOT_EXECUTED, A3 NOT_EXECUTED, A4 NOT_EXECUTED; whole-pipeline BLOCKED
+- **Validator boundary:** current `validate_research_record.py` requires an approved A2 result string and can reject a legitimate NOT_COMPUTED outcome; this draft cannot be promoted to valid completed Daily or merged merely by passing isolated KL, and no false `CONSISTENCY_CHECK_PASS_WITHIN_SCOPE` is inserted
+- **History:** original draft state retained above, now corrected forward; no Jules run was claimed for the current logical day
