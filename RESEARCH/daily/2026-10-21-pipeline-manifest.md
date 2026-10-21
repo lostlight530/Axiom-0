@@ -94,3 +94,28 @@
 - **Verification limitation:** this static check does NOT provide a native scanner stdout/exit code, actual repository worktree execution, A3 100-run result, or A4 index updater output
 - **Current A2 interpretation:** isolated native KL subcheck passed; source-content equivalent static topology check observed 0 failures; formal native full-worktree `scan_consistency.py` still NOT_EXECUTED
 - **Pipeline disposition:** BLOCKED / DRAFT, no implied completed Daily or producer credit
+
+## 2026_10_21_ACTUAL_A3_100_RUNS — NEW, SEPARATE, VERIFIABLE POST-HOC EXECUTION
+
+- **Executor:** GPT-6 current-session isolated Python runner, distinct from Jules and from earlier unexecuted draft
+- **Execution completion UTC:** 2026-10-21T10:16:45.873889Z
+- **Input source:** `lostlight530/Axiom-0` main `6d5d59a93964c8ebc36813cfa9adc852dbc59a2f`
+- **Git blob verification:** `CODE/__init__.py` 0d86ea8cd1611877827680a9030b7d56c2867445; `CODE/contracts.py` 5ef0e0e6304482117c80d0d545e364c6beb95034; `CODE/liquid_morphing.py` f5e5410d9326eb6e55c18a9f16064811e8ff509e; `CODE/nexus_core.py` 5e148ad4ce3576f6292977894e41ac0410c98414; every file rehydrated with exact byte-matching Git SHA
+- **Process invocation:** subprocess `/opt/pyvenv/bin/python CODE/nexus_core.py`, 100 distinct process executions; first run direct CLI also observed exit 0
+- **Results:** Executions: 100; Success Count: 100; Failure Count: 0; Failed Indices: NONE; Exit Codes: 100 times 0
+- **Duration:** 74.28738326 seconds total; 0.7428738326 seconds per invocation
+- **Environment:** Python 3.13.5, Linux 6.18.55 x86_64 glibc 2.41
+- **Exact file SHA256:** `54a405488319933a8293a93646bf967dde6942968204bfa8e611ba808b793457` (`CODE/nexus_core.py`)
+- **Observed output:** each invocation emitted a 10-event bounded `T-01..T-10` completed pipeline with fixture input, coherence `kl_nats=0.0`, and `limitations=["heuristic metrics","single-process reference implementation"]`; first stdout retained in local execution receipt
+- **Bound:** this is an actual isolated CODE subset replay, *not* a full Git checkout, an independent external experiment, or complete source-topology check
+- **Gate interpretation:** A3 code was directly executed after a historical draft with missing A2 native topology command, so 100/100 is valid *post-hoc subcheck evidence*, not an assertion that native A1→A2→A3→A4 stage-gated pipeline completed in order
+- **Pipeline state:** BLOCKED until the original native `python3 scan_consistency.py` and all remaining contract validation are run on the correct complete source tree
+
+## 2026_10_21_A1_THREE_PRIMARY_SOURCE_IDENTITIES — post-hoc source coverage repair
+
+- **Source 1:** *AgentLoupe: Kernel-Resident Semantic Causal Labels for AI Agent Observability*, original arXiv paper, https://arxiv.org/abs/2610.23233v2, revised 2026-10-19; verified 2026-10-21 by primary arXiv record; **supported:** label propagation through processes/files/sockets under the author's instrumentation assumptions; **not supported:** deployed host protection or complete attribution.
+- **Source 2:** *Python 3.14.8*, Python Software Foundation official release, https://www.python.org/downloads/release/python-3148/, released 2026-09-30; verified 2026-10-21 by official release page; **supported:** expedited security maintenance release with SSLContext and archive handling security fixes; **not supported:** that Axiom's currently isolated Python 3.13.5 runtime automatically has these 3.14 fixes.
+- **Source 3:** *Model Context Protocol 2026-07-28 specification*, official protocol release, https://github.com/modelcontextprotocol/modelcontextprotocol/releases, dated 2026-07-28; verified 2026-10-21 by official release history; **supported:** stable specification revision with separately versioned protocol semantics; **not supported:** a new October 2026 protocol release, local host adoption, or native Axiom implementation.
+- **Claim states:** three separate source identities OBSERVED / PAPER_OR_OFFICIAL_RELEASE_ONLY; same paper reuse in other repositories is not independent experimental confirmation.
+- **Chronological boundary:** original Daily A1 draft had only one source; two further sources were checked later in this follow-on, not during the original attempt. This is forward repair, not a claim about earlier evidence availability.
+- **Stage outcome:** A1 source-count requirement now has three specifically verifiable source records; native pipeline still incomplete due to A2 topology execution and A4 gate.
