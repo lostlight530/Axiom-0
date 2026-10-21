@@ -82,3 +82,15 @@
 - **Stage disposition:** A2 KL_SUBCHECK_PASS, A2 document topology NOT_EXECUTED, A3 NOT_EXECUTED, A4 NOT_EXECUTED; whole-pipeline BLOCKED
 - **Validator boundary:** current `validate_research_record.py` requires an approved A2 result string and can reject a legitimate NOT_COMPUTED outcome; this draft cannot be promoted to valid completed Daily or merged merely by passing isolated KL, and no false `CONSISTENCY_CHECK_PASS_WITHIN_SCOPE` is inserted
 - **History:** original draft state retained above, now corrected forward; no Jules run was claimed for the current logical day
+
+## FORWARD_DOC_TOPOLOGY_READ_ONLY_2026_10_21 — content-addressed independent audit
+- **Producer:** GPT-6, later independent GitHub-read-only topology check, distinct from the A2 native Python scanner
+- **Source SHA:** `6d5d59a93964c8ebc36813cfa9adc852dbc59a2f`, GitHub tree and current index/source file blobs from that exact revision
+- **Scope:** 16 ADR and 15 Methodology document bodies, plus their two INDEX.md entries
+- **Actual files read:** 31/31 ADR/METH documents; each returned Git blob SHA matched the same path in `6d5d59a93964c8ebc36813cfa9adc852dbc59a2f` tree
+- **Index membership check:** 16 ADR index entries = 16 source documents, 15 METH index entries = 15 source documents; missing/unindexed/orphan references = 0 in this checked filename scope
+- **Structural headings check:** checked the documented alternative Context/Decision or Inputs/Procedure/Outputs headings and evidence/verification boundary heading in every document, 0 structural check failures
+- **Method:** independent JavaScript replication of the relevant `scan_consistency.py` read-only predicates applied to GitHub API text, not the repository's native `python3 scan_consistency.py` command
+- **Verification limitation:** this static check does NOT provide a native scanner stdout/exit code, actual repository worktree execution, A3 100-run result, or A4 index updater output
+- **Current A2 interpretation:** isolated native KL subcheck passed; source-content equivalent static topology check observed 0 failures; formal native full-worktree `scan_consistency.py` still NOT_EXECUTED
+- **Pipeline disposition:** BLOCKED / DRAFT, no implied completed Daily or producer credit
