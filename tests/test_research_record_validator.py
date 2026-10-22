@@ -88,6 +88,40 @@ class DailyExecutionEvidenceTests(unittest.TestCase):
         self.assertEqual(validator.validate_daily(Path("record.md"), "2026-08-28", text), [])
 
 
+    def test_current_daily_allows_explicit_not_computed_only_with_blocked_downstream(self) -> None:
+        text = daily_record(
+            "- Executions: NOT_EXECUTED\n- Status: NOT_EXECUTED",
+            pipeline="BLOCKED",
+        ).replace("2026-08-28", "2026-10-22").replace(
+            "- Audit Status: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE",
+            "- **A2 Evidence State:** NOT_COMPUTED",
+        )
+        self.assertEqual(validator.validate_daily(Path("record.md"), "2026-10-22", text), [])
+
+    def test_current_daily_rejects_keyword_only_false_pass(self) -> None:
+        text = daily_record(
+            "- Executions: NOT_EXECUTED\n- Status: NOT_EXECUTED",
+            pipeline="BLOCKED",
+        ).replace("2026-08-28", "2026-10-22").replace(
+            "- Audit Status: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE",
+            "- Note: NO fake CONSISTENCY_CHECK_PASS_WITHIN_SCOPE claimed",
+        )
+        errors = validator.validate_daily(Path("record.md"), "2026-10-22", text)
+        self.assertTrue(any("requires explicit A2 stage evidence" in e for e in errors), errors)
+
+    def test_current_daily_rejects_not_computed_if_pipeline_claims_success(self) -> None:
+        text = daily_record(
+            "- Executions: NOT_EXECUTED\n- Status: NOT_EXECUTED",
+            pipeline="SUCCESS",
+        ).replace("2026-08-28", "2026-10-22").replace(
+            "- Audit Status: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE",
+            "- **A2 Evidence State:** NOT_COMPUTED",
+        )
+        errors = validator.validate_daily(Path("record.md"), "2026-10-22", text)
+        self.assertTrue(any("requires BLOCKED pipeline" in e for e in errors), errors)
+
+
+
 class WeeklyHistoricalCalibrationTests(unittest.TestCase):
     def test_complete_post_hoc_block_can_preserve_legacy_weekly_shape(self) -> None:
         text = """# Legacy weekly

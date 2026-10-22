@@ -88,7 +88,31 @@ def validate_daily(path: Path, identity: str, text: str) -> list[str]:
     if f"**Date (UTC):** {identity}" not in text:
         errors.append(f"{path.name}: ZECP Date (UTC) does not match filename")
 
-    if not any(state in text for state in APPROVED_A2_STATES):
+    # From 2026-10-22, Daily A2 must give an explicit field inside its own
+    # stage, not merely mention PASS/DRIFT/FAIL in explanatory prose elsewhere.
+    # The research SOP permits NOT_COMPUTED for unrun scans; only an explicitly
+    # BLOCKED pipeline with halted downstream stages can use that state.
+    if identity >= "2026-10-22":
+        a2_parts = text.split("## A2 Algebraic Audit", 1)
+        a2_block = a2_parts[1].split("\n## ", 1)[0] if len(a2_parts) == 2 else ""
+        a2_record = re.search(
+            r"^\s*-\s*\*{0,2}(?:A2 Evidence State|Audit Status):\*{0,2}\s*`?([A-Z_]+)\b",
+            a2_block,
+            re.MULTILINE,
+        )
+        a2_state = a2_record.group(1) if a2_record else None
+        if a2_state == "NOT_COMPUTED":
+            a3_block = text.split("## A3 Sandbox Stress Test", 1)[-1].split("\n## ", 1)[0]
+            a4_block = text.split("## A4 Topology and Index Alignment", 1)[-1].split("\n## ", 1)[0]
+            pipeline_blocked = bool(re.search(r"Pipeline Status:\*{0,2}\s*BLOCKED\b", text))
+            downstream_stopped = "NOT_EXECUTED" in a3_block and any(
+                token in a4_block.upper() for token in ("NOT_EXECUTED", "NOT_COMPUTED", "STOPPED", "HALTED")
+            )
+            if not (pipeline_blocked and downstream_stopped):
+                errors.append(f"{path.name}: A2 NOT_COMPUTED requires BLOCKED pipeline and stopped A3/A4")
+        elif a2_state not in APPROVED_A2_STATES:
+            errors.append(f"{path.name}: A2 requires explicit A2 stage evidence status, not keyword mentions")
+    elif not any(state in text for state in APPROVED_A2_STATES):
         errors.append(f"{path.name}: A2 result is neither scope-bounded success nor explicit failure")
 
     a3_parts = text.split("## A3 Sandbox Stress Test", 1)
