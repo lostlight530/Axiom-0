@@ -70,3 +70,11 @@
 - **Final Pipeline Status:** BLOCKED / EVIDENCE_ONLY_DRAFT / NATIVE_COMPLETION_NOT_VERIFIED
 - **No retroactive producer claim or inherited 100/100:** YES
 - **No month-final or long-term doctrine promotion:** YES
+
+
+## Local Execution Provenance Reconciliation — 2026-10-22
+
+- A preliminary local rehydration mistakenly included an extra terminal newline in `CODE/contracts.py`, giving Git blob `5ac8291d4b943f348d5be64b7f6e45b670e57450`, which **did not match** the remote current-main blob `5ef0e0e6304482117c80d0d545e364c6beb95034`. The preliminary exit-0 scanner run is **NOT_CREDITED** as a byte-matched repository source execution.
+- The mismatch was detected before the final validated subcheck claim. The extra terminal newline was removed; `git hash-object CODE/contracts.py` then returned exactly `5ef0e0e6304482117c80d0d545e364c6beb95034`. `scan_kl_divergence.py` already matched `4da500e9039f62ba1af5c149ebb8b17ea7d97ca1`.
+- The scanner was re-executed from these two **byte-matching** inputs and returned the exit-0 stdout/JSON reproduced in A2 above. Only this latter run is the credited isolated KL subcheck.
+- This correction does **not** upgrade the missing full-worktree topology scan, native A3, A4, validator acceptance or formal Daily completion.
