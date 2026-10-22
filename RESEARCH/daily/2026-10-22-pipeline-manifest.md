@@ -41,6 +41,7 @@
 - **Topology native scanner:** `python3 scan_consistency.py` NOT_EXECUTED
 - **Topology stdout/stderr/exit code:** NOT_EXECUTED
 - **Topology result:** NOT_COMPUTED, not PASSED and not an observed scanner FAILURE
+- **A2 Evidence State:** NOT_COMPUTED
 - **A2 aggregate:** BLOCKED_BY_MISSING_FULL_DOCUMENT_WORKTREE; missing required `axiom_document_topology` runtime JSON evidence
 - **Machine contract issue:** current `validate_research_record.py` requires an approved A2 status string even when the truthful A2 aggregate is NOT_COMPUTED. No fake `CONSISTENCY_CHECK_PASS_WITHIN_SCOPE` or `CONSISTENCY_CHECK_FAILED` status is inserted to satisfy a string matcher. Native Daily validator acceptance for this record is therefore NOT_ESTABLISHED.
 
