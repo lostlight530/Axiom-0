@@ -106,7 +106,7 @@ def validate_daily(path: Path, identity: str, text: str) -> list[str]:
             a4_block = text.split("## A4 Topology and Index Alignment", 1)[-1].split("\n## ", 1)[0]
             pipeline_blocked = bool(re.search(r"Pipeline Status:\*{0,2}\s*BLOCKED\b", text))
             downstream_stopped = "NOT_EXECUTED" in a3_block and any(
-                token in a4_block for token in ("NOT_EXECUTED", "NOT_COMPUTED", "STOPPED")
+                token in a4_block.upper() for token in ("NOT_EXECUTED", "NOT_COMPUTED", "STOPPED", "HALTED")
             )
             if not (pipeline_blocked and downstream_stopped):
                 errors.append(f"{path.name}: A2 NOT_COMPUTED requires BLOCKED pipeline and stopped A3/A4")
