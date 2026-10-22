@@ -79,3 +79,12 @@
 - The mismatch was detected before the final validated subcheck claim. The extra terminal newline was removed; `git hash-object CODE/contracts.py` then returned exactly `5ef0e0e6304482117c80d0d545e364c6beb95034`. `scan_kl_divergence.py` already matched `4da500e9039f62ba1af5c149ebb8b17ea7d97ca1`.
 - The scanner was re-executed from these two **byte-matching** inputs and returned the exit-0 stdout/JSON reproduced in A2 above. Only this latter run is the credited isolated KL subcheck.
 - This correction does **not** upgrade the missing full-worktree topology scan, native A3, A4, validator acceptance or formal Daily completion.
+
+
+## Forward Source-Version Reconciliation — 2026-10-22
+
+- **Correction producer:** GPT-6 independent source/version reread after initial Daily draft; not retroactive to the first recorded A1 check.
+- **Exact original abstract/version history checked:** https://arxiv.org/abs/2610.04838, on 2026-10-22 UTC.
+- **MemTrace version facts:** v1 2026-10-04 00:45:37 UTC; v2 2026-10-08 15:53:56 UTC; **current listed v3 2026-10-10 03:40:20 UTC**. The original A1 line stating the latest pair was NOT_RECERTIFIED describes the earlier check, not this later follow-on.
+- **Evidence status:** primary bibliographic identity and abstract at v3 VERIFIED_FOR_PAPER_IDENTITY; original benchmark claims remain AUTHOR_REPORTED / NOT_REPRODUCED. No Python worktree execution, A2 topology/A3/A4 replay or experimental validation is inferred.
+- **Source lineage:** one MemTrace arXiv object across versions, not three independent scientific papers.
