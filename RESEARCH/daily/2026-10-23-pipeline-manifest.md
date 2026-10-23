@@ -9,6 +9,8 @@
 - Run Identity: Axiom-0/plasma/A1-A4/2026-10-23/GPT-6/4de3efa7ac284f471d253de672c4a31b86130522
 - Base Revision: 4de3efa7ac284f471d253de672c4a31b86130522
 - Current Production Status: RESEARCH_RECORDED / FORMAL_PIPELINE_BLOCKED
+- A1 External Primary Source Count: 3 DISTINCT PRIMARY OBJECTS
+- A1 Source Sufficiency: MEETS_MINIMUM_3_HIGH_CREDIBILITY_SOURCES
 - Formal Completion: NOT_VERIFIED
 - Current Delivery: DRAFT_PENDING_MAINTAINER
 - Previous Manifest: RESEARCH/daily/2026-10-22-pipeline-manifest.md, point-in-time BLOCKED retained
@@ -33,6 +35,18 @@
 - Proposal separates verifiable roles/mandates, OAuth client identity and actual resource access scope
 - Architectural relevance: authorization and source provenance should be treated as distinct protocol predicates rather than inferred from labels or metadata
 - No W3C standard status or Axiom adoption claimed
+
+### Source 3 — OAuth separates client role from resource-owner authorization and scoped access
+
+- Canonical identity: IETF RFC 6749, `The OAuth 2.0 Authorization Framework`
+- Publisher: Internet Engineering Task Force (IETF), Standards Track
+- URL: https://www.rfc-editor.org/rfc/rfc6749.html
+- Publication date: 2012-10
+- Checked: 2026-10-23, original RFC text §§1.1, 1.4 and 3.3
+- Directly supported facts: RFC 6749 defines distinct resource-owner, resource-server, client and authorization-server roles; an access token represents specific scope/lifetime/access attributes and is enforced by the authorization and resource servers
+- Relevance: supports the narrow distinction between a client/agent identity and permission to access a particular resource; a role claim or identity proof alone is not an OAuth access grant
+- Limitations: this is a general OAuth standard, not an agent-specific authorization profile, does not endorse W3C CG PR #46, and provides no evidence of Axiom-local adoption or implementation
+- Source independence: a distinct IETF standard object; it is not an independent experiment or replication of the arXiv compaction-laundering paper
 
 ### Exact repo contract inputs
 - Current RESEARCH/daily/README.md says A2 requires both KL and document-topology receipts; one isolated check never establishes the other
