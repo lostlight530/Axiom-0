@@ -44,7 +44,7 @@
 - Publication date: 2012-10
 - Checked: 2026-10-23, original RFC text §§1.1, 1.4 and 3.3
 - Directly supported facts: RFC 6749 defines distinct resource-owner, resource-server, client and authorization-server roles; an access token represents specific scope/lifetime/access attributes and is enforced by the authorization and resource servers
-- Relevance: supports the narrow distinction between a client/agent identity and permission to access a particular resource; a role claim or identity proof alone is not an OAuth access grant
+- Relevance: supports the distinction between the OAuth client role and a resource-scoped authorization grant; RFC 6749 does not define agent identity or mandates, and client registration alone is not a resource-access grant
 - Limitations: this is a general OAuth standard, not an agent-specific authorization profile, does not endorse W3C CG PR #46, and provides no evidence of Axiom-local adoption or implementation
 - Source independence: a distinct IETF standard object; it is not an independent experiment or replication of the arXiv compaction-laundering paper
 
