@@ -1,7 +1,8 @@
 # 2026-10-23 Daily Pipeline Manifest — GPT Native Boundary and Executable Receipt
 
 ## ZECP Metadata
-- Date (UTC): 2026-10-23
+- **Date (UTC):** 2026-10-23
+- Pipeline Status: BLOCKED
 - Logical Date: 2026-10-23 UTC
 - Producer: GPT-6 prospective native producer, NOT Jules
 - Canonical Task: axiom/plasma/A1–A4
@@ -58,6 +59,7 @@
 - Required machine contract: axiom_document_topology JSON
 - stdout/stderr/exit: NOT_EXECUTED
 - Result: NOT_COMPUTED
+- A2 Evidence State: NOT_COMPUTED
 - A2 aggregate: BLOCKED_MISSING_EXECUTION_RECEIPTS
 - This is neither an observed scanner failure nor a scanner PASS
 
