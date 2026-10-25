@@ -117,3 +117,24 @@
 - Only new dated research manifest proposed; no historical or protocol surface touched
 - W43 Weekly A5 and October natural Monthly A6: NOT_EXECUTED / NOT_DUE
 - No merged-main, build pass, or PR completion claim; stop at Draft for human review
+
+## Forward correction — GitHub-backed post-merge A2 evidence (2026-10-25T02:50:30.784Z)
+
+**Correction class:** POST_MERGE_FORWARD_RECONCILIATION / BOUNDED_EVIDENCE_ONLY. This section is a later observation. It does not rewrite or upgrade the original 2026-10-25T01:26Z producer result, which remains `BLOCKED`, A2 `NOT_COMPUTED/NOT_EXECUTED` at that time and A3/A4 `BLOCKED_BY_A2`.
+
+### Repository identity and delivery observation
+- Correction observation revision: `Axiom-0/main@ae0f35d326037c4118fdf10a8d4963cad18026d1` (exact commit, not historical producer base).
+- Original Daily #414 later merged, merge commit `ae0f35d326037c4118fdf10a8d4963cad18026d1`; the manifest is now main-visible. Its pre-merge `Current Delivery: DRAFT_PENDING_HUMAN_REVIEW` is retained above as an original snapshot label, not current GitHub state.
+- First-party code objects checked from this revision: `scan_kl_divergence.py` Git blob `4da500e9039f62ba1af5c149ebb8b17ea7d97ca1`, `CODE/contracts.py` Git blob `5ef0e0e6304482117c80d0d545e364c6beb95034`, `scan_consistency.py` Git blob `357d2ea4fb02facfa1f568ad31c9536bd1fb4656`.
+- GitHub connector read scope: repository `main` commit/tree plus exact named files. This is remote content access, not a locally authenticated full checkout.
+
+### Bounded diagnostic inherited from the 2026-10-25 independent handoff
+- A separate **incomplete sandbox** previously replayed the original `scan_kl_divergence.py` with an unchanged source-authenticated `CODE/contracts.py` and a minimal replacement `CODE/__init__.py` shim. Its recorded result was exit `0`, two fixture `D_KL=0.0 nats`, an infinite support-mismatch case and `KL_EVIDENCE.status=passed`. The shim means this is **not** a full-revision native scanner run. This successor did not re-execute it and does not relabel the original manifest's A2 status.
+- A prior read-based independent rule scan applied the documented `scan_consistency.py` index/header predicates to GitHub-fetched corpus: 16 ADR and 15 METHODOLOGY documents; no index-membership mismatch or missing required heading was observed. That check was **not** `python3 scan_consistency.py`; native process stdout/stderr/exit and the required `AXIOM_CONSISTENCY_EVIDENCE` JSON were **not produced**.
+- **Scanner gate:** native KL + native topology executed together against a complete exact-revision worktree = `NOT_ESTABLISHED`. Original A2 formal receipts remain `NOT_COMPUTED / NOT_EXECUTED`. Two fixture zero values must not be promoted to a universal/system KL result.
+- **Source gate:** original A1 names only two canonical source objects. Any SOP minimum above two, including a three-source requirement, is not satisfied by repetition of these two objects; no third independent high-trust source or native source admission is claimed.
+- **A3/A4 gates:** bounded execution trials, success/failure/denominator, source-validated index changes and test receipts remain `NOT_EXECUTED / BLOCKED_BY_A2`; no A3/A4 retroactive PASS.
+- **Runner status:** `git ls-remote` failed in the earlier sandbox with DNS exit `128`; the authorized GitHub connector succeeds for remote file/PR operations but does not itself execute the two Python scan commands in a full worktree.
+- **Next admissible execution:** pin a newly refreshed exact `main`; source-authenticate a complete checkout; run `python3 scan_kl_divergence.py` and `python3 scan_consistency.py` as separate commands, retain exit/stdout/stderr + both JSON receipts and scanner revision; fail closed on any missing or failed gate. Only then reassess A3 and A4, with a new run identity.
+
+**Governance and scope:** this is an explicit appended correction to the already canonical Daily manifest (no parallel Daily artifact). No `CODE/**`, `ADR/**`, `METHODOLOGY/**`, `INDEX.md`, `PATCH_INDEX.md`, `.github/**`, prior dated material, weekly or monthly artifact is changed. This report is not a scheduled-run result, formal native PASS, original Jules replay, or month-close decision.
