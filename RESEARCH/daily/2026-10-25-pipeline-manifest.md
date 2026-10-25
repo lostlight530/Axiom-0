@@ -56,7 +56,8 @@
 
 ### Exact-revision runner recovery attempt
 - Target: f919d0dbf245366c241ae3132f686eca2b9e3173
-- Command attempted in sandbox: git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD
+- Post-first-draft verification command actually executed: git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD
+- Actual post-commit probe file mtime: 2026-10-25T01:32:44Z UTC, later than the initial Draft commit; this is explicitly a later verification event, not initial producer-time execution evidence
 - Probe stderr: fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com
 - Probe exit code: 128; stdout bytes: 0
 - Probe classification: EXTERNAL_DNS_FAILURE / NOT_A_REPOSITORY_TEST
@@ -99,6 +100,14 @@
 - NEW_COUNTEREVIDENCE: read-only speculative drafting and held-write gating constrain side effects; MCP per-client server isolation can prevent the advisory's routing failure
 - UNKNOWN_RETAINED: D_KL, topology, all A3 bounded execution, host applicability and paper result reproduction
 - NEXT_RETEST_CONDITION: obtain source-authenticated complete commit f919d0dbf245366c241ae3132f686eca2b9e3173, execute both A2 scanners in target environment and retain command/revision/stdout/stderr/exit/JSON; only after admissible A2 start A3/A4
+
+## Forward provenance reconciliation — same Draft, pre-merge
+- Initial Draft file was authored before the independent shell DNS probe and before the additional original arXiv full-text recertification; this forward clarification is added while Draft is still unmerged
+- Exact probe command and exit were observed after first Draft commit on 2026-10-25T01:32:44Z UTC
+- The later probe corroborates inability to acquire source by direct Git in this shell; it does not retroactively become an A2 scanner receipt or initial draft-time execution
+- arXiv:2610.21463v1 exact authors/version and full-text Proposition 1/2 were directly recertified later on 2026-10-25; the original source claim remains source-scoped and is not an execution
+- If a downstream audit reconstructs chronology, initial authored record, post-commit probe and later final updated Draft must be treated as separate events
+- Numeric KL and document-topology states remain NOT_COMPUTED / NOT_EXECUTED
 
 ## Validation, Handoff and Stop
 - GitHub remote source inspection: EXECUTED
