@@ -138,3 +138,18 @@
 - **Next admissible execution:** pin a newly refreshed exact `main`; source-authenticate a complete checkout; run `python3 scan_kl_divergence.py` and `python3 scan_consistency.py` as separate commands, retain exit/stdout/stderr + both JSON receipts and scanner revision; fail closed on any missing or failed gate. Only then reassess A3 and A4, with a new run identity.
 
 **Governance and scope:** this is an explicit appended correction to the already canonical Daily manifest (no parallel Daily artifact). No `CODE/**`, `ADR/**`, `METHODOLOGY/**`, `INDEX.md`, `PATCH_INDEX.md`, `.github/**`, prior dated material, weekly or monthly artifact is changed. This report is not a scheduled-run result, formal native PASS, original Jules replay, or month-close decision.
+
+## A1 source gate successor — third original publisher (2026-10-25T03:03:31.949Z)
+
+**Evidence class:** POST_MERGE_NEW_SOURCE_OBSERVATION. This is a later verification event and does not alter the original A1 two-source producer snapshot or any A2/A3/A4 execution result.
+
+### S3 — Agents Python pending-approval compaction
+- Original publisher and exact title: `OpenAI / openai-agents-python · Release v0.24.0`.
+- Primary URL: https://github.com/openai/openai-agents-python/releases/tag/v0.24.0
+- Publication date/version: `2026-10-15`, tagged `v0.24.0`; original release text rechecked `2026-10-25T03:03:31.949Z` UTC.
+- Supported original release-note proposition: `Bug Fixes` includes `defer automatic compaction for pending approvals`, linking PR `#5363`. This is upstream, version-specific implementation evidence about pending-approval state.
+- Unsupported: no installed-version audit, host applicability, workflow runtime, independent bugfix regression replay, proof of all approval correctness, or Axiom KL/topology check. **Host applicability UNKNOWN.**
+- S1 / S2 / S3 distinct provenance: **S1** SpecAgent authors' arXiv `2610.21463v1`; **S2** MCP TypeScript SDK maintainers' `GHSA-jm63-cq47-j5jp`; **S3** OpenAI Agents SDK maintainers' `v0.24.0` release. Three different original source objects/publishers, **not** three independent replications of one proposition.
+- Source gate successor observation: `3/3 ORIGINAL_PUBLISHER_OBJECTS_VERIFIED` on logical 2026-10-25; documentary minimum-source identity addressed **only in this later observation**. This does not make the original two-source record a three-source run.
+- Remain **BLOCKED**: formal A2 exact-worktree `python3 scan_kl_divergence.py` and `python3 scan_consistency.py` required command/exit/stdout/stderr/JSON receipts absent; A3 bounded tests and A4 index alignment `NOT_EXECUTED`. No executable pipeline PASS and no retrospective revision to the original manifest.
+- Scope: append-only note to this same canonical manifest; no `CODE/**`, scanner, test, `INDEX.md`, `PATCH_INDEX.md`, historical, weekly, monthly or workflow changes.
