@@ -37,7 +37,7 @@ A schedule or automation result is evidence only for the exact revision, command
 
 ## Ownership and concurrency
 
-This file, `schemas/schedule.schema.json`, and `sample-schedule.yml` specify repository-owned automation data. They do not alter Jules configuration, private task prompts, repository memory, or GitHub Actions.
+This file, `schemas/schedule.schema.json`, and `sample-schedule.yml` specify repository-owned automation data. They do not alter native-producer configuration, private task prompts, repository memory, or GitHub Actions.
 
 A scheduler consuming this contract must independently implement credentials, isolation, notifications, retention, concurrency, and failure handling. If another live maintenance PR/branch owns this automation surface, coordinate instead of creating a parallel contract repair.
 
