@@ -6,9 +6,9 @@ Effective: 2026-09-17
 
 ## Scope
 
-This contract governs repository maintenance, Jules-produced maintenance inputs, Independent Review, Independent GPT recovery/repair, automation-contract interpretation, checker ownership, cadence, concurrency, and delivery discipline.
+This contract governs repository maintenance, native producer-generated maintenance inputs, including current GPT Native prospective production and retained historical Jules outputs, Independent Review, Independent GPT recovery/repair, automation-contract interpretation, checker ownership, cadence, concurrency, and delivery discipline.
 
-It does not by itself authorize changes to `CODE/**`, `FRONTEND/**`, dependencies, research content, historical audits, private Jules task controls, or GitHub Actions runtime behavior. Those surfaces may be read as evidence and may be changed only when the current owning repository authority or maintainer explicitly makes them part of the repair.
+It does not by itself authorize changes to `CODE/**`, `FRONTEND/**`, dependencies, research content, historical audits, private producer-side task controls, or GitHub Actions runtime behavior. Those surfaces may be read as evidence and may be changed only when the current owning repository authority or maintainer explicitly makes them part of the repair.
 
 ## Cadence and evidence
 
@@ -59,9 +59,9 @@ Historical control-plane drift closes only after a repaired public entry point e
 
 A 30-day provisional audit may summarize 30 logical dates, but it is not a natural-month seal. The month remains `MONTH_OPEN` until the calendar month ends and the final date is retained or explicitly classified as missing after it becomes due.
 
-## Jules, Independent Review, and Independent GPT
+## Native Producers, Independent Review, and Independent GPT
 
-Private Jules task prompts and repository memory remain producer-side controls and are not reconstructed into public files by default. Jules-generated records are repository inputs, not self-authenticating conclusions.
+Private producer task prompts and repository memory remain producer-side controls and are not reconstructed into public files by default. GPT Native prospective records and retained historical Jules records preserve distinct producer identities. Native producer-generated records are repository inputs, not self-authenticating conclusions.
 
 `GOVERNANCE/INDEPENDENT_REVIEW.md` defines reviewer-side interpretation states. `GOVERNANCE/independent-gpt/README.md` defines memoryless maintenance recovery and bounded Draft-PR delivery. Review state and maintenance action are separate.
 
