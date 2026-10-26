@@ -4,9 +4,9 @@ AI assistance may be used for drafting, code suggestions, translation, test idea
 
 ## Control-plane boundary
 
-This file governs accountable AI-assisted repository work, including Independent GPT maintenance review. It does not reveal or replace private Jules task prompts, repository memory, credentials, hidden reasoning, or unrelated operator context.
+This file governs accountable AI-assisted repository work, including Independent GPT maintenance review. It does not reveal or replace private producer task prompts, repository memory, credentials, hidden reasoning, or unrelated operator context.
 
-Jules-generated Daily/Weekly/Monthly artifacts may be reviewed after generation, but post-hoc review is not evidence that Jules consumed this file or followed its rules. Private Jules controls remain private unless the maintainer explicitly publishes them.
+Historical Jules-generated Daily/Weekly/Monthly artifacts may be reviewed after generation, but post-hoc review is not evidence that Jules consumed this file or followed its rules. GPT Native prospective records are a distinct producer class; their existence does not prove that a specific run consumed or followed this file. Private producer-side controls remain private unless the maintainer explicitly publishes them.
 
 The repository currently has no public `AGENTS.md`; AI assistance must not infer one from private automation, prior conversations, or model memory.
 
