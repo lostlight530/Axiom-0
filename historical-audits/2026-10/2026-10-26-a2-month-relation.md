@@ -1,0 +1,157 @@
+# A2 | Axiom-0 | 2026-10-26 current October source and native-result relation
+
+- Exact fresh main after ten A1 merged: `112f2d743a9adb4eec57bc80aa5c03d646ea0cdb`.
+- Direct merged 2026-10-26 A1: `historical-audits/2026-10/2026-10-26-a1-source-custody.md` Git blob `355a9659b2f185057710bdb8f2a1cfa55879caff`.
+- Previous merged 2026-10-25 A2 baseline: `56d1f777c5a90ba9f0afcc9218f1e5b88cfb10f5`.
+- Logical N=2026-10-26 Asia/Shanghai; MonthStart=2026-10-01…2026-10-26 inclusive.
+- Original source owner: Jules/prospective native GPT as preserved in records; Independent GPT A2 is a separate maintenance/relationship run.
+- Scope: 90 current named source objects; 26 expected dated native source paths; 8 actual source-file changes since previous A2.
+- October remains MONTH_OPEN; Weekly W43 is Oct19–25 and final documentary review was submitted Oct26, not an extra W44 or October seal.
+- Repo-native scanner, Python test suite, benchmark and independent experimental replay by **this A2**: NOT_EXECUTED.
+
+## Updated 2026-10-26 native conclusions and non-inheritance
+- A1 source arXiv 2609.25913v2 is a preprint claim; formal A2 KL NOT_COMPUTED, native topology NOT_EXECUTED, A3/A4 BLOCKED, and W43 A5 documentary-only audit without native scanner.
+- A2 maintenance source relation is not scientific PLASMA A2, GAS R2, or any Foundation admission protocol; shared labels cannot promote blocked science to PASS.
+- A Git SHA proves a current file identity; PR merged status proves integration, not exact run-time success or external source verification.
+- Previous A1 N−1 remains a separate merged immutable audit; no rewriting original authorship/history.
+- Duplicate or abandoned same-task PRs from today are historical delivery attempts only and get no extra Native research credit.
+
+## Fixed-date source graph: October source slots, not experimental outcomes
+- 2026-10-01 | 66d3329bb25eb236 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-02 | 60392958d7c2bb03 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-03 | 486b29fea3e4ea2e | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-04 | 0890670136f7b90e | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-05 | c12a0db9b1ba8a9a | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-06 | 299c8cdc1bee4512 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-07 | 7b4c53f90728d050 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-08 | 5b4c51d0108b9ece | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-09 | 3a79d927d5016f01 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-10 | e15e3383bc1b7d0d | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-11 | 6ea47cf72236f28a | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-12 | 6cbb5bbdb55b1ded | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-13 | 7980eaead91dc998 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-14 | 1c206376250ce9f7 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-15 | deb515b422773cfb | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-16 | ea513361dfad06cb | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-17 | 9e6f63b7468d9fc3 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-18 | 8705e3151e3c5603 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-19 | 10dee34ba441de1e | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-20 | b113dc0e7076690f | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-21 | 104a3a0832b8cb13 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-22 | 5f0948643de880d9 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-23 | c63123029f1426cd | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-24 | 47cd9fbff0ca710c | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-25 | 9055568c77d97e62 | 1/1 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-26 | 2481b1806a1d51b9 | 1/1 path(s) | N_DAY_EXACT_SOURCE_AUTHOR_STATUS
+
+## Exact current owner/source, methodology and code object ledger
+- 001 | `ADR/ADR-001-ZERO-ENTROPY-COGNITIVE-PROTOCOL.md` | blob `4d9ed24d2c785c4ce00c62a4e5275dc1e68b59f2` | 3644 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 002 | `ADR/ADR-002-DAG-IRREVERSIBILITY-ENFORCEMENT.md` | blob `76f235ef82e7aacdf4eb83cdca97065dbf83cadf` | 3263 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 003 | `ADR/ADR-003-ALGEBRAIC-POLLUTION-REJECTION.md` | blob `7fb6003d62c7b15f01d7c0246c62fda26c916ee0` | 2884 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 004 | `ADR/ADR-004-LIQUID-KNOWLEDGE-SOLIDIFICATION.md` | blob `6566710a6f16e35ff0366b9f560a9e229b5a7e50` | 3209 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 005 | `ADR/ADR-005-CONTEXT-INGESTION-AND-CANONICALIZATION.md` | blob `00b243f8ac4762636a9975d7aeebfc58a2e70f6b` | 2856 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 006 | `ADR/ADR-006-MYTHIC-GENERATION-LANE.md` | blob `563facad08b5fb38bb0e448d1d33108d181a3696` | 3004 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 007 | `ADR/ADR-007-HUMAN-AI-POSTPROCESSING-BOUNDARY.md` | blob `139e656040e8046bcfaa15fbb070a7abf8c394c0` | 3243 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 008 | `ADR/ADR-008-RESEARCH-TO-ADR-DISTILLATION.md` | blob `1a332bd22b9bb93ecb5e86cd90691ed442c0c3ca` | 3154 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 009 | `ADR/ADR-009-EVIDENCE-STATUS-LABELING.md` | blob `bd18a5871c06b5092b5e3ba349e63e495e12d726` | 3380 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 010 | `ADR/ADR-010-INDEX-SYNCHRONIZATION-AND-NAV-CONTRACT.md` | blob `b867536218b02c5e5d53694c1d71a33b613783d1` | 2960 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 011 | `ADR/ADR-011-ZERO-TRUST-TOOL-EXECUTION.md` | blob `416a7d8a5d8c52ee9b64558d32ef04256a52636a` | 3087 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 012 | `ADR/ADR-012-SANDBOX-SELF-DESTRUCTION-PROTOCOL.md` | blob `4a2ff092637a1b287776e74c3fe81d821a70a65e` | 3705 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 013 | `ADR/ADR-013-VERIFICATION-AND-CLAIM-SCOPE.md` | blob `15f51736f582eb84c8b2eebea27ed6c5049c6357` | 5308 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 014 | `ADR/ADR-014-REPO-KNOWLEDGE-STRATIFICATION.md` | blob `8e73788a3c1678b387321c05a7fa6b4f4b3730b8` | 4662 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 015 | `ADR/ADR-015-REFERENCE-IMPLEMENTATION-BOUNDARY.md` | blob `9f63cb72e98f031448050df19db896eded4ab2f8` | 4751 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 016 | `ADR/ADR-016-TEMPORAL-EVIDENCE-AVAILABILITY.md` | blob `a6b350c0318dd4f7704869cdba84379f551edfe8` | 6475 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 017 | `ADR/INDEX.md` | blob `8027ea895c85e24e0b77b6579b40b85ef115649f` | 7364 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 018 | `AUTOMATION/CONTRACT.md` | blob `29bc748f310da25962138da0b91466ffecd3ec9d` | 2925 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 019 | `AUTOMATION/sample-schedule.yml` | blob `a2a867ee0680acbd7fb82fe730548982646b3ea3` | 552 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 020 | `CODE/__init__.py` | blob `0d86ea8cd1611877827680a9030b7d56c2867445` | 426 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 021 | `CODE/contracts.py` | blob `5ef0e0e6304482117c80d0d545e364c6beb95034` | 2310 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 022 | `CODE/liquid_morphing.py` | blob `f5e5410d9326eb6e55c18a9f16064811e8ff509e` | 4413 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 023 | `CODE/nexus_core.py` | blob `5e148ad4ce3576f6292977894e41ac0410c98414` | 3320 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 024 | `EVIDENCE_BASELINE.md` | blob `ec61e6cb785c7d55031d4d8b290106783b350ae3` | 9359 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 025 | `INDEX.md` | blob `2a8a295a85afebd65fcf5a5b31e370f220cb67d0` | 21692 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 026 | `METHODOLOGY/INDEX.md` | blob `4fa0d778f8ce6c5b4aa2d96f111264e64de0c64d` | 5510 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 027 | `METHODOLOGY/METH-001-DAG-TOPOLOGY-CONSTRAINT.md` | blob `b67180936310d979a8aaaa23ae6b765846c81094` | 3304 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 028 | `METHODOLOGY/METH-002-KL-DIVERGENCE-DEFENSE.md` | blob `35fd43949916a3c0c483356f5b62555ba7261bbc` | 4367 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 029 | `METHODOLOGY/METH-003-ADR-DISTILLATION-PROTOCOL.md` | blob `b5721c977dfbf8978ef352258913b2e724e61539` | 3589 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 030 | `METHODOLOGY/METH-004-MYTHIC-ARCHITECTURE-GENERATION.md` | blob `b1069c3b01afd57643b647a520151293f39ea084` | 3024 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 031 | `METHODOLOGY/METH-005-REALITY-ANCHOR-AND-MYTHIC-AMPLIFICATION.md` | blob `9f58f910b7ddb0d9313db79d1509337967de0872` | 2895 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 032 | `METHODOLOGY/METH-006-POST-PROCESSING-AND-DEHYDRATION.md` | blob `e874f3ce9e013d44bdb894dde423ee099611536d` | 2970 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 033 | `METHODOLOGY/METH-007-COGNITIVE-FIREWALL-AND-ORGANIC-ISOLATION.md` | blob `0d144c1befa598ad8c94554e98d2077705cb951a` | 3509 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 034 | `METHODOLOGY/METH-008-SYNTHETIC-CONTENT-EXCLUSION-BOUNDARY.md` | blob `c8c7cd1af7918ab73999a8a9942f0de9436adf92` | 2934 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 035 | `METHODOLOGY/METH-009-TEMPORAL-ENTROPY-ANCHORING.md` | blob `64ff3b4897301094f5067261a7ba2cf4a6509fe5` | 3198 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 036 | `METHODOLOGY/METH-010-KL-THRESHOLD-ABSOLUTISM.md` | blob `628e9c771d0881799223c2bbfc398dd6054758de` | 3431 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 037 | `METHODOLOGY/METH-011-DETERMINISTIC-COLLABORATION-PROTOCOL.md` | blob `a284a9780585a31f6c4394506bb18be3195bdcd5` | 3434 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 038 | `METHODOLOGY/METH-012-ZERO-TRUST-RESOURCE-ALLOCATION.md` | blob `4d5fe47c8ce6c2fec63363b54d8b3110c535b9fa` | 3396 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 039 | `METHODOLOGY/METH-013-STRICT-DATA-DEDUPLICATION.md` | blob `839dd41609a4a3bf339b9473af80fa19bdf3f21d` | 3096 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 040 | `METHODOLOGY/METH-014-GROUNDEDNESS-RULE.md` | blob `7e26ada659ed46046080eda81d03ea7a137d9d82` | 3234 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 041 | `METHODOLOGY/METH-015-HISTORICAL-EVIDENCE-RECONCILIATION.md` | blob `78307bfadca896ed2c0180b0a5813408a7551365` | 8060 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 042 | `PATCH_INDEX.md` | blob `f8777c8ec863a30e111af0c1ea09d8b2e5b86407` | 19841 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 043 | `RESEARCH/daily/2026-10-01-pipeline-manifest.md` | blob `66d3329bb25eb2364bdd7e436372e59f96d22b9c` | 4286 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 044 | `RESEARCH/daily/2026-10-02-pipeline-manifest.md` | blob `60392958d7c2bb03752d3739d5d3e361fb41dda7` | 4753 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 045 | `RESEARCH/daily/2026-10-03-pipeline-manifest.md` | blob `486b29fea3e4ea2eab4fb8c231b85a456760ee1f` | 4391 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 046 | `RESEARCH/daily/2026-10-04-pipeline-manifest.md` | blob `0890670136f7b90edc2d04501b7005f4c50b54e7` | 4124 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 047 | `RESEARCH/daily/2026-10-05-pipeline-manifest.md` | blob `c12a0db9b1ba8a9a22f549930dccc983f959794b` | 3691 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 048 | `RESEARCH/daily/2026-10-06-pipeline-manifest.md` | blob `299c8cdc1bee45129c02e0617c3038b1b0e31c45` | 5135 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 049 | `RESEARCH/daily/2026-10-07-pipeline-manifest.md` | blob `7b4c53f90728d0509c0ce178bc6346caea269b9a` | 5325 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 050 | `RESEARCH/daily/2026-10-08-pipeline-manifest.md` | blob `5b4c51d0108b9ecec30ceeaf6bfe6f12b50959a9` | 5295 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 051 | `RESEARCH/daily/2026-10-09-pipeline-manifest.md` | blob `3a79d927d5016f01e5a3ad70942f82d027048294` | 3757 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 052 | `RESEARCH/daily/2026-10-10-pipeline-manifest.md` | blob `e15e3383bc1b7d0d2f324c55ce3bb33f37d4519e` | 4991 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 053 | `RESEARCH/daily/2026-10-11-pipeline-manifest.md` | blob `6ea47cf72236f28aa7305ddcfd77c84399df00e0` | 4532 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 054 | `RESEARCH/daily/2026-10-12-pipeline-manifest.md` | blob `6cbb5bbdb55b1ded4a9dd5a10fd05bb9f4cbc0e8` | 3856 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 055 | `RESEARCH/daily/2026-10-13-pipeline-manifest.md` | blob `7980eaead91dc998e16a1ce5e399a17f4d7d5dfa` | 6710 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 056 | `RESEARCH/daily/2026-10-14-pipeline-manifest.md` | blob `1c206376250ce9f7c21f9f99ac25938e3f1d9596` | 4476 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 057 | `RESEARCH/daily/2026-10-15-pipeline-manifest.md` | blob `deb515b422773cfb232abf126e6d4a0fc9efa727` | 4694 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 058 | `RESEARCH/daily/2026-10-16-pipeline-manifest.md` | blob `ea513361dfad06cbd937e74393d634c345d90a03` | 4743 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 059 | `RESEARCH/daily/2026-10-17-pipeline-manifest.md` | blob `9e6f63b7468d9fc385e25152e961d83f8c8536db` | 3947 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 060 | `RESEARCH/daily/2026-10-18-pipeline-manifest.md` | blob `8705e3151e3c560300d9a5e7e0b99c07866be67e` | 4920 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 061 | `RESEARCH/daily/2026-10-19-pipeline-manifest.md` | blob `10dee34ba441de1ef1a89213e9bd22835ab39fed` | 7022 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 062 | `RESEARCH/daily/2026-10-20-pipeline-manifest.md` | blob `b113dc0e7076690fe3e35fa26cee1379ef10b0b2` | 4694 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 063 | `RESEARCH/daily/2026-10-21-pipeline-manifest.md` | blob `104a3a0832b8cb13e6f653a085c3f0971e16c604` | 13198 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 064 | `RESEARCH/daily/2026-10-22-pipeline-manifest.md` | blob `5f0948643de880d9df9e081f058f15b873721a81` | 9970 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 065 | `RESEARCH/daily/2026-10-23-pipeline-manifest.md` | blob `c63123029f1426cd80d76bcf6d8439d8da2928bd` | 11385 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 066 | `RESEARCH/daily/2026-10-24-pipeline-manifest.md` | blob `47cd9fbff0ca710c759a01c137f6d8ad713082cd` | 7636 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 067 | `RESEARCH/daily/2026-10-25-pipeline-manifest.md` | blob `9055568c77d97e626ae886e987baed30c4ad2b32` | 14333 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 068 | `RESEARCH/daily/2026-10-26-pipeline-manifest.md` | blob `2481b1806a1d51b9b896c67e7c82316893f1c3ed` | 8009 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 069 | `RESEARCH/weekly/2026-W43-weekly-manifest.md` | blob `4100c86f6c14f71ce43a4582dd5d2043e9863c6f` | 7545 B | W43_WEEKLY_SOURCE; no native runtime PASS inferred
+- 070 | `schemas/claim.schema.json` | blob `16b1dd411dae1d15f30ab1fb199dd8aa1bd56828` | 861 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 071 | `schemas/run-event.schema.json` | blob `6039bc4d1b9266f1011c8470fa5e7301531c044a` | 471 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 072 | `schemas/schedule.schema.json` | blob `1b84bf2c627bf5da74892f552ec8b62c52550fd9` | 1341 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 073 | `SPECIFICATION.md` | blob `3834aa5026a3863c49e5f2a170cf82512460180d` | 11206 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 074 | `tests/__init__.py` | blob `780b1ebdadf67fff60a44208d7de3a79ee420e94` | 27 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 075 | `tests/compat/datetime_test.py` | blob `8694cb3f03690cee7689e225cf666c206b1441e3` | 92 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 076 | `tests/compat/parallel_test.py` | blob `7de7c08678e867a5aca2445de839e17a287f62dc` | 92 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 077 | `tests/compat/str_e_test.py` | blob `7e06b4467a54da649e97cb1e9238835fab0ce2da` | 89 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 078 | `tests/compat/test_complexity.py` | blob `0d2b140855c2a5540e42983b0cc75aba039a59b8` | 94 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 079 | `tests/compat/test_entropy_spike.py` | blob `a548b02e0677c837922e90cf1a21b454d5334ad4` | 91 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 080 | `tests/compat/test_json_dumps.py` | blob `7fd53ec143776dbda9c6eb75f19c6dbd32c9851c` | 88 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 081 | `tests/compat/test_metrics_json.py` | blob `9f2e218190705f8d216300649e518a5f02026e6a` | 91 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 082 | `tests/entrypoints.py` | blob `3379d775bb4ef9e9fa03015e1691be712737f2e7` | 2184 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 083 | `tests/test_contracts.py` | blob `9ec87470bcb34c7d99f7fa6ec6d0ccfe9e2649ca` | 919 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 084 | `tests/test_morphing.py` | blob `8dcdb601927fababa5ddf286e8629069910bc0f2` | 1161 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 085 | `tests/test_nexus.py` | blob `6057546aa8fd1ef3545eccdd5f4287066373bdf6` | 745 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 086 | `tests/test_repository_contract.py` | blob `69f93569efb6d4200c62fee6f76f76d8b2591b9a` | 4527 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 087 | `tests/test_research_record_validator.py` | blob `695d162a78b4631508f32e22f8eeb6e484af12f6` | 6105 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 088 | `tests/test_scan_consistency.py` | blob `9281866f151b4f12832070718ea38951968b6b46` | 3464 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 089 | `tests/test_schema.py` | blob `9382ff2b06964d6be2559cee0d7d25416962f550` | 762 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 090 | `tests/test_scope_guard.py` | blob `bc887ef795fcb1439dab043831615591d048c05e` | 2210 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+
+## Post-prior-A2 exact Git change ledger
+- Δ01 | `AI_USE_DISCLOSURE.md` | modified, +2/-2 | current main change only; source/publisher timing retained
+- Δ02 | `AUTOMATION/CONTRACT.md` | modified, +1/-1 | current main change only; source/publisher timing retained
+- Δ03 | `GOVERNANCE/INDEPENDENT_REVIEW.md` | modified, +5/-5 | current main change only; source/publisher timing retained
+- Δ04 | `GOVERNANCE/MAINTENANCE.md` | modified, +14/-4 | current main change only; source/publisher timing retained
+- Δ05 | `GOVERNANCE/README.md` | modified, +3/-3 | current main change only; source/publisher timing retained
+- Δ06 | `RESEARCH/daily/2026-10-26-pipeline-manifest.md` | added, +104/-0 | current main change only; source/publisher timing retained
+- Δ07 | `RESEARCH/weekly/2026-W43-weekly-manifest.md` | added, +96/-0 | current main change only; source/publisher timing retained
+- Δ08 | `historical-audits/2026-10/2026-10-26-a1-source-custody.md` | added, +282/-0 | current main change only; source/publisher timing retained
+
+## Process corrections from 2026-10-26 ten-repository execution
+- Before generating a PR, compare open PR `(owner, logical period, task class, base)` across **all** available work; reuse matching Draft instead of parallel branch conflicts.
+- A parallel PR closed without merge must never count as a new source experiment or extra native deliverable; actual current-main blob is the authoritative integrated object.
+- A1 is a ten-repository global merge barrier. A2 opens only after re-fetch of all ten exact main SHAs and merged A1 owner blobs.
+- `POST-A1 MAIN` ≠ `PRE-A1 MAIN` ≠ native task's original source base; preserve all three when doing historical correction.
+- Path coverage, scientific execution, standalone tests, local deployment, external first-party assertions and independent reproduction require separate statuses.
+- The last natural period is OPEN: W43 closure does not close October; W44 must not claim W43's Sunday as Monday evidence.
+- When tools cannot materialize native host/runtime, mark NOT_EXECUTED and retain known scientific blockages rather than infer green from PR merge.
+- Remediate only actually confirmed current-contract drift and preserve old files; this A2 updates the dated owner relation, not scientific code or producer history.
