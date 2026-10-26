@@ -20,6 +20,16 @@ It does not by itself authorize changes to `CODE/**`, `FRONTEND/**`, dependencie
 
 KL, structural, execution, index, document, automation, and runner evidence are separate surfaces and prove only their named contracts. `scan_consistency.py` emits a versioned `axiom_document_topology` contract; retain its JSON line when the scanner is actually executed. A non-zero scan fails closed and stops later stages. No later success rewrites an earlier failure.
 
+## 2026-10-26 forward producer-attribution reconciliation
+
+Status: `CURRENT_CONTROL_PLANE_RECONCILIATION / HISTORICAL_A2_PRESERVED`. This is a later interpretation, not a retrospective change to the original producer run, execution receipt, or merged A2 artifact.
+
+- The merged 2026-10-25 month-relation A2 record (`historical-audits/2026-10/2026-10-25-a2-month-relation.md`, blob `ce6c5f0441ca025009191315a4d377da7446ed55`) globally says `Source Native producer Jules`.
+- The exact source it lists for 2026-10-25 (`RESEARCH/daily/2026-10-25-pipeline-manifest.md`, blob `9055568c77d97e626ae886e987baed30c4ad2b32`) explicitly states `Producer: GPT-6 prospective native producer / NOT Jules` and `GPT_NATIVE_PROSPECTIVE / HUMAN_AUTHORIZED_SUBSTITUTE`.
+- Correct current interpretation: the original A2 sentence is not valid as a single producer assertion for all October source objects; producer attribution must be read from each dated source, task identity, and Git/PR provenance. Earlier genuinely Jules-produced artifacts retain Jules attribution; this does not convert them to GPT Native.
+- The October 25 formal Plasma A2 KL remains `NOT_COMPUTED`, topology remains `NOT_EXECUTED`, and A3/A4 remain blocked under the original manifest. A merged maintenance A2 is not formal pipeline A2 execution.
+- Do not rewrite the historical A2 file, increase evidence counts, alter archived producer fields, or infer use of these public contracts by any producer. A future monthly relation must explicitly carry this reconciliation while preserving source identities.
+
 ## Task identity and concurrency
 
 A maintenance run is identified by repository, task/surface, logical period when applicable, producer, exact base `main` revision, exact observed branch/ref when branch-relative availability matters, and run identifier when one exists.
