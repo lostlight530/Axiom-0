@@ -2,7 +2,7 @@
 
 Calibration: 2026-09-17
 
-`GOVERNANCE/` is the repository-native maintenance/control-plane entry point. It routes public maintenance, Independent Review, retained governance design material, and memoryless Independent GPT recovery without replacing implementation, evidence contracts, automation-data contracts, research content, or private Jules task controls.
+`GOVERNANCE/` is the repository-native maintenance/control-plane entry point. It routes public maintenance, Independent Review, retained governance design material, and memoryless Independent GPT recovery without replacing implementation, evidence contracts, automation-data contracts, research content, or private producer-side task controls.
 
 ## Current control-plane surfaces
 
@@ -39,7 +39,7 @@ current merged main / current implementation facts
 
 `INDEPENDENT_REVIEW.md` can calibrate interpretation but does not outrank the current owning contract or become runtime authority.
 
-A private Jules task definition may instruct a producer, but it is not automatically public repository authority and must not be copied into public files unless the maintainer explicitly publishes it.
+A private producer task definition may instruct a producer, but it is not automatically public repository authority and must not be copied into public files unless the maintainer explicitly publishes it.
 
 ## Runner and automation terminology
 
@@ -57,7 +57,7 @@ GitHub Actions and repository automation are runner/lifecycle evidence only when
 ## Separation
 
 ```text
-native Jules production != Independent Review
+GPT Native production != Independent Review
 Independent Review != Independent GPT maintenance
 Independent GPT != GitHub Actions
 repository schedule contract != scheduler execution
