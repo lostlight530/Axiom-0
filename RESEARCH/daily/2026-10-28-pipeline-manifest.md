@@ -84,3 +84,21 @@
 - October month: OPEN / NOT_FINAL
 
 This is a bounded source-inspection and fail-closed Daily record. It neither rewrites prior successful/failed observations nor claims executable evidence that did not occur.
+
+## Same-day independent, isolated KL diagnostic — NOT a formal A2 rerun
+
+- Diagnostic execution identity: `Axiom-0/plasma/A2-KL/2026-10-28/GPT_NATIVE/cf019edd6a98ed1f6a3df5ac5d41a8466c55ddda/isolated-kl-01`
+- Actual window: `2026-10-28T06:09:29.409097+00:00` to `2026-10-28T06:09:30.257697+00:00`
+- Exact original blob 1: `CODE/contracts.py@5ef0e0e6304482117c80d0d545e364c6beb95034`
+- Exact original blob 2: `scan_kl_divergence.py@4da500e9039f62ba1af5c149ebb8b17ea7d97ca1`
+- Byte identity: local `git hash-object` matched both retrieved GitHub blob hashes before execution
+- Environment: CPython `3.13.5`, Linux `6.18.55-x86_64`, no third-party packages
+- Actual command: `python run_diagnostic.py`; task-local isolated adapter loads exact `CODE.contracts` module and executes the exact original scanner via `runpy.run_path(..., run_name="__main__")` to avoid importing unavailable unmaterialized `CODE/__init__.py` dependencies
+- Diagnostic exit code: `0`
+- Diagnostic stdout: `KL contract: passed`; `KL_EVIDENCE.status=passed`; named fixture `identity D_KL=0.0 nats`, `renormalized_identity D_KL=0.0 nats`, `support_mismatch=infinity`, `failures=[]`
+- Diagnostic stderr: empty
+- Separate evidence class: `STANDALONE_DIAGNOSTIC_EXACT_BLOB_SUBSET`
+- Formal A2 pipeline status: `BLOCKED`, because the complete exact-revision repository, formal structural scan and original staged runner were not available
+- Formal A3/A4 status: `NOT_EXECUTED`; this diagnostic does not unlock either task
+- Distinction: the isolated adapter is **not** the canonical `python scan_kl_divergence.py` invocation from a full repository worktree and is not a new independent code implementation or universal KL correctness proof
+- NEXT_RETEST_CONDITION: run the two formal A2 commands against the complete pinned worktree and retain each actual stdout, stderr, exit code and `axiom_document_topology` JSON before considering A3
