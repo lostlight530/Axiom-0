@@ -6156,3 +6156,153 @@ NATIVE_MODIFICATION_NOTE: append monthly A6 owner only; no original Jules A1–A
 - October natural-month final is `NOT_DUE` until natural closure; later code/path/PR presence does not upgrade earlier `BLOCKED`, `UNKNOWN` or `NOT_EXECUTED` states
 - Prior month-owner blocks above are retained as point-in-time views; no original task-time author, external source, runtime, research-batch count, independent verification, or long-term doctrine is changed by this note
 - `SOURCE_IDENTITY != CONTENT_DECISION != RUNTIME_VERIFICATION`; unresolved audit gates require separately inspectable primary evidence before status promotion
+
+
+## A1_OCT_2026_N_MINUS_1_ARTIFACT_DECISIONS_2026-10-29
+
+- Owner: `lostlight530/Axiom-0`; producer: external independent GPT maintenance, not the original native actor.
+- Exact GitHub main base: `8823b961628174ec83d10b0b4d0fe78d286b442e`; logical N: 2026-10-29 Asia/Shanghai; A1 inclusive interval: 2026-10-01..28.
+- Artifact denominator: 28 original daily pipeline manifests, four due weekly A5 manifests (W40..W43), October provisional A6 relational owner, `INDEX.md`, `PATCH_INDEX.md`, `AUTOMATION/CONTRACT.md`. The indexed ADR/METHODOLOGY corpus and every maintenance-audit historical blob are not independently content revalidated by this pass.
+- Evidence method: individually retrieved all 28 original Daily Markdown bodies plus four Weekly, October owner, two indexes and automation contract via pinned remote GitHub; compared retained assertions and source identity. Repository full-worktree native scripts and source URLs were **not** replayed.
+- A1 acceptance status: **COMPLETE_FOR_ENUMERATED_NATIVE_SURFACES / PARTIAL_REPOSITORY_WIDE_SEMANTIC_ASSURANCE**. This is a bounded native-relationship review, not a full code/ADR experiment and not a new native Daily execution.
+- Decision vocabulary: `NO_FOLLOW_UP`, `BOUNDARY_UPDATE`, `UNKNOWN`, `NOT_DUE`; original native task state and task-time author remain unchanged.
+
+### Daily artifact-by-artifact content decisions
+### 2026-10-01 — `RESEARCH/daily/2026-10-01-pipeline-manifest.md`
+- Git blob identity: `66d3329bb25e…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 484 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 6. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-02 — `RESEARCH/daily/2026-10-02-pipeline-manifest.md`
+- Git blob identity: `60392958d7c2…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 484 / PEP 483. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 8. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-03 — `RESEARCH/daily/2026-10-03-pipeline-manifest.md`
+- Git blob identity: `486b29fea3e4…`; original native status/evidence field: **status-field not normalized**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 4. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-04 — `RESEARCH/daily/2026-10-04-pipeline-manifest.md`
+- Git blob identity: `0890670136f7…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 6. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-05 — `RESEARCH/daily/2026-10-05-pipeline-manifest.md`
+- Git blob identity: `c12a0db9b1ba…`; original native status/evidence field: **status-field not normalized**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: Python 3.12 / 3.13 docs. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 13. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-06 — `RESEARCH/daily/2026-10-06-pipeline-manifest.md`
+- Git blob identity: `299c8cdc1bee…`; original native status/evidence field: **PASS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / RFC 3339. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 9. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-07 — `RESEARCH/daily/2026-10-07-pipeline-manifest.md`
+- Git blob identity: `7b4c53f90728…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 7. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-08 — `RESEARCH/daily/2026-10-08-pipeline-manifest.md`
+- Git blob identity: `5b4c51d0108b…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 257 / PEP 8. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 7. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-09 — `RESEARCH/daily/2026-10-09-pipeline-manifest.md`
+- Git blob identity: `3a79d927d501…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 484. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 5. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-10 — `RESEARCH/daily/2026-10-10-pipeline-manifest.md`
+- Git blob identity: `e15e3383bc1b…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 484. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 10. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-11 — `RESEARCH/daily/2026-10-11-pipeline-manifest.md`
+- Git blob identity: `6ea47cf72236…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: Python docs / Linux release index. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 8. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-12 — `RESEARCH/daily/2026-10-12-pipeline-manifest.md`
+- Git blob identity: `6cbb5bbdb55b…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 7. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-13 — `RESEARCH/daily/2026-10-13-pipeline-manifest.md`
+- Git blob identity: `7980eaead91d…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: Python execution model / json docs. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 11. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-14 — `RESEARCH/daily/2026-10-14-pipeline-manifest.md`
+- Git blob identity: `1c206376250c…`; original native status/evidence field: **status-field not normalized**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / Python json docs. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 15. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-15 — `RESEARCH/daily/2026-10-15-pipeline-manifest.md`
+- Git blob identity: `deb515b42277…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 15. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-16 — `RESEARCH/daily/2026-10-16-pipeline-manifest.md`
+- Git blob identity: `ea513361dfad…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 10. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-17 — `RESEARCH/daily/2026-10-17-pipeline-manifest.md`
+- Git blob identity: `9e6f63b7468d…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 20 / PEP 8. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 11. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-18 — `RESEARCH/daily/2026-10-18-pipeline-manifest.md`
+- Git blob identity: `8705e3151e3c…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / RFC 2616. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 11. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-19 — `RESEARCH/daily/2026-10-19-pipeline-manifest.md`
+- Git blob identity: `10dee34ba441…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE; original first-line status differs**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / PEP 20 / RFC 8259. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained in body; explicit `MISSING_DATA` occurrences in original text: 12. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-20 — `RESEARCH/daily/2026-10-20-pipeline-manifest.md`
+- Git blob identity: `b113dc0e7076…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE; original first-line status differs**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: PEP 8 / CPython releases. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 10. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-21 — `RESEARCH/daily/2026-10-21-pipeline-manifest.md`
+- Git blob identity: `104a3a0832b8…`; original native status/evidence field: **BLOCKED; canonical scanners NOT_EXECUTED**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: AgentLoupe arXiv 2610.23233. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-22 — `RESEARCH/daily/2026-10-22-pipeline-manifest.md`
+- Git blob identity: `5f0948643de8…`; original native status/evidence field: **BLOCKED / NOT_COMPLETE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: PROVISO / TraceLite / MemTrace. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 blocked by formal A2; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-23 — `RESEARCH/daily/2026-10-23-pipeline-manifest.md`
+- Git blob identity: `c63123029f14…`; original native status/evidence field: **BLOCKED**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: arXiv 2610.29869 / W3C meeting. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 blocked by formal A2; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-24 — `RESEARCH/daily/2026-10-24-pipeline-manifest.md`
+- Git blob identity: `47cd9fbff0ca…`; original native status/evidence field: **BLOCKED**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: MCP TypeScript advisory / ext-tasks. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-25 — `RESEARCH/daily/2026-10-25-pipeline-manifest.md`
+- Git blob identity: `9055568c77d9…`; original native status/evidence field: **BLOCKED_BY_FORMAL_A2_RUNNER_UNAVAILABLE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: arXiv 2610.21463 / MCP security advisory. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-26 — `RESEARCH/daily/2026-10-26-pipeline-manifest.md`
+- Git blob identity: `2481b1806a1d…`; original native status/evidence field: **BLOCKED_BY_FORMAL_A2_RUNNER_UNAVAILABLE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: arXiv 2609.25913. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-27 — `RESEARCH/daily/2026-10-27-pipeline-manifest.md`
+- Git blob identity: `64d06ceb977f…`; original native status/evidence field: **PASS_WITHIN_DOCUMENTED_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Content-level source/topic trace: exact-worktree A1–A4 scanner/fixture evidence. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: 100 repeat + 34 unit tests recorded; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### 2026-10-28 — `RESEARCH/daily/2026-10-28-pipeline-manifest.md`
+- Git blob identity: `f87c2e913456…`; original native status/evidence field: **BLOCKED_AT_A2_EXECUTION_GATE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Content-level source/topic trace: source-verified remote SHA and isolated scanner. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- A3/validation distinction: A3/A4 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+### Due Weekly A5 artifact decisions
+- W40 `RESEARCH/weekly/2026-W40-weekly-manifest.md` (`9ec5f90f6c0e…`): `NO_FOLLOW_UP` for Oct01–04 within Sep28–Oct04; weekly says seven manifests present and preserves their explicit `MISSING_DATA` fields.
+- W40 boundary: its retained D_KL values are fixture-scoped; this weekly success does not certify every Daily field or a universal algebraic property.
+- W41 `RESEARCH/weekly/2026-W41-weekly-manifest.md` (`c1ff1b9ff70a…`): `NO_FOLLOW_UP`; its recovery reconciles original PR #363 stale base with Oct11 Daily PR #362 delivered later.
+- W41 boundary: original PR #363's task-time visibility is not retroactively rewritten; current weekly input may be complete without earlier checkout having contained Oct11.
+- W42 `RESEARCH/weekly/2026-W42-weekly-manifest.md` (`729880be91ec…`): `BOUNDARY_UPDATE`; seven Oct12–18 original paths are enumerated but `Missing / Failed / Partial / Not Yet Due` fields contain `MISSING_DATA`.
+- W42 boundary: claimed scanner success and inherited daily values are retained as original assertions; this external maintenance pass did not execute its listed commands.
+- W43 `RESEARCH/weekly/2026-W43-weekly-manifest.md` (`4100c86f6c14…`): `BOUNDARY_UPDATE`; original audit explicitly states `NATIVE_SCANNER_NOT_EXECUTED` and `DOCUMENTARY_AUDIT_COMPLETED` over Oct19–25.
+- W43 conflict guard: it cannot convert blocked Oct21–25 Daily A2/A3 into seven successful formal pipeline runs; do not infer complete native protocol validation.
+### Monthly owner, navigation and execution-contract decisions
+- October month owner `RESEARCH/monthly/2026-10-monthly-manifest.md` (`c9d9c5f01f88…`): **APPEND_RELATION** through this section; A6 natural-month closure is `NOT_DUE`, not failed or finalized.
+- October owner preserves earlier source-time A1/A2 blocks; later merged Daily paths and new external audit do not change earlier `NOT_PRESENT` or `DRAFT_NOT_MERGED` observations.
+- `INDEX.md` (`2a8a295a85af…`): October links and generic `Status: SUCCESS` navigation are retained through Oct20; current remote source holds Oct21–28 Daily manifests separately.
+- `PATCH_INDEX.md` (`f8777c8ec863…`): same Oct01–20 navigation cadence; do not label the missing Oct21–28 links as successful formal A4 alignment when canonical daily A4 was blocked.
+- Index disposition: `BOUNDARY_UPDATE / NO_RETROACTIVE_REWRITE`. Absent newer link ≠ absent Daily artifact; the original blocked Day21–26/Day28 writes did not claim A4 updates.
+- `AUTOMATION/CONTRACT.md` (`29bc748f310d…`): schedule contract is not execution receipt; native scanner requires exact commit and actual output, not repository listing.
+- Cross-plane: independent-GPT maintenance docs and later GitHub PR merges are distinct from original Plasma A1–A4, A5 and A6 execution; no duplication of original run credit.
+- Current open week W44 has no natural end at Oct29; October A6 not due until month end; Oct30 D30 checkpoint is a separate audit boundary.
+### Action, negative evidence and handoff
+- Confirmed current meaning: Oct21–26 original manifests are blocked/partially executed; Oct27 has its own bounded exact-revision execution; Oct28 is newly blocked again.
+- Retained negative evidence: missing complete worktree, unexecuted formal scanner commands and `MISSING_DATA` do not become success through path presence.
+- Retained positive evidence: Oct27 recorded 100 bounded repeat checks and 34 unit tests against that own revision; no other day inherits these outcomes.
+- The observed 28 Daily file identities and four Weekly contents were checked; GitHub content presence is not proof of their respective source-time PR availability.
+- This pass does **not** certify all 482 repository blobs, external science truth, code correctness, or the absence of undiscovered audit conflicts.
+- For any stronger runtime claim, rehydrate the complete pinned revision and execute canonical A2 scanners, gated A3 repeated tests and A4 index check.
+- No old Daily or Weekly modified. Only this chronological October owner gains a successor review block; October remains OPEN.
