@@ -6306,3 +6306,174 @@ NATIVE_MODIFICATION_NOTE: append monthly A6 owner only; no original Jules A1–A
 - This pass does **not** certify all 482 repository blobs, external science truth, code correctness, or the absence of undiscovered audit conflicts.
 - For any stronger runtime claim, rehydrate the complete pinned revision and execute canonical A2 scanners, gated A3 repeated tests and A4 index check.
 - No old Daily or Weekly modified. Only this chronological October owner gains a successor review block; October remains OPEN.
+
+
+## A2_2026_10_29_PLASMA_OCT1_TO29_RELATION
+
+- Inherited current main: `7ca40c60ee7082155509fd9ae6db1b24a13fd949`; canonical A1 blob: `b1124968626c27f95a8fe650080479a7c792efaf`; ten-repository A1 global prerequisite fulfilled and verified before this A2 branch.
+- Source-time window Oct01–29 Asia/Shanghai; Oct01–28 original decisions inherited from the **merged** A1 blob, not re-executed; Oct29 original production and GitHub delivery inspected separately.
+- Oct29 primary source: `RESEARCH/daily/2026-10-29-pipeline-manifest.md` `2722c04905919fd6cc4dc4058400028f08d6b1a7`; native author, source/test status, and recording time unchanged.
+- A2 is cross-artifact relation maintenance, not a new native Daily or a second original-run validation; original month owner OPEN, natural month closure NOT_DUE.
+- Earlier Oct28 A1/A2 SHA inventory had source-semantic PARTIAL; this A2 cannot elevate all repository blobs to FULLY_ATTESTED.
+- GitHub current-main blob read is proof of current custody, not proof of all original task-time availability.
+### 2026-10-01..28 exact merged A1 inherited source-time decision chain
+#### 2026-10-01 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `66d3329bb25e…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 484 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 6. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-01 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-02 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `60392958d7c2…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 484 / PEP 483. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 8. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-02 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-03 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `486b29fea3e4…`; original native status/evidence field: **status-field not normalized**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 4. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-03 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-04 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `0890670136f7…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 6. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-04 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-05 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `c12a0db9b1ba…`; original native status/evidence field: **status-field not normalized**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: Python 3.12 / 3.13 docs. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 13. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-05 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-06 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `299c8cdc1bee…`; original native status/evidence field: **PASS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / RFC 3339. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 9. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-06 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-07 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `7b4c53f90728…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 7. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-07 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-08 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `5b4c51d0108b…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 257 / PEP 8. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 7. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-08 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-09 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `3a79d927d501…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 484. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 5. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-09 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-10 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `e15e3383bc1b…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 484. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 10. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-10 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-11 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `6ea47cf72236…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: Python docs / Linux release index. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 8. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-11 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-12 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `6cbb5bbdb55b…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 7. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-12 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-13 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `7980eaead91d…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: Python execution model / json docs. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 11. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-13 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-14 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `1c206376250c…`; original native status/evidence field: **status-field not normalized**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / Python json docs. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 15. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-14 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-15 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `deb515b42277…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 15. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-15 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-16 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `ea513361dfad…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 10. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-16 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-17 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `9e6f63b7468d…`; original native status/evidence field: **SUCCESS**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 20 / PEP 8. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 11. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-17 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-18 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `8705e3151e3c…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / RFC 2616. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 result not captured by targeted field matcher; explicit `MISSING_DATA` occurrences in original text: 11. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-18 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-19 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `10dee34ba441…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE; original first-line status differs**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / PEP 20 / RFC 8259. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained in body; explicit `MISSING_DATA` occurrences in original text: 12. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-19 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-20 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `b113dc0e7076…`; original native status/evidence field: **CONSISTENCY_CHECK_PASS_WITHIN_SCOPE; original first-line status differs**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: PEP 8 / CPython releases. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100/100 retained; explicit `MISSING_DATA` occurrences in original text: 10. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-20 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-21 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `104a3a0832b8…`; original native status/evidence field: **BLOCKED; canonical scanners NOT_EXECUTED**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: AgentLoupe arXiv 2610.23233. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-21 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-22 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `5f0948643de8…`; original native status/evidence field: **BLOCKED / NOT_COMPLETE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: PROVISO / TraceLite / MemTrace. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 blocked by formal A2; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-22 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-23 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `c63123029f14…`; original native status/evidence field: **BLOCKED**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: arXiv 2610.29869 / W3C meeting. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 blocked by formal A2; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-23 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-24 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `47cd9fbff0ca…`; original native status/evidence field: **BLOCKED**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: MCP TypeScript advisory / ext-tasks. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-24 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-25 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `9055568c77d9…`; original native status/evidence field: **BLOCKED_BY_FORMAL_A2_RUNNER_UNAVAILABLE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: arXiv 2610.21463 / MCP security advisory. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-25 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-26 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `2481b1806a1d…`; original native status/evidence field: **BLOCKED_BY_FORMAL_A2_RUNNER_UNAVAILABLE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: arXiv 2609.25913. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-26 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-27 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `64d06ceb977f…`; original native status/evidence field: **PASS_WITHIN_DOCUMENTED_SCOPE**; action: **NO_FOLLOW_UP within retained native evidence; no fresh execution inferred**.
+- Evidence: Content-level source/topic trace: exact-worktree A1–A4 scanner/fixture evidence. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: 100 repeat + 34 unit tests recorded; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-27 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+#### 2026-10-28 — A1 source-chain relation → Oct29
+- Input: Git blob identity: `f87c2e913456…`; original native status/evidence field: **BLOCKED_AT_A2_EXECUTION_GATE**; action: **BOUNDARY_UPDATE / retain BLOCKED and no transferred PASS**.
+- Evidence: Content-level source/topic trace: source-verified remote SHA and isolated scanner. This is primary-source identity **as stated by this dated manifest**, not independent fact recertification.
+- Decision: A3/validation distinction: A3/A4 NOT_EXECUTED; explicit `MISSING_DATA` occurrences in original text: 0. These field gaps remain unfilled; no re-run is implied.
+- A2 successor: 2026-10-28 original actor/outcome is retained; the Oct29 `Plasma Daily 2026-10-29` is distinct logical-date input, not a retroactive replay or additional publisher for this date.
+### Oct29 same-day native inputs and material non-equivalences
+- N01: Oct29 current Plasma A1 source review selects OpenAI Agents Python v0.24.0 / Google ADK v2.13.0 / arXiv:2610.29995.
+- N02: The three objects address SDK tool/session, SDK memory/session, and provenance graph hypothesis; not independent tests of a shared feature.
+- N03: Oct29 original full A2 native formal scanner BLOCKED_AT_A2_EXECUTION_GATE due no complete source worktree.
+- N04: Oct29 native A3 100 repeats NOT_EXECUTED, A4 topology scan NOT_EXECUTED; no success inherited from Oct27.
+- N05: Oct27 recorded exact-revision native bounded 100 repeat and 34 tests, but a distinct version and execution identity.
+- N06: Oct21–26 source Daily blocked; each retained within source-time period, not 'fixed' by a later Git merge.
+- N07: Oct28 isolated exact scanner subset not equivalent complete canonical A2 and not gate-unlocking.
+- N08: W43 A5 documentary weekly audit NATIVE_SCANNER_NOT_EXECUTED.
+- N09: October A6 provisional relation, not natural month protocol audit completion.
+- N10: INDEX/PATCH_INDEX historical navigation success labels cannot be used to certify Oct21–29 formal A4.
+- N11: No formal local runner, updated code or cross-repo source experiments by A2 maintenance.
+### Weekly/month/source governance carry forward
+- W40..W43 due-week original native outcomes remain exactly as reviewed in A1; W44 is OPEN and not final.
+- D7/D10/D14 audit checkpoint records and their genuine original runner status are not invented from filename presence.
+- D30 Oct30 not due; natural October close not due; no cross-month or yearly seal.
+- Original producer identity, external publication date, local observation date and later PR merge commit are kept separate.
+- This A2 added only month-owner relation text; no original Daily, Weekly, production code, source register, memory doctrine, Actions or historical evidence mutated.
+- Reviewer actual work: GitHub pinned source read, derived relationship analysis and PR aggregate diff check; runtime test/full repo checkout NOT_EXECUTED.
+- Reviewer conclusion: MONTH_TO_DATE_RELATIONS_UPDATED_WITH_SOURCE_BOUNDED_DECISIONS / EXTERNAL_RUNTIME_AND_FULL_CORPUS_ASSURANCE_PARTIAL.
