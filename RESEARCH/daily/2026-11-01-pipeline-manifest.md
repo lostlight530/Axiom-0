@@ -94,3 +94,33 @@
 - Only canonical 2026-11-01 Daily manifest newly proposed; no previous manifests, schema, ADR, SPEC, CODE, INDEX, PATCH_INDEX, tests or workflow changed.
 - GitHub Pages success or repository checkout failure does not stand in for Plasma scanner execution.
 - No formal scanner, test_100.sh, code_compliance.py or repository test run was performed; full repository validation NOT_EXECUTED.
+
+
+---
+
+## 2026-11-01 Subsequent verification appendix — independently dated after original merge
+
+Status: LATER_SOURCE_PINNED_SUBSET_EXECUTION / ORIGINAL_RUN_STATUS_PRESERVED
+Observation UTC: 2026-11-01T11:26:32.917776Z through 2026-11-01T11:26:33.673057Z
+Input Revision: 8991ebc4f0d6bb8506d7d402c9f05ff0c1d4364a
+Previous Original Native PR: #456 / merged; its original A2 NOT_EXECUTED describes that earlier original run, not this subsequent experiment
+Producer: GPT-6 / follow-on bounded verification, NOT_JULES_REPLAY
+Environment: isolated Python 3.13.5 container with no full Git worktree, selected exact upstream files only
+Source CODE/contracts.py: Git blob 5ef0e0e6304482117c80d0d545e364c6beb95034, local reconstructed blob SHA-1 EXACT_MATCH
+Source scan_kl_divergence.py: Git blob 4da500e9039f62ba1af5c149ebb8b17ea7d97ca1, local reconstructed blob SHA-1 EXACT_MATCH
+Actual Command: python3 scan_kl_divergence.py
+Process Exit: 0
+Process stderr: EMPTY
+Process stdout human line: KL contract: passed
+Process stdout machine line: KL_EVIDENCE={"contract": "kl_divergence", "failures": [], "observations": [{"case": "identity", "d_kl": 0.0, "expected": 0.0, "within_tolerance": true}, {"case": "renormalized_identity", "d_kl": 0.0, "expected": 0.0, "within_tolerance": true}], "status": "passed", "support_mismatch": "infinity"}
+KL Test Inputs: exactly the two in-script fixed cases and one support-mismatch test; no paper response-class entropy reused as a KL value
+Claim Scope: PINNED_SOURCE_SUBSET_PYTHON_KL_SCAN_EXECUTED_AND_PASSED; exact code blobs, explicit environment, original stdout/exit
+Formal Git checkout: NOT_MATERIALIZED; this run does not claim the whole repository or linked tests executed
+Structure additional check: JavaScript source-rule mirror of scan_consistency.py against the pinned GitHub main tree, 16/16 ADR and 15/15 Methodology file headings and index references inspected, 0 scoped mismatches; canonical Python scan_consistency.py itself NOT_EXECUTED
+Formal AXIOM_CONSISTENCY_EVIDENCE emitted by native Python scanner: NOT_AVAILABLE / NOT_EMITTED
+A2 combined admission: BLOCKED_BY_MISSING_NATIVE_STRUCTURAL_SCANNER_RECEIPT; independent subtest PASS does not fulfill both A2 gates
+A3 bounded execution: NOT_EXECUTED / BLOCKED
+A4 official native index task: NOT_EXECUTED / BLOCKED; separately executed structural mirror is not original A4
+Unknown: full-worktree integration, official topology command stdout/exit, A3 execution counts, production-effect applicability
+Historical protection: preceding original report and blocked states retained verbatim; this is later same-day evidence, not a correction of earlier execution history
+Next retest: run both required commands from one pinned full worktree with exact executable runner, stdout/stderr/exit and topology JSON, then consider A3/A4 only when all formal gates are met
