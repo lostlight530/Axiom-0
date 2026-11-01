@@ -1549,3 +1549,48 @@ MONTH_OPEN
 Axiom-0 Monthly Final Audit
 State: PROVISIONAL
 entropy=0
+
+---
+
+# 2026-11-01 GPT Native September A6 — forward calendar and protocol correction
+
+## Run identity
+- Canonical task: axiom/plasma/A6
+- Logical month: 2026-09
+- Month Closure Status: CLOSED
+- Execution Time Asia/Shanghai: 2026-11-01T17:18:57.605+08:00
+- Producer: GPT-6 / GPT_NATIVE_RETROSPECTIVE_SUCCESSOR / NOT_JULES_REPLAY
+- Record Provenance: HUMAN_AUTHORIZED_SUBSTITUTE
+- Source main: 0ba3d43463bad7ce69c3ed2633ddd6486ae47afe
+- Run Identity: Axiom-0/plasma/A6/2026-09/GPT_NATIVE/0ba3d43463bad7ce69c3ed2633ddd6486ae47afe/postclose-review
+- Previous month-to-date reports and 2026-09-30 Jules provisional archive seal: HISTORICAL / UNMODIFIED
+- New Result: MONTH_CALENDAR_CLOSED / DOCUMENTARY_PROTOCOL_REVIEW_WITH_UNVERIFIED_EXECUTION_GAPS
+- Full original monthly formal pipeline or scientific validation: NOT_ESTABLISHED
+
+## Daily/weekly source scope
+- The current canonical September Daily path set contains `RESEARCH/daily/2026-09-01-pipeline-manifest.md` through `2026-09-30-pipeline-manifest.md` (30 date paths), plus W36–W39 closed weekly manifests; the later crossmonth W40 is a separately dated source of current context
+- September 30 original Daily blob `4ee35f8e0d70e8bedd94e4cc080fcf430a39618f` reports bounded KL fixture output, topology JSON and an A3 100/100 specified test count. It also records stderr, input-range, uncovered-condition and latency gaps; those limit the claim
+- A local fixture `D_KL=0` is not universal zero entropy. The historical trailing `entropy=0` monthly wording lacks a universal scope and must be read only as an unverified/limited local statement; it has no independent whole-month scanner receipt
+- The 2026-09-30 provisional archive seal is a historical task-time provisional seal; later calendar closure does not make that original seal a rigorous final scientific pass
+
+## October-to-September boundary reconciliation
+- Historical original source-time failures and missing provenance fields are not rewritten or reclassified as successful
+- New independent paper/runtime reproducibility: NONE. Repository structural access is not scanner execution
+- Execution, source retrieval, scanner output, test result, index alignment and ADR maturity remain distinct levels, and a month-level aggregate cannot combine all daily test claims without shared exact environment and comparable denominator
+- SPECIFICATION, Methodology, ADR, Reference Implementation and bilingual status require explicit exact-revision validator receipts before claiming whole-project equivalence or protocol maturity
+- New ADR requested: NONE; no changes to code, actions, schedule or index
+
+## Evidence delta
+- NEW_EVIDENCE: September month has ended, all 30 dated manifest paths were present on current main, and Sep30 explicitly retains bounded scanner/test receipts
+- CORRECTED_INTERPRETATION: historical month-end provisional archive, current date coverage and generic `entropy=0` are not a completed month-wide formal execution proof
+- UNCHANGED_BOUNDARY: SOURCE != ALGORITHM_EXECUTION != SPECIFIC_TEST != SCIENTIFIC_CORRECTNESS
+- NEW_COUNTEREVIDENCE: explicit missing stderr/actual input range/uncovered-condition fields preclude interpreting all recorded pass counts as verified universal outcomes
+- UNKNOWN_RETAINED: month-wide comparable KL evidence, source identity re-verification, full graph/topology execution lineage and exact ADR/test closure
+- NEXT_RETEST_CONDITION: materialize exact current main in a runnable environment, collect named A2 KL scanner and topology receipts, independent A3/A4 execution and checker results with source SHA and environment
+
+## Current disposition
+- September calendar: CLOSED
+- September documentary audit interpretation: COMPLETE_WITH_GAPS
+- Scientific/executable final seal: NOT_VERIFIED
+- Earlier historical OPEN/PROVISIONAL sections: retained
+- Original validation replay this run: NOT_EXECUTED
