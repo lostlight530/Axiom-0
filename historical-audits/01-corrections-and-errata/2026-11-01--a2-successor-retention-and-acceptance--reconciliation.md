@@ -44,8 +44,8 @@
 - Any separate future restoration of audit artifacts requires a contract-specific retention and minimality decision; do not restore automatically
 
 ## Repository-specific evidence boundary
-- Plasma Daily manifest 存在不等于四阶段各自完整正式扫描。原始 BLOCKED、NOT_EXECUTED、D_KL 与测试运行证据须逐日独立读取，不由源对象列表代替。
-- Axiom A1 #447 的 209 additions 是新 successor，不能更改 #446 的 92 additions。
+- Plasma Daily manifest 存在不等于四阶段各自完整正式扫描.原始 BLOCKED、NOT_EXECUTED、D_KL 与测试运行证据须逐日独立读取，不由源对象列表代替.
+- Axiom A1 #447 的 209 additions 是新 successor，不能更改 #446 的 92 additions.
 - `CURRENT_PATH_PRESENT != ORIGINAL_NATIVE_EXECUTION`
 - `HISTORICAL_PR_DELIVERY != CURRENT_MAIN_RETENTION`
 - `LATER_SUCCESS != EARLIER_SUCCESS`
