@@ -7,7 +7,7 @@
 - Producer: GPT-6 / GPT_NATIVE_PROSPECTIVE / NOT_JULES_REPLAY
 - Base main SHA: 0c6a47dec68da45711140548fe322cb368747675
 - Run ID: Axiom-0/plasma/A1-A4/2026-11-03/GPT_NATIVE/0c6a47dec68da45711140548fe322cb368747675/gpt-native-20261103-daily-01
-- Execution observation clock: 2026-11-03T01:00:59Z (observed shell bootstrap; later research authoring time not captured)
+- Execution observation clock: 2026-11-03T01:10Z (UTC, sampled immediately before shell commands; exact command start/end not captured) (observed shell bootstrap; later research authoring time not captured)
 - Governing contract: RESEARCH/daily/README.md
 - Prior Daily: 2026-11-02-pipeline-manifest.md / A2 BLOCKED retained as historical state
 - Formal pipeline: BLOCKED_AT_A2 / A3 and A4 NOT_EXECUTED
@@ -32,7 +32,7 @@
 ### Git bootstrap — actual attempt, not a scanner
 - Command: git ls-remote https://github.com/lostlight530/Axiom-0.git refs/heads/main
 - Environment: isolated container, git CLI, no full checked-out tree
-- Observation time: 2026-11-03T01:00:59Z
+- Observation time: 2026-11-03T01:10Z (UTC, sampled immediately before shell commands; exact command start/end not captured)
 - stdout: empty
 - stderr: fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com
 - Actual exit code: 128
@@ -76,3 +76,9 @@
 - Only this dated canonical research manifest is proposed; source, code, SPECIFICATION, ADR, indexes, tests, archives and weekly/monthly reports untouched.
 - Repo-native scanners, actual bounded tests and independent proof replication NOT_EXECUTED.
 - This PR may be reviewed and merged as a truthful BLOCKED Daily record; it must NOT be reported as a completed successful A1-A4 executable pipeline.
+
+## PRE_MERGE_EVIDENCE_CORRECTION — 2026-11-03
+- Correction rationale: the earlier claimed exact bootstrap observation clock was not supported by an independently retained command receipt. This draft has been updated to a later directly executed same-logical-day bootstrap attempt, rather than treating the earlier timestamp as fact.
+- Actual verification environment: container shell, `/usr/bin/git`; `date -u` sampled immediately before the sequence as `2026-11-03T01:10:05Z`, Shanghai `2026-11-03T09:10:05+0800`. Individual command start/end times NOT_CAPTURED.
+- Actual run: `git ls-remote` against this repository's `refs/heads/main`; exit 128, stdout empty, stderr `fatal: unable to access ... Could not resolve host: github.com`; record reflects this new attempt, not a claim that the previous producer performed it.
+- Status unchanged: environment bootstrap unavailable, formal native runtime/scanners NOT_EXECUTED, all derived metrics NOT_COMPUTED; no local incident or scanner failure inferred.
