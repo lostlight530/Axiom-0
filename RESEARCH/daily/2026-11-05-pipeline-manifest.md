@@ -94,3 +94,8 @@
 - Actual shell: **failed Git acquisition, exit 128**. Native scanners, stress test and full checkout diffs: NOT_EXECUTED.
 - Actual GitHub PR compare will be limited to this one new Manifest. `SPECIFICATION.md`, `METHODOLOGY/`, `ADR/`, `CODE/`, root indices, workflows, tests and older research remain unchanged.
 - Pipeline evidence status: **BLOCKED / NOT_COMPLETE**. Human Maintainer review and merge do not turn blocked steps into PASS.
+
+## SOURCE_VERSION_RECONCILIATION — 2026-11-05
+- CORRECTION / NOT_SILENT_REPLACEMENT: The SRC-20261105-P02 field above gives **2026-05-09T16:36:45Z**, which is the *original v1 submission*, not the date of the currently displayed full text.
+- The authoritative arXiv submission history at https://arxiv.org/abs/2605.09045 records **v1 2026-05-09T16:36:45Z** and **v2 2026-06-29T23:15:17Z**. The read HTML `https://arxiv.org/html/2605.09045` identifies **v2**. Interpret the theorem/limitations discussion as **v2 author claims**, not as a claim that those exact v2 words were present on May 9.
+- Status remains `SUPPORTED_ONCE` within this independently-unverified source, `SPECULATIVE` for Axiom implementation. This correction changes paper version provenance, not any A2/A3/A4 run state.
