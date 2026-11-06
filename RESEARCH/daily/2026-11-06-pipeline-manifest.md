@@ -102,3 +102,10 @@
 - **Later successful run:** `2026-11-06T00:39Z` genuine exact-main native A2/A3/unit tests + read-only A4 preflight — observed, linked and bounded.
 - Current state: `NATIVE_PIPELINE_GATES_PASSED_WITHIN_TESTED_SCOPE` / `INDEX_UPDATES_IN_DRAFT` / `NOT_MERGED`; **no global zero-entropy claim**.
 - Only same-date manifest, INDEX.md and PATCH_INDEX.md are intended durable changes. Any temporary workflow used for native execution must be removed from the final PR diff, leaving its immutable GitHub run URL as evidence.
+
+## A4 FINAL INDEX REVALIDATION — 2026-11-06T00:45Z UTC
+- [PR-branch native validation #42139149860](https://github.com/lostlight530/Axiom-0/actions/runs/42139149860) checked out updated Draft branch commit `a05c0c01788bc37df8fd91f653c719202ca97448` **after** both index entries were added, not the earlier exact-main code-only revision.
+- A2 KL scanner and structural scanner again passed; A3 **100/100** fixed-default-input independent process invocations, mean `47.231 ms` on this run (do not merge with initial mean `45.296 ms`), 34 unit tests `OK`.
+- Actual A4 link preflight on changed branch: `INDEX.md: 181 links, 0 missing`; `PATCH_INDEX.md: 135 links, 0 missing`; the checker also asserted today's path exists and appears **exactly once** in each index.
+- This confirms the indexed Draft branch as tested. Only the canonical Daily and both index pointers are intended final PR files; the temporary native verification workflow is removable after its run artifacts are retained, not a permanent new scheduler.
+- Final A4 status `INDEX_NAVIGATION_VALIDATED_ON_DRAFT_BRANCH`, graph semantics / arbitrary-link referential trust beyond these local files remain outside scope.
