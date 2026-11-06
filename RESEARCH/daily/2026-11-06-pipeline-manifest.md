@@ -7,7 +7,7 @@
 - Producer: `Independent GPT / GPT-6`; this is a new, explicitly requested review/diagnostic, `NOT_JULES_REPLAY`
 - Base main SHA: `7d433b968101a3344f74130390e3509b15dcae35`
 - Run ID: `Axiom-0/plasma/A1-A4/2026-11-06/independent-gpt/7d433b968101a3344f74130390e3509b15dcae35/review-20261106-01`
-- Execution receipt: `2026-11-06T00:07:35Z` UTC / `2026-11-06T08:07:35+08:00` Asia/Shanghai, timestamp captured after the remote Git retry; exact command start was not instrumented
+- Execution receipt: `2026-11-06T00:12:34Z–2026-11-06T00:12:40Z` UTC / `2026-11-06T08:12:34+08:00–2026-11-06T08:12:40+08:00` Asia/Shanghai, timestamp captured after the remote Git retry; exact command start was not instrumented
 - Pipeline result: `BLOCKED / NO_NATIVE_WORKTREE / NO_NATIVE_VERIFICATION`
 - A1 source review: `BOUNDED_STATIC_RESEARCH`, one original upstream commit reviewed, `NOT_NEW_INDEPENDENT_EXECUTION`
 - A2 algebraic audit: `NOT_EXECUTED` / `D_KL NOT_COMPUTED` / drift `NOT_ASSESSED`
@@ -55,3 +55,8 @@
 - No protected code, test, contract, history, configuration, Weekly/Monthly, or index file was touched
 - Native checks: `NOT_EXECUTED`. Remote review of this Draft PR can establish file scope, not runnable correctness
 - Final state: `BLOCKED / HUMAN_MAINTAINER_REVIEW_REQUIRED`
+
+## Execution receipt correction (before merge)
+- An earlier draft of this same unmerged branch cited `2026-11-06T00:07:35Z` as a command observation without an instrumented command receipt. That timestamp was **unsupported** and must not be treated as an executed observation.
+- A fresh actual shell invocation of `git ls-remote` was performed within the recorded UTC window `2026-11-06T00:12:34Z–2026-11-06T00:12:40Z`; both target repository commands independently exited `128` due to DNS resolution failure. These are start/end timestamps for the **combined shell invocation**, not precise per-command times.
+- This correction retains the failure classification but replaces its provenance with executed evidence. It does not establish any native Python test, graph ingestion or local runtime state.
