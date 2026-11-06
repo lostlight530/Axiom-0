@@ -1,4 +1,4 @@
-name: Temporary 2026-11-06 Plasma Native Verification
+name: Temporary 2026-11-06 Plasma PR-branch final verification
 on:
   push:
     branches: [independent/20261106-plasma-native-blocked-gpt6]
@@ -12,7 +12,7 @@ jobs:
       - name: Fresh checkout of exact main
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
-          ref: 7d433b968101a3344f74130390e3509b15dcae35
+          ref: independent/20261106-plasma-native-blocked-gpt6
           clean: true
           persist-credentials: false
           fetch-depth: 1
@@ -73,6 +73,10 @@ jobs:
           checks = {}
           for index in ("INDEX.md", "PATCH_INDEX.md"):
               text = (root/index).read_text(encoding="utf-8")
+              target = "RESEARCH/daily/2026-11-06-pipeline-manifest.md"
+              assert text.count("](" + target + ")") == 1, (index, "Nov 6 canonical index count")
+              assert (root/target).is_file(), (index, "Nov 6 daily missing")
+
               links = re.findall(r"\]\(([^)#]+)(?:#[^)]*)?\)", text)
               local = [link for link in links if not re.match(r"^[a-z][a-z0-9+.-]*:", link, re.I)]
               missing = [link for link in local if not (root/index).parent.joinpath(link).exists()]
