@@ -215,3 +215,4 @@ This patch index remains a navigation surface only.
 - [2026-10-18 Pipeline Manifest](RESEARCH/daily/2026-10-18-pipeline-manifest.md) - Status: SUCCESS
 - [2026-10-19 Pipeline Manifest](RESEARCH/daily/2026-10-19-pipeline-manifest.md) - Status: SUCCESS
 - [2026-10-20 Pipeline Manifest](RESEARCH/daily/2026-10-20-pipeline-manifest.md) - Status: SUCCESS
+- [2026-11-06 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-06-pipeline-manifest.md) - Recorded A2 numeric and structural gate pass, A3 bounded 100/100 native executions, A4 navigation preflight; historical acquisition failure preserved, no global invariance claim.
