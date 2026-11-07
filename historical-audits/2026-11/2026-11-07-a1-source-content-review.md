@@ -15,29 +15,29 @@
 - Each row records Git identity, not automatic individual semantic sign-off. Unchanged historical objects retain *prior A1* review status, not a fabricated second reading
 | Path | Current blob | Evidence disposition | Prior A1 covered blob |
 |---|---|---|---|
-| `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` | `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe` | IDENTICAL_BLOB_REUSE_PRIOR | `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe` |
-| `historical-audits/2026-11/2026-11-02-a2-month-relations.md` | `73cc710795b16d6d3bd965fc8ff1329d4548b448` | IDENTICAL_BLOB_REUSE_PRIOR | `73cc710795b16d6d3bd965fc8ff1329d4548b448` |
-| `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` | `7a7b644b08cd4f2d66526e20b04aa40ccf678002` | IDENTICAL_BLOB_REUSE_PRIOR | `7a7b644b08cd4f2d66526e20b04aa40ccf678002` |
-| `historical-audits/2026-11/2026-11-03-a2-month-relations.md` | `c68c300456fec9beab1956b210c06780241b1882` | IDENTICAL_BLOB_REUSE_PRIOR | `c68c300456fec9beab1956b210c06780241b1882` |
-| `historical-audits/2026-11/2026-11-04--2026-11-05-original-a1-a2-acceptance-reconciliation.md` | `f9ca9cbb44578dd69e0e9fa8a7bfcbb2ad14ecc5` | PREVIOUSLY_UNMAPPED_SCOPE | — |
-| `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` | `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109` | IDENTICAL_BLOB_REUSE_PRIOR | `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109` |
-| `historical-audits/2026-11/2026-11-04-a2-month-relations.md` | `0270c832316a4a7e036bf58d265ac5a3eed343c7` | IDENTICAL_BLOB_REUSE_PRIOR | `0270c832316a4a7e036bf58d265ac5a3eed343c7` |
-| `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` | `f0d3e186c186e9901e0329094558de0e40f2d0dc` | IDENTICAL_BLOB_REUSE_PRIOR | `f0d3e186c186e9901e0329094558de0e40f2d0dc` |
-| `historical-audits/2026-11/2026-11-05-a2-month-relations.md` | `ca06312c735734e03322f2af4217332db9abebaf` | IDENTICAL_BLOB_REUSE_PRIOR | `ca06312c735734e03322f2af4217332db9abebaf` |
-| `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` | `613708c98ab521a2148143feadcf14f3272b2bad` | ADDED_N_MINUS_1_INPUT | — |
-| `historical-audits/2026-11/2026-11-06-a2-month-relations.md` | `231899e38d8901e608c427116e93bac051f2a361` | ADDED_N_MINUS_1_INPUT | — |
-| `historical-audits/2026-11/2026-11-06-original-a1a2-semantic-forward-reconciliation.md` | `bf529f9fe0600f2cdb82b8809a6977ca29395029` | ADDED_N_MINUS_1_INPUT | — |
-| `INDEX.md` | `60b453b8806d3bf1759f2b723b040456fe7a4815` | PREVIOUSLY_UNMAPPED_SCOPE | — |
-| `PATCH_INDEX.md` | `9f35b9a2ea617db2fd2e51121cb1e47190d4bcb1` | PREVIOUSLY_UNMAPPED_SCOPE | — |
-| `RESEARCH/daily/2026-11-01-pipeline-manifest.md` | `07014b60274a8a0df712defef7bbacdb40cd61bb` | IDENTICAL_BLOB_REUSE_PRIOR | `07014b60274a8a0df712defef7bbacdb40cd61bb` |
-| `RESEARCH/daily/2026-11-02-pipeline-manifest.md` | `da32856be7b71664dd9e84425289658365e980d7` | IDENTICAL_BLOB_REUSE_PRIOR | `da32856be7b71664dd9e84425289658365e980d7` |
-| `RESEARCH/daily/2026-11-03-pipeline-manifest.md` | `45017dd70f3fc687536242a36bd2e40e2cc78fa0` | IDENTICAL_BLOB_REUSE_PRIOR | `45017dd70f3fc687536242a36bd2e40e2cc78fa0` |
-| `RESEARCH/daily/2026-11-04-pipeline-manifest.md` | `e76b7f77123571ac74fb699412d90ba3d1b33db0` | IDENTICAL_BLOB_REUSE_PRIOR | `e76b7f77123571ac74fb699412d90ba3d1b33db0` |
-| `RESEARCH/daily/2026-11-05-pipeline-manifest.md` | `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae` | IDENTICAL_BLOB_REUSE_PRIOR | `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae` |
-| `RESEARCH/daily/2026-11-06-pipeline-manifest.md` | `349e8462543f592c44ad1e6769eb1af0ef6e4dcd` | ADDED_N_MINUS_1_INPUT | — |
-| `RESEARCH/daily/README.md` | `28f56cf9e3a30dbc262a6c9e8a21f6985c562c13` | IDENTICAL_BLOB_REUSE_PRIOR | `28f56cf9e3a30dbc262a6c9e8a21f6985c562c13` |
-| `RESEARCH/monthly/2026-10-monthly-manifest.md` | `4841478f15b46d5ab9b4a7653e9e9bfe5d59b8dc` | IDENTICAL_BLOB_REUSE_PRIOR | `4841478f15b46d5ab9b4a7653e9e9bfe5d59b8dc` |
-| `RESEARCH/weekly/2026-W44-weekly-manifest.md` | `cbefb65bd542de05f57c44f1ed5886ccf196bec3` | IDENTICAL_BLOB_REUSE_PRIOR | `cbefb65bd542de05f57c44f1ed5886ccf196bec3` |
+| `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` | `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe` |
+| `historical-audits/2026-11/2026-11-02-a2-month-relations.md` | `73cc710795b16d6d3bd965fc8ff1329d4548b448` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `73cc710795b16d6d3bd965fc8ff1329d4548b448` |
+| `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` | `7a7b644b08cd4f2d66526e20b04aa40ccf678002` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `7a7b644b08cd4f2d66526e20b04aa40ccf678002` |
+| `historical-audits/2026-11/2026-11-03-a2-month-relations.md` | `c68c300456fec9beab1956b210c06780241b1882` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `c68c300456fec9beab1956b210c06780241b1882` |
+| `historical-audits/2026-11/2026-11-04--2026-11-05-original-a1-a2-acceptance-reconciliation.md` | `f9ca9cbb44578dd69e0e9fa8a7bfcbb2ad14ecc5` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
+| `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` | `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109` |
+| `historical-audits/2026-11/2026-11-04-a2-month-relations.md` | `0270c832316a4a7e036bf58d265ac5a3eed343c7` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `0270c832316a4a7e036bf58d265ac5a3eed343c7` |
+| `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` | `f0d3e186c186e9901e0329094558de0e40f2d0dc` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `f0d3e186c186e9901e0329094558de0e40f2d0dc` |
+| `historical-audits/2026-11/2026-11-05-a2-month-relations.md` | `ca06312c735734e03322f2af4217332db9abebaf` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `ca06312c735734e03322f2af4217332db9abebaf` |
+| `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` | `613708c98ab521a2148143feadcf14f3272b2bad` | NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE | — |
+| `historical-audits/2026-11/2026-11-06-a2-month-relations.md` | `231899e38d8901e608c427116e93bac051f2a361` | NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE | — |
+| `historical-audits/2026-11/2026-11-06-original-a1a2-semantic-forward-reconciliation.md` | `bf529f9fe0600f2cdb82b8809a6977ca29395029` | NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE | — |
+| `INDEX.md` | `60b453b8806d3bf1759f2b723b040456fe7a4815` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
+| `PATCH_INDEX.md` | `9f35b9a2ea617db2fd2e51121cb1e47190d4bcb1` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
+| `RESEARCH/daily/2026-11-01-pipeline-manifest.md` | `07014b60274a8a0df712defef7bbacdb40cd61bb` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `07014b60274a8a0df712defef7bbacdb40cd61bb` |
+| `RESEARCH/daily/2026-11-02-pipeline-manifest.md` | `da32856be7b71664dd9e84425289658365e980d7` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `da32856be7b71664dd9e84425289658365e980d7` |
+| `RESEARCH/daily/2026-11-03-pipeline-manifest.md` | `45017dd70f3fc687536242a36bd2e40e2cc78fa0` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `45017dd70f3fc687536242a36bd2e40e2cc78fa0` |
+| `RESEARCH/daily/2026-11-04-pipeline-manifest.md` | `e76b7f77123571ac74fb699412d90ba3d1b33db0` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `e76b7f77123571ac74fb699412d90ba3d1b33db0` |
+| `RESEARCH/daily/2026-11-05-pipeline-manifest.md` | `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae` |
+| `RESEARCH/daily/2026-11-06-pipeline-manifest.md` | `349e8462543f592c44ad1e6769eb1af0ef6e4dcd` | APPEND_RELATION / NOV06_INPUT_REVIEWED | — |
+| `RESEARCH/daily/README.md` | `28f56cf9e3a30dbc262a6c9e8a21f6985c562c13` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `28f56cf9e3a30dbc262a6c9e8a21f6985c562c13` |
+| `RESEARCH/monthly/2026-10-monthly-manifest.md` | `4841478f15b46d5ab9b4a7653e9e9bfe5d59b8dc` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `4841478f15b46d5ab9b4a7653e9e9bfe5d59b8dc` |
+| `RESEARCH/weekly/2026-W44-weekly-manifest.md` | `cbefb65bd542de05f57c44f1ed5886ccf196bec3` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `cbefb65bd542de05f57c44f1ed5886ccf196bec3` |
 
 ## Specific source and counterevidence judgments
 - **01 Nov6 status chronology:** The 2026-11-06 manifest begins with original remote Git DNS bootstrap failure, followed by a separately identifiable GitHub Actions execution correction; both are real
@@ -68,3 +68,10 @@
 - New independently phrased source-specific judgments written in this record: 16; not an independent 100-line certification
 - A2 must await upstream A1 admissible review/merge; A2 may preserve PARTIAL state but not silently turn it into ACCEPTED
 - Only this new dated historical-audit custody report is written; native source, Jules-era history, registry, workflows, test code and host data are unchanged
+
+## Explicit contract dispositions
+- Per-artifact decision statuses follow the active A1 vocabulary: NO_FOLLOW_UP, APPEND_RELATION, BOUNDARY_UPDATE, UNKNOWN and NOT_DUE; identity-only prior labels above have been normalized
+- Disposition counts (one per path): NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW=16; UNKNOWN / UNMAPPED_NEEDS_VERIFICATION=3; NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE=3; APPEND_RELATION / NOV06_INPUT_REVIEWED=1
+- NO_FOLLOW_UP on an identical predecessor blob **inherits** the preceding 2026-11-06 A1 review rather than claiming an individual re-read; APPEND_RELATION is recorded in this new report only, not in the historical native owning file
+- A BOUNDARY_UPDATE on a rolling owner is a temporal interpretation change in this audit, not permission to rewrite the native monthly owner
+- UNKNOWN retains a true coverage/semantic quality gap; no false full-content review or strict >=100 acceptance is inferred
