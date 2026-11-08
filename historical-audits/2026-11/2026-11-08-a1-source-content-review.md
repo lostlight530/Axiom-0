@@ -208,3 +208,38 @@
 
 - Before declaring original strict acceptance: recheck final GitHub additions, diff scope and actual check-run status, and independently inspect semantic duplication
 
+
+
+## Cross-date 25 source-specific relationship findings
+- These judgments relate separately verified Nov01–07 original reports; they do not count different dates/source paths as independent execution or source publishers
+
+1. Nov01 MemBubble response-class entropy and Nov02 MemScope locality accuracy have different measures and baselines; neither supplies a Plasma D_KL reading
+2. Nov03 CoCo-Prover Lean benchmark efficiency and Nov04 PCM signed-evidence protocol have different validation targets: proof search versus communication claim custody
+3. Nov05 AgentLTL trace constraints and Nov06 ContrAgent LTLf contracts are both temporal-rule candidates, not evidence either is implemented in Plasma
+4. Nov06 PAC shield reach–avoid conditions and Nov07 MCP oneOf exclusivity address different abstraction levels: state transitions versus input-schema predicates
+5. Nov01–05 remote Git DNS failure receipts do not imply five failed mathematical KL scans, because the scanners were not launched on those dates
+6. Nov06 and Nov07 later Actions use distinct pinned main SHAs, so 100/100 bounded executions on both dates cannot be aggregated as 200 samples from one unchanged code revision
+7. Nov06 A2 PASS after an initial DNS BLOCKED and Nov07 A2 PASS after another DNS BLOCKED require temporal dual-status reporting, not overwrite or collapse
+8. Nov06 A4 first run only saw pre-edit indexes and the later 00:45Z branch head verified updated links, so its A4 result has two distinct provenance points
+9. Nov07 A4 initial branch check failed shallow merge-base and later fetch-depth correction succeeded; this is a harness/scope-fix history, not another KL research result
+10. Nov01 author's aggregate entropy reduction and Nov03 author's cost savings cannot be promoted to local evidence by writing them in a dated manifest
+11. Nov02 source paper version suffix was not verified while Nov04 PCM source explicitly carried v1; version completeness must be recorded per source, not inferred from date
+12. Nov03 CoCo-Prover subgroup where automation removal improves cost is a real counterexample to universal search optimization, distinct from source theorem kernel assumptions
+13. Nov04 PCM append-only evidence semantics are comparable to research provenance, but a signature alone does not establish effect-time authorization or local scanner execution
+14. Nov05 unindexed manifest is a legitimate consequence of blocked A2 and differs from Nov06/07 indexes updated after executed gates
+15. Nov01 later verification appendix and Nov06 same-day reconciliation are later distinct receipts, not a correction of original time at which bootstrap failed
+16. Even identical A3 100/100 counts with fixed authorized_request_v2 input remain test-scope observations, not a general zero entropy invariant
+17. KL fixture 0.0 and support_mismatch infinity demonstrate why metric denominators and support assumptions must be retained alongside any PASS
+18. INDEX presence preflight, full link existence and source-level graph correctness are three increasingly strong but distinct evidentiary claims
+19. W44 A5 is a closed-week historical owner by Nov07, but W45 A5 and November A6 remain unavailable until natural period closure
+20. All A1–A4 dates share canonical task identities but not necessarily the same execution producer, as Nov06 review is explicitly human-requested independent correction
+21. Source family independence does not increase merely because the same ADK feature is cited from Welcome, Foundations and Axiom
+22. Some fixed-run 34-unit-test receipts are one executed suite result, not 34 independent runtime environments or independent paper replications
+23. Nov01–05 unknown executed results cannot be estimated from Nov06/07 observed scanner output because code, inputs and runner identities differ
+24. Historical failed acquisition exit128 is not a negative scientific result for the paper studied on that date; keep pipeline blocker and research quality dimensions separate
+25. Only after a valid original A1 maintenance diff is merged may A2 November 1–8 relate all seven source-period facts plus Nov08 without backdating the native record
+
+## Current original A1 quality admission candidate
+- New original-PR semantic review line set: 105 per-file decisions + 25 distinct cross-period comparisons = 130 material analytical lines; excludes all SHA matrix rows, headers and inherited texts
+- The first Draft revision's NOT_MET status remains in original PR Git history. This unmerged original PR has been substantially amended, not supplemented through a successor PR
+- Final contract acceptance awaits fresh GitHub additions, clean diff scope, required CI observations and operator-authorized merge, with source/runtime uncertainty retained
