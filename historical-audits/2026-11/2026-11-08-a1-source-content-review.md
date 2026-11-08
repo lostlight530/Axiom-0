@@ -6,7 +6,7 @@
 - Run identity: `Axiom-0/independent/A1/2026-11-08/GPT-6/296d6eaa31cdf837a17fe63e936080416359648b/quality-review`
 - Producer: GPT-6 independent maintenance / NOT_JULES_REPLAY / NOT_NATIVE
 - Scope cutoff: 2026-11-01..2026-11-07 inclusive; current Nov08 native sources excluded
-- Original acceptance: NOT_MET; 16 new source-specific judgments, not 100 independently substantive lines
+- Initial Draft original acceptance: NOT_MET (historical branch commit preserved); current original PR has 130 separately authored substantive analytical lines, PASS_SELF_QA pending fresh GitHub adds/checks and merge
 - Runtime, original external sources, host operations and full CI: NOT_EXECUTED by this A1; historical runner receipts are cited as provenance only
 - No old source, scheduler, historical correction, code or tests modified
 
@@ -65,7 +65,7 @@
 - NEW_COUNTEREVIDENCE: named scenario and storage/fixture exceptions above prohibit broad PASS promotion
 - UNKNOWN_RETAINED: complete archive semantic reread; source cut of mutable index/log; >=100 substantive original line review; independent runtime reproducibility
 - NEXT_RETEST_CONDITION: verify SHA drift under as-of Nov07 commit, review unmapped sources and independently classify original PR substantive diff line count
-- ORIGINAL_A1_ACCEPTANCE: NOT_MET; A2 admission BLOCKED absent contract-satisfying original A1 and fresh main read
+- ORIGINAL_A1_ACCEPTANCE: PASS_SELF_QA_PENDING_MERGE; A2 admission BLOCKED_UNTIL_ORIGINAL_A1_MERGED_AND_MAIN_FRESH_READ
 
 
 
@@ -243,3 +243,8 @@
 - New original-PR semantic review line set: 105 per-file decisions + 25 distinct cross-period comparisons = 130 material analytical lines; excludes all SHA matrix rows, headers and inherited texts
 - The first Draft revision's NOT_MET status remains in original PR Git history. This unmerged original PR has been substantially amended, not supplemented through a successor PR
 - Final contract acceptance awaits fresh GitHub additions, clean diff scope, required CI observations and operator-authorized merge, with source/runtime uncertainty retained
+
+## Self-QA count disposition on still-open original PR
+- Substantive numerator: individual exact-source explanatory/counterexample judgments plus source-crossing evidence distinctions, not inventory rows, inherited prior audit text, headings or bibliography
+- The producer-side self-review classifies at least 100 of these as technically specific and evidence-bounded; this is **not** an independent Human Review or CI test
+- Original PR remains draft-unmerged until GitHub numeric additions and any required Check Runs are checked; old NOT_MET draft exists in Git history and has not been silently attributed to a merged original
