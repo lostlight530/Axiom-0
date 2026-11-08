@@ -64,3 +64,31 @@ jobs:
               print("INDEX_READ",name,len(data))
           PY
           test -z "$(git status --porcelain)"
+
+  plasma-document-postedit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - name: Exact proposed branch-head and canonical daily validator
+        run: |
+          set -euo pipefail
+          echo "POSTEDIT_HEAD=$(git rev-parse HEAD)"
+          python3 validate_research_record.py RESEARCH/daily/2026-11-08-pipeline-manifest.md
+          python3 scan_consistency.py
+      - name: Scope and current index link validation
+        run: |
+          set -euo pipefail
+          python3 scope_guard.py --base-ref 2ec14832badc82c1ae4ab00ada2d4970bb537ea7 --allow-file RESEARCH/daily/2026-11-08-pipeline-manifest.md --allow-file INDEX.md --allow-file PATCH_INDEX.md
+          python3 - <<'PY'
+          from pathlib import Path
+          path = 'RESEARCH/daily/2026-11-08-pipeline-manifest.md'
+          assert Path(path).is_file()
+          for index in ('INDEX.md', 'PATCH_INDEX.md'):
+              content = Path(index).read_text(encoding='utf-8')
+              assert path in content, index
+              print('BRANCH_HEAD_NAV_LINK_OK', index, path)
+          PY
+          test -z "$(git status --porcelain)"
