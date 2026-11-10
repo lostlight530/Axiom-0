@@ -1,0 +1,62 @@
+name: GPT Native Nov10 Plasma Evidence (temporary branch-only)
+on:
+  push:
+    branches:
+      - gpt-native/plasma-daily-20261110
+permissions:
+  contents: read
+jobs:
+  plasma-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Exact Nov10 baseline main checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: 73d2e999d18860c4ef342dac9366d94f6c845ff2
+          persist-credentials: false
+      - name: Pinned revision and Python
+        run: |
+          set -euo pipefail
+          git rev-parse HEAD
+          python3 --version
+          test -z "$(git status --porcelain)"
+      - name: A2 KL scanner formal gate
+        run: |
+          set -euo pipefail
+          python3 scan_kl_divergence.py
+      - name: A2 topology scanner formal gate
+        run: |
+          set -euo pipefail
+          python3 scan_consistency.py
+      - name: A3 fixed reference 100 independent subprocess executions
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib,json,pathlib,subprocess,sys,time
+          p=pathlib.Path("CODE/nexus_core.py")
+          print("CODE_SHA256",hashlib.sha256(p.read_bytes()).hexdigest())
+          start=time.monotonic(); failed=[]; sample=None
+          for i in range(100):
+              c=subprocess.run([sys.executable,str(p)],capture_output=True,text=True,timeout=25)
+              if sample is None: sample={"stdout":c.stdout[:900],"stderr":c.stderr[:400],"exit":c.returncode}
+              if c.returncode!=0: failed.append({"index":i,"exit":c.returncode,"stdout":c.stdout[-250:],"stderr":c.stderr[-250:]})
+          r={"executions":100,"pass":100-len(failed),"fail":len(failed),"failed_cases":failed,"seconds":round(time.monotonic()-start,3),"sample":sample}
+          print("NOV10_A3_EVIDENCE",json.dumps(r))
+          assert len(failed)==0
+          PY
+      - name: Existing native tests
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -p 'test*.py' -v
+      - name: A4 read only index preflight
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,pathlib
+          paths=["INDEX.md","PATCH_INDEX.md","ADR/INDEX.md","METHODOLOGY/INDEX.md"]
+          r={n:{"present":pathlib.Path(n).is_file(),"length":len(pathlib.Path(n).read_text(encoding="utf-8")) if pathlib.Path(n).is_file() else None} for n in paths}
+          print("NOV10_A4_EVIDENCE",json.dumps(r))
+          assert all(v["present"] for v in r.values())
+          PY
+          test -z "$(git status --porcelain)"
