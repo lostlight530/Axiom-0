@@ -1,6 +1,8 @@
 # Plasma Daily Pipeline — 2026-11-10 / explicit source evidence and formal execution blocker
 
 ## ZECP Metadata / exact execution identity
+- **Date (UTC):** 2026-11-10
+- Pipeline Status: BLOCKED
 - Logical Date: 2026-11-10 Asia/Shanghai
 - Canonical Tasks: `axiom/plasma/A1 → A2 → A3 → A4`
 - Producer: GPT-6 / GPT_NATIVE / HUMAN_AUTHORIZED_SUBSTITUTE / NOT_JULES_REPLAY
@@ -14,7 +16,7 @@
 - Write Scope: `RESEARCH/daily/2026-11-10-pipeline-manifest.md` only
 - W45 A5 exists in merged main. W46 open. November A6 final NOT_DUE
 
-## A1 — source archaeology, theory and identity
+## A1 Digital Archaeology — source archaeology, theory and identity
 - Canonical Source: arXiv:2610.28679, exact HTML version `v2` dated 2026-10-30; original initial submission 2026-10-19. Title: *VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents*.
 - Authors: Jianing Yin, Ziyi Chen, Hao Wang, Yiyou Sun, Zijian Jin, Dawn Song, Daoan Zhang.
 - Source URLs: https://arxiv.org/abs/2610.28679 and https://arxiv.org/html/2610.28679.
@@ -26,7 +28,8 @@
 - Counterexample from original work: a generated tool allowlist omitted a permitted read-only query, rejecting valid completions; self-tests did not cover the omitted positive path. The author also reports source verifier exclusions, including cases in which skipped tests could be counted as passes. This is **reported paper evidence**, not a locally executed reproduction.
 - Axiom applicability: `CANDIDATE_VERIFIER_ORACLE_CALIBRATION`, requiring both valid alternate positive executions and negative/counterexample traces. No claim that current Plasma scanner has the same defect.
 
-## A2 — KL evidence and structural scan, independent formal gates
+## A2 Algebraic Audit — KL evidence and structural scan, independent formal gates
+- A2 Evidence State: NOT_COMPUTED
 **Execution attempt / acquisition receipt**
 - Command actually attempted here: `git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD`
 - Environment: bounded local container shell; GitHub connector remained available for read-only remote state
@@ -50,14 +53,14 @@
 
 A2 cannot be promoted to PASS from the 2026-11-09 workflow at a different revision or from current path presence. The previous day's A2 reports are historical execution evidence for their pinned checkout, not this run.
 
-## A3 — bounded executable reference
+## A3 Sandbox Stress Test — bounded executable reference
 - Formal prerequisite: both same-run A2 gates completed with admissible result on the pinned source checkout.
 - Prerequisite observed: **NOT_MET**. `A2_NOT_EXECUTED`.
 - `CODE/nexus_core.py` 100-run reference and unit suite: `NOT_EXECUTED`. Executions/pass/fail: `NOT_COMPUTED`, not zero and not `100/100`.
 - stdout/stderr/exit, timing and output digests: `NOT_AVAILABLE`.
 - Status: `BLOCKED_DEPENDENCY`. No unrelated local experiment is being passed off as the formal pipeline.
 
-## A4 — topology and index alignment
+## A4 Topology and Index Alignment — topology and index alignment
 - Required read-only index/topology checks depend on an admissible prior pipeline and exactly pinned checkout.
 - `INDEX.md`, `PATCH_INDEX.md` and related index preflight execution: `NOT_EXECUTED`.
 - No current-final-head index equivalence, new pointers, artifact alignment or clean-worktree runtime claim established.
