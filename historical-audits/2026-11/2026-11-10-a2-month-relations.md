@@ -141,3 +141,42 @@
 - Open questions: full A3 outputs, universal verifier acceptance, implementation equivalence, and future revisions remain UNKNOWN
 - Next retest: current exact code SHA, native 2-scanner receipts, positive alternative and invalid-source oracle cases before claim promotion
 - Next legal trigger: Nov11 native inputs merged, A1 Nov01–10 source review merged, and fresh A2 Nov01–11
+
+## Direct Nov10 formal-test / graph-store limitations — newly re-read source bodies
+- This is **source-file reinspection**, not a replay of the original formal runner; prior successes and initial failures retain independent run IDs
+### RESEARCH/daily/2026-11-10-pipeline-manifest.md
+- Source SHA `31cb3a33674e713f1e8d96da3276c72f08893466`, lines 100; actual file text re-read on A1-merged main
+- Authored sections: # Plasma Daily Pipeline — 2026-11-10 / separately proven GitHub-hosted formal gates / ## ZECP Metadata / exact execution identity / ## A1 Digital Archaeology — source archaeology, theory and identity / ## A2 Algebraic Audit — KL evidence and structural scan, i
+- Native status line 1: - Pipeline Status: BOUNDED_PASS / SEPARATE_GITHUB_RUN / ORIGINAL_LOCAL_BOOTSTRAP_BLOCKED_RETAINED; this A2 does not assign new runner success
+- Native status line 2: - Real GitHub Actions run: https://github.com/lostlight530/Axiom-0/actions/runs/42784001721 / job 'plasma-native', 2026-11-10T08:36:46Z–08:37:03Z, Python 3.14.4, 'ubuntu-latest'; workflow carrier '795c31393f099206d14cff640bb1f6953190e7; provenance remains author-time
+- Native status line 3: - Original local checkout: UNAVAILABLE (DNS exit 128). Separate GitHub-hosted runner: EXECUTED_SUCCESS on exact pinned main source. No conflation of the two environments; only pinned fixtures count if explicitly scoped
+- Evidence separation: formal KL identity fixture, support mismatch, topology scanner, 100 reference runs and tests are independent checked result types; author time vs fresh runner must remain distinct
+- Counterexample retained: an earlier BLOCKED step cannot be retroactively changed by a separate successful CI run; a tested default 100-run is not universality
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
+### RESEARCH/daily/2026-11-09-pipeline-manifest.md
+- Source SHA `1bef51802d9d498676f7fc977560ccbbe49d024a`, lines 64; actual file text re-read on A1-merged main
+- Authored sections: # Plasma Daily Pipeline — 2026-11-09 / pinned native executable evidence / ## ZECP Metadata / complete identity / ## A1 — First-party source archaeology / ## A2 — Independent algebra and structure, actually executed / ## A3 — Real bounded reference execution, 
+- Native status line 1: - Run ID: 'Axiom-0/plasma/A1-A4/2026-11-09/GPT_NATIVE/288e842ea415978cc699001ec9806893f0dbb507/github-actions-42613101744'; this A2 does not assign new runner success
+- Native status line 2: - Actual GitHub runner: [Actions #42613101744](https://github.com/lostlight530/Axiom-0/actions/runs/42613101744), job 'plasma-native', 'ubuntu-latest', Python 3.14.4; provenance remains author-time
+- Native status line 3: - Formal status: 'A2_BOTH_SCANNERS_PASS / A3_FIXED_REFERENCE_100_OF_100_PASS / UNIT_SUITE_34_PASS / A4_READ_ONLY_INDEX_PREFLIGHT_PASS'; only pinned fixtures count if explicitly scoped
+- Evidence separation: formal KL identity fixture, support mismatch, topology scanner, 100 reference runs and tests are independent checked result types; author time vs fresh runner must remain distinct
+- Counterexample retained: an earlier BLOCKED step cannot be retroactively changed by a separate successful CI run; a tested default 100-run is not universality
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
+### RESEARCH/weekly/2026-W45-weekly-manifest.md
+- Source SHA `86cd46f4b1f1beb3d669af46863a59c0b5195aad`, lines 76; actual file text re-read on A1-merged main
+- Authored sections: # 2026-W45 Plasma Weekly A5 — executable-provenance and specification audit / ## ZECP Metadata / ## W45 exact Daily input and original pipeline ledger / ## Independently inspected GitHub-hosted execution metadata / ## Specification, assumptions and counterevid
+- Native status line 1: - Run Identity: 'Axiom-0/plasma/A5/2026-W45/GPT_NATIVE/288e842ea415978cc699001ec9806893f0dbb507/weekly-manifest-reconciliation-01'; this A2 does not assign new runner success
+- Native status line 2: - Task Status: BOUNDED_DOCUMENTARY_AUDIT_COMPLETED / WEEKLY_SCANNERS_NOT_EXECUTED; provenance remains author-time
+- Native status line 3: | 2026-11-02 | 'RESEARCH/daily/2026-11-02-pipeline-manifest.md' | 'da32856be7b71664dd9e84425289658365e980d7' | A1 original-paper research; A2 formal KL and structural scans NOT_EXECUTED; A3/A4 BLOCKED |; only pinned fixtures count if explicitly scoped
+- Evidence separation: formal KL identity fixture, support mismatch, topology scanner, 100 reference runs and tests are independent checked result types; author time vs fresh runner must remain distinct
+- Counterexample retained: an earlier BLOCKED step cannot be retroactively changed by a separate successful CI run; a tested default 100-run is not universality
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
+### historical-audits/2026-11/2026-11-10-a1-source-content-review.md
+- Source SHA `458d68b823aa88a4b8840e11b91deeb8f47c7a25`, lines 178; actual file text re-read on A1-merged main
+- Authored sections: # Nov10 independent A1 — Axiom Plasma Nov01–09 exact-file review / ## Scope and identity / ## Explicit per-file original content judgments / ### 01 RESEARCH/daily/2026-11-01-pipeline-manifest.md / ### 02 RESEARCH/daily/2026-11-02-pipeline-manifest.md / ### 03 
+- Native status line 1: - Current A1 reads 12 exact source bodies; historic daily stages are not rerun; no pipeline PASS is created by maintenance; this A2 does not assign new runner success
+- Native status line 2: - Oct31/Nov01 original A2 strict 0/10 historical result remains immutable despite later successors; provenance remains author-time
+- Native status line 3: - Runtime proof requires fixed SHA, command/env/stdout/stderr/exit; markdown CLAIM is not equal to fresh verification; only pinned fixtures count if explicitly scoped
+- Evidence separation: formal KL identity fixture, support mismatch, topology scanner, 100 reference runs and tests are independent checked result types; author time vs fresh runner must remain distinct
+- Counterexample retained: an earlier BLOCKED step cannot be retroactively changed by a separate successful CI run; a tested default 100-run is not universality
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
