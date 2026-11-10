@@ -16,93 +16,54 @@
 ## Ten logical dates — fresh tree proof and bounded execution interpretations
 ### 2026-11-01 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-01-pipeline-manifest.md` @ Git blob `07014b60274a8a0df712defef7bbacdb40cd61bb`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-01 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-02 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-02-pipeline-manifest.md` @ Git blob `da32856be7b71664dd9e84425289658365e980d7`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-02 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-03 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-03-pipeline-manifest.md` @ Git blob `45017dd70f3fc687536242a36bd2e40e2cc78fa0`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-03 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-04 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-04-pipeline-manifest.md` @ Git blob `e76b7f77123571ac74fb699412d90ba3d1b33db0`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-04 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-05 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-05-pipeline-manifest.md` @ Git blob `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-05 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-06 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-06-pipeline-manifest.md` @ Git blob `349e8462543f592c44ad1e6769eb1af0ef6e4dcd`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-06 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-07 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-07-pipeline-manifest.md` @ Git blob `14611f9959e4c5a9c54db21ed831a319720f0d8c`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-07 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-08 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-08-pipeline-manifest.md` @ Git blob `f50894a5fc7c64ae6e8b15050afd68910779e129`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-08 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-09 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-09-pipeline-manifest.md` @ Git blob `1bef51802d9d498676f7fc977560ccbbe49d024a`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-09 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 ### 2026-11-10 — 1/1 canonical artifact paths retained
 - SOURCE_OBJECT Plasma A1–A4: `RESEARCH/daily/2026-11-10-pipeline-manifest.md` @ Git blob `31cb3a33674e713f1e8d96da3276c72f08893466`; current-main presence verified, not substituted for task-time run receipt
-- SOURCE_CHAIN_DECISION: Manifest may contain A1 research with downstream blocked/hosted execution; actual stage values stay author-time scoped
-- DRIFT_CHECK: same 2026-11-10 logical date does not prove identical producer, SDK execution, independent publisher, or merged-at-task-time input
-- RETEST_BOUNDARY: preserve earlier NOT_EXECUTED/BLOCKED/PARTIAL/UNKNOWN even when a later bounded runner or successor supplies additional evidence
 
 ## Original A1 / A2 day-scoped custody — never concatenate PR acceptance
 - 2026-11-01: MonthStart has empty N−1 A1 cutoff; do not fabricate original A1. Month identity initializes OPEN independently of any Oct31 reconciliation
 ### 2026-11-02 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` @ `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-02-a2-month-relations.md` @ `73cc710795b16d6d3bd965fc8ff1329d4548b448`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-03 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` @ `7a7b644b08cd4f2d66526e20b04aa40ccf678002`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-03-a2-month-relations.md` @ `c68c300456fec9beab1956b210c06780241b1882`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-04 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` @ `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-04-a2-month-relations.md` @ `0270c832316a4a7e036bf58d265ac5a3eed343c7`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-05 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` @ `f0d3e186c186e9901e0329094558de0e40f2d0dc`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-05-a2-month-relations.md` @ `ca06312c735734e03322f2af4217332db9abebaf`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-06 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` @ `613708c98ab521a2148143feadcf14f3272b2bad`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-06-a2-month-relations.md` @ `231899e38d8901e608c427116e93bac051f2a361`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-07 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-07-a1-source-content-review.md` @ `fc47b0f46bb40cda8a2cb5d65811433889fdfa40`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-07-a2-month-relations.md` @ `8a19091150faf5faf179e307b76e1bf00255fe2b`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-08 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-08-a1-source-content-review.md` @ `4fd7855d0d9697256cbbf70df4ab2689d86b2e19`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-08-a2-month-relations.md` @ `28fc26717cd9bd19c6293a871aa292afee9977a8`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-09 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-09-a1-source-content-review.md` @ `6205bce1c7de673788959632b77b6a7f47a57928`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-09-a2-month-relations.md` @ `8086f8a9febf4851fb265ea1dc8c9455a21e92ff`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 ### 2026-11-10 maintenance original identity, source retention only
 - A1_CURRENT_MAIN: `historical-audits/2026-11/2026-11-10-a1-source-content-review.md` @ `458d68b823aa88a4b8840e11b91deeb8f47c7a25`; A1 logical coverage Nov01→previous day
 - A2_CURRENT_MAIN: `historical-audits/2026-11/2026-11-10-a2-month-relations.md` @ `e01856067b6911c032f1007f4c9df4f3475d2d02`; A2 logical coverage Nov01→this day
-- CONTRACT_SEPARATION: path or merged PR does not certify >=100 substantive original lines, original status or full native runtime; successor and correction never upgrade original acceptance
 - EXACT_NOV10_ORIGINAL: A1 PR #492 177 additions and A2 PR #493 182 additions, both merged; post-A1 fresh main dependency and A2 blob retention directly checked before D10
 
 ## D10 six-axis drift adjudication
@@ -149,6 +110,38 @@
 - F5 OBSERVED_OR_SOURCE_BOUNDED: VerifierBench publisher case/task denominators are not local repo test or research batch denominators
 - F5 NON-CLAIM: this D10 did not rerun that native task, issuer, active host, or independent multi-agent external verification
 
+## D10 independent source-body review — ten Plasma daily manifests
+- Manifest-level status read at pinned main; formal KL and topology values are only certified from an exact linked runner receipt, never from text presence.
+- 2026-11-01 pipeline manifest blob `07014b60274a8a0df712defef7bbacdb40cd61bb`, authored heading # 2026-11-01 Daily Plasma Pipeline Manifest — A1 source verified / A2 native execution blocked
+- 2026-11-01 AUTHORED_SCOPE_EXCERPT: - Pipeline Status: BLOCKED_AT_A2_EXECUTION_GATE; audit has not executed scanner
+- 2026-11-01 DEPENDENCY_COUNTEREVIDENCE: Nov01 original A2 blocked, later source-only KL receipt cannot be grafted into formal chain
+- 2026-11-02 pipeline manifest blob `da32856be7b71664dd9e84425289658365e980d7`, authored heading # 2026-11-02 Plasma Daily — A1 source / A2 BLOCKED
+- 2026-11-02 AUTHORED_SCOPE_EXCERPT: - Formal pipeline: BLOCKED_AT_A2; audit has not executed scanner
+- 2026-11-02 DEPENDENCY_COUNTEREVIDENCE: Nov02 formal A2 missing remains blocked, not KL=0
+- 2026-11-03 pipeline manifest blob `45017dd70f3fc687536242a36bd2e40e2cc78fa0`, authored heading # Plasma Daily Pipeline — 2026-11-03 / A1 source bounded; A2 BLOCKED
+- 2026-11-03 AUTHORED_SCOPE_EXCERPT: - Formal pipeline: BLOCKED_AT_A2 / A3 and A4 NOT_EXECUTED; audit has not executed scanner
+- 2026-11-03 DEPENDENCY_COUNTEREVIDENCE: Nov03 source-level A1 finding alone does not execute A3 default program
+- 2026-11-04 pipeline manifest blob `e76b7f77123571ac74fb699412d90ba3d1b33db0`, authored heading # Plasma Daily Pipeline — 2026-11-04 / A1 verified source; formal A2 BLOCKED
+- 2026-11-04 AUTHORED_SCOPE_EXCERPT: # Plasma Daily Pipeline — 2026-11-04 / A1 verified source; formal A2 BLOCKED; audit has not executed scanner
+- 2026-11-04 DEPENDENCY_COUNTEREVIDENCE: Nov04 late original source research must not be relabeled as on-time Jules execution
+- 2026-11-05 pipeline manifest blob `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae`, authored heading # Plasma Daily Pipeline — 2026-11-05 / A1 source study, A2 native bootstrap blocked
+- 2026-11-05 AUTHORED_SCOPE_EXCERPT: - Prior Daily: `RESEARCH/daily/2026-11-04-pipeline-manifest.md` inspected; prior formal A2 BLOCKED was not promoted into a new PASS; audit has not executed scanner
+- 2026-11-05 DEPENDENCY_COUNTEREVIDENCE: Nov05 failed checkout bootstrap differs from scanner failure
+- 2026-11-06 pipeline manifest blob `349e8462543f592c44ad1e6769eb1af0ef6e4dcd`, authored heading # Plasma Daily Pipeline — 2026-11-06 / source-level A1, native A2–A4 BLOCKED
+- 2026-11-06 AUTHORED_SCOPE_EXCERPT: - A2 algebraic audit: `NOT_EXECUTED` / `D_KL NOT_COMPUTED` / drift `NOT_ASSESSED`; audit has not executed scanner
+- 2026-11-06 DEPENDENCY_COUNTEREVIDENCE: Nov06 later hosted pinned scanner receipt must identify tested commit, not overwrite original failed checkout
+- 2026-11-07 pipeline manifest blob `14611f9959e4c5a9c54db21ed831a319720f0d8c`, authored heading # Plasma Daily Pipeline — 2026-11-07 / executable evidence bounded to pinned revision
+- 2026-11-07 AUTHORED_SCOPE_EXCERPT: - Pipeline Status: PASS_WITHIN_EXECUTED_FIXTURE_AND_SCANNER_SCOPE / NOT_UNIVERSAL_PROOF; audit has not executed scanner
+- 2026-11-07 DEPENDENCY_COUNTEREVIDENCE: Nov07 fixed 100/100 reference and two KL fixtures are bounded, not universal claims
+- 2026-11-08 pipeline manifest blob `f50894a5fc7c64ae6e8b15050afd68910779e129`, authored heading # Plasma Daily Pipeline — 2026-11-08 / executable evidence on pinned main
+- 2026-11-08 AUTHORED_SCOPE_EXCERPT: - Pipeline Status: `PASS_WITHIN_PINNED_KL_STRUCTURAL_FIXED_REFERENCE_AND_UNIT_TEST_SCOPE`, not a scientific/host-wide guarantee; audit has not executed scanner
+- 2026-11-08 DEPENDENCY_COUNTEREVIDENCE: Nov08 pinned native source and index handoff source, formal evidence scope must remain its specific runner revision
+- 2026-11-09 pipeline manifest blob `1bef51802d9d498676f7fc977560ccbbe49d024a`, authored heading # Plasma Daily Pipeline — 2026-11-09 / pinned native executable evidence
+- 2026-11-09 AUTHORED_SCOPE_EXCERPT: - Original upstream Google ADK tests: NOT_EXECUTED in this Plasma run. This exact Google commit also appears in Horizon H1 as the same source lineage; cross-repository reuse adds no independent corroboration; audit has not executed scanner
+- 2026-11-09 DEPENDENCY_COUNTEREVIDENCE: Nov09 exact main native runner is separate from authored VerifierBench study and paper task denominator
+- 2026-11-10 pipeline manifest blob `31cb3a33674e713f1e8d96da3276c72f08893466`, authored heading # Plasma Daily Pipeline — 2026-11-10 / separately proven GitHub-hosted formal gates
+- 2026-11-10 AUTHORED_SCOPE_EXCERPT: - Pipeline Status: BOUNDED_PASS / SEPARATE_GITHUB_RUN / ORIGINAL_LOCAL_BOOTSTRAP_BLOCKED_RETAINED; audit has not executed scanner
+- 2026-11-10 DEPENDENCY_COUNTEREVIDENCE: Nov10 original local DNS exit128 remains; hosted run #42784001721 A2 gates, 100 A3, 34 tests, A4 read-only scoped success
 ## Final audit contract and research release boundary
 - TASKS_EXPECTED: 10 logical native day units plus applicable distinct subordinate task identities; not file count or Actions workflow count
 - TASKS_OBSERVED: 10/10 logical days have their complete expected current-main native artifact path sets
