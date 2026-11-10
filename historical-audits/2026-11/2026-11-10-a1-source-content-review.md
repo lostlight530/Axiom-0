@@ -127,3 +127,51 @@
 - Reviewer status: Nov01–09 nine dated Daily, one W45 owner and two prior maintenance records directly read
 - A1 strict acceptance will be checked from this original PR GitHub additions plus substantive contents, not from this statement
 - A2 must start from merged main with this A1's blob and independent current-day Plasma evidence
+
+## Dated formal/negative evidence claims rechecked against source bodies
+- The following quotations are author-claimed record fields and do not constitute a second execution; they are included to distinguish nine different source-time evidence shapes
+### Dated claim verification — 2026-11-01
+- Exact source `RESEARCH/daily/2026-11-01-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-01 authored evidence field 1: - Pipeline Status: BLOCKED_AT_A2_EXECUTION_GATE
+- 2026-11-01 authored evidence field 2: - NEW_EVIDENCE: primary paper distinguishes Shannon class-entropy reduction under memory conditioning from an arbitrary KL divergence, and reports different numerical effects under Full history versus No memory reference populations.
+- 2026-11-01 authored evidence field 3: - UNKNOWN_RETAINED: actual scanner outputs, topology invariants, complete execution/rollback state and any local implementation transfer.
+- 2026-11-01 authored evidence field 4: Process stdout machine line: KL_EVIDENCE={"contract": "kl_divergence", "failures": [], "observations": [{"case": "identity", "d_kl": 0.0, "expected": 0.0, "within_tolerance": true}, {"case": "renormalized_identity", "d_kl": 0.0, "expected": 0.0, "within_tolera
+### Dated claim verification — 2026-11-02
+- Exact source `RESEARCH/daily/2026-11-02-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-02 authored evidence field 1: - NEW_EVIDENCE: primary paper gives an explicit trace+memory+code diagnostic interface, quantitative ablation and permissible no_patch outcome
+- 2026-11-02 authored evidence field 2: - UNKNOWN_RETAINED: exact paper version, independent replication, P/Q mappings, native scan, bounded run, current Plasma applicability
+- 2026-11-02 status coverage gap: only 2 selected canonical fields located; missing fields remain UNKNOWN, never assumed PASS
+### Dated claim verification — 2026-11-03
+- Exact source `RESEARCH/daily/2026-11-03-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-03 authored evidence field 1: - NEW_EVIDENCE: version-identified original CoCo-Prover source details graph-based proof planning, bounded paid agent computations and explicit Lean-kernel proof conditions, plus a newly observed Git transport bootstrap failure.
+- 2026-11-03 authored evidence field 2: - UNKNOWN_RETAINED: local dataset/revision environment, KL value, topology JSON receipt, bounded-test results, reproducibility, Plasma applicability and independent source replication.
+- 2026-11-03 status coverage gap: only 2 selected canonical fields located; missing fields remain UNKNOWN, never assumed PASS
+### Dated claim verification — 2026-11-04
+- Exact source `RESEARCH/daily/2026-11-04-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-04 authored evidence field 1: - NEW_EVIDENCE: primary versioned PCM preprint with an explicit stale-evidence counterexample and source-scoped claim/authority/receipt semantics; independently recorded failure to acquire a full worktree from Git transport.
+- 2026-11-04 authored evidence field 2: - UNKNOWN_RETAINED: local KL inputs and metrics, actual topology, scanner correctness, bounded runtime, PCM independent replication and relevance to the current Plasma implementation.
+- 2026-11-04 status coverage gap: only 2 selected canonical fields located; missing fields remain UNKNOWN, never assumed PASS
+### Dated claim verification — 2026-11-05
+- Exact source `RESEARCH/daily/2026-11-05-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-05 authored evidence field 1: - Pipeline Status: FAILED_BOOTSTRAP / NATIVE_WORKTREE_UNAVAILABLE
+- 2026-11-05 status coverage gap: only 1 selected canonical fields located; missing fields remain UNKNOWN, never assumed PASS
+### Dated claim verification — 2026-11-06
+- Exact source `RESEARCH/daily/2026-11-06-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-06 status coverage gap: only 0 selected canonical fields located; missing fields remain UNKNOWN, never assumed PASS
+### Dated claim verification — 2026-11-07
+- Exact source `RESEARCH/daily/2026-11-07-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-07 authored evidence field 1: - Pipeline Status: PASS_WITHIN_EXECUTED_FIXTURE_AND_SCANNER_SCOPE / NOT_UNIVERSAL_PROOF
+- 2026-11-07 authored evidence field 2: - A2 Evidence State: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- 2026-11-07 authored evidence field 3: - NEW_EVIDENCE: pinned 2026-11-07 GitHub runner executed and logged the two formal A2 scanner contracts, 100 bounded A3 process calls and 34 native unit tests; source-level MCP composition schema change studied separately
+- 2026-11-07 authored evidence field 4: - UNKNOWN_RETAINED: independent reproduction, semantic correctness of all schema compositions, generalized model/controller behavior, additional A4 post-edit validation until executed, and production use
+### Dated claim verification — 2026-11-08
+- Exact source `RESEARCH/daily/2026-11-08-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-08 authored evidence field 1: - Pipeline Status: 'PASS_WITHIN_PINNED_KL_STRUCTURAL_FIXED_REFERENCE_AND_UNIT_TEST_SCOPE', not a scientific/host-wide guarantee
+- 2026-11-08 authored evidence field 2: - A2 Evidence State: CONSISTENCY_CHECK_PASS_WITHIN_SCOPE
+- 2026-11-08 authored evidence field 3: - NEW_EVIDENCE: original Nov 8 Google ADK A2A source delta plus GitHub-hosted actual A2 KL and structural checks, 100 fixed-reference processes, 34 unit tests on pinned '2ec14832badc82c1ae4ab00ada2d4970bb537ea7'
+- 2026-11-08 authored evidence field 4: - UNKNOWN_RETAINED: original ADK authored-test execution, released version, actual peer contract, complete execution trace retention, untested invariants and post-edit link status before next check
+### Dated claim verification — 2026-11-09
+- Exact source `RESEARCH/daily/2026-11-09-pipeline-manifest.md`: text-level formal evidence or status claims observed below; no new scanner invoked by this reviewer
+- 2026-11-09 authored evidence field 1: - NEW_EVIDENCE: real scoped A2 KL/structural JSON, 100 bounded subprocess executions, 34 unit tests, read-only A4 index preflight on exact pinned main and first-party Nov 09 external source patch
+- 2026-11-09 authored evidence field 2: - UNKNOWN_RETAINED: complete external ADK SDK runtime validation, exact production protocol behavior, untested P/Q supports, individual trace output beyond one sample, end-to-end authorization guarantee, future main revisions
+- 2026-11-09 authored evidence field 3: - Direct log JSON 'A3_EVIDENCE': 'executions=100,pass=100,fail=0,failed_cases=[],seconds=7.126' on fixed default 'authorized_request_v2' reference execution
