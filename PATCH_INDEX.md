@@ -218,3 +218,17 @@ This patch index remains a navigation surface only.
 - [2026-11-06 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-06-pipeline-manifest.md) - Recorded A2 numeric and structural gate pass, A3 bounded 100/100 native executions, A4 navigation preflight; historical acquisition failure preserved, no global invariance claim.
 - [2026-11-07 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-07-pipeline-manifest.md) - Verified pinned main A2 KL+structure, A3 100/100 fixed-input executions and 34 tests; A4 link verification scoped to the branch receipt. No universal invariant claim.
 - [2026-11-08 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-08-pipeline-manifest.md) - Verified pinned main A2 KL+structure, A3 100/100 fixed-fixture calls and 34 tests; A4 branch pointer verification subject to the separate branch-head receipt. No universal correctness claim.
+
+## 2026-11 native Daily navigation — source-receipt truth, not blanket PASS
+The canonical `RESEARCH/daily/` artifacts exist for Nov01–Nov11; entries below repair only missing November navigation links in this current index. Nov06–08 are already linked in the preceding retained index section; numerical/scientific results must be read from each Daily manifest.
+
+- [2026-11-01 Plasma Daily](RESEARCH/daily/2026-11-01-pipeline-manifest.md) — retained dated Native source; follow file-scoped execution status
+- [2026-11-02 Plasma Daily](RESEARCH/daily/2026-11-02-pipeline-manifest.md) — retained dated Native source; follow file-scoped execution status
+- [2026-11-03 Plasma Daily](RESEARCH/daily/2026-11-03-pipeline-manifest.md) — retained dated Native source; follow file-scoped execution status
+- [2026-11-04 Plasma Daily](RESEARCH/daily/2026-11-04-pipeline-manifest.md) — retained dated Native source; follow file-scoped execution status
+- [2026-11-05 Plasma Daily](RESEARCH/daily/2026-11-05-pipeline-manifest.md) — retained dated Native source; follow file-scoped execution status
+- [2026-11-09 Plasma Daily](RESEARCH/daily/2026-11-09-pipeline-manifest.md) — verified Nov09 pinned-source fixed-reference and scanner receipt (bounded)
+- [2026-11-10 Plasma Daily](RESEARCH/daily/2026-11-10-pipeline-manifest.md) — verified Nov10 separate GitHub-hosted pinned-source formal gates (bounded)
+- [2026-11-11 Plasma Daily](RESEARCH/daily/2026-11-11-pipeline-manifest.md) — new authorized same-day native supplement; [actual A2→A4 and 34-test run](https://github.com/lostlight530/Axiom-0/actions/runs/43021692273), fixed input only
+- Original 2026-11-11 independent A2 #496 observed this Native path absent at its earlier source cut; later Native delivery does not rewrite that observation
+- November A6 remains NOT_DUE; W45 CLOSED, W46 OPEN. Index presence does not mean universal native correctness or independent Human Review
