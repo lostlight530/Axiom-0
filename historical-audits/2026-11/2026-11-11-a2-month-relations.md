@@ -158,3 +158,21 @@
 - Next legal Nov12 A1 requires Nov01–11 artifacts be assigned correct native states (including any verified missing or blocked evidence), followed by merged A1 then refreshed A2
 - Forward correction is allowed if later independent runner receipts arrive; past UNKNOWN and unexecuted states remain historical truth
 - Final status: A2_AUTHOR_TIME_RELATION_DELIVERED_WITH_NATIVE_DAY_N_GAP / NO_NEW_NATIVE_RUN / MONTH_OPEN
+
+## 2026-11-11 forward native recovery reconciliation — appended after original A2 merge
+
+- **Reconciliation identity:** `Axiom-0/independent-A2/2026-11-11/POST_ORIGINAL_NATIVE_RECOVERY`; append-only current interpretation, not a change to original A2's earlier source-time evidence.
+- **Historical original A2 fact retained:** original A2 PR [#496](https://github.com/lostlight530/Axiom-0/pull/496), using its earlier pinned source main, legitimately found no November 11 canonical native manifest and delivered an A2 relation with Day-N native evidence `MISSING_AS_OF_ORIGINAL_A2_CUT`.
+- **New subsequent source fact:** authorized GPT Native supplement [Native PR #498](https://github.com/lostlight530/Axiom-0/pull/498) merged actual canonical [November 11 Plasma manifest](../../RESEARCH/daily/2026-11-11-pipeline-manifest.md), current file Git blob `8132ef33870c9ed824bbbb2809dae69cacdcb4de`.
+- **New evidence identity:** [GitHub Actions run #43021692273](https://github.com/lostlight530/Axiom-0/actions/runs/43021692273), job `plasma-native`, actually executed on exact baseline `575f7bf4e4dfa66f44bb3c8723d9d933c6b58b7e`, with `completed/success`.
+- **New current main after Native PR:** `c3e73e83b473a0e1a279d5b4752a3cff30a41998`; canonical report and both original index pointers were freshly observed on that main.
+- **Native A1 source-time:** Google ADK first-party commit `e5ffe9c9daed15b952e83d5d778fe89c251f1d48`, 2026-11-11 08:18:48Z; a source diff, not an executed upstream SDK test and not a second independent Google publisher.
+- **Native A2 actual results:** `KL_EVIDENCE` success only for identity and renormalized identity distributions with `D_KL=0.0 nats`, support mismatch infinity; structural `axiom_document_topology` success, 16 ADR and 15 methodology entries.
+- **Native A3 actual results:** 100 actual fixed-reference `CODE/nexus_core.py` subprocess executions, 100 passed, zero failed, 34/34 native unit tests; 100 different timestamped output digests do not represent 100 independent input families.
+- **Native A4 actual results:** existing INDEX/PATCH_INDEX and ADR/METHODOLOGY indexes read-only preflight passed on the pinned checkout; added Nov11 report and current-index links were inspected separately after merge, not claimed to have existed at the older A4 checkout.
+- **Source relational update:** Nov01–10 preceding Native records retain their own correct source/runner state; Nov11 now has a new bounded executed Native source record, rather than the earlier `NO_CURRENT_NATIVE_SOURCE` at original A2 author-time.
+- **History and scope:** the original #496 A2 additions, original outcome, PR head, earlier missing observation and status as-of its cut are not rewritten or retrospectively promoted; successor evidence is a distinct later runner and merge.
+- **Current qualification:** `DAY_N_NATIVE_PRESENT_AND_BOUNDED_EXECUTED`; original schedule attempt `UNKNOWN`, arbitrary KL values, ADK upstream regression tests, real production A2A host effects and general Plasma correctness unverified.
+- **Calendar boundary:** W45 closed, W46 and November OPEN; November A6 natural final remains `NOT_DUE`. No false complete-month or independent Human Review certification.
+- **Next valid dependency:** Nov12 independent A1 may include this actually merged Nov11 Native manifest when establishing Nov01–11 custody, and subsequent A2 must follow its own new merged-A1 and fresh-main gates.
+- **This forward reconciliation itself:** source and Actions receipts reread; neither independent A2 re-execution nor new external host test claimed.
