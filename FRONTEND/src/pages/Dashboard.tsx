@@ -230,14 +230,22 @@ const formatNumber = (value: number | null | undefined): string => {
   return new Intl.NumberFormat("en-US").format(value);
 };
 
-const CustomChartTooltip: React.FC<any> = ({
+interface ChartTooltipEntry {
+  color?: string;
+  name?: string;
+  value?: number | null;
+}
+
+interface ChartTooltipProps {
+  active?: boolean;
+  payload?: ChartTooltipEntry[];
+  label?: string;
+}
+
+const CustomChartTooltip: React.FC<ChartTooltipProps> = ({
   active,
   payload,
   label,
-}: {
-  active?: boolean;
-  payload?: any[];
-  label?: string;
 }) => {
   if (!active || !payload?.length) return null;
 
