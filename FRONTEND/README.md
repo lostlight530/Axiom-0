@@ -40,12 +40,11 @@ From `FRONTEND`, using existing locked dependencies:
 
 ```text
 npm ci --ignore-scripts
-node --test tests/final-snapshot.test.mjs
 npm run build -- --outDir <dedicated-empty-preview-directory-outside-the-repository>
 npm run preview -- --host 127.0.0.1 --outDir <same-preview-directory>
 ```
 
-Regression tests render the real Dashboard and check the two-section navigation, retained totals and interval records, dates, interval-total rounding order, unique-count labels and evidence boundaries. Browser review checks repository filters, language switching and both primary sections. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
+Pages workflow validation runs the existing production build (`npm ci` followed by `npm run build`, which executes `tsc -b && vite build`). This correction introduces no test cases or test dependencies. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
 
 No dependency, lockfile, runtime, workflow or private SOP changes are included. Dependency advisories are separate maintenance work. Do not claim deployment from a local build.
 
