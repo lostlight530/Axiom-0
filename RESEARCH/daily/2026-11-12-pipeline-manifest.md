@@ -7,7 +7,7 @@
 - Producer: `GPT-6 / GPT_NATIVE / HUMAN_AUTHORIZED_SUBSTITUTE / NOT_JULES_REPLAY`
 - Exact cold-start merged main: `f2e3f29212d22ce2c6de30be4477cd4d87a179f3`
 - Run identity: `Axiom-0/plasma/A1-A4/2026-11-12/GPT_NATIVE/f2e3f29212d22ce2c6de30be4477cd4d87a179f3/plasma-source-and-bootstrap-20261112-01`
-- Local bootstrap observation timestamp: `2026-11-12T01:11:54Z` UTC (date-command capture immediately before the failed Git probe; exact probe completion timestamp not separately retained)
+- **Follow-up executed diagnostic window**: `2026-11-12T01:25:05.973984+00:00` to `2026-11-12T01:25:05.987964+00:00`; earlier draft's `01:11:54Z` probe-timing claim lacks a retained command trace and is explicitly NOT_VERIFIED
 - Pipeline status: `A1_SOURCE_RESEARCH_COMPLETED / A2_NOT_EXECUTED / A3_BLOCKED / A4_BLOCKED`
 - A2 formal KL evidence: `NOT_COMPUTED`; consistency contract evidence: `NOT_EMITTED`
 - A3 execution success/failure denominator: `NOT_COMPUTED` (no reference executions)
@@ -51,8 +51,8 @@
 
 ### Actually attempted acquisition
 - Command: `git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD`
-- Environment: ephemeral isolated Python 3.13.5 / system Git available; no fresh complete local Axiom worktree
-- Observation window: 2026-11-12 UTC, immediately after local `date -u` returned `2026-11-12T01:11:54Z`
+- Verified follow-up environment: Linux `6.18.57`, Python `3.13.5`, Git `2.47.3`; no complete local Axiom worktree
+- Follow-up observed run window: `2026-11-12T01:25:05.973984+00:00` → `2026-11-12T01:25:05.987964+00:00` UTC (separate authorized reviewer diagnostic; not the original undocumented attempted probe)
 - **Exit code: 128**
 - **stdout: EMPTY (0 bytes)**
 - **stderr:** `fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com`
@@ -87,3 +87,12 @@
 - `NEXT_RETEST_CONDITION`: obtain a complete checkout at an exact refreshed main SHA, record interpreter/OS and commands, execute *both* formal scans sequentially, preserve stdout/stderr/exits and actual numeric/structural contracts; only on valid A2 PASS run A3 bounded program and A4 index preflight, then append a dated correction under the owning current contract without rewriting this observed block
 - Validation: authenticated GitHub source/path inspection `PERFORMED`; local Git acquisition `FAILED(exit=128)`; A2/A3/A4, repo Python tests and GitHub Actions `NOT_EXECUTED_FOR_THIS_RUN`
 - Delivery: one prospective Daily record. Human Maintainer review/merge does **not** promote formal pipeline to PASS. Historical failures, alternate-run successes and independent maintenance all remain separate
+
+
+## FORWARD_PROVENANCE_CORRECTION — 2026-11-12 01:25Z / before merge
+- Correction authority: human-authorized final PR review; this new reviewer diagnostic is not Jules, is not the earlier original producer execution, and is not an A2 pipeline scanner
+- Original unmerged PR draft stated that `date -u` returned `2026-11-12T01:11:54Z` immediately before a Git probe, without an independently retained command-level receipt. **ORIGINAL_TIME_ASSOCIATION_NOT_VERIFIED**; it must not be used to substantiate earlier invocation, stdout, stderr or exit
+- New independent diagnostic was **actually executed** in this review on Linux 6.18.57, Python 3.13.5 and Git 2.47.3, with `start_utc=2026-11-12T01:25:05.973984+00:00`, `end_utc=2026-11-12T01:25:05.987964+00:00`
+- Command argument vector: `["git","ls-remote","https://github.com/lostlight530/Axiom-0.git","HEAD"]`; observed exit `128`; stdout empty; stderr `fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com`
+- Structured receipt SHA-256 from the final reviewer local JSON object: `48ad95eac07c9876ab3e02474be257a36ef3c78e3cedda089b5871a043cd0587`; the digest is a local record identifier, not a signed or independently deposited CI artifact
+- The follow-up confirms a **new** local Git remote DNS failure; it does **not** retroactively certify the original draft's 01:11Z claim or constitute an A2 KL/structural execution. A2 gates, A3, A4 remain `NOT_EXECUTED`, and their metrics remain `NOT_COMPUTED`. This correction is written before human-authorized merge, not a silent historical rewrite
