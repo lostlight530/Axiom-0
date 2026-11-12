@@ -13,7 +13,6 @@ import {
   Database,
   Eye,
   Globe,
-  Info,
   Scale,
   Users,
 } from "lucide-react";
@@ -551,13 +550,6 @@ export default function HistoricalTrafficPage() {
               <MethodCard index="06" title={t.evidenceHeading} text={t.evidenceText} icon={AlertTriangle} className="lg:col-span-2" />
             </div>
 
-            <Alert className="border-slate-800 bg-slate-900/65 text-slate-300">
-              <Info className="h-4 w-4 text-purple-400" />
-              <AlertTitle className="text-sm text-slate-100">{t.snapshotHeading}</AlertTitle>
-              <AlertDescription className="text-sm leading-6 text-slate-400">
-                {t.snapshotText}
-              </AlertDescription>
-            </Alert>
           </section>
         )}
 
