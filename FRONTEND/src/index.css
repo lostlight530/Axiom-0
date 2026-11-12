@@ -53,7 +53,7 @@
 }
 
 @layer components {
-  .instrument-shell {
+  .traffic-shell {
     position: relative;
     isolation: isolate;
     background:
@@ -62,7 +62,7 @@
     background-size: 44px 44px;
   }
 
-  .instrument-shell::before {
+  .traffic-shell::before {
     content: "";
     position: fixed;
     inset: 0;
@@ -73,7 +73,7 @@
       radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.06), transparent 36rem);
   }
 
-  .instrument-shell::after {
+  .traffic-shell::after {
     content: "";
     position: fixed;
     top: 0;
@@ -86,7 +86,7 @@
     box-shadow: 0 0 22px rgba(34, 211, 238, 0.24);
   }
 
-  .instrument-header {
+  .traffic-header {
     position: relative;
     padding: 1.1rem 1.25rem 1.25rem;
     border: 1px solid rgba(51, 65, 85, 0.72);
@@ -97,26 +97,16 @@
     backdrop-filter: blur(18px);
   }
 
-  .instrument-header::before {
-    content: "FROZEN INSTRUMENT";
-    position: absolute;
-    top: 0.55rem;
-    right: 0.8rem;
-    font: 600 9px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    letter-spacing: 0.18em;
-    color: rgba(103, 232, 249, 0.34);
-    pointer-events: none;
-  }
-
-  .metric-instrument,
-  .telemetry-surface {
+  .metric-card,
+  .chart-surface,
+  .method-card {
     position: relative;
     overflow: hidden;
-    animation: instrumentEnter 520ms cubic-bezier(.2,.7,.2,1) both;
+    animation: trafficEnter 520ms cubic-bezier(.2,.7,.2,1) both;
   }
 
-  .metric-instrument::before,
-  .telemetry-surface::before {
+  .metric-card::before,
+  .chart-surface::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -127,22 +117,22 @@
     transition: opacity 240ms ease, transform 520ms ease;
   }
 
-  .metric-instrument:hover::before,
-  .telemetry-surface:hover::before {
+  .metric-card:hover::before,
+  .chart-surface:hover::before {
     opacity: 1;
     transform: translateX(46%);
   }
 
-  .metric-instrument {
+  .metric-card {
     border-color: rgba(51, 65, 85, 0.82);
   }
 
-  .metric-instrument:hover {
+  .metric-card:hover {
     border-color: rgba(34, 211, 238, 0.34);
     box-shadow: 0 18px 46px rgba(8, 145, 178, 0.08);
   }
 
-  .telemetry-surface {
+  .chart-surface {
     box-shadow: inset 0 1px rgba(255,255,255,0.025), 0 28px 80px rgba(0,0,0,0.2);
   }
 
@@ -150,28 +140,28 @@
     transition: filter 220ms ease;
   }
 
-  .telemetry-surface:hover .recharts-wrapper {
+  .chart-surface:hover .recharts-wrapper {
     filter: drop-shadow(0 0 14px rgba(34, 211, 238, 0.05));
   }
 
-  @keyframes instrumentEnter {
+  @keyframes trafficEnter {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: none; }
   }
 
   @media (max-width: 640px) {
-    .instrument-header::before { display: none; }
-    .instrument-header { padding: 1rem; }
+    .traffic-header { padding: 1rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .metric-instrument,
-    .telemetry-surface {
+    .metric-card,
+    .chart-surface,
+    .method-card {
       animation: none !important;
     }
 
-    .metric-instrument::before,
-    .telemetry-surface::before,
+    .metric-card::before,
+    .chart-surface::before,
     .recharts-wrapper {
       transition: none !important;
     }
