@@ -68,7 +68,7 @@ const translations = {
     intervalTitle: "Retained interval history",
     intervalSubtitle: "Each point represents a reporting interval; 08/31 covers 08/22–08/31.",
     ratioTitle: "Clone-to-view ratio by interval",
-    ratioSubtitle: "Descriptive ratio only; zero-view intervals have no finite value.",
+    ratioChartSubtitle: "Descriptive ratio only; zero-view intervals have no finite value.",
     methodTitle: "Statistical method & evidence limits",
     methodIntro: "Definitions, aggregation rules and evidence boundaries for interpreting this frozen display.",
     windowHeading: "Observation window",
@@ -119,7 +119,7 @@ const translations = {
     intervalTitle: "单仓区间记录",
     intervalSubtitle: "每个点代表一个统计区间；08/31 对应 08/22–08/31",
     ratioTitle: "各区间 Clones / Views 比值",
-    ratioSubtitle: "仅为描述性比值；views 为零时不定义有限值",
+    ratioChartSubtitle: "仅为描述性比值；views 为零时不定义有限值",
     methodTitle: "统计方法与证据限制",
     methodIntro: "以下定义、聚合规则与证据边界用于解释本页封存数据",
     windowHeading: "观察时间窗口",
@@ -520,7 +520,7 @@ export default function HistoricalTrafficPage() {
                 <Card className="chart-surface rounded-2xl border-slate-800 bg-slate-900/55 shadow-none">
                   <CardHeader className="pb-2">
                     <CardTitle className="font-mono text-sm text-slate-200">{t.ratioTitle}</CardTitle>
-                    <CardDescription className="font-mono text-xs text-slate-500">{t.ratioSubtitle}</CardDescription>
+                    <CardDescription className="font-mono text-xs text-slate-500">{t.ratioChartSubtitle}</CardDescription>
                   </CardHeader>
                   <CardContent className="h-[250px] p-4">
                     <ResponsiveContainer width="100%" height="100%">
