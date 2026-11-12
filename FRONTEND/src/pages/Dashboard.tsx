@@ -385,7 +385,15 @@ export default function HistoricalTrafficPage() {
               </div>
             </div>
 
-            <div className="w-full lg:w-auto lg:min-w-[370px]">
+            <div className="flex w-full flex-col items-end gap-3 lg:w-auto lg:min-w-[430px]">
+              <button
+                type="button"
+                onClick={() => setLang(lang === "en" ? "zh" : "en")}
+                aria-label={lang === "en" ? "Switch language to Chinese" : "Switch language to English"}
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-300 transition hover:border-cyan-500/40 hover:text-white"
+              >
+                <Globe className="h-4 w-4" />{lang === "en" ? "中文" : "English"}
+              </button>
               <Tabs value={mainTab} onValueChange={setMainTab} className="w-full">
                 <TabsList className="grid h-auto w-full grid-cols-2 rounded-xl border border-slate-800 bg-slate-900 p-1 font-mono text-xs">
                   <TabsTrigger value="traffic" className="min-h-10 rounded-lg px-3 py-2 data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-300">
@@ -409,13 +417,6 @@ export default function HistoricalTrafficPage() {
                 </p>
                 <p className="text-sm text-slate-400">{t.trafficIntro}</p>
               </div>
-              <button
-                type="button"
-                onClick={() => setLang(lang === "en" ? "zh" : "en")}
-                className="inline-flex w-fit items-center gap-2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-300 transition hover:border-cyan-500/40 hover:text-white"
-              >
-                <Globe className="h-4 w-4" />{lang === "en" ? "中文" : "English"}
-              </button>
             </div>
 
             <Tabs value={repo} onValueChange={setRepo} className="w-full">
