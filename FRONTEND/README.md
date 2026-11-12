@@ -1,6 +1,6 @@
 # Axiom — final traffic snapshot
 
-核心五仓流量展示封存于 **2026-08-31**，不再追加后续数据。项目窗口 **2026-02-12 → 2026-08-31**，经过 **200 天**，首尾均计 **201 个自然日**。保留现有页面布局；Daily SOP 不受流量封存影响。
+首页仅保留两个一级区域：**五仓历史流量展示**，以及**统计方法、时间窗口与证据限制**。五仓流量展示封存于 **2026-08-31**，不再追加后续数据。项目窗口 **2026-02-12 → 2026-08-31**，经过 **200 天**，首尾均计 **201 个自然日**。页面排版与术语围绕这两类内容组织；Daily SOP 不受流量封存影响。
 
 ## Calculation contract
 
@@ -45,7 +45,7 @@ npm run build -- --outDir <dedicated-empty-preview-directory-outside-the-reposit
 npm run preview -- --host 127.0.0.1 --outDir <same-preview-directory>
 ```
 
-Regression tests render the real Dashboard and check totals, dates, interval-total rounding order, unique-count labels, final-only navigation and the nonduplicated example. Browser review checks repository filters, language switching and Traffic/Method tabs. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
+Regression tests render the real Dashboard and check the two-section navigation, retained totals and interval records, dates, interval-total rounding order, unique-count labels and evidence boundaries. Browser review checks repository filters, language switching and both primary sections. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
 
 No dependency, lockfile, runtime, workflow or private SOP changes are included. Dependency advisories are separate maintenance work. Do not claim deployment from a local build.
 
