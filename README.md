@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22791103.svg)](https://doi.org/10.5281/zenodo.22791103)
 
+Latest archived checkpoint: [v2026.10-30-evidence-snapshot](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.10-30-evidence-snapshot) · [Version DOI](https://doi.org/10.5281/zenodo.23811393). The DOI badge above identifies the software-family concept.
+
 [Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md)
 
 A dependency-free Python reference for explicit data contracts, measurable transitions, and reproducible repository checks. / 一个以显式数据契约、可度量状态转换和可复现仓库检查为核心的无第三方运行时依赖 Python 参考实现。
