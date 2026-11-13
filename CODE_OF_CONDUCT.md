@@ -1,13 +1,15 @@
 # Code of Conduct
 
-> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
-> **中文**：本文件规范公共协作行为，具体权利义务以原始条款为准；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
-> **English**: This document governs public collaboration; detailed obligations remain in the original policy. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
-
 
 ## Our standard
 
 Contributors must engage respectfully, critique claims and artifacts rather than people, disclose uncertainty, and protect private or security-sensitive information. Harassment, threats, discrimination, doxxing, deliberate deception, and repeated disruption are unacceptable in repository spaces.
+
+### 中文证据与行为要求 / Evidence-aware collaboration
+
+对协议、数学差异、科研发表和 Agents 合作的判断必须说明输入范围、原始状态及实际检查；一次 D_KL=0、扫描通过或 GitHub 合并不能被宣传成普遍正确性或经过外部认证
+
+Claims about protocols, mathematical divergence, research publications and Agent collaboration must identify input bounds, original state and executed checks. D_KL=0 on a fixture, a passing scanner or a merged PR is not universal correctness or third-party certification
 
 ## Evidence-aware collaboration
 
