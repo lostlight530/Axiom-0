@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 
-PROTECTED_FILES = {"README.md", "INDEX.md", "PATCH_INDEX.md", "LICENSE"}
+PROTECTED_FILES = {"README.md", "INDEX.md", "historical-audits/legacy-index/PATCH_INDEX.md", "LICENSE"}
 PROTECTED_PREFIXES = ("FRONTEND/", "docs/", "RESEARCH/")
 
 
