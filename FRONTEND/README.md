@@ -34,7 +34,7 @@ The public frontend shows only the final **2026-08-31** traffic snapshot and its
 
 ## Implementation and verification
 
-[Dashboard.tsx](src/pages/Dashboard.tsx) holds the static display values. Historical rows are inherited from main `fdc0f21f8cb3305e2f2322642fce357325b6d490`; final unique counts use the explicitly normalized interval sum. No polling or ingestion service runs in the page.
+[Dashboard.tsx](src/pages/Dashboard.tsx) holds the static display values, and [TrafficCharts.tsx](src/components/TrafficCharts.tsx) draws explicit SVG interval charts and accessible five-repository bars. These charts rely on intrinsic SVG dimensions and rendered count labels, not Recharts `ResponsiveContainer` measurement or `ResizeObserver`. No additional reporting rows or changed calculations are introduced. Historical rows are inherited from main `fdc0f21f8cb3305e2f2322642fce357325b6d490`; final unique counts use the explicitly normalized interval sum. No polling or ingestion service runs in the page.
 
 From `FRONTEND`, using existing locked dependencies:
 
@@ -44,10 +44,21 @@ npm run build -- --outDir <dedicated-empty-preview-directory-outside-the-reposit
 npm run preview -- --host 127.0.0.1 --outDir <same-preview-directory>
 ```
 
-Pages workflow validation runs the existing production build (`npm ci` followed by `npm run build`, which executes `tsc -b && vite build`). This correction introduces no test cases or test dependencies. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
+Pages workflow validation runs the existing production build (`npm ci` followed by `npm run build`, which executes `tsc -b && vite build`). The existing locked-dependency CI additionally executes `node --test tests/final-snapshot.test.mjs`; it now checks the rendered bar representation, explicit SVG geometry and zero-view ratio gaps, in addition to all frozen count assertions. Chinese frontend display text omits the ideographic full stop (`U+3002`); decimal points, URLs and file paths remain unchanged. Default build output is `../docs`; override it during local review to avoid modifying tracked Pages artifacts.
 
 No dependency, lockfile, runtime, workflow or private SOP changes are included. Dependency advisories are separate maintenance work. Do not claim deployment from a local build.
 
 ## Freeze and rollback
 
 No later traffic rows or scheduled updater. Corrections to existing errors require review; they do not authorize extending the window. Revert this frontend commit to restore the previous page without affecting the separate Daily evidence PR.
+
+## Old/new frontend maintenance and cleanup
+
+- **Current source of truth:** `FRONTEND/src/pages/Dashboard.tsx` for the immutable 54 retained rows, the normalization formula and filter/aggregate behavior; `FRONTEND/src/components/TrafficCharts.tsx` for rendering; `FRONTEND/src/index.css` for presentation; `FRONTEND/tests/final-snapshot.test.mjs` for regression checks
+- **Current deployment artifact:** the Vite build writes `docs/` as part of Pages deployment, which is generated output and not an authority for data editing; do not delete it during cleanup
+- **Historical version:** retain the prior frontend in Git history, including the initial fixed snapshot (`fdc0f21f8cb3305e2f2322642fce357325b6d490`) and the pre-repair main commit (`083c99d7a12221596c2d61a537de7d1c2d71c813`). Recovery uses a reviewed revert or comparison, not a second competing live `index.html`
+- **Removed only confirmed unused starter files:** `FRONTEND/src/App.css`, `FRONTEND/src/assets/hero.png`, `FRONTEND/src/assets/react.svg`, `FRONTEND/src/assets/vite.svg` (none were imported by the active source)
+- **Forbidden cleanup:** frozen observations, original methodology, README, published `docs/` build target, repository history and unrelated daily evidence
+- **Release gate:** lint, Vite production build, frozen SSR regression, visually readable five-repo bars and single-repo SVG/ratio gap, Chinese visible-text punctuation audit, and actual Pages deployment success
+
+This maintenance note records source/artifact and current/historical boundaries. It does not alter the frozen 2026-08-31 reporting window.
