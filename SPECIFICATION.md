@@ -11,6 +11,11 @@
 
 # Axiom-0 Engineering Specification
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：本规范描述有界 Python 参考实现，新增文档不能提高原始测试覆盖或构成未执行的能力证明；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: This specification describes bounded Python reference behavior; documentation changes do not upgrade test coverage or prove unexecuted capabilities. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 - Version: 2026.08-r2
 - Calibration: 2026-08-27
 - Status: implemented reference contract
@@ -220,6 +225,12 @@ The current August stage authority is `RESEARCH/monthly/2026-08-through-27-stage
 Invalid caller data raises `TypeError` or `ValueError` where explicit input validation applies. A configured KL coherence violation raises `RuntimeError` in the reference orchestrator.
 
 The library does not establish authentication, authorization, isolation, secret management, network policy, quotas, durable retries, or incident handling.
+
+### 规范、执行与研究展示分离 / Specification, execution and stage display
+
+中文：本规范描述当前 Python 参考行为，但定义存在、scanner PASS、固定输入 100 次参考运行、研究阶段产物和外部部署是不同证据身份；阶段展示必须保留确切源修订、输入、测试命令、执行环境和结果，不得把算法概念或后续发布 DOI 解释为已验证安全、可靠、通用自治 Agent
+
+English: This specification describes Python reference behavior, while declared contracts, scanner PASS, 100 fixed-reference runs, stage research records and external deployment have different evidence identities. A display requires source revision, inputs, tested commands, environment and observed results; concepts or later DOIs do not certify safety, reliability or a general autonomous agent
 
 ## Evidence boundary
 

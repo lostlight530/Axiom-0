@@ -11,11 +11,22 @@
 
 # Reproducibility
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：复现以提交、环境、输入、步骤和结果对照为边界，原始 Jules 与新增 GPT Native 证据不得混为一次运行；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: Reproduction requires a pinned revision, environment, input, procedure and result comparison; Jules and later GPT Native evidence are separate runs. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 A result is reproducible only within its recorded input, revision, environment, configuration, and tolerance.
 
 ## Minimum record
 
 Retain the Git commit SHA; Python major/minor/patch and operating system; command argument array; sanitized fixture or canonical SHA-256 digest; threshold/configuration version; UTC start/end time; exit code; artifact digest; and untested boundary. Never retain credentials or unnecessary private payloads.
+
+### 长期科研实验的可比较条件 / Comparable conditions for longitudinal research
+
+同一 repo 或同一天的结果并不自动可比较；应固定 commit、运行器／Python 版本、fixture digest、命令、作用域、时间、失败及未验证范围；研究 A1–A6、Independent GPT 审计与软件 version DOI 是不同层，重放应给出可核对的差异，不能以历史成功直接背书新的 `main`
+
+Same repository or calendar date does not make results comparable. Pin commit, runner/Python version, fixture digest, command, scope, time, failure and untested range. Research A1–A6, independent audits and software version DOIs are separate objects; replay must show comparable differences rather than using historical success to certify new `main`
 
 ## Verification matrix
 

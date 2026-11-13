@@ -1,5 +1,10 @@
 # Research Template / 科研记录模板
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：只用于未来科研记录，不对已冻结时间点的失败、缺失或未验证结论追溯补证；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: For prospective research records only; do not backfill frozen historical failures, absences, or unknown outcomes. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 Status: prospective research-record template
 Scope: new research records only; durable open-research method is owned by `OPEN_RESEARCH.md`
 
@@ -7,7 +12,7 @@ Scope: new research records only; durable open-research method is owned by `OPEN
 
 English is the canonical/default language of this template. Chinese labels and guidance are provided for accessibility. If bilingual wording diverges, the English instruction governs; repository-native contracts remain authoritative over this template.
 
-英文为本模板的默认与规范语言；中文标签与说明用于辅助理解。若双语表述出现差异，以英文说明为准；仓库原生 contract 对本模板始终具有更高权威。
+英文为本模板的默认与规范语言；中文标签与说明用于辅助理解；若双语表述出现差异，以英文说明为准；仓库原生 contract 对本模板始终具有更高权威；
 
 Historical records are not rewritten by this template
 
@@ -80,6 +85,11 @@ State one question that can be contradicted by evidence
 - Proposed explanation:
 - Support condition:
 - Falsifier:
+
+### 研究记录的时间与发布身份 / Temporal and publication identity
+
+- 中文：声明实验输入与固定样例、源 Git commit、计算／执行命令、观察截止点、原始输出、Weekly/Monthly 继承关系、失败和未知项，并按具体引用对象区分 software concept DOI 与 release-specific DOI；不以已发布 DOI 证明当前测量已通过
+- English: Record input and fixed fixtures, source commit, actual computation/command, cutoff, raw output, Weekly/Monthly inheritance, failures and unknowns; distinguish family concept DOI from version-specific DOI for the object actually cited. DOI publication is not evidence that a current measurement passed
 
 ## Evidence or source basis / 证据基础
 

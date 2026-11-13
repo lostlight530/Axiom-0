@@ -1,5 +1,10 @@
 # AI Use Disclosure
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：AI 辅助开发与复核须保留人类批准、来源身份和独立执行证据，私有任务提示词不公开；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: AI-assisted work must retain human approval, source identity, and independent execution evidence; private producer prompts remain private. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 AI assistance may be used for drafting, code suggestions, translation, test ideas, source discovery, summarization, and repository review. The human contributor remains accountable for scope, sources, licenses, security, correctness, merge decisions, and every completion claim.
 
 ## Control-plane boundary
@@ -30,6 +35,12 @@ For a material AI-assisted pull request, state when known and relevant:
 - unresolved uncertainty or coordination state.
 
 Do not paste secrets, personal data, embargoed vulnerabilities, private prompts, credentials, hidden memory, or third-party confidential material into a model unless an explicit authorized workflow requires it.
+
+### 公开 AI 协助与独立证据 / AI assistance versus independent evidence
+
+中文：模型、工具、Agent 与 GPT Native 的产物都须分开标示生产者、输入修订、运行证据及人工批准；代码检查通过或文档合并不表示产物已由另一来源独立验证；维护记录不得反推出私有任务提示词已被历史 Jules 执行，也不能公开未授权的内部指令
+
+English: Distinguish model/tool/agent/GPT Native producer, input revision, executed checks and human approval. A passing code check or merged document is not independent verification. Maintainer reports cannot retroactively prove historical Jules consumed private task prompts, nor disclose unpublished private controls
 
 ## Verification boundary
 

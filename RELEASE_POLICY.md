@@ -1,5 +1,10 @@
 # Release and Archival Policy
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：Git main、特定 release、软件归档 DOI 与逐次执行接收凭据具有不同身份；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: Git main, a specific release, archive DOI, and run receipt have different identities. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 This repository treats `main` as the current repository state and release tags as immutable point-in-time snapshots.
 
 ## Policy
@@ -48,6 +53,12 @@ The fourth archived version is [v2026.10-fourteen-day-evidence-checkpoint](https
 
 Use the version DOI for this exact checkpoint and the concept DOI for the software family. `CITATION.cff` and CodeMeta retain the family identifier and recorded September 16 baseline date. Later changes to `main` belong to subsequent repository state; the checkpoint tag remains unchanged.
 
+### Frozen publication and evolving source / 冻结版本与持续演进
+
+**中文**：2026-11-10 GitHub 已发布 [`v2026.11-ten-day-evidence-checkpoint`](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.11-ten-day-evidence-checkpoint)，对应 tag commit `a9d1fc282dfc407657e6eec10f743e3fe27d594b`；本次仅核实 GitHub 的发布身份及精确 Git 修订，**尚未独立核实该版本的 Zenodo version DOI**，因此不编造 DOI；现有 2026-10-30 的 DOI 仍然只指向当时的冻结版本；Concept DOI `10.5281/zenodo.22791103` 是软件家族身份，不代表当前 `main` 或历史科研运行均已归档
+
+**English**: GitHub published [`v2026.11-ten-day-evidence-checkpoint`](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.11-ten-day-evidence-checkpoint) on 2026-11-10 at tag commit `a9d1fc282dfc407657e6eec10f743e3fe27d594b`. Its exact Zenodo version DOI has **not been independently checked here**, so none is inferred. The 2026-10-30 version DOI remains scoped to that archived release. Concept DOI `10.5281/zenodo.22791103` identifies the version family, not current `main` or every historical execution
+
 ## Open-science reuse and research records
 
 - Cite the software family through [CITATION.cff](CITATION.cff) or [CodeMeta](codemeta.json); cite the version DOI above when a result depends on this checkpoint.
@@ -57,9 +68,9 @@ Use the version DOI for this exact checkpoint and the concept DOI for the softwa
 - Keep later findings and corrections in new dated records so the archived checkpoint remains recoverable.
 
 
-## Latest archived checkpoint — 2026-10-30
+## Archived October 30 version-DOI checkpoint — 2026-10-30
 
-The latest archived repository snapshot is `v2026.10-30-evidence-snapshot`.
+The October 30 archived repository snapshot is `v2026.10-30-evidence-snapshot`.
 
 - GitHub Release: [v2026.10-30-evidence-snapshot](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.10-30-evidence-snapshot)
 - GitHub release published: `2026-10-30T15:44:35Z`

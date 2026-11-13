@@ -1,6 +1,11 @@
 # Axiom-0: Global IndexHub
 
-> **[CN]:** Axiom-0 知识体系索引。所有文档严格遵守零熵认知协议 (ZECP) 与不可逆的数学级枷锁。
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：根目录 INDEX 是当前文档导航，历史 PATCH_INDEX 属旧补丁建议，不是并列的现行索引；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: The root INDEX is the current navigation; historical PATCH_INDEX is a retired proposal, not a competing live index. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
+> **[CN]:** Axiom-0 知识体系索引；所有文档严格遵守零熵认知协议 (ZECP) 与不可逆的数学级枷锁；
 > **[EN]:** Axiom-0 Knowledge System Index. All documents strictly adhere to the Zero-Entropy Cognitive Protocol (ZECP) and irreversible mathematical shackles.
 
 ## 0. 提示与自动化 / Prompt and Automation
@@ -57,7 +62,7 @@
 - [2026-06-01 Pipeline Manifest](RESEARCH/daily/2026-06-01-pipeline-manifest.md)
 
 ## 5. 参考实现 / Reference Implementation
-- 位于 `CODE/` 目录，呈现绝对的 DAG 物理作业机制。
+- 位于 `CODE/` 目录，呈现绝对的 DAG 物理作业机制；
 - Located in `CODE/`, presenting absolute DAG physical operational mechanics.
 - [2026-W23 Weekly Manifest](RESEARCH/weekly/2026-W23-weekly-manifest.md)
 - [2026-06 Monthly Manifest](RESEARCH/monthly/2026-06-monthly-manifest.md)
@@ -217,6 +222,12 @@ Index discoverability remains navigation only; it does not upgrade source indepe
 - [2026-11-06 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-06-pipeline-manifest.md) - Recorded A2 numeric and structural gate pass, A3 bounded 100/100 native executions, A4 navigation preflight; historical acquisition failure preserved, no global invariance claim.
 - [2026-11-07 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-07-pipeline-manifest.md) - Verified pinned main A2 KL+structure, A3 100/100 fixed-input executions and 34 tests; A4 link verification scoped to the branch receipt. No universal invariant claim.
 - [2026-11-08 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-08-pipeline-manifest.md) - Verified pinned main A2 KL+structure, A3 100/100 fixed-fixture calls and 34 tests; A4 branch pointer verification subject to the separate branch-head receipt. No universal correctness claim.
+
+### 索引权威与版本身份 / Index authority and version identity
+
+中文：此根目录 `INDEX.md` 是当前文档导航；遗留 `PATCH_INDEX.md` 是早期补丁建议，不是另一个同等权威的当前索引，其归档至 `historical-audits/legacy-index/PATCH_INDEX.md`，见已合并的 [目录清理 PR #510](https://github.com/lostlight530/Axiom-0/pull/510)；长期科研阶段指标必须指向对应的 RESEARCH 源文件、Git SHA、观察时间、失败／缺口，不以索引出现或 GitHub Release 证明研究完成
+
+English: The root `INDEX.md` is the live navigation; legacy `PATCH_INDEX.md` is a superseded proposal, not a coequal current index. The archived copy is at `historical-audits/legacy-index/PATCH_INDEX.md`, established by merged [layout PR #510](https://github.com/lostlight530/Axiom-0/pull/510). Longitudinal metrics link to owning RESEARCH records, Git SHAs, observation time and failures/gaps; index presence or software release does not prove research completion
 
 ## 2026-11 native Daily navigation — source-receipt truth, not blanket PASS
 The canonical `RESEARCH/daily/` artifacts exist for Nov01–Nov11; entries below repair only missing November navigation links in this current index. Nov06–08 are already linked in the preceding retained index section; numerical/scientific results must be read from each Daily manifest.

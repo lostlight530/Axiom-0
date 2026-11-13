@@ -1,8 +1,15 @@
 # Code of Conduct
 
+
 ## Our standard
 
 Contributors must engage respectfully, critique claims and artifacts rather than people, disclose uncertainty, and protect private or security-sensitive information. Harassment, threats, discrimination, doxxing, deliberate deception, and repeated disruption are unacceptable in repository spaces.
+
+### 中文证据与行为要求 / Evidence-aware collaboration
+
+对协议、数学差异、科研发表和 Agents 合作的判断必须说明输入范围、原始状态及实际检查；一次 D_KL=0、扫描通过或 GitHub 合并不能被宣传成普遍正确性或经过外部认证
+
+Claims about protocols, mathematical divergence, research publications and Agent collaboration must identify input bounds, original state and executed checks. D_KL=0 on a fixture, a passing scanner or a merged PR is not universal correctness or third-party certification
 
 ## Evidence-aware collaboration
 

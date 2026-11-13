@@ -1,5 +1,10 @@
 # 2026 Evidence Baseline
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：这是带有 2026 年历史检索与校准时点的证据基线，不是 2026-11-13 全仓运行状态快照；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: This is a dated 2026 evidence baseline, not a new full-repository runtime snapshot on 2026-11-13. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 - Retrieval/calibration date: 2026-08-27
 - Scope: external facts and evidence semantics that bound Axiom runtime, research, security, validation, and evaluation claims
 - Policy: a source, command, file, digest, scanner, or historical artifact supports only the property actually evidenced by that surface
@@ -120,6 +125,12 @@ Keep separate when materially different:
 Current path presence does not prove earlier snapshot availability or original execution success.
 
 A later correction changes current interpretation, not historical chronology.
+
+### 2026-11-13 reading clarification / 2026-11-13 阅读校准（非基线重写）
+
+中文：本文件保存原始 2026 年证据基线、扫描器演进和当时已知的执行缺口，较晚的 GitHub Release、GPT Native 阶段产物和 `main` 不应被倒灌回原观察日期；2026-11-10 新发行的实际 tag 可单独在发布政策核对，但其 GitHub 发布不是对 8 月、9 月固定输入检验的重放，也不赋予外部来源可信度
+
+English: This file retains the original 2026 baseline, scanner evolution and as-of execution gaps. Later GitHub releases, GPT Native stage outputs and `main` revisions must not be backdated into earlier observations. The 2026-11-10 tag is checked separately in release policy; its existence does not replay August/September fixtures or authenticate external evidence
 
 ## Date and version semantics
 

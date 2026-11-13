@@ -1,5 +1,10 @@
 # Contributing
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：贡献须区分形式规格、CODE 实现、固定输入测试与可复核结果；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: Contributions must distinguish formal description, CODE implementation, fixed-input tests, and reproducible results. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 ## Open research contributions
 
 For research-method or positioning changes, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Implementation, Specification, Methodology, ADR, evidence, and historical contracts remain authoritative for their own surfaces.
@@ -31,6 +36,12 @@ For executable behavior:
 5. keep reference-fixture behavior distinct from production, distributed, security, or authorization claims.
 
 The Python reference implementation intentionally avoids runtime third-party dependencies. A new dependency requires an explicit technical reason, compatibility impact, threat surface, and rollback path.
+
+### Evidence-chain review / 证据链审查
+
+拟更新长期指标或发布文档时，必须注明原始结果与 aggregate 的差异、观测与归档日期、输入修订、环境、断言范围，以及哪些测试并未运行；索引修复、研究结论、PR 合并、Actions PASS、软件 DOI 都是各自独立的事实，不能通过一个成功标签互相继承
+
+Before updating longitudinal metrics or publication text, specify raw versus aggregate numbers, observation versus archival date, source revision, environment, claim scope and unrun tests. Index repair, scientific conclusion, PR merge, Actions PASS and software DOI are separate facts and cannot inherit correctness from one another
 
 ## Evidence and research changes
 
