@@ -22,6 +22,12 @@ A result is reproducible only within its recorded input, revision, environment, 
 
 Retain the Git commit SHA; Python major/minor/patch and operating system; command argument array; sanitized fixture or canonical SHA-256 digest; threshold/configuration version; UTC start/end time; exit code; artifact digest; and untested boundary. Never retain credentials or unnecessary private payloads.
 
+### 长期科研实验的可比较条件 / Comparable conditions for longitudinal research
+
+同一 repo 或同一天的结果并不自动可比较；应固定 commit、运行器／Python 版本、fixture digest、命令、作用域、时间、失败及未验证范围；研究 A1–A6、Independent GPT 审计与软件 version DOI 是不同层，重放应给出可核对的差异，不能以历史成功直接背书新的 `main`
+
+Same repository or calendar date does not make results comparable. Pin commit, runner/Python version, fixture digest, command, scope, time, failure and untested range. Research A1–A6, independent audits and software version DOIs are separate objects; replay must show comparable differences rather than using historical success to certify new `main`
+
 ## Verification matrix
 
 The repository currently has no GitHub Actions workflow that compiles or tests the Python implementation. Python 3.12 and 3.14 may be compatibility targets, but an environment is **verified** only when a retained run records its exact interpreter version, revision, command, and exit code. Local verification is not GitHub CI. The Pages workflow builds the presentation surface and is not evidence for Python/runtime, research, or document semantics.

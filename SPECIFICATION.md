@@ -226,6 +226,12 @@ Invalid caller data raises `TypeError` or `ValueError` where explicit input vali
 
 The library does not establish authentication, authorization, isolation, secret management, network policy, quotas, durable retries, or incident handling.
 
+### 规范、执行与研究展示分离 / Specification, execution and stage display
+
+中文：本规范描述当前 Python 参考行为，但定义存在、scanner PASS、固定输入 100 次参考运行、研究阶段产物和外部部署是不同证据身份；阶段展示必须保留确切源修订、输入、测试命令、执行环境和结果，不得把算法概念或后续发布 DOI 解释为已验证安全、可靠、通用自治 Agent
+
+English: This specification describes Python reference behavior, while declared contracts, scanner PASS, 100 fixed-reference runs, stage research records and external deployment have different evidence identities. A display requires source revision, inputs, tested commands, environment and observed results; concepts or later DOIs do not certify safety, reliability or a general autonomous agent
+
 ## Evidence boundary
 
 - KL scan → recorded KL fixtures only

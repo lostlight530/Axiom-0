@@ -223,6 +223,12 @@ Index discoverability remains navigation only; it does not upgrade source indepe
 - [2026-11-07 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-07-pipeline-manifest.md) - Verified pinned main A2 KL+structure, A3 100/100 fixed-input executions and 34 tests; A4 link verification scoped to the branch receipt. No universal invariant claim.
 - [2026-11-08 Plasma Pipeline Manifest](RESEARCH/daily/2026-11-08-pipeline-manifest.md) - Verified pinned main A2 KL+structure, A3 100/100 fixed-fixture calls and 34 tests; A4 branch pointer verification subject to the separate branch-head receipt. No universal correctness claim.
 
+### 索引权威与版本身份 / Index authority and version identity
+
+中文：此根目录 `INDEX.md` 是当前文档导航；遗留 `PATCH_INDEX.md` 是早期补丁建议，不是另一个同等权威的当前索引，其归位见独立 [目录清理 PR #510](https://github.com/lostlight530/Axiom-0/pull/510)，不能在 PR 合并前假定新位置已生效；长期科研阶段指标必须指向对应的 RESEARCH 源文件、Git SHA、观察时间、失败／缺口，不以索引出现或 GitHub Release 证明研究完成
+
+English: The root `INDEX.md` is the live navigation; legacy `PATCH_INDEX.md` is a superseded proposal, not a coequal current index. Its proposed relocation is in independent [layout PR #510](https://github.com/lostlight530/Axiom-0/pull/510), and is not yet assumed merged. Longitudinal metrics link to owning RESEARCH records, Git SHAs, observation time and failures/gaps; index presence or software release does not prove research completion
+
 ## 2026-11 native Daily navigation — source-receipt truth, not blanket PASS
 The canonical `RESEARCH/daily/` artifacts exist for Nov01–Nov11; entries below repair only missing November navigation links in this current index. Nov06–08 are already linked in the preceding retained index section; numerical/scientific results must be read from each Daily manifest.
 

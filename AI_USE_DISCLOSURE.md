@@ -36,6 +36,12 @@ For a material AI-assisted pull request, state when known and relevant:
 
 Do not paste secrets, personal data, embargoed vulnerabilities, private prompts, credentials, hidden memory, or third-party confidential material into a model unless an explicit authorized workflow requires it.
 
+### 公开 AI 协助与独立证据 / AI assistance versus independent evidence
+
+中文：模型、工具、Agent 与 GPT Native 的产物都须分开标示生产者、输入修订、运行证据及人工批准；代码检查通过或文档合并不表示产物已由另一来源独立验证；维护记录不得反推出私有任务提示词已被历史 Jules 执行，也不能公开未授权的内部指令
+
+English: Distinguish model/tool/agent/GPT Native producer, input revision, executed checks and human approval. A passing code check or merged document is not independent verification. Maintainer reports cannot retroactively prove historical Jules consumed private task prompts, nor disclose unpublished private controls
+
 ## Verification boundary
 
 Generated output is untrusted input. Review the aggregate diff; verify citations against primary sources; reproduce calculations; run relevant tests when executable behavior changes; and keep unsupported proposals labelled.
