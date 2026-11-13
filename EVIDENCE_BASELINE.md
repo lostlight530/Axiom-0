@@ -1,5 +1,10 @@
 # 2026 Evidence Baseline
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：这是带有 2026 年历史检索与校准时点的证据基线，不是 2026-11-13 全仓运行状态快照；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: This is a dated 2026 evidence baseline, not a new full-repository runtime snapshot on 2026-11-13. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 - Retrieval/calibration date: 2026-08-27
 - Scope: external facts and evidence semantics that bound Axiom runtime, research, security, validation, and evaluation claims
 - Policy: a source, command, file, digest, scanner, or historical artifact supports only the property actually evidenced by that surface

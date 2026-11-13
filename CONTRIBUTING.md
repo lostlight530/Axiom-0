@@ -1,5 +1,10 @@
 # Contributing
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：贡献须区分形式规格、CODE 实现、固定输入测试与可复核结果；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: Contributions must distinguish formal description, CODE implementation, fixed-input tests, and reproducible results. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 ## Open research contributions
 
 For research-method or positioning changes, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Implementation, Specification, Methodology, ADR, evidence, and historical contracts remain authoritative for their own surfaces.

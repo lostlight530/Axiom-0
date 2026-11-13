@@ -1,5 +1,10 @@
 # Open Research / 开放科研
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：保持形式契约、测量范围、失败与反例分离，GPT Native 记录与历史 Jules 记录不可互相替代；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: Keep contracts, measurement bounds, failures, and counterexamples separate; prospective GPT Native records do not replace historical Jules records. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 Status: durable open-research production guide
 Scope: repository-level research positioning, research-production method, scholarly-metadata boundaries, and semantic-drift governance
 
@@ -7,7 +12,7 @@ Scope: repository-level research positioning, research-production method, schola
 
 English is the canonical and default language for this open-research contract. Chinese text is provided as an accessibility and interpretation aid. If wording diverges, the English normative text governs; repository evidence and current owning contracts remain authoritative over both.
 
-英文是本开放科研契约的默认与规范语言；中文用于辅助理解与可访问性。若中英文表述有差异，以英文规范文本为准；仓库事实与当前 owning contract 的权威仍高于任何翻译。
+英文是本开放科研契约的默认与规范语言；中文用于辅助理解与可访问性；若中英文表述有差异，以英文规范文本为准；仓库事实与当前 owning contract 的权威仍高于任何翻译；
 
 
 ## Authority
@@ -154,8 +159,8 @@ external indexing != repository self-definition
 
 ## 中文摘要
 
-本文件定义仓库的长期开放科研方法：共同骨架要求研究问题、可证伪假设、证据/来源身份、固定对象/版本/环境、实际执行程序、原始观测、反例检查、有界结论、研究增量与复验条件。
+本文件定义仓库的长期开放科研方法：共同骨架要求研究问题、可证伪假设、证据/来源身份、固定对象/版本/环境、实际执行程序、原始观测、反例检查、有界结论、研究增量与复验条件；
 
-仓库自身的 implementation、Specification/Methodology/ADR、evidence、history 等原生 authority 仍然拥有最终语义。外部 scholarly graph 或分类器只属于派生表示，不能反向定义仓库身份。
+仓库自身的 implementation、Specification/Methodology/ADR、evidence、history 等原生 authority 仍然拥有最终语义；外部 scholarly graph 或分类器只属于派生表示，不能反向定义仓库身份；
 
-未来 scholarly metadata 重点保持 canonical type、one-line positioning、primary domains、non-goals、少量准确 subjects 与 5–7 个定义性 keywords；若外部分类漂移，先修 owning metadata 的真实歧义，否则记录 classifier noise。
+未来 scholarly metadata 重点保持 canonical type、one-line positioning、primary domains、non-goals、少量准确 subjects 与 5–7 个定义性 keywords；若外部分类漂移，先修 owning metadata 的真实歧义，否则记录 classifier noise；

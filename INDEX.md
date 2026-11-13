@@ -1,6 +1,11 @@
 # Axiom-0: Global IndexHub
 
-> **[CN]:** Axiom-0 知识体系索引。所有文档严格遵守零熵认知协议 (ZECP) 与不可逆的数学级枷锁。
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：根目录 INDEX 是当前文档导航，历史 PATCH_INDEX 属旧补丁建议，不是并列的现行索引；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: The root INDEX is the current navigation; historical PATCH_INDEX is a retired proposal, not a competing live index. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
+> **[CN]:** Axiom-0 知识体系索引；所有文档严格遵守零熵认知协议 (ZECP) 与不可逆的数学级枷锁；
 > **[EN]:** Axiom-0 Knowledge System Index. All documents strictly adhere to the Zero-Entropy Cognitive Protocol (ZECP) and irreversible mathematical shackles.
 
 ## 0. 提示与自动化 / Prompt and Automation
@@ -57,7 +62,7 @@
 - [2026-06-01 Pipeline Manifest](RESEARCH/daily/2026-06-01-pipeline-manifest.md)
 
 ## 5. 参考实现 / Reference Implementation
-- 位于 `CODE/` 目录，呈现绝对的 DAG 物理作业机制。
+- 位于 `CODE/` 目录，呈现绝对的 DAG 物理作业机制；
 - Located in `CODE/`, presenting absolute DAG physical operational mechanics.
 - [2026-W23 Weekly Manifest](RESEARCH/weekly/2026-W23-weekly-manifest.md)
 - [2026-06 Monthly Manifest](RESEARCH/monthly/2026-06-monthly-manifest.md)

@@ -1,5 +1,10 @@
 # AI Use Disclosure
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：AI 辅助开发与复核须保留人类批准、来源身份和独立执行证据，私有任务提示词不公开；本段仅校准现行阅读方式，不改写历史事实，也不代表已经重新运行验证  
+> **English**: AI-assisted work must retain human approval, source identity, and independent execution evidence; private producer prompts remain private. This note calibrates current reading only; it neither rewrites historical facts nor claims a new verification run
+
+
 AI assistance may be used for drafting, code suggestions, translation, test ideas, source discovery, summarization, and repository review. The human contributor remains accountable for scope, sources, licenses, security, correctness, merge decisions, and every completion claim.
 
 ## Control-plane boundary
