@@ -16,6 +16,11 @@ class BlockedPathsTests(unittest.TestCase):
 
         self.assertEqual(scope_guard.blocked_paths(paths), paths)
 
+    def test_retired_patch_index_protection_follows_archive_location(self):
+        archived = "historical-audits/legacy-index/PATCH_INDEX.md"
+        self.assertEqual(scope_guard.blocked_paths([archived]), [archived])
+        self.assertEqual(scope_guard.blocked_paths([archived], {archived}), [])
+
     def test_allows_each_requested_protected_file_exactly(self):
         paths = ["README.md", "FRONTEND/package.json", "FRONTEND/package-lock.json"]
         cases = (

@@ -10,6 +10,10 @@ Not archived here:
 - current external-maintenance procedure/templates
 - the current maintenance entry point `RESEARCH/monthly/2026-09-13-full-sop-reconciliation.md`
 
+## Legacy index proposal (not an independent audit)
+
+- [`legacy-index/PATCH_INDEX.md`](legacy-index/PATCH_INDEX.md) — preserved byte-for-byte as a historical root-level INDEX patch proposal; it is **not** a second current index, a maintenance run, or an execution receipt. Its original relative links were written for the root path and may not resolve in the archived copy; use [the pinned original root file](https://github.com/lostlight530/Axiom-0/blob/e7adc0a92559945079379733cb8b33fff5c996fb/PATCH_INDEX.md) for location-correct historical navigation. Current authority belongs to [`INDEX.md`](../INDEX.md).
+
 ## Archive classes
 
 1. `01-corrections-and-errata/` — dated corrections to prior interpretations or evidence identity
