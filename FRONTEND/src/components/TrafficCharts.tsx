@@ -126,17 +126,17 @@ export function IntervalLines({
       </div>
       <div className="overflow-x-auto px-3 pb-4">
         <svg className="block h-auto min-w-[580px] w-full" width={WIDTH} height={HEIGHT} viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label={`${cloneLabel} / ${viewLabel}: ${data.length} retained intervals, no daily interpolation`}>
-          <title>{cloneLabel} / {viewLabel} — retained reporting intervals</title>
+          <title>{`${cloneLabel} / ${viewLabel} — retained reporting intervals`}</title>
           <Axis max={max} data={data} />
           <polyline fill="none" stroke="#94a3b8" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" points={coords(data, "views", max)} />
           <polyline fill="none" stroke="#22d3ee" strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" points={coords(data, "clones", max)} />
           {data.map((row, i) => (
             <g key={i}>
               <circle cx={xAt(i, data.length)} cy={yAt(row.clones, max)} r="4" fill="#22d3ee">
-                <title>{row.period}: {cloneLabel} {number(row.clones)}</title>
+                <title>{`${row.period}: ${cloneLabel} ${number(row.clones)}`}</title>
               </circle>
               <circle cx={xAt(i, data.length)} cy={yAt(row.views, max)} r="3.5" fill="#94a3b8">
-                <title>{row.period}: {viewLabel} {number(row.views)}</title>
+                <title>{`${row.period}: ${viewLabel} ${number(row.views)}`}</title>
               </circle>
             </g>
           ))}
@@ -171,7 +171,7 @@ export function RatioLines({
   return (
     <div className="overflow-x-auto px-3 py-3">
       <svg className="block h-auto min-w-[580px] w-full" width={WIDTH} height={HEIGHT} viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label={ariaLabel}>
-        <title>{ariaLabel} — zero views produce a gap, not an inferred ratio</title>
+        <title>{`${ariaLabel} — zero views produce a gap, not an inferred ratio`}</title>
         <Axis max={max} data={data} />
         <line x1={LEFT} x2={WIDTH - RIGHT} y1={yAt(1, max)} y2={yAt(1, max)} stroke="#fb7185" strokeDasharray="6 7" />
         {segments.map((points, i) =>
@@ -180,7 +180,7 @@ export function RatioLines({
         )}
         {data.map((row, i) => row.cloneViewRatio === null ? null : (
           <circle key={i} cx={xAt(i, data.length)} cy={yAt(row.cloneViewRatio, max)} r="3.8" fill="#c4b5fd">
-            <title>{row.period}: C/V {row.cloneViewRatio.toFixed(2)} : 1</title>
+            <title>{`${row.period}: C/V ${row.cloneViewRatio.toFixed(2)} : 1`}</title>
           </circle>
         ))}
       </svg>
