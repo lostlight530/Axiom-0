@@ -16,21 +16,7 @@ import {
   Scale,
   Users,
 } from "lucide-react";
-import {
-  ResponsiveContainer,
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  BarChart,
-  Bar,
-  AreaChart,
-  Area,
-  ReferenceLine,
-} from "recharts";
+import { RepositoryBars, IntervalLines, RatioLines } from "@/components/TrafficCharts";
 
 const translations = {
   en: {
@@ -106,7 +92,7 @@ const translations = {
     trafficIntro: "五个仓库 · 留存统计区间 · 封存后不再追加数据",
     snapshotScope: "固定历史观察 · 非实时数据",
     scopeTitle: "有明确边界的观察窗口",
-    scopeBody: "五仓分别保留的区间序列，截至 2026-08-31。每仓从首个可用的留存区间开始，不把缺失区间当成零",
+    scopeBody: "五仓分别保留的区间序列，截至 2026-08-31；每仓从首个可用的留存区间开始，不把缺失区间当成零",
     metricBoundary: "Repository views 不是 Pages 浏览量，区间 unique 累加不是全局去重人数",
     methodToggle: "查看历史数据的归一化与取整方法",
     chartCompareNote: "Clones 和 Views 分别使用独立的数值轴，两图仓库顺序相同，累计区间覆盖长度可能不同",
@@ -145,17 +131,17 @@ const translations = {
     methodTitle: "统计方法与证据限制",
     methodIntro: "以下定义、聚合规则与证据边界用于解释本页封存数据",
     windowHeading: "观察时间窗口",
-    windowText: "共同项目观察窗口为 2026-02-12 至 2026-08-31，经过 200 天，首尾均计 201 个自然日。各仓从首个留存快照开始统计；缺失的更早区间不视为零",
+    windowText: "共同项目观察窗口为 2026-02-12 至 2026-08-31，经过 200 天，首尾均计 201 个自然日；各仓从首个留存快照开始统计；缺失的更早区间不视为零",
     intervalHeading: "统计区间与时间戳",
-    intervalText: "日期使用 UTC。图表标签表示统计区间结束日期，不是单日总量。统计区间长度不固定，最长不超过两周；最后一个 08/31 数据点覆盖 08/22–08/31",
+    intervalText: "日期使用 UTC；图表标签表示统计区间结束日期，不是单日总量；统计区间长度不固定，最长不超过两周；最后一个 08/31 数据点覆盖 08/22–08/31",
     normalizationHeading: "归一化与取整",
-    normalizationText: "每个仓库先汇总统计区间，再将 ≥10 的计数向下取整到十位，个位数保留。clones、unique 计数和 views 使用相同规则。不逐日取整，也不对五仓合计再次取整；截至 08/21 的历史记录保持不变",
+    normalizationText: "每个仓库先汇总统计区间，再将 ≥10 的计数向下取整到十位，个位数保留；clones、unique 计数和 views 使用相同规则；不逐日取整，也不对五仓合计再次取整；截至 08/21 的历史记录保持不变",
     aggregationHeading: "聚合指标与派生比值",
-    aggregationText: "累计 unique 计数是各统计区间 unique 计数的累加，不是跨区间全局去重后的独立人数；最后一个区间贡献其归一化计数。C/V 为五仓 clones 合计除以五仓 repository views 合计，不是各仓比值的平均。views = 0 时，C/V 未定义",
+    aggregationText: "累计 unique 计数是各统计区间 unique 计数的累加，不是跨区间全局去重后的独立人数；最后一个区间贡献其归一化计数；C/V 为五仓 clones 合计除以五仓 repository views 合计，不是各仓比值的平均；views = 0 时，C/V 未定义",
     snapshotHeading: "快照状态",
-    snapshotText: "本页展示截至 2026-08-31 的最终留存流量快照，不轮询 GitHub，也不追加此后的流量。更早的运行快照不属于本页最终展示",
+    snapshotText: "本页展示截至 2026-08-31 的最终留存流量快照，不轮询 GitHub，也不追加此后的流量；更早的运行快照不属于本页最终展示",
     evidenceHeading: "证据限制",
-    evidenceText: "Repository clones 与 repository views 是两种不同的 GitHub 流量指标。Repository views 不等于 GitHub Pages 访问量。两者及其比值均不能识别访问者是人还是 Bot，不能证明下游使用、访问意图、采用情况或流量变化原因。较高的 C/V 不能证明协议验证、熵变化或因果影响",
+    evidenceText: "Repository clones 与 repository views 是两种不同的 GitHub 流量指标；Repository views 不等于 GitHub Pages 访问量；两者及其比值均不能识别访问者是人还是 Bot，不能证明下游使用、访问意图、采用情况或流量变化原因；较高的 C/V 不能证明协议验证、熵变化或因果影响",
   },
 };
 
@@ -250,48 +236,6 @@ const data: ProcessedData[] = rawData.map((d) => ({
 const formatNumber = (value: number | null | undefined): string => {
   if (value === null || value === undefined) return "—";
   return new Intl.NumberFormat("en-US").format(value);
-};
-
-interface ChartTooltipEntry {
-  color?: string;
-  name?: string;
-  value?: number | null;
-}
-
-interface ChartTooltipProps {
-  active?: boolean;
-  payload?: ChartTooltipEntry[];
-  label?: string;
-}
-
-const CustomChartTooltip: React.FC<ChartTooltipProps> = ({
-  active,
-  payload,
-  label,
-}) => {
-  if (!active || !payload?.length) return null;
-
-  return (
-    <div className="rounded-xl border border-slate-800 bg-slate-950/95 p-4 font-mono text-cyan-50 shadow-xl backdrop-blur-md">
-      <p className="mb-2 border-b border-slate-800 pb-2 text-sm font-bold text-slate-300">
-        {label}
-      </p>
-      {payload.map((entry, index: number) => (
-        <p key={index} className="flex items-center justify-between gap-4 py-1 text-xs">
-          <span className="flex items-center gap-2 text-slate-400">
-            <span
-              className="inline-block h-2 w-2 rounded-sm"
-              style={{ backgroundColor: entry.color }}
-            />
-            {entry.name}
-          </span>
-          <span className="font-bold tracking-wider text-white">
-            {formatNumber(entry.value as number)}
-          </span>
-        </p>
-      ))}
-    </div>
-  );
 };
 
 const MetricCard: React.FC<{
@@ -532,16 +476,8 @@ export default function HistoricalTrafficPage() {
                         {t.clonePanelTitle}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="h-[350px] px-2 pb-4 pt-4 sm:px-4">
-                      <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 4, right: 18, left: 0, bottom: 2 }}>
-                          <CartesianGrid strokeDasharray="3 3" horizontal={false} vertical={true} stroke="#1e293b" />
-                          <XAxis type="number" domain={[0, "auto"]} tick={{ fill: "#91a7bb", fontFamily: "monospace", fontSize: 11 }} axisLine={{ stroke: "#334155" }} tickLine={false} />
-                          <YAxis dataKey="name" type="category" tick={{ fill: "#c4d1df", fontFamily: "monospace", fontSize: 10.5 }} width={144} axisLine={false} tickLine={false} />
-                          <Tooltip content={<CustomChartTooltip />} cursor={{ fill: "rgba(30, 41, 59, 0.38)" }} />
-                          <Bar dataKey="totalClones" name={t.clones} fill="#0ea5e9" radius={[0, 5, 5, 0]} barSize={21} />
-                        </BarChart>
-                      </ResponsiveContainer>
+                    <CardContent className="px-0 pb-2 pt-0">
+                      <RepositoryBars data={unifiedRepoData} metric="totalClones" ariaLabel={t.clonePanelTitle} />
                     </CardContent>
                   </Card>
                   <Card className="chart-surface comparison-card overflow-hidden rounded-2xl border-slate-700/60 bg-slate-900/55 shadow-none">
@@ -551,16 +487,8 @@ export default function HistoricalTrafficPage() {
                         {t.viewPanelTitle}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="h-[350px] px-2 pb-4 pt-4 sm:px-4">
-                      <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 4, right: 18, left: 0, bottom: 2 }}>
-                          <CartesianGrid strokeDasharray="3 3" horizontal={false} vertical={true} stroke="#1e293b" />
-                          <XAxis type="number" domain={[0, "auto"]} tick={{ fill: "#91a7bb", fontFamily: "monospace", fontSize: 11 }} axisLine={{ stroke: "#334155" }} tickLine={false} />
-                          <YAxis dataKey="name" type="category" tick={{ fill: "#c4d1df", fontFamily: "monospace", fontSize: 10.5 }} width={144} axisLine={false} tickLine={false} />
-                          <Tooltip content={<CustomChartTooltip />} cursor={{ fill: "rgba(30, 41, 59, 0.38)" }} />
-                          <Bar dataKey="totalViews" name={t.views} fill="#a78bfa" radius={[0, 5, 5, 0]} barSize={21} />
-                        </BarChart>
-                      </ResponsiveContainer>
+                    <CardContent className="px-0 pb-2 pt-0">
+                      <RepositoryBars data={unifiedRepoData} metric="totalViews" ariaLabel={t.viewPanelTitle} />
                     </CardContent>
                   </Card>
                   </div>
@@ -572,28 +500,8 @@ export default function HistoricalTrafficPage() {
                     <CardTitle className="font-mono text-sm text-white">{t.intervalTitle}</CardTitle>
                     <CardDescription className="font-mono text-xs leading-6 text-slate-400">{t.intervalSubtitle}</CardDescription>
                   </CardHeader>
-                  <CardContent className="h-[360px] p-3 sm:h-[390px] sm:p-5">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <AreaChart data={filteredData} margin={{ top: 10, right: 24, left: 0, bottom: 0 }}>
-                        <defs>
-                          <linearGradient id="cloneArea" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#0ea5e9" stopOpacity={0.3} />
-                            <stop offset="95%" stopColor="#0ea5e9" stopOpacity={0} />
-                          </linearGradient>
-                          <linearGradient id="viewArea" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#64748b" stopOpacity={0.2} />
-                            <stop offset="95%" stopColor="#64748b" stopOpacity={0} />
-                          </linearGradient>
-                        </defs>
-                        <XAxis dataKey="period" tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 11 }} axisLine={{ stroke: "#334155" }} tickLine={false} />
-                        <YAxis tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 11 }} axisLine={false} tickLine={false} />
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#1e293b" />
-                        <Tooltip content={<CustomChartTooltip />} />
-                        <Legend iconType="circle" wrapperStyle={{ fontFamily: "monospace", fontSize: 11 }} />
-                        <Area type="monotone" dataKey="views" name={t.views} stroke="#64748b" fillOpacity={1} fill="url(#viewArea)" strokeWidth={2} />
-                        <Area type="monotone" dataKey="clones" name={t.clones} stroke="#0ea5e9" fillOpacity={1} fill="url(#cloneArea)" strokeWidth={3} activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#0f172a", strokeWidth: 2 }} />
-                      </AreaChart>
-                    </ResponsiveContainer>
+                  <CardContent className="p-0">
+                    <IntervalLines data={filteredData} cloneLabel={t.clones} viewLabel={t.views} />
                   </CardContent>
                 </Card>
               )}
@@ -606,17 +514,8 @@ export default function HistoricalTrafficPage() {
                     <CardTitle className="font-mono text-sm text-slate-200">{t.ratioTitle}</CardTitle>
                     <CardDescription className="font-mono text-xs text-slate-500">{t.ratioChartSubtitle}</CardDescription>
                   </CardHeader>
-                  <CardContent className="h-[250px] p-4">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <LineChart data={filteredData} margin={{ top: 10, right: 16, left: -16, bottom: 0 }}>
-                        <CartesianGrid strokeDasharray="2 2" vertical={false} stroke="#1e293b" />
-                        <XAxis dataKey="period" tick={{ fill: "#64748b", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
-                        <YAxis tick={{ fill: "#64748b", fontSize: 10, fontFamily: "monospace" }} axisLine={false} tickLine={false} />
-                        <Tooltip content={<CustomChartTooltip />} />
-                        <ReferenceLine y={1} stroke="#ef4444" strokeDasharray="3 3" strokeWidth={1} label={{ value: "C = V (reference only)", position: "insideTopLeft", fill: "#ef4444", fontSize: 10, fontFamily: "monospace" }} />
-                        <Line type="stepAfter" dataKey="cloneViewRatio" name="C/V" stroke="#8b5cf6" strokeWidth={2} dot={{ r: 4, fill: "#8b5cf6", strokeWidth: 0 }} />
-                      </LineChart>
-                    </ResponsiveContainer>
+                  <CardContent className="p-0">
+                    <RatioLines data={filteredData} ariaLabel={t.ratioTitle} />
                   </CardContent>
                 </Card>
               </section>
