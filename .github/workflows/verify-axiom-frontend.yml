@@ -45,3 +45,16 @@ jobs:
       - name: Verify frozen data and UI readout via actual SSR module
         working-directory: FRONTEND
         run: node --test tests/final-snapshot.test.mjs
+
+      - name: Browser chart paint and repository interaction (Chrome desktop/mobile)
+        working-directory: FRONTEND
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME_BIN="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME_BIN" ]; then echo "Chromium browser is required for chart UI verification" >&2; exit 1; fi
+          export CHROME_BIN
+          npm run preview -- --host 127.0.0.1 --port 4175 --strictPort > "$RUNNER_TEMP/axiom-preview.log" 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid" 2>/dev/null || true' EXIT
+          node tests/browser-chart-smoke.mjs
