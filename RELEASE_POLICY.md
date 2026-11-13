@@ -1,5 +1,10 @@
 # Release and Archival Policy
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：Git main、特定 release、软件归档 DOI 与逐次执行接收凭据具有不同身份；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: Git main, a specific release, archive DOI, and run receipt have different identities. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 This repository treats `main` as the current repository state and release tags as immutable point-in-time snapshots.
 
 ## Policy

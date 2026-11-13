@@ -11,6 +11,11 @@
 
 # Axiom-0 Engineering Specification
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：本规范描述有界 Python 参考实现，新增文档不能提高原始测试覆盖或构成未执行的能力证明；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: This specification describes bounded Python reference behavior; documentation changes do not upgrade test coverage or prove unexecuted capabilities. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 - Version: 2026.08-r2
 - Calibration: 2026-08-27
 - Status: implemented reference contract

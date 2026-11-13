@@ -11,6 +11,11 @@
 
 # Reproducibility
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：复现以提交、环境、输入、步骤和结果对照为边界，原始 Jules 与新增 GPT Native 证据不得混为一次运行；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: Reproduction requires a pinned revision, environment, input, procedure and result comparison; Jules and later GPT Native evidence are separate runs. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 A result is reproducible only within its recorded input, revision, environment, configuration, and tolerance.
 
 ## Minimum record

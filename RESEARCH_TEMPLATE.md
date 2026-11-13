@@ -1,5 +1,10 @@
 # Research Template / 科研记录模板
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：只用于未来科研记录，不对已冻结时间点的失败、缺失或未验证结论追溯补证；本段是文档解释补充，不替代当前实现、具体测试或历史证据  
+> **English**: For prospective research records only; do not backfill frozen historical failures, absences, or unknown outcomes. This is an interpretive guide, not a replacement for current code, individual tests, or dated evidence
+
+
 Status: prospective research-record template
 Scope: new research records only; durable open-research method is owned by `OPEN_RESEARCH.md`
 
@@ -7,7 +12,7 @@ Scope: new research records only; durable open-research method is owned by `OPEN
 
 English is the canonical/default language of this template. Chinese labels and guidance are provided for accessibility. If bilingual wording diverges, the English instruction governs; repository-native contracts remain authoritative over this template.
 
-英文为本模板的默认与规范语言；中文标签与说明用于辅助理解。若双语表述出现差异，以英文说明为准；仓库原生 contract 对本模板始终具有更高权威。
+英文为本模板的默认与规范语言；中文标签与说明用于辅助理解；若双语表述出现差异，以英文说明为准；仓库原生 contract 对本模板始终具有更高权威；
 
 Historical records are not rewritten by this template
 
