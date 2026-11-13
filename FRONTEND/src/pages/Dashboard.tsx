@@ -42,6 +42,17 @@ const translations = {
     frozenStatus: "FROZEN THROUGH 31 AUG 2026",
     windowSummary: "12 Feb — 31 Aug 2026 · 200 elapsed days · 201 inclusive calendar days",
     trafficIntro: "Five repositories · retained reporting intervals · no post-freeze updates.",
+    snapshotScope: "FIXED HISTORICAL OBSERVATION · NOT LIVE",
+    scopeTitle: "One bounded observation window",
+    scopeBody: "Five separately retained repository series, ending on 31 Aug 2026. Each repository starts at its first available retained interval.",
+    metricBoundary: "Repository views are not Pages visits. Summed interval-level unique counts are not globally distinct visitors.",
+    methodToggle: "How the historical counts were normalized",
+    chartCompareNote: "Clones and views have separate quantitative axes. Both panels retain the same repository order; totals reflect unequal retained coverage.",
+    clonePanelTitle: "Repository clones",
+    viewPanelTitle: "Repository views (not Pages)",
+    methodSourcesTitle: "Inspect the method and underlying source",
+    methodSourceLink: "Source definitions",
+    reproducibilityLink: "Reproducibility record",
     dedupLogicTitle: "Interval normalization",
     dedupLogicDesc: "Sum each reporting interval (up to two weeks) per repository before rounding: floor counts ≥ 10 to tens and preserve single digits. Do not round daily values or the five-repository aggregate. Historical rows through 08/21 are unchanged.",
     finalInterval: "Final retained interval: 08/22–08/31. The same rounding rule applies to clones, unique counts and views.",
@@ -93,6 +104,17 @@ const translations = {
     frozenStatus: "封存至 2026-08-31",
     windowSummary: "2026-02-12 — 2026-08-31 · 经过 200 天 · 首尾均计 201 个自然日",
     trafficIntro: "五个仓库 · 留存统计区间 · 封存后不再追加数据",
+    snapshotScope: "固定历史观察 · 非实时数据",
+    scopeTitle: "有明确边界的观察窗口",
+    scopeBody: "五仓分别保留的区间序列，截至 2026-08-31。每仓从首个可用的留存区间开始，不把缺失区间当成零",
+    metricBoundary: "Repository views 不是 Pages 浏览量，区间 unique 累加不是全局去重人数",
+    methodToggle: "查看历史数据的归一化与取整方法",
+    chartCompareNote: "Clones 和 Views 分别使用独立的数值轴，两图仓库顺序相同，累计区间覆盖长度可能不同",
+    clonePanelTitle: "各仓 Clones 克隆次数",
+    viewPanelTitle: "各仓 Repository Views",
+    methodSourcesTitle: "查看方法与来源依据",
+    methodSourceLink: "原始定义与数据",
+    reproducibilityLink: "可复核性说明",
     dedupLogicTitle: "区间归一化与取整规则",
     dedupLogicDesc: "各仓先汇总不超过两周的统计区间，再将 ≥10 的计数向下取整到十位，个位数保留；不逐日取整，也不对五仓合计再取整；截至 08/21 的历史记录保持不变",
     finalInterval: "最后一个留存区间：08/22–08/31；clones、unique 计数和 views 使用同一规则",
@@ -376,43 +398,54 @@ export default function HistoricalTrafficPage() {
     <div className="traffic-shell min-h-screen bg-slate-950 p-4 font-sans text-slate-300 selection:bg-cyan-900 selection:text-cyan-50 md:p-8">
       <div className="mx-auto max-w-[1400px]">
         <header className="traffic-header mb-7">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl space-y-3">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-500">
-                {t.pageEyebrow}
-              </p>
-              <h1 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-cyan-400">
+              {t.pageEyebrow}
+            </p>
+            <button
+              type="button"
+              onClick={() => setLang(lang === "en" ? "zh" : "en")}
+              aria-label={lang === "en" ? "Switch language to Chinese" : "Switch language to English"}
+              className="language-toggle inline-flex min-h-10 items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-cyan-500/50 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+            >
+              <Globe className="h-4 w-4" aria-hidden="true" />{lang === "en" ? "中文" : "English"}
+            </button>
+          </div>
+          <div className="mt-6 grid items-start gap-7 lg:grid-cols-[minmax(0,1.65fr)_minmax(280px,0.75fr)] lg:gap-10">
+            <div className="min-w-0 space-y-4">
+              <h1 className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-[-0.05em] text-white sm:text-5xl xl:text-[3.4rem]">
                 {t.pageTitle}
               </h1>
-              <p className="max-w-2xl text-sm leading-6 text-slate-400">{t.pageDesc}</p>
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-1">
-                <span className="rounded-full border border-cyan-500/25 bg-cyan-500/10 px-3 py-1 font-mono text-[10px] tracking-wider text-cyan-300">
+              <p className="max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">{t.pageDesc}</p>
+              <div className="flex flex-wrap items-center gap-3 pt-1">
+                <span className="rounded-lg border border-cyan-500/35 bg-cyan-500/10 px-3 py-2 font-mono text-[11px] font-semibold tracking-wide text-cyan-200">
                   {t.frozenStatus}
                 </span>
-                <span className="font-mono text-[11px] text-slate-500">{t.windowSummary}</span>
+                <span className="font-mono text-[11px] leading-6 text-slate-400">{t.windowSummary}</span>
               </div>
             </div>
-
-            <div className="flex w-full flex-col items-end gap-3 lg:w-auto lg:min-w-[430px]">
-              <button
-                type="button"
-                onClick={() => setLang(lang === "en" ? "zh" : "en")}
-                aria-label={lang === "en" ? "Switch language to Chinese" : "Switch language to English"}
-                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-300 transition hover:border-cyan-500/40 hover:text-white"
-              >
-                <Globe className="h-4 w-4" />{lang === "en" ? "中文" : "English"}
-              </button>
-              <Tabs value={mainTab} onValueChange={setMainTab} className="w-full">
-                <TabsList className="grid h-auto w-full grid-cols-2 rounded-xl border border-slate-800 bg-slate-900 p-1 font-mono text-xs">
-                  <TabsTrigger value="traffic" className="min-h-10 rounded-lg px-3 py-2 data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-300">
-                    <Activity className="mr-2 h-4 w-4" />{t.trafficTab}
-                  </TabsTrigger>
-                  <TabsTrigger value="method" className="min-h-10 rounded-lg px-3 py-2 data-[state=active]:bg-slate-800 data-[state=active]:text-purple-300">
-                    <BookOpen className="mr-2 h-4 w-4" />{t.methodTab}
-                  </TabsTrigger>
-                </TabsList>
-              </Tabs>
-            </div>
+            <aside className="scope-panel" aria-label={t.scopeTitle}>
+              <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                {t.snapshotScope}
+              </p>
+              <h2 className="mt-3 text-lg font-semibold tracking-tight text-white">{t.scopeTitle}</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-300">{t.scopeBody}</p>
+              <div className="mt-5 border-t border-slate-700/70 pt-4 font-mono text-[11px] text-slate-400">
+                2026-02-12 <span aria-hidden="true" className="px-2 text-cyan-400">→</span> 2026-08-31
+              </div>
+            </aside>
+          </div>
+          <div className="traffic-mode-nav mt-7 border-t border-slate-700/60 pt-5">
+            <Tabs value={mainTab} onValueChange={setMainTab}>
+              <TabsList role="tablist" aria-label="Traffic and methodology sections" className="grid h-auto w-full max-w-[680px] grid-cols-2 rounded-xl border border-slate-700/75 bg-slate-950/70 p-1 font-mono text-xs">
+                <TabsTrigger value="traffic" className="min-h-11 min-w-0 rounded-lg px-2 py-2 text-xs data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-300 sm:px-4">
+                  <Activity className="mr-2 inline-block h-4 w-4 shrink-0" aria-hidden="true" />{t.trafficTab}
+                </TabsTrigger>
+                <TabsTrigger value="method" className="min-h-11 min-w-0 rounded-lg px-2 py-2 text-xs data-[state=active]:bg-slate-800 data-[state=active]:text-purple-300 sm:px-4">
+                  <BookOpen className="mr-2 inline-block h-4 w-4 shrink-0" aria-hidden="true" />{t.methodTab}
+                </TabsTrigger>
+              </TabsList>
+            </Tabs>
           </div>
         </header>
 
@@ -427,33 +460,29 @@ export default function HistoricalTrafficPage() {
               </div>
             </div>
 
-            <Tabs value={repo} onValueChange={setRepo} className="w-full">
-              <TabsList className="grid h-auto w-full grid-cols-2 gap-1 rounded-xl border border-slate-800 bg-slate-900 p-1 sm:grid-cols-3 xl:grid-cols-6">
-                {repositoryOptions.map((option) => (
-                  <TabsTrigger
-                    key={option.value}
-                    value={option.value}
-                    className="min-h-10 rounded-lg px-2 py-2 text-xs data-[state=active]:bg-slate-800 data-[state=active]:text-cyan-300"
-                  >
-                    {option.label}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-            </Tabs>
+            <div className="repo-switcher" role="region" aria-label={t.allRepositories}>
+              <Tabs value={repo} onValueChange={setRepo} className="w-max min-w-full">
+                <TabsList role="tablist" aria-label={t.allRepositories} className="flex h-auto min-w-max items-center justify-start gap-1.5 rounded-xl border border-slate-700/70 bg-slate-900/75 p-1.5">
+                  {repositoryOptions.map((option) => (
+                    <TabsTrigger
+                      key={option.value}
+                      value={option.value}
+                      className="min-h-10 shrink-0 rounded-lg px-3 py-2 text-xs font-medium data-[state=active]:bg-cyan-500/15 data-[state=active]:text-cyan-200 data-[state=active]:shadow-sm sm:px-4"
+                    >
+                      {option.label}
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
+              </Tabs>
+            </div>
 
-            <Alert className="border-slate-800 bg-slate-900/65 text-slate-200">
-              <Calculator className="h-4 w-4 text-cyan-400" />
-              <AlertTitle className="font-mono text-sm text-slate-100">{t.dedupLogicTitle}</AlertTitle>
-              <AlertDescription className="mt-2 space-y-2 text-sm leading-6 text-slate-400">
-                <p>{t.dedupLogicDesc}</p>
-                <p className="font-medium text-slate-200">
-                  {t.exampleTitle}{lang === "en" ? ": " : "："}{t.exampleDesc}
-                </p>
-                <p>{t.finalInterval}</p>
-              </AlertDescription>
-            </Alert>
 
-            <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4" aria-label="Historical traffic metrics">
+
+            <div className="evidence-ribbon flex items-start gap-3 rounded-xl border border-cyan-500/20 bg-cyan-950/15 px-4 py-3 text-xs leading-6 text-slate-300">
+              <Database className="mt-1 h-4 w-4 shrink-0 text-cyan-400" aria-hidden="true" />
+              <p>{t.metricBoundary}</p>
+            </div>
+            <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4" aria-label="Historical traffic metrics">
               <MetricCard title={t.clones} value={formatNumber(totals.clones)} subtitle={t.clonesSubtitle} icon={Copy} />
               <MetricCard title={t.views} value={formatNumber(totals.views)} subtitle={t.viewsSubtitle} icon={Eye} />
               <MetricCard title={t.uniqueCounts} value={formatNumber(totals.uniqueCounts)} subtitle={t.uniqueCountsSubtitle} icon={Users} />
@@ -465,31 +494,86 @@ export default function HistoricalTrafficPage() {
               <strong className="font-mono text-cyan-300">{formatNumber(totals.finalIntervalUniqueCounts)}</strong>
               <span>{t.finalUniqueNote}</span>
             </div>
+            <details className="method-disclosure group mt-1 rounded-xl border border-slate-700/70 bg-slate-900/45">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-medium text-slate-200 marker:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300">
+                <span className="inline-flex items-center gap-2"><Calculator className="h-4 w-4 text-cyan-400" aria-hidden="true" />{t.methodToggle}</span>
+                <span aria-hidden="true" className="disclosure-chevron text-cyan-400">⌄</span>
+              </summary>
+              <div className="border-t border-slate-800/70 p-3 md:p-4">
+                <Alert className="border-slate-800 bg-slate-900/65 text-slate-200">
+                  <Calculator className="h-4 w-4 text-cyan-400" />
+                  <AlertTitle className="font-mono text-sm text-slate-100">{t.dedupLogicTitle}</AlertTitle>
+                  <AlertDescription className="mt-2 space-y-2 text-sm leading-6 text-slate-400">
+                    <p>{t.dedupLogicDesc}</p>
+                    <p className="font-medium text-slate-200">
+                      {t.exampleTitle}{lang === "en" ? ": " : "："}{t.exampleDesc}
+                    </p>
+                    <p>{t.finalInterval}</p>
+                  </AlertDescription>
+                </Alert>
+              </div>
+            </details>
 
-            <section aria-label={isAllView ? t.comparisonTitle : t.intervalTitle}>
-              <Card className="chart-surface overflow-hidden rounded-2xl border-slate-800 bg-slate-900/55 shadow-none">
-                <CardHeader className="border-b border-slate-800/80 bg-slate-900/35 p-5 md:p-6">
-                  <CardTitle className="flex items-center gap-2 font-mono text-base text-white">
-                    <Activity className="h-5 w-5 text-cyan-400" />
-                    {isAllView ? t.comparisonTitle : t.intervalTitle}
-                  </CardTitle>
-                  <CardDescription className="mt-1 font-mono text-xs leading-5 text-slate-400">
-                    {isAllView ? t.comparisonSubtitle : t.intervalSubtitle}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="h-[390px] p-4 md:p-6">
-                  <ResponsiveContainer width="100%" height="100%">
-                    {isAllView ? (
-                      <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 5, right: 24, left: 12, bottom: 5 }}>
-                        <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#1e293b" />
-                        <XAxis type="number" tick={{ fill: "#64748b", fontFamily: "monospace", fontSize: 11 }} axisLine={false} tickLine={false} />
-                        <YAxis dataKey="name" type="category" tick={{ fill: "#94a3b8", fontFamily: "monospace", fontSize: 11 }} width={150} axisLine={false} tickLine={false} />
-                        <Tooltip content={<CustomChartTooltip />} cursor={{ fill: "rgba(30, 41, 59, 0.4)" }} />
-                        <Legend iconType="rect" wrapperStyle={{ fontFamily: "monospace", fontSize: 11, color: "#94a3b8" }} />
-                        <Bar dataKey="totalClones" name={t.clones} fill="#0ea5e9" radius={[0, 4, 4, 0]} barSize={22} />
-                        <Bar dataKey="totalViews" name={t.views} fill="#64748b" radius={[0, 4, 4, 0]} barSize={12} />
-                      </BarChart>
-                    ) : (
+            <section aria-label={isAllView ? t.comparisonTitle : t.intervalTitle} className="space-y-4">
+              <div className="space-y-1">
+                <h2 className="flex items-center gap-2 text-lg font-semibold tracking-tight text-white">
+                  <Activity className="h-5 w-5 text-cyan-400" aria-hidden="true" />
+                  {isAllView ? t.comparisonTitle : t.intervalTitle}
+                </h2>
+                <p className="text-xs leading-6 text-slate-400">{isAllView ? t.comparisonSubtitle : t.intervalSubtitle}</p>
+              </div>
+              {isAllView ? (
+                <>
+                  <div className="grid gap-4 xl:grid-cols-2">
+                  <Card className="chart-surface comparison-card overflow-hidden rounded-2xl border-slate-700/60 bg-slate-900/55 shadow-none">
+                    <CardHeader className="border-b border-slate-800/75 px-4 pb-3 pt-5 md:px-6">
+                      <CardTitle className="flex items-center gap-2 font-mono text-sm text-white">
+                        <span className="h-2.5 w-2.5 shrink-0 rounded-sm" style={{ background: "#0ea5e9" }} aria-hidden="true" />
+                        {t.clonePanelTitle}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="h-[350px] px-2 pb-4 pt-4 sm:px-4">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 4, right: 18, left: 0, bottom: 2 }}>
+                          <CartesianGrid strokeDasharray="3 3" horizontal={false} vertical={true} stroke="#1e293b" />
+                          <XAxis type="number" domain={[0, "auto"]} tick={{ fill: "#91a7bb", fontFamily: "monospace", fontSize: 11 }} axisLine={{ stroke: "#334155" }} tickLine={false} />
+                          <YAxis dataKey="name" type="category" tick={{ fill: "#c4d1df", fontFamily: "monospace", fontSize: 10.5 }} width={144} axisLine={false} tickLine={false} />
+                          <Tooltip content={<CustomChartTooltip />} cursor={{ fill: "rgba(30, 41, 59, 0.38)" }} />
+                          <Bar dataKey="totalClones" name={t.clones} fill="#0ea5e9" radius={[0, 5, 5, 0]} barSize={21} />
+                        </BarChart>
+                      </ResponsiveContainer>
+                    </CardContent>
+                  </Card>
+                  <Card className="chart-surface comparison-card overflow-hidden rounded-2xl border-slate-700/60 bg-slate-900/55 shadow-none">
+                    <CardHeader className="border-b border-slate-800/75 px-4 pb-3 pt-5 md:px-6">
+                      <CardTitle className="flex items-center gap-2 font-mono text-sm text-white">
+                        <span className="h-2.5 w-2.5 shrink-0 rounded-sm" style={{ background: "#a78bfa" }} aria-hidden="true" />
+                        {t.viewPanelTitle}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="h-[350px] px-2 pb-4 pt-4 sm:px-4">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <BarChart data={unifiedRepoData} layout="vertical" margin={{ top: 4, right: 18, left: 0, bottom: 2 }}>
+                          <CartesianGrid strokeDasharray="3 3" horizontal={false} vertical={true} stroke="#1e293b" />
+                          <XAxis type="number" domain={[0, "auto"]} tick={{ fill: "#91a7bb", fontFamily: "monospace", fontSize: 11 }} axisLine={{ stroke: "#334155" }} tickLine={false} />
+                          <YAxis dataKey="name" type="category" tick={{ fill: "#c4d1df", fontFamily: "monospace", fontSize: 10.5 }} width={144} axisLine={false} tickLine={false} />
+                          <Tooltip content={<CustomChartTooltip />} cursor={{ fill: "rgba(30, 41, 59, 0.38)" }} />
+                          <Bar dataKey="totalViews" name={t.views} fill="#a78bfa" radius={[0, 5, 5, 0]} barSize={21} />
+                        </BarChart>
+                      </ResponsiveContainer>
+                    </CardContent>
+                  </Card>
+                  </div>
+                  <p className="comparison-note text-xs leading-6 text-slate-400">{t.chartCompareNote}</p>
+                </>
+              ) : (
+                <Card className="chart-surface overflow-hidden rounded-2xl border-slate-700/60 bg-slate-900/55 shadow-none">
+                  <CardHeader className="border-b border-slate-800/75 p-5">
+                    <CardTitle className="font-mono text-sm text-white">{t.intervalTitle}</CardTitle>
+                    <CardDescription className="font-mono text-xs leading-6 text-slate-400">{t.intervalSubtitle}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="h-[360px] p-3 sm:h-[390px] sm:p-5">
+                    <ResponsiveContainer width="100%" height="100%">
                       <AreaChart data={filteredData} margin={{ top: 10, right: 24, left: 0, bottom: 0 }}>
                         <defs>
                           <linearGradient id="cloneArea" x1="0" y1="0" x2="0" y2="1">
@@ -509,10 +593,10 @@ export default function HistoricalTrafficPage() {
                         <Area type="monotone" dataKey="views" name={t.views} stroke="#64748b" fillOpacity={1} fill="url(#viewArea)" strokeWidth={2} />
                         <Area type="monotone" dataKey="clones" name={t.clones} stroke="#0ea5e9" fillOpacity={1} fill="url(#cloneArea)" strokeWidth={3} activeDot={{ r: 6, fill: "#0ea5e9", stroke: "#0f172a", strokeWidth: 2 }} />
                       </AreaChart>
-                    )}
-                  </ResponsiveContainer>
-                </CardContent>
-              </Card>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+              )}
             </section>
 
             {!isAllView && (
@@ -558,7 +642,11 @@ export default function HistoricalTrafficPage() {
               <MethodCard index="05" title={t.snapshotHeading} text={t.snapshotText} icon={Database} />
               <MethodCard index="06" title={t.evidenceHeading} text={t.evidenceText} icon={AlertTriangle} className="lg:col-span-2" />
             </div>
-
+            <div className="mt-5 flex flex-wrap items-center gap-3 rounded-xl border border-slate-800/80 bg-slate-900/35 px-4 py-4 text-xs text-slate-400">
+              <span className="font-semibold text-slate-200">{t.methodSourcesTitle}</span>
+              <a className="text-cyan-300 underline decoration-cyan-500/40 underline-offset-4 hover:text-cyan-100" href="https://github.com/lostlight530/Axiom-0/blob/main/FRONTEND/README.md" target="_blank" rel="noopener noreferrer">{t.methodSourceLink}</a>
+              <a className="text-cyan-300 underline decoration-cyan-500/40 underline-offset-4 hover:text-cyan-100" href="https://github.com/lostlight530/Axiom-0/blob/main/REPRODUCIBILITY.md" target="_blank" rel="noopener noreferrer">{t.reproducibilityLink}</a>
+            </div>
           </section>
         )}
 

@@ -24,7 +24,7 @@ test('final snapshot navigation does not expose the older Operations dataset', (
 
 test('the rounding example is introduced once', () => {
   assert.doesNotMatch(html, /Example: Example:/);
-  assert.match(html, /Example: 13 → 10, 19 → 10, 27 → 20/);
+  assert.match(html, /Rounding example: 13 → 10 · 19 → 10 · 27 → 20/);
 });
 
 test('final combined display retains 47,880 and adds only the non-overlapping 2,870', () => {
@@ -43,9 +43,9 @@ test('frozen observation window distinguishes elapsed days from inclusive dates'
 });
 
 test('metrics do not misrepresent repository views or unique sums as people', () => {
-  assert.match(html, /Repository Views/);
-  assert.match(html, /Recorded Unique Counts/);
-  assert.match(html, /Historical counts \+ normalized interval sums/);
+  assert.match(html, /Repository views/);
+  assert.match(html, /Accumulated unique-count sum/);
+  assert.match(html, /Summed interval-level unique counts are not globally distinct visitors/);
   assert.match(html, />13,810</);
   assert.doesNotMatch(html, /Frontend Views|Unique Actors|Entropy Divergence|Deterministic Bypass/);
 });
@@ -54,14 +54,21 @@ test('reporting intervals up to two weeks are rounded only after per-repository 
   assert.match(html, /08\/22–08\/31/);
   assert.match(html, /up to two weeks/);
   assert.match(html, /Sum each reporting interval \(up to two weeks\) per repository before rounding/);
-  assert.match(html, /never round each day/);
+  assert.match(html, /Do not round daily values/);
   assert.doesNotMatch(html, /window uniques unavailable/);
 });
 
 test('observed daily uniques are counted once with their contribution disclosed', () => {
   assert.match(html, />970</);
-  assert.match(html, /Normalized interval unique-count sum/);
-  assert.match(html, /cross-day and cross-repository overlap retained/);
+  assert.match(html, /Final interval unique-count sum/);
+  assert.match(html, /cross-day and cross-repository overlap is retained/);
   assert.match(html, />13,810</);
   assert.doesNotMatch(html, />13,822<|>13,658<|>50,556</);
+});
+
+test('five-repository comparison has separate panels and an explicit non-live scope', () => {
+  assert.match(html, /Repository clones/);
+  assert.match(html, /Repository views \(not Pages\)/);
+  assert.match(html, /Clones and views have separate quantitative axes/);
+  assert.match(html, /FIXED HISTORICAL OBSERVATION · NOT LIVE/);
 });
