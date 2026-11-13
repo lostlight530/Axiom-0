@@ -70,6 +70,12 @@ npm run build
 - [安全策略 / Security policy](SECURITY.md)：私密报告流程、受支持代码与调用方责任； / Private reporting, supported code, and caller responsibilities.
 - [长期维护契约 / Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md)：当前维护与历史保全的公共规则；它不定义运行时能力； / Public maintenance and historical-preservation rules; it does not define runtime capability.
 
+### 日／周／月科研证据与版本快照 / Longitudinal research evidence versus versioned software
+
+**中文**：`RESEARCH/` 的 Daily A1–A4、Weekly A5、Monthly A6 是带来源、运行条件和时间边界的研究记录；图表、指数或某次 KL=0 的参考输入结果，不是全系统零差异证明；阶段展示应保留 canonical 路径、Git revision、输入、测试范围、实际执行状态与缺口；`main` 当前状态、历史日志、发布标签和 Zenodo 版本不能混为同一证据
+
+**English**: Daily A1–A4, Weekly A5 and Monthly A6 in `RESEARCH/` are research records scoped to sources, conditions and periods. A chart, index, or KL=0 for selected fixtures is not universal equivalence. Stage views must retain canonical paths, Git revisions, inputs, actually executed checks, and gaps. Current `main`, historical records, release tags and Zenodo versions are separate evidence identities
+
 ## 7. 限制 / Limitations
 
 **[CN]** 通过样例和检查不能证明语义真值、模型或智能体对齐、性能、通用正确性或生产安全；规范化摘要证明字节级契约，不证明语义等价；KL 散度描述声明分布之间的差异，不判断事实真伪；阈值属于调用方策略；身份、授权、隔离、网络策略、配额、密钥管理、持久幂等和事件响应必须由集成方提供并单独验证；

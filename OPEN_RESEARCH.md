@@ -100,6 +100,12 @@ Unknown, unavailable, unexecuted, and unobserved states stay explicit. Do not pr
 
 These support openness and reuse; they do not establish scientific validity.
 
+### 阶段统计的源身份 / Stage metrics and source identities
+
+在科研阶段总结中，区分 raw fixture/scanner output、已合并 Daily manifest、Weekly/Monthly 汇总、独立审计 observation 与展示层数值；对应 Git SHA、日期窗口、成功／失败／未执行状态以及统计分母必须明确；Jules 历史生产与 GPT Native 后续研究不得混成一次实验，同一证据的重复展示不是独立验证
+
+In longitudinal summaries, separate raw fixture/scanner output, merged Daily manifests, Weekly/Monthly syntheses, independent audit observations, and presentation aggregates. State exact SHA, period, result/failure/not-executed state and denominator. Historical Jules and later GPT Native production do not form a single experiment; repeating an observation is not independent replication
+
 ## Scholarly metadata discipline
 
 Before future scholarly-metadata publication or revision, preserve Canonical Type, One-line Positioning, Primary Domains, Non-goals, accurate structured subjects where supported, and 5–7 defining keywords. Do not rewrite precise technical descriptions for classifier optimization or keyword stuffing.

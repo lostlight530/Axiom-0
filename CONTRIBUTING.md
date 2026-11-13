@@ -37,6 +37,12 @@ For executable behavior:
 
 The Python reference implementation intentionally avoids runtime third-party dependencies. A new dependency requires an explicit technical reason, compatibility impact, threat surface, and rollback path.
 
+### Evidence-chain review / 证据链审查
+
+拟更新长期指标或发布文档时，必须注明原始结果与 aggregate 的差异、观测与归档日期、输入修订、环境、断言范围，以及哪些测试并未运行；索引修复、研究结论、PR 合并、Actions PASS、软件 DOI 都是各自独立的事实，不能通过一个成功标签互相继承
+
+Before updating longitudinal metrics or publication text, specify raw versus aggregate numbers, observation versus archival date, source revision, environment, claim scope and unrun tests. Index repair, scientific conclusion, PR merge, Actions PASS and software DOI are separate facts and cannot inherit correctness from one another
+
 ## Evidence and research changes
 
 Keep source authority, repository implementation, execution evidence, and inference distinct.

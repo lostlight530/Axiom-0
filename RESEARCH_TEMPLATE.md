@@ -86,6 +86,11 @@ State one question that can be contradicted by evidence
 - Support condition:
 - Falsifier:
 
+### 研究记录的时间与发布身份 / Temporal and publication identity
+
+- 中文：声明实验输入与固定样例、源 Git commit、计算／执行命令、观察截止点、原始输出、Weekly/Monthly 继承关系、失败和未知项，并按具体引用对象区分 software concept DOI 与 release-specific DOI；不以已发布 DOI 证明当前测量已通过
+- English: Record input and fixed fixtures, source commit, actual computation/command, cutoff, raw output, Weekly/Monthly inheritance, failures and unknowns; distinguish family concept DOI from version-specific DOI for the object actually cited. DOI publication is not evidence that a current measurement passed
+
 ## Evidence or source basis / 证据基础
 
 For each material source or input record identity, authority, time, supported proposition, limitation, and independence where relevant
