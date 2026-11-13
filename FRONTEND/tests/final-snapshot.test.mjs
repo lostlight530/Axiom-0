@@ -72,3 +72,29 @@ test('five-repository comparison has separate panels and an explicit non-live sc
   assert.match(html, /Clones and views have separate quantitative axes/);
   assert.match(html, /FIXED HISTORICAL OBSERVATION · NOT LIVE/);
 });
+
+test('five-repository totals produce browser-size-independent visible bars', () => {
+  assert.match(html, /role="meter"/);
+  assert.equal((html.match(/role="meter"/g) ?? []).length, 10);
+  assert.doesNotMatch(html, /recharts-responsive-container/);
+});
+
+test('per-repository interval and ratio charts emit explicit SVG dimensions with null gaps', async () => {
+  const { IntervalLines, RatioLines } = await server.ssrLoadModule('/src/components/TrafficCharts.tsx');
+  const points = [
+    { period: 'A', clones: 10, views: 5, cloneViewRatio: 2 },
+    { period: 'B', clones: 7, views: 0, cloneViewRatio: null },
+    { period: 'C', clones: 12, views: 6, cloneViewRatio: 2 },
+  ];
+  const intervalHtml = renderToStaticMarkup(React.createElement(IntervalLines, {
+    data: points, cloneLabel: 'Clones', viewLabel: 'Views',
+  }));
+  const ratioHtml = renderToStaticMarkup(React.createElement(RatioLines, {
+    data: points, ariaLabel: 'C/V',
+  }));
+  assert.match(intervalHtml, /<svg[^>]*width="920"[^>]*height="290"/);
+  assert.match(intervalHtml, /Clones 10/);
+  assert.match(ratioHtml, /zero views produce a gap/);
+  assert.equal((ratioHtml.match(/<polyline/g) ?? []).length, 0, 'null must not bridge unrelated points');
+  assert.equal((ratioHtml.match(/<circle/g) ?? []).length, 4, 'two points and two isolated segment markers');
+});
