@@ -36,8 +36,8 @@
 ## A2 Algebraic Audit — real KL and structural scan gate
 ### Actually executed source-acquisition diagnostic
 - Command: git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD
-- UTC start: 2026-11-14T01:13:44.377106739Z
-- UTC end: 2026-11-14T01:13:44.393922873Z
+- UTC start: 2026-11-14T01:29:21.768118646Z
+- UTC end: 2026-11-14T01:29:21.787992544Z
 - Environment: Linux 6.18.57; Git 2.47.3; Python 3.13.5
 - Exit code: 128
 - stdout: EMPTY / 0 bytes
@@ -45,6 +45,7 @@
 - Category: LOCAL_GIT_REMOTE_DNS_SOURCE_ACQUISITION_FAILURE / NO_COMPLETE_PINNED_WORKTREE
 - GitHub connector source/blob reads were available; those are not a complete executable checkout.
 - This is a failed acquisition command, NOT a measured scanner failure or repository code defect.
+- Continuation evidence correction before merge: the earlier exact 01:13Z timestamp in this unmerged Draft was not independently substantiated by a retained process receipt; this recorded 01:29Z process was actually executed in the current container with the same command and measured exit, stdout, stderr, OS and tool versions.
 
 ### Formal A2 execution states
 - A2 Evidence State: NOT_COMPUTED
