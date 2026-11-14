@@ -1,6 +1,8 @@
 # Plasma Daily Pipeline — 2026-11-14 / A1 remote A2A failure-output boundary; A2–A4 fail closed
 
 ## ZECP Metadata and accountable run identity
+- **Date (UTC):** 2026-11-14
+- Pipeline Status: BLOCKED
 - Repository: lostlight530/Axiom-0
 - Canonical chain: axiom/plasma/A1 → A2 → A3 → A4, Daily
 - Logical date: 2026-11-14 Asia/Shanghai
@@ -12,7 +14,7 @@
 - W46 and November natural monthly remain OPEN / NOT_DUE
 - Prior W45 Weekly and October A6 were read as historical/current evidence context; their success or failures are not this run's scanner evidence
 
-## A1 — source archaeology and bounded protocol hypothesis
+## A1 Digital Archaeology — source archaeology and bounded protocol hypothesis
 ### SOURCE-20261114-P01 — failed A2A task must not become downstream workflow output
 - Publisher: google/adk-python
 - Exact source identity: google/adk-python@f67cc356cd31775a75f9a8e7aae30cc86b00bcf8
@@ -31,7 +33,7 @@
 - H-20261114-P02 / REQUIRES_FORMAL_EXECUTION: an A2A state serialization variation (legacy hyphenated vs proto enum) can change a gate's accepted states without changing logical task semantics.
 - Neither hypothesis is an accepted Plasma protocol decision, executable proof or ADR.
 
-## A2 — real KL and structural scan gate
+## A2 Algebraic Audit — real KL and structural scan gate
 ### Actually executed source-acquisition diagnostic
 - Command: git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD
 - UTC start: 2026-11-14T01:13:44.377106739Z
@@ -45,18 +47,19 @@
 - This is a failed acquisition command, NOT a measured scanner failure or repository code defect.
 
 ### Formal A2 execution states
+- A2 Evidence State: NOT_COMPUTED
 - python3 scan_kl_divergence.py: NOT_EXECUTED; input set, numerical KL, unit, stdout/stderr and exit: NOT_COMPUTED
 - python3 scan_consistency.py: NOT_EXECUTED; structural/JSON output, stdout/stderr and exit: NOT_COMPUTED
 - A2 formal gate: BLOCKED_BEFORE_FORMAL_SCAN
 - Reusing an old PASS or separately synthesizing a KL number is prohibited.
 
-## A3 — bounded reference execution
+## A3 Sandbox Stress Test — bounded reference execution
 - Gate: formal A2 not satisfied
 - Reference test command/execution: NOT_EXECUTED
 - Revision, test denominator, pass/fail totals, stdout/stderr/exit: NOT_COMPUTED
 - No completed attempt, effect identity or counterexample experiment claimed
 
-## A4 — topology and index alignment
+## A4 Topology and Index Alignment — topology and index alignment
 - Formal INDEX/PATCH_INDEX alignment: NOT_EXECUTED / NOT_ASSESSED
 - No writes to current indices, SPECIFICATION, ADR, CODE, schemas, methodology, workflows or original manifests
 
