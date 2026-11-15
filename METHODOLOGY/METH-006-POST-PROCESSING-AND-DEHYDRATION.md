@@ -47,3 +47,11 @@ Do not claim successful canonicalization when serialization failed, non-finite v
 ## Evidence boundary
 
 Matching canonical bytes or digest establishes byte-level identity under the same serialization contract. It does not establish semantic equivalence, factual truth, authorization, freshness, or provenance.
+
+## Exact serialization contract and adversarial examples
+
+`canonical_json` calls `json.dumps(..., ensure_ascii=False, allow_nan=False, sort_keys=True, separators=(",", ":"))`. The resulting UTF-8 bytes, not a semantic representation of the world, are hashed by `stable_digest` with SHA-256. Permuting mapping key insertion order should preserve the canonical serialization under this implementation; changing a string's case or punctuation should not. Python JSON numeric representation is part of the chosen serialization contract; never silently equate distinct numeric/string types or use the digest as source authentication.
+
+The digest is **not** a durable run identifier. In `CODE/nexus_core.py`, `run_id = stable_digest({"input": input_payload, "events": events})`; each event includes `utc_now()`. Two equivalent inputs can therefore have different run IDs while their separately computed `input_digest` matches. When a research claim is about input identity, cite `input_digest`; when about one emitted event trace, use `run_id` with the observed events.
+
+An implementation change to serialization rules, float behavior, or trace fields changes identity meaning and requires explicit version comparison; matching hashes from different normalization contracts cannot be assumed comparable.
