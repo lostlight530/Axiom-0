@@ -66,3 +66,9 @@ The distillation is incomplete when:
 ## Evidence boundary
 
 This methodology produces a documentary decision record. It does not execute or enforce that decision by itself.
+
+## Worked source-to-decision example: T-09 data flow
+
+Problem: the phrase "coherence gate" could be interpreted as validation of caller-supplied distributions. Inspect `CODE/nexus_core.py`: `_dehydration_pipeline` produces only `canonical_payload` and `input_digest`; no branch populates `state["distribution"]`; T-09 therefore takes its fixed fallback. The bounded decision is **do not attribute arbitrary input-coherence checking to this reference pipeline**. The related independent `kl_divergence` utility remains a valid separately callable numerical function.
+
+A future ADR would require a genuine design choice about what caller field or validated schema reaches T-09, who owns the expected vector, what happens on malformed input, and how failure evidence is retained. A proposed fix is not an accepted implemented contract. This worked example separates code observation, implementation gap, and future design rather than converting a plausible capability into an ADR by wording alone.
