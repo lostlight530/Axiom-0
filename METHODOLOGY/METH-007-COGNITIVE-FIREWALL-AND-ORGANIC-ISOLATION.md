@@ -59,3 +59,9 @@ The method fails when documentation claims local credential scoping, tool allowl
 ## Evidence boundary
 
 This methodology is a claim-control boundary only. It does not provide the missing security mechanism.
+
+## Concrete threat-model boundary
+
+`CODE/nexus_core.py` accepts a JSON-serializable payload but performs no trust-origin classification or prompt-injection discrimination; `CODE/contracts.py` rejects certain numeric structures but does not inspect adversarial instructions. `AxiomMorphingEngine` optional hooks are caller-provided callables, not capability-restricted executors. They can perform side effects outside the local state, and `shift()` has no compensating rollback of those effects.
+
+A genuine future security claim requires an explicit actor/credential/target model, a tool-execution enforcement point, untrusted-content propagation rules, denial receipts and negative tests. Documenting these as absent avoids the false inference that deterministic JSON or an `asyncio.Lock` is an isolation boundary.
