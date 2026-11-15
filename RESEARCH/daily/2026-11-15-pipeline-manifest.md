@@ -44,7 +44,7 @@ for n in (1, 10, 100):
     once = n
     print(f'completed_outputs={n} naive_reemit_copies={naive} identity_gated_copies={once} amplification={naive/once:.1f}x')
 ```
-- Actually executed 2026-11-15T06:56:21Z; exit 0; stderr EMPTY.
+- Corrected actual execution receipt: 2026-11-15T07:07:25.539970166Z to 2026-11-15T07:07:26.479438531Z UTC; Python exit 0; stderr EMPTY. The earlier Draft's 06:56:21Z instant was not supported by a retained execution receipt and is NOT credited as an observed original run. The process was rerun during independent review before merge.
 - Actual stdout:
 ```text
 completed_outputs=1 naive_reemit_copies=1 identity_gated_copies=1 amplification=1.0x
@@ -58,7 +58,7 @@ completed_outputs=100 naive_reemit_copies=5050 identity_gated_copies=100 amplifi
 ### Actually executed acquisition diagnostic
 - Command: `git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD`
 - Environment: Linux 6.18.57; Git 2.47.3; Python 3.13.5
-- UTC start: 2026-11-15T06:53:02Z; UTC end: 2026-11-15T06:53:02Z
+- Corrected actual acquisition receipt: 2026-11-15T07:07:20.493467528Z to 2026-11-15T07:07:20.510185707Z UTC. The Draft's earlier 06:53:02Z timing was not independently recorded; its historical Git revision remains inspectable, but no earlier run is claimed.
 - Exit code: 128; stdout: EMPTY / 0 bytes
 - stderr: `fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com`
 - Classification: LOCAL_GIT_REMOTE_DNS_ACQUISITION_FAILURE / NO_EXECUTABLE_PINNED_WORKTREE.
