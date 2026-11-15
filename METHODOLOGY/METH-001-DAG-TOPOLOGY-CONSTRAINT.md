@@ -59,3 +59,11 @@ Use an incomplete/unknown state rather than filling gaps when:
 This method can establish the event order and outputs observed for one reference-core run.
 
 It does not establish durable workflow persistence, external-effect idempotency, compensation, distributed scheduling, global convergence, or future-run correctness.
+
+## Source-path counterexample: pipeline order does not imply input-sensitive validation
+
+At source revision `555ed4ea5c2a7bec99e86e595147c1c53f1d9086`, `run_continuum` initializes state through `_dehydration_pipeline`, which contains only `canonical_payload` and `input_digest`. T-09 asks for `state.get("distribution", default)` although no earlier stage populates that key. **Stage execution order therefore cannot prove user-supplied distribution validation.** Inspect T-09's input data flow separately from the T-01–T-10 event sequence.
+
+A useful negative fixture is an input mapping with a deliberately non-identity `distribution` alongside a control mapping without that field. The expected **source-derived hypothesis** is that both orchestration paths use the same default T-09 comparison; the independent `kl_divergence` function would differ for the explicitly supplied non-identity pair. Do not report this as an executed fixture unless a revision-matched run is retained.
+
+`run_id` hashes emitted events containing UTC observation timestamps, so it is a trace identity and not evidence that two identical inputs will receive one fixed identifier. On exceptions the function raises without returning the accumulated `events` list; successful-run topology and failure-path evidence availability are different questions.
