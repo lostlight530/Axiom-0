@@ -50,3 +50,9 @@ The method fails when a generated sentence is treated as evidence for itself, wh
 ## Evidence boundary
 
 Provenance explains where content came from. It does not establish that the content is true, safe, or implemented.
+
+## Origin-versus-support test case
+
+A generated description of "automatic semantic deduplication" is unsupported as local implementation: `stable_digest` hashes canonical JSON bytes but no deduplication store, collision-resolution workflow, merge policy or semantic matcher exists in the inspected core. The proper public representation separates (1) generated authoring origin when known, (2) claim `PROPOSED` or `HYPOTHESIS`, (3) absent local implementation, and (4) a reviewable future test plan.
+
+Do not use a digested generated sentence as evidence that its proposition is true. Content identity and external/source support are independent axes even if the generated record is reproducible byte for byte.
