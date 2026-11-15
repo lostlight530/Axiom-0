@@ -87,4 +87,4 @@ For a meaningful replay comparison, pin the code commit, interpreter, fixture by
 
 From a checkout of the exact revision under review, relevant available commands include `python -m unittest discover -s tests -v`, `python scan_kl_divergence.py`, `python scan_consistency.py`, and `bash test_100.sh`. Their presence here is a **procedure**, not a statement that they were executed for this documentary update. Record `NOT_EXECUTED` for every unrun check, preserve failing outputs, and retain the original Native manifest state separately.
 
-The only artifact changed by this calibration is this current reproducibility document. No reference-code behavior, automation contract, historical Daily record, or published archive is amended.
+This reproducibility section is consolidated into the wider repository-native professional-document correction PR. It changes no reference-code behavior, automation contract, historical Daily record, or published archive.
