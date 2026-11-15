@@ -59,3 +59,13 @@ The method fails when a generic threshold is asserted without a source, when one
 ## Evidence boundary
 
 Thresholds classify under their declared rule. They do not independently validate the world-state or the correctness of the underlying model.
+
+## Threshold precedence and unreachable caller-distribution gate
+
+Current source has three separate thresholds with different units and decision owners:
+
+1. `AxiomOrchestrator.divergence_limit` defaults to `0.05` **nats** and is compared against T-09's scalar with `>`. In the current orchestration data path, T-09 compares the same default vector to itself because the state has no caller-populated `distribution` key. Consequently the threshold does not currently enforce a policy on the caller's probability data.
+2. `AxiomMorphingEngine.DEFAULT_THRESHOLDS[LOAD_THRESHOLD]` is `0.85` for `load_score = 0.7 * max(cpu_percent,memory_percent) + 0.3 * min(queue_depth/100,1)`; it is a dimensionless **local selection heuristic**.
+3. `DEFAULT_THRESHOLDS[ENTROPY_ALERT]` is `0.30` for caller-provided `SystemMetrics.entropy_level`; the code checks this before load, with a strict greater-than. The low-load return-to-SOLID branch uses a distinct fixed `0.30` comparison on `load_score`, not the entropy-alert measurement.
+
+A proposal to treat these as one universal "coherence" threshold mixes two different input dimensions and a currently fixed-fixture KL integration. State the input field, source revision, comparator, boundary equality, and observed or unobserved result for any threshold claim. This section is source-path analysis, not a run receipt.

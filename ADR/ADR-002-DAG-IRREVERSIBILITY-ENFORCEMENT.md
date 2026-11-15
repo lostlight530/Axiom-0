@@ -58,3 +58,9 @@ It cannot by itself establish:
 ## External-effect boundary
 
 The reference core does not implement external side-effect idempotency or compensation. An embedding system that adds consequential effects owns those semantics separately.
+
+## Current pipeline identity and failure surface (2026-11-15)
+
+In `CODE/nexus_core.py` the next stage is reached by iterating over the fixed `self.nodes` tuple; this is **linear control flow**, not a graph scheduler with edges or durable checkpoints. At T-09 a configured KL limit may raise `RuntimeError`; the accumulated event list is then not returned by `run_continuum`. A caller needs separate exception/instrumentation evidence to reconstruct incomplete execution.
+
+The returned `run_id` hashes the event records including `observed_at` timestamps. It identifies a serialized single-run trace rather than a stable idempotency key, and provides no exactly-once or compensation guarantee. T-09 also currently uses its fallback distribution, so stage completion is not evidence of testing arbitrary input distribution values.

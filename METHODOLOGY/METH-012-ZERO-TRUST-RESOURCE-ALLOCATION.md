@@ -69,3 +69,9 @@ The method fails when documentation claims quota enforcement, cost control, conc
 ## Evidence boundary
 
 A recorded CPU/memory scalar can describe one input value. It cannot prove that the repository constrained the underlying resource.
+
+## Observable metrics are not allocated resources
+
+`SystemMetrics.load_score` is computed from caller-provided `cpu_percent`, `memory_percent` and `queue_depth`, with formula `0.7 * max(cpu,memory) + 0.3 * min(queue_depth/100, 1)`. `active_tasks` is validated but does not enter the `load_score` expression. Neither `evaluate_morph` nor `shift` allocates CPU or memory, polls an OS resource controller, cancels tasks or enforces a budget.
+
+For a genuine quota-enforcement claim, identify the operating-system or scheduler enforcement API and report a resource-oversubscription failure case. The present implementation can at most make a local state-label selection from reported scalar inputs.

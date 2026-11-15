@@ -59,3 +59,9 @@ The method fails when documentation claims agent-to-agent messaging, consensus, 
 ## Evidence boundary
 
 This methodology limits claims; it does not implement collaboration.
+
+## Minimal missing contracts for collaboration
+
+The `AxiomOrchestrator` uses one local `self.nodes` tuple and an injected `metrics_provider` callback. Neither is an inter-agent protocol. There is no agent identifier, sender identity, message schema, permission grant, delegate task ID, message delivery receipt, ordering guarantee across participants, or distributed failure reconciliation in `CODE/**`.
+
+A future collaboration experiment must distinguish deterministic serialization of a message payload from deterministic execution of multiple participants. A reproducible scenario would identify at least two independently executed actors and show identity-bound message ordering, loss/retry behavior and conflict disposition. These remain `NOT_IMPLEMENTED`, not untested built-in features.

@@ -84,3 +84,11 @@ Verification is limited to the retained vectors or named fixture, normalization 
 Historical `identity` and `renormalized_identity` cases therefore remain case-specific evidence. A field such as `Actual Input Range: 0.0 to 0.0` is output/result-like wording and must not substitute for the actual input vectors or named case identity.
 
 A weekly summary may preserve a Daily scalar only when the scalar is actually present in the contributing evidence. Missing numerical evidence remains `MISSING_DATA` or `NOT_COMPUTED` rather than being reconstructed from a pass/fail label.
+
+## Numerical edge cases and integration boundary
+
+The implemented `normalize_distribution` accepts a non-empty sequence of finite non-negative integer/float values, excludes Boolean scalars and zero total mass, then divides by a `math.fsum` total. `kl_divergence` compares **the normalized distributions** and uses the natural logarithm. A strictly positive P coordinate with zero Q support returns `math.inf`; a zero P coordinate contributes no term. The implementation also maps a computed result whose absolute magnitude is below `1e-15` to exactly zero; a reported `0.0` is therefore subject to that numerical rounding rule rather than a theorem of symbolic distribution identity.
+
+For a future revision-matched fixture, distinguish: (a) proportional vectors with equal normalized distributions, (b) unequal finite distributions, (c) one-sided support mismatch, and (d) rejected NaN, negative, Boolean, empty or zero-mass inputs. Retain the actual vector pair, order, unit, tolerance policy and exception type.
+
+**Integration limitation:** `AxiomOrchestrator.run_continuum` does not currently thread a caller-supplied probability vector into T-09; `state.get("distribution", ...)` falls back to its hard-coded identity fixture. Thus even a correct `kl_divergence` calculation inside the core is not evidence that the pipeline checked the caller's intended distribution. This conclusion is from static source inspection, not a claimed new execution.

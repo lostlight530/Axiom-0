@@ -157,7 +157,9 @@ Not supported:
 
 `AxiomOrchestrator.run_continuum(input) -> dict` emits the reference T-01 through T-10 path for a successful run.
 
-The returned run ID is a local identifier, not a distributed idempotency key or durable transaction identifier.
+The returned run ID is a local event-trace identifier: its SHA-256 input includes wall-clock `observed_at` event timestamps. It is not a stable digest of the raw caller input, not a distributed idempotency key, and not a durable transaction identifier. For canonical caller input identity use the separately emitted `input_digest`.
+
+T-09 invokes `kl_divergence` on the internal state distribution and its fixed baseline, but `_dehydration_pipeline` does not copy any caller-supplied distribution into that state. In the current implementation T-09 therefore uses the fixed fallback vectors and cannot demonstrate caller-distribution coherence; the independent numerical API must be evaluated separately.
 
 ## Daily / Weekly / Monthly evidence SOP
 
@@ -222,7 +224,7 @@ The current August stage authority is `RESEARCH/monthly/2026-08-through-27-stage
 
 ## Error and ownership boundary
 
-Invalid caller data raises `TypeError` or `ValueError` where explicit input validation applies. A configured KL coherence violation raises `RuntimeError` in the reference orchestrator.
+Invalid caller data raises `TypeError` or `ValueError` where explicit input validation applies. The reference orchestrator contains a `RuntimeError` branch for a T-09 computed divergence greater than `divergence_limit`; however its **current** T-09 vectors are both the fixed default `[0.1, 0.2, 0.7]` because no earlier branch populates `state["distribution"]`. This branch cannot currently be triggered merely by changing the caller's supplied payload distribution. Describing the branch is not evidence that an input-sensitive coherence guard is implemented.
 
 The library does not establish authentication, authorization, isolation, secret management, network policy, quotas, durable retries, or incident handling.
 
@@ -244,3 +246,18 @@ English: This specification describes Python reference behavior, while declared 
 File presence alone is not execution evidence. Later success does not erase earlier failure, missing fields, blocked states, or chronology conflicts.
 
 Python-version compatibility is revision/environment-specific and is asserted only when the relevant executable behavior was actually observed and retained.
+
+## 2026-11-15 source-path calibration: T-09 and run identity
+
+This section describes the checked source path, **not** a newly executed test. At the inspected main revision `555ed4ea5c2a7bec99e86e595147c1c53f1d9086`:
+
+- `AxiomOrchestrator._dehydration_pipeline(input_payload)` creates a new state containing exactly `canonical_payload` and `input_digest`. It does **not** copy `input_payload["distribution"]` or another caller-supplied KL vector into `state`.
+- The only other branch modifying that state before T-09 is T-04, which writes `morph`. Consequently T-09's `state.get("distribution", [0.1, 0.2, 0.7])` takes the default distribution on this code path, comparing it with the same expected distribution.
+- Therefore T-09 on the present reference path is a **fixed-identity KL check**, not an input-sensitive coherence validator. A successful T-09 or low `kl_nats` does not establish coherence of the supplied payload. `calculate_kl_divergence(p,q)` and `scan_kl_divergence.py` are **separate**, input-sensitive numerical surfaces; they must not be confused with orchestration's T-09 wiring.
+- The `run_id` digest is calculated from the input **and the emitted events**, whose `observed_at` values come from `utc_now()`. It identifies that serialized event trace; it is not a stable content-addressed ID for a logically identical input across repeated runs.
+- `AxiomMorphingEngine` is an in-memory object. Its history is appended after a shift attempt; no durable storage, cross-process recovery, or external effect transaction is defined by this reference.
+- `AxiomMorphingEngine.evaluate_morph` checks entropy alert first (`entropy_level > 0.30` by default), then high load (`load_score > 0.85`), then recovery (`load_score < 0.30`). These are strictly ordered and use **strict** inequalities; crossing a threshold is heuristic classification, not an optimality or safety proof.
+
+**Minimal falsification design (not executed in this documentation revision):** run two `run_continuum` calls with identical serializable structure but different user-supplied `distribution` fields; capture T-09 `kl_nats`, then separately call `calculate_kl_divergence` on the two distinct vector pairs. Compare the external numeric function with the orchestration result. Record revision, fixture, stdout, exception/exit and environment before calling this an observed test. Changing orchestration to consume supplied vectors would be a separate behavior change requiring code, tests and an updated specification, not a documentation-only correction.
+
+**Proof boundary:** the path and data-flow observations above are based on source inspection. No command was executed as part of this prose correction; runtime replay status remains `NOT_EXECUTED`.

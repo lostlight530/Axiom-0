@@ -52,3 +52,9 @@ A successful calculation establishes only the numeric result for the supplied ve
 It does not establish semantic truth, safety, or system-level convergence.
 
 `scan_kl_divergence.py` is one measurement surface over named cases; it is not a general proof of repository correctness.
+
+## Numeric conformance details from the current function
+
+`CODE/contracts.py` rejects bool values explicitly despite Python's `bool` subclassing `int`; rejects non-finite and negative values; and requires strictly positive total mass. After normalization, a P-positive/Q-zero support mismatch returns `+∞` without smoothing. The scalar result is clamped to `0.0` if its absolute magnitude is less than `1e-15`, a numerical output convention that must not be converted into exact symbolic equality of input measures.
+
+There is no caller-payload distribution normalization at the T-09 integration point in `run_continuum`; correct validation inside `kl_divergence` does not show that the orchestration path passed the intended external vectors. Document the function and call site as different units of evidence.

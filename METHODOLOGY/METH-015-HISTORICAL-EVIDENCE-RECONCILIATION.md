@@ -153,3 +153,9 @@ LATER_WEEKLY_SUCCESSOR = INPUT_VISIBLE_ON_POST_DAILY_MAIN
 ```
 
 Neither state erases the other. This procedure is documentary reconciliation; it does not replay the original task or manufacture missing execution.
+
+## Code-claim reconciliation example unrelated to cadence
+
+For any historical statement that T-09 validated arbitrary caller input, preserve the dated statement and inspect `CODE/nexus_core.py` at the revision actually observed then. The currently inspected revision `555ed4ea5c2a7bec99e86e595147c1c53f1d9086` routes T-09 through the fixed fallback because `state["distribution"]` is not assigned. This **current source fact** does not establish the same data flow for an uninspected earlier commit.
+
+A legitimate current reconciliation should separately record the older source revision (if recoverable), the exact claim, the present source counterexample, and whether any historical execution trace exists. If the earlier revision is unavailable, mark past behavior `UNRESOLVED`; do not backfill a new test or assert the old claim was false at its original cutoff.

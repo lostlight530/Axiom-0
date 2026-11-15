@@ -84,3 +84,13 @@ METH-015 now treats exact base revision and exact branch/ref identity as first-c
 BRANCH_SNAPSHOT_VISIBILITY
 != EVENTUAL_MAIN_VISIBILITY
 ```
+
+## 2026-11-15 source-code interpretation note
+
+The method membership above is unchanged. A source-level comparison of `CODE/nexus_core.py`, `CODE/contracts.py` and `CODE/liquid_morphing.py` sharpens three independent research questions:
+
+1. **Numerical primitive:** METH-002 correctly defines input-sensitive `D_KL(P||Q)` when given explicit vectors.
+2. **Orchestration integration:** METH-001 and METH-010 must not imply that T-09 consumed user-supplied distributions; the current state construction makes T-09 a fixed fallback comparison.
+3. **Identity and transitions:** METH-006 distinguishes stable `input_digest` from timestamp-bearing `run_id`; method-level transition and evidence claims stay local to the in-memory reference behavior.
+
+These are code-inspection findings, not new execution evidence. The indexed method definitions remain the owners of their procedures.

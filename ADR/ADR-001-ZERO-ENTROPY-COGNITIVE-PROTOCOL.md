@@ -59,3 +59,9 @@ The project keeps its conceptual vocabulary while research and engineering claim
 ## Non-implementation boundary
 
 Axiom contains no global entropy monitor, no cognitive-state estimator, and no mechanism that proves “zero entropy” for the repository or an external agent system.
+
+## Current data-flow implication (2026-11-15)
+
+The independent `kl_divergence` function is a meaningful numeric measurement, but the current `run_continuum` T-09 path does not propagate `input_payload["distribution"]` to the state it checks. That branch reads a fixed fallback and evaluates an identity pair. A T-09 success cannot be used to claim measured entropy or coherence of an arbitrary supplied input. `SystemMetrics.entropy_level` remains a distinct caller-supplied heuristic scalar.
+
+A future implementation that consumes supplied distributions must define how input is parsed and validated, the expected distribution's identity, and the evidence of false/invalid inputs. This decision record does not silently amend executable behavior. Source interpretation only; new execution `NOT_EXECUTED`.

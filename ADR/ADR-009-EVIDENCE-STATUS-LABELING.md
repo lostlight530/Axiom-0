@@ -50,3 +50,13 @@ A current successful result does not automatically retire a historical failure o
 ## Current interpretation rule
 
 When a later erratum/reconciliation narrows a historical claim, the historical artifact remains evidence that the original statement existed, while the affected proposition may become `RETIRED`, `CONTESTED`, or replaced by a narrower current state.
+
+## Claim classification worked example
+
+- `OBSERVED` only with an actual retained run/fixture and its output, or a narrowly declared code-inspection observation when the claim is explicitly about source structure.
+- `SUPPORTED` within a **source inspection** claim: T-09 takes its hard-coded fallback because no prior branch creates the requested `distribution` key in the state.
+- `CONTESTED` / `SOURCE_CLAIM_MISMATCH`: a generic "input coherence gate" description contradicted by that path.
+- `PROPOSED`: consuming caller distributions in a future T-09 design.
+- `NOT_EXECUTED`: this documentation correction did not execute a new fixture.
+
+Use the actual claim unit and evidence surface, not one blanket status for an entire module.
