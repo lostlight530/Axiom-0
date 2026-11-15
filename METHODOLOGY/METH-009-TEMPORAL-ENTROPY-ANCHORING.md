@@ -52,3 +52,9 @@ Use an unresolved state when timestamp precision is insufficient, the version/da
 Correct chronology strengthens provenance. It does not establish semantic correctness by itself.
 
 The August 19 record, where a persisted check time precedes the cited source release time, remains the canonical `TEMPORAL_PROVENANCE_CONFLICT` example for this repository.
+
+## Clock evidence in the implementation
+
+`utc_now()` returns a UTC ISO timestamp with microseconds. The T-01–T-10 events and morphing `history` use this wall-clock function; no monotonic clock, trusted timestamp authority or cross-host synchronization contract is present. A temporal ordering inferred from these strings therefore describes local event emission order, not distributed causality or cryptographically attested history.
+
+The `run_id` digest includes emitted event timestamps, so it cannot replace a stable fixture/input identity. For a cross-run comparison retain both `input_digest` and trace/event identity plus execution environment and observation timing; identical input digests do not imply same recorded event trace. No new time-source experiment was executed for this clarification.
