@@ -52,3 +52,9 @@ The review is incomplete when the citation does not support the proposition, an 
 ## Evidence boundary
 
 Groundedness review can bound what the evidence supports. It does not make the cited source infallible or prove untested local behavior.
+
+## Source-to-claim counterexample: coherence gate
+
+Candidate proposition: "The T-09 step verifies the caller's distribution." The code evidence does not support it. `_dehydration_pipeline` writes canonical payload/digest only, and `run_continuum` reads `state.get("distribution", default)` at T-09 without first setting the key; that T-09 check is a fixed identity comparison. The separately exposed `calculate_kl_divergence(p, q)` is genuinely input-sensitive but is a different calling surface.
+
+Disposition: **SOURCE_CLAIM_MISMATCH** for the broad orchestration proposition, while the narrower source-based statement "T-09 invokes the KL function on its internal fallback vectors" is supportable. Promoting either claim to a newly observed runtime result requires a fixture and retained execution record.
