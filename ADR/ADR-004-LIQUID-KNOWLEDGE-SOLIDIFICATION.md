@@ -56,3 +56,11 @@ It does not prove:
 ## Caller boundary
 
 Embedding systems own real readiness checks, external state persistence, resource isolation, and consequential side effects.
+
+## State-transition precedence and negative cases (2026-11-15)
+
+`evaluate_morph` checks entropy alert **before** load: `entropy_level > 0.30` selects PLASMA if not already there; otherwise `load_score > 0.85` can advance SOLID→LIQUID or LIQUID→GAS; otherwise `load_score < 0.30` resets a non-SOLID state to SOLID. Equality is not enough to trigger those branches. `load_score` depends on normalized CPU/memory maxima and capped queue depth, not on a measured global entropy model.
+
+`shift` holds an `asyncio.Lock` across optional `prepare` and `validate` callbacks and local state assignment. If a callback raises an `Exception`, the source state remains and an error type is recorded in history, but the exception propagates. A same-state request returns `False` before adding a history entry. The lock is process/object-local; none of these transitions provides durable state or compensates effects a callback might have performed before raising.
+
+These are static code-path claims. A runtime behavior change or side-effectful hook should be evaluated independently; no new test is implied by this amendment.
