@@ -17,13 +17,13 @@
 
 ## 状态 / Status
 
-[CN] 已接受；替代同名文件中的绝对化表述。
+[CN] 已接受；替代同名文件中的绝对化表述
 
 [EN] Accepted. This decision supersedes absolute or unverifiable language previously present in this file.
 
 ## 背景 / Context
 
-[CN] Axiom 的 Python 模块实现了一组明确的参考合约，但并不提供完整智能体运行时、身份系统、持久化服务、分布式协调、隔离或生产遥测。
+[CN] Axiom 的 Python 模块实现了一组明确的参考合约，但并不提供完整智能体运行时、身份系统、持久化服务、分布式协调、隔离或生产遥测
 
 [EN] Axiom's Python modules implement explicit reference contracts but do not provide a complete agent runtime, identity system, durable state service, distributed coordination, isolation, or production telemetry.
 
@@ -36,7 +36,7 @@ The current executable center is concrete and small:
 
 ## 决策 / Decision
 
-[CN] 把仓库声明限制在这些真实实现边界内。受控输入上的确定性序列化或数值函数，不等同于“确定性认知”；状态标签和阈值是本地启发式；单进程事件流水线不等同于分布式运行时。
+[CN] 把仓库声明限制在这些真实实现边界内；受控输入上的确定性序列化或数值函数，不等同于“确定性认知”；状态标签和阈值是本地启发式；单进程事件流水线不等同于分布式运行时
 
 [EN] Keep repository claims inside those implemented boundaries. Deterministic serialization or numerical functions over controlled inputs are not deterministic cognition; state labels and thresholds are local heuristics; a single-process event pipeline is not a distributed runtime.
 
@@ -44,7 +44,7 @@ Caller-owned concerns remain outside the reference implementation, including aut
 
 ## 后果 / Consequences
 
-[CN] 参考实现更容易审计，也更明确地承认哪些能力不存在。
+[CN] 参考实现更容易审计，也更明确地承认哪些能力不存在
 
 [EN] The reference implementation is easier to audit and more explicit about capabilities it does not provide.
 
