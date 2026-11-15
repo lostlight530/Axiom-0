@@ -52,3 +52,13 @@ The method fails when a hypothesis overwrites retained evidence, when current fi
 ## Evidence boundary
 
 This is an interpretation method. It does not add runtime capability or prove a hypothesis merely by documenting it.
+
+## Four-way classification example from the current core
+
+- `LOCAL_REPOSITORY_FACT`: `CODE/contracts.py` computes normalized KL for explicit vector pairs.
+- `LOCAL_REPOSITORY_FACT`: `CODE/nexus_core.py` currently obtains T-09's vectors from its default because the newly constructed state has no distribution field.
+- `INFERENCE` with a direct static data-flow argument: changing only a user payload's `distribution` does not affect T-09's selected vector pair on this path.
+- `HYPOTHESIS`: a future redesigned T-09 could offer caller-sensitive coherence gating; implementing a parser, explicit expected vector and negative-case tests would be prerequisites.
+- `UNRESOLVED`: any real-world cognitive validity of the chosen probability vectors.
+
+This example is a reproducible reading path for a reviewer, not an assertion that a runtime experiment was performed. Record source commit and check time when promoting the inference to an observed fixture.
