@@ -55,3 +55,9 @@ Changing the canonicalization contract changes digest identity and must be treat
 ## Scope boundary
 
 This ADR does not describe general context ingestion, retrieval, memory, or document normalization. Axiom's executable implementation here is byte-level canonicalization and hashing only.
+
+## Input identity is not trace identity
+
+The repository has two distinct hashes with different objects: `input_digest = stable_digest(raw_input)` and orchestration `run_id = stable_digest({"input": input_payload, "events": events})`. The latter includes wall-clock `observed_at` fields in event records, so repeating the same raw input can preserve `input_digest` while changing `run_id`. Neither digest authenticates the producer or validates the truth of an input.
+
+This distinction matters when comparing duplicate payloads, traces and claimed deterministic behavior. Equal canonical input identity is not equal execution history, and matching serialized content does not license record deletion or evidence promotion.
