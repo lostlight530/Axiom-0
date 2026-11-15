@@ -82,3 +82,14 @@ same base != same branch snapshot
 sibling branch presence != observed-input availability
 later main presence != earlier branch visibility
 ```
+
+## 2026-11-15 code-grounded decision cross-reference
+
+The existing ADR membership and decision statuses are preserved. The current-source interpretation of **ADR-001, ADR-002, ADR-003, ADR-004, ADR-005, ADR-009, ADR-013 and ADR-015** is sharpened in place:
+
+- The KL numeric function is real and input-sensitive, but T-09's current pipeline data path takes a fixed fallback because the freshly constructed state never receives caller distribution vectors.
+- The ordered reference nodes do not constitute a durable DAG or generalized caller-input coherence check.
+- Event timestamps participate in the returned run ID; `input_digest` and `run_id` express different identities.
+- Morphing heuristics and `asyncio.Lock` provide in-memory behavior, not a durable transaction/effect boundary.
+
+These points are based on inspected source at `555ed4ea5c2a7bec99e86e595147c1c53f1d9086`. No new runtime test was executed. The untouched ADRs' existing non-implementation and evidence boundaries remain in force.
