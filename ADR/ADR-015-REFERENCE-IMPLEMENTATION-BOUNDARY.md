@@ -66,3 +66,9 @@ If the implementation surface does not exist, use `REFERENCE_ONLY`, `DESIGN_CAND
 ## 例外 / Exceptions
 
 Any exception must name the exact capability being promoted beyond reference status and provide the concrete implementation/evidence that justifies that promotion. Silent capability promotion is invalid.
+
+## API-level versus integration-level implementation
+
+The pure `kl_divergence(p,q)` API computes a real input-sensitive scalar within its numeric domain. The `run_continuum(input_payload)` integration currently reconstructs `state` without carrying the user payload's `distribution` field, then invokes T-09 on the default identity vectors. Therefore the reference implementation supports a **numeric KL primitive**, not a general caller-distribution coherence guarantee through the orchestration facade.
+
+Likewise its run ID binds UTC event timestamps, not just caller input, and local morphing state lives in process memory. Avoid statements of deterministic run identity, persistent workflow state or autonomous self-verification based on these APIs. A future promotion requires separate implemented data flow, negative tests and relevant evidence.
