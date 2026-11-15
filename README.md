@@ -31,7 +31,7 @@ A dependency-free Python reference for explicit data contracts, measurable trans
 
 ## 3. 十阶段参考流程 / Ten-stage reference flow
 
-**[CN]** `AxiomOrchestrator.run_continuum(input)` 的成功样例按 T-01 到 T-10 记录有序事件；T-04 使用注入的指标；当前 T-09 从内部状态读取分布，但 `_dehydration_pipeline` 并未把调用者的分布写入该状态，因此实际比较固定的默认向量与同一基线。虽然独立的 `kl_divergence(p, q)` 能计算显式输入，T-09 目前**不能**作为调用者输入的有效一致性门控；配置的 KL 阈值在现有数据路径上不会因输入分布变化而触发。输出事件包含变化的时间戳，`run_id` 因而是事件轨迹身份而不是稳定的输入摘要；请使用 `input_digest` 比较按本仓 JSON 合约规范化后的相同输入。阶段名称不表示认知、对齐或安全保证；
+**[CN]** `AxiomOrchestrator.run_continuum(input)` 的成功样例按 T-01 到 T-10 记录有序事件；T-04 使用注入的指标；当前 T-09 从内部状态读取分布，但 `_dehydration_pipeline` 并未把调用者的分布写入该状态，因此实际比较固定的默认向量与同一基线，虽然独立的 `kl_divergence(p, q)` 能计算显式输入，T-09 目前**不能**作为调用者输入的有效一致性门控；配置的 KL 阈值在现有数据路径上不会因输入分布变化而触发，输出事件包含变化的时间戳，`run_id` 因而是事件轨迹身份而不是稳定的输入摘要；请使用 `input_digest` 比较按本仓 JSON 合约规范化后的相同输入，阶段名称不表示认知、对齐或安全保证；
 
 **[EN]** A successful `AxiomOrchestrator.run_continuum(input)` fixture records ordered events from T-01 through T-10. T-04 uses injected metrics. At T-09 the current data path compares a fixed fallback distribution with the same baseline: `_dehydration_pipeline` never places a caller-supplied distribution in the state consumed by T-09. The separately callable `kl_divergence(p, q)` is input-sensitive, but **T-09 currently is not a coherence gate for the caller's distribution**, and its configured divergence limit cannot fail due to changes in that input field on this path. Timestamp-bearing events enter `run_id`, which is a trace identifier rather than a stable input digest; use `input_digest` for the canonical input identity. Stage names do not imply cognition, alignment, or safety guarantees.
 
