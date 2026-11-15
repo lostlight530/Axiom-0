@@ -57,3 +57,34 @@ When a result depends on exact implementation state, cite or record the Git revi
 First reproduce at the failing commit. Separate environment drift, invalid fixture, flaky external dependency, contract regression, and an outdated expectation. This reference code performs no network calls; a network-dependent extension must capture service/model version and retry/budget policy separately.
 
 Passing evidence does not establish performance, security, or correctness outside the tested cases. Record all skipped or unavailable checks.
+
+## Current reference-run replay calibration — 2026-11-15
+
+This section describes the source currently on merged \`main\` at the inspection cut. It is a forward interpretation of the reference implementation, **not** a restatement of an August execution result or a new scanner run.
+
+### The T-09 data path is narrower than its name
+
+In \`CODE/nexus_core.py\`, \`AxiomOrchestrator._dehydration_pipeline(raw_input)\` returns \`canonical_payload\` and \`input_digest\`. It does **not** insert a \`distribution\` field into the returned state. The T-09 branch then obtains \`state.get("distribution", [0.1, 0.2, 0.7])\`, compares it with \`[0.1, 0.2, 0.7]\`, and records the resulting KL value.
+
+Consequently, the currently composed ten-stage \`run_continuum(input_payload)\` path does not demonstrate that arbitrary caller-supplied distributions are checked at T-09. A passing run can establish that the **fixed identity fixture** passed this comparison; it is not evidence of input-sensitive divergence gating for caller data. This applies even if the original input object contains a key named \`distribution\`.
+
+The separately exposed \`calculate_kl_divergence(p, q)\` delegates to the real \`kl_divergence\` implementation for explicit vectors. Evidence from that direct path, the named \`scan_kl_divergence.py\` fixture cases, and the composed T-09 path must be attributed separately. An intended future input-aware T-09 contract would require an explicit implementation change and regression coverage, not documentary promotion.
+
+### Replay identity and comparison dimensions
+
+| Surface | What can be compared | What cannot be inferred |
+| --- | --- | --- |
+| \`canonical_payload\` and \`input_digest\` | Canonical serialization and digest for a specified input | Input authority, semantic validity, external effects |
+| \`state.coherence.kl_nats\` | T-09 reference fixture comparison under a named source revision | Arbitrary input-sensitive KL enforcement |
+| \`events\` | Node sequence, per-node status and the recorded observation values | Byte-identical events across reruns |
+| \`run_id\` | Identity of the returned event-bearing object | A stable input-only run key, because events include \`observed_at\` timestamps |
+| \`test_100.sh\` | The exact fixed-fixture assertions exercised by the script | Universal determinism, scheduler execution or distributed convergence |
+| Separate scanners | Their own inputs, exit codes and declared output contracts | A completed native A2/A3/A4 pipeline by mere invocation of another check |
+
+For a meaningful replay comparison, pin the code commit, interpreter, fixture bytes, configuration and actual command; compare invariant fields separately from timestamp-bearing events; record the command's exit code and any observed mismatch. Do not merge local \`unittest\`, scanner evidence and Native Plasma stages into one PASS label.
+
+### Targeted verification entry points
+
+From a checkout of the exact revision under review, relevant available commands include \`python -m unittest discover -s tests -v\`, \`python scan_kl_divergence.py\`, \`python scan_consistency.py\`, and \`bash test_100.sh\`. Their presence here is a **procedure**, not a statement that they were executed for this documentary update. Record \`NOT_EXECUTED\` for every unrun check, preserve failing outputs, and retain the original Native manifest state separately.
+
+The only artifact changed by this calibration is this current reproducibility document. No reference-code behavior, automation contract, historical Daily record, or published archive is amended.
