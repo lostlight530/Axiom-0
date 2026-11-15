@@ -55,3 +55,9 @@ The method fails when:
 ## Evidence boundary
 
 Creative material can support ideation history only. It is not execution evidence, a safety guarantee, or proof of repository capability.
+
+## Bounded concept-to-mechanism comparison
+
+A proposed "irreversible cognitive DAG" cannot be matched to `AxiomOrchestrator.nodes`: the latter is a tuple traversed sequentially inside one coroutine with no persisted checkpoint/edge graph. Likewise, "knowledge phase transformation" maps at most to `MorphState` labels and threshold-driven local assignment in `liquid_morphing.py`.
+
+For an exploratory alternative, document a separate **missing-mechanism list**: durable checkpoint identity, retry/effect ownership, graph edges, state transition invariants, semantic quality metric and falsifying input. Keep these as design questions; never substitute the names T-01–T-10 or PLASMA for evidence of the proposed system.
