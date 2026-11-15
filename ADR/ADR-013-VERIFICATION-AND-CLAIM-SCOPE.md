@@ -96,3 +96,9 @@ Historical checker-contract drift remains preserved as historical evidence while
 No evidence surface inherits capabilities from another. A numeric scan, structural scan, source-pattern scan, path guard, research validator, and research artifact remain distinct evidence classes.
 
 A checker definition in the repository is not an executed checker result. When execution was not observed, use `NOT_EXECUTED` or `EXECUTION_NOT_OBSERVED` rather than inferring PASS from current source state.
+
+## Cross-function verification non-equivalence
+
+At the inspected source revision, the named `scan_kl_divergence.py` fixtures exercise `CODE/contracts.py` directly. Passing those fixtures would not prove that `AxiomOrchestrator.run_continuum` receives a caller-selected KL vector at T-09: `_dehydration_pipeline` does not put that vector in the mutable state, and T-09 uses a fixed fallback. The only safe bridge is a **separate integration fixture** that exercises the orchestration API with explicit distributions and records the resulting T-09 computation.
+
+Similarly, `scan_consistency.py` checks file membership and required headings; it cannot detect this data-flow defect in a method or specification. This distinction is derived from code inspection, not a fresh invocation of either scanner.
