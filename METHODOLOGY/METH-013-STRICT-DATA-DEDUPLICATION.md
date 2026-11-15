@@ -46,3 +46,9 @@ Do not claim deduplication when the canonicalization version/implementation diff
 ## Evidence boundary
 
 A matching SHA-256 digest under the same canonicalization contract supports exact content identity, not factual equivalence, provenance equivalence, semantic redundancy, or authorization to delete either record.
+
+## Collision-domain and provenance distinction
+
+`stable_digest` is SHA-256 over `canonical_json` output, not a record-level primary key or a source-signature check. Two separately authored records with identical canonical JSON produce the same digest without proving common authorship or permission to consolidate them; a record's mutable metadata may also change its digest even when a reader considers the proposition unchanged.
+
+The repository does not maintain a digest-to-record index or execute a deletion/merge policy. Any future deduplication claim needs an explicit identity tuple (record ID, content digest, serialization version, provenance), a collision-handling assumption and a retained before/after decision record. The current digest function supplies only one input to such a design, not the design itself.
