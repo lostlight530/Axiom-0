@@ -157,7 +157,9 @@ Not supported:
 
 `AxiomOrchestrator.run_continuum(input) -> dict` emits the reference T-01 through T-10 path for a successful run.
 
-The returned run ID is a local identifier, not a distributed idempotency key or durable transaction identifier.
+The returned run ID is a local event-trace identifier: its SHA-256 input includes wall-clock `observed_at` event timestamps. It is not a stable digest of the raw caller input, not a distributed idempotency key, and not a durable transaction identifier. For canonical caller input identity use the separately emitted `input_digest`.
+
+T-09 invokes `kl_divergence` on the internal state distribution and its fixed baseline, but `_dehydration_pipeline` does not copy any caller-supplied distribution into that state. In the current implementation T-09 therefore uses the fixed fallback vectors and cannot demonstrate caller-distribution coherence; the independent numerical API must be evaluated separately.
 
 ## Daily / Weekly / Monthly evidence SOP
 
@@ -222,7 +224,7 @@ The current August stage authority is `RESEARCH/monthly/2026-08-through-27-stage
 
 ## Error and ownership boundary
 
-Invalid caller data raises `TypeError` or `ValueError` where explicit input validation applies. A configured KL coherence violation raises `RuntimeError` in the reference orchestrator.
+Invalid caller data raises `TypeError` or `ValueError` where explicit input validation applies. The reference orchestrator contains a `RuntimeError` branch for a T-09 computed divergence greater than `divergence_limit`; however its **current** T-09 vectors are both the fixed default `[0.1, 0.2, 0.7]` because no earlier branch populates `state["distribution"]`. This branch cannot currently be triggered merely by changing the caller's supplied payload distribution. Describing the branch is not evidence that an input-sensitive coherence guard is implemented.
 
 The library does not establish authentication, authorization, isolation, secret management, network policy, quotas, durable retries, or incident handling.
 
