@@ -13,7 +13,7 @@
 
 ## 中文完整方法阅读定位 / Chinese method reading
 
-**本方法的实质 / Concrete method:** `METH-014` 将声明、当前代码、版本化来源和可复核证据绑定，审查声称的能力是否有相应真实实现，不把引用数量、论文地位或文件存在晋升为可执行能力
+**本方法的实质 / Concrete method:** `METH-015` 按原始任务身份、逻辑日期、精确 Git SHA、分支快照可见性、原始记录与后续 correction 分别核对历史研究事实，不能把后来 main 的路径或分支成果倒填为早期观察时点的输入
 
 **English owning title:** Historical evidence reconciliation
 
