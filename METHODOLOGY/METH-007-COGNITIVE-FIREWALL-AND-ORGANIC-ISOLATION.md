@@ -11,6 +11,29 @@
 
 # Tool and content isolation are external to the Axiom reference core
 
+## 中文方法正文导读 / Chinese method counterpart
+
+**准确研究对象 / Actual method:** 认知防火墙与沙箱是调用方职责，本仓参考核心并没有通用工具权限代理
+
+**English procedure owner:** Tool and content isolation are external to the Axiom reference core
+
+**输入—方法—产出 / Input, procedure and output:** 本方法应以其原始 `Inputs`、`Procedure` 与 `Outputs` 逐项限定适用对象，失败条件必须保留原先的 `Failure conditions`，没有匹配版本的实测命令时不登记为 `EXECUTED` / Match actual inputs, procedure and outputs, retain failure cases, and never infer execution from the method's presence
+
+| Source heading / 英文原章 | 中文对应 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Repository fact | 当前仓库事实 |
+| Interpretation method | 解释方法 |
+| Inputs | 输入及前置条件 |
+| Procedure | 方法步骤 |
+| Outputs | 结果和适用范围 |
+| Failure conditions | 失败条件 |
+| Evidence boundary | 证据边界 |
+| Concrete threat-model boundary | 相应方法的当前约束 |
+
+**代码与证据 / Code and evidence:** 按 `SPECIFICATION.md`、相应 `CODE/**` 函数和运行收据确认功能范围；本补充不提高原有验证等级 / Use the exact implementation and receipts to verify actual capability, this reading layer does not raise evidence grade
+
+
 - Method version: 2026-08-24
 - Implementation status: `NOT_IMPLEMENTED_IN_REFERENCE_CORE`
 - Historical filename retained for continuity
