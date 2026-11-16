@@ -11,6 +11,29 @@
 
 # KL divergence evaluation
 
+## 中文方法正文导读 / Chinese method counterpart
+
+**准确研究对象 / Actual method:** 给定显式概率向量 P 和 Q 时才可解释 KL 函数结果，流水线 T-09 的 fallback 路径必须另行区分
+
+**English procedure owner:** KL divergence evaluation
+
+**输入—方法—产出 / Input, procedure and output:** 本方法应以其原始 `Inputs`、`Procedure` 与 `Outputs` 逐项限定适用对象，失败条件必须保留原先的 `Failure conditions`，没有匹配版本的实测命令时不登记为 `EXECUTED` / Match actual inputs, procedure and outputs, retain failure cases, and never infer execution from the method's presence
+
+| Source heading / 英文原章 | 中文对应 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Inputs | 输入及前置条件 |
+| Implemented validation | 已实现的局部核验 |
+| Procedure | 方法步骤 |
+| Outputs | 结果和适用范围 |
+| Failure conditions | 失败条件 |
+| Interpretation boundary | 相应方法的当前约束 |
+| Verification boundary | 相应方法的当前约束 |
+| Numerical edge cases and integration boundary | 相应方法的当前约束 |
+
+**代码与证据 / Code and evidence:** 按 `SPECIFICATION.md`、相应 `CODE/**` 函数和运行收据确认功能范围；本补充不提高原有验证等级 / Use the exact implementation and receipts to verify actual capability, this reading layer does not raise evidence grade
+
+
 - Method version: 2026-08-24
 - Implementation anchor: `CODE/contracts.py`
 - Evidence surface: exact vectors/cases emitted by the relevant calculation or research record

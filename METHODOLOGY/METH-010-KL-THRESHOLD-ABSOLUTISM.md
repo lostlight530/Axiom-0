@@ -11,6 +11,28 @@
 
 # Threshold interpretation is surface-specific
 
+## 中文方法正文导读 / Chinese method counterpart
+
+**准确研究对象 / Actual method:** KL 数值阈值和液态 morphing 的启发式判据不能共用同一个未经定义的指标
+
+**English procedure owner:** Threshold interpretation is surface-specific
+
+**输入—方法—产出 / Input, procedure and output:** 本方法应以其原始 `Inputs`、`Procedure` 与 `Outputs` 逐项限定适用对象，失败条件必须保留原先的 `Failure conditions`，没有匹配版本的实测命令时不登记为 `EXECUTED` / Match actual inputs, procedure and outputs, retain failure cases, and never infer execution from the method's presence
+
+| Source heading / 英文原章 | 中文对应 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Repository surfaces | 相应方法的当前约束 |
+| Procedure | 方法步骤 |
+| Inputs | 输入及前置条件 |
+| Outputs | 结果和适用范围 |
+| Failure conditions | 失败条件 |
+| Evidence boundary | 证据边界 |
+| Threshold precedence and unreachable caller-distribution gate | 相应方法的当前约束 |
+
+**代码与证据 / Code and evidence:** 按 `SPECIFICATION.md`、相应 `CODE/**` 函数和运行收据确认功能范围；本补充不提高原有验证等级 / Use the exact implementation and receipts to verify actual capability, this reading layer does not raise evidence grade
+
+
 - Method version: 2026-08-24
 - Scope: numeric/research interpretation across `contracts.py` and `liquid_morphing.py`
 

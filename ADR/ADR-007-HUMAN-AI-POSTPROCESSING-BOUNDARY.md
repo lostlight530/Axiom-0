@@ -11,6 +11,25 @@
 
 # Generated content is evidence input, not repository authority
 
+## 中文专业对照 / Chinese technical counterpart
+
+**本 ADR 的可核对命题 / Auditable proposition:** AI 生成与人类后处理须接受独立证据审查
+
+**English owner:** Generated content is evidence input, not repository authority
+
+**具体判据 / Operational reading:** 判断本条记录时应同时定位当前 `SPECIFICATION.md`、适用源码、精确版本与该文件所列的证据边界，不能把历史设计决定当成已发生的运行结果 / The decision's implementation and validation must be established independently at the exact revision
+
+| Original section / 英文原章节 | 中文阅读定位 / Chinese reading section |
+| --- | --- |
+| Context | 背景与触发条件 |
+| Decision | 已接受的决策 |
+| Consequences | 后果与代价 |
+| Evidence boundary | 证据适用范围 |
+| Public-boundary rule | 公开声明边界 |
+
+**保留原则 / Preservation:** 原有决策正文、状态、历史解释与例外保持不变，本双语章节仅提供当前可检验的阅读路径 / Existing decision text and historic states remain the owner; this is a language and navigation addition
+
+
 - Decision date: 2026-08-05
 - Review calibration: 2026-08-24
 - Status: Accepted

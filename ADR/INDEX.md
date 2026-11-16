@@ -7,6 +7,16 @@ Current calibration: 2026-10-04
 
 ## Repository authority map
 
+## 中英双语决策速览 / Bilingual decision reading key
+
+- **执行事实 / Implemented behavior:** `CODE/**` 和精确版本的实际执行收据决定运行行为，ADR 记录设计理由，不能创造代码中不存在的能力 / Runtime behavior requires current code and revision-matched execution evidence, not ADR prose
+- **数值与身份 / Numeric and identity scope:** `ADR-001`、`ADR-003`、`ADR-005` 分开处理 KL、数值输入、canonical bytes，`ADR-016` 分开处理时间、分支可见性与交付身份 / The corresponding decisions separate metrics, input validity, exact bytes, historical time and branch visibility
+- **研究与引用 / Research and citation:** `ADR-007`、`ADR-008`、`ADR-013` 不把模型生成内容、研究文献、PR 合并或 DOI 自动晋升为科学正确或已执行验证 / Generated prose, references, merged PRs and DOIs cannot stand in for executed verification or scientific validity
+- **缺失能力 / Non-implemented boundaries:** `ADR-011` 和 `ADR-012` 明确通用工具执行及沙箱生命周期不属于本仓参考核心 / Tool execution and sandbox lifecycle are outside this reference core
+
+**变更性质 / Change class:** Documentary navigation and language accessibility only, with no ADR identifier changes, no historical-state rewrite and no new runtime-verification claim / 仅补充双语导航，不改 ADR 编号、历史状态或实现
+
+
 Axiom has distinct public layers:
 
 - `CODE/**` — executable reference implementation; implementation behavior is established here and by revision-matched execution evidence.

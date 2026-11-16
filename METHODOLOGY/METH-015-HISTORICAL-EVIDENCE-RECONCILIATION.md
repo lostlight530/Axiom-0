@@ -11,6 +11,30 @@
 
 # Historical evidence reconciliation
 
+## 中文完整方法阅读定位 / Chinese method reading
+
+**本方法的实质 / Concrete method:** `METH-015` 按原始任务身份、逻辑日期、精确 Git SHA、分支快照可见性、原始记录与后续 correction 分别核对历史研究事实，不能把后来 main 的路径或分支成果倒填为早期观察时点的输入
+
+**English owning title:** Historical evidence reconciliation
+
+| English method section | 中文对应标题 |
+| --- | --- |
+| Objective | 目标 |
+| Inputs | 输入 |
+| Procedure | 步骤 |
+| Delivery-state vocabulary | 具体证据与方法约束 |
+| Evidence-completeness vocabulary | 具体证据与方法约束 |
+| Temporal-provenance vocabulary | 具体证据与方法约束 |
+| Failure conditions | 失败条件 |
+| Historical August 2026 calibration example | 具体证据与方法约束 |
+| Outputs | 结果 |
+| Evidence boundary | 证据约束 |
+| 2026-10-04 branch-snapshot reference case | 具体证据与方法约束 |
+| Code-claim reconciliation example unrelated to cadence | 具体证据与方法约束 |
+
+**审查边界 / Review boundary:** 文本定义 groundedness 的检查口径，而不是在没有独立执行收据时宣称已验证，原有反例和历史状态不被覆盖 / A documented groundedness procedure is not an executed source or runtime validation
+
+
 - Method version: 2026-10-04
 - Governing decision: ADR-016
 - Scope: `RESEARCH/**`, periodic aggregation, source chronology, and current interpretation

@@ -1,5 +1,26 @@
 # Axiom-0 Research Surface
 
+## 中文对应专业说明 / Chinese technical counterpart
+
+**专业主题 / Subject:** 研究资料是分层导航，旧综述提供历史语境而非当前可执行权威
+
+**Owning English title:** Axiom-0 Research Surface
+
+**有效性 / Scope of authority:** 需要按具体章节识别其所引用的源码版本、历史观察截止点、原始证据与任何尚未解决的冲突，不能因为已有技术概念、文档或 DOI 就推断真实系统已经执行 / Retain exact revision, historical cutoff, actual evidence and unresolved conflicts rather than upgrading a documentary description into runtime completion
+
+| Original section / 原章节 | 中文阅读定位 / Chinese section meaning |
+| --- | --- |
+| Current authority relationship | 当前权威关系 |
+| Legacy survey set | 历史综述集 |
+| Status vocabulary | 状态词汇 |
+| Non-retroactivity | 历史不可追溯改写 |
+| Public evidence boundary | 公开证据边界 |
+| Current periodic-evidence pointer — 2026-09-23 | 与本文件主题相关的证据或方法部分 |
+| Current periodic-evidence pointer — 2026-09-24 | 与本文件主题相关的证据或方法部分 |
+
+**交叉复核 / Cross-check:** 对当前实现使用 `SPECIFICATION.md` 与 `CODE/**`，对可复现性使用 `REPRODUCIBILITY.md`，对现存判断保留该文的证据级别 / Verify implementation and reproducibility in their owning layers without rewriting historic research
+
+
 Status: current research-navigation and interpretation boundary  
 Calibration: 2026-09-18
 

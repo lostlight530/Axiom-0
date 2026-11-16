@@ -11,6 +11,25 @@
 
 # Repository knowledge stratification follows the actual repository surfaces
 
+## 中文对应专业说明 / Chinese technical counterpart
+
+**专业主题 / Subject:** undefined
+
+**Owning English title:** Repository knowledge stratification follows the actual repository surfaces
+
+**有效性 / Scope of authority:** 需要按具体章节识别其所引用的源码版本、历史观察截止点、原始证据与任何尚未解决的冲突，不能因为已有技术概念、文档或 DOI 就推断真实系统已经执行 / Retain exact revision, historical cutoff, actual evidence and unresolved conflicts rather than upgrading a documentary description into runtime completion
+
+| Original section / 原章节 | 中文阅读定位 / Chinese section meaning |
+| --- | --- |
+| Context | 背景 |
+| Decision | 决策 |
+| Cross-layer rule | 与本文件主题相关的证据或方法部分 |
+| Consequences | 后果 |
+| Evidence boundary | 证据边界 |
+
+**交叉复核 / Cross-check:** 对当前实现使用 `SPECIFICATION.md` 与 `CODE/**`，对可复现性使用 `REPRODUCIBILITY.md`，对现存判断保留该文的证据级别 / Verify implementation and reproducibility in their owning layers without rewriting historic research
+
+
 - Decision date: 2026-08-05
 - Review calibration: 2026-08-24
 - Status: Accepted

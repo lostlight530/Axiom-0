@@ -11,6 +11,27 @@
 
 # Creative architecture material stays hypothesis-labelled
 
+## 中文方法正文导读 / Chinese method counterpart
+
+**准确研究对象 / Actual method:** 生成的架构创意必须标注假设与可证伪条件，研究想象不等于已安装服务
+
+**English procedure owner:** Creative architecture material stays hypothesis-labelled
+
+**输入—方法—产出 / Input, procedure and output:** 本方法应以其原始 `Inputs`、`Procedure` 与 `Outputs` 逐项限定适用对象，失败条件必须保留原先的 `Failure conditions`，没有匹配版本的实测命令时不登记为 `EXECUTED` / Match actual inputs, procedure and outputs, retain failure cases, and never infer execution from the method's presence
+
+| Source heading / 英文原章 | 中文对应 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Inputs | 输入及前置条件 |
+| Procedure | 方法步骤 |
+| Outputs | 结果和适用范围 |
+| Failure conditions | 失败条件 |
+| Evidence boundary | 证据边界 |
+| Bounded concept-to-mechanism comparison | 相应方法的当前约束 |
+
+**代码与证据 / Code and evidence:** 按 `SPECIFICATION.md`、相应 `CODE/**` 函数和运行收据确认功能范围；本补充不提高原有验证等级 / Use the exact implementation and receipts to verify actual capability, this reading layer does not raise evidence grade
+
+
 - Method version: 2026-08-24
 - Implementation status: `DOCUMENTARY_ONLY`
 - Historical filename retained for continuity

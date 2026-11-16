@@ -7,6 +7,17 @@ Current calibration: 2026-10-04
 
 ## Method map
 
+## 现行方法与执行证据的分界 / Method-versus-execution reading guide
+
+| 研究对象 / Question | 当前文档可以确立 / Document-level support | 不得自动推出 / Not established |
+| --- | --- | --- |
+| `METH-001`, `METH-010` | `T-01` 至 `T-10` 的参考顺序及 T-09 fallback 的当前源码解释 / Reference sequence and current source interpretation of T-09 fallback | 用户分布已进入 T-09、全局 DAG 不可逆性或独立运行成功 / Caller-distribution ingestion, globally irreversible DAG or executed validation |
+| `METH-002`, `METH-006` | 显式向量输入的 KL 数值函数与 canonical JSON 摘要语义 / Explicit-vector KL primitive and canonical JSON digest semantics | 全流水线按该向量比较、摘要代表语义等价或一次运行身份 / Pipeline-wide vector comparison, semantic equivalence or run identity |
+| `METH-007`, `METH-011`, `METH-012` | 尚未实现的调用方隔离、Agent 协作与资源控制边界 / Caller-owned isolation, collaboration and resource controls outside the reference core | 沙箱、通用工具执行、持久协作或配额执行已实现 / A deployed sandbox, tool executor, durable collaboration or quota enforcement |
+
+**核验等级 / Verification level:** This table restates the existing source-grounded November 15 method interpretation at the recorded revision, without claiming a November 17 checker run or new runtime evidence / 本表仅将既有源码解释双语化，不代表本轮执行了扫描器或新增实验
+
+
 | Method | Current meaning | Implementation relation |
 |---|---|---|
 | [METH-001](./METH-001-DAG-TOPOLOGY-CONSTRAINT.md) | Inspect ordered `T-01`…`T-10` run events | `CODE/nexus_core.py` |
