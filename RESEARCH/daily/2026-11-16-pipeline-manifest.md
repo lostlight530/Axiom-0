@@ -37,7 +37,8 @@
 ## A2 — numeric KL and independent structure checks
 - Prerequisite: same-run exact source worktree and identified input distributions and formal scanners, as required by `RESEARCH/daily/README.md`.
 - Actual acquisition command: `git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD`
-- Actual diagnostic UTC start/end: `2026-11-16T12:56:21.772993+00:00` → `2026-11-16T12:56:21.787621+00:00`
+- Original Draft's claimed `2026-11-16T12:56:21.772993+00:00` → `12:56:21.787621+00:00` diagnostic interval was **NOT_VERIFIED**, lacking an independent process receipt; it must not be counted as a run.
+- **Forward correction / independently executed acquisition probe:** 2026-11-16T13:23:35.724039+00:00 → 2026-11-16T13:23:35.739198+00:00 UTC, `subprocess.run(['git','ls-remote','https://github.com/lostlight530/Axiom-0.git','HEAD'])`, exit 128, stdout empty, stderr `fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com`. This later execution has its own diagnostic identity and does not retroactively verify the earlier Draft clock.
 - Environment: Linux kernel `6.18.57`, Python `3.13.5`; Git command subprocess.
 - Acquisition exit code: `128`; stdout: EMPTY (`0 bytes`); stderr: `fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com`
 - Classification: `SOURCE_WORKTREE_ACQUISITION_FAILED_DNS`; **not** a formal KL/consistency scanner error.
