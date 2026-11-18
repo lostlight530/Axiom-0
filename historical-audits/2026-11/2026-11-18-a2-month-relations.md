@@ -1,0 +1,189 @@
+# ORIGINAL Independent A2 2026-11-18 — Plasma complete Nov01–18 formal relation maintenance (NOT_FINAL)
+
+## A1 actual merged dependency and current month scope
+- Task independent-maintenance/A2, period Nov01–18 2026 Asia/Shanghai; original A2 separate from Native Plasma A2 scanner
+- Fresh main `77a23b27e1a6d2a6d1caa0314c430b1c27ff6891` (truncated=false, blobs 514); no Open PR and no same-day A2 output on current main at preflight
+- Original A1 merged PR #533; exact current source `historical-audits/2026-11/2026-11-18-a1-source-content-review.md` @ `1258d56801f69987f6794687a4a5af85dbcbfc58` read from new main, dependency independently satisfied
+- Previous whole-month A2 version `historical-audits/2026-11/2026-11-17-a2-month-relations.md` @ `de37ce4c16a8b0f21aa3ebd06e14039c4342ff35` reopened; time-scoped former verdicts preserved
+- Current native formal source graph 21: Daily 18/18 and closed W44/W45/W46 3; missing Daily=0
+- Exact blob matches with merged source A1 20; new/different N18 source texts reread 1
+- Earlier independent original maintenance editions 33, separate from Native formal pipeline steps
+- Formal A1 research/protocol input does not prove A2 KL/structure scanner, A3 bounded runner or A4 topology correction executed
+- A2 numerical KL requires exact P/Q identities/units nats, real command exit and comparable source revision; no made-up zero divergence
+- GitHub source delivery or CodeQL check success cannot replace scan_kl_divergence.py, scan_consistency.py or emitted axiom_document_topology JSON
+- W46 Weekly A5 closed, W47 OPEN, November A6 and D30 NOT_DUE, D7/D10/D14 separate audit obligations
+- Actual operations: GitHub latest main/tree, full A1 readback, earlier A2, current N18 native source direct text. Full worktree and formal A2 scanners NOT_EXECUTED by this independent A2.
+
+## Per-source month-to-date relation state across all November Native pipeline owners
+- SOURCE_RELATION `RESEARCH/daily/2026-11-01-pipeline-manifest.md` @ `07014b60274a8a0df712defef7bbacdb40cd61bb`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-02-pipeline-manifest.md` @ `da32856be7b71664dd9e84425289658365e980d7`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-03-pipeline-manifest.md` @ `45017dd70f3fc687536242a36bd2e40e2cc78fa0`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-04-pipeline-manifest.md` @ `e76b7f77123571ac74fb699412d90ba3d1b33db0`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-05-pipeline-manifest.md` @ `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-06-pipeline-manifest.md` @ `349e8462543f592c44ad1e6769eb1af0ef6e4dcd`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-07-pipeline-manifest.md` @ `14611f9959e4c5a9c54db21ed831a319720f0d8c`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-08-pipeline-manifest.md` @ `f50894a5fc7c64ae6e8b15050afd68910779e129`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-09-pipeline-manifest.md` @ `1bef51802d9d498676f7fc977560ccbbe49d024a`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-10-pipeline-manifest.md` @ `31cb3a33674e713f1e8d96da3276c72f08893466`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-11-pipeline-manifest.md` @ `8132ef33870c9ed824bbbb2809dae69cacdcb4de`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-12-pipeline-manifest.md` @ `fdd91ce54f885ca6991afe67716e72fbfa85e2f1`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-13-pipeline-manifest.md` @ `3794760fdeffe4fa602357510b2bc0a17f2a69cf`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-14-pipeline-manifest.md` @ `f700dc80975dd620b6d08aaf328b96aba1daa691`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-15-pipeline-manifest.md` @ `1d492dcc55671bb3280608a119ff70c2f3b0380b`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-16-pipeline-manifest.md` @ `b505a2206a262ebc29ebc842a2389c4b45782aec`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-17-pipeline-manifest.md` @ `56accac274160a58cf9c79852c2cbec73a7b8fc1`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/daily/2026-11-18-pipeline-manifest.md` @ `20e6796f35bd63b7aab2c5fff6e2e25d72864229`
+  - A1 provenance N18_NEW_DATE_NODE / CHANGED_MTD_INPUT / FORMAL_OUTCOME_NOT_COMPUTED; research input may be valid even when formal A2, A3 and A4 remain blocked
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: N18 source read 77 lines, `- Pipeline Status: 'BLOCKED'`
+- SOURCE_RELATION `RESEARCH/weekly/2026-W44-weekly-manifest.md` @ `cbefb65bd542de05f57c44f1ed5886ccf196bec3`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; weekly document syntheses closed-window evidence, not newly executed scanner
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/weekly/2026-W45-weekly-manifest.md` @ `86cd46f4b1f1beb3d669af46863a59c0b5195aad`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; weekly document syntheses closed-window evidence, not newly executed scanner
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+- SOURCE_RELATION `RESEARCH/weekly/2026-W46-weekly-manifest.md` @ `c2344b1d30602ef4350760f7fc576af2f16c7829`
+  - A1 provenance INHERITED_EXACT_MERGED_A1_SOURCE / NO_FORMAL_PROMOTION; weekly document syntheses closed-window evidence, not newly executed scanner
+  - A2 formal scanner relation: requires actual KL/consistency stdout/stderr/exit, executable revision, P/Q and topology JSON; no run performed here
+  - A3/A4 evidence: prior A1 path/blob matched; inherited failure, partial and unknown preserved without calculating a new runtime result
+
+## Newly applicable N18 formal pipeline source and pipeline gates
+- NEW_N18_SOURCE `RESEARCH/daily/2026-11-18-pipeline-manifest.md` @ `20e6796f35bd63b7aab2c5fff6e2e25d72864229`
+  - Direct read 77 lines, header `# Plasma Daily Pipeline — 2026-11-18 / restart-sensitive resumability evidence; formal scanners blocked`, literal result `- Pipeline Status: 'BLOCKED'`
+  - ACTUAL_SOURCE_STAGE_LINE `- Required A2.1 command: 'python3 scan_kl_divergence.py'; status 'NOT_EXECUTED'; exact P/Q identity 'NOT_OBSERVED'; KL divergence in nats 'NOT_COMPUTED'; stdout/stderr/exit 'NOT_AVAILABLE'.`
+  - ACTUAL_SOURCE_STAGE_LINE `- Required A2.2 command: 'python3 scan_consistency.py'; status 'NOT_EXECUTED'; required 'axiom_document_topology' JSON 'NOT_EMITTED'; stdout/stderr/exit 'NOT_AVAILABLE'.`
+  - ACTUAL_SOURCE_STAGE_LINE `- A2 result: 'BLOCKED_BEFORE_FORMAL_SCANNERS'; no partial REST/static check is upgraded to structural/KL PASS.`
+  - ACTUAL_SOURCE_STAGE_LINE `- Actual A4 topology/index command: 'NOT_EXECUTED'; alignment result 'NOT_COMPUTED'.`
+  - A2 relation result: source-level cross-run evidence is candidate only; no new local formal P/Q KL or topology, so A3/A4 remain BLOCKED_DEPENDENCY
+
+## Original November independent relation chronology
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` @ `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-02-a2-month-relations.md` @ `73cc710795b16d6d3bd965fc8ff1329d4548b448`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` @ `7a7b644b08cd4f2d66526e20b04aa40ccf678002`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-03-a2-month-relations.md` @ `c68c300456fec9beab1956b210c06780241b1882`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` @ `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-04-a2-month-relations.md` @ `0270c832316a4a7e036bf58d265ac5a3eed343c7`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` @ `f0d3e186c186e9901e0329094558de0e40f2d0dc`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-05-a2-month-relations.md` @ `ca06312c735734e03322f2af4217332db9abebaf`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` @ `613708c98ab521a2148143feadcf14f3272b2bad`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-06-a2-month-relations.md` @ `231899e38d8901e608c427116e93bac051f2a361`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-07-a1-source-content-review.md` @ `fc47b0f46bb40cda8a2cb5d65811433889fdfa40`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-07-a2-month-relations.md` @ `8a19091150faf5faf179e307b76e1bf00255fe2b`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-08-a1-source-content-review.md` @ `4fd7855d0d9697256cbbf70df4ab2689d86b2e19`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-08-a2-month-relations.md` @ `28fc26717cd9bd19c6293a871aa292afee9977a8`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-09-a1-source-content-review.md` @ `6205bce1c7de673788959632b77b6a7f47a57928`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-09-a2-month-relations.md` @ `8086f8a9febf4851fb265ea1dc8c9455a21e92ff`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-10-a1-source-content-review.md` @ `458d68b823aa88a4b8840e11b91deeb8f47c7a25`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-10-a2-month-relations.md` @ `e01856067b6911c032f1007f4c9df4f3475d2d02`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-11-a1-source-content-review.md` @ `6ae311ceebfcc3a0a8974d0fd37a9b025e5a0c88`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-11-a2-month-relations.md` @ `4eac325bfaae386446132648a472ed54c3fbe54b`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-12-a1-source-content-review.md` @ `2f483fe207b709791498a722a701c7e2577f6a4f`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-12-a2-month-relations.md` @ `8d2dceb72507a6906630c447ff599a43b904f2e7`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-13-a1-source-content-review.md` @ `8a603518d01e5cc44bee73f9519c3d7b7eadf659`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-13-a2-month-relations.md` @ `54487542b083e9fd47580021b929fdae5253f4b0`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-14-a1-source-content-review.md` @ `944975a9b8b6a97a2ef8740754787748b3520e32`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-14-a2-month-relations.md` @ `e68d6b45a4c115cdf92e4bc56643110b83d3f924`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-15-a1-source-content-review.md` @ `6a21226521f33141c71a0ea4fa25dfbd87df4c6e`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-15-a2-month-relations.md` @ `222a43172e25ff097ca49f502c6124525b5f0387`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-16-a1-source-content-review.md` @ `d6febd73ed6166f2e3498f5e4eb4b8e012d3d62e`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-16-a2-month-relations.md` @ `49e3c855a5698ef669655f88f2ee65aed21363c4`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` @ `fce16048b31d21a746db5c91d07a02ed502745b2`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-17-a2-month-relations.md` @ `de37ce4c16a8b0f21aa3ebd06e14039c4342ff35`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-18-a1-source-content-review.md` @ `1258d56801f69987f6794687a4a5af85dbcbfc58`
+  - Relation INHERITED_HISTORICAL_ORIGINAL; source/correction provenance only, original PR line count and review never transferred
+
+## Missingness and issue-specific evidence delta
+- Physical 18/18 Plasma Daily source manifest records present; formal 18/18 execution PASS is NOT_ESTABLISHED
+- NEW_EVIDENCE: exact updated N18 ADK resume-source/runner author test and current A1 merge + whole-month pipeline source register
+- CORRECTED_INTERPRETATION: a new Runner per turn backed by same service is not a full process restart, named persisted session replay or durable effect proof
+- UNCHANGED_BOUNDARY: formal KL/structural scanners not executed; missing A2 dependency controls A3/A4 status irrespective of GitHub PR merge
+- NEW_COUNTEREVIDENCE: DNS bootstrap failure, unresolved executable toolchain and authored strict expected-failure cases prevent full conformance claims
+- UNKNOWN_RETAINED: numerical KL, distribution identities, actual topology JSON, A3 reference run, A4 alignment and independent host implementation evidence
+- NEXT_RETEST_CONDITION: clone exact Axiom main successfully, run required KL + consistency scanners and capture stdout/stderr/exit/toolchain and input digests, then only if gates meet do bounded A3/A4
+- Relation status MTD_UPDATED / FORMAL_PIPELINE_BLOCKED / NOVEMBER_NOT_FINAL; no correction to original Native, Jules or protocol files without real regression
+- GitHub A2 original additions >=100 and semantic quality independent from A1; future correction cannot backfill original PR rows
