@@ -1,0 +1,184 @@
+# ORIGINAL Independent A1 2026-11-18 — Axiom-0 formal source custody, Nov01–17
+
+## Independent identity, owning rules and actual source cutoff
+- Canonical task independent-maintenance/A1; producer GPT-6 / current delegated maintainer, not Native Plasma A1–A4, Independent A2, D7/10/14/30, Audit or Governance
+- Logical source period 2026-11-01..17 Asia/Shanghai; today's Plasma Nov18 Native is deliberately outside A1 and must enter post-merge Independent A2
+- Fresh exact main `fdf165aa69bcd36d340eb713aa931835d95bac37`; all Git blobs 513; tree truncated=false; open PR=0
+- Previous original A1 `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` @ `fce16048b31d21a746db5c91d07a02ed502745b2` reopened and path+blob compared individually
+- Canonical sources=20; daily=17/17; closed weeks W44/W45/W46=3; missing daily=0
+- Inherited exact path/blob 19; changed/new directly reread 1
+- Current contract: RESEARCH/daily/README.md, RESEARCH/README.md, AUTOMATION/CONTRACT.md and independent-gpt governance; machine contract is authoritative when source-history summary conflicts
+- A1 source-archaeology ≠ A2 executable KL/structure ≠ A3 bounded runner ≠ A4 topology/index reconciliation
+- A1/A2 labels in this independent maintenance are NOT the A1/A2 formal stages inside each Plasma Daily manifest
+- W47 currently OPEN (Nov16–22); Monthly A6, natural month FINAL and D30 NOT_DUE; D7/D10/D14 separate earlier audits
+- Executed GitHub main/tree/source body/previous A1 inspection, no current local full-worktree bootstrap, no full formal scanner and no SDK TCK
+- Any source record with A2 NOT_EXECUTED or KL NOT_COMPUTED remains BLOCKED regardless of GitHub merge success
+
+## Complete source-by-source formal A1–A4 disposition register
+- SOURCE `RESEARCH/daily/2026-11-01-pipeline-manifest.md` @ `07014b60274a8a0df712defef7bbacdb40cd61bb`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-02-pipeline-manifest.md` @ `da32856be7b71664dd9e84425289658365e980d7`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-03-pipeline-manifest.md` @ `45017dd70f3fc687536242a36bd2e40e2cc78fa0`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-04-pipeline-manifest.md` @ `e76b7f77123571ac74fb699412d90ba3d1b33db0`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-05-pipeline-manifest.md` @ `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-06-pipeline-manifest.md` @ `349e8462543f592c44ad1e6769eb1af0ef6e4dcd`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-07-pipeline-manifest.md` @ `14611f9959e4c5a9c54db21ed831a319720f0d8c`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-08-pipeline-manifest.md` @ `f50894a5fc7c64ae6e8b15050afd68910779e129`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-09-pipeline-manifest.md` @ `1bef51802d9d498676f7fc977560ccbbe49d024a`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-10-pipeline-manifest.md` @ `31cb3a33674e713f1e8d96da3276c72f08893466`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-11-pipeline-manifest.md` @ `8132ef33870c9ed824bbbb2809dae69cacdcb4de`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-12-pipeline-manifest.md` @ `fdd91ce54f885ca6991afe67716e72fbfa85e2f1`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-13-pipeline-manifest.md` @ `3794760fdeffe4fa602357510b2bc0a17f2a69cf`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-14-pipeline-manifest.md` @ `f700dc80975dd620b6d08aaf328b96aba1daa691`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-15-pipeline-manifest.md` @ `1d492dcc55671bb3280608a119ff70c2f3b0380b`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-16-pipeline-manifest.md` @ `b505a2206a262ebc29ebc842a2389c4b45782aec`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/daily/2026-11-17-pipeline-manifest.md` @ `56accac274160a58cf9c79852c2cbec73a7b8fc1`
+  - A1 source custody: DIRECT_BODY_READ / NEW_OR_DRIFTED; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Native A1 is provenance and hypothesis; A2 requires actual python scanner, numeric KL, topology JSON; A3/A4 cannot bypass formal A2; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: - Pipeline Status: 'BLOCKED'; 85 lines read; flags=BLOCKED,PASS,NOT_COMPUTED,NOT_EXECUTED,UNKNOWN
+- SOURCE `RESEARCH/weekly/2026-W44-weekly-manifest.md` @ `cbefb65bd542de05f57c44f1ed5886ccf196bec3`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Weekly A5 is a historical closed-cycle review, not scanner execution or month final; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/weekly/2026-W45-weekly-manifest.md` @ `86cd46f4b1f1beb3d669af46863a59c0b5195aad`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Weekly A5 is a historical closed-cycle review, not scanner execution or month final; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+- SOURCE `RESEARCH/weekly/2026-W46-weekly-manifest.md` @ `c2344b1d30602ef4350760f7fc576af2f16c7829`
+  - A1 source custody: EXACT_PRIOR_A1_PATH_BLOB / INHERITED_NO_FOLLOW_UP; independent file-level review, not a replacement Native run
+  - A2 scanner validation: Weekly A5 is a historical closed-cycle review, not scanner execution or month final; no fresh A2 scanner executed by this reviewer
+  - A3/A4 and counterevidence: prior reviewer exact source identity retained; no upgrading earlier formal stage outcome
+
+## Changed or newly applicable source text — actual reread
+- NEW_INPUT `RESEARCH/daily/2026-11-17-pipeline-manifest.md` @ `56accac274160a58cf9c79852c2cbec73a7b8fc1`
+  - DIRECT_REOPENED_BODY: 85 lines, heading `# Plasma Daily Pipeline — 2026-11-17 / criterion-denominator evidence, formal execution blocked`
+  - NATIVE_STAGE_STATUS_FROM_TEXT: - Pipeline Status: 'BLOCKED'; flags BLOCKED,PASS,NOT_COMPUTED,NOT_EXECUTED,UNKNOWN; separate independent command receipt absent
+
+## Missing-canonical inputs, no fabricated execution
+- All 17 expected November Daily manifest paths are present; this is source custody, not a 17/17 PASS claim
+
+## Original A1/A2 historical maintenance graph (not today's sources)
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` @ `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-02-a2-month-relations.md` @ `73cc710795b16d6d3bd965fc8ff1329d4548b448`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` @ `7a7b644b08cd4f2d66526e20b04aa40ccf678002`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-03-a2-month-relations.md` @ `c68c300456fec9beab1956b210c06780241b1882`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` @ `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-04-a2-month-relations.md` @ `0270c832316a4a7e036bf58d265ac5a3eed343c7`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` @ `f0d3e186c186e9901e0329094558de0e40f2d0dc`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-05-a2-month-relations.md` @ `ca06312c735734e03322f2af4217332db9abebaf`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` @ `613708c98ab521a2148143feadcf14f3272b2bad`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-06-a2-month-relations.md` @ `231899e38d8901e608c427116e93bac051f2a361`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-07-a1-source-content-review.md` @ `fc47b0f46bb40cda8a2cb5d65811433889fdfa40`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-07-a2-month-relations.md` @ `8a19091150faf5faf179e307b76e1bf00255fe2b`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-08-a1-source-content-review.md` @ `4fd7855d0d9697256cbbf70df4ab2689d86b2e19`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-08-a2-month-relations.md` @ `28fc26717cd9bd19c6293a871aa292afee9977a8`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-09-a1-source-content-review.md` @ `6205bce1c7de673788959632b77b6a7f47a57928`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-09-a2-month-relations.md` @ `8086f8a9febf4851fb265ea1dc8c9455a21e92ff`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-10-a1-source-content-review.md` @ `458d68b823aa88a4b8840e11b91deeb8f47c7a25`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-10-a2-month-relations.md` @ `e01856067b6911c032f1007f4c9df4f3475d2d02`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-11-a1-source-content-review.md` @ `6ae311ceebfcc3a0a8974d0fd37a9b025e5a0c88`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-11-a2-month-relations.md` @ `4eac325bfaae386446132648a472ed54c3fbe54b`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-12-a1-source-content-review.md` @ `2f483fe207b709791498a722a701c7e2577f6a4f`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-12-a2-month-relations.md` @ `8d2dceb72507a6906630c447ff599a43b904f2e7`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-13-a1-source-content-review.md` @ `8a603518d01e5cc44bee73f9519c3d7b7eadf659`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-13-a2-month-relations.md` @ `54487542b083e9fd47580021b929fdae5253f4b0`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-14-a1-source-content-review.md` @ `944975a9b8b6a97a2ef8740754787748b3520e32`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-14-a2-month-relations.md` @ `e68d6b45a4c115cdf92e4bc56643110b83d3f924`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-15-a1-source-content-review.md` @ `6a21226521f33141c71a0ea4fa25dfbd87df4c6e`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-15-a2-month-relations.md` @ `222a43172e25ff097ca49f502c6124525b5f0387`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-16-a1-source-content-review.md` @ `d6febd73ed6166f2e3498f5e4eb4b8e012d3d62e`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-16-a2-month-relations.md` @ `49e3c855a5698ef669655f88f2ee65aed21363c4`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` @ `fce16048b31d21a746db5c91d07a02ed502745b2`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-17-a2-month-relations.md` @ `de37ce4c16a8b0f21aa3ebd06e14039c4342ff35`
+  - Previous outcome and any corrections remain time-scoped; none of its GitHub additions transfer to the original PR for Nov18
+
+## Evidence delta, decision and validation
+- NEW_EVIDENCE: verified whole-month current formal manifest register, exact Git path and blob custody, prior A1 inheritance, actual read of new cutoff manifest
+- CORRECTED_INTERPRETATION: first-party author test text and source diff are candidate causes, not an Axiom scanner or numeric KL
+- UNCHANGED_BOUNDARY: topology JSON NOT_EMITTED cannot be labeled empty valid graph; source review cannot substitute an expected scanner
+- NEW_COUNTEREVIDENCE: lack of executable checkout, unrun KL/consistency checks and empty stdout/stderr receipts defeat a PASS assertion
+- UNKNOWN_RETAINED: exact formal P/Q inputs, numerical KL nats, scanner code exit status, reference runner outputs, effect and A3/A4 actual success
+- NEXT_RETEST_CONDITION: fetch entire Axiom worktree and run both owner scanners in a verified runtime; attach version, args, stdout/stderr/exit and reproducible topology JSON
+- Disposition NO_CHANGE_REQUIRED to correct original Native files; file-presence and prior results reviewed, no scientific correction justified without a reproducible discrepancy
+- Independent A1 full checker, local Python scanners, SDK pytest, actual host/runtime and CI rerun NOT_EXECUTED
+- TASK_COMPLETENESS: complete source register, explicit per-file stage interpretation and missing gate; original PR additions to be independently calculated
+- DEPENDENCY: Independent A2 only after merged A1 and latest main exact A1 blob reread
+- FINAL month conclusion: NOT_DUE; original producer/history preserved; no maintenance result is a Periodic Audit
