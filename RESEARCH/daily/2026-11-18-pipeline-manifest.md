@@ -36,7 +36,8 @@
 ## A2 — actual worktree bootstrap and formal scan ledger
 - GitHub connector fetched remote commit and current canonical contract; this is not an executable full repository checkout.
 - Actual executed command: `git ls-remote https://github.com/lostlight530/Axiom-0.git HEAD`
-- Actual probe observed UTC `2026-11-18T09:43:37Z`; environment Linux shell, `git version 2.47.3`.
+- Actual independently rerun bootstrap probe started UTC `2026-11-18T09:58:38.970747944Z` and ended `2026-11-18T09:58:38.988409911Z`; isolated Linux shell, Git `2.47.3`, Python `3.13.5`.
+- Draft correction / evidence custody: the initial unmerged Draft stated `09:43:37Z` without an independently retained command receipt. That timestamp is withdrawn, not treated as a verified execution. This later actual rerun is a distinct diagnostic invocation and is NOT the formal Plasma A2 scanner.
 - Bootstrap exit code: `128`; stdout: `EMPTY`; stderr: `fatal: unable to access 'https://github.com/lostlight530/Axiom-0.git/': Could not resolve host: github.com`
 - Classification: `REMOTE_DNS_FAILURE / FULL_WORKTREE_NOT_ACQUIRED`. This failure is NOT the result of either formal scanner and not proof of invalid Axiom science.
 - Required A2.1 command: `python3 scan_kl_divergence.py`; status `NOT_EXECUTED`; exact P/Q identity `NOT_OBSERVED`; KL divergence in nats `NOT_COMPUTED`; stdout/stderr/exit `NOT_AVAILABLE`.
