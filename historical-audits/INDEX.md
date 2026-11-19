@@ -31,7 +31,7 @@ Not archived here:
 | August through-23 stage audit | `03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md` | `RESEARCH/monthly/2026-08-through-23-stage-audit.md` |
 | August through-27 stage audit | `03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md` | `RESEARCH/monthly/2026-08-through-27-stage-audit.md` |
 | August through-30 stage audit | `03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md` | `RESEARCH/monthly/2026-08-through-30-stage-audit.md` |
-| W33 evidence reconciliation | `04-evidence-and-closure-ledgers/2026-W33--evidence-reconciliation.md` | `RESEARCH/weekly/2026-W33-evidence-reconciliation.md` |
+| W33 evidence reconciliation | `04-evidence-and-closure-ledgers/2026-W33--plasma-evidence--reconciliation.md` | `RESEARCH/weekly/2026-W33-evidence-reconciliation.md` |
 | August final natural-month reconciliation | `04-evidence-and-closure-ledgers/2026-08-31--august--closure-reconciliation.md` | `RESEARCH/monthly/2026-08-final-stage-audit.md` |
 | Cross-period Jules cadence reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-cadence--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-cadence-reconciliation.md` |
 | Jules content/provenance contract reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-content-contract--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-content-contract-reconciliation.md` |
@@ -62,3 +62,19 @@ The SOP acceptance is a derived cross-task audit, not the original A1/A2. The ga
 - `historical-audits/01-corrections-and-errata/2026-10-28--a1-a2-tree-oid--erratum.md` — normalized from `historical-audits/01-corrections-and-errata/2026-10-28-a1-a2-tree-oid-erratum.md`, original blob `4fb4a880920f4116cafc9fdb85e1c7ff13bb125b`; this source corrects a historical OID label, not original A1/A2 or a native task
 - The two above October 28 relocated paths use the shared `YYYY-MM-DD--subject--record-kind.md` naming format; original source blobs and old paths are preserved in historical Git versions
 - Indexed inbound-code lookup for these three original names returned no file results in this repository at review time; this does not certify external backlinks
+
+## Current navigation for retained duplicate paths
+
+The preferred links below are for navigation. The retained paths point to the same Git blobs and are not separate audits or additional evidence. This section supersedes conflicting path labels in earlier entries of this index without changing their historical provenance.
+
+| Record | Preferred archive path | Retained same-blob path |
+| --- | --- | --- |
+| October 28 SOP minimal acceptance audit | [Preferred](03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md) | [Retained](03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md) |
+
+## Archive filename normalization
+
+Only the paths changed; the historical document bodies and original task records are unchanged.
+
+| Previous revision | Current path | Unchanged Git blob |
+| --- | --- | --- |
+| [Previous path at pre-rename main](https://github.com/lostlight530/Axiom-0/blob/72d979de77eaa87336e57d0119f0aeeacda98217/historical-audits/04-evidence-and-closure-ledgers/2026-W33--evidence-reconciliation.md) | [2026-W33--plasma-evidence--reconciliation.md](04-evidence-and-closure-ledgers/2026-W33--plasma-evidence--reconciliation.md) | `d0f648b223253835dfa00f886ffe3264192a6853` |
