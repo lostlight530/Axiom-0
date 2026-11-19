@@ -31,7 +31,7 @@ Not archived here:
 | August through-23 stage audit | `03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md` | `RESEARCH/monthly/2026-08-through-23-stage-audit.md` |
 | August through-27 stage audit | `03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md` | `RESEARCH/monthly/2026-08-through-27-stage-audit.md` |
 | August through-30 stage audit | `03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md` | `RESEARCH/monthly/2026-08-through-30-stage-audit.md` |
-| W33 evidence reconciliation | `04-evidence-and-closure-ledgers/2026-W33--evidence-reconciliation.md` | `RESEARCH/weekly/2026-W33-evidence-reconciliation.md` |
+| W33 evidence reconciliation | `04-evidence-and-closure-ledgers/2026-W33--plasma-evidence--reconciliation.md` | `RESEARCH/weekly/2026-W33-evidence-reconciliation.md` |
 | August final natural-month reconciliation | `04-evidence-and-closure-ledgers/2026-08-31--august--closure-reconciliation.md` | `RESEARCH/monthly/2026-08-final-stage-audit.md` |
 | Cross-period Jules cadence reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-cadence--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-cadence-reconciliation.md` |
 | Jules content/provenance contract reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-content-contract--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-content-contract-reconciliation.md` |
@@ -70,3 +70,11 @@ The preferred links below are for navigation. The retained paths point to the sa
 | Record | Preferred archive path | Retained same-blob path |
 | --- | --- | --- |
 | October 28 SOP minimal acceptance audit | [Preferred](03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md) | [Retained](03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md) |
+
+## Archive filename normalization
+
+Only the paths changed; the historical document bodies and original task records are unchanged.
+
+| Previous revision | Current path | Unchanged Git blob |
+| --- | --- | --- |
+| [Previous path at pre-rename main](https://github.com/lostlight530/Axiom-0/blob/72d979de77eaa87336e57d0119f0aeeacda98217/historical-audits/04-evidence-and-closure-ledgers/2026-W33--evidence-reconciliation.md) | [2026-W33--plasma-evidence--reconciliation.md](04-evidence-and-closure-ledgers/2026-W33--plasma-evidence--reconciliation.md) | `d0f648b223253835dfa00f886ffe3264192a6853` |
