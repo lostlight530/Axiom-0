@@ -1,0 +1,153 @@
+# ORIGINAL Independent A1 2026-11-19 — Axiom-0 full MonthStart→N−1 source/content custody
+
+## Run identity and authority
+- Repository: lostlight530/Axiom-0
+- Canonical task: independent-maintenance/A1; original prospective review, not a Native A1/A2, D7/D10/D14/D30 or governance decision
+- Logical date/timezone: 2026-11-19 Asia/Shanghai; source cutoff: 2026-11-01..2026-11-18 inclusive
+- Fresh merged main at audit: `280e38fac01fc1aba6961dee9761ef0a07f70037`; recursive tree truncated=false; committed blobs 516
+- Previous original full A1: `historical-audits/2026-11/2026-11-18-a1-source-content-review.md` @ `1258d56801f69987f6794687a4a5af85dbcbfc58`; document read and exact current path/blob compared
+- Previous unified A2: `historical-audits/2026-11/2026-11-18-a2-month-relations.md` @ `a4fdd9a8862c185b2d236070dfdc231f3dde1fba`; full prior relation record read; not substituted for this A1
+- Canonical physical source count (Nov01..18 plus closed W44..W46): 21
+- W47 2026-11-16..22 OPEN; November natural month FINAL and D30 NOT_DUE; periodic audits and original Jules identities left untouched
+- Native source delivery, test execution, CI, review, approval, external effect and current source-file path existence are separately classified
+- Actual checks: authenticated GitHub fresh main and full Git tree, previous original A1/A2 contents, source-file blob comparisons; newest date source bodies inspected in preparation
+- NOT_EXECUTED: complete local worktree checker, source producer rerun, upstream SDK/experiment, true effect sink and independent conformance
+
+## Exact canonical source ledger — every path, SHA, owner, disposition and falsification boundary
+- SOURCE `RESEARCH/daily/2026-11-01-pipeline-manifest.md` @ `07014b60274a8a0df712defef7bbacdb40cd61bb` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-02-pipeline-manifest.md` @ `da32856be7b71664dd9e84425289658365e980d7` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-03-pipeline-manifest.md` @ `45017dd70f3fc687536242a36bd2e40e2cc78fa0` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-04-pipeline-manifest.md` @ `e76b7f77123571ac74fb699412d90ba3d1b33db0` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-05-pipeline-manifest.md` @ `d25502809961ec1ab9b2a5f9f1871de8b30fd9ae` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-06-pipeline-manifest.md` @ `349e8462543f592c44ad1e6769eb1af0ef6e4dcd` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-07-pipeline-manifest.md` @ `14611f9959e4c5a9c54db21ed831a319720f0d8c` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-08-pipeline-manifest.md` @ `f50894a5fc7c64ae6e8b15050afd68910779e129` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-09-pipeline-manifest.md` @ `1bef51802d9d498676f7fc977560ccbbe49d024a` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-10-pipeline-manifest.md` @ `31cb3a33674e713f1e8d96da3276c72f08893466` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-11-pipeline-manifest.md` @ `8132ef33870c9ed824bbbb2809dae69cacdcb4de` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-12-pipeline-manifest.md` @ `fdd91ce54f885ca6991afe67716e72fbfa85e2f1` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-13-pipeline-manifest.md` @ `3794760fdeffe4fa602357510b2bc0a17f2a69cf` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-14-pipeline-manifest.md` @ `f700dc80975dd620b6d08aaf328b96aba1daa691` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-15-pipeline-manifest.md` @ `1d492dcc55671bb3280608a119ff70c2f3b0380b` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-16-pipeline-manifest.md` @ `b505a2206a262ebc29ebc842a2389c4b45782aec` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-17-pipeline-manifest.md` @ `56accac274160a58cf9c79852c2cbec73a7b8fc1` | PLASMA_FORMAL_PIPELINE | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/daily/2026-11-18-pipeline-manifest.md` @ `20e6796f35bd63b7aab2c5fff6e2e25d72864229` | PLASMA_FORMAL_PIPELINE | NEW_OR_CHANGED_SINCE_PRIOR_A1 / CURRENT_PROVENANCE_REVIEW
+  - Assessment: stage-specific A1 archaeology / A2 KL and topology / A3 bounded runner / A4 alignment must remain separately evidenced; not retrospectively attributed to Nov17 reviewer; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/weekly/2026-W44-weekly-manifest.md` @ `cbefb65bd542de05f57c44f1ed5886ccf196bec3` | PLASMA_WEEKLY_A5 | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: weekly inheritance is not an executed daily run; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/weekly/2026-W45-weekly-manifest.md` @ `86cd46f4b1f1beb3d669af46863a59c0b5195aad` | PLASMA_WEEKLY_A5 | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: weekly inheritance is not an executed daily run; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+- SOURCE `RESEARCH/weekly/2026-W46-weekly-manifest.md` @ `c2344b1d30602ef4350760f7fc576af2f16c7829` | PLASMA_WEEKLY_A5 | EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP
+  - Assessment: weekly inheritance is not an executed daily run; prior file verdict reused only because unchanged blob matches; no local execution credit transferred
+  - A2 formality: retain original command/env/revision KL nats and axiom_document_topology if present; this review performs no scanner, NOT_COMPUTED locally
+  - A3/A4 gates: preserve manifest-specific blocked/failed states and distinct historical runner identity; no blanket pipeline PASS
+
+## Earlier original A1/A2 corpus — separate custody; not Native credit
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-02-a1-source-content-review.md` @ `cf7b528f03eff2498c56b001b2d4f93cd4faa6fe` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-02-a2-month-relations.md` @ `73cc710795b16d6d3bd965fc8ff1329d4548b448` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-03-a1-source-content-review.md` @ `7a7b644b08cd4f2d66526e20b04aa40ccf678002` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-03-a2-month-relations.md` @ `c68c300456fec9beab1956b210c06780241b1882` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-04-a1-source-content-review.md` @ `5b45f136cf6f324e95c53aa0b6a67ab2d8bf3109` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-04-a2-month-relations.md` @ `0270c832316a4a7e036bf58d265ac5a3eed343c7` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-05-a1-source-content-review.md` @ `f0d3e186c186e9901e0329094558de0e40f2d0dc` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-05-a2-month-relations.md` @ `ca06312c735734e03322f2af4217332db9abebaf` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-06-a1-source-content-review.md` @ `613708c98ab521a2148143feadcf14f3272b2bad` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-06-a2-month-relations.md` @ `231899e38d8901e608c427116e93bac051f2a361` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-07-a1-source-content-review.md` @ `fc47b0f46bb40cda8a2cb5d65811433889fdfa40` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-07-a2-month-relations.md` @ `8a19091150faf5faf179e307b76e1bf00255fe2b` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-08-a1-source-content-review.md` @ `4fd7855d0d9697256cbbf70df4ab2689d86b2e19` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-08-a2-month-relations.md` @ `28fc26717cd9bd19c6293a871aa292afee9977a8` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-09-a1-source-content-review.md` @ `6205bce1c7de673788959632b77b6a7f47a57928` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-09-a2-month-relations.md` @ `8086f8a9febf4851fb265ea1dc8c9455a21e92ff` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-10-a1-source-content-review.md` @ `458d68b823aa88a4b8840e11b91deeb8f47c7a25` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-10-a2-month-relations.md` @ `e01856067b6911c032f1007f4c9df4f3475d2d02` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-11-a1-source-content-review.md` @ `6ae311ceebfcc3a0a8974d0fd37a9b025e5a0c88` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-11-a2-month-relations.md` @ `4eac325bfaae386446132648a472ed54c3fbe54b` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-12-a1-source-content-review.md` @ `2f483fe207b709791498a722a701c7e2577f6a4f` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-12-a2-month-relations.md` @ `8d2dceb72507a6906630c447ff599a43b904f2e7` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-13-a1-source-content-review.md` @ `8a603518d01e5cc44bee73f9519c3d7b7eadf659` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-13-a2-month-relations.md` @ `54487542b083e9fd47580021b929fdae5253f4b0` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-14-a1-source-content-review.md` @ `944975a9b8b6a97a2ef8740754787748b3520e32` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-14-a2-month-relations.md` @ `e68d6b45a4c115cdf92e4bc56643110b83d3f924` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-15-a1-source-content-review.md` @ `6a21226521f33141c71a0ea4fa25dfbd87df4c6e` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-15-a2-month-relations.md` @ `222a43172e25ff097ca49f502c6124525b5f0387` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-16-a1-source-content-review.md` @ `d6febd73ed6166f2e3498f5e4eb4b8e012d3d62e` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-16-a2-month-relations.md` @ `49e3c855a5698ef669655f88f2ee65aed21363c4` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-17-a1-source-content-review.md` @ `fce16048b31d21a746db5c91d07a02ed502745b2` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-17-a2-month-relations.md` @ `de37ce4c16a8b0f21aa3ebd06e14039c4342ff35` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-18-a1-source-content-review.md` @ `1258d56801f69987f6794687a4a5af85dbcbfc58` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+- AUDIT_ORIGINAL `historical-audits/2026-11/2026-11-18-a2-month-relations.md` @ `a4fdd9a8862c185b2d236070dfdc231f3dde1fba` | HISTORICAL_REVIEW_IDENTITY_ONLY; contents/quality are not silently re-adjudicated by current source-blob equality
+
+## Dependency, coverage and counterevidence
+- Exact native path/blob matches to previous reviewer: 20/21; new or drifted: 1
+- Changed/new owners: `RESEARCH/daily/2026-11-18-pipeline-manifest.md`
+- Current source denominator: 21 observed canonical paths; weekly CLOSED=only W44/W45/W46; current W47 cannot be promoted to FINAL.
+- Task completeness is file-specific custody and bounded decision, not validation of all external claims. Each new-source identity needs an actual original execution receipt for stronger status.
+- Native source state classifications must survive any new GitHub merge, including PARTIAL, BLOCKED, NOT_EXECUTED, NOT_COMPUTED, UNKNOWN and valid negative results.
+- NEW_EVIDENCE: exact current main blob universe and date+role-resolved additions to the previous source ledger, with genuinely changed objects identified.
+- CORRECTED_INTERPRETATION: previous review equality is inheritance, not new external source corroboration or a new Native observation.
+- UNCHANGED_BOUNDARY: original published evidence, current GitHub retention and runtime/effect proof remain independent.
+- NEW_COUNTEREVIDENCE: absent local run/checker/installation receipt and possibly changed source after prior cutoff block current scientific generalization.
+- UNKNOWN_RETAINED: external upstream independent replication, local full checks and source-to-effect deployment where no actual receipt exists.
+- NEXT_RETEST_CONDITION: compare exact original producer PR/run, pinned implementation and missing runner/effect outputs before any status promotion.
+- NO_CORRECT_IN_PLACE: no reproducible defect in retained historical Native source was established by this custody ledger.
+- Original A1 PR must meet its own >=100 GitHub additions gate and real content quality; successor and future A2 cannot backfill original additions.
+- Next A2 may start only after THIS original A1 PR actually merges, fresh main and exact A1 blob are reread; A2 must re-evaluate Nov01..19, not just Nov19.
+- Delivery on current authored branch pending independent PR final diff + main retention; no auto-claim of PASS or Human Review.
