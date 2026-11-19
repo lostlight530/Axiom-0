@@ -62,3 +62,11 @@ The SOP acceptance is a derived cross-task audit, not the original A1/A2. The ga
 - `historical-audits/01-corrections-and-errata/2026-10-28--a1-a2-tree-oid--erratum.md` — normalized from `historical-audits/01-corrections-and-errata/2026-10-28-a1-a2-tree-oid-erratum.md`, original blob `4fb4a880920f4116cafc9fdb85e1c7ff13bb125b`; this source corrects a historical OID label, not original A1/A2 or a native task
 - The two above October 28 relocated paths use the shared `YYYY-MM-DD--subject--record-kind.md` naming format; original source blobs and old paths are preserved in historical Git versions
 - Indexed inbound-code lookup for these three original names returned no file results in this repository at review time; this does not certify external backlinks
+
+## Current navigation for retained duplicate paths
+
+The preferred links below are for navigation. The retained paths point to the same Git blobs and are not separate audits or additional evidence. This section supersedes conflicting path labels in earlier entries of this index without changing their historical provenance.
+
+| Record | Preferred archive path | Retained same-blob path |
+| --- | --- | --- |
+| October 28 SOP minimal acceptance audit | [Preferred](03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md) | [Retained](03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md) |
