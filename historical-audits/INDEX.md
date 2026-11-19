@@ -36,6 +36,8 @@ Not archived here:
 | Cross-period Jules cadence reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-cadence--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-cadence-reconciliation.md` |
 | Jules content/provenance contract reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-content-contract--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-content-contract-reconciliation.md` |
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `RESEARCH/monthly/2026-09-10-ten-day-cadence-reconciliation.md` |
+| October 28 SOP minimal acceptance audit | `03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` | `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md` |
+| November 8–9 Plasma A1/A2 source adjudication | `05-maintenance-and-reconciliation/2026-11-10-strict-nov08-nov09-plasma-a1a2-source-adjudication.md` | `historical-audits/2026-11/2026-11-10-strict-nov08-nov09-plasma-a1a2-source-adjudication.md` |
 
 The old paths remain recoverable through Git history. The archive is historical storage and does not supersede current repository authority or the current maintenance record.
 
