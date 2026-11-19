@@ -45,3 +45,12 @@ The old paths remain recoverable through Git history. The archive is historical 
 - `05-maintenance-and-reconciliation/2026-09-19--sep-19--maintenance-reconciliation.md` — 2026-09-19 bounded Daily pipeline reconciliation
 
 As of 2026-09-19 this is the latest completed independent periodic-maintenance record in the archive. Current implementation, specification, evidence baseline, methodology, and the 2026-09-18 current research reconciliation remain higher authority for present interpretation.
+
+## 2026-10-28 classification-only relocation
+
+The following dated records retain their original Git blob contents and their original observation/producer boundaries. The original paths are recoverable from Git history, and this routing change creates no new audit, A1/A2, Native task, or acceptance credit.
+
+- `historical-audits/03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` — moved from `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md`; retained historical blob `00bfbd113de68f14851d183a96a8e248a157d1ae`.
+- `historical-audits/05-maintenance-and-reconciliation/2026-10-28-october-native-weekly-gap-recovery-register.md` — moved from `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md`; retained historical blob `a4b841490729db1bc708d43f70cf4ca0e0d6b69a`.
+
+The SOP acceptance is a derived cross-task audit, not the original A1/A2. The gap-recovery register is a maintenance evidence inventory, not a Periodic Audit or Native pipeline run.
