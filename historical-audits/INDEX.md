@@ -50,7 +50,13 @@ As of 2026-09-19 this is the latest completed independent periodic-maintenance r
 
 The following dated records retain their original Git blob contents and their original observation/producer boundaries. The original paths are recoverable from Git history, and this routing change creates no new audit, A1/A2, Native task, or acceptance credit.
 
-- `historical-audits/03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` — moved from `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md`; retained historical blob `00bfbd113de68f14851d183a96a8e248a157d1ae`.
-- `historical-audits/05-maintenance-and-reconciliation/2026-10-28-october-native-weekly-gap-recovery-register.md` — moved from `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md`; retained historical blob `a4b841490729db1bc708d43f70cf4ca0e0d6b69a`.
+- `historical-audits/03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md` — moved from `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md`; retained historical blob `00bfbd113de68f14851d183a96a8e248a157d1ae`.
+- `historical-audits/05-maintenance-and-reconciliation/2026-10-28--october-native-weekly-gap-recovery--register.md` — moved from `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md`; retained historical blob `a4b841490729db1bc708d43f70cf4ca0e0d6b69a`.
 
 The SOP acceptance is a derived cross-task audit, not the original A1/A2. The gap-recovery register is a maintenance evidence inventory, not a Periodic Audit or Native pipeline run.
+
+### 2026-11-19 post-merge erratum filename normalization
+
+- `historical-audits/01-corrections-and-errata/2026-10-28--a1-a2-tree-oid--erratum.md` — normalized from `historical-audits/01-corrections-and-errata/2026-10-28-a1-a2-tree-oid-erratum.md`, original blob `4fb4a880920f4116cafc9fdb85e1c7ff13bb125b`; this source corrects a historical OID label, not original A1/A2 or a native task
+- The two above October 28 relocated paths use the shared `YYYY-MM-DD--subject--record-kind.md` naming format; original source blobs and old paths are preserved in historical Git versions
+- Indexed inbound-code lookup for these three original names returned no file results in this repository at review time; this does not certify external backlinks
