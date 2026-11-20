@@ -9,7 +9,7 @@
 > **[EN]:** Axiom-0 Knowledge System Index. All documents strictly adhere to the Zero-Entropy Cognitive Protocol (ZECP) and irreversible mathematical shackles.
 
 ## 0. 提示与自动化 / Prompt and Automation
-- [AUTOMATION/sample-schedule.yml](./AUTOMATION/sample-schedule.yml) - 自动化调度配置 / Automation Schedule
+- [AUTOMATION/sample-schedule.yml](./AUTOMATION/sample-schedule.yml) - 禁用的示例调度 / Disabled sample schedule
 
 ## 1. 核心协议 / Core Protocol
 - [README.md](./README.md) - 纯粹的数学边界与工业级降维价值 / Pure Mathematical Boundary & Industrial-Grade Dimensionality Reduction
