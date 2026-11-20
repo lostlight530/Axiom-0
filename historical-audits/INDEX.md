@@ -78,3 +78,7 @@ Only the paths changed; the historical document bodies and original task records
 | Previous revision | Current path | Unchanged Git blob |
 | --- | --- | --- |
 | [Previous path at pre-rename main](https://github.com/lostlight530/Axiom-0/blob/72d979de77eaa87336e57d0119f0aeeacda98217/historical-audits/04-evidence-and-closure-ledgers/2026-W33--evidence-reconciliation.md) | [2026-W33--plasma-evidence--reconciliation.md](04-evidence-and-closure-ledgers/2026-W33--plasma-evidence--reconciliation.md) | `d0f648b223253835dfa00f886ffe3264192a6853` |
+
+## 2026-11-20 independent Plasma source-lineage document audit
+
+- [A1/A2 source roles and formal-stage boundary](02-document-audits/2026-11-20--plasma-a1-a2-source-lineage--document-audit.md) — forward correction applied at canonical A1/A2 paths, original PR identity unchanged
