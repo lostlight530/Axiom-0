@@ -7,7 +7,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22791103.svg)](https://doi.org/10.5281/zenodo.22791103)
 
-Latest archived checkpoint: [v2026.10-30-evidence-snapshot](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.10-30-evidence-snapshot) · [Version DOI](https://doi.org/10.5281/zenodo.23811393). The DOI badge above identifies the software-family concept.
+Latest archived checkpoint: [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/Axiom-0/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112463). The DOI badge above identifies the software-family concept.
 
 [Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md)
 
