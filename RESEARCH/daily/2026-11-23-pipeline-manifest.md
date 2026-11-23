@@ -94,3 +94,9 @@ print(json.dumps({'experiment':'W48-axiom-standalone-stdlib-prng-order-01',
 ## Delivery boundary
 - One original dated Plasma Daily manifest only, on a separate Draft PR. Historical Jules, prior Daily/Weekly, code, SPEC/ADR and governance untouched.
 - Documented standalone experiment exit 0 is real; formal pipeline status remains `BLOCKED` and checker/host tests `NOT_EXECUTED`. GitHub PR merge, CI and Human Maintainer approval pending.
+
+## 2026-11-23 forward verification correction — documented probe bytes versus original reported digest
+- Scope: exact script digest attribution only. The previously recorded `d0225a62c13fef0ee91a842ef53af8b0364d9b604c8b49ed80b826975404651f` was **producer-reported** as the corrected diagnostic script SHA; it is retained above as the historical assertion and is **not independently authenticated by the current review**.
+- Independent current review copied the complete fenced `python` source above verbatim, appended its final newline, and actually executed it in an isolated Linux Python 3.13.5 environment. The **documented reproducible source bytes** have SHA-256 `7a8bed18e05887c90337cd455c1aa5298aafeb1c6ac1586c68a1399506452119`; exit `0`, stderr empty, and stdout exactly matches the captured JSON (all four invariants, draw values and Python version).
+- Therefore `DIGEST_OF_DOCUMENTED_SCRIPT=7a8bed18...` and `ORIGINAL_REPORTED_SCRIPT_DIGEST=d0225a62...` are **distinct identifiers**. The earlier original script's bytes are not available for byte-level reconciliation; this new run does not claim to have executed that inaccessible earlier file. Scientific conclusion about the stdlib toy is reproduced; formal Plasma A2/A3/A4 remain `NOT_EXECUTED / BLOCKED`.
+- This forward correction belongs to the same unmerged W48 Native artifact. It does not rewrite the original reported value, claim a formal scanner PASS, or add independent SDK tests.
