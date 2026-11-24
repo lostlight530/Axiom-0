@@ -82,3 +82,14 @@ Only the paths changed; the historical document bodies and original task records
 ## 2026-11-20 independent Plasma source-lineage document audit
 
 - [A1/A2 source roles and formal-stage boundary](02-document-audits/2026-11-20--plasma-a1-a2-source-lineage--document-audit.md) — forward correction applied at canonical A1/A2 paths, original PR identity unchanged
+
+## 2026-11-24 retained archive navigation additions
+
+These existing records were not explicitly linked by path in the preceding index. This is a navigation supplement, not a new audit, a new producer run, or a reclassification. The directory column reports the retained physical location; original record content and provenance govern interpretation. Path-sensitive references and legacy locations remain intact. Existing same-blob aliases are not additional evidence.
+
+| Retained record | Existing directory | Blob at inspected main |
+| --- | --- | --- |
+| [2026-10-01--external-review-source-scope--correction.md](01-corrections-and-errata/2026-10-01--external-review-source-scope--correction.md) | `01-corrections-and-errata/` | `59d56f84f3501b8786ed1791a91be86e0bd3bd44` |
+| [2026-10-31--plasma-a1-source-coverage--post-merge-erratum.md](01-corrections-and-errata/2026-10-31--plasma-a1-source-coverage--post-merge-erratum.md) | `01-corrections-and-errata/` | `742e26bf7b9e82ec57f4af114c42fac67a39e69d` |
+| [2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md](01-corrections-and-errata/2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md) | `01-corrections-and-errata/` | `d104724181d9018a2ba67f9efe5e8ea394ae288e` |
+| [2026-09-13--sep-01-13--maintenance-reconciliation.md](05-maintenance-and-reconciliation/2026-09-13--sep-01-13--maintenance-reconciliation.md) | `05-maintenance-and-reconciliation/` | `93f2d15074155f9eacc65fabc15463b1d50d46be` |
