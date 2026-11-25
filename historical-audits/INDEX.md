@@ -93,3 +93,20 @@ These existing records were not explicitly linked by path in the preceding index
 | [2026-10-31--plasma-a1-source-coverage--post-merge-erratum.md](01-corrections-and-errata/2026-10-31--plasma-a1-source-coverage--post-merge-erratum.md) | `01-corrections-and-errata/` | `742e26bf7b9e82ec57f4af114c42fac67a39e69d` |
 | [2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md](01-corrections-and-errata/2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md) | `01-corrections-and-errata/` | `d104724181d9018a2ba67f9efe5e8ea394ae288e` |
 | [2026-09-13--sep-01-13--maintenance-reconciliation.md](05-maintenance-and-reconciliation/2026-09-13--sep-01-13--maintenance-reconciliation.md) | `05-maintenance-and-reconciliation/` | `93f2d15074155f9eacc65fabc15463b1d50d46be` |
+
+## 2026-11-25 cloud acceptance navigation
+
+Dated documentary review at [inspected main](https://github.com/lostlight530/Axiom-0/commit/a19463604a73a728c75a397993bd00af3ea46ddf); navigation only, not a new original A1/A2, Native, or D-task submission. The historical archive classes above remain unchanged. Original task owners are linked, not relocated or reclassified.
+
+| Identity | Original GitHub delivery | Cloud evidence / disposition |
+| --- | --- | --- |
+| Independent A1 (Nov 1–24) | [#562](https://github.com/lostlight530/Axiom-0/pull/562), 131 additions, merged | [canonical file](https://github.com/lostlight530/Axiom-0/blob/a19463604a73a728c75a397993bd00af3ea46ddf/historical-audits/2026-11/2026-11-25-a1-source-content-review.md) retained; numeric gate met; 96/96 listed source SHA rows match the later inspected main (cutoff/shared-owner changes are not automatically errors) |
+| Independent A2 (Nov 1–25) | [#563](https://github.com/lostlight530/Axiom-0/pull/563), 152 additions, merged | [canonical file](https://github.com/lostlight530/Axiom-0/blob/a19463604a73a728c75a397993bd00af3ea46ddf/historical-audits/2026-11/2026-11-25-a2-month-relations.md) retained; numeric gate met; 98/98 listed first source SHA rows match inspected main; PR base is the original A1 merge and creation follows that merge |
+| Oct 31 original A2 | [#448](https://github.com/lostlight530/Axiom-0/pull/448), 84 additions, merged | Original numeric gate NOT_MET; delivery and numeric acceptance remain separate |
+| Oct 31 successor | [#450](https://github.com/lostlight530/Axiom-0/pull/450), 158 additions, merged | Successor numeric gate MET; no retroactive credit to original A2 |
+| Oct 31 cleanup | [#452](https://github.com/lostlight530/Axiom-0/pull/452), merged | Separate cleanup, not original task or successor credit |
+| Nov 1 forward reconciliation | [#455](https://github.com/lostlight530/Axiom-0/pull/455), merged | [Retained correction](01-corrections-and-errata/2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md); correction class, not a new original A2 |
+
+Native evidence: Plasma [#561](https://github.com/lostlight530/Axiom-0/pull/561) records a BLOCKED formal pipeline; formal A2 scanner/KL were not executed/computed, A3/A4 remain blocked. Independent bounded controls do not replace the formal stages.
+
+D7/D10/D14 retain their separate original identities; D14 is an as-of partial observation, not a full-day closure. D30 is not due at this observation. November remains open. Cloud delivery, numeric acceptance, dependency and retention are confirmed at the inspected revision; source-row custody does not by itself establish full semantic validity or a new runtime execution. Existing archive aliases are navigation only, not additional evidence or task credit.
